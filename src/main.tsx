@@ -1,5 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-[#root]';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';

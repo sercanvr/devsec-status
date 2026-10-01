@@ -1,4 +1,4 @@
-import i18n from 'i18n';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
@@ -31,7 +31,7 @@ i18n
     },
   });
 
-i18n.on('languageChanged', (lng) => {
+i18n.on('languageChanged', (lng: string) => {
   localStorage.setItem(STORAGE_KEY, lng);
   document.documentElement.lang = lng;
 });
