@@ -5,6 +5,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "githubUrl": "https://github.com/facebook/react",
+    "creator": {
+      "name": "Jordan Walke (Meta)",
+      "avatarUrl": "https://github.com/facebook.png",
+      "type": "organization",
+      "releaseDate": "29 Mayıs 2013",
+      "latestVersion": "v19.0.0"
+    },
     "popularity": {
       "totalRepos": 3250000,
       "totalStars": 234200
@@ -16,7 +23,7 @@
         "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-vue",
@@ -24,6 +31,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     "githubUrl": "https://github.com/vuejs/core",
+    "creator": {
+      "name": "Evan You",
+      "avatarUrl": "https://github.com/yyx990803.png",
+      "type": "person",
+      "releaseDate": "14 Şubat 2014",
+      "latestVersion": "v3.5.13"
+    },
     "popularity": {
       "totalRepos": 980000,
       "totalStars": 208500
@@ -35,7 +49,7 @@
         "stars": 4200
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-nextjs",
@@ -43,6 +57,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     "githubUrl": "https://github.com/vercel/next.js",
+    "creator": {
+      "name": "Guillermo Rauch (Vercel)",
+      "avatarUrl": "https://github.com/vercel.png",
+      "type": "organization",
+      "releaseDate": "25 Ekim 2016",
+      "latestVersion": "v15.1.7"
+    },
     "popularity": {
       "totalRepos": 780000,
       "totalStars": 128800
@@ -54,7 +75,7 @@
         "stars": 19800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-react-native",
@@ -62,6 +83,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "githubUrl": "https://github.com/facebook/react-native",
+    "creator": {
+      "name": "Jordan Walke & Meta Team",
+      "avatarUrl": "https://github.com/facebook.png",
+      "type": "organization",
+      "releaseDate": "26 Mart 2015",
+      "latestVersion": "v0.78.0"
+    },
     "popularity": {
       "totalRepos": 412000,
       "totalStars": 121500
@@ -73,7 +101,7 @@
         "stars": 34800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-angular",
@@ -81,6 +109,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
     "githubUrl": "https://github.com/angular/angular",
+    "creator": {
+      "name": "Misko Hevery (Google)",
+      "avatarUrl": "https://github.com/angular.png",
+      "type": "organization",
+      "releaseDate": "14 Eylül 2016",
+      "latestVersion": "v19.1.0"
+    },
     "popularity": {
       "totalRepos": 650000,
       "totalStars": 97400
@@ -92,7 +127,7 @@
         "stars": 4800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-tailwind",
@@ -100,6 +135,13 @@
     "category": "library",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     "githubUrl": "https://github.com/tailwindlabs/tailwindcss",
+    "creator": {
+      "name": "Adam Wathan",
+      "avatarUrl": "https://github.com/adamwathan.png",
+      "type": "person",
+      "releaseDate": "1 Kasım 2017",
+      "latestVersion": "v4.0.6"
+    },
     "popularity": {
       "totalRepos": 1680000,
       "totalStars": 87200
@@ -111,7 +153,7 @@
         "stars": 9800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-fastapi",
@@ -119,6 +161,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
     "githubUrl": "https://github.com/fastapi/fastapi",
+    "creator": {
+      "name": "Sebastián Ramírez (tiangolo)",
+      "avatarUrl": "https://github.com/tiangolo.png",
+      "type": "person",
+      "releaseDate": "5 Aralık 2018",
+      "latestVersion": "v0.115.8"
+    },
     "popularity": {
       "totalRepos": 248000,
       "totalStars": 83600
@@ -130,7 +179,7 @@
         "stars": 8900
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-svelte",
@@ -138,6 +187,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
     "githubUrl": "https://github.com/sveltejs/svelte",
+    "creator": {
+      "name": "Rich Harris",
+      "avatarUrl": "https://github.com/Rich-Harris.png",
+      "type": "person",
+      "releaseDate": "26 Kasım 2016",
+      "latestVersion": "v5.19.0"
+    },
     "popularity": {
       "totalRepos": 195000,
       "totalStars": 81400
@@ -149,7 +205,7 @@
         "stars": 17800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-nestjs",
@@ -157,6 +213,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
     "githubUrl": "https://github.com/nestjs/nest",
+    "creator": {
+      "name": "Kamil Mysliwiec",
+      "avatarUrl": "https://github.com/kamilmysliwiec.png",
+      "type": "person",
+      "releaseDate": "Kasım 2017",
+      "latestVersion": "v11.0.0"
+    },
     "popularity": {
       "totalRepos": 142000,
       "totalStars": 72800
@@ -168,7 +231,7 @@
         "stars": 4900
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-dotnet",
@@ -176,6 +239,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
     "githubUrl": "https://github.com/dotnet/runtime",
+    "creator": {
+      "name": "Microsoft .NET Team",
+      "avatarUrl": "https://github.com/dotnet.png",
+      "type": "organization",
+      "releaseDate": "13 Şubat 2002",
+      "latestVersion": ".NET 9.0"
+    },
     "popularity": {
       "totalRepos": 890000,
       "totalStars": 17400
@@ -187,7 +257,7 @@
         "stars": 36800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "fw-android",
@@ -195,6 +265,13 @@
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
     "githubUrl": "https://github.com/androidx/androidx",
+    "creator": {
+      "name": "Google Android Team",
+      "avatarUrl": "https://github.com/android.png",
+      "type": "organization",
+      "releaseDate": "8 Mayıs 2018",
+      "latestVersion": "Jetpack 2026"
+    },
     "popularity": {
       "totalRepos": 1250000,
       "totalStars": 3800
@@ -206,6 +283,6 @@
         "stars": 44500
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   }
 ]

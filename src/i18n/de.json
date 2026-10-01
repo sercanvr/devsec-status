@@ -21,7 +21,10 @@
     "stars": "Sterne",
     "newRepos": "Neue Repos",
     "topStarred": "Am meisten bewertetes neues Repo",
-    "viewOnGithub": "Auf GitHub ansehen"
+    "viewOnGithub": "Auf GitHub ansehen",
+    "creator": "Entwickler",
+    "releaseDate": "Erscheinungsdatum",
+    "latestVersion": "Aktuelle Version"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

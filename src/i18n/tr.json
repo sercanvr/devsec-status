@@ -21,7 +21,10 @@
     "stars": "Yıldız",
     "newRepos": "Yeni Depo",
     "topStarred": "En Çok Yıldız Alan Yeni Depo",
-    "viewOnGithub": "GitHub'da İncele"
+    "viewOnGithub": "GitHub'da İncele",
+    "creator": "Geliştirici",
+    "releaseDate": "Çıkış Tarihi",
+    "latestVersion": "Güncel Sürüm"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",

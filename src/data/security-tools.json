@@ -5,6 +5,13 @@
     "category": "security-tool",
     "iconUrl": "https://ghidra-sre.org/images/GHIDRA_128.png",
     "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
+    "creator": {
+      "name": "NSA (National Security Agency)",
+      "avatarUrl": "https://github.com/NationalSecurityAgency.png",
+      "type": "organization",
+      "releaseDate": "5 Mart 2019",
+      "latestVersion": "v11.3"
+    },
     "popularity": {
       "totalRepos": 18200,
       "totalStars": 53400
@@ -16,7 +23,7 @@
         "stars": 1420
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-metasploit",
@@ -24,6 +31,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/external/source/meterpreter/source/extensions/stdapi/server/stdapi.png",
     "githubUrl": "https://github.com/rapid7/metasploit-framework",
+    "creator": {
+      "name": "H. D. Moore (Rapid7)",
+      "avatarUrl": "https://github.com/rapid7.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2003",
+      "latestVersion": "v6.4.45"
+    },
     "popularity": {
       "totalRepos": 85000,
       "totalStars": 35800
@@ -35,7 +49,7 @@
         "stars": 980
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-sqlmap",
@@ -43,6 +57,13 @@
     "category": "security-tool",
     "iconUrl": "https://sqlmap.org/favicon.ico",
     "githubUrl": "https://github.com/sqlmapproject/sqlmap",
+    "creator": {
+      "name": "Bernardo Damele & Miroslav Stampar",
+      "avatarUrl": "https://github.com/stamparm.png",
+      "type": "person",
+      "releaseDate": "2006",
+      "latestVersion": "v1.9"
+    },
     "popularity": {
       "totalRepos": 38000,
       "totalStars": 33500
@@ -54,7 +75,7 @@
         "stars": 1450
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-trivy",
@@ -62,6 +83,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png",
     "githubUrl": "https://github.com/aquasecurity/trivy",
+    "creator": {
+      "name": "Teppei Fukuda (Aqua Security)",
+      "avatarUrl": "https://github.com/aquasecurity.png",
+      "type": "organization",
+      "releaseDate": "2019",
+      "latestVersion": "v0.59.0"
+    },
     "popularity": {
       "totalRepos": 16400,
       "totalStars": 24200
@@ -73,7 +101,7 @@
         "stars": 1850
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-nuclei",
@@ -81,6 +109,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/projectdiscovery/nuclei/main/static/nuclei-logo.png",
     "githubUrl": "https://github.com/projectdiscovery/nuclei",
+    "creator": {
+      "name": "ProjectDiscovery Team",
+      "avatarUrl": "https://github.com/projectdiscovery.png",
+      "type": "organization",
+      "releaseDate": "2020",
+      "latestVersion": "v3.3.8"
+    },
     "popularity": {
       "totalRepos": 28500,
       "totalStars": 21800
@@ -92,7 +127,7 @@
         "stars": 11400
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-hashcat",
@@ -100,6 +135,13 @@
     "category": "security-tool",
     "iconUrl": "https://hashcat.net/favicon.ico",
     "githubUrl": "https://github.com/hashcat/hashcat",
+    "creator": {
+      "name": "Jens Steube (atom)",
+      "avatarUrl": "https://github.com/hashcat.png",
+      "type": "organization",
+      "releaseDate": "2009",
+      "latestVersion": "v6.2.6"
+    },
     "popularity": {
       "totalRepos": 24100,
       "totalStars": 21200
@@ -111,7 +153,7 @@
         "stars": 920
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-trufflehog",
@@ -119,6 +161,13 @@
     "category": "security-tool",
     "iconUrl": "https://trufflesecurity.com/favicon.ico",
     "githubUrl": "https://github.com/trufflesecurity/trufflehog",
+    "creator": {
+      "name": "Dylan Ayrey (Truffle Security)",
+      "avatarUrl": "https://github.com/trufflesecurity.png",
+      "type": "organization",
+      "releaseDate": "2017",
+      "latestVersion": "v3.88.0"
+    },
     "popularity": {
       "totalRepos": 12800,
       "totalStars": 16800
@@ -127,7 +176,7 @@
       "newReposLast30Days": 360,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-owasp-zap",
@@ -135,6 +184,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap128x128.png",
     "githubUrl": "https://github.com/zaproxy/zaproxy",
+    "creator": {
+      "name": "Simon Bennetts (OWASP)",
+      "avatarUrl": "https://github.com/zaproxy.png",
+      "type": "organization",
+      "releaseDate": "2010",
+      "latestVersion": "v2.16.0"
+    },
     "popularity": {
       "totalRepos": 18500,
       "totalStars": 12800
@@ -146,7 +202,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-nmap",
@@ -154,6 +210,13 @@
     "category": "security-tool",
     "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png",
     "githubUrl": "https://github.com/nmap/nmap",
+    "creator": {
+      "name": "Gordon Lyon (Fyodor)",
+      "avatarUrl": "https://nmap.org/images/nmap-logo-256x256.png",
+      "type": "person",
+      "releaseDate": "Eylül 1997",
+      "latestVersion": "v7.95"
+    },
     "popularity": {
       "totalRepos": 42000,
       "totalStars": 10800
@@ -165,7 +228,7 @@
         "stars": 450
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-john-the-ripper",
@@ -173,6 +236,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png",
     "githubUrl": "https://github.com/openwall/john",
+    "creator": {
+      "name": "Solar Designer (Openwall)",
+      "avatarUrl": "https://github.com/openwall.png",
+      "type": "organization",
+      "releaseDate": "1996",
+      "latestVersion": "v1.9.0-jumbo-1"
+    },
     "popularity": {
       "totalRepos": 14000,
       "totalStars": 9400
@@ -181,7 +251,7 @@
       "newReposLast30Days": 180,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-wireshark",
@@ -189,6 +259,13 @@
     "category": "security-tool",
     "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png",
     "githubUrl": "https://github.com/wireshark/wireshark",
+    "creator": {
+      "name": "Gerald Combs",
+      "avatarUrl": "https://github.com/wireshark.png",
+      "type": "person",
+      "releaseDate": "1998",
+      "latestVersion": "v4.4.4"
+    },
     "popularity": {
       "totalRepos": 27000,
       "totalStars": 7900
@@ -200,7 +277,7 @@
         "stars": 340
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "sec-volatility",
@@ -208,6 +285,13 @@
     "category": "security-tool",
     "iconUrl": "https://raw.githubusercontent.com/volatilityfoundation/volatility3/main/doc/source/_static/favicon.ico",
     "githubUrl": "https://github.com/volatilityfoundation/volatility3",
+    "creator": {
+      "name": "AAron Walters (Volatility)",
+      "avatarUrl": "https://github.com/volatilityfoundation.png",
+      "type": "organization",
+      "releaseDate": "2007",
+      "latestVersion": "v2.8.0"
+    },
     "popularity": {
       "totalRepos": 9400,
       "totalStars": 3600
@@ -216,6 +300,6 @@
       "newReposLast30Days": 140,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   }
 ]

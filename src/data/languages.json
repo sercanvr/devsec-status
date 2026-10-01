@@ -5,9 +5,16 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "githubUrl": "https://github.com/python/cpython",
+    "creator": {
+      "name": "Guido van Rossum",
+      "avatarUrl": "https://github.com/gvanrossum.png",
+      "type": "person",
+      "releaseDate": "20 Şubat 1991",
+      "latestVersion": "v3.13.2"
+    },
     "popularity": {
       "totalRepos": 15420000,
-      "totalStars": 65800
+      "totalStars": 74400
     },
     "momentum": {
       "newReposLast30Days": 142000,
@@ -16,7 +23,7 @@
         "stars": 68400
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-javascript",
@@ -24,6 +31,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "githubUrl": "https://github.com/v8/v8",
+    "creator": {
+      "name": "Brendan Eich (Netscape)",
+      "avatarUrl": "https://github.com/brendaneich.png",
+      "type": "person",
+      "releaseDate": "4 Aralık 1995",
+      "latestVersion": "ES2026 (17. Sürüm)"
+    },
     "popularity": {
       "totalRepos": 18900000,
       "totalStars": 24800
@@ -35,7 +49,33 @@
         "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
+  },
+  {
+    "id": "lang-typescript",
+    "name": "TypeScript",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "githubUrl": "https://github.com/microsoft/TypeScript",
+    "creator": {
+      "name": "Anders Hejlsberg (Microsoft)",
+      "avatarUrl": "https://github.com/microsoft.png",
+      "type": "organization",
+      "releaseDate": "1 Ekim 2012",
+      "latestVersion": "v5.7.3"
+    },
+    "popularity": {
+      "totalRepos": 6480000,
+      "totalStars": 105800
+    },
+    "momentum": {
+      "newReposLast30Days": 84500,
+      "topStarredNewRepo": {
+        "name": "browserbase/stagehand",
+        "stars": 14200
+      }
+    },
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-go",
@@ -43,6 +83,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
     "githubUrl": "https://github.com/golang/go",
+    "creator": {
+      "name": "Rob Pike & Google Team",
+      "avatarUrl": "https://github.com/google.png",
+      "type": "organization",
+      "releaseDate": "10 Kasım 2009",
+      "latestVersion": "v1.24.0"
+    },
     "popularity": {
       "totalRepos": 3150000,
       "totalStars": 128400
@@ -54,26 +101,7 @@
         "stars": 112000
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
-  },
-  {
-    "id": "lang-typescript",
-    "name": "TypeScript",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    "githubUrl": "https://github.com/microsoft/TypeScript",
-    "popularity": {
-      "totalRepos": 6480000,
-      "totalStars": 105600
-    },
-    "momentum": {
-      "newReposLast30Days": 84500,
-      "topStarredNewRepo": {
-        "name": "browserbase/stagehand",
-        "stars": 14200
-      }
-    },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-rust",
@@ -81,6 +109,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
     "githubUrl": "https://github.com/rust-lang/rust",
+    "creator": {
+      "name": "Graydon Hoare (Mozilla)",
+      "avatarUrl": "https://github.com/rust-lang.png",
+      "type": "organization",
+      "releaseDate": "7 Temmuz 2010",
+      "latestVersion": "v1.85.0"
+    },
     "popularity": {
       "totalRepos": 1820000,
       "totalStars": 103800
@@ -92,45 +127,7 @@
         "stars": 38400
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
-  },
-  {
-    "id": "lang-swift",
-    "name": "Swift",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
-    "githubUrl": "https://github.com/swiftlang/swift",
-    "popularity": {
-      "totalRepos": 1120000,
-      "totalStars": 68900
-    },
-    "momentum": {
-      "newReposLast30Days": 9800,
-      "topStarredNewRepo": {
-        "name": "pointfreeco/swift-composable-architecture",
-        "stars": 12800
-      }
-    },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
-  },
-  {
-    "id": "lang-kotlin",
-    "name": "Kotlin",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-    "githubUrl": "https://github.com/JetBrains/kotlin",
-    "popularity": {
-      "totalRepos": 1450000,
-      "totalStars": 51200
-    },
-    "momentum": {
-      "newReposLast30Days": 14800,
-      "topStarredNewRepo": {
-        "name": "square/okhttp",
-        "stars": 45600
-      }
-    },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-c",
@@ -138,6 +135,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     "githubUrl": "https://github.com/torvalds/linux",
+    "creator": {
+      "name": "Dennis Ritchie (Bell Labs)",
+      "avatarUrl": "https://github.com/torvalds.png",
+      "type": "person",
+      "releaseDate": "1972",
+      "latestVersion": "C23 (ISO/IEC 9899)"
+    },
     "popularity": {
       "totalRepos": 5120000,
       "totalStars": 182000
@@ -149,7 +153,7 @@
         "stars": 65800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-cpp",
@@ -157,6 +161,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     "githubUrl": "https://github.com/llvm/llvm-project",
+    "creator": {
+      "name": "Bjarne Stroustrup (Bell Labs)",
+      "avatarUrl": "https://github.com/llvm.png",
+      "type": "person",
+      "releaseDate": "1985",
+      "latestVersion": "C++23 Standard"
+    },
     "popularity": {
       "totalRepos": 6180000,
       "totalStars": 31400
@@ -168,7 +179,59 @@
         "stars": 71500
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
+  },
+  {
+    "id": "lang-swift",
+    "name": "Swift",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    "githubUrl": "https://github.com/swiftlang/swift",
+    "creator": {
+      "name": "Chris Lattner (Apple)",
+      "avatarUrl": "https://github.com/apple.png",
+      "type": "organization",
+      "releaseDate": "2 Haziran 2014",
+      "latestVersion": "v6.0.3"
+    },
+    "popularity": {
+      "totalRepos": 1120000,
+      "totalStars": 68900
+    },
+    "momentum": {
+      "newReposLast30Days": 9800,
+      "topStarredNewRepo": {
+        "name": "pointfreeco/swift-composable-architecture",
+        "stars": 12800
+      }
+    },
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
+  },
+  {
+    "id": "lang-kotlin",
+    "name": "Kotlin",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    "githubUrl": "https://github.com/JetBrains/kotlin",
+    "creator": {
+      "name": "Dmitry Jemerov (JetBrains)",
+      "avatarUrl": "https://github.com/JetBrains.png",
+      "type": "organization",
+      "releaseDate": "22 Temmuz 2011",
+      "latestVersion": "v2.1.10"
+    },
+    "popularity": {
+      "totalRepos": 1450000,
+      "totalStars": 51200
+    },
+    "momentum": {
+      "newReposLast30Days": 14800,
+      "topStarredNewRepo": {
+        "name": "square/okhttp",
+        "stars": 45600
+      }
+    },
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-java",
@@ -176,6 +239,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     "githubUrl": "https://github.com/openjdk/jdk",
+    "creator": {
+      "name": "James Gosling (Sun / Oracle)",
+      "avatarUrl": "https://github.com/oracle.png",
+      "type": "person",
+      "releaseDate": "23 Mayıs 1995",
+      "latestVersion": "Java 23 (JDK 23)"
+    },
     "popularity": {
       "totalRepos": 14200000,
       "totalStars": 21800
@@ -187,7 +257,7 @@
         "stars": 76200
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-csharp",
@@ -195,6 +265,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
     "githubUrl": "https://github.com/dotnet/roslyn",
+    "creator": {
+      "name": "Anders Hejlsberg (Microsoft)",
+      "avatarUrl": "https://github.com/dotnet.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2000",
+      "latestVersion": "C# 13 (.NET 9)"
+    },
     "popularity": {
       "totalRepos": 4850000,
       "totalStars": 18900
@@ -206,7 +283,7 @@
         "stars": 114000
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-php",
@@ -214,6 +291,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
     "githubUrl": "https://github.com/php/php-src",
+    "creator": {
+      "name": "Rasmus Lerdorf",
+      "avatarUrl": "https://github.com/rasmus.png",
+      "type": "person",
+      "releaseDate": "8 Haziran 1995",
+      "latestVersion": "v8.4.4"
+    },
     "popularity": {
       "totalRepos": 5920000,
       "totalStars": 39400
@@ -225,7 +309,7 @@
         "stars": 78400
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-dart",
@@ -233,6 +317,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
     "githubUrl": "https://github.com/dart-lang/sdk",
+    "creator": {
+      "name": "Lars Bak & Kasper Lund (Google)",
+      "avatarUrl": "https://github.com/dart-lang.png",
+      "type": "organization",
+      "releaseDate": "10 Ekim 2011",
+      "latestVersion": "v3.7.0"
+    },
     "popularity": {
       "totalRepos": 620000,
       "totalStars": 10200
@@ -244,7 +335,7 @@
         "stars": 166000
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-ruby",
@@ -252,6 +343,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
     "githubUrl": "https://github.com/ruby/ruby",
+    "creator": {
+      "name": "Yukihiro Matsumoto (Matz)",
+      "avatarUrl": "https://github.com/matz.png",
+      "type": "person",
+      "releaseDate": "21 Aralık 1995",
+      "latestVersion": "v3.4.2"
+    },
     "popularity": {
       "totalRepos": 2180000,
       "totalStars": 22400
@@ -263,7 +361,7 @@
         "stars": 55800
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   },
   {
     "id": "lang-sql",
@@ -271,6 +369,13 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     "githubUrl": "https://github.com/postgres/postgres",
+    "creator": {
+      "name": "Donald D. Chamberlin (IBM)",
+      "avatarUrl": "https://github.com/postgres.png",
+      "type": "person",
+      "releaseDate": "1974",
+      "latestVersion": "SQL:2023 Standard"
+    },
     "popularity": {
       "totalRepos": 1890000,
       "totalStars": 16400
@@ -282,6 +387,6 @@
         "stars": 75200
       }
     },
-    "lastUpdated": "2026-10-01T06:00:00.000Z"
+    "lastUpdated": "2026-10-01T07:00:00.000Z"
   }
 ]

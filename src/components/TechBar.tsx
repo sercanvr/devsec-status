@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Star, GitFork, ExternalLink, TrendingUp, Sparkles } from 'lucide-react';
+import { Star, GitFork, ExternalLink, TrendingUp, Sparkles, Calendar, Tag } from 'lucide-react';
 import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
 
@@ -14,6 +14,9 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
+  const cleanCreatorName = entry.creator ? sanitizeText(entry.creator.name) : '';
+  const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
+  const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : '';
 
   const starPercentage = Math.min(
     100,
@@ -29,8 +32,8 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
       data-testid="tech-bar"
       className="glass-card rounded-2xl p-4 sm:p-5 flex flex-col gap-3 group relative overflow-hidden"
     >
-      {/* Top Row: Icon, Name, Category Badge, GitHub Link */}
-      <div className="flex items-center justify-between gap-3">
+      {/* Top Row: Icon, Name, Creator Info, Category Badge, GitHub Link */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-neutral-200/80 dark:bg-neutral-800 p-2 flex items-center justify-center shrink-0 border border-neutral-300 dark:border-neutral-700/60 group-hover:scale-105 transition-transform duration-200">
             <img
@@ -44,14 +47,50 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
             />
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <h3 className="font-serif font-bold text-base text-foreground group-hover:text-[#CEFF00] transition-colors">
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="font-serif font-bold text-base sm:text-lg text-foreground group-hover:text-[#CEFF00] transition-colors">
                 {cleanName}
               </h3>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 font-semibold border border-neutral-300 dark:border-neutral-700">
                 {entry.category}
               </span>
             </div>
+
+            {/* Educational Creator & Version Metadata Sub-row */}
+            {entry.creator && (
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-neutral-600 dark:text-neutral-400 mt-1">
+                {/* Creator Avatar & Name */}
+                <div className="flex items-center gap-1.5 font-medium">
+                  <img
+                    src={entry.creator.avatarUrl}
+                    alt={cleanCreatorName}
+                    className="w-4 h-4 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.display = 'none';
+                    }}
+                  />
+                  <span className="text-foreground font-semibold">{cleanCreatorName}</span>
+                </div>
+
+                {/* Release Date */}
+                {cleanReleaseDate && (
+                  <div className="flex items-center gap-1 text-[11px] text-neutral-500 dark:text-neutral-400">
+                    <Calendar className="w-3 h-3 text-neutral-400 shrink-0" />
+                    <span>{cleanReleaseDate}</span>
+                  </div>
+                )}
+
+                {/* Latest Version */}
+                {cleanVersion && (
+                  <div className="flex items-center gap-1 text-[11px]">
+                    <Tag className="w-3 h-3 text-[#CEFF00] shrink-0" />
+                    <span className="font-mono bg-neutral-200/70 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-foreground font-semibold">
+                      {cleanVersion}
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
@@ -60,7 +99,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-all flex items-center gap-1 text-xs font-medium shrink-0"
+          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-all flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
           title={t('techBar.viewOnGithub')}
         >
           <span className="hidden sm:inline font-sans">{t('techBar.viewOnGithub')}</span>
@@ -69,7 +108,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
       </div>
 
       {/* Main Bar: Popularity Visual Progress */}
-      <div className="space-y-1.5">
+      <div className="space-y-1.5 mt-1">
         <div className="flex justify-between items-center text-xs text-neutral-600 dark:text-neutral-400">
           <span className="font-medium flex items-center gap-1">
             <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
