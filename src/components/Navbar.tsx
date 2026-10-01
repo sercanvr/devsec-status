@@ -20,9 +20,9 @@ export const Navbar: React.FC = () => {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 p-0.5 shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
             <div className="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center overflow-hidden">
               <img
-                src="/icons/devsec-icon.jpg"
+                src="/icons/devsec-icon.png"
                 alt="DevSec Status"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain p-0.5"
                 onError={(e) => {
                   // Fallback icon if image missing
                   (e.currentTarget as HTMLElement).style.display = 'none';
