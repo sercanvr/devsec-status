@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sec-nmap",
+    "name": "Nmap",
+    "category": "security-tool",
+    "repo": "nmap/nmap",
+    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png"
+  },
+  {
+    "id": "sec-sqlmap",
+    "name": "sqlmap",
+    "category": "security-tool",
+    "repo": "sqlmapproject/sqlmap",
+    "iconUrl": "https://sqlmap.org/favicon.ico"
+  },
+  {
+    "id": "sec-metasploit",
+    "name": "Metasploit Framework",
+    "category": "security-tool",
+    "repo": "rapid7/metasploit-framework",
+    "iconUrl": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/external/source/meterpreter/source/extensions/stdapi/server/stdapi.png"
+  },
+  {
+    "id": "sec-owasp-zap",
+    "name": "OWASP ZAP (Zaproxy)",
+    "category": "security-tool",
+    "repo": "zaproxy/zaproxy",
+    "iconUrl": "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap128x128.png"
+  },
+  {
+    "id": "sec-wireshark",
+    "name": "Wireshark",
+    "category": "security-tool",
+    "repo": "wireshark/wireshark",
+    "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png"
+  },
+  {
+    "id": "sec-john-the-ripper",
+    "name": "John the Ripper",
+    "category": "security-tool",
+    "repo": "openwall/john",
+    "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png"
+  }
+]

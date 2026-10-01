@@ -1,0 +1,37 @@
+[
+  {
+    "id": "fw-react",
+    "name": "React",
+    "category": "framework",
+    "repo": "facebook/react",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": "fw-nextjs",
+    "name": "Next.js",
+    "category": "framework",
+    "repo": "vercel/next.js",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": "fw-fastapi",
+    "name": "FastAPI",
+    "category": "framework",
+    "repo": "fastapi/fastapi",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+  },
+  {
+    "id": "fw-vue",
+    "name": "Vue.js",
+    "category": "framework",
+    "repo": "vuejs/core",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "id": "fw-tailwind",
+    "name": "Tailwind CSS",
+    "category": "library",
+    "repo": "tailwindlabs/tailwindcss",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  }
+]
