@@ -1,0 +1,97 @@
+[
+  {
+    "id": "lang-python",
+    "name": "Python",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "githubUrl": "https://github.com/python/cpython",
+    "popularity": {
+      "totalRepos": 4850000,
+      "totalStars": 62400
+    },
+    "momentum": {
+      "newReposLast30Days": 38200,
+      "topStarredNewRepo": {
+        "name": "deepseek-ai/DeepSeek-V3",
+        "stars": 61200
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "lang-typescript",
+    "name": "TypeScript",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "githubUrl": "https://github.com/microsoft/TypeScript",
+    "popularity": {
+      "totalRepos": 3200000,
+      "totalStars": 103500
+    },
+    "momentum": {
+      "newReposLast30Days": 29400,
+      "topStarredNewRepo": {
+        "name": "browserbase/stagehand",
+        "stars": 12800
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "lang-rust",
+    "name": "Rust",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
+    "githubUrl": "https://github.com/rust-lang/rust",
+    "popularity": {
+      "totalRepos": 890000,
+      "totalStars": 98700
+    },
+    "momentum": {
+      "newReposLast30Days": 14200,
+      "topStarredNewRepo": {
+        "name": "astral-sh/uv",
+        "stars": 34100
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "lang-go",
+    "name": "Go",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    "githubUrl": "https://github.com/golang/go",
+    "popularity": {
+      "totalRepos": 1650000,
+      "totalStars": 124500
+    },
+    "momentum": {
+      "newReposLast30Days": 18500,
+      "topStarredNewRepo": {
+        "name": "ollama/ollama",
+        "stars": 105000
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "lang-javascript",
+    "name": "JavaScript",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "githubUrl": "https://github.com/v8/v8",
+    "popularity": {
+      "totalRepos": 6200000,
+      "totalStars": 24000
+    },
+    "momentum": {
+      "newReposLast30Days": 42000,
+      "topStarredNewRepo": {
+        "name": "shadcn/ui",
+        "stars": 74500
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "software": "Yazılım",
+    "security": "Güvenlik",
+    "themeToggle": "Tema Değiştir",
+    "selectLanguage": "Dil Seçin"
+  },
+  "info": {
+    "software": "Programlama dilleri, popüler framework'ler ve kütüphanelerin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",
+    "security": "En popüler açık kaynak siber güvenlik araçlarının (Nmap, OWASP ZAP, Metasploit, Wireshark vb.) GitHub üzerindeki star trendleri ve topluluk aktivite istatistikleri."
+  },
+  "sections": {
+    "languages": "Programlama Dilleri",
+    "frameworks": "Kütüphane & Framework'ler",
+    "securityTools": "Açık Kaynak Güvenlik Araçları"
+  },
+  "techBar": {
+    "popularity": "Popülerlik",
+    "momentum": "Momentum (30 Gün)",
+    "repos": "Depo",
+    "stars": "Yıldız",
+    "newRepos": "Yeni Depo",
+    "topStarred": "En Çok Yıldız Alan Yeni Depo",
+    "viewOnGithub": "GitHub'da İncele"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır.",
+    "disclaimer": "Veriler GitHub Search API kullanılarak günlük olarak otomatik güncellenmektedir.",
+    "lastUpdated": "Son Güncelleme"
+  },
+  "common": {
+    "scrollToTop": "Yukarı Çık"
+  }
+}

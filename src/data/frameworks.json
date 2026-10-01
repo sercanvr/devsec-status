@@ -1,0 +1,97 @@
+[
+  {
+    "id": "fw-react",
+    "name": "React",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "githubUrl": "https://github.com/facebook/react",
+    "popularity": {
+      "totalRepos": 2980000,
+      "totalStars": 231000
+    },
+    "momentum": {
+      "newReposLast30Days": 24500,
+      "topStarredNewRepo": {
+        "name": "shadcn-ui/ui",
+        "stars": 74500
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "fw-nextjs",
+    "name": "Next.js",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "githubUrl": "https://github.com/vercel/next.js",
+    "popularity": {
+      "totalRepos": 650000,
+      "totalStars": 128500
+    },
+    "momentum": {
+      "newReposLast30Days": 11200,
+      "topStarredNewRepo": {
+        "name": "dubinc/dub",
+        "stars": 18200
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "fw-fastapi",
+    "name": "FastAPI",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    "githubUrl": "https://github.com/fastapi/fastapi",
+    "popularity": {
+      "totalRepos": 195000,
+      "totalStars": 81200
+    },
+    "momentum": {
+      "newReposLast30Days": 4800,
+      "topStarredNewRepo": {
+        "name": "sqlglot/sqlglot",
+        "stars": 7400
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "fw-vue",
+    "name": "Vue.js",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "githubUrl": "https://github.com/vuejs/core",
+    "popularity": {
+      "totalRepos": 850000,
+      "totalStars": 46500
+    },
+    "momentum": {
+      "newReposLast30Days": 6200,
+      "topStarredNewRepo": {
+        "name": "tresjs/tres",
+        "stars": 3900
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "fw-tailwind",
+    "name": "Tailwind CSS",
+    "category": "library",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "githubUrl": "https://github.com/tailwindlabs/tailwindcss",
+    "popularity": {
+      "totalRepos": 1420000,
+      "totalStars": 84500
+    },
+    "momentum": {
+      "newReposLast30Days": 19800,
+      "topStarredNewRepo": {
+        "name": "tailwindlabs/tailwindcss-v4",
+        "stars": 8200
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  }
+]

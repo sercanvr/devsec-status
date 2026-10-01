@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "software": "Software",
+    "security": "Security",
+    "themeToggle": "Toggle Theme",
+    "selectLanguage": "Select Language"
+  },
+  "info": {
+    "software": "Real-time GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, popular frameworks, and libraries.",
+    "security": "GitHub star trends and community activity stats for top open-source cybersecurity tools (Nmap, OWASP ZAP, Metasploit, Wireshark, etc.)."
+  },
+  "sections": {
+    "languages": "Programming Languages",
+    "frameworks": "Libraries & Frameworks",
+    "securityTools": "Open Source Security Tools"
+  },
+  "techBar": {
+    "popularity": "Popularity",
+    "momentum": "Momentum (30 Days)",
+    "repos": "Repos",
+    "stars": "Stars",
+    "newRepos": "New Repos",
+    "topStarred": "Top Starred New Repo",
+    "viewOnGithub": "View on GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "disclaimer": "Data is automatically updated daily via GitHub Search API.",
+    "lastUpdated": "Last Updated"
+  },
+  "common": {
+    "scrollToTop": "Scroll to Top"
+  }
+}

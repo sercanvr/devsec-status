@@ -1,0 +1,113 @@
+[
+  {
+    "id": "sec-nmap",
+    "name": "Nmap",
+    "category": "security-tool",
+    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png",
+    "githubUrl": "https://github.com/nmap/nmap",
+    "popularity": {
+      "totalRepos": 42000,
+      "totalStars": 10500
+    },
+    "momentum": {
+      "newReposLast30Days": 680,
+      "topStarredNewRepo": {
+        "name": "nmap/nmap-scripts-2026",
+        "stars": 450
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "sec-sqlmap",
+    "name": "sqlmap",
+    "category": "security-tool",
+    "iconUrl": "https://sqlmap.org/favicon.ico",
+    "githubUrl": "https://github.com/sqlmapproject/sqlmap",
+    "popularity": {
+      "totalRepos": 38000,
+      "totalStars": 32800
+    },
+    "momentum": {
+      "newReposLast30Days": 420,
+      "topStarredNewRepo": {
+        "name": "sqlmapproject/sqlmap-gui",
+        "stars": 1200
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "sec-metasploit",
+    "name": "Metasploit Framework",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/external/source/meterpreter/source/extensions/stdapi/server/stdapi.png",
+    "githubUrl": "https://github.com/rapid7/metasploit-framework",
+    "popularity": {
+      "totalRepos": 85000,
+      "totalStars": 35400
+    },
+    "momentum": {
+      "newReposLast30Days": 950,
+      "topStarredNewRepo": {
+        "name": "rapid7/metasploit-payloads",
+        "stars": 890
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "sec-owasp-zap",
+    "name": "OWASP ZAP (Zaproxy)",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap128x128.png",
+    "githubUrl": "https://github.com/zaproxy/zaproxy",
+    "popularity": {
+      "totalRepos": 18500,
+      "totalStars": 12600
+    },
+    "momentum": {
+      "newReposLast30Days": 310,
+      "topStarredNewRepo": {
+        "name": "zaproxy/zap-extensions",
+        "stars": 620
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "sec-wireshark",
+    "name": "Wireshark",
+    "category": "security-tool",
+    "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png",
+    "githubUrl": "https://github.com/wireshark/wireshark",
+    "popularity": {
+      "totalRepos": 27000,
+      "totalStars": 7800
+    },
+    "momentum": {
+      "newReposLast30Days": 290,
+      "topStarredNewRepo": {
+        "name": "wireshark/plugins-lua",
+        "stars": 340
+      }
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  },
+  {
+    "id": "sec-john-the-ripper",
+    "name": "John the Ripper",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png",
+    "githubUrl": "https://github.com/openwall/john",
+    "popularity": {
+      "totalRepos": 14000,
+      "totalStars": 9200
+    },
+    "momentum": {
+      "newReposLast30Days": 180,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T00:00:00.000Z"
+  }
+]
