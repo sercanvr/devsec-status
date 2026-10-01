@@ -13,12 +13,23 @@ export default {
       'xl': '1920px',  // Desktop breakpoint
     },
     extend: {
+      fontFamily: {
+        serif: ['Libre Baskerville', 'Georgia', 'serif'],
+        sans: ['Inter Tight', 'Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        paragraph: "hsl(var(--paragraph))",
+        brand: {
+          accent: "#CEFF00",
+          dark: "#141414",
+          light: "#ECECEC",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

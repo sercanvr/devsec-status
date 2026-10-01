@@ -32,13 +32,12 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
       {/* Top Row: Icon, Name, Category Badge, GitHub Link */}
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 p-2 flex items-center justify-center shrink-0 border border-slate-200 dark:border-slate-700/60 group-hover:scale-105 transition-transform duration-200">
+          <div className="w-10 h-10 rounded-xl bg-neutral-200/80 dark:bg-neutral-800 p-2 flex items-center justify-center shrink-0 border border-neutral-300 dark:border-neutral-700/60 group-hover:scale-105 transition-transform duration-200">
             <img
               src={entry.iconUrl}
               alt={cleanName}
               className="w-6 h-6 object-contain"
               onError={(e) => {
-                // Fallback icon if image breaks
                 (e.currentTarget as HTMLImageElement).src =
                   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
               }}
@@ -46,10 +45,10 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="font-bold text-base text-slate-900 dark:text-slate-100 group-hover:text-cyan-500 transition-colors">
+              <h3 className="font-serif font-bold text-base text-foreground group-hover:text-[#CEFF00] transition-colors">
                 {cleanName}
               </h3>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-semibold border border-slate-200 dark:border-slate-700">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 font-semibold border border-neutral-300 dark:border-neutral-700">
                 {entry.category}
               </span>
             </div>
@@ -61,51 +60,51 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl text-slate-400 hover:text-cyan-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all flex items-center gap-1 text-xs font-medium shrink-0"
+          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-all flex items-center gap-1 text-xs font-medium shrink-0"
           title={t('techBar.viewOnGithub')}
         >
-          <span className="hidden sm:inline">{t('techBar.viewOnGithub')}</span>
+          <span className="hidden sm:inline font-sans">{t('techBar.viewOnGithub')}</span>
           <ExternalLink className="w-4 h-4" />
         </a>
       </div>
 
       {/* Main Bar: Popularity Visual Progress */}
       <div className="space-y-1.5">
-        <div className="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400">
+        <div className="flex justify-between items-center text-xs text-neutral-600 dark:text-neutral-400">
           <span className="font-medium flex items-center gap-1">
             <Star className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-            {t('techBar.popularity')}: <strong className="text-slate-800 dark:text-slate-200 font-mono">{formattedStars}</strong> {t('techBar.stars')}
+            {t('techBar.popularity')}: <strong className="text-foreground font-mono">{formattedStars}</strong> {t('techBar.stars')}
           </span>
-          <span className="font-mono text-slate-400 flex items-center gap-1">
+          <span className="font-mono text-neutral-500 dark:text-neutral-400 flex items-center gap-1">
             <GitFork className="w-3 h-3" />
             {formattedRepos} {t('techBar.repos')}
           </span>
         </div>
 
         {/* Bar Graphic */}
-        <div className="h-3 w-full bg-slate-100 dark:bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-slate-200/50 dark:border-slate-800">
+        <div className="h-3 w-full bg-neutral-200/90 dark:bg-neutral-800/90 rounded-full overflow-hidden p-0.5 border border-neutral-300/60 dark:border-neutral-700/80">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-emerald-400 transition-all duration-700 ease-out shadow-sm shadow-cyan-500/50"
+            className="h-full rounded-full bg-[#CEFF00] transition-all duration-700 ease-out shadow-sm shadow-[#CEFF00]/50"
             style={{ width: `${starPercentage}%` }}
           />
         </div>
       </div>
 
       {/* Bottom Row: Momentum Metrics */}
-      <div className="flex flex-wrap items-center justify-between text-xs pt-1 border-t border-slate-100 dark:border-slate-800/60 gap-2">
-        <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-medium">
-          <TrendingUp className="w-3.5 h-3.5" />
+      <div className="flex flex-wrap items-center justify-between text-xs pt-1 border-t border-neutral-200 dark:border-neutral-800/80 gap-2">
+        <div className="flex items-center gap-1.5 text-foreground dark:text-[#CEFF00] font-medium">
+          <TrendingUp className="w-3.5 h-3.5 text-[#CEFF00]" />
           <span>{t('techBar.momentum')}:</span>
-          <span className="font-mono font-bold bg-emerald-500/10 dark:bg-emerald-500/20 px-2 py-0.5 rounded-md">
+          <span className="font-mono font-bold bg-[#CEFF00]/20 text-neutral-900 dark:text-[#CEFF00] px-2 py-0.5 rounded-md border border-[#CEFF00]/30">
             +{formattedNewRepos} {t('techBar.newRepos')}
           </span>
         </div>
 
         {entry.momentum.topStarredNewRepo && (
-          <div className="flex items-center gap-1 text-slate-500 dark:text-slate-400 text-[11px] truncate max-w-full">
+          <div className="flex items-center gap-1 text-neutral-600 dark:text-neutral-400 text-[11px] truncate max-w-full">
             <Sparkles className="w-3 h-3 text-amber-400 shrink-0" />
             <span className="truncate">
-              {t('techBar.topStarred')}: <strong className="text-slate-700 dark:text-slate-300 font-mono">{sanitizeText(entry.momentum.topStarredNewRepo.name)}</strong> ({entry.momentum.topStarredNewRepo.stars} ★)
+              {t('techBar.topStarred')}: <strong className="text-foreground font-mono">{sanitizeText(entry.momentum.topStarredNewRepo.name)}</strong> ({entry.momentum.topStarredNewRepo.stars} ★)
             </span>
           </div>
         )}

@@ -17,12 +17,12 @@ export const TechSection: React.FC<TechSectionProps> = ({ title, icon, entries }
 
   return (
     <section className="w-full py-6 space-y-4">
-      <div className="flex items-center gap-2.5 pb-2 border-b border-slate-200 dark:border-slate-800">
-        {icon && <div className="text-cyan-500">{icon}</div>}
-        <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
+      <div className="flex items-center gap-2.5 pb-2 border-b border-neutral-300 dark:border-neutral-800">
+        {icon && <div className="text-[#CEFF00]">{icon}</div>}
+        <h2 className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-foreground">
           {cleanTitle}
         </h2>
-        <span className="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">
+        <span className="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#CEFF00]/20 text-neutral-900 dark:text-[#CEFF00] border border-[#CEFF00]/30">
           {entries.length}
         </span>
       </div>
