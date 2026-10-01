@@ -1,41 +1,22 @@
 [
   {
-    "id": "sec-nmap",
-    "name": "Nmap",
+    "id": "sec-ghidra",
+    "name": "Ghidra",
     "category": "security-tool",
-    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png",
-    "githubUrl": "https://github.com/nmap/nmap",
+    "iconUrl": "https://ghidra-sre.org/images/GHIDRA_128.png",
+    "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
     "popularity": {
-      "totalRepos": 42000,
-      "totalStars": 10500
+      "totalRepos": 18200,
+      "totalStars": 53400
     },
     "momentum": {
-      "newReposLast30Days": 680,
+      "newReposLast30Days": 380,
       "topStarredNewRepo": {
-        "name": "nmap/nmap-scripts-2026",
-        "stars": 450
+        "name": "NationalSecurityAgency/ghidra-plugins",
+        "stars": 1420
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "sec-sqlmap",
-    "name": "sqlmap",
-    "category": "security-tool",
-    "iconUrl": "https://sqlmap.org/favicon.ico",
-    "githubUrl": "https://github.com/sqlmapproject/sqlmap",
-    "popularity": {
-      "totalRepos": 38000,
-      "totalStars": 32800
-    },
-    "momentum": {
-      "newReposLast30Days": 420,
-      "topStarredNewRepo": {
-        "name": "sqlmapproject/sqlmap-gui",
-        "stars": 1200
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "sec-metasploit",
@@ -45,16 +26,108 @@
     "githubUrl": "https://github.com/rapid7/metasploit-framework",
     "popularity": {
       "totalRepos": 85000,
-      "totalStars": 35400
+      "totalStars": 35800
     },
     "momentum": {
       "newReposLast30Days": 950,
       "topStarredNewRepo": {
         "name": "rapid7/metasploit-payloads",
-        "stars": 890
+        "stars": 980
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-sqlmap",
+    "name": "sqlmap",
+    "category": "security-tool",
+    "iconUrl": "https://sqlmap.org/favicon.ico",
+    "githubUrl": "https://github.com/sqlmapproject/sqlmap",
+    "popularity": {
+      "totalRepos": 38000,
+      "totalStars": 33500
+    },
+    "momentum": {
+      "newReposLast30Days": 420,
+      "topStarredNewRepo": {
+        "name": "sqlmapproject/sqlmap-gui",
+        "stars": 1450
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-trivy",
+    "name": "Trivy",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png",
+    "githubUrl": "https://github.com/aquasecurity/trivy",
+    "popularity": {
+      "totalRepos": 16400,
+      "totalStars": 24200
+    },
+    "momentum": {
+      "newReposLast30Days": 540,
+      "topStarredNewRepo": {
+        "name": "aquasecurity/trivy-operator",
+        "stars": 1850
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-nuclei",
+    "name": "Nuclei",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/projectdiscovery/nuclei/main/static/nuclei-logo.png",
+    "githubUrl": "https://github.com/projectdiscovery/nuclei",
+    "popularity": {
+      "totalRepos": 28500,
+      "totalStars": 21800
+    },
+    "momentum": {
+      "newReposLast30Days": 1280,
+      "topStarredNewRepo": {
+        "name": "projectdiscovery/nuclei-templates",
+        "stars": 11400
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-hashcat",
+    "name": "Hashcat",
+    "category": "security-tool",
+    "iconUrl": "https://hashcat.net/favicon.ico",
+    "githubUrl": "https://github.com/hashcat/hashcat",
+    "popularity": {
+      "totalRepos": 24100,
+      "totalStars": 21200
+    },
+    "momentum": {
+      "newReposLast30Days": 490,
+      "topStarredNewRepo": {
+        "name": "hashcat/hashcat-utils",
+        "stars": 920
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-trufflehog",
+    "name": "TruffleHog",
+    "category": "security-tool",
+    "iconUrl": "https://trufflesecurity.com/favicon.ico",
+    "githubUrl": "https://github.com/trufflesecurity/trufflehog",
+    "popularity": {
+      "totalRepos": 12800,
+      "totalStars": 16800
+    },
+    "momentum": {
+      "newReposLast30Days": 360,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "sec-owasp-zap",
@@ -64,7 +137,7 @@
     "githubUrl": "https://github.com/zaproxy/zaproxy",
     "popularity": {
       "totalRepos": 18500,
-      "totalStars": 12600
+      "totalStars": 12800
     },
     "momentum": {
       "newReposLast30Days": 310,
@@ -73,26 +146,26 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
-    "id": "sec-wireshark",
-    "name": "Wireshark",
+    "id": "sec-nmap",
+    "name": "Nmap",
     "category": "security-tool",
-    "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png",
-    "githubUrl": "https://github.com/wireshark/wireshark",
+    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png",
+    "githubUrl": "https://github.com/nmap/nmap",
     "popularity": {
-      "totalRepos": 27000,
-      "totalStars": 7800
+      "totalRepos": 42000,
+      "totalStars": 10800
     },
     "momentum": {
-      "newReposLast30Days": 290,
+      "newReposLast30Days": 680,
       "topStarredNewRepo": {
-        "name": "wireshark/plugins-lua",
-        "stars": 340
+        "name": "nmap/nmap-scripts-2026",
+        "stars": 450
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "sec-john-the-ripper",
@@ -102,12 +175,47 @@
     "githubUrl": "https://github.com/openwall/john",
     "popularity": {
       "totalRepos": 14000,
-      "totalStars": 9200
+      "totalStars": 9400
     },
     "momentum": {
       "newReposLast30Days": 180,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-wireshark",
+    "name": "Wireshark",
+    "category": "security-tool",
+    "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png",
+    "githubUrl": "https://github.com/wireshark/wireshark",
+    "popularity": {
+      "totalRepos": 27000,
+      "totalStars": 7900
+    },
+    "momentum": {
+      "newReposLast30Days": 290,
+      "topStarredNewRepo": {
+        "name": "wireshark/plugins-lua",
+        "stars": 340
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "sec-volatility",
+    "name": "Volatility 3",
+    "category": "security-tool",
+    "iconUrl": "https://raw.githubusercontent.com/volatilityfoundation/volatility3/main/doc/source/_static/favicon.ico",
+    "githubUrl": "https://github.com/volatilityfoundation/volatility3",
+    "popularity": {
+      "totalRepos": 9400,
+      "totalStars": 3600
+    },
+    "momentum": {
+      "newReposLast30Days": 140,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   }
 ]

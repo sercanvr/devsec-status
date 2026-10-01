@@ -6,55 +6,17 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "githubUrl": "https://github.com/facebook/react",
     "popularity": {
-      "totalRepos": 2980000,
-      "totalStars": 231000
+      "totalRepos": 3250000,
+      "totalStars": 234200
     },
     "momentum": {
-      "newReposLast30Days": 24500,
+      "newReposLast30Days": 28500,
       "topStarredNewRepo": {
         "name": "shadcn-ui/ui",
-        "stars": 74500
+        "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "fw-nextjs",
-    "name": "Next.js",
-    "category": "framework",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    "githubUrl": "https://github.com/vercel/next.js",
-    "popularity": {
-      "totalRepos": 650000,
-      "totalStars": 128500
-    },
-    "momentum": {
-      "newReposLast30Days": 11200,
-      "topStarredNewRepo": {
-        "name": "dubinc/dub",
-        "stars": 18200
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "fw-fastapi",
-    "name": "FastAPI",
-    "category": "framework",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
-    "githubUrl": "https://github.com/fastapi/fastapi",
-    "popularity": {
-      "totalRepos": 195000,
-      "totalStars": 81200
-    },
-    "momentum": {
-      "newReposLast30Days": 4800,
-      "topStarredNewRepo": {
-        "name": "sqlglot/sqlglot",
-        "stars": 7400
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "fw-vue",
@@ -63,17 +25,74 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     "githubUrl": "https://github.com/vuejs/core",
     "popularity": {
-      "totalRepos": 850000,
-      "totalStars": 46500
+      "totalRepos": 980000,
+      "totalStars": 208500
     },
     "momentum": {
-      "newReposLast30Days": 6200,
+      "newReposLast30Days": 7400,
       "topStarredNewRepo": {
         "name": "tresjs/tres",
-        "stars": 3900
+        "stars": 4200
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-nextjs",
+    "name": "Next.js",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "githubUrl": "https://github.com/vercel/next.js",
+    "popularity": {
+      "totalRepos": 780000,
+      "totalStars": 128800
+    },
+    "momentum": {
+      "newReposLast30Days": 14200,
+      "topStarredNewRepo": {
+        "name": "dubinc/dub",
+        "stars": 19800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-react-native",
+    "name": "React Native",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "githubUrl": "https://github.com/facebook/react-native",
+    "popularity": {
+      "totalRepos": 412000,
+      "totalStars": 121500
+    },
+    "momentum": {
+      "newReposLast30Days": 6800,
+      "topStarredNewRepo": {
+        "name": "expo/expo",
+        "stars": 34800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-angular",
+    "name": "Angular",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+    "githubUrl": "https://github.com/angular/angular",
+    "popularity": {
+      "totalRepos": 650000,
+      "totalStars": 97400
+    },
+    "momentum": {
+      "newReposLast30Days": 5800,
+      "topStarredNewRepo": {
+        "name": "analogjs/analog",
+        "stars": 4800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "fw-tailwind",
@@ -82,16 +101,111 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     "githubUrl": "https://github.com/tailwindlabs/tailwindcss",
     "popularity": {
-      "totalRepos": 1420000,
-      "totalStars": 84500
+      "totalRepos": 1680000,
+      "totalStars": 87200
     },
     "momentum": {
-      "newReposLast30Days": 19800,
+      "newReposLast30Days": 21400,
       "topStarredNewRepo": {
         "name": "tailwindlabs/tailwindcss-v4",
-        "stars": 8200
+        "stars": 9800
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-fastapi",
+    "name": "FastAPI",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    "githubUrl": "https://github.com/fastapi/fastapi",
+    "popularity": {
+      "totalRepos": 248000,
+      "totalStars": 83600
+    },
+    "momentum": {
+      "newReposLast30Days": 6200,
+      "topStarredNewRepo": {
+        "name": "sqlglot/sqlglot",
+        "stars": 8900
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-svelte",
+    "name": "Svelte",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+    "githubUrl": "https://github.com/sveltejs/svelte",
+    "popularity": {
+      "totalRepos": 195000,
+      "totalStars": 81400
+    },
+    "momentum": {
+      "newReposLast30Days": 3800,
+      "topStarredNewRepo": {
+        "name": "sveltejs/kit",
+        "stars": 17800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-nestjs",
+    "name": "NestJS",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
+    "githubUrl": "https://github.com/nestjs/nest",
+    "popularity": {
+      "totalRepos": 142000,
+      "totalStars": 72800
+    },
+    "momentum": {
+      "newReposLast30Days": 3200,
+      "topStarredNewRepo": {
+        "name": "nestjs/swagger",
+        "stars": 4900
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-dotnet",
+    "name": ".NET Runtime",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+    "githubUrl": "https://github.com/dotnet/runtime",
+    "popularity": {
+      "totalRepos": 890000,
+      "totalStars": 17400
+    },
+    "momentum": {
+      "newReposLast30Days": 8400,
+      "topStarredNewRepo": {
+        "name": "dotnet/aspnetcore",
+        "stars": 36800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "fw-android",
+    "name": "Android Jetpack",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+    "githubUrl": "https://github.com/androidx/androidx",
+    "popularity": {
+      "totalRepos": 1250000,
+      "totalStars": 3800
+    },
+    "momentum": {
+      "newReposLast30Days": 11500,
+      "topStarredNewRepo": {
+        "name": "android/architecture-samples",
+        "stars": 44500
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   }
 ]

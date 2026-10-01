@@ -1,17 +1,10 @@
 [
   {
-    "id": "sec-nmap",
-    "name": "Nmap",
+    "id": "sec-ghidra",
+    "name": "Ghidra",
     "category": "security-tool",
-    "repo": "nmap/nmap",
-    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png"
-  },
-  {
-    "id": "sec-sqlmap",
-    "name": "sqlmap",
-    "category": "security-tool",
-    "repo": "sqlmapproject/sqlmap",
-    "iconUrl": "https://sqlmap.org/favicon.ico"
+    "repo": "NationalSecurityAgency/ghidra",
+    "iconUrl": "https://ghidra-sre.org/images/GHIDRA_128.png"
   },
   {
     "id": "sec-metasploit",
@@ -21,11 +14,60 @@
     "iconUrl": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/external/source/meterpreter/source/extensions/stdapi/server/stdapi.png"
   },
   {
+    "id": "sec-sqlmap",
+    "name": "sqlmap",
+    "category": "security-tool",
+    "repo": "sqlmapproject/sqlmap",
+    "iconUrl": "https://sqlmap.org/favicon.ico"
+  },
+  {
+    "id": "sec-trivy",
+    "name": "Trivy",
+    "category": "security-tool",
+    "repo": "aquasecurity/trivy",
+    "iconUrl": "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png"
+  },
+  {
+    "id": "sec-nuclei",
+    "name": "Nuclei",
+    "category": "security-tool",
+    "repo": "projectdiscovery/nuclei",
+    "iconUrl": "https://raw.githubusercontent.com/projectdiscovery/nuclei/main/static/nuclei-logo.png"
+  },
+  {
+    "id": "sec-hashcat",
+    "name": "Hashcat",
+    "category": "security-tool",
+    "repo": "hashcat/hashcat",
+    "iconUrl": "https://hashcat.net/favicon.ico"
+  },
+  {
+    "id": "sec-trufflehog",
+    "name": "TruffleHog",
+    "category": "security-tool",
+    "repo": "trufflesecurity/trufflehog",
+    "iconUrl": "https://trufflesecurity.com/favicon.ico"
+  },
+  {
     "id": "sec-owasp-zap",
     "name": "OWASP ZAP (Zaproxy)",
     "category": "security-tool",
     "repo": "zaproxy/zaproxy",
     "iconUrl": "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap128x128.png"
+  },
+  {
+    "id": "sec-nmap",
+    "name": "Nmap",
+    "category": "security-tool",
+    "repo": "nmap/nmap",
+    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png"
+  },
+  {
+    "id": "sec-john-the-ripper",
+    "name": "John the Ripper",
+    "category": "security-tool",
+    "repo": "openwall/john",
+    "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png"
   },
   {
     "id": "sec-wireshark",
@@ -35,10 +77,10 @@
     "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png"
   },
   {
-    "id": "sec-john-the-ripper",
-    "name": "John the Ripper",
+    "id": "sec-volatility",
+    "name": "Volatility 3",
     "category": "security-tool",
-    "repo": "openwall/john",
-    "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png"
+    "repo": "volatilityfoundation/volatility3",
+    "iconUrl": "https://raw.githubusercontent.com/volatilityfoundation/volatility3/main/doc/source/_static/favicon.ico"
   }
 ]

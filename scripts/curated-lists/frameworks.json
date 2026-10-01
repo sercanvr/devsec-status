@@ -7,6 +7,13 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
   },
   {
+    "id": "fw-react-native",
+    "name": "React Native",
+    "category": "framework",
+    "repo": "facebook/react-native",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
     "id": "fw-nextjs",
     "name": "Next.js",
     "category": "framework",
@@ -14,11 +21,11 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
   },
   {
-    "id": "fw-fastapi",
-    "name": "FastAPI",
+    "id": "fw-angular",
+    "name": "Angular",
     "category": "framework",
-    "repo": "fastapi/fastapi",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+    "repo": "angular/angular",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
   },
   {
     "id": "fw-vue",
@@ -28,10 +35,45 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
   },
   {
+    "id": "fw-svelte",
+    "name": "Svelte",
+    "category": "framework",
+    "repo": "sveltejs/svelte",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+  },
+  {
+    "id": "fw-nestjs",
+    "name": "NestJS",
+    "category": "framework",
+    "repo": "nestjs/nest",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+  },
+  {
+    "id": "fw-fastapi",
+    "name": "FastAPI",
+    "category": "framework",
+    "repo": "fastapi/fastapi",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+  },
+  {
+    "id": "fw-dotnet",
+    "name": ".NET Runtime",
+    "category": "framework",
+    "repo": "dotnet/runtime",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+  },
+  {
     "id": "fw-tailwind",
     "name": "Tailwind CSS",
     "category": "library",
     "repo": "tailwindlabs/tailwindcss",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "id": "fw-android",
+    "name": "Android Jetpack",
+    "category": "framework",
+    "repo": "androidx/androidx",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
   }
 ]

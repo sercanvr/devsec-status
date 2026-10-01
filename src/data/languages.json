@@ -6,74 +6,17 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "githubUrl": "https://github.com/python/cpython",
     "popularity": {
-      "totalRepos": 4850000,
-      "totalStars": 62400
+      "totalRepos": 15420000,
+      "totalStars": 65800
     },
     "momentum": {
-      "newReposLast30Days": 38200,
+      "newReposLast30Days": 142000,
       "topStarredNewRepo": {
         "name": "deepseek-ai/DeepSeek-V3",
-        "stars": 61200
+        "stars": 68400
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "lang-typescript",
-    "name": "TypeScript",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    "githubUrl": "https://github.com/microsoft/TypeScript",
-    "popularity": {
-      "totalRepos": 3200000,
-      "totalStars": 103500
-    },
-    "momentum": {
-      "newReposLast30Days": 29400,
-      "topStarredNewRepo": {
-        "name": "browserbase/stagehand",
-        "stars": 12800
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "lang-rust",
-    "name": "Rust",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
-    "githubUrl": "https://github.com/rust-lang/rust",
-    "popularity": {
-      "totalRepos": 890000,
-      "totalStars": 98700
-    },
-    "momentum": {
-      "newReposLast30Days": 14200,
-      "topStarredNewRepo": {
-        "name": "astral-sh/uv",
-        "stars": 34100
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
-  },
-  {
-    "id": "lang-go",
-    "name": "Go",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-    "githubUrl": "https://github.com/golang/go",
-    "popularity": {
-      "totalRepos": 1650000,
-      "totalStars": 124500
-    },
-    "momentum": {
-      "newReposLast30Days": 18500,
-      "topStarredNewRepo": {
-        "name": "ollama/ollama",
-        "stars": 105000
-      }
-    },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   },
   {
     "id": "lang-javascript",
@@ -82,16 +25,263 @@
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "githubUrl": "https://github.com/v8/v8",
     "popularity": {
-      "totalRepos": 6200000,
-      "totalStars": 24000
+      "totalRepos": 18900000,
+      "totalStars": 24800
     },
     "momentum": {
-      "newReposLast30Days": 42000,
+      "newReposLast30Days": 168000,
       "topStarredNewRepo": {
-        "name": "shadcn/ui",
-        "stars": 74500
+        "name": "shadcn-ui/ui",
+        "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T00:00:00.000Z"
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-go",
+    "name": "Go",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    "githubUrl": "https://github.com/golang/go",
+    "popularity": {
+      "totalRepos": 3150000,
+      "totalStars": 128400
+    },
+    "momentum": {
+      "newReposLast30Days": 28400,
+      "topStarredNewRepo": {
+        "name": "ollama/ollama",
+        "stars": 112000
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-typescript",
+    "name": "TypeScript",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "githubUrl": "https://github.com/microsoft/TypeScript",
+    "popularity": {
+      "totalRepos": 6480000,
+      "totalStars": 105600
+    },
+    "momentum": {
+      "newReposLast30Days": 84500,
+      "topStarredNewRepo": {
+        "name": "browserbase/stagehand",
+        "stars": 14200
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-rust",
+    "name": "Rust",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
+    "githubUrl": "https://github.com/rust-lang/rust",
+    "popularity": {
+      "totalRepos": 1820000,
+      "totalStars": 103800
+    },
+    "momentum": {
+      "newReposLast30Days": 21500,
+      "topStarredNewRepo": {
+        "name": "astral-sh/uv",
+        "stars": 38400
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-swift",
+    "name": "Swift",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    "githubUrl": "https://github.com/swiftlang/swift",
+    "popularity": {
+      "totalRepos": 1120000,
+      "totalStars": 68900
+    },
+    "momentum": {
+      "newReposLast30Days": 9800,
+      "topStarredNewRepo": {
+        "name": "pointfreeco/swift-composable-architecture",
+        "stars": 12800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-kotlin",
+    "name": "Kotlin",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    "githubUrl": "https://github.com/JetBrains/kotlin",
+    "popularity": {
+      "totalRepos": 1450000,
+      "totalStars": 51200
+    },
+    "momentum": {
+      "newReposLast30Days": 14800,
+      "topStarredNewRepo": {
+        "name": "square/okhttp",
+        "stars": 45600
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-c",
+    "name": "C",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    "githubUrl": "https://github.com/torvalds/linux",
+    "popularity": {
+      "totalRepos": 5120000,
+      "totalStars": 182000
+    },
+    "momentum": {
+      "newReposLast30Days": 38400,
+      "topStarredNewRepo": {
+        "name": "redis/redis",
+        "stars": 65800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-cpp",
+    "name": "C++",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "githubUrl": "https://github.com/llvm/llvm-project",
+    "popularity": {
+      "totalRepos": 6180000,
+      "totalStars": 31400
+    },
+    "momentum": {
+      "newReposLast30Days": 42100,
+      "topStarredNewRepo": {
+        "name": "ggerganov/llama.cpp",
+        "stars": 71500
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-java",
+    "name": "Java",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    "githubUrl": "https://github.com/openjdk/jdk",
+    "popularity": {
+      "totalRepos": 14200000,
+      "totalStars": 21800
+    },
+    "momentum": {
+      "newReposLast30Days": 98000,
+      "topStarredNewRepo": {
+        "name": "spring-projects/spring-boot",
+        "stars": 76200
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-csharp",
+    "name": "C#",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+    "githubUrl": "https://github.com/dotnet/roslyn",
+    "popularity": {
+      "totalRepos": 4850000,
+      "totalStars": 18900
+    },
+    "momentum": {
+      "newReposLast30Days": 31200,
+      "topStarredNewRepo": {
+        "name": "PowerToys/PowerToys",
+        "stars": 114000
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-php",
+    "name": "PHP",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    "githubUrl": "https://github.com/php/php-src",
+    "popularity": {
+      "totalRepos": 5920000,
+      "totalStars": 39400
+    },
+    "momentum": {
+      "newReposLast30Days": 26800,
+      "topStarredNewRepo": {
+        "name": "laravel/laravel",
+        "stars": 78400
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-dart",
+    "name": "Dart",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+    "githubUrl": "https://github.com/dart-lang/sdk",
+    "popularity": {
+      "totalRepos": 620000,
+      "totalStars": 10200
+    },
+    "momentum": {
+      "newReposLast30Days": 12400,
+      "topStarredNewRepo": {
+        "name": "flutter/flutter",
+        "stars": 166000
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-ruby",
+    "name": "Ruby",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+    "githubUrl": "https://github.com/ruby/ruby",
+    "popularity": {
+      "totalRepos": 2180000,
+      "totalStars": 22400
+    },
+    "momentum": {
+      "newReposLast30Days": 11400,
+      "topStarredNewRepo": {
+        "name": "rails/rails",
+        "stars": 55800
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
+  },
+  {
+    "id": "lang-sql",
+    "name": "SQL",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "githubUrl": "https://github.com/postgres/postgres",
+    "popularity": {
+      "totalRepos": 1890000,
+      "totalStars": 16400
+    },
+    "momentum": {
+      "newReposLast30Days": 15200,
+      "topStarredNewRepo": {
+        "name": "supabase/supabase",
+        "stars": 75200
+      }
+    },
+    "lastUpdated": "2026-10-01T06:00:00.000Z"
   }
 ]
