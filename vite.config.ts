@@ -11,9 +11,40 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    host: true, // Mobil erişim için şart
+    open: true,
+    port: 5173,
+    strictPort: true,
+    hmr: {
+      clientPort: 5173, // Mobilde anlık yenileme için şart
+    },
+    watch: {
+      usePolling: true,
+    },
+  },
+  // TEST CONFIGURATION
   test: {
     globals: true,
     environment: 'jsdom',
     setupFiles: './tests/setup.ts',
+    css: true,
+  },
+  // PERFORMANCE OPTIMIZATIONS
+  build: {
+    target: 'esnext', // Modern tarayıcılar için optimize et
+    minify: 'esbuild', // En hızlı sıkıştırma
+    cssCodeSplit: true, // CSS'i parçalara böl
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // React ve diğer kütüphaneleri ayrı paketle (Daha hızlı açılış)
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
   },
 });
