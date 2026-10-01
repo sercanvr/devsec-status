@@ -6,13 +6,14 @@
     "selectLanguage": "Dil Seçin"
   },
   "info": {
-    "software": "Programlama dilleri, popüler framework'ler ve kütüphanelerin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",
-    "security": "En popüler açık kaynak siber güvenlik araçlarının (Nmap, OWASP ZAP, Metasploit, Wireshark vb.) GitHub üzerindeki star trendleri ve topluluk aktivite istatistikleri."
+    "software": "Programlama dilleri, popüler framework'ler, kütüphaneler ve veritabanı teknolojilerinin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",
+    "security": "En popüler açık kaynak siber güvenlik araçlarının ve framework'lerinin (Ghidra, Metasploit, Nmap, OWASP ZAP vb.) GitHub üzerindeki star trendleri ve topluluk aktivite istatistikleri. Bu araçlar etik ve yasal sınırlar dahilinde (siber güvenlik araştırmaları, sızma testleri, CTF yarışmaları ve sistem savunması) kullanım için geliştiricilere ve araştırmacılara yönelik bilgilendirme amaçlıdır."
   },
   "sections": {
     "languages": "Programlama Dilleri",
     "frameworks": "Kütüphane & Framework'ler",
-    "securityTools": "Açık Kaynak Güvenlik Araçları"
+    "databases": "Veritabanı Teknolojileri",
+    "securityTools": "Açık Kaynak Güvenlik Araçları & Framework'ler"
   },
   "techBar": {
     "popularity": "Popülerlik",
@@ -26,9 +27,24 @@
     "releaseDate": "Çıkış Tarihi",
     "latestVersion": "Güncel Sürüm"
   },
+  "categories": {
+    "language": "Language",
+    "superset": "Superset",
+    "query-language": "Query Language",
+    "framework": "Framework",
+    "library": "Library",
+    "css-framework": "CSS Framework",
+    "runtime": "Runtime",
+    "rdbms": "RDBMS",
+    "nosql": "NoSQL",
+    "search-engine": "Search Engine",
+    "baas": "BaaS",
+    "security-tool": "Security Tool",
+    "security-framework": "Security Framework"
+  },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
-    "disclaimer": "Veriler GitHub Search API kullanılarak günlük olarak otomatik güncellenmektedir.",
+    "disclaimer": "Veriler GitHub Search API ve resmi veri tabanları kullanılarak günlük olarak otomatik güncellenmektedir.",
     "lastUpdated": "Son Güncelleme"
   },
   "common": {

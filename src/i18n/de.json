@@ -6,13 +6,14 @@
     "selectLanguage": "Sprache wählen"
   },
   "info": {
-    "software": "Echtzeit-GitHub-Sterne, Gesamtrepository-Volumen und 30-Tage-Schwung-Metriken für Programmiersprachen, Frameworks und Bibliotheken.",
-    "security": "GitHub-Sterntrends und Community-Aktivitätsstatistiken für beliebte Open-Source-Cybersecurity-Tools (Nmap, OWASP ZAP, Metasploit, Wireshark usw.)."
+    "software": "Echtzeit-GitHub-Sterne, Gesamtrepository-Volumen und 30-Tage-Schwung-Metriken für Programmiersprachen, Frameworks, Bibliotheken und Datenbanktechnologien.",
+    "security": "GitHub-Sterntrends und Community-Aktivitätsstatistiken für beliebte Open-Source-Cybersecurity-Tools und Frameworks (Ghidra, Metasploit, Nmap, OWASP ZAP usw.). Diese Tools dienen Informations- und Forschungszwecken im Rahmen ethischer und rechtlicher Grenzen."
   },
   "sections": {
     "languages": "Programmiersprachen",
     "frameworks": "Bibliotheken & Frameworks",
-    "securityTools": "Open-Source-Sicherheitstools"
+    "databases": "Datenbanktechnologien",
+    "securityTools": "Open-Source-Sicherheitstools & Frameworks"
   },
   "techBar": {
     "popularity": "Beliebtheit",
@@ -25,6 +26,21 @@
     "creator": "Entwickler",
     "releaseDate": "Erscheinungsdatum",
     "latestVersion": "Aktuelle Version"
+  },
+  "categories": {
+    "language": "Language",
+    "superset": "Superset",
+    "query-language": "Query Language",
+    "framework": "Framework",
+    "library": "Library",
+    "css-framework": "CSS Framework",
+    "runtime": "Runtime",
+    "rdbms": "RDBMS",
+    "nosql": "NoSQL",
+    "search-engine": "Search Engine",
+    "baas": "BaaS",
+    "security-tool": "Security Tool",
+    "security-framework": "Security Framework"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

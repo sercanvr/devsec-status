@@ -6,10 +6,26 @@ export interface TechCreator {
   latestVersion?: string; // e.g. "v3.13.2" or "ES2026"
 }
 
+export type TechCategory = 
+  | "language" 
+  | "framework" 
+  | "library" 
+  | "security-tool" 
+  | "superset" 
+  | "query-language" 
+  | "css-framework" 
+  | "runtime" 
+  | "rdbms" 
+  | "nosql" 
+  | "search-engine" 
+  | "baas" 
+  | "security-framework";
+
 export interface TechEntry {
   id: string;
   name: string;
-  category: "language" | "framework" | "library" | "security-tool";
+  category: TechCategory;
+  subCategory?: string;  // e.g. "Reverse Engineering Framework", "Exploitation Scanner"
   iconUrl: string;
   githubUrl: string;
   creator: TechCreator;

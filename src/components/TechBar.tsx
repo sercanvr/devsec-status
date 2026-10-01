@@ -14,6 +14,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
+  const cleanSubCategory = entry.subCategory ? sanitizeText(entry.subCategory) : '';
   const cleanCreatorName = entry.creator ? sanitizeText(entry.creator.name) : '';
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : '';
@@ -26,6 +27,8 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
   const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
   const formattedRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
   const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
+
+  const categoryLabel = t(`categories.${entry.category}`, entry.category);
 
   return (
     <div
@@ -51,9 +54,14 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
               <h3 className="font-serif font-bold text-base sm:text-lg text-foreground group-hover:text-[#CEFF00] transition-colors">
                 {cleanName}
               </h3>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 font-semibold border border-neutral-300 dark:border-neutral-700">
-                {entry.category}
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 font-semibold border border-neutral-300 dark:border-neutral-700">
+                {categoryLabel}
               </span>
+              {cleanSubCategory && (
+                <span className="text-[10px] font-sans px-2 py-0.5 rounded-full bg-[#CEFF00]/15 text-neutral-900 dark:text-[#CEFF00] font-semibold border border-[#CEFF00]/30">
+                  {cleanSubCategory}
+                </span>
+              )}
             </div>
 
             {/* Educational Creator & Version Metadata Sub-row */}

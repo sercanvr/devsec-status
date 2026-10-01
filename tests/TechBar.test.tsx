@@ -17,6 +17,13 @@ const mockEntry: TechEntry = {
   category: 'language',
   iconUrl: 'https://example.com/python.png',
   githubUrl: 'https://github.com/python/cpython',
+  creator: {
+    name: 'Guido van Rossum',
+    avatarUrl: 'https://github.com/gvanrossum.png',
+    type: 'person',
+    releaseDate: '20 Şubat 1991',
+    latestVersion: 'v3.13.2',
+  },
   popularity: {
     totalRepos: 10000,
     totalStars: 50000,
@@ -32,11 +39,12 @@ const mockEntry: TechEntry = {
 };
 
 describe('TechBar Component', () => {
-  it('renders technology name, category, and popularity metrics correctly', () => {
+  it('renders technology name, category, creator and popularity metrics correctly', () => {
     render(<TechBar entry={mockEntry} maxStars={100000} />);
 
     expect(screen.getByText('Python')).toBeInTheDocument();
-    expect(screen.getByText('language')).toBeInTheDocument();
+    expect(screen.getByText('categories.language')).toBeInTheDocument();
+    expect(screen.getByText('Guido van Rossum')).toBeInTheDocument();
     expect(screen.getByText(/50/)).toBeInTheDocument();
   });
 

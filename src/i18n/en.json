@@ -6,13 +6,14 @@
     "selectLanguage": "Select Language"
   },
   "info": {
-    "software": "Real-time GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, popular frameworks, and libraries.",
-    "security": "GitHub star trends and community activity stats for top open-source cybersecurity tools (Nmap, OWASP ZAP, Metasploit, Wireshark, etc.)."
+    "software": "Real-time GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, popular frameworks, libraries, and database technologies.",
+    "security": "GitHub star trends and community activity stats for top open-source cybersecurity tools and frameworks (Ghidra, Metasploit, Nmap, OWASP ZAP, etc.). These tools are provided for educational and research purposes within ethical and legal boundaries (security research, pentesting, CTF challenges, and system defense)."
   },
   "sections": {
     "languages": "Programming Languages",
     "frameworks": "Libraries & Frameworks",
-    "securityTools": "Open Source Security Tools"
+    "databases": "Database Technologies",
+    "securityTools": "Open Source Security Tools & Frameworks"
   },
   "techBar": {
     "popularity": "Popularity",
@@ -26,9 +27,24 @@
     "releaseDate": "Release Date",
     "latestVersion": "Latest Version"
   },
+  "categories": {
+    "language": "Language",
+    "superset": "Superset",
+    "query-language": "Query Language",
+    "framework": "Framework",
+    "library": "Library",
+    "css-framework": "CSS Framework",
+    "runtime": "Runtime",
+    "rdbms": "RDBMS",
+    "nosql": "NoSQL",
+    "search-engine": "Search Engine",
+    "baas": "BaaS",
+    "security-tool": "Security Tool",
+    "security-framework": "Security Framework"
+  },
   "footer": {
     "rights": "All rights reserved.",
-    "disclaimer": "Data is automatically updated daily via GitHub Search API.",
+    "disclaimer": "Data is automatically updated daily via GitHub Search API and official databases.",
     "lastUpdated": "Last Updated"
   },
   "common": {

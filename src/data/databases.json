@@ -1,0 +1,263 @@
+[
+  {
+    "id": "db-supabase",
+    "name": "Supabase",
+    "category": "baas",
+    "subCategory": "Backend-as-a-Service",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+    "githubUrl": "https://github.com/supabase/supabase",
+    "creator": {
+      "name": "Paul Copplestone & Ant Wilson",
+      "avatarUrl": "https://github.com/supabase.png",
+      "type": "organization",
+      "releaseDate": "2020",
+      "latestVersion": "v2.48.0"
+    },
+    "popularity": {
+      "totalRepos": 84000,
+      "totalStars": 111000
+    },
+    "momentum": {
+      "newReposLast30Days": 3800,
+      "topStarredNewRepo": {
+        "name": "supabase/realtime",
+        "stars": 6200
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-elasticsearch",
+    "name": "Elasticsearch",
+    "category": "search-engine",
+    "subCategory": "Search & Analytics Engine",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg",
+    "githubUrl": "https://github.com/elastic/elasticsearch",
+    "creator": {
+      "name": "Shay Banon (Elastic)",
+      "avatarUrl": "https://github.com/elastic.png",
+      "type": "organization",
+      "releaseDate": "2010",
+      "latestVersion": "v8.17.0"
+    },
+    "popularity": {
+      "totalRepos": 195000,
+      "totalStars": 78200
+    },
+    "momentum": {
+      "newReposLast30Days": 4200,
+      "topStarredNewRepo": {
+        "name": "elastic/kibana",
+        "stars": 19800
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-redis",
+    "name": "Redis",
+    "category": "nosql",
+    "subCategory": "NoSQL (Key-Value / Cache)",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    "githubUrl": "https://github.com/redis/redis",
+    "creator": {
+      "name": "Salvatore Sanfilippo (antirez)",
+      "avatarUrl": "https://github.com/antirez.png",
+      "type": "person",
+      "releaseDate": "2009",
+      "latestVersion": "v7.4.2"
+    },
+    "popularity": {
+      "totalRepos": 890000,
+      "totalStars": 76600
+    },
+    "momentum": {
+      "newReposLast30Days": 12400,
+      "topStarredNewRepo": {
+        "name": "redis/ioredis",
+        "stars": 12800
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-mongodb",
+    "name": "MongoDB",
+    "category": "nosql",
+    "subCategory": "NoSQL (Document Store)",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "githubUrl": "https://github.com/mongodb/mongo",
+    "creator": {
+      "name": "Eliot Horowitz (MongoDB)",
+      "avatarUrl": "https://github.com/mongodb.png",
+      "type": "organization",
+      "releaseDate": "2009",
+      "latestVersion": "v8.0.0"
+    },
+    "popularity": {
+      "totalRepos": 1420000,
+      "totalStars": 28600
+    },
+    "momentum": {
+      "newReposLast30Days": 18500,
+      "topStarredNewRepo": {
+        "name": "Automattic/mongoose",
+        "stars": 26800
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-postgresql",
+    "name": "PostgreSQL",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "githubUrl": "https://github.com/postgres/postgres",
+    "creator": {
+      "name": "Michael Stonebraker (UC Berkeley)",
+      "avatarUrl": "https://github.com/postgres.png",
+      "type": "organization",
+      "releaseDate": "1996",
+      "latestVersion": "v17.2"
+    },
+    "popularity": {
+      "totalRepos": 1890000,
+      "totalStars": 22300
+    },
+    "momentum": {
+      "newReposLast30Days": 15200,
+      "topStarredNewRepo": {
+        "name": "timescale/timescaledb",
+        "stars": 16800
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-neo4j",
+    "name": "Neo4j",
+    "category": "nosql",
+    "subCategory": "NoSQL (Graph DBMS)",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg",
+    "githubUrl": "https://github.com/neo4j/neo4j",
+    "creator": {
+      "name": "Emil Eifrem (Neo4j)",
+      "avatarUrl": "https://github.com/neo4j.png",
+      "type": "organization",
+      "releaseDate": "2007",
+      "latestVersion": "v5.26.0"
+    },
+    "popularity": {
+      "totalRepos": 32000,
+      "totalStars": 17300
+    },
+    "momentum": {
+      "newReposLast30Days": 640,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-mysql",
+    "name": "MySQL",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "githubUrl": "https://github.com/mysql/mysql-server",
+    "creator": {
+      "name": "Michael Widenius (Oracle)",
+      "avatarUrl": "https://github.com/mysql.png",
+      "type": "organization",
+      "releaseDate": "23 Mayıs 1995",
+      "latestVersion": "v9.2.0"
+    },
+    "popularity": {
+      "totalRepos": 3800000,
+      "totalStars": 12400
+    },
+    "momentum": {
+      "newReposLast30Days": 24500,
+      "topStarredNewRepo": {
+        "name": "sidorares/node-mysql2",
+        "stars": 4900
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-sqlite",
+    "name": "SQLite",
+    "category": "rdbms",
+    "subCategory": "Embedded RDBMS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+    "githubUrl": "https://github.com/sqlite/sqlite",
+    "creator": {
+      "name": "D. Richard Hipp",
+      "avatarUrl": "https://github.com/sqlite.png",
+      "type": "person",
+      "releaseDate": "Ağustos 2000",
+      "latestVersion": "v3.48.0"
+    },
+    "popularity": {
+      "totalRepos": 1450000,
+      "totalStars": 10600
+    },
+    "momentum": {
+      "newReposLast30Days": 11200,
+      "topStarredNewRepo": {
+        "name": "wise-system/better-sqlite3",
+        "stars": 5800
+      }
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-cassandra",
+    "name": "Apache Cassandra",
+    "category": "nosql",
+    "subCategory": "NoSQL (Wide-Column)",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg",
+    "githubUrl": "https://github.com/apache/cassandra",
+    "creator": {
+      "name": "Avinash Lakshman (Facebook)",
+      "avatarUrl": "https://github.com/apache.png",
+      "type": "organization",
+      "releaseDate": "2008",
+      "latestVersion": "v5.0.2"
+    },
+    "popularity": {
+      "totalRepos": 28400,
+      "totalStars": 10100
+    },
+    "momentum": {
+      "newReposLast30Days": 340,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  },
+  {
+    "id": "db-mariadb",
+    "name": "MariaDB",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg",
+    "githubUrl": "https://github.com/MariaDB/server",
+    "creator": {
+      "name": "Michael Widenius",
+      "avatarUrl": "https://github.com/MariaDB.png",
+      "type": "organization",
+      "releaseDate": "2009",
+      "latestVersion": "v11.7.2"
+    },
+    "popularity": {
+      "totalRepos": 185000,
+      "totalStars": 8300
+    },
+    "momentum": {
+      "newReposLast30Days": 1280,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-01T08:00:00.000Z"
+  }
+]
