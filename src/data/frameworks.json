@@ -2,7 +2,7 @@
   {
     "id": "fw-react",
     "name": "React",
-    "category": "framework",
+    "category": "library",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "githubUrl": "https://github.com/facebook/react",
     "creator": {
@@ -14,7 +14,7 @@
     },
     "popularity": {
       "totalRepos": 3250000,
-      "totalStars": 234200
+      "totalStars": 251000
     },
     "momentum": {
       "newReposLast30Days": 28500,
@@ -23,33 +23,7 @@
         "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
-  },
-  {
-    "id": "fw-vue",
-    "name": "Vue.js",
-    "category": "framework",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    "githubUrl": "https://github.com/vuejs/core",
-    "creator": {
-      "name": "Evan You",
-      "avatarUrl": "https://github.com/yyx990803.png",
-      "type": "person",
-      "releaseDate": "14 Şubat 2014",
-      "latestVersion": "v3.5.13"
-    },
-    "popularity": {
-      "totalRepos": 980000,
-      "totalStars": 208500
-    },
-    "momentum": {
-      "newReposLast30Days": 7400,
-      "topStarredNewRepo": {
-        "name": "tresjs/tres",
-        "stars": 4200
-      }
-    },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-nextjs",
@@ -66,7 +40,7 @@
     },
     "popularity": {
       "totalRepos": 780000,
-      "totalStars": 128800
+      "totalStars": 143000
     },
     "momentum": {
       "newReposLast30Days": 14200,
@@ -75,7 +49,7 @@
         "stars": 19800
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-react-native",
@@ -92,7 +66,7 @@
     },
     "popularity": {
       "totalRepos": 412000,
-      "totalStars": 121500
+      "totalStars": 127000
     },
     "momentum": {
       "newReposLast30Days": 6800,
@@ -101,59 +75,7 @@
         "stars": 34800
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
-  },
-  {
-    "id": "fw-angular",
-    "name": "Angular",
-    "category": "framework",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
-    "githubUrl": "https://github.com/angular/angular",
-    "creator": {
-      "name": "Misko Hevery (Google)",
-      "avatarUrl": "https://github.com/angular.png",
-      "type": "organization",
-      "releaseDate": "14 Eylül 2016",
-      "latestVersion": "v19.1.0"
-    },
-    "popularity": {
-      "totalRepos": 650000,
-      "totalStars": 97400
-    },
-    "momentum": {
-      "newReposLast30Days": 5800,
-      "topStarredNewRepo": {
-        "name": "analogjs/analog",
-        "stars": 4800
-      }
-    },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
-  },
-  {
-    "id": "fw-tailwind",
-    "name": "Tailwind CSS",
-    "category": "library",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-    "githubUrl": "https://github.com/tailwindlabs/tailwindcss",
-    "creator": {
-      "name": "Adam Wathan",
-      "avatarUrl": "https://github.com/adamwathan.png",
-      "type": "person",
-      "releaseDate": "1 Kasım 2017",
-      "latestVersion": "v4.0.6"
-    },
-    "popularity": {
-      "totalRepos": 1680000,
-      "totalStars": 87200
-    },
-    "momentum": {
-      "newReposLast30Days": 21400,
-      "topStarredNewRepo": {
-        "name": "tailwindlabs/tailwindcss-v4",
-        "stars": 9800
-      }
-    },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-fastapi",
@@ -170,7 +92,7 @@
     },
     "popularity": {
       "totalRepos": 248000,
-      "totalStars": 83600
+      "totalStars": 103000
     },
     "momentum": {
       "newReposLast30Days": 6200,
@@ -179,7 +101,59 @@
         "stars": 8900
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
+  },
+  {
+    "id": "fw-angular",
+    "name": "Angular",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
+    "githubUrl": "https://github.com/angular/angular",
+    "creator": {
+      "name": "Misko Hevery (Google)",
+      "avatarUrl": "https://github.com/angular.png",
+      "type": "organization",
+      "releaseDate": "14 Eylül 2016",
+      "latestVersion": "v19.1.0"
+    },
+    "popularity": {
+      "totalRepos": 650000,
+      "totalStars": 101000
+    },
+    "momentum": {
+      "newReposLast30Days": 5800,
+      "topStarredNewRepo": {
+        "name": "analogjs/analog",
+        "stars": 4800
+      }
+    },
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
+  },
+  {
+    "id": "fw-tailwind",
+    "name": "Tailwind CSS",
+    "category": "css-framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "githubUrl": "https://github.com/tailwindlabs/tailwindcss",
+    "creator": {
+      "name": "Adam Wathan",
+      "avatarUrl": "https://github.com/adamwathan.png",
+      "type": "person",
+      "releaseDate": "1 Kasım 2017",
+      "latestVersion": "v4.0.6"
+    },
+    "popularity": {
+      "totalRepos": 1680000,
+      "totalStars": 97800
+    },
+    "momentum": {
+      "newReposLast30Days": 21400,
+      "topStarredNewRepo": {
+        "name": "tailwindlabs/tailwindcss-v4",
+        "stars": 9800
+      }
+    },
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-svelte",
@@ -196,7 +170,7 @@
     },
     "popularity": {
       "totalRepos": 195000,
-      "totalStars": 81400
+      "totalStars": 88200
     },
     "momentum": {
       "newReposLast30Days": 3800,
@@ -205,7 +179,7 @@
         "stars": 17800
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-nestjs",
@@ -222,7 +196,7 @@
     },
     "popularity": {
       "totalRepos": 142000,
-      "totalStars": 72800
+      "totalStars": 76800
     },
     "momentum": {
       "newReposLast30Days": 3200,
@@ -231,38 +205,64 @@
         "stars": 4900
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
-    "id": "fw-dotnet",
-    "name": ".NET Runtime",
+    "id": "fw-vue",
+    "name": "Vue.js",
+    "category": "framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    "githubUrl": "https://github.com/vuejs/core",
+    "creator": {
+      "name": "Evan You",
+      "avatarUrl": "https://github.com/yyx990803.png",
+      "type": "person",
+      "releaseDate": "14 Şubat 2014",
+      "latestVersion": "v3.5.13"
+    },
+    "popularity": {
+      "totalRepos": 980000,
+      "totalStars": 54500
+    },
+    "momentum": {
+      "newReposLast30Days": 7400,
+      "topStarredNewRepo": {
+        "name": "tresjs/tres",
+        "stars": 4200
+      }
+    },
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
+  },
+  {
+    "id": "fw-aspnetcore",
+    "name": "ASP.NET Core",
     "category": "framework",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
-    "githubUrl": "https://github.com/dotnet/runtime",
+    "githubUrl": "https://github.com/dotnet/aspnetcore",
     "creator": {
       "name": "Microsoft .NET Team",
       "avatarUrl": "https://github.com/dotnet.png",
       "type": "organization",
-      "releaseDate": "13 Şubat 2002",
+      "releaseDate": "27 Haziran 2016",
       "latestVersion": ".NET 9.0"
     },
     "popularity": {
-      "totalRepos": 890000,
-      "totalStars": 17400
+      "totalRepos": 640000,
+      "totalStars": 38500
     },
     "momentum": {
-      "newReposLast30Days": 8400,
+      "newReposLast30Days": 6200,
       "topStarredNewRepo": {
-        "name": "dotnet/aspnetcore",
-        "stars": 36800
+        "name": "dotnet/efcore",
+        "stars": 14200
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "fw-android",
     "name": "Android Jetpack",
-    "category": "framework",
+    "category": "library",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
     "githubUrl": "https://github.com/androidx/androidx",
     "creator": {
@@ -274,7 +274,7 @@
     },
     "popularity": {
       "totalRepos": 1250000,
-      "totalStars": 3800
+      "totalStars": 6100
     },
     "momentum": {
       "newReposLast30Days": 11500,
@@ -283,6 +283,6 @@
         "stars": 44500
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   }
 ]

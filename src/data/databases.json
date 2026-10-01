@@ -24,7 +24,7 @@
         "stars": 6200
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-elasticsearch",
@@ -51,7 +51,7 @@
         "stars": 19800
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-redis",
@@ -78,7 +78,7 @@
         "stars": 12800
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mongodb",
@@ -105,7 +105,7 @@
         "stars": 26800
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-postgresql",
@@ -132,7 +132,7 @@
         "stars": 16800
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-neo4j",
@@ -156,7 +156,34 @@
       "newReposLast30Days": 640,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
+  },
+  {
+    "id": "db-sql",
+    "name": "SQL",
+    "category": "query-language",
+    "subCategory": "Query Language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "githubUrl": "https://github.com/postgres/postgres",
+    "creator": {
+      "name": "Donald D. Chamberlin (IBM)",
+      "avatarUrl": "https://github.com/postgres.png",
+      "type": "person",
+      "releaseDate": "1974",
+      "latestVersion": "SQL:2023 Standard"
+    },
+    "popularity": {
+      "totalRepos": 1890000,
+      "totalStars": 16400
+    },
+    "momentum": {
+      "newReposLast30Days": 15200,
+      "topStarredNewRepo": {
+        "name": "supabase/supabase",
+        "stars": 111000
+      }
+    },
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mysql",
@@ -183,7 +210,7 @@
         "stars": 4900
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-sqlite",
@@ -210,7 +237,7 @@
         "stars": 5800
       }
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-cassandra",
@@ -234,7 +261,7 @@
       "newReposLast30Days": 340,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mariadb",
@@ -258,6 +285,6 @@
       "newReposLast30Days": 1280,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T08:00:00.000Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   }
 ]
