@@ -54,3 +54,8 @@ vite.config.ts.timestamp-*
 coverage
 .nyc_output
 
+# Private project documentation & local specs
+agent-rules.md
+architecture.md
+
+
