@@ -1,15 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 
-interface CuratedItem {
-  id: string;
-  name: string;
-  category: string;
-  subCategory?: string;
-  repo: string;
-  iconUrl: string;
-}
-
 interface TechEntry {
   id: string;
   name: string;
@@ -17,7 +8,13 @@ interface TechEntry {
   subCategory?: string;
   iconUrl: string;
   githubUrl: string;
-  creator?: any;
+  creator?: {
+    name: string;
+    avatarUrl: string;
+    type: "person" | "organization";
+    releaseDate: string;
+    latestVersion: string;
+  } | null;
   popularity: {
     totalRepos: number;
     totalStars: number;
@@ -31,19 +28,26 @@ interface TechEntry {
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function fetchDatabaseData() {
-  console.log('Fetching database metrics from curated list...');
-  const listPath = path.resolve(process.cwd(), 'scripts/curated-lists/databases.json');
-  const existingPath = path.resolve(process.cwd(), 'src/data/databases.json');
-  
-  const items: CuratedItem[] = JSON.parse(fs.readFileSync(listPath, 'utf-8'));
-  const existingData: TechEntry[] = fs.existsSync(existingPath) 
-    ? JSON.parse(fs.readFileSync(existingPath, 'utf-8')) 
-    : [];
-  
-  const existingMap = new Map(existingData.map(item => [item.id, item]));
-  const results: TechEntry[] = [];
+function extractRepoFullName(githubUrl: string): string | null {
+  try {
+    const url = new URL(githubUrl);
+    const parts = url.pathname.split('/').filter(Boolean);
+    if (parts.length >= 2) {
+      return `${parts[0]}/${parts[1]}`;
+    }
+  } catch {}
+  return null;
+}
 
+async function fetchDatabaseData() {
+  console.log('Fetching database metrics from src/data/databases.json...');
+  const jsonPath = path.resolve(process.cwd(), 'src/data/databases.json');
+  if (!fs.existsSync(jsonPath)) {
+    console.error(`File not found: ${jsonPath}`);
+    return;
+  }
+
+  const items: TechEntry[] = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
   const token = process.env.GITHUB_TOKEN;
   const headers: Record<string, string> = {
     'User-Agent': 'DevSec-Status-Bot',
@@ -57,78 +61,56 @@ async function fetchDatabaseData() {
   const dateStr = thirtyDaysAgo.toISOString().split('T')[0];
 
   for (const item of items) {
-    try {
-      const existing = existingMap.get(item.id);
-      let totalStars = existing?.popularity?.totalStars || 0;
-      let totalRepos = existing?.popularity?.totalRepos || 0;
-      let newReposLast30Days = existing?.momentum?.newReposLast30Days || 0;
-      let topRepo = existing?.momentum?.topStarredNewRepo || null;
+    const repoFullName = extractRepoFullName(item.githubUrl);
+    if (!repoFullName) continue;
 
-      // 1. Fetch repo details
-      const repoRes = await fetch(`https://api.github.com/repos/${item.repo}`, { headers });
+    try {
+      // 1. Fetch repo details for stargazers_count
+      const repoRes = await fetch(`https://api.github.com/repos/${repoFullName}`, { headers });
       if (repoRes.ok) {
         const repoData = await repoRes.json() as any;
-        if (repoData.stargazers_count !== undefined) {
-          totalStars = repoData.stargazers_count;
+        if (typeof repoData.stargazers_count === 'number') {
+          item.popularity.totalStars = repoData.stargazers_count;
         }
       }
 
-      await delay(2000);
+      await delay(1200);
 
       // 2. Search related repos
       const searchRes = await fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(item.name)}`, { headers });
       if (searchRes.ok) {
         const searchData = await searchRes.json() as any;
-        if (searchData.total_count !== undefined) {
-          totalRepos = searchData.total_count;
+        if (typeof searchData.total_count === 'number' && searchData.total_count > 0) {
+          item.popularity.totalRepos = searchData.total_count;
         }
       }
 
-      await delay(2000);
+      await delay(1200);
 
-      // 3. Search new repos last 30 days
+      // 3. Search momentum last 30 days
       const momentumRes = await fetch(`https://api.github.com/search/repositories?q=${encodeURIComponent(`${item.name} created:>${dateStr}`)}&sort=stars&order=desc`, { headers });
       if (momentumRes.ok) {
         const momentumData = await momentumRes.json() as any;
-        if (momentumData.total_count !== undefined) {
-          newReposLast30Days = momentumData.total_count;
+        if (typeof momentumData.total_count === 'number') {
+          item.momentum.newReposLast30Days = momentumData.total_count;
         }
         if (momentumData.items && momentumData.items.length > 0) {
-          topRepo = { name: momentumData.items[0].full_name, stars: momentumData.items[0].stargazers_count };
+          item.momentum.topStarredNewRepo = {
+            name: momentumData.items[0].full_name,
+            stars: momentumData.items[0].stargazers_count
+          };
         }
       }
 
-      results.push({
-        id: item.id,
-        name: item.name,
-        category: item.category,
-        subCategory: item.subCategory,
-        iconUrl: item.iconUrl,
-        githubUrl: `https://github.com/${item.repo}`,
-        creator: existing?.creator || null,
-        popularity: {
-          totalRepos,
-          totalStars,
-        },
-        momentum: {
-          newReposLast30Days,
-          topStarredNewRepo: topRepo,
-        },
-        lastUpdated: new Date().toISOString(),
-      });
-
-      console.log(`Successfully fetched metrics for ${item.name}`);
+      item.lastUpdated = new Date().toISOString();
+      console.log(`Successfully updated metrics for ${item.name} (${item.popularity.totalStars} stars)`);
     } catch (err) {
-      console.error(`Failed to fetch metrics for ${item.name}:`, err);
-      const existing = existingMap.get(item.id);
-      if (existing) results.push(existing);
+      console.error(`Error updating metrics for ${item.name}:`, err);
     }
   }
 
-  if (results.length > 0) {
-    fs.writeFileSync(existingPath, JSON.stringify(results, null, 2));
-    console.log(`Updated ${existingPath}`);
-  }
+  fs.writeFileSync(jsonPath, JSON.stringify(items, null, 2));
+  console.log(`Successfully preserved schema and updated metrics in ${jsonPath}`);
 }
 
 fetchDatabaseData();

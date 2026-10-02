@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 121446,
-      "totalStars": 110989
+      "totalRepos": 84000,
+      "totalStars": 111000
     },
     "momentum": {
-      "newReposLast30Days": 8419,
+      "newReposLast30Days": 3800,
       "topStarredNewRepo": {
-        "name": "mikehasa/golive-skill",
-        "stars": 1170
+        "name": "supabase/realtime",
+        "stars": 6200
       }
     },
-    "lastUpdated": "2026-10-02T03:52:32.439Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-elasticsearch",
@@ -41,17 +41,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 60213,
-      "totalStars": 78188
+      "totalRepos": 195000,
+      "totalStars": 78200
     },
     "momentum": {
-      "newReposLast30Days": 612,
+      "newReposLast30Days": 4200,
       "topStarredNewRepo": {
-        "name": "awslabs/aws-service-eol-data",
-        "stars": 24
+        "name": "elastic/kibana",
+        "stars": 19800
       }
     },
-    "lastUpdated": "2026-10-02T03:52:38.556Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-redis",
@@ -68,17 +68,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 236010,
-      "totalStars": 76569
+      "totalRepos": 890000,
+      "totalStars": 76600
     },
     "momentum": {
-      "newReposLast30Days": 7173,
+      "newReposLast30Days": 12400,
       "topStarredNewRepo": {
-        "name": "alpcanaydin/tusk",
-        "stars": 255
+        "name": "redis/ioredis",
+        "stars": 12800
       }
     },
-    "lastUpdated": "2026-10-02T03:52:44.460Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mongodb",
@@ -95,17 +95,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 623114,
-      "totalStars": 28617
+      "totalRepos": 1420000,
+      "totalStars": 28600
     },
     "momentum": {
-      "newReposLast30Days": 9461,
+      "newReposLast30Days": 18500,
       "topStarredNewRepo": {
-        "name": "evangelosvlachos96-dotcom/booking-microservices",
-        "stars": 664
+        "name": "Automattic/mongoose",
+        "stars": 26800
       }
     },
-    "lastUpdated": "2026-10-02T03:52:50.525Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-postgresql",
@@ -122,17 +122,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 400873,
-      "totalStars": 22262
+      "totalRepos": 1890000,
+      "totalStars": 22300
     },
     "momentum": {
-      "newReposLast30Days": 23774,
+      "newReposLast30Days": 15200,
       "topStarredNewRepo": {
-        "name": "evangelosvlachos96-dotcom/booking-microservices",
-        "stars": 664
+        "name": "timescale/timescaledb",
+        "stars": 16800
       }
     },
-    "lastUpdated": "2026-10-02T03:52:56.306Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-neo4j",
@@ -149,17 +149,14 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 32745,
-      "totalStars": 17272
+      "totalRepos": 32000,
+      "totalStars": 17300
     },
     "momentum": {
-      "newReposLast30Days": 767,
-      "topStarredNewRepo": {
-        "name": "jexp/neo4jev",
-        "stars": 155
-      }
+      "newReposLast30Days": 640,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-02T03:53:02.232Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-sql",
@@ -176,17 +173,17 @@
       "latestVersion": "SQL:2023 Standard"
     },
     "popularity": {
-      "totalRepos": 1450331,
-      "totalStars": 22262
+      "totalRepos": 1890000,
+      "totalStars": 16400
     },
     "momentum": {
-      "newReposLast30Days": 43863,
+      "newReposLast30Days": 15200,
       "topStarredNewRepo": {
-        "name": "planetscale/lead",
-        "stars": 159
+        "name": "supabase/supabase",
+        "stars": 111000
       }
     },
-    "lastUpdated": "2026-10-02T03:53:08.360Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mysql",
@@ -203,17 +200,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 779460,
-      "totalStars": 12439
+      "totalRepos": 3800000,
+      "totalStars": 12400
     },
     "momentum": {
-      "newReposLast30Days": 21237,
+      "newReposLast30Days": 24500,
       "topStarredNewRepo": {
-        "name": "alpcanaydin/tusk",
-        "stars": 255
+        "name": "sidorares/node-mysql2",
+        "stars": 4900
       }
     },
-    "lastUpdated": "2026-10-02T03:53:14.310Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-sqlite",
@@ -230,17 +227,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 264479,
-      "totalStars": 10581
+      "totalRepos": 1450000,
+      "totalStars": 10600
     },
     "momentum": {
-      "newReposLast30Days": 17506,
+      "newReposLast30Days": 11200,
       "topStarredNewRepo": {
-        "name": "RaycarlLei/tool-journal",
-        "stars": 378
+        "name": "wise-system/better-sqlite3",
+        "stars": 5800
       }
     },
-    "lastUpdated": "2026-10-02T03:53:20.176Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-cassandra",
@@ -257,17 +254,14 @@
       "latestVersion": "v5.0.2"
     },
     "popularity": {
-      "totalRepos": 2792,
-      "totalStars": 10113
+      "totalRepos": 28400,
+      "totalStars": 10100
     },
     "momentum": {
-      "newReposLast30Days": 20,
-      "topStarredNewRepo": {
-        "name": "VitorRodrig15/ecommerce-kafka-pyspark-cassandra-streaming",
-        "stars": 1
-      }
+      "newReposLast30Days": 340,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-02T03:53:26.275Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   },
   {
     "id": "db-mariadb",
@@ -284,16 +278,13 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 26380,
-      "totalStars": 8308
+      "totalRepos": 185000,
+      "totalStars": 8300
     },
     "momentum": {
-      "newReposLast30Days": 763,
-      "topStarredNewRepo": {
-        "name": "CodeByPinar/riskops",
-        "stars": 31
-      }
+      "newReposLast30Days": 1280,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-02T03:53:32.333Z"
+    "lastUpdated": "2026-10-01T09:00:00.000Z"
   }
 ]
