@@ -52,7 +52,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
               <h3 className="font-serif font-bold text-base sm:text-lg text-foreground group-hover:text-[#CEFF00] transition-colors">
                 {cleanName}
               </h3>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full uppercase tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 font-semibold border border-neutral-300 dark:border-neutral-700">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full tracking-wider bg-neutral-200/80 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 font-semibold border border-neutral-300 dark:border-neutral-700">
                 {categoryLabel}
               </span>
               {cleanSubCategory && (

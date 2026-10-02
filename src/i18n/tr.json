@@ -28,19 +28,19 @@
     "latestVersion": "Güncel Sürüm"
   },
   "categories": {
-    "language": "Language",
-    "superset": "Superset",
-    "query-language": "Query Language",
-    "framework": "Framework",
-    "library": "Library",
-    "css-framework": "CSS Framework",
-    "runtime": "Runtime",
+    "language": "LANGUAGE",
+    "superset": "SUPERSET",
+    "query-language": "QUERY LANGUAGE",
+    "framework": "FRAMEWORK",
+    "library": "LIBRARY",
+    "css-framework": "CSS FRAMEWORK",
+    "runtime": "RUNTIME",
     "rdbms": "RDBMS",
-    "nosql": "NoSQL",
-    "search-engine": "Search Engine",
-    "baas": "BaaS",
-    "security-tool": "Security Tool",
-    "security-framework": "Security Framework"
+    "nosql": "NOSQL",
+    "search-engine": "SEARCH ENGINE",
+    "baas": "BAAS",
+    "security-tool": "SECURITY TOOL",
+    "security-framework": "SECURITY FRAMEWORK"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
