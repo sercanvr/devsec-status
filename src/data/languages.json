@@ -1,289 +1,22 @@
 [
   {
-    "id": "lang-c",
-    "name": "C",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-    "githubUrl": "https://github.com/torvalds/linux",
-    "creator": {
-      "name": "Dennis Ritchie (Bell Labs)",
-      "avatarUrl": "https://github.com/torvalds.png",
-      "type": "person",
-      "releaseDate": "1972",
-      "latestVersion": "C23 (ISO/IEC 9899)"
-    },
-    "popularity": {
-      "totalRepos": 5120000,
-      "totalStars": 251000
-    },
-    "momentum": {
-      "newReposLast30Days": 38400,
-      "topStarredNewRepo": {
-        "name": "redis/redis",
-        "stars": 76600
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-go",
-    "name": "Go",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-    "githubUrl": "https://github.com/golang/go",
-    "creator": {
-      "name": "Rob Pike & Google Team",
-      "avatarUrl": "https://github.com/google.png",
-      "type": "organization",
-      "releaseDate": "10 Kasım 2009",
-      "latestVersion": "v1.24.0"
-    },
-    "popularity": {
-      "totalRepos": 3150000,
-      "totalStars": 139000
-    },
-    "momentum": {
-      "newReposLast30Days": 28400,
-      "topStarredNewRepo": {
-        "name": "ollama/ollama",
-        "stars": 112000
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-rust",
-    "name": "Rust",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
-    "githubUrl": "https://github.com/rust-lang/rust",
-    "creator": {
-      "name": "Graydon Hoare (Mozilla)",
-      "avatarUrl": "https://github.com/rust-lang.png",
-      "type": "organization",
-      "releaseDate": "7 Temmuz 2010",
-      "latestVersion": "v1.85.0"
-    },
-    "popularity": {
-      "totalRepos": 1820000,
-      "totalStars": 119000
-    },
-    "momentum": {
-      "newReposLast30Days": 21500,
-      "topStarredNewRepo": {
-        "name": "astral-sh/uv",
-        "stars": 38400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-typescript",
-    "name": "TypeScript",
-    "category": "superset",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    "githubUrl": "https://github.com/microsoft/TypeScript",
-    "creator": {
-      "name": "Anders Hejlsberg (Microsoft)",
-      "avatarUrl": "https://github.com/microsoft.png",
-      "type": "organization",
-      "releaseDate": "1 Ekim 2012",
-      "latestVersion": "v5.7.3"
-    },
-    "popularity": {
-      "totalRepos": 6480000,
-      "totalStars": 111000
-    },
-    "momentum": {
-      "newReposLast30Days": 84500,
-      "topStarredNewRepo": {
-        "name": "browserbase/stagehand",
-        "stars": 14200
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
     "id": "lang-python",
     "name": "Python",
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     "githubUrl": "https://github.com/python/cpython",
-    "creator": {
-      "name": "Guido van Rossum",
-      "avatarUrl": "https://github.com/gvanrossum.png",
-      "type": "person",
-      "releaseDate": "20 Şubat 1991",
-      "latestVersion": "v3.13.2"
-    },
     "popularity": {
-      "totalRepos": 15420000,
-      "totalStars": 77400
+      "totalRepos": 34253238,
+      "totalStars": 77384
     },
     "momentum": {
-      "newReposLast30Days": 142000,
+      "newReposLast30Days": 1277321,
       "topStarredNewRepo": {
-        "name": "deepseek-ai/DeepSeek-V3",
-        "stars": 68400
+        "name": "NandhaKishorM/laya",
+        "stars": 29901
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-swift",
-    "name": "Swift",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
-    "githubUrl": "https://github.com/swiftlang/swift",
-    "creator": {
-      "name": "Chris Lattner (Apple)",
-      "avatarUrl": "https://github.com/apple.png",
-      "type": "organization",
-      "releaseDate": "2 Haziran 2014",
-      "latestVersion": "v6.0.3"
-    },
-    "popularity": {
-      "totalRepos": 1120000,
-      "totalStars": 70400
-    },
-    "momentum": {
-      "newReposLast30Days": 9800,
-      "topStarredNewRepo": {
-        "name": "pointfreeco/swift-composable-architecture",
-        "stars": 12800
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-kotlin",
-    "name": "Kotlin",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-    "githubUrl": "https://github.com/JetBrains/kotlin",
-    "creator": {
-      "name": "Dmitry Jemerov (JetBrains)",
-      "avatarUrl": "https://github.com/JetBrains.png",
-      "type": "organization",
-      "releaseDate": "22 Temmuz 2011",
-      "latestVersion": "v2.1.10"
-    },
-    "popularity": {
-      "totalRepos": 1450000,
-      "totalStars": 53500
-    },
-    "momentum": {
-      "newReposLast30Days": 14800,
-      "topStarredNewRepo": {
-        "name": "square/okhttp",
-        "stars": 45600
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-zig",
-    "name": "Zig",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/zig/zig-original.svg",
-    "githubUrl": "https://github.com/ziglang/zig",
-    "creator": {
-      "name": "Andrew Kelley",
-      "avatarUrl": "https://github.com/ziglang.png",
-      "type": "person",
-      "releaseDate": "2016",
-      "latestVersion": "v0.13.0"
-    },
-    "popularity": {
-      "totalRepos": 185000,
-      "totalStars": 43400
-    },
-    "momentum": {
-      "newReposLast30Days": 3800,
-      "topStarredNewRepo": {
-        "name": "ziglang/zig",
-        "stars": 43400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-cpp",
-    "name": "C++",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-    "githubUrl": "https://github.com/llvm/llvm-project",
-    "creator": {
-      "name": "Bjarne Stroustrup (Bell Labs)",
-      "avatarUrl": "https://github.com/llvm.png",
-      "type": "person",
-      "releaseDate": "1985",
-      "latestVersion": "C++23 Standard"
-    },
-    "popularity": {
-      "totalRepos": 6180000,
-      "totalStars": 40900
-    },
-    "momentum": {
-      "newReposLast30Days": 42100,
-      "topStarredNewRepo": {
-        "name": "ggerganov/llama.cpp",
-        "stars": 71500
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-php",
-    "name": "PHP",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    "githubUrl": "https://github.com/php/php-src",
-    "creator": {
-      "name": "Rasmus Lerdorf",
-      "avatarUrl": "https://github.com/rasmus.png",
-      "type": "person",
-      "releaseDate": "8 Haziran 1995",
-      "latestVersion": "v8.4.4"
-    },
-    "popularity": {
-      "totalRepos": 5920000,
-      "totalStars": 40400
-    },
-    "momentum": {
-      "newReposLast30Days": 26800,
-      "topStarredNewRepo": {
-        "name": "laravel/laravel",
-        "stars": 78400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-elixir",
-    "name": "Elixir",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg",
-    "githubUrl": "https://github.com/elixir-lang/elixir",
-    "creator": {
-      "name": "José Valim",
-      "avatarUrl": "https://github.com/josevalim.png",
-      "type": "person",
-      "releaseDate": "2011",
-      "latestVersion": "v1.18.0"
-    },
-    "popularity": {
-      "totalRepos": 165000,
-      "totalStars": 26700
-    },
-    "momentum": {
-      "newReposLast30Days": 2400,
-      "topStarredNewRepo": {
-        "name": "phoenixframework/phoenix",
-        "stars": 22400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:48:57.124Z"
   },
   {
     "id": "lang-javascript",
@@ -291,51 +24,75 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "githubUrl": "https://github.com/v8/v8",
-    "creator": {
-      "name": "Brendan Eich (Netscape)",
-      "avatarUrl": "https://github.com/brendaneich.png",
-      "type": "person",
-      "releaseDate": "4 Aralık 1995",
-      "latestVersion": "ES2026 (17. Sürüm)"
-    },
     "popularity": {
-      "totalRepos": 18900000,
-      "totalStars": 25300
+      "totalRepos": 47723786,
+      "totalStars": 25273
     },
     "momentum": {
-      "newReposLast30Days": 168000,
+      "newReposLast30Days": 932732,
       "topStarredNewRepo": {
-        "name": "shadcn-ui/ui",
-        "stars": 78900
+        "name": "JohnHeibel/PDoomVideo",
+        "stars": 1668
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:49:02.109Z"
   },
   {
-    "id": "lang-ruby",
-    "name": "Ruby",
+    "id": "lang-typescript",
+    "name": "TypeScript",
     "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
-    "githubUrl": "https://github.com/ruby/ruby",
-    "creator": {
-      "name": "Yukihiro Matsumoto (Matz)",
-      "avatarUrl": "https://github.com/matz.png",
-      "type": "person",
-      "releaseDate": "21 Aralık 1995",
-      "latestVersion": "v3.4.2"
-    },
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "githubUrl": "https://github.com/microsoft/TypeScript",
     "popularity": {
-      "totalRepos": 2180000,
-      "totalStars": 23800
+      "totalRepos": 18920956,
+      "totalStars": 111304
     },
     "momentum": {
-      "newReposLast30Days": 11400,
+      "newReposLast30Days": 837268,
       "topStarredNewRepo": {
-        "name": "rails/rails",
-        "stars": 55800
+        "name": "tamaratran/fast-jev-compaction",
+        "stars": 7314
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:49:07.152Z"
+  },
+  {
+    "id": "lang-go",
+    "name": "Go",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    "githubUrl": "https://github.com/golang/go",
+    "popularity": {
+      "totalRepos": 2547610,
+      "totalStars": 139126
+    },
+    "momentum": {
+      "newReposLast30Days": 62852,
+      "topStarredNewRepo": {
+        "name": "yetone/magpie",
+        "stars": 4116
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:12.095Z"
+  },
+  {
+    "id": "lang-rust",
+    "name": "Rust",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg",
+    "githubUrl": "https://github.com/rust-lang/rust",
+    "popularity": {
+      "totalRepos": 1375268,
+      "totalStars": 119409
+    },
+    "momentum": {
+      "newReposLast30Days": 51352,
+      "topStarredNewRepo": {
+        "name": "qingjian-team/qingjian",
+        "stars": 2392
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:16.950Z"
   },
   {
     "id": "lang-java",
@@ -343,25 +100,56 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     "githubUrl": "https://github.com/openjdk/jdk",
-    "creator": {
-      "name": "James Gosling (Sun / Oracle)",
-      "avatarUrl": "https://github.com/oracle.png",
-      "type": "person",
-      "releaseDate": "23 Mayıs 1995",
-      "latestVersion": "Java 23 (JDK 23)"
-    },
     "popularity": {
-      "totalRepos": 14200000,
-      "totalStars": 23400
+      "totalRepos": 21750972,
+      "totalStars": 23392
     },
     "momentum": {
-      "newReposLast30Days": 98000,
+      "newReposLast30Days": 267166,
       "topStarredNewRepo": {
-        "name": "spring-projects/spring-boot",
-        "stars": 76200
+        "name": "voxivoid/recipe-lab-sony-pmca",
+        "stars": 561
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:49:21.916Z"
+  },
+  {
+    "id": "lang-c",
+    "name": "C",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    "githubUrl": "https://github.com/torvalds/linux",
+    "popularity": {
+      "totalRepos": 4353758,
+      "totalStars": 250794
+    },
+    "momentum": {
+      "newReposLast30Days": 74751,
+      "topStarredNewRepo": {
+        "name": "saragordic/window-sweaters",
+        "stars": 732
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:26.756Z"
+  },
+  {
+    "id": "lang-cpp",
+    "name": "C++",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "githubUrl": "https://github.com/llvm/llvm-project",
+    "popularity": {
+      "totalRepos": 7166573,
+      "totalStars": 40880
+    },
+    "momentum": {
+      "newReposLast30Days": 122205,
+      "topStarredNewRepo": {
+        "name": "Niko1221/Strata",
+        "stars": 4859
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:31.624Z"
   },
   {
     "id": "lang-csharp",
@@ -369,25 +157,75 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
     "githubUrl": "https://github.com/dotnet/roslyn",
-    "creator": {
-      "name": "Anders Hejlsberg (Microsoft)",
-      "avatarUrl": "https://github.com/dotnet.png",
-      "type": "organization",
-      "releaseDate": "Ağustos 2000",
-      "latestVersion": "C# 13 (.NET 9)"
-    },
     "popularity": {
-      "totalRepos": 4850000,
-      "totalStars": 20700
+      "totalRepos": 7710297,
+      "totalStars": 20699
     },
     "momentum": {
-      "newReposLast30Days": 31200,
+      "newReposLast30Days": 117216,
       "topStarredNewRepo": {
-        "name": "PowerToys/PowerToys",
-        "stars": 114000
+        "name": "angusdevgo/IDM_Pro_Tool",
+        "stars": 1034
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:49:36.784Z"
+  },
+  {
+    "id": "lang-php",
+    "name": "PHP",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    "githubUrl": "https://github.com/php/php-src",
+    "popularity": {
+      "totalRepos": 6414709,
+      "totalStars": 40425
+    },
+    "momentum": {
+      "newReposLast30Days": 77265,
+      "topStarredNewRepo": {
+        "name": "Faizpi/bank-sampah",
+        "stars": 457
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:41.784Z"
+  },
+  {
+    "id": "lang-swift",
+    "name": "Swift",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    "githubUrl": "https://github.com/swiftlang/swift",
+    "popularity": {
+      "totalRepos": 1708241,
+      "totalStars": 70445
+    },
+    "momentum": {
+      "newReposLast30Days": 31289,
+      "topStarredNewRepo": {
+        "name": "robbietilton/Compositor",
+        "stars": 6802
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:46.824Z"
+  },
+  {
+    "id": "lang-kotlin",
+    "name": "Kotlin",
+    "category": "language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+    "githubUrl": "https://github.com/JetBrains/kotlin",
+    "popularity": {
+      "totalRepos": 2362361,
+      "totalStars": 53473
+    },
+    "momentum": {
+      "newReposLast30Days": 70497,
+      "topStarredNewRepo": {
+        "name": "jev-chat/jev-chat-jarvis",
+        "stars": 7233
+      }
+    },
+    "lastUpdated": "2026-10-02T03:49:51.799Z"
   },
   {
     "id": "lang-dart",
@@ -395,203 +233,55 @@
     "category": "language",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
     "githubUrl": "https://github.com/dart-lang/sdk",
-    "creator": {
-      "name": "Lars Bak & Kasper Lund (Google)",
-      "avatarUrl": "https://github.com/dart-lang.png",
-      "type": "organization",
-      "releaseDate": "10 Ekim 2011",
-      "latestVersion": "v3.7.0"
-    },
     "popularity": {
-      "totalRepos": 620000,
-      "totalStars": 11300
+      "totalRepos": 2134597,
+      "totalStars": 11288
     },
     "momentum": {
-      "newReposLast30Days": 12400,
+      "newReposLast30Days": 49302,
       "topStarredNewRepo": {
-        "name": "flutter/flutter",
-        "stars": 166000
+        "name": "Clash-Projects/LastWave-Desktop",
+        "stars": 378
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:49:56.830Z"
   },
   {
-    "id": "lang-lua",
-    "name": "Lua",
+    "id": "lang-ruby",
+    "name": "Ruby",
     "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg",
-    "githubUrl": "https://github.com/lua/lua",
-    "creator": {
-      "name": "Roberto Ierusalimschy (PUC-Rio)",
-      "avatarUrl": "https://github.com/lua.png",
-      "type": "person",
-      "releaseDate": "1993",
-      "latestVersion": "v5.4.7"
-    },
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+    "githubUrl": "https://github.com/ruby/ruby",
     "popularity": {
-      "totalRepos": 480000,
-      "totalStars": 10300
+      "totalRepos": 2970786,
+      "totalStars": 23765
     },
     "momentum": {
-      "newReposLast30Days": 6800,
+      "newReposLast30Days": 8802,
       "topStarredNewRepo": {
-        "name": "neovim/neovim",
-        "stars": 82000
+        "name": "basecamp/rails-active_search",
+        "stars": 94
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:50:01.901Z"
   },
   {
-    "id": "lang-scala",
-    "name": "Scala",
+    "id": "lang-sql",
+    "name": "SQL",
     "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg",
-    "githubUrl": "https://github.com/scala/scala3",
-    "creator": {
-      "name": "Martin Odersky",
-      "avatarUrl": "https://github.com/odersky.png",
-      "type": "person",
-      "releaseDate": "2004",
-      "latestVersion": "v3.6.3"
-    },
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "githubUrl": "https://github.com/postgres/postgres",
     "popularity": {
-      "totalRepos": 380000,
-      "totalStars": 6300
+      "totalRepos": 4558,
+      "totalStars": 22262
     },
     "momentum": {
-      "newReposLast30Days": 2900,
+      "newReposLast30Days": 108,
       "topStarredNewRepo": {
-        "name": "apache/spark",
-        "stars": 39800
+        "name": "hyenalouise/nyc-mobility-pipeline",
+        "stars": 2
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-haskell",
-    "name": "Haskell",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg",
-    "githubUrl": "https://github.com/ghc/ghc",
-    "creator": {
-      "name": "Lennart Augustsson & Team",
-      "avatarUrl": "https://github.com/haskell.png",
-      "type": "organization",
-      "releaseDate": "1990",
-      "latestVersion": "GHC 9.10"
-    },
-    "popularity": {
-      "totalRepos": 290000,
-      "totalStars": 3000
-    },
-    "momentum": {
-      "newReposLast30Days": 1800,
-      "topStarredNewRepo": {
-        "name": "jgm/pandoc",
-        "stars": 34500
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-perl",
-    "name": "Perl",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg",
-    "githubUrl": "https://github.com/Perl/perl5",
-    "creator": {
-      "name": "Larry Wall",
-      "avatarUrl": "https://github.com/Perl.png",
-      "type": "person",
-      "releaseDate": "18 Aralık 1987",
-      "latestVersion": "v5.40.0"
-    },
-    "popularity": {
-      "totalRepos": 410000,
-      "totalStars": 2300
-    },
-    "momentum": {
-      "newReposLast30Days": 1400,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-bash",
-    "name": "Shell / Bash",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-    "githubUrl": "https://github.com/bminor/bash",
-    "creator": {
-      "name": "Brian Fox (GNU)",
-      "avatarUrl": "https://github.com/bash.png",
-      "type": "organization",
-      "releaseDate": "8 Haziran 1989",
-      "latestVersion": "v5.2"
-    },
-    "popularity": {
-      "totalRepos": 4900000,
-      "totalStars": 2100
-    },
-    "momentum": {
-      "newReposLast30Days": 45000,
-      "topStarredNewRepo": {
-        "name": "ohmyzsh/ohmyzsh",
-        "stars": 174000
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-r",
-    "name": "R",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg",
-    "githubUrl": "https://github.com/r-devel/r-svn",
-    "creator": {
-      "name": "Ross Ihaka & Robert Gentleman",
-      "avatarUrl": "https://github.com/r-devel.png",
-      "type": "person",
-      "releaseDate": "Ağustos 1993",
-      "latestVersion": "v4.4.2"
-    },
-    "popularity": {
-      "totalRepos": 1850000,
-      "totalStars": 1200
-    },
-    "momentum": {
-      "newReposLast30Days": 12500,
-      "topStarredNewRepo": {
-        "name": "tidyverse/ggplot2",
-        "stars": 6400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
-  },
-  {
-    "id": "lang-objc",
-    "name": "Objective-C",
-    "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/objectivec/objectivec-plain.svg",
-    "githubUrl": "https://github.com/apple-oss-distributions/objc4",
-    "creator": {
-      "name": "Brad Cox & Tom Love",
-      "avatarUrl": "https://github.com/apple.png",
-      "type": "person",
-      "releaseDate": "1984",
-      "latestVersion": "Objective-C 2.0"
-    },
-    "popularity": {
-      "totalRepos": 980000,
-      "totalStars": 900
-    },
-    "momentum": {
-      "newReposLast30Days": 3200,
-      "topStarredNewRepo": {
-        "name": "AFNetworking/AFNetworking",
-        "stars": 33400
-      }
-    },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T03:50:06.947Z"
   }
 ]
