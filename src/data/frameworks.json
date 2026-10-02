@@ -13,17 +13,17 @@
       "latestVersion": "v19.0.0"
     },
     "popularity": {
-      "totalRepos": 3250000,
-      "totalStars": 250867
+      "totalRepos": 7283375,
+      "totalStars": 250856
     },
     "momentum": {
-      "newReposLast30Days": 28500,
+      "newReposLast30Days": 90262,
       "topStarredNewRepo": {
-        "name": "shadcn-ui/ui",
-        "stars": 78900
+        "name": "Vincentwei1021/anything2explainer",
+        "stars": 2229
       }
     },
-    "lastUpdated": "2026-10-02T04:14:43.444Z"
+    "lastUpdated": "2026-10-02T12:03:27.750Z"
   },
   {
     "id": "fw-nextjs",
@@ -39,17 +39,17 @@
       "latestVersion": "v15.1.7"
     },
     "popularity": {
-      "totalRepos": 780000,
-      "totalStars": 142996
+      "totalRepos": 514576,
+      "totalStars": 142983
     },
     "momentum": {
-      "newReposLast30Days": 14200,
+      "newReposLast30Days": 19852,
       "topStarredNewRepo": {
-        "name": "dubinc/dub",
-        "stars": 19800
+        "name": "liyupi/ai-model-world",
+        "stars": 210
       }
     },
-    "lastUpdated": "2026-10-02T04:14:46.233Z"
+    "lastUpdated": "2026-10-02T12:03:31.951Z"
   },
   {
     "id": "fw-react-native",
@@ -65,17 +65,17 @@
       "latestVersion": "v0.78.0"
     },
     "popularity": {
-      "totalRepos": 412000,
-      "totalStars": 126780
+      "totalRepos": 602859,
+      "totalStars": 126785
     },
     "momentum": {
-      "newReposLast30Days": 6800,
+      "newReposLast30Days": 6324,
       "topStarredNewRepo": {
-        "name": "expo/expo",
-        "stars": 34800
+        "name": "ng-native/ng-native",
+        "stars": 358
       }
     },
-    "lastUpdated": "2026-10-02T04:14:49.233Z"
+    "lastUpdated": "2026-10-02T12:03:36.941Z"
   },
   {
     "id": "fw-fastapi",
@@ -91,17 +91,17 @@
       "latestVersion": "v0.115.8"
     },
     "popularity": {
-      "totalRepos": 248000,
-      "totalStars": 102759
+      "totalRepos": 478063,
+      "totalStars": 102763
     },
     "momentum": {
-      "newReposLast30Days": 6200,
+      "newReposLast30Days": 33718,
       "topStarredNewRepo": {
-        "name": "sqlglot/sqlglot",
-        "stars": 8900
+        "name": "ithtelab/workbuddy-manager",
+        "stars": 718
       }
     },
-    "lastUpdated": "2026-10-02T04:14:51.814Z"
+    "lastUpdated": "2026-10-02T12:03:41.343Z"
   },
   {
     "id": "fw-angular",
@@ -117,17 +117,17 @@
       "latestVersion": "v19.1.0"
     },
     "popularity": {
-      "totalRepos": 1429947,
-      "totalStars": 101027
+      "totalRepos": 1429998,
+      "totalStars": 101013
     },
     "momentum": {
-      "newReposLast30Days": 7799,
+      "newReposLast30Days": 7884,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
-        "stars": 353
+        "stars": 358
       }
     },
-    "lastUpdated": "2026-10-02T04:14:56.242Z"
+    "lastUpdated": "2026-10-02T12:03:45.895Z"
   },
   {
     "id": "fw-tailwind",
@@ -143,17 +143,17 @@
       "latestVersion": "v4.0.6"
     },
     "popularity": {
-      "totalRepos": 241253,
-      "totalStars": 97764
+      "totalRepos": 241349,
+      "totalStars": 97747
     },
     "momentum": {
-      "newReposLast30Days": 8271,
+      "newReposLast30Days": 8371,
       "topStarredNewRepo": {
         "name": "blaizio/blaizio",
         "stars": 43
       }
     },
-    "lastUpdated": "2026-10-02T04:15:00.615Z"
+    "lastUpdated": "2026-10-02T12:03:50.558Z"
   },
   {
     "id": "fw-svelte",
@@ -169,17 +169,17 @@
       "latestVersion": "v5.19.0"
     },
     "popularity": {
-      "totalRepos": 92611,
-      "totalStars": 88234
+      "totalRepos": 92627,
+      "totalStars": 88227
     },
     "momentum": {
-      "newReposLast30Days": 1260,
+      "newReposLast30Days": 1280,
       "topStarredNewRepo": {
         "name": "agentverse-os/AgentVerse-OS",
         "stars": 971
       }
     },
-    "lastUpdated": "2026-10-02T04:15:04.921Z"
+    "lastUpdated": "2026-10-02T12:03:55.025Z"
   },
   {
     "id": "fw-nestjs",
@@ -195,17 +195,17 @@
       "latestVersion": "v11.0.0"
     },
     "popularity": {
-      "totalRepos": 171978,
-      "totalStars": 76778
+      "totalRepos": 171989,
+      "totalStars": 76781
     },
     "momentum": {
-      "newReposLast30Days": 3446,
+      "newReposLast30Days": 3475,
       "topStarredNewRepo": {
         "name": "umlink/java-full-stack",
         "stars": 119
       }
     },
-    "lastUpdated": "2026-10-02T04:15:09.222Z"
+    "lastUpdated": "2026-10-02T12:03:59.307Z"
   },
   {
     "id": "fw-vue",
@@ -221,17 +221,17 @@
       "latestVersion": "v3.5.13"
     },
     "popularity": {
-      "totalRepos": 165891,
-      "totalStars": 54472
+      "totalRepos": 165919,
+      "totalStars": 54473
     },
     "momentum": {
-      "newReposLast30Days": 7400,
+      "newReposLast30Days": 7178,
       "topStarredNewRepo": {
-        "name": "tresjs/tres",
-        "stars": 4200
+        "name": "uday-a/uipkge-registry",
+        "stars": 16
       }
     },
-    "lastUpdated": "2026-10-02T04:15:12.833Z"
+    "lastUpdated": "2026-10-02T12:04:04.107Z"
   },
   {
     "id": "fw-aspnetcore",
@@ -247,17 +247,17 @@
       "latestVersion": ".NET 9.0"
     },
     "popularity": {
-      "totalRepos": 640000,
+      "totalRepos": 131703,
       "totalStars": 38464
     },
     "momentum": {
-      "newReposLast30Days": 6200,
+      "newReposLast30Days": 3489,
       "topStarredNewRepo": {
-        "name": "dotnet/efcore",
-        "stars": 14200
+        "name": "engripaye/ProductsManagement",
+        "stars": 5
       }
     },
-    "lastUpdated": "2026-10-02T04:15:15.719Z"
+    "lastUpdated": "2026-10-02T12:04:08.634Z"
   },
   {
     "id": "fw-android",
@@ -273,16 +273,16 @@
       "latestVersion": "Jetpack 2026"
     },
     "popularity": {
-      "totalRepos": 1250000,
-      "totalStars": 6102
+      "totalRepos": 30369,
+      "totalStars": 6103
     },
     "momentum": {
-      "newReposLast30Days": 11500,
+      "newReposLast30Days": 1819,
       "topStarredNewRepo": {
-        "name": "android/architecture-samples",
-        "stars": 44500
+        "name": "kinotvapp/kino-light",
+        "stars": 70
       }
     },
-    "lastUpdated": "2026-10-02T04:15:18.520Z"
+    "lastUpdated": "2026-10-02T12:04:13.024Z"
   }
 ]
