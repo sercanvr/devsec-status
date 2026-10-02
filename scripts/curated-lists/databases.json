@@ -1,0 +1,90 @@
+[
+  {
+    "id": "db-supabase",
+    "name": "Supabase",
+    "category": "baas",
+    "subCategory": "Backend-as-a-Service",
+    "repo": "supabase/supabase",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
+  },
+  {
+    "id": "db-elasticsearch",
+    "name": "Elasticsearch",
+    "category": "search-engine",
+    "subCategory": "Search & Analytics Engine",
+    "repo": "elastic/elasticsearch",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg"
+  },
+  {
+    "id": "db-redis",
+    "name": "Redis",
+    "category": "nosql",
+    "subCategory": "NoSQL (Key-Value / Cache)",
+    "repo": "redis/redis",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    "id": "db-mongodb",
+    "name": "MongoDB",
+    "category": "nosql",
+    "subCategory": "NoSQL (Document Store)",
+    "repo": "mongodb/mongo",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "id": "db-postgresql",
+    "name": "PostgreSQL",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "repo": "postgres/postgres",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "id": "db-neo4j",
+    "name": "Neo4j",
+    "category": "nosql",
+    "subCategory": "NoSQL (Graph DBMS)",
+    "repo": "neo4j/neo4j",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg"
+  },
+  {
+    "id": "db-sql",
+    "name": "SQL",
+    "category": "query-language",
+    "subCategory": "Query Language",
+    "repo": "postgres/postgres",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "id": "db-mysql",
+    "name": "MySQL",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "repo": "mysql/mysql-server",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    "id": "db-sqlite",
+    "name": "SQLite",
+    "category": "rdbms",
+    "subCategory": "Embedded RDBMS",
+    "repo": "sqlite/sqlite",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+  },
+  {
+    "id": "db-cassandra",
+    "name": "Apache Cassandra",
+    "category": "nosql",
+    "subCategory": "NoSQL (Wide-Column)",
+    "repo": "apache/cassandra",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+  },
+  {
+    "id": "db-mariadb",
+    "name": "MariaDB",
+    "category": "rdbms",
+    "subCategory": "Relational DBMS",
+    "repo": "MariaDB/server",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
+  }
+]
