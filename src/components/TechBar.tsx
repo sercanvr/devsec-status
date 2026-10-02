@@ -38,17 +38,15 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
       {/* Top Row: Icon, Name, Creator Info, Category Badge, GitHub Link */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-neutral-200/80 dark:bg-neutral-800 p-2 flex items-center justify-center shrink-0 border border-neutral-300 dark:border-neutral-700/60 group-hover:scale-105 transition-transform duration-200">
-            <img
-              src={entry.iconUrl}
-              alt={cleanName}
-              className="w-6 h-6 object-contain"
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src =
-                  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
-              }}
-            />
-          </div>
+          <img
+            src={entry.iconUrl}
+            alt={cleanName}
+            className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-200"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src =
+                'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+            }}
+          />
           <div>
             <div className="flex flex-wrap items-center gap-2">
               <h3 className="font-serif font-bold text-base sm:text-lg text-foreground group-hover:text-[#CEFF00] transition-colors">
