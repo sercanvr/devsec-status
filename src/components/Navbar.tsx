@@ -17,19 +17,14 @@ export const Navbar: React.FC = () => {
           to="/"
           className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-[#CEFF00] rounded-lg p-1"
         >
-          <div className="w-9 h-9 rounded-xl bg-[#CEFF00] p-0.5 shadow-md shadow-[#CEFF00]/30 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full bg-[#141414] rounded-[10px] flex items-center justify-center overflow-hidden">
-              <img
-                src="/icons/devsec-icon.png"
-                alt="DevSec Status"
-                className="w-full h-full object-contain p-0.5"
-                onError={(e) => {
-                  (e.currentTarget as HTMLElement).style.display = 'none';
-                }}
-              />
-              <ShieldAlert className="w-5 h-5 text-[#CEFF00] absolute hidden group-err:block" />
-            </div>
-          </div>
+          <img
+            src="/icons/devsec-icon.png"
+            alt="DevSec Status"
+            className="w-10 h-10 object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0"
+            onError={(e) => {
+              (e.currentTarget as HTMLElement).style.display = 'none';
+            }}
+          />
           <div className="flex flex-col">
             <span className="font-serif font-bold text-lg tracking-tight text-foreground flex items-center gap-1.5">
               DevSec <span className="text-[#CEFF00] font-mono text-sm font-semibold">Status</span>

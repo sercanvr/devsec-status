@@ -14,7 +14,7 @@
     },
     "popularity": {
       "totalRepos": 18200,
-      "totalStars": 53400
+      "totalStars": 80256
     },
     "momentum": {
       "newReposLast30Days": 380,
@@ -23,7 +23,7 @@
         "stars": 1420
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:22.192Z"
   },
   {
     "id": "sec-metasploit",
@@ -40,7 +40,7 @@
     },
     "popularity": {
       "totalRepos": 85000,
-      "totalStars": 35800
+      "totalStars": 39076
     },
     "momentum": {
       "newReposLast30Days": 950,
@@ -49,7 +49,7 @@
         "stars": 980
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:25.070Z"
   },
   {
     "id": "sec-sqlmap",
@@ -66,7 +66,7 @@
     },
     "popularity": {
       "totalRepos": 38000,
-      "totalStars": 33500
+      "totalStars": 38575
     },
     "momentum": {
       "newReposLast30Days": 420,
@@ -75,7 +75,7 @@
         "stars": 1450
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:27.844Z"
   },
   {
     "id": "sec-trivy",
@@ -92,7 +92,7 @@
     },
     "popularity": {
       "totalRepos": 16400,
-      "totalStars": 24200
+      "totalStars": 38179
     },
     "momentum": {
       "newReposLast30Days": 540,
@@ -101,7 +101,7 @@
         "stars": 1850
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:30.629Z"
   },
   {
     "id": "sec-nuclei",
@@ -118,7 +118,7 @@
     },
     "popularity": {
       "totalRepos": 28500,
-      "totalStars": 21800
+      "totalStars": 31667
     },
     "momentum": {
       "newReposLast30Days": 1280,
@@ -127,7 +127,7 @@
         "stars": 11400
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:33.414Z"
   },
   {
     "id": "sec-hashcat",
@@ -144,7 +144,7 @@
     },
     "popularity": {
       "totalRepos": 24100,
-      "totalStars": 21200
+      "totalStars": 26928
     },
     "momentum": {
       "newReposLast30Days": 490,
@@ -153,7 +153,7 @@
         "stars": 920
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:36.177Z"
   },
   {
     "id": "sec-trufflehog",
@@ -170,13 +170,13 @@
     },
     "popularity": {
       "totalRepos": 12800,
-      "totalStars": 16800
+      "totalStars": 28231
     },
     "momentum": {
       "newReposLast30Days": 360,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:39.006Z"
   },
   {
     "id": "sec-owasp-zap",
@@ -193,7 +193,7 @@
     },
     "popularity": {
       "totalRepos": 18500,
-      "totalStars": 12800
+      "totalStars": 15854
     },
     "momentum": {
       "newReposLast30Days": 310,
@@ -202,7 +202,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:41.806Z"
   },
   {
     "id": "sec-nmap",
@@ -219,7 +219,7 @@
     },
     "popularity": {
       "totalRepos": 42000,
-      "totalStars": 10800
+      "totalStars": 13695
     },
     "momentum": {
       "newReposLast30Days": 680,
@@ -228,7 +228,7 @@
         "stars": 450
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:44.579Z"
   },
   {
     "id": "sec-john-the-ripper",
@@ -245,13 +245,13 @@
     },
     "popularity": {
       "totalRepos": 14000,
-      "totalStars": 9400
+      "totalStars": 13711
     },
     "momentum": {
       "newReposLast30Days": 180,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:47.387Z"
   },
   {
     "id": "sec-wireshark",
@@ -268,7 +268,7 @@
     },
     "popularity": {
       "totalRepos": 27000,
-      "totalStars": 7900
+      "totalStars": 9949
     },
     "momentum": {
       "newReposLast30Days": 290,
@@ -277,7 +277,7 @@
         "stars": 340
       }
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:50.193Z"
   },
   {
     "id": "sec-volatility",
@@ -294,12 +294,12 @@
     },
     "popularity": {
       "totalRepos": 9400,
-      "totalStars": 3600
+      "totalStars": 4444
     },
     "momentum": {
       "newReposLast30Days": 140,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T07:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:52.957Z"
   }
 ]
