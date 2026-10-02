@@ -14,7 +14,7 @@
     },
     "popularity": {
       "totalRepos": 3250000,
-      "totalStars": 251000
+      "totalStars": 250867
     },
     "momentum": {
       "newReposLast30Days": 28500,
@@ -23,7 +23,7 @@
         "stars": 78900
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:43.444Z"
   },
   {
     "id": "fw-nextjs",
@@ -40,7 +40,7 @@
     },
     "popularity": {
       "totalRepos": 780000,
-      "totalStars": 143000
+      "totalStars": 142996
     },
     "momentum": {
       "newReposLast30Days": 14200,
@@ -49,7 +49,7 @@
         "stars": 19800
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:46.233Z"
   },
   {
     "id": "fw-react-native",
@@ -66,7 +66,7 @@
     },
     "popularity": {
       "totalRepos": 412000,
-      "totalStars": 127000
+      "totalStars": 126780
     },
     "momentum": {
       "newReposLast30Days": 6800,
@@ -75,7 +75,7 @@
         "stars": 34800
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:49.233Z"
   },
   {
     "id": "fw-fastapi",
@@ -92,7 +92,7 @@
     },
     "popularity": {
       "totalRepos": 248000,
-      "totalStars": 103000
+      "totalStars": 102759
     },
     "momentum": {
       "newReposLast30Days": 6200,
@@ -101,7 +101,7 @@
         "stars": 8900
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:51.814Z"
   },
   {
     "id": "fw-angular",
@@ -117,17 +117,17 @@
       "latestVersion": "v19.1.0"
     },
     "popularity": {
-      "totalRepos": 650000,
-      "totalStars": 101000
+      "totalRepos": 1429947,
+      "totalStars": 101027
     },
     "momentum": {
-      "newReposLast30Days": 5800,
+      "newReposLast30Days": 7799,
       "topStarredNewRepo": {
-        "name": "analogjs/analog",
-        "stars": 4800
+        "name": "ng-native/ng-native",
+        "stars": 353
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:56.242Z"
   },
   {
     "id": "fw-tailwind",
@@ -143,17 +143,17 @@
       "latestVersion": "v4.0.6"
     },
     "popularity": {
-      "totalRepos": 1680000,
-      "totalStars": 97800
+      "totalRepos": 241253,
+      "totalStars": 97764
     },
     "momentum": {
-      "newReposLast30Days": 21400,
+      "newReposLast30Days": 8271,
       "topStarredNewRepo": {
-        "name": "tailwindlabs/tailwindcss-v4",
-        "stars": 9800
+        "name": "blaizio/blaizio",
+        "stars": 43
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:00.615Z"
   },
   {
     "id": "fw-svelte",
@@ -169,17 +169,17 @@
       "latestVersion": "v5.19.0"
     },
     "popularity": {
-      "totalRepos": 195000,
-      "totalStars": 88200
+      "totalRepos": 92611,
+      "totalStars": 88234
     },
     "momentum": {
-      "newReposLast30Days": 3800,
+      "newReposLast30Days": 1260,
       "topStarredNewRepo": {
-        "name": "sveltejs/kit",
-        "stars": 17800
+        "name": "agentverse-os/AgentVerse-OS",
+        "stars": 971
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:04.921Z"
   },
   {
     "id": "fw-nestjs",
@@ -195,17 +195,17 @@
       "latestVersion": "v11.0.0"
     },
     "popularity": {
-      "totalRepos": 142000,
-      "totalStars": 76800
+      "totalRepos": 171978,
+      "totalStars": 76778
     },
     "momentum": {
-      "newReposLast30Days": 3200,
+      "newReposLast30Days": 3446,
       "topStarredNewRepo": {
-        "name": "nestjs/swagger",
-        "stars": 4900
+        "name": "umlink/java-full-stack",
+        "stars": 119
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:09.222Z"
   },
   {
     "id": "fw-vue",
@@ -221,8 +221,8 @@
       "latestVersion": "v3.5.13"
     },
     "popularity": {
-      "totalRepos": 980000,
-      "totalStars": 54500
+      "totalRepos": 165891,
+      "totalStars": 54472
     },
     "momentum": {
       "newReposLast30Days": 7400,
@@ -231,7 +231,7 @@
         "stars": 4200
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:12.833Z"
   },
   {
     "id": "fw-aspnetcore",
@@ -248,7 +248,7 @@
     },
     "popularity": {
       "totalRepos": 640000,
-      "totalStars": 38500
+      "totalStars": 38464
     },
     "momentum": {
       "newReposLast30Days": 6200,
@@ -257,7 +257,7 @@
         "stars": 14200
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:15.719Z"
   },
   {
     "id": "fw-android",
@@ -274,7 +274,7 @@
     },
     "popularity": {
       "totalRepos": 1250000,
-      "totalStars": 6100
+      "totalStars": 6102
     },
     "momentum": {
       "newReposLast30Days": 11500,
@@ -283,6 +283,6 @@
         "stars": 44500
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:15:18.520Z"
   }
 ]

@@ -13,17 +13,17 @@
       "latestVersion": "C23 (ISO/IEC 9899)"
     },
     "popularity": {
-      "totalRepos": 5120000,
-      "totalStars": 251000
+      "totalRepos": 4353812,
+      "totalStars": 250794
     },
     "momentum": {
-      "newReposLast30Days": 38400,
+      "newReposLast30Days": 74810,
       "topStarredNewRepo": {
-        "name": "redis/redis",
-        "stars": 76600
+        "name": "saragordic/window-sweaters",
+        "stars": 732
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:24.772Z"
   },
   {
     "id": "lang-go",
@@ -39,17 +39,17 @@
       "latestVersion": "v1.24.0"
     },
     "popularity": {
-      "totalRepos": 3150000,
-      "totalStars": 139000
+      "totalRepos": 2547628,
+      "totalStars": 139127
     },
     "momentum": {
-      "newReposLast30Days": 28400,
+      "newReposLast30Days": 62868,
       "topStarredNewRepo": {
-        "name": "ollama/ollama",
-        "stars": 112000
+        "name": "yetone/magpie",
+        "stars": 4116
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:29.346Z"
   },
   {
     "id": "lang-rust",
@@ -65,17 +65,17 @@
       "latestVersion": "v1.85.0"
     },
     "popularity": {
-      "totalRepos": 1820000,
-      "totalStars": 119000
+      "totalRepos": 1375297,
+      "totalStars": 119409
     },
     "momentum": {
-      "newReposLast30Days": 21500,
+      "newReposLast30Days": 51383,
       "topStarredNewRepo": {
-        "name": "astral-sh/uv",
-        "stars": 38400
+        "name": "qingjian-team/qingjian",
+        "stars": 2393
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:33.740Z"
   },
   {
     "id": "lang-typescript",
@@ -91,8 +91,8 @@
       "latestVersion": "v5.7.3"
     },
     "popularity": {
-      "totalRepos": 6480000,
-      "totalStars": 111000
+      "totalRepos": 18921232,
+      "totalStars": 111304
     },
     "momentum": {
       "newReposLast30Days": 84500,
@@ -101,7 +101,7 @@
         "stars": 14200
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:37.456Z"
   },
   {
     "id": "lang-python",
@@ -118,7 +118,7 @@
     },
     "popularity": {
       "totalRepos": 15420000,
-      "totalStars": 77400
+      "totalStars": 77384
     },
     "momentum": {
       "newReposLast30Days": 142000,
@@ -127,7 +127,7 @@
         "stars": 68400
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:40.370Z"
   },
   {
     "id": "lang-swift",
@@ -144,7 +144,7 @@
     },
     "popularity": {
       "totalRepos": 1120000,
-      "totalStars": 70400
+      "totalStars": 70445
     },
     "momentum": {
       "newReposLast30Days": 9800,
@@ -153,7 +153,7 @@
         "stars": 12800
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:43.200Z"
   },
   {
     "id": "lang-kotlin",
@@ -170,7 +170,7 @@
     },
     "popularity": {
       "totalRepos": 1450000,
-      "totalStars": 53500
+      "totalStars": 53473
     },
     "momentum": {
       "newReposLast30Days": 14800,
@@ -179,7 +179,7 @@
         "stars": 45600
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:46.001Z"
   },
   {
     "id": "lang-zig",
@@ -196,7 +196,7 @@
     },
     "popularity": {
       "totalRepos": 185000,
-      "totalStars": 43400
+      "totalStars": 43307
     },
     "momentum": {
       "newReposLast30Days": 3800,
@@ -205,7 +205,7 @@
         "stars": 43400
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:48.787Z"
   },
   {
     "id": "lang-cpp",
@@ -222,7 +222,7 @@
     },
     "popularity": {
       "totalRepos": 6180000,
-      "totalStars": 40900
+      "totalStars": 40880
     },
     "momentum": {
       "newReposLast30Days": 42100,
@@ -231,7 +231,7 @@
         "stars": 71500
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:51.589Z"
   },
   {
     "id": "lang-php",
@@ -247,17 +247,17 @@
       "latestVersion": "v8.4.4"
     },
     "popularity": {
-      "totalRepos": 5920000,
-      "totalStars": 40400
+      "totalRepos": 6414730,
+      "totalStars": 40425
     },
     "momentum": {
-      "newReposLast30Days": 26800,
+      "newReposLast30Days": 77298,
       "topStarredNewRepo": {
-        "name": "laravel/laravel",
-        "stars": 78400
+        "name": "Faizpi/bank-sampah",
+        "stars": 457
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:13:56.024Z"
   },
   {
     "id": "lang-elixir",
@@ -273,17 +273,17 @@
       "latestVersion": "v1.18.0"
     },
     "popularity": {
-      "totalRepos": 165000,
-      "totalStars": 26700
+      "totalRepos": 132495,
+      "totalStars": 26668
     },
     "momentum": {
-      "newReposLast30Days": 2400,
+      "newReposLast30Days": 1128,
       "topStarredNewRepo": {
-        "name": "phoenixframework/phoenix",
-        "stars": 22400
+        "name": "AFK-surf/Comma",
+        "stars": 147
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:00.459Z"
   },
   {
     "id": "lang-javascript",
@@ -299,17 +299,17 @@
       "latestVersion": "ES2026 (17. Sürüm)"
     },
     "popularity": {
-      "totalRepos": 18900000,
-      "totalStars": 25300
+      "totalRepos": 47724124,
+      "totalStars": 25273
     },
     "momentum": {
-      "newReposLast30Days": 168000,
+      "newReposLast30Days": 933176,
       "topStarredNewRepo": {
-        "name": "shadcn-ui/ui",
-        "stars": 78900
+        "name": "JohnHeibel/PDoomVideo",
+        "stars": 1668
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:04.954Z"
   },
   {
     "id": "lang-ruby",
@@ -325,17 +325,17 @@
       "latestVersion": "v3.4.2"
     },
     "popularity": {
-      "totalRepos": 2180000,
-      "totalStars": 23800
+      "totalRepos": 2970788,
+      "totalStars": 23765
     },
     "momentum": {
-      "newReposLast30Days": 11400,
+      "newReposLast30Days": 8807,
       "topStarredNewRepo": {
-        "name": "rails/rails",
-        "stars": 55800
+        "name": "basecamp/rails-active_search",
+        "stars": 94
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:09.529Z"
   },
   {
     "id": "lang-java",
@@ -351,17 +351,17 @@
       "latestVersion": "Java 23 (JDK 23)"
     },
     "popularity": {
-      "totalRepos": 14200000,
-      "totalStars": 23400
+      "totalRepos": 21751059,
+      "totalStars": 23392
     },
     "momentum": {
-      "newReposLast30Days": 98000,
+      "newReposLast30Days": 267284,
       "topStarredNewRepo": {
-        "name": "spring-projects/spring-boot",
-        "stars": 76200
+        "name": "voxivoid/recipe-lab-sony-pmca",
+        "stars": 561
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:13.941Z"
   },
   {
     "id": "lang-csharp",
@@ -378,7 +378,7 @@
     },
     "popularity": {
       "totalRepos": 4850000,
-      "totalStars": 20700
+      "totalStars": 20699
     },
     "momentum": {
       "newReposLast30Days": 31200,
@@ -387,7 +387,7 @@
         "stars": 114000
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:16.753Z"
   },
   {
     "id": "lang-dart",
@@ -404,7 +404,7 @@
     },
     "popularity": {
       "totalRepos": 620000,
-      "totalStars": 11300
+      "totalStars": 11288
     },
     "momentum": {
       "newReposLast30Days": 12400,
@@ -413,7 +413,7 @@
         "stars": 166000
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:19.675Z"
   },
   {
     "id": "lang-lua",
@@ -430,7 +430,7 @@
     },
     "popularity": {
       "totalRepos": 480000,
-      "totalStars": 10300
+      "totalStars": 10354
     },
     "momentum": {
       "newReposLast30Days": 6800,
@@ -439,7 +439,7 @@
         "stars": 82000
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:22.456Z"
   },
   {
     "id": "lang-scala",
@@ -456,7 +456,7 @@
     },
     "popularity": {
       "totalRepos": 380000,
-      "totalStars": 6300
+      "totalStars": 6308
     },
     "momentum": {
       "newReposLast30Days": 2900,
@@ -465,7 +465,7 @@
         "stars": 39800
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:25.210Z"
   },
   {
     "id": "lang-haskell",
@@ -482,7 +482,7 @@
     },
     "popularity": {
       "totalRepos": 290000,
-      "totalStars": 3000
+      "totalStars": 3273
     },
     "momentum": {
       "newReposLast30Days": 1800,
@@ -491,7 +491,7 @@
         "stars": 34500
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:28.052Z"
   },
   {
     "id": "lang-perl",
@@ -508,13 +508,13 @@
     },
     "popularity": {
       "totalRepos": 410000,
-      "totalStars": 2300
+      "totalStars": 2331
     },
     "momentum": {
       "newReposLast30Days": 1400,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:30.858Z"
   },
   {
     "id": "lang-bash",
@@ -540,7 +540,7 @@
         "stars": 174000
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:33.608Z"
   },
   {
     "id": "lang-r",
@@ -557,7 +557,7 @@
     },
     "popularity": {
       "totalRepos": 1850000,
-      "totalStars": 1200
+      "totalStars": 161
     },
     "momentum": {
       "newReposLast30Days": 12500,
@@ -566,7 +566,7 @@
         "stars": 6400
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:36.380Z"
   },
   {
     "id": "lang-objc",
@@ -583,7 +583,7 @@
     },
     "popularity": {
       "totalRepos": 980000,
-      "totalStars": 900
+      "totalStars": 495
     },
     "momentum": {
       "newReposLast30Days": 3200,
@@ -592,6 +592,6 @@
         "stars": 33400
       }
     },
-    "lastUpdated": "2026-10-01T09:00:00.000Z"
+    "lastUpdated": "2026-10-02T04:14:39.162Z"
   }
 ]
