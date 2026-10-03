@@ -216,13 +216,13 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center justify-between px-2">
               <span className="text-sm font-medium text-neutral-500">{t('nav.selectLanguage')}</span>
               <div className="w-24 flex justify-end">
-                <LanguageSwitcher />
+                <LanguageSwitcher onSelectLanguage={() => setMobileMenuOpen(false)} />
               </div>
             </div>
             <div className="flex items-center justify-between px-2">
               <span className="text-sm font-medium text-neutral-500">{t('nav.themeToggle')}</span>
               <div className="w-24 flex justify-end">
-                <ThemeToggle />
+                <ThemeToggle onToggleTheme={() => setMobileMenuOpen(false)} />
               </div>
             </div>
           </div>

@@ -8,7 +8,11 @@ const languages = [
   { code: 'de', label: 'DE', name: 'Deutsch' },
 ];
 
-export const LanguageSwitcher: React.FC = () => {
+interface LanguageSwitcherProps {
+  onSelectLanguage?: () => void;
+}
+
+export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ onSelectLanguage }) => {
   const { i18n, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -29,6 +33,9 @@ export const LanguageSwitcher: React.FC = () => {
     i18n.changeLanguage(code);
     setIsOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (onSelectLanguage) {
+      onSelectLanguage();
+    }
   };
 
   return (
