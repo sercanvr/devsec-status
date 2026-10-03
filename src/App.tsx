@@ -17,8 +17,8 @@ export const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-[#ECECEC] dark:bg-[#141414] text-[#141414] dark:text-[#FFFFFF] transition-colors duration-300 relative">
-        <GridVignetteBackground className="opacity-80" x={50} y={50} intensity={100} horizontalVignetteSize={50} verticalVignetteSize={30} />
+      <div className="min-h-screen flex flex-col bg-[#ECECEC]/60 dark:bg-[#141414]/60 text-[#141414] dark:text-[#FFFFFF] transition-colors duration-300 relative selection:bg-[#CEFF00] selection:text-[#141414]">
+        <GridVignetteBackground className="opacity-80" x={50} y={50} intensity={0} horizontalVignetteSize={100} verticalVignetteSize={100} />
         <Navbar />
 
         <main className="flex-1 pb-12">
@@ -35,5 +35,6 @@ export const App: React.FC = () => {
     </BrowserRouter>
   );
 };
+
 
 export default App;

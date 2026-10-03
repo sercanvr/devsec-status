@@ -13,7 +13,7 @@ export const PageInfo: React.FC<PageInfoProps> = ({ title, description, badge })
 
   return (
     <div className="w-full py-8 md:py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="relative overflow-hidden rounded-3xl bg-neutral-200/90 dark:bg-[#1E1E1E] p-6 sm:p-8 border border-neutral-300 dark:border-neutral-800 shadow-xl shadow-black/5">
+      <div className="relative overflow-hidden rounded-3xl bg-white/70 dark:bg-[#1E1E1E]/75 backdrop-blur-md p-6 sm:p-8 border border-neutral-300 dark:border-neutral-800 shadow-xl shadow-black/5">
         <div className="absolute -right-10 -bottom-10 w-48 h-48 bg-[#CEFF00]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-3xl space-y-3">
           {badge && (
