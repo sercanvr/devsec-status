@@ -40,15 +40,19 @@ export const Navbar: React.FC = () => {
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-4 z-50 my-3">
         <header className="w-full rounded-2xl border border-neutral-300/70 dark:border-neutral-800/80 bg-[#ECECEC]/90 dark:bg-[#141414]/90 backdrop-blur-xl shadow-xl transition-all duration-300">
           <div className="px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4">
-            {/* Left: Logo */}
-            <NavLink
-              to="/"
-              className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-[#CEFF00] rounded-lg p-0.5 shrink-0"
+            {/* Left: Logo (Page reload on click) */}
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = '/';
+              }}
+              className="flex items-center gap-2.5 group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer"
             >
               <img
                 src="/icons/devsec-icon.png"
                 alt="DevSec Status"
-                className="w-9 h-9 sm:w-10 sm:h-10 object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0"
+                className="w-9 h-9 sm:w-10 sm:h-10 object-contain drop-shadow-md shrink-0 transition-colors"
                 onError={(e) => {
                   (e.currentTarget as HTMLElement).style.display = 'none';
                 }}
@@ -58,7 +62,7 @@ export const Navbar: React.FC = () => {
                   DevSec <span className="text-[#CEFF00] font-mono text-xs sm:text-sm font-semibold">Status</span>
                 </span>
               </div>
-            </NavLink>
+            </a>
 
             {/* Center: Navigation Links (Desktop) */}
             <nav className="hidden md:flex items-center gap-1 bg-neutral-200/70 dark:bg-neutral-900/80 p-1.5 rounded-xl border border-neutral-300/60 dark:border-neutral-800/80 shadow-inner">
@@ -94,15 +98,15 @@ export const Navbar: React.FC = () => {
 
             {/* Right: Search Bar, Language Switcher, Theme Toggle */}
             <div className="flex items-center gap-2 sm:gap-2.5">
-              {/* Search Bar Trigger Button (Desktop & Tablet) */}
+              {/* Search Bar Trigger Button */}
               <button
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-all text-xs font-mono group"
+                className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group"
                 title="Search (Ctrl+K)"
               >
                 <Search className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#CEFF00] transition-colors" />
                 <span className="hidden sm:inline">Ara</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-[10px] text-neutral-500 dark:text-neutral-400 border border-neutral-400/40 dark:border-neutral-700">
+                <kbd className="hidden lg:inline-block px-1.5 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-[10px] text-neutral-500 dark:text-neutral-400 border border-neutral-400/40 dark:border-neutral-700">
                   ⌘K
                 </kbd>
               </button>

@@ -18,39 +18,25 @@ interface GridVignetteBackgroundProps {
 
 export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
   size = 40,
-  x = 50,
-  y = 50,
-  horizontalVignetteSize = 100,
-  verticalVignetteSize = 100,
-  intensity = 0,
   className,
 }) => {
-  const hasMask = intensity > 0;
-
   return (
     <div
       aria-hidden="true"
       className={cn(
         "fixed inset-0 z-0 pointer-events-none transition-opacity duration-300",
-        "bg-[image:linear-gradient(to_right,rgba(0,0,0,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.12)_1px,transparent_1px)] opacity-80",
-        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.14)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.14)_1px,transparent_1px)] dark:opacity-90",
+        "bg-[image:linear-gradient(to_right,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.08)_1px,transparent_1px)] opacity-50",
+        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] dark:opacity-60",
         className
       )}
       style={{
         backgroundSize: `${size}px ${size}px`,
-        ...(hasMask
-          ? {
-              maskImage: `radial-gradient(ellipse ${horizontalVignetteSize}% ${verticalVignetteSize}% at ${x}% ${y}%, black ${
-                100 - intensity
-              }%, transparent 100%)`,
-              WebkitMaskImage: `radial-gradient(ellipse ${horizontalVignetteSize}% ${verticalVignetteSize}% at ${x}% ${y}%, black ${
-                100 - intensity
-              }%, transparent 100%)`,
-            }
-          : {}),
+        maskImage: `radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 90%)`,
+        WebkitMaskImage: `radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 90%)`,
       }}
     />
   );
 };
+
 
 

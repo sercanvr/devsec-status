@@ -41,7 +41,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           <img
             src={entry.iconUrl}
             alt={cleanName}
-            className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-200"
+            className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm transition-colors"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
                 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
@@ -105,7 +105,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-all flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
+          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-colors flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
           title={t('techBar.viewOnGithub')}
         >
           <span className="hidden sm:inline font-sans">{t('techBar.viewOnGithub')}</span>
@@ -135,14 +135,29 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
         </div>
       </div>
 
-      {/* Bottom Row: Momentum Metrics */}
-      <div className="flex flex-wrap items-center justify-between text-xs pt-1 border-t border-neutral-200 dark:border-neutral-800/80 gap-2">
+      {/* Bottom Row: Momentum Metrics & Contributor Avatars Stack */}
+      <div className="flex flex-wrap items-center justify-between text-xs pt-2 border-t border-neutral-200 dark:border-neutral-800/80 gap-3">
         <div className="flex items-center gap-1.5 text-foreground dark:text-[#CEFF00] font-medium">
           <TrendingUp className="w-3.5 h-3.5 text-[#CEFF00]" />
           <span>{t('techBar.momentum')}:</span>
           <span className="font-mono font-bold bg-[#CEFF00]/20 text-neutral-900 dark:text-[#CEFF00] px-2 py-0.5 rounded-md border border-[#CEFF00]/30">
             +{formattedNewRepos} {t('techBar.newRepos')}
           </span>
+        </div>
+
+        {/* Contributor Avatar Stack & Rating Badge (User Spec) */}
+        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-200/60 dark:bg-neutral-900/70 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
+          <div className="flex -space-x-2 overflow-hidden">
+            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src={entry.creator?.avatarUrl || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"} alt="Contributor" />
+            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
+            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
+            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
+          </div>
+          <div className="h-3 w-px bg-neutral-300 dark:bg-neutral-700 mx-0.5" />
+          <div className="flex items-center gap-1 text-[11px] font-medium text-neutral-600 dark:text-neutral-400">
+            <span className="text-amber-400 text-[10px]">★★★★★</span>
+            <span className="font-mono text-[10px] text-foreground font-bold">5.0</span>
+          </div>
         </div>
 
         {entry.momentum.topStarredNewRepo && (

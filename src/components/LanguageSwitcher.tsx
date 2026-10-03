@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Globe, Check } from 'lucide-react';
+import { Earth, Check } from 'lucide-react';
 
 const languages = [
   { code: 'tr', label: 'TR', name: 'Türkçe' },
@@ -28,7 +28,6 @@ export const LanguageSwitcher: React.FC = () => {
   const handleSelect = (code: string) => {
     i18n.changeLanguage(code);
     setIsOpen(false);
-    // Scroll up to top as requested
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -36,10 +35,10 @@ export const LanguageSwitcher: React.FC = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-neutral-200/70 dark:bg-neutral-800 text-xs font-semibold border border-neutral-300/60 dark:border-neutral-700/60 text-neutral-800 dark:text-neutral-200 hover:border-[#CEFF00] transition-all duration-200"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-neutral-200/70 dark:bg-neutral-800 text-xs font-semibold border border-neutral-300/60 dark:border-neutral-700/60 text-neutral-800 dark:text-neutral-200 transition-colors"
         aria-label="Select Language"
       >
-        <Globe className="w-3.5 h-3.5 text-neutral-500 dark:text-neutral-400" />
+        <Earth className="w-3.5 h-3.5 text-neutral-500 dark:text-neutral-400" />
         <span>{currentLang.label}</span>
       </button>
 
