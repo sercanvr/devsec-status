@@ -6,28 +6,48 @@ const STORAGE_KEY = 'devsec_theme';
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === 'undefined') return 'dark';
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === 'light' || saved === 'dark') {
       return saved;
     }
     // Default requirement: Dark mode on first load
-    return 'dark';
+    return document.documentElement.classList.contains('dark') ? 'dark' : 'dark';
   });
 
   useEffect(() => {
+    const syncThemeFromDOM = () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      setTheme(isDark ? 'dark' : 'light');
+    };
+
+    window.addEventListener('themechange', syncThemeFromDOM);
+    window.addEventListener('storage', syncThemeFromDOM);
+    return () => {
+      window.removeEventListener('themechange', syncThemeFromDOM);
+      window.removeEventListener('storage', syncThemeFromDOM);
+    };
+  }, []);
+
+  const toggleTheme = () => {
+    const isCurrentlyDark = document.documentElement.classList.contains('dark');
+    const newTheme: Theme = isCurrentlyDark ? 'light' : 'dark';
     const root = document.documentElement;
-    if (theme === 'dark') {
+
+    if (newTheme === 'dark') {
       root.classList.add('dark');
       root.classList.remove('light');
     } else {
       root.classList.remove('dark');
       root.classList.add('light');
     }
-    localStorage.setItem(STORAGE_KEY, theme);
-  }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    try {
+      localStorage.setItem(STORAGE_KEY, newTheme);
+    } catch {}
+
+    setTheme(newTheme);
+    window.dispatchEvent(new Event('themechange'));
   };
 
   return { theme, setTheme, toggleTheme };
