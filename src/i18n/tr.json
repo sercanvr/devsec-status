@@ -3,7 +3,9 @@
     "software": "Yazılım",
     "security": "Güvenlik",
     "themeToggle": "Tema Değiştir",
-    "selectLanguage": "Dil Seçin"
+    "selectLanguage": "Dil Seçin",
+    "changeLanguage": "Dil Değiştir",
+    "changeTheme": "Tema Değiştir"
   },
   "info": {
     "software": "Programlama dilleri, popüler framework'ler, kütüphaneler ve veritabanı teknolojilerinin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",
@@ -45,7 +47,8 @@
   "footer": {
     "rights": "Tüm hakları saklıdır.",
     "disclaimer": "Veriler GitHub Search API ve resmi veri tabanları kullanılarak günlük olarak otomatik güncellenmektedir.",
-    "lastUpdated": "Son Güncelleme"
+    "lastUpdated": "Son Güncelleme",
+    "allContentUpToDate": "Tüm içerik güncel durumda."
   },
   "common": {
     "scrollToTop": "Yukarı Çık",

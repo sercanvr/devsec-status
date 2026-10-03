@@ -20,7 +20,7 @@ export const ThemeToggle: React.FC = () => {
       {/* Instant Hover Tooltip */}
       <div className="hidden group-hover:block absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 z-50 bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
         <span className="absolute -top-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-b-[6px] border-b-[#CEFF00]" />
-        Tema Değiştir
+        {t('nav.changeTheme')}
       </div>
     </div>
   );

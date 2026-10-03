@@ -19,30 +19,32 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
 
   return (
     <footer className="w-full border-t border-neutral-300 dark:border-neutral-800/80 bg-[#ECECEC]/70 dark:bg-[#141414]/70 backdrop-blur-md pt-10 pb-0 mt-16 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-start relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch relative z-10">
         {/* Left Column: Logo, Description & Copyright */}
-        <div className="flex flex-col gap-3 text-left">
-          <a
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href = '/';
-            }}
-            className="flex items-center gap-2 cursor-pointer"
-          >
-            <img
-              src="/icons/devsec-icon.png"
-              alt="DevSec Status"
-              className="w-8 h-8 object-contain shrink-0"
-            />
-            <span className="font-serif font-bold text-lg tracking-tight text-foreground">
-              DevSec <span className="text-[#CEFF00] font-mono text-sm">Status</span>
-            </span>
-          </a>
-          <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
-            Programlama dilleri, kütüphane/framework'ler ve açık kaynak siber güvenlik araçlarının canlı GitHub Search API metriklerini ve ivmelenme verilerini sunan bilgilendirme platformu.
-          </p>
-          <span className="text-xs font-mono font-medium text-neutral-500 dark:text-neutral-400 mt-1">
+        <div className="flex flex-col justify-between h-full gap-3 text-left">
+          <div className="flex flex-col gap-3">
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = '/';
+              }}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <img
+                src="/icons/devsec-icon.png"
+                alt="DevSec Status"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <span className="font-serif font-bold text-lg tracking-tight text-foreground">
+                DevSec <span className="text-[#CEFF00] font-mono text-sm">Status</span>
+              </span>
+            </a>
+            <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
+              Programlama dilleri, kütüphane/framework'ler ve açık kaynak siber güvenlik araçlarının canlı GitHub Search API metriklerini ve ivmelenme verilerini sunan bilgilendirme platformu.
+            </p>
+          </div>
+          <span className="text-xs font-mono font-medium text-neutral-500 dark:text-neutral-400 mt-2">
             © 2026 DevSec Status.
           </span>
         </div>
@@ -58,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
         </div>
 
         {/* Right Column: Rainbow GitHub Star Button & Last Updated Badge */}
-        <div className="flex flex-col items-start md:items-end gap-4">
+        <div className="flex flex-col justify-between h-full items-start md:items-end gap-4">
           {/* High-Contrast Star on GitHub Button with Star Icon on Right */}
           <a
             href="https://github.com/sercanvr/devsec-status"
@@ -82,15 +84,21 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             </div>
             <div className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-400 font-sans font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
-              <span>Tüm içerik güncel durumda.</span>
+              <span>{t('footer.allContentUpToDate')}</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Giant Aesthetic "TECH" Typography Watermark at Bottom Floor */}
-      <div className="mt-4 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end">
-        <span className="font-serif font-black text-[9rem] sm:text-[16rem] md:text-[22rem] lg:text-[26rem] uppercase text-neutral-400/20 dark:text-neutral-600/15 tracking-[0.2em] sm:tracking-[0.28em] block leading-[0.75] translate-y-6 sm:translate-y-10 md:translate-y-16 scale-x-105">
+      <div className="mt-8 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end relative">
+        <span
+          className="font-serif font-black text-[18vw] sm:text-[19vw] md:text-[20vw] uppercase text-neutral-400/25 dark:text-neutral-600/20 tracking-wider block leading-[0.7] translate-y-2 sm:translate-y-4 md:translate-y-6 w-full text-center"
+          style={{
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 95%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 95%)',
+          }}
+        >
           TECH
         </span>
       </div>
