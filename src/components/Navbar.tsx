@@ -101,7 +101,7 @@ export const Navbar: React.FC = () => {
               {/* Search Bar Trigger Button */}
               <button
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group"
+                className="flex items-center gap-2 px-3 h-9 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group"
                 title="Search (Ctrl+K)"
               >
                 <Search className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#CEFF00] transition-colors" />

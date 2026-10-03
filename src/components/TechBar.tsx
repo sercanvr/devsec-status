@@ -145,18 +145,18 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           </span>
         </div>
 
-        {/* Contributor Avatar Stack & Rating Badge (User Spec) */}
-        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-200/60 dark:bg-neutral-900/70 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
+        {/* Contributor Avatar Stack & Dynamic Contributors Count (User Spec) */}
+        <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
           <div className="flex -space-x-2 overflow-hidden">
-            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src={entry.creator?.avatarUrl || "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80"} alt="Contributor" />
-            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
-            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
-            <img className="inline-block h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="Contributor" />
+            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src={entry.creator?.avatarUrl || "https://github.com/torvalds.png"} alt="Contributor" />
+            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/gaearon.png" alt="Contributor" />
+            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/yyx99.png" alt="Contributor" />
+            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/sitemaps.png" alt="Contributor" />
           </div>
-          <div className="h-3 w-px bg-neutral-300 dark:bg-neutral-700 mx-0.5" />
-          <div className="flex items-center gap-1 text-[11px] font-medium text-neutral-600 dark:text-neutral-400">
-            <span className="text-amber-400 text-[10px]">★★★★★</span>
-            <span className="font-mono text-[10px] text-foreground font-bold">5.0</span>
+          <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />
+          <div className="flex items-center gap-1.5 text-[11px] font-medium text-neutral-700 dark:text-neutral-300">
+            <span className="font-semibold text-neutral-500 dark:text-neutral-400">Contributors</span>
+            <span className="font-mono text-xs font-bold text-foreground">{formattedRepos}</span>
           </div>
         </div>
 
