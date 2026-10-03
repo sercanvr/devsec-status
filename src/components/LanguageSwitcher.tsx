@@ -32,7 +32,7 @@ export const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="relative inline-block text-left group" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
         className="flex items-center gap-1.5 px-3 h-9 rounded-xl bg-neutral-200/70 dark:bg-neutral-800 text-xs font-semibold border border-neutral-300/60 dark:border-neutral-700/60 text-neutral-800 dark:text-neutral-200 transition-colors"
@@ -41,6 +41,14 @@ export const LanguageSwitcher: React.FC = () => {
         <Earth className="w-3.5 h-3.5 text-neutral-500 dark:text-neutral-400" />
         <span>{currentLang.label}</span>
       </button>
+
+      {/* Instant Hover Tooltip */}
+      {!isOpen && (
+        <div className="hidden group-hover:block absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 z-50 bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+          <span className="absolute -top-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-b-[6px] border-b-[#CEFF00]" />
+          Dil Değiştir
+        </div>
+      )}
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-44 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-xl z-50 overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">

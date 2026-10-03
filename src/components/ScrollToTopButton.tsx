@@ -32,7 +32,7 @@ export const ScrollToTopButton: React.FC = () => {
       onClick={scrollToTop}
       aria-label={t('common.scrollToTop')}
       title={t('common.scrollToTop')}
-      className={`fixed right-4 sm:right-6 z-50 w-11 h-11 rounded-xl bg-[#1D1D1F]/90 dark:bg-[#1D1D1F]/90 backdrop-blur-xl border border-[#CEFF00] flex items-center justify-center overflow-hidden transition-all duration-300 focus:outline-none shadow-xl shadow-[#CEFF00]/10 ${
+      className={`fixed right-4 sm:right-6 z-50 w-11 h-11 rounded-xl bg-[#1D1D1F]/90 dark:bg-[#1D1D1F]/90 backdrop-blur-xl border border-[#CEFF00] flex items-center justify-center overflow-hidden transition-all duration-300 focus:outline-none ${
         visible ? 'bottom-6 sm:bottom-8 opacity-100' : '-bottom-20 opacity-0 pointer-events-none'
       }`}
     >
