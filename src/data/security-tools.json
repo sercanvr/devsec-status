@@ -13,17 +13,17 @@
       "latestVersion": "v11.3"
     },
     "popularity": {
-      "totalRepos": 3430,
-      "totalStars": 80364
+      "totalRepos": 3431,
+      "totalStars": 80387
     },
     "momentum": {
-      "newReposLast30Days": 168,
+      "newReposLast30Days": 169,
       "topStarredNewRepo": {
         "name": "GronedWaffel/ps-neighborhood",
         "stars": 19
       }
     },
-    "lastUpdated": "2026-10-03T04:16:25.844Z"
+    "lastUpdated": "2026-10-03T11:16:58.852Z"
   },
   {
     "id": "sec-metasploit",
@@ -40,7 +40,7 @@
     },
     "popularity": {
       "totalRepos": 989,
-      "totalStars": 39076
+      "totalStars": 39078
     },
     "momentum": {
       "newReposLast30Days": 18,
@@ -49,7 +49,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-03T04:16:29.827Z"
+    "lastUpdated": "2026-10-03T11:17:02.963Z"
   },
   {
     "id": "sec-sqlmap",
@@ -65,17 +65,17 @@
       "latestVersion": "v1.9"
     },
     "popularity": {
-      "totalRepos": 2486,
-      "totalStars": 38587
+      "totalRepos": 2487,
+      "totalStars": 38589
     },
     "momentum": {
-      "newReposLast30Days": 56,
+      "newReposLast30Days": 57,
       "topStarredNewRepo": {
         "name": "1754590349/sqlmap-GUI-by-zc",
         "stars": 6
       }
     },
-    "lastUpdated": "2026-10-03T04:16:34.330Z"
+    "lastUpdated": "2026-10-03T11:17:07.200Z"
   },
   {
     "id": "sec-trivy",
@@ -91,17 +91,17 @@
       "latestVersion": "v0.59.0"
     },
     "popularity": {
-      "totalRepos": 5835,
-      "totalStars": 38202
+      "totalRepos": 5840,
+      "totalStars": 38207
     },
     "momentum": {
-      "newReposLast30Days": 393,
+      "newReposLast30Days": 398,
       "topStarredNewRepo": {
         "name": "transpiler-mate/cwl2sbom",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-03T04:16:38.620Z"
+    "lastUpdated": "2026-10-03T11:17:11.531Z"
   },
   {
     "id": "sec-nuclei",
@@ -117,17 +117,17 @@
       "latestVersion": "v3.3.8"
     },
     "popularity": {
-      "totalRepos": 5765,
-      "totalStars": 31683
+      "totalRepos": 5766,
+      "totalStars": 31687
     },
     "momentum": {
-      "newReposLast30Days": 184,
+      "newReposLast30Days": 185,
       "topStarredNewRepo": {
         "name": "shinthink/blitzstrike",
-        "stars": 494
+        "stars": 495
       }
     },
-    "lastUpdated": "2026-10-03T04:16:42.916Z"
+    "lastUpdated": "2026-10-03T11:17:15.756Z"
   },
   {
     "id": "sec-hashcat",
@@ -144,7 +144,7 @@
     },
     "popularity": {
       "totalRepos": 2278,
-      "totalStars": 26931
+      "totalStars": 26935
     },
     "momentum": {
       "newReposLast30Days": 104,
@@ -153,7 +153,7 @@
         "stars": 12
       }
     },
-    "lastUpdated": "2026-10-03T04:16:48.469Z"
+    "lastUpdated": "2026-10-03T11:17:20.042Z"
   },
   {
     "id": "sec-trufflehog",
@@ -170,7 +170,7 @@
     },
     "popularity": {
       "totalRepos": 564,
-      "totalStars": 28248
+      "totalStars": 28252
     },
     "momentum": {
       "newReposLast30Days": 30,
@@ -179,7 +179,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-03T04:16:52.751Z"
+    "lastUpdated": "2026-10-03T11:17:24.506Z"
   },
   {
     "id": "sec-owasp-zap",
@@ -196,7 +196,7 @@
     },
     "popularity": {
       "totalRepos": 11,
-      "totalStars": 15859
+      "totalStars": 15860
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -205,7 +205,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-03T04:16:56.103Z"
+    "lastUpdated": "2026-10-03T11:17:27.786Z"
   },
   {
     "id": "sec-nmap",
@@ -221,17 +221,17 @@
       "latestVersion": "v7.95"
     },
     "popularity": {
-      "totalRepos": 20863,
-      "totalStars": 13701
+      "totalRepos": 20876,
+      "totalStars": 13702
     },
     "momentum": {
-      "newReposLast30Days": 918,
+      "newReposLast30Days": 931,
       "topStarredNewRepo": {
         "name": "ProsecutorName/Nmap-Security-Suite-2026",
         "stars": 11
       }
     },
-    "lastUpdated": "2026-10-03T04:17:00.213Z"
+    "lastUpdated": "2026-10-03T11:17:31.967Z"
   },
   {
     "id": "sec-john-the-ripper",
@@ -248,7 +248,7 @@
     },
     "popularity": {
       "totalRepos": 886,
-      "totalStars": 13709
+      "totalStars": 13712
     },
     "momentum": {
       "newReposLast30Days": 149,
@@ -257,7 +257,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-03T04:17:04.873Z"
+    "lastUpdated": "2026-10-03T11:17:36.403Z"
   },
   {
     "id": "sec-wireshark",
@@ -273,17 +273,17 @@
       "latestVersion": "v4.4.4"
     },
     "popularity": {
-      "totalRepos": 16147,
-      "totalStars": 9949
+      "totalRepos": 16157,
+      "totalStars": 9951
     },
     "momentum": {
-      "newReposLast30Days": 851,
+      "newReposLast30Days": 861,
       "topStarredNewRepo": {
         "name": "ElderCrochet/Wireshark-Advanced",
         "stars": 25
       }
     },
-    "lastUpdated": "2026-10-03T04:17:09.289Z"
+    "lastUpdated": "2026-10-03T11:17:40.762Z"
   },
   {
     "id": "sec-volatility",
@@ -300,7 +300,7 @@
     },
     "popularity": {
       "totalRepos": 812,
-      "totalStars": 4451
+      "totalStars": 4452
     },
     "momentum": {
       "newReposLast30Days": 51,
@@ -309,6 +309,6 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-03T04:17:13.801Z"
+    "lastUpdated": "2026-10-03T11:17:45.376Z"
   }
 ]
