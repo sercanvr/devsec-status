@@ -73,18 +73,24 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             <span>Star on GitHub</span>
           </a>
 
-          {/* Last Updated Badge with Plug Icon and Spacing */}
-          <div className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-400 font-mono mt-2">
-            <Plug className="w-4 h-4 text-[#CEFF00]" />
-            <span>{t('footer.lastUpdated')}: {formattedDate}</span>
+          {/* Last Updated Badge with Plug Icon and All Content Updated Subtext */}
+          <div className="flex flex-col items-start md:items-end gap-1.5 mt-2 font-mono">
+            <div className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-400">
+              <Plug className="w-4 h-4 text-[#CEFF00]" />
+              <span>{t('footer.lastUpdated')}: {formattedDate}</span>
+            </div>
+            <div className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-400 font-sans font-medium">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+              <span>Tüm içerik güncel durumda.</span>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Embedded Aesthetic "Tech" Word at Bottom Center */}
-      <div className="mt-8 pt-4 border-t border-neutral-300/40 dark:border-neutral-800/40 text-center select-none pointer-events-none">
-        <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-neutral-400/40 dark:text-neutral-600/40 font-bold">
-          Tech
+      {/* Giant Aesthetic "TECH" Typography Watermark at Bottom (Borderless, Low Opacity) */}
+      <div className="mt-8 text-center select-none pointer-events-none overflow-hidden leading-none">
+        <span className="font-serif font-black text-7xl sm:text-9xl md:text-[11rem] lg:text-[14rem] uppercase text-neutral-400/20 dark:text-neutral-600/15 tracking-tighter block leading-none -mb-6 sm:-mb-10">
+          TECH
         </span>
       </div>
     </footer>
