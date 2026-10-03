@@ -145,38 +145,26 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           </span>
         </div>
 
-        {/* Contributor Avatar Stack & Dynamic Contributors Count (User Spec) */}
+        {/* Official GitHub Repository Badge */}
         {(() => {
-          const repoOwner = entry.githubUrl.split('github.com/')[1]?.split('/')[0] || 'octocat';
-          const repoName = entry.githubUrl.split('github.com/')[1]?.split('/')[1] || repoOwner;
+          const repoOwner = entry.githubUrl.split('github.com/')[1]?.split('/')[0] || 'github';
           return (
-            <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
-              <div className="flex -space-x-2 overflow-hidden">
-                <img
-                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                  src={entry.creator?.avatarUrl || `https://github.com/${repoOwner}.png`}
-                  alt={repoOwner}
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://github.com/${repoOwner}.png`; }}
-                />
-                <img
-                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                  src={`https://github.com/${repoOwner}.png`}
-                  alt="Contributor"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://github.com/github.png'; }}
-                />
-                <img
-                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                  src={`https://github.com/${repoName}.png`}
-                  alt="Contributor"
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://github.com/web.png'; }}
-                />
-              </div>
-              <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />
-              <div className="flex items-center gap-1.5 text-[11px] font-medium text-neutral-700 dark:text-neutral-300">
-                <span className="font-semibold text-neutral-500 dark:text-neutral-400">Contributors</span>
-                <span className="font-mono text-xs font-bold text-foreground">{formattedRepos}</span>
-              </div>
-            </div>
+            <a
+              href={cleanGithubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-200/70 dark:bg-neutral-900/90 border border-neutral-300/70 dark:border-neutral-800 text-[11px] font-medium text-neutral-700 dark:text-neutral-300 hover:border-[#CEFF00]/60 transition-colors shrink-0 group/repo"
+            >
+              <img
+                className="h-4 w-4 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover bg-neutral-800"
+                src={entry.creator?.avatarUrl || `https://github.com/${repoOwner}.png`}
+                alt={repoOwner}
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://github.com/${repoOwner}.png`; }}
+              />
+              <span className="font-mono font-bold text-foreground group-hover/repo:text-[#CEFF00] transition-colors">
+                @{repoOwner}
+              </span>
+            </a>
           );
         })()}
 

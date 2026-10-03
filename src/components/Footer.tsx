@@ -91,12 +91,12 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
       </div>
 
       {/* Giant Aesthetic "TECH" Typography Watermark at Bottom Floor */}
-      <div className="mt-12 sm:mt-16 md:mt-20 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end relative">
+      <div className="mt-10 sm:mt-14 md:mt-16 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end relative">
         <span
-          className="font-serif font-black text-[26vw] sm:text-[22vw] md:text-[20vw] uppercase text-neutral-400/25 dark:text-neutral-600/20 tracking-wider block leading-none w-full text-center"
+          className="font-serif font-black text-[26vw] sm:text-[22vw] md:text-[20vw] uppercase text-neutral-400/25 dark:text-neutral-600/20 tracking-wider block leading-none translate-y-3 sm:translate-y-4 md:translate-y-5 w-full text-center"
           style={{
-            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 98%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 98%)',
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 98%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 98%)',
           }}
         >
           TECH

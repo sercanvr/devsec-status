@@ -175,9 +175,6 @@ export const Navbar: React.FC = () => {
             <span className="flex items-center gap-2">
               <Search className="w-4 h-4 text-[#CEFF00]" /> Ara...
             </span>
-            <span className="px-2 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-xs text-neutral-500">
-              ⌘K
-            </span>
           </button>
 
           {/* Navigation Links List */}
@@ -214,15 +211,19 @@ export const Navbar: React.FC = () => {
             </NavLink>
           </div>
 
-          {/* Language & Theme Controls */}
+          {/* Language & Theme Controls (Symmetric Right Alignment) */}
           <div className="flex flex-col gap-3 pt-4 border-t border-neutral-300 dark:border-neutral-800">
             <div className="flex items-center justify-between px-2">
               <span className="text-sm font-medium text-neutral-500">{t('nav.selectLanguage')}</span>
-              <LanguageSwitcher />
+              <div className="w-24 flex justify-end">
+                <LanguageSwitcher />
+              </div>
             </div>
             <div className="flex items-center justify-between px-2">
               <span className="text-sm font-medium text-neutral-500">{t('nav.themeToggle')}</span>
-              <ThemeToggle />
+              <div className="w-24 flex justify-end">
+                <ThemeToggle />
+              </div>
             </div>
           </div>
         </div>
