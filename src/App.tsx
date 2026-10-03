@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
+import { GridVignetteBackground } from './components/GridVignetteBackground';
 import { SoftwarePage } from './pages/SoftwarePage';
 import { SecurityPage } from './pages/SecurityPage';
 
@@ -16,7 +17,8 @@ export const App: React.FC = () => {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+      <div className="min-h-screen flex flex-col bg-[#ECECEC] dark:bg-[#141414] text-[#141414] dark:text-[#FFFFFF] transition-colors duration-300 relative">
+        <GridVignetteBackground className="opacity-80" x={50} y={50} intensity={100} horizontalVignetteSize={50} verticalVignetteSize={30} />
         <Navbar />
 
         <main className="flex-1 pb-12">

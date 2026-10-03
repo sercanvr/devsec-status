@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Code2, Layers, Database } from 'lucide-react';
 import { PageInfo } from '../components/PageInfo';
 import { TechSection } from '../components/TechSection';
+import { ProximitySidebar } from '../components/ProximitySidebar';
 import { TechEntry } from '../types/tech';
 
 import rawLanguages from '../data/languages.json';
@@ -31,8 +32,16 @@ export const SoftwarePage: React.FC = () => {
     );
   }, []);
 
+  const sections = [
+    { id: 'section-languages', label: t('sections.languages') },
+    { id: 'section-frameworks', label: t('sections.frameworks') },
+    { id: 'section-databases', label: t('sections.databases') },
+  ];
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 relative">
+      <ProximitySidebar sections={sections} />
+
       <PageInfo
         title={t('nav.software')}
         description={t('info.software')}
@@ -41,18 +50,21 @@ export const SoftwarePage: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <TechSection
+          id="section-languages"
           title={t('sections.languages')}
           icon={<Code2 className="w-5 h-5 text-[#CEFF00]" />}
           entries={sortedLanguages}
         />
 
         <TechSection
+          id="section-frameworks"
           title={t('sections.frameworks')}
           icon={<Layers className="w-5 h-5 text-[#CEFF00]" />}
           entries={sortedFrameworks}
         />
 
         <TechSection
+          id="section-databases"
           title={t('sections.databases')}
           icon={<Database className="w-5 h-5 text-[#CEFF00]" />}
           entries={sortedDatabases}
