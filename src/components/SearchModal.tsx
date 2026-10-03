@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Search, X, Code2, ShieldAlert, Database, ChevronRight, CornerDownLeft } from 'lucide-react';
+import { Search, X, ChevronRight, CornerDownLeft } from 'lucide-react';
 import { TechEntry } from '../types/tech';
 import languagesData from '../data/languages.json';
 import frameworksData from '../data/frameworks.json';

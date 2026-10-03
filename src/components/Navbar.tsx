@@ -37,8 +37,8 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <header className="sticky top-4 z-50 my-3 mx-4 sm:mx-auto max-w-5xl rounded-2xl border border-neutral-300/70 dark:border-neutral-800/80 bg-[#ECECEC]/90 dark:bg-[#141414]/90 backdrop-blur-xl shadow-xl transition-all duration-300">
-        <div className="px-4 py-2.5 flex items-center justify-between gap-2 sm:gap-4">
+      <header className="sticky top-4 z-50 my-3 mx-4 sm:mx-auto max-w-7xl rounded-2xl border border-neutral-300/70 dark:border-neutral-800/80 bg-[#ECECEC]/90 dark:bg-[#141414]/90 backdrop-blur-xl shadow-xl transition-all duration-300">
+        <div className="px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4">
           {/* Left: Logo */}
           <NavLink
             to="/"
@@ -65,7 +65,7 @@ export const Navbar: React.FC = () => {
               to="/"
               end
               className={({ isActive }) =>
-                `flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                `flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
                   isActive
                     ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                     : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
@@ -79,7 +79,7 @@ export const Navbar: React.FC = () => {
             <NavLink
               to="/security"
               className={({ isActive }) =>
-                `flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                `flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
                   isActive
                     ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                     : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
@@ -92,7 +92,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right: Search Bar, Language Switcher, Theme Toggle (Desktop) */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
             {/* Search Bar Trigger Button */}
             <button
               onClick={() => setSearchModalOpen(true)}

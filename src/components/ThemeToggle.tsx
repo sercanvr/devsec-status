@@ -12,13 +12,14 @@ export const ThemeToggle: React.FC = () => {
       onClick={toggleTheme}
       aria-label={t('nav.themeToggle')}
       title={t('nav.themeToggle')}
-      className="p-2.5 rounded-xl bg-neutral-200/70 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 hover:bg-[#CEFF00] hover:text-[#141414] dark:hover:bg-[#CEFF00] dark:hover:text-[#141414] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#CEFF00] border border-neutral-300/60 dark:border-neutral-700/60"
+      className="w-8 h-8 rounded-full flex items-center justify-center bg-neutral-200/80 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 hover:border-[#CEFF00] focus:outline-none focus:ring-2 focus:ring-[#CEFF00] border border-neutral-300/60 dark:border-neutral-700/60 transition-all duration-200 shrink-0"
     >
       {theme === 'dark' ? (
-        <Sun className="w-4 h-4 text-[#CEFF00] hover:text-[#141414] transition-colors" />
+        <Sun className="w-4 h-4 text-[#CEFF00] transition-transform duration-200 hover:rotate-45" />
       ) : (
-        <Moon className="w-4 h-4 text-neutral-800 transition-colors" />
+        <Moon className="w-4 h-4 text-neutral-800 transition-transform duration-200 hover:-rotate-12" />
       )}
     </button>
   );
 };
+

@@ -17,7 +17,7 @@ interface GridVignetteBackgroundProps {
 }
 
 export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
-  size = 48,
+  size = 40,
   x = 50,
   y = 50,
   horizontalVignetteSize = 100,
@@ -29,9 +29,9 @@ export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
     <div
       aria-hidden="true"
       className={cn(
-        "fixed inset-0 z-[-1] pointer-events-none opacity-40 dark:opacity-50 transition-opacity duration-300",
-        "bg-[image:linear-gradient(to_right,rgba(120,120,120,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(120,120,120,0.15)_1px,transparent_1px)]",
-        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.08)_1px,transparent_1px)]",
+        "fixed inset-0 z-[-1] pointer-events-none transition-opacity duration-300",
+        "bg-[image:linear-gradient(to_right,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.08)_1px,transparent_1px)] opacity-70",
+        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)] dark:opacity-80",
         className
       )}
       style={{
@@ -46,3 +46,4 @@ export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
     />
   );
 };
+
