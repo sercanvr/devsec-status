@@ -11,10 +11,10 @@ export function useTheme() {
     if (saved === 'light' || saved === 'dark') {
       return saved;
     }
+    // Default requirement: Dark mode on first load
     return 'dark';
   });
 
-  // Ensure DOM class is synced on initial mount
   useEffect(() => {
     const root = document.documentElement;
     if (theme === 'dark') {
@@ -24,33 +24,13 @@ export function useTheme() {
       root.classList.remove('dark');
       root.classList.add('light');
     }
+    try {
+      localStorage.setItem(STORAGE_KEY, theme);
+    } catch {}
   }, [theme]);
 
   const toggleTheme = () => {
-    const root = document.documentElement;
-    const isDark = root.classList.contains('dark');
-    const newTheme: Theme = isDark ? 'light' : 'dark';
-
-    // Apply performance class during transition
-    root.classList.add('theme-switching');
-
-    if (newTheme === 'dark') {
-      root.classList.add('dark');
-      root.classList.remove('light');
-    } else {
-      root.classList.remove('dark');
-      root.classList.add('light');
-    }
-
-    try {
-      localStorage.setItem(STORAGE_KEY, newTheme);
-    } catch {}
-
-    setTheme(newTheme);
-
-    setTimeout(() => {
-      root.classList.remove('theme-switching');
-    }, 150);
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   return { theme, setTheme, toggleTheme };
