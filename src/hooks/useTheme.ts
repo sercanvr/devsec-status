@@ -11,28 +11,28 @@ export function useTheme() {
     if (saved === 'light' || saved === 'dark') {
       return saved;
     }
-    // Default requirement: Dark mode on first load
-    return document.documentElement.classList.contains('dark') ? 'dark' : 'dark';
+    return 'dark';
   });
 
+  // Ensure DOM class is synced on initial mount
   useEffect(() => {
-    const syncThemeFromDOM = () => {
-      const isDark = document.documentElement.classList.contains('dark');
-      setTheme(isDark ? 'dark' : 'light');
-    };
-
-    window.addEventListener('themechange', syncThemeFromDOM);
-    window.addEventListener('storage', syncThemeFromDOM);
-    return () => {
-      window.removeEventListener('themechange', syncThemeFromDOM);
-      window.removeEventListener('storage', syncThemeFromDOM);
-    };
-  }, []);
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+      root.classList.remove('light');
+    } else {
+      root.classList.remove('dark');
+      root.classList.add('light');
+    }
+  }, [theme]);
 
   const toggleTheme = () => {
-    const isCurrentlyDark = document.documentElement.classList.contains('dark');
-    const newTheme: Theme = isCurrentlyDark ? 'light' : 'dark';
     const root = document.documentElement;
+    const isDark = root.classList.contains('dark');
+    const newTheme: Theme = isDark ? 'light' : 'dark';
+
+    // Apply performance class during transition
+    root.classList.add('theme-switching');
 
     if (newTheme === 'dark') {
       root.classList.add('dark');
@@ -47,7 +47,10 @@ export function useTheme() {
     } catch {}
 
     setTheme(newTheme);
-    window.dispatchEvent(new Event('themechange'));
+
+    setTimeout(() => {
+      root.classList.remove('theme-switching');
+    }, 150);
   };
 
   return { theme, setTheme, toggleTheme };

@@ -82,7 +82,14 @@
 }
 
 .glass-card {
-  @apply bg-white/70 dark:bg-[#1E1E1E]/75 backdrop-blur-md border border-neutral-300/80 dark:border-neutral-800/90 hover:border-[#CEFF00]/80 dark:hover:border-[#CEFF00]/80 transition-all duration-300;
+  @apply bg-white/70 dark:bg-[#1E1E1E]/75 backdrop-blur-md border border-neutral-300/80 dark:border-neutral-800/90 hover:border-[#CEFF00]/80 dark:hover:border-[#CEFF00]/80 transition-colors duration-150;
+}
+
+/* Theme Switching 60fps Performance Optimization */
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: background-color 0.15s ease-out, border-color 0.15s ease-out, color 0.15s ease-out !important;
 }
 
 /* Custom Scrollbar */
