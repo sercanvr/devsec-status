@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Star, GitFork, ExternalLink, TrendingUp, Sparkles, Calendar, Tag } from 'lucide-react';
 import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
+import { useGitHubContributors } from '../hooks/useGitHubContributors';
 
 interface TechBarProps {
   entry: TechEntry;
@@ -11,6 +12,7 @@ interface TechBarProps {
 
 export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
   const { t } = useTranslation();
+  const contributors = useGitHubContributors(entry.githubUrl);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
@@ -41,7 +43,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           <img
             src={entry.iconUrl}
             alt={cleanName}
-            className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm group-hover:scale-110 transition-transform duration-200"
+            className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm transition-colors"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
                 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
@@ -105,7 +107,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-all flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
+          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-colors flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
           title={t('techBar.viewOnGithub')}
         >
           <span className="hidden sm:inline font-sans">{t('techBar.viewOnGithub')}</span>
@@ -135,13 +137,42 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
         </div>
       </div>
 
-      {/* Bottom Row: Momentum Metrics */}
-      <div className="flex flex-wrap items-center justify-between text-xs pt-1 border-t border-neutral-200 dark:border-neutral-800/80 gap-2">
+      {/* Bottom Row: Momentum Metrics & Contributor Avatars Stack */}
+      <div className="flex flex-wrap items-center justify-between text-xs pt-2 border-t border-neutral-200 dark:border-neutral-800/80 gap-3">
         <div className="flex items-center gap-1.5 text-foreground dark:text-[#CEFF00] font-medium">
           <TrendingUp className="w-3.5 h-3.5 text-[#CEFF00]" />
           <span>{t('techBar.momentum')}:</span>
           <span className="font-mono font-bold bg-[#CEFF00]/20 text-neutral-900 dark:text-[#CEFF00] px-2 py-0.5 rounded-md border border-[#CEFF00]/30">
             +{formattedNewRepos} {t('techBar.newRepos')}
+          </span>
+        </div>
+
+        {/* Real Live 4 Contributor Avatars Stack */}
+        <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
+          <div className="flex -space-x-2 overflow-hidden">
+            {contributors.slice(0, 4).map((c, idx) => (
+              <a
+                key={c.login + idx}
+                href={c.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Contributor: ${c.login}`}
+                className="inline-block transition-transform hover:scale-110"
+              >
+                <img
+                  className="h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                  src={c.avatar_url}
+                  alt={c.login}
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png`;
+                  }}
+                />
+              </a>
+            ))}
+          </div>
+          <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />
+          <span className="text-[11px] font-semibold text-neutral-600 dark:text-neutral-300 font-mono">
+            Contributors
           </span>
         </div>
 

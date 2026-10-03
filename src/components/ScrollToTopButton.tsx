@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const ScrollToTopButton: React.FC = () => {
@@ -19,23 +18,29 @@ export const ScrollToTopButton: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToTop = () => {
+  const scrollToTop = (e: React.MouseEvent) => {
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
 
-  if (!visible) return null;
-
   return (
-    <button
+    <a
+      href="#top"
       onClick={scrollToTop}
       aria-label={t('common.scrollToTop')}
       title={t('common.scrollToTop')}
-      className="fixed bottom-6 right-6 z-40 p-3 rounded-2xl bg-[#CEFF00] hover:bg-[#bce600] text-[#141414] font-bold shadow-lg shadow-[#CEFF00]/30 transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#CEFF00]"
+      className={`fixed right-4 sm:right-6 z-50 w-11 h-11 rounded-xl bg-[#1D1D1F]/90 dark:bg-[#1D1D1F]/90 backdrop-blur-xl border border-[#CEFF00] flex items-center justify-center overflow-hidden transition-all duration-300 focus:outline-none ${
+        visible ? 'bottom-6 sm:bottom-8 opacity-100' : '-bottom-20 opacity-0 pointer-events-none'
+      }`}
     >
-      <ArrowUp className="w-5 h-5 stroke-[2.5]" />
-    </button>
+      <svg className="w-5 h-5 fill-[#CEFF00]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z" />
+      </svg>
+    </a>
   );
 };
+

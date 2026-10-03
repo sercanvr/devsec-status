@@ -82,7 +82,7 @@
 }
 
 .glass-card {
-  @apply bg-white/80 dark:bg-[#1E1E1E]/80 backdrop-blur-sm border border-neutral-300/80 dark:border-neutral-800/90 hover:border-[#CEFF00]/80 dark:hover:border-[#CEFF00]/80 transition-all duration-300;
+  @apply bg-white/70 dark:bg-[#1E1E1E]/75 backdrop-blur-md border border-neutral-300/80 dark:border-neutral-800/90 hover:border-[#CEFF00]/80 dark:hover:border-[#CEFF00]/80 transition-all duration-300;
 }
 
 /* Custom Scrollbar */

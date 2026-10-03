@@ -51,8 +51,8 @@ describe('TechBar Component', () => {
   it('renders GitHub link safely', () => {
     render(<TechBar entry={mockEntry} maxStars={100000} />);
 
-    const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', 'https://github.com/python/cpython');
-    expect(link).toHaveAttribute('target', '_blank');
+    const links = screen.getAllByRole('link');
+    expect(links[0]).toHaveAttribute('href', 'https://github.com/python/cpython');
+    expect(links[0]).toHaveAttribute('target', '_blank');
   });
 });

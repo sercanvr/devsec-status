@@ -6,6 +6,7 @@ const STORAGE_KEY = 'devsec_theme';
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === 'undefined') return 'dark';
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === 'light' || saved === 'dark') {
       return saved;
@@ -23,7 +24,9 @@ export function useTheme() {
       root.classList.remove('dark');
       root.classList.add('light');
     }
-    localStorage.setItem(STORAGE_KEY, theme);
+    try {
+      localStorage.setItem(STORAGE_KEY, theme);
+    } catch {}
   }, [theme]);
 
   const toggleTheme = () => {
