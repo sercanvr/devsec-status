@@ -75,5 +75,12 @@
     "category": "framework",
     "repo": "androidx/androidx",
     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"
+  },
+  {
+    "id": "fw-gea",
+    "name": "Gea Framework",
+    "category": "framework",
+    "repo": "geastack/gea",
+    "iconUrl": "https://github.com/geastack.png"
   }
 ]

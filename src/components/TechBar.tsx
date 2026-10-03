@@ -146,19 +146,39 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
         </div>
 
         {/* Contributor Avatar Stack & Dynamic Contributors Count (User Spec) */}
-        <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
-          <div className="flex -space-x-2 overflow-hidden">
-            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src={entry.creator?.avatarUrl || "https://github.com/torvalds.png"} alt="Contributor" />
-            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/gaearon.png" alt="Contributor" />
-            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/yyx99.png" alt="Contributor" />
-            <img className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover" src="https://github.com/sitemaps.png" alt="Contributor" />
-          </div>
-          <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />
-          <div className="flex items-center gap-1.5 text-[11px] font-medium text-neutral-700 dark:text-neutral-300">
-            <span className="font-semibold text-neutral-500 dark:text-neutral-400">Contributors</span>
-            <span className="font-mono text-xs font-bold text-foreground">{formattedRepos}</span>
-          </div>
-        </div>
+        {(() => {
+          const repoOwner = entry.githubUrl.split('github.com/')[1]?.split('/')[0] || 'octocat';
+          const repoName = entry.githubUrl.split('github.com/')[1]?.split('/')[1] || repoOwner;
+          return (
+            <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
+              <div className="flex -space-x-2 overflow-hidden">
+                <img
+                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                  src={entry.creator?.avatarUrl || `https://github.com/${repoOwner}.png`}
+                  alt={repoOwner}
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://github.com/${repoOwner}.png`; }}
+                />
+                <img
+                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                  src={`https://github.com/${repoOwner}.png`}
+                  alt="Contributor"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://github.com/github.png'; }}
+                />
+                <img
+                  className="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                  src={`https://github.com/${repoName}.png`}
+                  alt="Contributor"
+                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://github.com/web.png'; }}
+                />
+              </div>
+              <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />
+              <div className="flex items-center gap-1.5 text-[11px] font-medium text-neutral-700 dark:text-neutral-300">
+                <span className="font-semibold text-neutral-500 dark:text-neutral-400">Contributors</span>
+                <span className="font-mono text-xs font-bold text-foreground">{formattedRepos}</span>
+              </div>
+            </div>
+          );
+        })()}
 
         {entry.momentum.topStarredNewRepo && (
           <div className="flex items-center gap-1 text-neutral-600 dark:text-neutral-400 text-[11px] truncate max-w-full">
