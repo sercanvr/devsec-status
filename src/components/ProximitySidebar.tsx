@@ -17,66 +17,63 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
     { id: 'section-security', label: 'Güvenlik' },
   ],
 }) => {
-  const [activeSectionIndex, setActiveSectionIndex] = useState<number>(0);
+  const [scrollProgress, setScrollProgress] = useState<number>(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-  // Define dash structure: Title dashes interspaced with sub-item dashes
-  // Total 18 dashes, with title bars at specific index points
-  const totalDashes = 18;
+  // Total dashes in minimap - increased for a longer vertical profile
+  const totalDashes = 28;
 
   const getSectionForDashIndex = (index: number): { section: SectionItem; isTitle: boolean } => {
-    const step = Math.floor(totalDashes / sections.length);
+    if (!sections.length) return { section: { id: '', label: '' }, isTitle: false };
+    const step = Math.max(1, Math.floor(totalDashes / sections.length));
     const sectionIdx = Math.min(Math.floor(index / step), sections.length - 1);
     const isTitle = index % step === 0;
     return { section: sections[sectionIdx], isTitle };
   };
 
   useEffect(() => {
+    let rafId: number | null = null;
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 180;
-
-      let currentActive = 0;
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const sectionEl = document.getElementById(sections[i].id);
-        if (sectionEl) {
-          const top = sectionEl.offsetTop;
-          if (scrollPosition >= top) {
-            currentActive = i;
-            break;
-          }
-        }
-      }
-      setActiveSectionIndex(currentActive);
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(() => {
+        const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = totalScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / totalScroll)) : 0;
+        setScrollProgress(progress);
+        rafId = null;
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll, { passive: true });
     handleScroll();
     return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
     };
   }, [sections]);
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else if (id === 'top') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollToDash = (index: number, sectionId: string, isTitle: boolean) => {
+    const el = document.getElementById(sectionId);
+    if (isTitle && el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+    } else {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const targetY = (index / (totalDashes - 1)) * totalScroll;
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
     }
   };
 
-  // Active center dash index in the array of 18 dashes
-  const step = Math.floor(totalDashes / sections.length);
-  const activeDashCenter = activeSectionIndex * step;
+  // Active center dash index in the array of dashes, dynamically synchronized with scroll position
+  const activeDashCenter = Math.min(totalDashes - 1, Math.max(0, Math.round(scrollProgress * (totalDashes - 1))));
 
   return (
     <div
       aria-label="Proximity Navigation Minimap"
-      className="fixed left-3 lg:left-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-start p-2.5 rounded-2xl bg-neutral-900/60 dark:bg-neutral-950/80 backdrop-blur-md border border-neutral-800/80 shadow-2xl transition-all duration-300 select-none"
+      className="fixed left-2 lg:left-3 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-start p-0 select-none pointer-events-auto"
     >
-      <div className="flex flex-col items-start gap-1.5 py-1">
+      <div className="flex flex-col items-start gap-1 py-1">
         {Array.from({ length: totalDashes }).map((_, index) => {
           const { section, isTitle } = getSectionForDashIndex(index);
 
@@ -84,46 +81,42 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
           const distance = Math.abs(index - activeDashCenter);
           const isHovered = hoveredIndex === index;
 
-          // Sound wave proximity scaling logic:
-          // Distance 0: Max expansion + bright green glow
-          // Distance 1: Medium expansion + soft green
-          // Distance 2: Slight expansion
-          let widthClass = 'w-3.5 bg-neutral-600/50 dark:bg-neutral-600/60';
+          let widthClass = 'w-6 bg-neutral-300/80 dark:bg-neutral-700/80';
           let glowClass = '';
 
-          if (distance === 0) {
-            widthClass = 'w-9 bg-[#CEFF00]';
-            glowClass = 'shadow-[0_0_10px_#CEFF00]';
-          } else if (distance === 1) {
-            widthClass = 'w-7 bg-[#CEFF00]/70';
-            glowClass = 'shadow-[0_0_6px_rgba(206,255,0,0.4)]';
-          } else if (distance === 2) {
-            widthClass = 'w-5.5 bg-neutral-400 dark:bg-neutral-300';
-          } else if (isTitle) {
-            widthClass = 'w-6 bg-neutral-400/80 dark:bg-neutral-400/80';
-          }
-
           if (isHovered) {
-            widthClass = 'w-8 bg-white dark:bg-white';
-            glowClass = 'shadow-[0_0_8px_rgba(255,255,255,0.6)]';
+            widthClass = 'w-16 bg-neutral-900 dark:bg-white';
+            glowClass = 'shadow-sm dark:shadow-[0_0_5px_rgba(255,255,255,0.3)]';
+          } else if (distance === 0) {
+            widthClass = 'w-16 bg-[#3f6e00] dark:bg-[#CEFF00]';
+            glowClass = 'shadow-[0_0_4px_rgba(63,110,0,0.25)] dark:shadow-[0_0_4px_rgba(206,255,0,0.35)]';
+          } else if (distance === 1) {
+            widthClass = 'w-12 bg-[#3f6e00]/85 dark:bg-[#CEFF00]/80';
+            glowClass = 'dark:shadow-[0_0_2px_rgba(206,255,0,0.2)]';
+          } else if (distance === 2) {
+            widthClass = 'w-10 bg-[#3f6e00]/55 dark:bg-[#CEFF00]/50';
+          } else if (distance === 3) {
+            widthClass = 'w-8 bg-[#3f6e00]/30 dark:bg-[#CEFF00]/25';
+          } else if (isTitle) {
+            widthClass = 'w-9 bg-neutral-400 dark:bg-neutral-500';
           }
 
           return (
             <button
               key={index}
-              onClick={() => scrollToSection(section.id)}
+              onClick={() => scrollToDash(index, section.id, isTitle)}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className="group relative flex items-center justify-start py-0.5 focus:outline-none"
+              className="group relative flex items-center justify-start w-20 py-0.5 sm:py-1 cursor-pointer focus:outline-none"
               aria-label={isTitle ? section.label : undefined}
             >
               <div
-                className={`h-1 transition-all duration-300 rounded-full origin-left ${widthClass} ${glowClass}`}
+                className={`h-0.5 transition-all duration-200 ease-out rounded-full origin-left ${widthClass} ${glowClass}`}
               />
 
-              {/* Tooltip ONLY for Section Title Bars on hover */}
+              {/* Tooltip for Section Title Bars or Hovered Dash */}
               {isHovered && isTitle && (
-                <span className="absolute left-11 px-2.5 py-1 rounded-md bg-neutral-900 text-[#CEFF00] text-[11px] font-mono whitespace-nowrap shadow-xl border border-neutral-700 animate-in fade-in slide-in-from-left-1 pointer-events-none z-50">
+                <span className="absolute left-20 px-2.5 py-1 rounded-md bg-neutral-900 text-[#CEFF00] dark:text-[#CEFF00] text-[11px] font-mono whitespace-nowrap shadow-xl border border-neutral-700 animate-in fade-in slide-in-from-left-1 pointer-events-none z-50">
                   {section.label}
                 </span>
               )}

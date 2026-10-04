@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "lint": "tsc --noEmit",
     "preview": "vite preview",
     "test": "vitest run",
     "fetch:data": "tsx scripts/fetch-languages.ts && tsx scripts/fetch-frameworks.ts && tsx scripts/fetch-security-tools.ts && tsx scripts/fetch-databases.ts"

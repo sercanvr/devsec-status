@@ -149,25 +149,29 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
 
         {/* Real Live 4 Contributor Avatars Stack */}
         <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-neutral-200/60 dark:bg-neutral-900/80 border border-neutral-300/60 dark:border-neutral-800 shrink-0">
-          <div className="flex -space-x-2 overflow-hidden">
+          <div className="flex -space-x-2">
             {contributors.slice(0, 4).map((c, idx) => (
-              <a
-                key={c.login + idx}
-                href={c.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={`Contributor: ${c.login}`}
-                className="inline-block transition-transform hover:scale-110"
-              >
-                <img
-                  className="h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                  src={c.avatar_url}
-                  alt={c.login}
-                  onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png`;
-                  }}
-                />
-              </a>
+              <div key={c.login + idx} className="relative group/contributor inline-block hover:z-20">
+                <a
+                  href={c.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Contributor: ${c.login}`}
+                  className="inline-block transition-transform duration-150 group-hover/contributor:-translate-y-1 relative"
+                >
+                  <img
+                    className="h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                    src={c.avatar_url}
+                    alt={c.login}
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png`;
+                    }}
+                  />
+                </a>
+                <div className="hidden group-hover/contributor:block absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-md bg-[#141414] dark:bg-neutral-800 text-white text-[10px] font-mono whitespace-nowrap shadow-lg border border-neutral-700 pointer-events-none z-30">
+                  {c.login}
+                </div>
+              </div>
             ))}
           </div>
           <div className="h-3.5 w-px bg-neutral-300 dark:bg-neutral-700" />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ShieldAlert, Code2, Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 import { SearchModal } from './SearchModal';
@@ -23,9 +23,9 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  // Lock background scroll when mobile menu is open
+  // Lock background scroll when mobile menu or search modal is open
   useEffect(() => {
-    if (mobileMenuOpen) {
+    if (mobileMenuOpen || searchModalOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
@@ -33,13 +33,16 @@ export const Navbar: React.FC = () => {
     return () => {
       document.body.style.overflow = '';
     };
-  }, [mobileMenuOpen]);
+  }, [mobileMenuOpen, searchModalOpen]);
 
   return (
     <>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-4 z-50 my-3">
-        <header className="w-full rounded-2xl border border-neutral-300/70 dark:border-neutral-800/80 bg-[#ECECEC]/90 dark:bg-[#141414]/90 backdrop-blur-xl shadow-xl transition-all duration-300">
-          <div className="px-4 sm:px-6 py-2.5 flex items-center justify-between gap-2 sm:gap-4">
+        <header className="w-full rounded-2xl border border-[#C7C7C7] dark:border-neutral-700 bg-[#DFDFDF]/75 dark:bg-[#1E1E1E]/80 backdrop-blur-xl backdrop-saturate-150 shadow-xl transition-colors duration-200 relative">
+          {/* Subtle bottom-to-top accent gradient glow extending up smoothly */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#CEFF00]/[0.06] via-[#CEFF00]/[0.015] to-transparent dark:from-[#CEFF00]/[0.05] dark:via-[#CEFF00]/[0.01] dark:to-transparent pointer-events-none z-0" />
+
+          <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 sm:gap-3 relative z-10">
             {/* Left: Logo (Page reload on click) */}
             <a
               href="/"
@@ -47,72 +50,78 @@ export const Navbar: React.FC = () => {
                 e.preventDefault();
                 window.location.href = '/';
               }}
-              className="flex items-center gap-2.5 group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer"
+              className="flex items-center group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer hover:opacity-70 transition-none"
             >
               <img
-                src="/icons/devsec-icon.png"
+                src="/icons/devsec-logo.png"
                 alt="DevSec Status"
-                className="w-9 h-9 sm:w-10 sm:h-10 object-contain drop-shadow-md shrink-0 transition-colors"
-                onError={(e) => {
-                  (e.currentTarget as HTMLElement).style.display = 'none';
-                }}
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-md shrink-0"
               />
-              <div className="flex flex-col">
-                <span className="font-serif font-bold text-base sm:text-lg tracking-tight text-foreground flex items-center gap-1">
-                  DevSec <span className="text-[#CEFF00] font-mono text-xs sm:text-sm font-semibold">Status</span>
-                </span>
-              </div>
             </a>
 
-            {/* Center: Navigation Links (Desktop) */}
-            <nav className="hidden md:flex items-center gap-1 bg-neutral-200/70 dark:bg-neutral-900/80 p-1.5 rounded-xl border border-neutral-300/60 dark:border-neutral-800/80 shadow-inner">
+            {/* Center: Navigation Links (Desktop & Tablet) - Centered Exactly */}
+            <nav className="hidden md:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center gap-1 bg-neutral-200/70 dark:bg-neutral-900/80 p-1 rounded-xl border border-neutral-300/60 dark:border-neutral-800/80 shadow-inner z-10">
               <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
                   }`
                 }
               >
-                <Code2 className="w-4 h-4" />
-                {t('nav.software')}
+                {({ isActive }) => (
+                  <>
+                    {isActive && (
+                      <span className="text-[14px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                    )}
+                    <span>{t('nav.software')}</span>
+                  </>
+                )}
               </NavLink>
+
+              <span className="w-px h-4 bg-neutral-400 dark:bg-neutral-600 shrink-0 mx-0.5" />
 
               <NavLink
                 to="/security"
                 className={({ isActive }) =>
-                  `flex items-center gap-2 px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
                   }`
                 }
               >
-                <ShieldAlert className="w-4 h-4" />
-                {t('nav.security')}
+                {({ isActive }) => (
+                  <>
+                    {isActive && (
+                      <span className="text-[14px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                    )}
+                    <span>{t('nav.security')}</span>
+                  </>
+                )}
               </NavLink>
             </nav>
 
             {/* Right: Search Bar, Language Switcher, Theme Toggle */}
-            <div className="flex items-center gap-2 sm:gap-2.5">
+            <div className="flex items-center gap-1.5 sm:gap-2 relative z-30">
               {/* Search Bar Trigger Button */}
               <button
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center gap-2 px-3 h-9 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group"
+                className="flex items-center justify-center gap-2 px-2.5 sm:px-3 h-9 lg:w-44 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group shrink-0"
                 title="Search (Ctrl+K)"
               >
-                <Search className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#CEFF00] transition-colors" />
-                <span className="hidden sm:inline">Ara</span>
-                <kbd className="hidden lg:inline-block px-1.5 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-[10px] text-neutral-500 dark:text-neutral-400 border border-neutral-400/40 dark:border-neutral-700">
+                <Search className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#CEFF00] transition-colors shrink-0" />
+                <span className="hidden lg:inline">{t('nav.search')}</span>
+                <kbd className="hidden lg:inline-block ml-auto px-1.5 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-[10px] text-neutral-500 dark:text-neutral-400 border border-neutral-400/40 dark:border-neutral-700">
                   ⌘K
                 </kbd>
               </button>
 
-              {/* LanguageSwitcher & ThemeToggle visible on desktop (md+) */}
-              <div className="hidden md:flex items-center gap-2.5">
+              {/* LanguageSwitcher & ThemeToggle visible on desktop/tablet (md+) */}
+              <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
                 <LanguageSwitcher />
                 <ThemeToggle />
               </div>
@@ -130,101 +139,115 @@ export const Navbar: React.FC = () => {
         </header>
       </div>
 
-      {/* Mobile Navigation Drawer - FULLSCREEN & IMMEDIATE (NO ANIMATION) */}
+      {/* Mobile Navigation Drawer - FULLSCREEN & INSTANT DROPDOWNS */}
       {mobileMenuOpen && (
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-[999] bg-[#ECECEC] dark:bg-[#141414] text-foreground p-6 flex flex-col justify-start space-y-6 overflow-y-auto"
+          className="fixed inset-0 z-[999] bg-[#ECECEC] dark:bg-[#141414] text-foreground p-6 flex flex-col justify-between overflow-y-auto"
         >
-          {/* Mobile Menu Top Row */}
-          <div className="flex items-center justify-between pb-4 border-b border-neutral-300 dark:border-neutral-800">
-            <NavLink
-              to="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2"
-            >
-              <img
-                src="/icons/devsec-icon.png"
-                alt="DevSec Status"
-                className="w-9 h-9 object-contain"
-              />
-              <span className="font-serif font-bold text-lg tracking-tight text-foreground">
-                DevSec <span className="text-[#CEFF00] font-mono text-sm">Status</span>
-              </span>
-            </NavLink>
+          <div className="flex flex-col space-y-4 w-full max-w-sm mx-auto">
+            {/* Mobile Menu Top Row */}
+            <div className="flex items-center justify-between pb-4 border-b border-neutral-300 dark:border-neutral-800">
+              <NavLink
+                to="/"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center hover:opacity-70 transition-none"
+              >
+                <img
+                  src="/icons/devsec-logo.png"
+                  alt="DevSec Status"
+                  className="h-8 sm:h-9 w-auto object-contain shrink-0"
+                />
+              </NavLink>
 
-            {/* Close Button - Instant Close No Animation */}
+              {/* Close Button with Subtle Crimson Color */}
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 rounded-xl bg-red-500/10 text-red-500 dark:text-red-400 border border-red-500/20 focus:outline-none"
+                aria-label="Close Navigation Menu"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+
+            {/* Mobile Search Button */}
             <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-2 rounded-xl bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 focus:outline-none"
-              aria-label="Close Navigation Menu"
+              onClick={() => setSearchModalOpen(true)}
+              className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 text-sm font-mono"
             >
-              <X className="w-6 h-6" />
+              <span className="flex items-center gap-2">
+                <Search className="w-4 h-4 text-[#CEFF00]" /> {t('nav.search')}
+              </span>
             </button>
+
+            {/* Navigation Links List */}
+            <div className="flex flex-col space-y-2 pt-1">
+              <NavLink
+                to="/"
+                end
+                onClick={() => setMobileMenuOpen(false)}
+                className={({ isActive }) =>
+                  `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold transition-none ${
+                    isActive
+                      ? 'bg-[#CEFF00] text-[#141414] font-bold shadow-md'
+                      : 'text-neutral-800 dark:text-neutral-200 hover:bg-neutral-200/50 dark:hover:bg-neutral-900/50'
+                  }`
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    {isActive && (
+                      <span className="text-base font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                    )}
+                    <span>{t('nav.software')}</span>
+                  </>
+                )}
+              </NavLink>
+
+              <NavLink
+                to="/security"
+                onClick={() => setMobileMenuOpen(false)}
+                className={({ isActive }) =>
+                  `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold transition-none ${
+                    isActive
+                      ? 'bg-[#CEFF00] text-[#141414] font-bold shadow-md'
+                      : 'text-neutral-800 dark:text-neutral-200 hover:bg-neutral-200/50 dark:hover:bg-neutral-900/50'
+                  }`
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    {isActive && (
+                      <span className="text-base font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                    )}
+                    <span>{t('nav.security')}</span>
+                  </>
+                )}
+              </NavLink>
+            </div>
+
+            {/* Thin Horizontal Divider Line Under Security */}
+            <hr className="border-t border-neutral-300 dark:border-neutral-800/90 my-2 w-full" />
+
+            {/* Language & Theme Controls with Interactive Dropdowns */}
+            <div className="flex flex-col gap-3 w-full items-center">
+              <LanguageSwitcher
+                mobileMode
+                onSelectLanguage={() => setMobileMenuOpen(false)}
+              />
+              <ThemeToggle
+                mobileMode
+                onToggleTheme={() => setMobileMenuOpen(false)}
+              />
+            </div>
           </div>
 
-          {/* Mobile Search Button */}
-          <button
-            onClick={() => {
-              setMobileMenuOpen(false);
-              setSearchModalOpen(true);
-            }}
-            className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 text-sm font-mono"
-          >
-            <span className="flex items-center gap-2">
-              <Search className="w-4 h-4 text-[#CEFF00]" /> Ara...
+          {/* Drawer Bottom Floor Copyright */}
+          <div className="pt-6 pb-2 text-center mt-auto">
+            <span className="text-xs font-mono text-neutral-500 dark:text-neutral-400">
+              © 2026 DevSec Status
             </span>
-          </button>
-
-          {/* Navigation Links List */}
-          <div className="flex flex-col space-y-3 pt-2">
-            <NavLink
-              to="/"
-              end
-              onClick={() => setMobileMenuOpen(false)}
-              className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold transition-none ${
-                  isActive
-                    ? 'bg-[#CEFF00] text-[#141414] font-bold'
-                    : 'text-neutral-800 dark:text-neutral-200 bg-neutral-200/50 dark:bg-neutral-900/50'
-                }`
-              }
-            >
-              <Code2 className="w-5 h-5" />
-              {t('nav.software')}
-            </NavLink>
-
-            <NavLink
-              to="/security"
-              onClick={() => setMobileMenuOpen(false)}
-              className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-semibold transition-none ${
-                  isActive
-                    ? 'bg-[#CEFF00] text-[#141414] font-bold'
-                    : 'text-neutral-800 dark:text-neutral-200 bg-neutral-200/50 dark:bg-neutral-900/50'
-                }`
-              }
-            >
-              <ShieldAlert className="w-5 h-5" />
-              {t('nav.security')}
-            </NavLink>
-          </div>
-
-          {/* Language & Theme Controls (Symmetric Right Alignment) */}
-          <div className="flex flex-col gap-3 pt-4 border-t border-neutral-300 dark:border-neutral-800">
-            <div className="flex items-center justify-between px-2">
-              <span className="text-sm font-medium text-neutral-500">{t('nav.selectLanguage')}</span>
-              <div className="w-24 flex justify-end">
-                <LanguageSwitcher onSelectLanguage={() => setMobileMenuOpen(false)} />
-              </div>
-            </div>
-            <div className="flex items-center justify-between px-2">
-              <span className="text-sm font-medium text-neutral-500">{t('nav.themeToggle')}</span>
-              <div className="w-24 flex justify-end">
-                <ThemeToggle />
-              </div>
-            </div>
           </div>
         </div>
       )}
@@ -233,6 +256,10 @@ export const Navbar: React.FC = () => {
       <SearchModal
         isOpen={searchModalOpen}
         onClose={() => setSearchModalOpen(false)}
+        onItemSelect={() => {
+          setSearchModalOpen(false);
+          setMobileMenuOpen(false);
+        }}
       />
     </>
   );
