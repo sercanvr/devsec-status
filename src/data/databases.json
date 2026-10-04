@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 122183,
-      "totalStars": 111069
+      "totalRepos": 122229,
+      "totalStars": 111073
     },
     "momentum": {
-      "newReposLast30Days": 8447,
+      "newReposLast30Days": 8491,
       "topStarredNewRepo": {
         "name": "mikehasa/golive-skill",
-        "stars": 1204
+        "stars": 1205
       }
     },
-    "lastUpdated": "2026-10-04T08:11:34.549Z"
+    "lastUpdated": "2026-10-04T11:57:40.273Z"
   },
   {
     "id": "db-elasticsearch",
@@ -42,7 +42,7 @@
     },
     "popularity": {
       "totalRepos": 60239,
-      "totalStars": 78187
+      "totalStars": 78188
     },
     "momentum": {
       "newReposLast30Days": 586,
@@ -51,7 +51,7 @@
         "stars": 24
       }
     },
-    "lastUpdated": "2026-10-04T08:11:38.841Z"
+    "lastUpdated": "2026-10-04T11:57:44.617Z"
   },
   {
     "id": "db-redis",
@@ -68,17 +68,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 236514,
+      "totalRepos": 236560,
       "totalStars": 76581
     },
     "momentum": {
-      "newReposLast30Days": 7141,
+      "newReposLast30Days": 7187,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
         "stars": 332
       }
     },
-    "lastUpdated": "2026-10-04T08:11:43.015Z"
+    "lastUpdated": "2026-10-04T11:57:48.787Z"
   },
   {
     "id": "db-mongodb",
@@ -95,17 +95,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 623841,
-      "totalStars": 28613
+      "totalRepos": 623919,
+      "totalStars": 28612
     },
     "momentum": {
-      "newReposLast30Days": 9437,
+      "newReposLast30Days": 9503,
       "topStarredNewRepo": {
         "name": "evangelosvlachos96-dotcom/booking-microservices",
-        "stars": 705
+        "stars": 711
       }
     },
-    "lastUpdated": "2026-10-04T08:11:47.106Z"
+    "lastUpdated": "2026-10-04T11:57:52.752Z"
   },
   {
     "id": "db-postgresql",
@@ -122,17 +122,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 402924,
-      "totalStars": 22272
+      "totalRepos": 403081,
+      "totalStars": 22273
     },
     "momentum": {
-      "newReposLast30Days": 23983,
+      "newReposLast30Days": 24120,
       "topStarredNewRepo": {
-        "name": "realZachi/pg-jev",
-        "stars": 714
+        "name": "KKKKhazix/AIHOT",
+        "stars": 5626
       }
     },
-    "lastUpdated": "2026-10-04T08:11:51.167Z"
+    "lastUpdated": "2026-10-04T11:57:56.845Z"
   },
   {
     "id": "db-neo4j",
@@ -149,17 +149,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 32800,
+      "totalRepos": 32804,
       "totalStars": 17272
     },
     "momentum": {
-      "newReposLast30Days": 788,
+      "newReposLast30Days": 792,
       "topStarredNewRepo": {
         "name": "jexp/neo4jev",
-        "stars": 160
+        "stars": 161
       }
     },
-    "lastUpdated": "2026-10-04T08:11:55.361Z"
+    "lastUpdated": "2026-10-04T11:58:01.013Z"
   },
   {
     "id": "db-sql",
@@ -176,17 +176,17 @@
       "latestVersion": "SQL:2023 Standard"
     },
     "popularity": {
-      "totalRepos": 1453095,
-      "totalStars": 22272
+      "totalRepos": 1453332,
+      "totalStars": 22273
     },
     "momentum": {
-      "newReposLast30Days": 43731,
+      "newReposLast30Days": 43971,
       "topStarredNewRepo": {
         "name": "planetscale/lead",
         "stars": 159
       }
     },
-    "lastUpdated": "2026-10-04T08:11:59.563Z"
+    "lastUpdated": "2026-10-04T11:58:05.283Z"
   },
   {
     "id": "db-mysql",
@@ -203,17 +203,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 780266,
+      "totalRepos": 780385,
       "totalStars": 12440
     },
     "momentum": {
-      "newReposLast30Days": 21227,
+      "newReposLast30Days": 21338,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
         "stars": 332
       }
     },
-    "lastUpdated": "2026-10-04T08:12:03.936Z"
+    "lastUpdated": "2026-10-04T11:58:09.345Z"
   },
   {
     "id": "db-sqlite",
@@ -230,17 +230,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 266033,
-      "totalStars": 10592
+      "totalRepos": 266170,
+      "totalStars": 10593
     },
     "momentum": {
-      "newReposLast30Days": 17773,
+      "newReposLast30Days": 17902,
       "topStarredNewRepo": {
         "name": "RaycarlLei/tool-journal",
         "stars": 385
       }
     },
-    "lastUpdated": "2026-10-04T08:12:08.012Z"
+    "lastUpdated": "2026-10-04T11:58:13.404Z"
   },
   {
     "id": "db-cassandra",
@@ -267,7 +267,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-04T08:12:12.343Z"
+    "lastUpdated": "2026-10-04T11:58:17.619Z"
   },
   {
     "id": "db-mariadb",
@@ -284,16 +284,16 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 26431,
+      "totalRepos": 26437,
       "totalStars": 8311
     },
     "momentum": {
-      "newReposLast30Days": 770,
+      "newReposLast30Days": 776,
       "topStarredNewRepo": {
         "name": "2giosangmitom/sqmeow.nvim",
         "stars": 144
       }
     },
-    "lastUpdated": "2026-10-04T08:12:16.675Z"
+    "lastUpdated": "2026-10-04T11:58:21.985Z"
   }
 ]
