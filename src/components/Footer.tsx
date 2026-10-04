@@ -1,21 +1,43 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Plug, Star } from 'lucide-react';
+import rawLanguages from '../data/languages.json';
+import rawFrameworks from '../data/frameworks.json';
+import rawDatabases from '../data/databases.json';
+import rawSecurityTools from '../data/security-tools.json';
 
 interface FooterProps {
   lastUpdated?: string;
 }
 
-export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
-  const { t } = useTranslation();
+const computeLatestUpdateDate = (): string => {
+  let latest = '';
+  const datasets = [rawLanguages, rawFrameworks, rawDatabases, rawSecurityTools];
+  for (const list of datasets) {
+    for (const item of list as Array<{ lastUpdated?: string }>) {
+      if (item.lastUpdated && item.lastUpdated > latest) {
+        latest = item.lastUpdated;
+      }
+    }
+  }
+  return latest || new Date().toISOString();
+};
 
-  const formattedDate = lastUpdated
-    ? new Date(lastUpdated).toLocaleDateString('tr-TR', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-      })
-    : '03.10.2026';
+export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
+  const { t, i18n } = useTranslation();
+
+  const effectiveDate = lastUpdated || computeLatestUpdateDate();
+  const dateLocale = i18n.language.startsWith('tr')
+    ? 'tr-TR'
+    : i18n.language.startsWith('de')
+    ? 'de-DE'
+    : 'en-US';
+
+  const formattedDate = new Date(effectiveDate).toLocaleDateString(dateLocale, {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
 
   return (
     <footer className="w-full bg-[#ECECEC] dark:bg-[#141414] transition-colors duration-200 pt-10 pb-0 mt-16 relative">
@@ -84,6 +106,8 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               <img
                 src="/icons/devsec-logo.png"
                 alt="DevSec Status"
+                width={91}
+                height={32}
                 className="h-8 w-auto object-contain shrink-0"
               />
             </a>
@@ -155,6 +179,8 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             <img
               src="/icons/devsec-logo.png"
               alt="DevSec Status"
+              width={91}
+              height={32}
               className="h-8 w-auto object-contain shrink-0"
             />
           </a>
@@ -209,8 +235,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
       </div>
 
       {/* Giant Aesthetic "TECH" Typography Watermark at Bottom Floor */}
-      <div className="mt-10 sm:mt-14 md:mt-16 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end relative">
+      <div className="mt-10 sm:mt-14 md:mt-16 text-center select-none pointer-events-none overflow-hidden leading-none w-full flex justify-center items-end relative" aria-hidden="true">
         <span
+          aria-hidden="true"
           className="font-serif font-black text-[32vw] sm:text-[24vw] md:text-[20vw] uppercase text-neutral-400/25 dark:text-neutral-600/20 tracking-wider block leading-none translate-y-3 sm:translate-y-4 md:translate-y-5 w-full text-center"
           style={{
             maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 98%)',
