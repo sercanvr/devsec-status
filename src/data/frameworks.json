@@ -13,17 +13,17 @@
       "latestVersion": "v19.0.0"
     },
     "popularity": {
-      "totalRepos": 7289108,
-      "totalStars": 250883
+      "totalRepos": 7289593,
+      "totalStars": 250884
     },
     "momentum": {
-      "newReposLast30Days": 90225,
+      "newReposLast30Days": 90808,
       "topStarredNewRepo": {
-        "name": "devswha/herdr-web-ui",
-        "stars": 437
+        "name": "whirlchat/whirl",
+        "stars": 447
       }
     },
-    "lastUpdated": "2026-10-04T16:36:32.507Z"
+    "lastUpdated": "2026-10-04T20:59:47.013Z"
   },
   {
     "id": "fw-nextjs",
@@ -39,17 +39,17 @@
       "latestVersion": "v15.1.7"
     },
     "popularity": {
-      "totalRepos": 516190,
-      "totalStars": 143154
+      "totalRepos": 516325,
+      "totalStars": 143167
     },
     "momentum": {
-      "newReposLast30Days": 19941,
+      "newReposLast30Days": 20080,
       "topStarredNewRepo": {
         "name": "liyupi/ai-model-world",
         "stars": 214
       }
     },
-    "lastUpdated": "2026-10-04T16:36:36.644Z"
+    "lastUpdated": "2026-10-04T20:59:51.227Z"
   },
   {
     "id": "fw-react-native",
@@ -65,17 +65,17 @@
       "latestVersion": "v0.78.0"
     },
     "popularity": {
-      "totalRepos": 603235,
+      "totalRepos": 603269,
       "totalStars": 126795
     },
     "momentum": {
-      "newReposLast30Days": 6347,
+      "newReposLast30Days": 6395,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
-        "stars": 393
+        "stars": 394
       }
     },
-    "lastUpdated": "2026-10-04T16:36:40.950Z"
+    "lastUpdated": "2026-10-04T20:59:55.741Z"
   },
   {
     "id": "fw-fastapi",
@@ -91,17 +91,17 @@
       "latestVersion": "v0.115.8"
     },
     "popularity": {
-      "totalRepos": 480849,
-      "totalStars": 102803
+      "totalRepos": 481157,
+      "totalStars": 102806
     },
     "momentum": {
-      "newReposLast30Days": 34006,
+      "newReposLast30Days": 34287,
       "topStarredNewRepo": {
         "name": "ithtelab/workbuddy-manager",
-        "stars": 758
+        "stars": 760
       }
     },
-    "lastUpdated": "2026-10-04T16:36:45.264Z"
+    "lastUpdated": "2026-10-04T20:59:59.923Z"
   },
   {
     "id": "fw-angular",
@@ -117,17 +117,17 @@
       "latestVersion": "v19.1.0"
     },
     "popularity": {
-      "totalRepos": 1430329,
+      "totalRepos": 1430356,
       "totalStars": 101017
     },
     "momentum": {
-      "newReposLast30Days": 7894,
+      "newReposLast30Days": 7943,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
-        "stars": 393
+        "stars": 394
       }
     },
-    "lastUpdated": "2026-10-04T16:36:49.505Z"
+    "lastUpdated": "2026-10-04T21:00:04.333Z"
   },
   {
     "id": "fw-tailwind",
@@ -143,17 +143,17 @@
       "latestVersion": "v4.0.6"
     },
     "popularity": {
-      "totalRepos": 241992,
-      "totalStars": 97765
+      "totalRepos": 242046,
+      "totalStars": 97770
     },
     "momentum": {
-      "newReposLast30Days": 8432,
+      "newReposLast30Days": 8484,
       "topStarredNewRepo": {
         "name": "zzhzhouzhou/UI-handbook",
         "stars": 41
       }
     },
-    "lastUpdated": "2026-10-04T16:36:53.789Z"
+    "lastUpdated": "2026-10-04T21:00:09.071Z"
   },
   {
     "id": "fw-svelte",
@@ -169,17 +169,17 @@
       "latestVersion": "v5.19.0"
     },
     "popularity": {
-      "totalRepos": 92707,
-      "totalStars": 88274
+      "totalRepos": 92720,
+      "totalStars": 88276
     },
     "momentum": {
-      "newReposLast30Days": 1308,
+      "newReposLast30Days": 1320,
       "topStarredNewRepo": {
         "name": "agentverse-os/AgentVerse-OS",
-        "stars": 974
+        "stars": 975
       }
     },
-    "lastUpdated": "2026-10-04T16:36:58.141Z"
+    "lastUpdated": "2026-10-04T21:00:13.469Z"
   },
   {
     "id": "fw-nestjs",
@@ -195,17 +195,17 @@
       "latestVersion": "v11.0.0"
     },
     "popularity": {
-      "totalRepos": 172188,
-      "totalStars": 76786
+      "totalRepos": 172216,
+      "totalStars": 76787
     },
     "momentum": {
-      "newReposLast30Days": 3462,
+      "newReposLast30Days": 3492,
       "topStarredNewRepo": {
         "name": "umlink/java-full-stack",
         "stars": 120
       }
     },
-    "lastUpdated": "2026-10-04T16:37:02.298Z"
+    "lastUpdated": "2026-10-04T21:00:17.828Z"
   },
   {
     "id": "fw-vue",
@@ -221,17 +221,17 @@
       "latestVersion": "v3.5.13"
     },
     "popularity": {
-      "totalRepos": 165934,
-      "totalStars": 54507
+      "totalRepos": 165928,
+      "totalStars": 54510
     },
     "momentum": {
-      "newReposLast30Days": 5770,
+      "newReposLast30Days": 5775,
       "topStarredNewRepo": {
         "name": "uday-a/uipkge-registry",
         "stars": 17
       }
     },
-    "lastUpdated": "2026-10-04T16:37:06.627Z"
+    "lastUpdated": "2026-10-04T21:00:22.339Z"
   },
   {
     "id": "fw-aspnetcore",
@@ -247,17 +247,17 @@
       "latestVersion": ".NET 9.0"
     },
     "popularity": {
-      "totalRepos": 131938,
+      "totalRepos": 131970,
       "totalStars": 38465
     },
     "momentum": {
-      "newReposLast30Days": 3509,
+      "newReposLast30Days": 3550,
       "topStarredNewRepo": {
         "name": "engripaye/ProductsManagement",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-04T16:37:11.042Z"
+    "lastUpdated": "2026-10-04T21:00:26.729Z"
   },
   {
     "id": "fw-android",
@@ -273,17 +273,17 @@
       "latestVersion": "Jetpack 2026"
     },
     "popularity": {
-      "totalRepos": 30522,
+      "totalRepos": 30540,
       "totalStars": 6104
     },
     "momentum": {
-      "newReposLast30Days": 1842,
+      "newReposLast30Days": 1865,
       "topStarredNewRepo": {
         "name": "kinotvapp/kino-light",
         "stars": 72
       }
     },
-    "lastUpdated": "2026-10-04T16:37:15.110Z"
+    "lastUpdated": "2026-10-04T21:00:31.040Z"
   },
   {
     "id": "fw-gea",
@@ -310,6 +310,6 @@
         "stars": 119
       }
     },
-    "lastUpdated": "2026-10-04T16:37:18.760Z"
+    "lastUpdated": "2026-10-04T21:00:34.728Z"
   }
 ]
