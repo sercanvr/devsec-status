@@ -55,6 +55,9 @@ export const Navbar: React.FC = () => {
               <img
                 src="/icons/devsec-logo.png"
                 alt="DevSec Status"
+                width={102}
+                height={36}
+                fetchPriority="high"
                 className="h-8 sm:h-9 w-auto object-contain drop-shadow-md shrink-0"
               />
             </a>
@@ -157,6 +160,8 @@ export const Navbar: React.FC = () => {
                 <img
                   src="/icons/devsec-logo.png"
                   alt="DevSec Status"
+                  width={102}
+                  height={36}
                   className="h-8 sm:h-9 w-auto object-contain shrink-0"
                 />
               </NavLink>
