@@ -2,7 +2,7 @@ import React from 'react';
 
 export const CardSkeleton: React.FC = () => {
   return (
-    <div className="glass-card rounded-2xl p-4 sm:p-5 flex flex-col gap-3 animate-pulse border border-neutral-200/50 dark:border-neutral-800/50">
+    <div className="glass-card rounded-2xl p-4 sm:p-5 flex flex-col gap-3 animate-pulse border border-[#C7C7C7] dark:border-neutral-700">
       <div className="flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-neutral-300/60 dark:bg-neutral-800 shrink-0" />

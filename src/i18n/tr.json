@@ -5,7 +5,15 @@
     "themeToggle": "Tema Değiştir",
     "selectLanguage": "Dil Seçin",
     "changeLanguage": "Dil Değiştir",
-    "changeTheme": "Tema Değiştir"
+    "changeTheme": "Tema Değiştir",
+    "darkTheme": "Karanlık",
+    "lightTheme": "Aydınlık",
+    "search": "Ara"
+  },
+  "searchModal": {
+    "selectToNavigate": "Gezinmek için öge seçin",
+    "shortcut": "Kısayol: ⌘K / Ctrl+K",
+    "noResultsFound": "Sonuç bulunamadı:"
   },
   "info": {
     "software": "Programlama dilleri, popüler framework'ler, kütüphaneler ve veritabanı teknolojilerinin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",

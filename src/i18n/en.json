@@ -5,7 +5,15 @@
     "themeToggle": "Toggle Theme",
     "selectLanguage": "Select Language",
     "changeLanguage": "Change Language",
-    "changeTheme": "Toggle Theme"
+    "changeTheme": "Toggle Theme",
+    "darkTheme": "Dark",
+    "lightTheme": "Light",
+    "search": "Search"
+  },
+  "searchModal": {
+    "selectToNavigate": "Select item to scroll",
+    "shortcut": "Shortcut: ⌘K / Ctrl+K",
+    "noResultsFound": "No technology found for:"
   },
   "info": {
     "software": "Real-time GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, popular frameworks, libraries, and database technologies.",

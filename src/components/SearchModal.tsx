@@ -11,9 +11,10 @@ import { sanitizeText } from '../lib/sanitize';
 interface SearchModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onItemSelect?: () => void;
 }
 
-export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
+export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onItemSelect }) => {
   const { t } = useTranslation();
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -29,14 +30,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
-      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = '';
       setQuery('');
     }
-    return () => {
-      document.body.style.overflow = '';
-    };
   }, [isOpen]);
 
   // Handle ESC key
@@ -52,7 +48,21 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
 
   const filteredItems = query.trim()
     ? allItems.filter((item) => {
-        const q = query.toLowerCase().trim();
+        const rawQ = query.toLowerCase().trim();
+        // Support searching by tags using #tag format
+        if (rawQ.startsWith('#')) {
+          const tag = rawQ.slice(1).trim();
+          if (!tag) return true;
+          const cat = item.category.toLowerCase();
+          const subCat = item.subCategory ? item.subCategory.toLowerCase() : '';
+          return (
+            cat.includes(tag) ||
+            subCat.includes(tag) ||
+            (tag === 'software' && item.page === 'software') ||
+            (tag === 'security' && item.page === 'security')
+          );
+        }
+        const q = rawQ;
         const name = item.name.toLowerCase();
         const cat = item.category.toLowerCase();
         const subCat = item.subCategory ? item.subCategory.toLowerCase() : '';
@@ -62,21 +72,27 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
     : allItems.slice(0, 8); // Default top items
 
   const handleSelectItem = (item: TechEntry & { page: 'software' | 'security' }) => {
-    onClose();
-
-    // Check if target element exists on current page
-    const element = document.getElementById(item.id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      element.classList.add('ring-2', 'ring-[#CEFF00]', 'scale-[1.02]');
-      setTimeout(() => {
-        element.classList.remove('ring-2', 'ring-[#CEFF00]', 'scale-[1.02]');
-      }, 2500);
+    if (onItemSelect) {
+      onItemSelect();
     } else {
-      // Navigate to target page then scroll
-      const targetUrl = item.page === 'security' ? `/security#${item.id}` : `/#${item.id}`;
-      window.location.href = targetUrl;
+      onClose();
     }
+
+    setTimeout(() => {
+      // Check if target element exists on current page
+      const element = document.getElementById(item.id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.classList.add('ring-2', 'ring-[#CEFF00]');
+        setTimeout(() => {
+          element.classList.remove('ring-2', 'ring-[#CEFF00]');
+        }, 1200);
+      } else {
+        // Navigate to target page then scroll
+        const targetUrl = item.page === 'security' ? `/security#${item.id}` : `/#${item.id}`;
+        window.location.href = targetUrl;
+      }
+    }, 120);
   };
 
   if (!isOpen) return null;
@@ -85,8 +101,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-[100] flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/70 backdrop-blur-md animate-fade-in"
-      onClick={onClose}
+      className="fixed inset-0 z-[1050] flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/70 backdrop-blur-md animate-fade-in"
     >
       <div
         className="w-full max-w-2xl bg-[#ECECEC] dark:bg-[#141414] rounded-2xl border border-neutral-300 dark:border-neutral-800 shadow-2xl overflow-hidden flex flex-col max-h-[80vh] text-foreground animate-scale-up"
@@ -100,7 +115,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={`${t('nav.software')} & ${t('nav.security')}... (e.g. Python, React, Ghidra)`}
+            placeholder="Python"
             className="w-full bg-transparent text-base font-medium placeholder:text-neutral-400 focus:outline-none text-foreground"
           />
           {query && (
@@ -111,13 +126,17 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
               <X className="w-4 h-4" />
             </button>
           )}
-          <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-mono px-2 py-1 rounded bg-neutral-200 dark:bg-neutral-800 text-neutral-500 dark:text-neutral-400 border border-neutral-300 dark:border-neutral-700">
-            ESC
-          </span>
+          <button
+            onClick={onClose}
+            className="w-6 h-6 rounded-full bg-red-500/20 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center shrink-0 ml-2 transition-colors cursor-pointer"
+            title="Kapat"
+          >
+            <X className="w-3.5 h-3.5" />
+          </button>
         </div>
 
         {/* Results List */}
-        <div className="overflow-y-auto p-2 space-y-1 divide-y divide-neutral-200/50 dark:divide-neutral-800/50">
+        <div className="overflow-y-auto custom-scrollbar p-2 space-y-1 divide-y divide-neutral-200/50 dark:divide-neutral-800/50">
           {filteredItems.length > 0 ? (
             filteredItems.map((item) => (
               <button
@@ -129,7 +148,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                   <img
                     src={item.iconUrl}
                     alt={item.name}
-                    className="w-7 h-7 object-contain shrink-0 group-hover:scale-110 transition-transform"
+                    className="w-7 h-7 object-contain shrink-0"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).src =
                         'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
@@ -161,18 +180,25 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
               </button>
             ))
           ) : (
-            <div className="p-8 text-center text-neutral-500 dark:text-neutral-400 text-sm">
-              No technology found for "{query}"
+            <div className="p-8 text-center text-red-500 font-mono text-sm max-w-full overflow-hidden">
+              <div className="font-semibold mb-1">{t('searchModal.noResultsFound')}</div>
+              <div className="break-words break-all text-xs opacity-90 max-w-full px-2">
+                "{query}"
+              </div>
             </div>
           )}
         </div>
 
         {/* Footer shortcuts helper */}
-        <div className="px-4 py-2 bg-neutral-100 dark:bg-neutral-900/80 border-t border-neutral-300 dark:border-neutral-800 flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400 font-mono">
-          <span className="flex items-center gap-1">
-            <CornerDownLeft className="w-3.5 h-3.5 text-[#CEFF00]" /> Select item to scroll
+        <div className="relative px-4 py-2.5 bg-neutral-100 dark:bg-neutral-900/80 border-t border-neutral-300 dark:border-neutral-800 flex items-center justify-between text-xs text-neutral-500 dark:text-neutral-400 font-mono">
+          <span className="flex items-center gap-1.5">
+            <CornerDownLeft className="w-3.5 h-3.5 text-[#CEFF00] shrink-0" />
+            <span>{t('searchModal.selectToNavigate')}</span>
           </span>
-          <span>Shortcut: ⌘K / Ctrl+K</span>
+          <span className="hidden lg:inline-flex items-center absolute left-1/2 -translate-x-1/2 px-2 py-0.5 rounded bg-neutral-200 dark:bg-neutral-800 text-[10px] border border-neutral-300 dark:border-neutral-700">
+            ESC
+          </span>
+          <span className="hidden lg:inline-block">{t('searchModal.shortcut')}</span>
         </div>
       </div>
     </div>

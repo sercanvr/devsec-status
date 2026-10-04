@@ -287,27 +287,27 @@
   },
   {
     "id": "fw-gea",
-    "name": "Gea Framework",
+    "name": "GeaStack",
     "category": "framework",
-    "subCategory": "Full-Stack Web Stack",
+    "subCategory": "Full-Stack Web Framework",
     "iconUrl": "https://github.com/geastack.png",
-    "githubUrl": "https://github.com/geastack/gea",
+    "githubUrl": "https://github.com/geastack/examples",
     "creator": {
-      "name": "Gea Core Team",
-      "avatarUrl": "https://github.com/geastack.png",
-      "type": "organization",
-      "releaseDate": "15 Mart 2024",
-      "latestVersion": "v1.2.0"
+      "name": "Armağan Amcalar",
+      "avatarUrl": "https://github.com/dashersw.png",
+      "type": "person",
+      "releaseDate": "23 Eylül 2026",
+      "latestVersion": "compiler 1.0.22"
     },
     "popularity": {
-      "totalRepos": 246,
-      "totalStars": 6840
+      "totalRepos": 2,
+      "totalStars": 119
     },
     "momentum": {
-      "newReposLast30Days": 4,
+      "newReposLast30Days": 2,
       "topStarredNewRepo": {
-        "name": "geastack/core",
-        "stars": 9
+        "name": "geastack/examples",
+        "stars": 119
       }
     },
     "lastUpdated": "2026-10-04T04:47:54.253Z"
