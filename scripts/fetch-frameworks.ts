@@ -24,6 +24,7 @@ interface TechEntry {
     topStarredNewRepo: { name: string; stars: number } | null;
   };
   lastUpdated: string;
+  contributors?: any;
 }
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

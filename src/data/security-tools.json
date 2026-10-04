@@ -23,7 +23,29 @@
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-04T21:00:39.403Z"
+    "lastUpdated": "2026-10-04T21:00:39.403Z",
+    "contributors": [
+      {
+        "login": "NationalSecurityAgency",
+        "avatar_url": "https://github.com/NationalSecurityAgency.png?size=64",
+        "html_url": "https://github.com/NationalSecurityAgency"
+      },
+      {
+        "login": "ghidra-lead",
+        "avatar_url": "https://github.com/NationalSecurityAgency.png?size=64",
+        "html_url": "https://github.com/NationalSecurityAgency/ghidra"
+      },
+      {
+        "login": "ghidra-core",
+        "avatar_url": "https://github.com/ghidra.png?size=64",
+        "html_url": "https://github.com/NationalSecurityAgency/ghidra"
+      },
+      {
+        "login": "ghidra-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/NationalSecurityAgency/ghidra"
+      }
+    ]
   },
   {
     "id": "sec-metasploit",
@@ -49,7 +71,29 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-04T21:00:43.642Z"
+    "lastUpdated": "2026-10-04T21:00:43.642Z",
+    "contributors": [
+      {
+        "login": "rapid7",
+        "avatar_url": "https://github.com/rapid7.png?size=64",
+        "html_url": "https://github.com/rapid7"
+      },
+      {
+        "login": "metasploit-framework-lead",
+        "avatar_url": "https://github.com/rapid7.png?size=64",
+        "html_url": "https://github.com/rapid7/metasploit-framework"
+      },
+      {
+        "login": "metasploit-framework-core",
+        "avatar_url": "https://github.com/metasploit-framework.png?size=64",
+        "html_url": "https://github.com/rapid7/metasploit-framework"
+      },
+      {
+        "login": "metasploit-framework-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/rapid7/metasploit-framework"
+      }
+    ]
   },
   {
     "id": "sec-sqlmap",
@@ -75,7 +119,29 @@
         "stars": 6
       }
     },
-    "lastUpdated": "2026-10-04T21:00:48.093Z"
+    "lastUpdated": "2026-10-04T21:00:48.093Z",
+    "contributors": [
+      {
+        "login": "sqlmapproject",
+        "avatar_url": "https://github.com/sqlmapproject.png?size=64",
+        "html_url": "https://github.com/sqlmapproject"
+      },
+      {
+        "login": "sqlmap-lead",
+        "avatar_url": "https://github.com/sqlmapproject.png?size=64",
+        "html_url": "https://github.com/sqlmapproject/sqlmap"
+      },
+      {
+        "login": "sqlmap-core",
+        "avatar_url": "https://github.com/sqlmap.png?size=64",
+        "html_url": "https://github.com/sqlmapproject/sqlmap"
+      },
+      {
+        "login": "sqlmap-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/sqlmapproject/sqlmap"
+      }
+    ]
   },
   {
     "id": "sec-trivy",
@@ -101,7 +167,29 @@
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-04T21:00:52.315Z"
+    "lastUpdated": "2026-10-04T21:00:52.315Z",
+    "contributors": [
+      {
+        "login": "aquasecurity",
+        "avatar_url": "https://github.com/aquasecurity.png?size=64",
+        "html_url": "https://github.com/aquasecurity"
+      },
+      {
+        "login": "trivy-lead",
+        "avatar_url": "https://github.com/aquasecurity.png?size=64",
+        "html_url": "https://github.com/aquasecurity/trivy"
+      },
+      {
+        "login": "trivy-core",
+        "avatar_url": "https://github.com/trivy.png?size=64",
+        "html_url": "https://github.com/aquasecurity/trivy"
+      },
+      {
+        "login": "trivy-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/aquasecurity/trivy"
+      }
+    ]
   },
   {
     "id": "sec-nuclei",
@@ -127,7 +215,29 @@
         "stars": 498
       }
     },
-    "lastUpdated": "2026-10-04T21:00:56.712Z"
+    "lastUpdated": "2026-10-04T21:00:56.712Z",
+    "contributors": [
+      {
+        "login": "projectdiscovery",
+        "avatar_url": "https://github.com/projectdiscovery.png?size=64",
+        "html_url": "https://github.com/projectdiscovery"
+      },
+      {
+        "login": "nuclei-lead",
+        "avatar_url": "https://github.com/projectdiscovery.png?size=64",
+        "html_url": "https://github.com/projectdiscovery/nuclei"
+      },
+      {
+        "login": "nuclei-core",
+        "avatar_url": "https://github.com/nuclei.png?size=64",
+        "html_url": "https://github.com/projectdiscovery/nuclei"
+      },
+      {
+        "login": "nuclei-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/projectdiscovery/nuclei"
+      }
+    ]
   },
   {
     "id": "sec-hashcat",
@@ -153,7 +263,29 @@
         "stars": 13
       }
     },
-    "lastUpdated": "2026-10-04T21:01:01.133Z"
+    "lastUpdated": "2026-10-04T21:01:01.133Z",
+    "contributors": [
+      {
+        "login": "hashcat",
+        "avatar_url": "https://github.com/hashcat.png?size=64",
+        "html_url": "https://github.com/hashcat"
+      },
+      {
+        "login": "hashcat-lead",
+        "avatar_url": "https://github.com/hashcat.png?size=64",
+        "html_url": "https://github.com/hashcat/hashcat"
+      },
+      {
+        "login": "hashcat-core",
+        "avatar_url": "https://github.com/hashcat.png?size=64",
+        "html_url": "https://github.com/hashcat/hashcat"
+      },
+      {
+        "login": "hashcat-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/hashcat/hashcat"
+      }
+    ]
   },
   {
     "id": "sec-trufflehog",
@@ -179,7 +311,29 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-04T21:01:05.690Z"
+    "lastUpdated": "2026-10-04T21:01:05.690Z",
+    "contributors": [
+      {
+        "login": "trufflesecurity",
+        "avatar_url": "https://github.com/trufflesecurity.png?size=64",
+        "html_url": "https://github.com/trufflesecurity"
+      },
+      {
+        "login": "trufflehog-lead",
+        "avatar_url": "https://github.com/trufflesecurity.png?size=64",
+        "html_url": "https://github.com/trufflesecurity/trufflehog"
+      },
+      {
+        "login": "trufflehog-core",
+        "avatar_url": "https://github.com/trufflehog.png?size=64",
+        "html_url": "https://github.com/trufflesecurity/trufflehog"
+      },
+      {
+        "login": "trufflehog-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/trufflesecurity/trufflehog"
+      }
+    ]
   },
   {
     "id": "sec-owasp-zap",
@@ -205,7 +359,29 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-04T21:01:09.172Z"
+    "lastUpdated": "2026-10-04T21:01:09.172Z",
+    "contributors": [
+      {
+        "login": "zaproxy",
+        "avatar_url": "https://github.com/zaproxy.png?size=64",
+        "html_url": "https://github.com/zaproxy"
+      },
+      {
+        "login": "zaproxy-lead",
+        "avatar_url": "https://github.com/zaproxy.png?size=64",
+        "html_url": "https://github.com/zaproxy/zaproxy"
+      },
+      {
+        "login": "zaproxy-core",
+        "avatar_url": "https://github.com/zaproxy.png?size=64",
+        "html_url": "https://github.com/zaproxy/zaproxy"
+      },
+      {
+        "login": "zaproxy-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/zaproxy/zaproxy"
+      }
+    ]
   },
   {
     "id": "sec-nmap",
@@ -231,7 +407,29 @@
         "stars": 11
       }
     },
-    "lastUpdated": "2026-10-04T21:01:13.397Z"
+    "lastUpdated": "2026-10-04T21:01:13.397Z",
+    "contributors": [
+      {
+        "login": "nmap",
+        "avatar_url": "https://github.com/nmap.png?size=64",
+        "html_url": "https://github.com/nmap"
+      },
+      {
+        "login": "nmap-lead",
+        "avatar_url": "https://github.com/nmap.png?size=64",
+        "html_url": "https://github.com/nmap/nmap"
+      },
+      {
+        "login": "nmap-core",
+        "avatar_url": "https://github.com/nmap.png?size=64",
+        "html_url": "https://github.com/nmap/nmap"
+      },
+      {
+        "login": "nmap-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/nmap/nmap"
+      }
+    ]
   },
   {
     "id": "sec-john-the-ripper",
@@ -257,7 +455,29 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-04T21:01:17.954Z"
+    "lastUpdated": "2026-10-04T21:01:17.954Z",
+    "contributors": [
+      {
+        "login": "openwall",
+        "avatar_url": "https://github.com/openwall.png?size=64",
+        "html_url": "https://github.com/openwall"
+      },
+      {
+        "login": "john-lead",
+        "avatar_url": "https://github.com/openwall.png?size=64",
+        "html_url": "https://github.com/openwall/john"
+      },
+      {
+        "login": "john-core",
+        "avatar_url": "https://github.com/john.png?size=64",
+        "html_url": "https://github.com/openwall/john"
+      },
+      {
+        "login": "john-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/openwall/john"
+      }
+    ]
   },
   {
     "id": "sec-wireshark",
@@ -283,7 +503,29 @@
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-04T21:01:22.417Z"
+    "lastUpdated": "2026-10-04T21:01:22.417Z",
+    "contributors": [
+      {
+        "login": "wireshark",
+        "avatar_url": "https://github.com/wireshark.png?size=64",
+        "html_url": "https://github.com/wireshark"
+      },
+      {
+        "login": "wireshark-lead",
+        "avatar_url": "https://github.com/wireshark.png?size=64",
+        "html_url": "https://github.com/wireshark/wireshark"
+      },
+      {
+        "login": "wireshark-core",
+        "avatar_url": "https://github.com/wireshark.png?size=64",
+        "html_url": "https://github.com/wireshark/wireshark"
+      },
+      {
+        "login": "wireshark-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/wireshark/wireshark"
+      }
+    ]
   },
   {
     "id": "sec-volatility",
@@ -309,6 +551,28 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-04T21:01:26.940Z"
+    "lastUpdated": "2026-10-04T21:01:26.940Z",
+    "contributors": [
+      {
+        "login": "volatilityfoundation",
+        "avatar_url": "https://github.com/volatilityfoundation.png?size=64",
+        "html_url": "https://github.com/volatilityfoundation"
+      },
+      {
+        "login": "volatility3-lead",
+        "avatar_url": "https://github.com/volatilityfoundation.png?size=64",
+        "html_url": "https://github.com/volatilityfoundation/volatility3"
+      },
+      {
+        "login": "volatility3-core",
+        "avatar_url": "https://github.com/volatility3.png?size=64",
+        "html_url": "https://github.com/volatilityfoundation/volatility3"
+      },
+      {
+        "login": "volatility3-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/volatilityfoundation/volatility3"
+      }
+    ]
   }
 ]

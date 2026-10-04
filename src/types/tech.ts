@@ -21,6 +21,12 @@ export type TechCategory =
   | "baas" 
   | "security-framework";
 
+export interface TechContributor {
+  login: string;
+  avatar_url: string;
+  html_url: string;
+}
+
 export interface TechEntry {
   id: string;
   name: string;
@@ -38,4 +44,5 @@ export interface TechEntry {
     topStarredNewRepo: { name: string; stars: number } | null;
   };
   lastUpdated: string; // ISO timestamp
+  contributors?: TechContributor[];
 }
