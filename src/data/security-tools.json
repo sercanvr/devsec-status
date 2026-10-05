@@ -13,17 +13,17 @@
       "latestVersion": "v11.3"
     },
     "popularity": {
-      "totalRepos": 3449,
-      "totalStars": 80639
+      "totalRepos": 3451,
+      "totalStars": 80709
     },
     "momentum": {
-      "newReposLast30Days": 182,
+      "newReposLast30Days": 185,
       "topStarredNewRepo": {
         "name": "Spleefy167/frida-orbit-lab",
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-05T04:36:16.186Z",
+    "lastUpdated": "2026-10-05T13:54:42.805Z",
     "contributors": [
       {
         "login": "NationalSecurityAgency",
@@ -62,7 +62,7 @@
     },
     "popularity": {
       "totalRepos": 989,
-      "totalStars": 39092
+      "totalStars": 39096
     },
     "momentum": {
       "newReposLast30Days": 18,
@@ -71,7 +71,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-05T04:36:20.386Z",
+    "lastUpdated": "2026-10-05T13:54:47.313Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -110,7 +110,7 @@
     },
     "popularity": {
       "totalRepos": 2492,
-      "totalStars": 38606
+      "totalStars": 38605
     },
     "momentum": {
       "newReposLast30Days": 60,
@@ -119,7 +119,7 @@
         "stars": 6
       }
     },
-    "lastUpdated": "2026-10-05T04:36:24.758Z",
+    "lastUpdated": "2026-10-05T13:54:52.285Z",
     "contributors": [
       {
         "login": "sqlmapproject",
@@ -157,17 +157,17 @@
       "latestVersion": "v0.59.0"
     },
     "popularity": {
-      "totalRepos": 5867,
-      "totalStars": 38229
+      "totalRepos": 5875,
+      "totalStars": 38238
     },
     "momentum": {
-      "newReposLast30Days": 399,
+      "newReposLast30Days": 407,
       "topStarredNewRepo": {
-        "name": "transpiler-mate/cwl2sbom",
-        "stars": 3
+        "name": "Rootast/rootsecops",
+        "stars": 4
       }
     },
-    "lastUpdated": "2026-10-05T04:36:29.225Z",
+    "lastUpdated": "2026-10-05T13:54:56.921Z",
     "contributors": [
       {
         "login": "aquasecurity",
@@ -205,17 +205,17 @@
       "latestVersion": "v3.3.8"
     },
     "popularity": {
-      "totalRepos": 5787,
-      "totalStars": 31729
+      "totalRepos": 5791,
+      "totalStars": 31738
     },
     "momentum": {
-      "newReposLast30Days": 191,
+      "newReposLast30Days": 196,
       "topStarredNewRepo": {
         "name": "shinthink/blitzstrike",
         "stars": 498
       }
     },
-    "lastUpdated": "2026-10-05T04:36:33.489Z",
+    "lastUpdated": "2026-10-05T13:55:01.654Z",
     "contributors": [
       {
         "login": "projectdiscovery",
@@ -254,7 +254,7 @@
     },
     "popularity": {
       "totalRepos": 2278,
-      "totalStars": 26949
+      "totalStars": 26944
     },
     "momentum": {
       "newReposLast30Days": 102,
@@ -263,7 +263,7 @@
         "stars": 13
       }
     },
-    "lastUpdated": "2026-10-05T04:36:37.787Z",
+    "lastUpdated": "2026-10-05T13:55:06.393Z",
     "contributors": [
       {
         "login": "hashcat",
@@ -301,17 +301,17 @@
       "latestVersion": "v3.88.0"
     },
     "popularity": {
-      "totalRepos": 565,
-      "totalStars": 28280
+      "totalRepos": 567,
+      "totalStars": 28287
     },
     "momentum": {
-      "newReposLast30Days": 29,
+      "newReposLast30Days": 31,
       "topStarredNewRepo": {
         "name": "ardahankanatli021/git-secret-audit-desktop-2026",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-05T04:36:42.049Z",
+    "lastUpdated": "2026-10-05T13:55:11.456Z",
     "contributors": [
       {
         "login": "trufflesecurity",
@@ -350,7 +350,7 @@
     },
     "popularity": {
       "totalRepos": 11,
-      "totalStars": 15868
+      "totalStars": 15869
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -359,7 +359,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-05T04:36:45.519Z",
+    "lastUpdated": "2026-10-05T13:55:15.012Z",
     "contributors": [
       {
         "login": "zaproxy",
@@ -397,17 +397,17 @@
       "latestVersion": "v7.95"
     },
     "popularity": {
-      "totalRepos": 20920,
-      "totalStars": 13712
+      "totalRepos": 20931,
+      "totalStars": 13711
     },
     "momentum": {
-      "newReposLast30Days": 924,
+      "newReposLast30Days": 933,
       "topStarredNewRepo": {
         "name": "ProsecutorName/Nmap-Security-Suite-2026",
         "stars": 11
       }
     },
-    "lastUpdated": "2026-10-05T04:36:49.754Z",
+    "lastUpdated": "2026-10-05T13:55:19.690Z",
     "contributors": [
       {
         "login": "nmap",
@@ -446,7 +446,7 @@
     },
     "popularity": {
       "totalRepos": 892,
-      "totalStars": 13727
+      "totalStars": 13729
     },
     "momentum": {
       "newReposLast30Days": 152,
@@ -455,7 +455,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-05T04:36:54.196Z",
+    "lastUpdated": "2026-10-05T13:55:24.642Z",
     "contributors": [
       {
         "login": "openwall",
@@ -493,17 +493,17 @@
       "latestVersion": "v4.4.4"
     },
     "popularity": {
-      "totalRepos": 16201,
-      "totalStars": 9958
+      "totalRepos": 16219,
+      "totalStars": 9957
     },
     "momentum": {
-      "newReposLast30Days": 845,
+      "newReposLast30Days": 863,
       "topStarredNewRepo": {
         "name": "Spleefy167/frida-orbit-lab",
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-05T04:36:58.527Z",
+    "lastUpdated": "2026-10-05T13:55:29.307Z",
     "contributors": [
       {
         "login": "wireshark",
@@ -541,17 +541,17 @@
       "latestVersion": "v2.8.0"
     },
     "popularity": {
-      "totalRepos": 819,
+      "totalRepos": 823,
       "totalStars": 4459
     },
     "momentum": {
-      "newReposLast30Days": 55,
+      "newReposLast30Days": 59,
       "topStarredNewRepo": {
         "name": "TechieNeurons/Captain-VolatilitAI",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-05T04:37:03.052Z",
+    "lastUpdated": "2026-10-05T13:55:34.544Z",
     "contributors": [
       {
         "login": "volatilityfoundation",
