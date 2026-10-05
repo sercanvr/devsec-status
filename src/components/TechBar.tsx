@@ -12,7 +12,7 @@ interface TechBarProps {
 
 export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
   const { t } = useTranslation();
-  const contributors = useGitHubContributors(entry.githubUrl);
+  const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
@@ -43,6 +43,8 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           <img
             src={entry.iconUrl}
             alt={cleanName}
+            width={40}
+            height={40}
             className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm transition-colors"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
@@ -72,6 +74,8 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
                   <img
                     src={entry.creator.avatarUrl}
                     alt={cleanCreatorName}
+                    width={16}
+                    height={16}
                     className="w-4 h-4 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
@@ -107,6 +111,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={`${cleanName} - ${t('techBar.viewOnGithub')}`}
           className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-colors flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
           title={t('techBar.viewOnGithub')}
         >
@@ -163,8 +168,11 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
                     className="h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
                     src={c.avatar_url}
                     alt={c.login}
+                    width={24}
+                    height={24}
+                    loading="lazy"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png`;
+                      (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png?size=64`;
                     }}
                   />
                 </a>

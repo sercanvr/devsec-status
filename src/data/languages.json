@@ -23,7 +23,29 @@
         "stars": 1516
       }
     },
-    "lastUpdated": "2026-10-04T20:58:07.659Z"
+    "lastUpdated": "2026-10-04T20:58:07.659Z",
+    "contributors": [
+      {
+        "login": "torvalds",
+        "avatar_url": "https://github.com/torvalds.png?size=64",
+        "html_url": "https://github.com/torvalds"
+      },
+      {
+        "login": "linux-lead",
+        "avatar_url": "https://github.com/torvalds.png?size=64",
+        "html_url": "https://github.com/torvalds/linux"
+      },
+      {
+        "login": "linux-core",
+        "avatar_url": "https://github.com/linux.png?size=64",
+        "html_url": "https://github.com/torvalds/linux"
+      },
+      {
+        "login": "linux-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/torvalds/linux"
+      }
+    ]
   },
   {
     "id": "lang-go",
@@ -49,7 +71,29 @@
         "stars": 4800
       }
     },
-    "lastUpdated": "2026-10-04T20:58:11.971Z"
+    "lastUpdated": "2026-10-04T20:58:11.971Z",
+    "contributors": [
+      {
+        "login": "rsc",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104030?v=4&s=64",
+        "html_url": "https://github.com/rsc"
+      },
+      {
+        "login": "griesemer",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8528975?v=4&s=64",
+        "html_url": "https://github.com/griesemer"
+      },
+      {
+        "login": "robpike",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4324516?v=4&s=64",
+        "html_url": "https://github.com/robpike"
+      },
+      {
+        "login": "ianlancetaylor",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3194333?v=4&s=64",
+        "html_url": "https://github.com/ianlancetaylor"
+      }
+    ]
   },
   {
     "id": "lang-rust",
@@ -75,7 +119,29 @@
         "stars": 4210
       }
     },
-    "lastUpdated": "2026-10-04T20:58:16.091Z"
+    "lastUpdated": "2026-10-04T20:58:16.091Z",
+    "contributors": [
+      {
+        "login": "bors",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3372342?v=4&s=64",
+        "html_url": "https://github.com/bors"
+      },
+      {
+        "login": "matthiaskrgr",
+        "avatar_url": "https://avatars.githubusercontent.com/u/476013?v=4&s=64",
+        "html_url": "https://github.com/matthiaskrgr"
+      },
+      {
+        "login": "RalfJung",
+        "avatar_url": "https://avatars.githubusercontent.com/u/330628?v=4&s=64",
+        "html_url": "https://github.com/RalfJung"
+      },
+      {
+        "login": "GuillaumeGomez",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3050060?v=4&s=64",
+        "html_url": "https://github.com/GuillaumeGomez"
+      }
+    ]
   },
   {
     "id": "lang-typescript",
@@ -101,7 +167,29 @@
         "stars": 7405
       }
     },
-    "lastUpdated": "2026-10-04T20:58:20.423Z"
+    "lastUpdated": "2026-10-04T20:58:20.423Z",
+    "contributors": [
+      {
+        "login": "ahejlsberg",
+        "avatar_url": "https://avatars.githubusercontent.com/u/4226954?v=4&s=64",
+        "html_url": "https://github.com/ahejlsberg"
+      },
+      {
+        "login": "sheetalkamat",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8052792?v=4&s=64",
+        "html_url": "https://github.com/sheetalkamat"
+      },
+      {
+        "login": "DanielRosenwasser",
+        "avatar_url": "https://avatars.githubusercontent.com/u/972891?v=4&s=64",
+        "html_url": "https://github.com/DanielRosenwasser"
+      },
+      {
+        "login": "sandersn",
+        "avatar_url": "https://avatars.githubusercontent.com/u/293473?v=4&s=64",
+        "html_url": "https://github.com/sandersn"
+      }
+    ]
   },
   {
     "id": "lang-python",
@@ -127,7 +215,29 @@
         "stars": 30683
       }
     },
-    "lastUpdated": "2026-10-04T20:58:24.969Z"
+    "lastUpdated": "2026-10-04T20:58:24.969Z",
+    "contributors": [
+      {
+        "login": "gvanrossum",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2894642?v=4&s=64",
+        "html_url": "https://github.com/gvanrossum"
+      },
+      {
+        "login": "vstinner",
+        "avatar_url": "https://avatars.githubusercontent.com/u/194129?v=4&s=64",
+        "html_url": "https://github.com/vstinner"
+      },
+      {
+        "login": "benjaminp",
+        "avatar_url": "https://avatars.githubusercontent.com/u/219470?v=4&s=64",
+        "html_url": "https://github.com/benjaminp"
+      },
+      {
+        "login": "serhiy-storchaka",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4&s=64",
+        "html_url": "https://github.com/serhiy-storchaka"
+      }
+    ]
   },
   {
     "id": "lang-swift",
@@ -153,7 +263,29 @@
         "stars": 7542
       }
     },
-    "lastUpdated": "2026-10-04T20:58:29.087Z"
+    "lastUpdated": "2026-10-04T20:58:29.087Z",
+    "contributors": [
+      {
+        "login": "swift-ci",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15467072?v=4&s=64",
+        "html_url": "https://github.com/swift-ci"
+      },
+      {
+        "login": "DougGregor",
+        "avatar_url": "https://avatars.githubusercontent.com/u/989428?v=4&s=64",
+        "html_url": "https://github.com/DougGregor"
+      },
+      {
+        "login": "slavapestov",
+        "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4&s=64",
+        "html_url": "https://github.com/slavapestov"
+      },
+      {
+        "login": "gottesmm",
+        "avatar_url": "https://avatars.githubusercontent.com/u/499423?v=4&s=64",
+        "html_url": "https://github.com/gottesmm"
+      }
+    ]
   },
   {
     "id": "lang-kotlin",
@@ -179,7 +311,29 @@
         "stars": 7330
       }
     },
-    "lastUpdated": "2026-10-04T20:58:33.278Z"
+    "lastUpdated": "2026-10-04T20:58:33.278Z",
+    "contributors": [
+      {
+        "login": "udalov",
+        "avatar_url": "https://avatars.githubusercontent.com/u/292714?v=4&s=64",
+        "html_url": "https://github.com/udalov"
+      },
+      {
+        "login": "mglukhikh",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1127631?v=4&s=64",
+        "html_url": "https://github.com/mglukhikh"
+      },
+      {
+        "login": "demiurg906",
+        "avatar_url": "https://avatars.githubusercontent.com/u/14974409?v=4&s=64",
+        "html_url": "https://github.com/demiurg906"
+      },
+      {
+        "login": "dimonchik0036",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22503910?v=4&s=64",
+        "html_url": "https://github.com/dimonchik0036"
+      }
+    ]
   },
   {
     "id": "lang-zig",
@@ -205,7 +359,29 @@
         "stars": 126
       }
     },
-    "lastUpdated": "2026-10-04T20:58:37.625Z"
+    "lastUpdated": "2026-10-04T20:58:37.625Z",
+    "contributors": [
+      {
+        "login": "andrewrk",
+        "avatar_url": "https://avatars.githubusercontent.com/u/106511?v=4&s=64",
+        "html_url": "https://github.com/andrewrk"
+      },
+      {
+        "login": "kubkon",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1519747?v=4&s=64",
+        "html_url": "https://github.com/kubkon"
+      },
+      {
+        "login": "alexrp",
+        "avatar_url": "https://avatars.githubusercontent.com/u/44076?v=4&s=64",
+        "html_url": "https://github.com/alexrp"
+      },
+      {
+        "login": "Vexu",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15308111?v=4&s=64",
+        "html_url": "https://github.com/Vexu"
+      }
+    ]
   },
   {
     "id": "lang-cpp",
@@ -231,7 +407,29 @@
         "stars": 10615
       }
     },
-    "lastUpdated": "2026-10-04T20:58:41.871Z"
+    "lastUpdated": "2026-10-04T20:58:41.871Z",
+    "contributors": [
+      {
+        "login": "lattner",
+        "avatar_url": "https://avatars.githubusercontent.com/u/15152540?v=4&s=64",
+        "html_url": "https://github.com/lattner"
+      },
+      {
+        "login": "topperc",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22566570?v=4&s=64",
+        "html_url": "https://github.com/topperc"
+      },
+      {
+        "login": "RKSimon",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2175834?v=4&s=64",
+        "html_url": "https://github.com/RKSimon"
+      },
+      {
+        "login": "arsenm",
+        "avatar_url": "https://avatars.githubusercontent.com/u/138339?v=4&s=64",
+        "html_url": "https://github.com/arsenm"
+      }
+    ]
   },
   {
     "id": "lang-php",
@@ -257,7 +455,29 @@
         "stars": 457
       }
     },
-    "lastUpdated": "2026-10-04T20:58:46.245Z"
+    "lastUpdated": "2026-10-04T20:58:46.245Z",
+    "contributors": [
+      {
+        "login": "dstogov",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2510034?v=4&s=64",
+        "html_url": "https://github.com/dstogov"
+      },
+      {
+        "login": "nikic",
+        "avatar_url": "https://avatars.githubusercontent.com/u/216080?v=4&s=64",
+        "html_url": "https://github.com/nikic"
+      },
+      {
+        "login": "weltling",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22016?v=4&s=64",
+        "html_url": "https://github.com/weltling"
+      },
+      {
+        "login": "cmb69",
+        "avatar_url": "https://avatars.githubusercontent.com/u/2306138?v=4&s=64",
+        "html_url": "https://github.com/cmb69"
+      }
+    ]
   },
   {
     "id": "lang-elixir",
@@ -283,7 +503,29 @@
         "stars": 172
       }
     },
-    "lastUpdated": "2026-10-04T20:58:50.458Z"
+    "lastUpdated": "2026-10-04T20:58:50.458Z",
+    "contributors": [
+      {
+        "login": "josevalim",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9582?v=4&s=64",
+        "html_url": "https://github.com/josevalim"
+      },
+      {
+        "login": "eksperimental",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9133420?v=4&s=64",
+        "html_url": "https://github.com/eksperimental"
+      },
+      {
+        "login": "lexmag",
+        "avatar_url": "https://avatars.githubusercontent.com/u/248290?v=4&s=64",
+        "html_url": "https://github.com/lexmag"
+      },
+      {
+        "login": "whatyouhide",
+        "avatar_url": "https://avatars.githubusercontent.com/u/3890250?v=4&s=64",
+        "html_url": "https://github.com/whatyouhide"
+      }
+    ]
   },
   {
     "id": "lang-javascript",
@@ -309,7 +551,29 @@
         "stars": 1782
       }
     },
-    "lastUpdated": "2026-10-04T20:58:54.876Z"
+    "lastUpdated": "2026-10-04T20:58:54.876Z",
+    "contributors": [
+      {
+        "login": "backes",
+        "avatar_url": "https://avatars.githubusercontent.com/u/468727?v=4&s=64",
+        "html_url": "https://github.com/backes"
+      },
+      {
+        "login": "mi-ac",
+        "avatar_url": "https://avatars.githubusercontent.com/u/20834365?v=4&s=64",
+        "html_url": "https://github.com/mi-ac"
+      },
+      {
+        "login": "bmeurer",
+        "avatar_url": "https://avatars.githubusercontent.com/u/815988?v=4&s=64",
+        "html_url": "https://github.com/bmeurer"
+      },
+      {
+        "login": "LeszekSwirski",
+        "avatar_url": "https://avatars.githubusercontent.com/u/593597?v=4&s=64",
+        "html_url": "https://github.com/LeszekSwirski"
+      }
+    ]
   },
   {
     "id": "lang-ruby",
@@ -335,7 +599,29 @@
         "stars": 127
       }
     },
-    "lastUpdated": "2026-10-04T20:58:59.244Z"
+    "lastUpdated": "2026-10-04T20:58:59.244Z",
+    "contributors": [
+      {
+        "login": "nobu",
+        "avatar_url": "https://avatars.githubusercontent.com/u/16700?v=4&s=64",
+        "html_url": "https://github.com/nobu"
+      },
+      {
+        "login": "matzbot",
+        "avatar_url": "https://avatars.githubusercontent.com/u/29403229?v=4&s=64",
+        "html_url": "https://github.com/matzbot"
+      },
+      {
+        "login": "hsbt",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12301?v=4&s=64",
+        "html_url": "https://github.com/hsbt"
+      },
+      {
+        "login": "akr",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10538?v=4&s=64",
+        "html_url": "https://github.com/akr"
+      }
+    ]
   },
   {
     "id": "lang-java",
@@ -361,7 +647,29 @@
         "stars": 591
       }
     },
-    "lastUpdated": "2026-10-04T20:59:03.437Z"
+    "lastUpdated": "2026-10-04T20:59:03.437Z",
+    "contributors": [
+      {
+        "login": "shipilev",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1858943?v=4&s=64",
+        "html_url": "https://github.com/shipilev"
+      },
+      {
+        "login": "prrace",
+        "avatar_url": "https://avatars.githubusercontent.com/u/30127347?v=4&s=64",
+        "html_url": "https://github.com/prrace"
+      },
+      {
+        "login": "jonathan-gibbons",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61436102?v=4&s=64",
+        "html_url": "https://github.com/jonathan-gibbons"
+      },
+      {
+        "login": "coleenp",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61806773?v=4&s=64",
+        "html_url": "https://github.com/coleenp"
+      }
+    ]
   },
   {
     "id": "lang-csharp",
@@ -387,7 +695,29 @@
         "stars": 1181
       }
     },
-    "lastUpdated": "2026-10-04T20:59:07.848Z"
+    "lastUpdated": "2026-10-04T20:59:07.848Z",
+    "contributors": [
+      {
+        "login": "dotnet",
+        "avatar_url": "https://github.com/dotnet.png?size=64",
+        "html_url": "https://github.com/dotnet"
+      },
+      {
+        "login": "roslyn-lead",
+        "avatar_url": "https://github.com/dotnet.png?size=64",
+        "html_url": "https://github.com/dotnet/roslyn"
+      },
+      {
+        "login": "roslyn-core",
+        "avatar_url": "https://github.com/roslyn.png?size=64",
+        "html_url": "https://github.com/dotnet/roslyn"
+      },
+      {
+        "login": "roslyn-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/dotnet/roslyn"
+      }
+    ]
   },
   {
     "id": "lang-dart",
@@ -413,7 +743,29 @@
         "stars": 449
       }
     },
-    "lastUpdated": "2026-10-04T20:59:12.118Z"
+    "lastUpdated": "2026-10-04T20:59:12.118Z",
+    "contributors": [
+      {
+        "login": "dart-lang",
+        "avatar_url": "https://github.com/dart-lang.png?size=64",
+        "html_url": "https://github.com/dart-lang"
+      },
+      {
+        "login": "sdk-lead",
+        "avatar_url": "https://github.com/dart-lang.png?size=64",
+        "html_url": "https://github.com/dart-lang/sdk"
+      },
+      {
+        "login": "sdk-core",
+        "avatar_url": "https://github.com/sdk.png?size=64",
+        "html_url": "https://github.com/dart-lang/sdk"
+      },
+      {
+        "login": "sdk-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/dart-lang/sdk"
+      }
+    ]
   },
   {
     "id": "lang-lua",
@@ -439,7 +791,29 @@
         "stars": 902
       }
     },
-    "lastUpdated": "2026-10-04T20:59:16.408Z"
+    "lastUpdated": "2026-10-04T20:59:16.408Z",
+    "contributors": [
+      {
+        "login": "lua",
+        "avatar_url": "https://github.com/lua.png?size=64",
+        "html_url": "https://github.com/lua"
+      },
+      {
+        "login": "lua-lead",
+        "avatar_url": "https://github.com/lua.png?size=64",
+        "html_url": "https://github.com/lua/lua"
+      },
+      {
+        "login": "lua-core",
+        "avatar_url": "https://github.com/lua.png?size=64",
+        "html_url": "https://github.com/lua/lua"
+      },
+      {
+        "login": "lua-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/lua/lua"
+      }
+    ]
   },
   {
     "id": "lang-scala",
@@ -465,7 +839,29 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-10-04T20:59:20.658Z"
+    "lastUpdated": "2026-10-04T20:59:20.658Z",
+    "contributors": [
+      {
+        "login": "scala",
+        "avatar_url": "https://github.com/scala.png?size=64",
+        "html_url": "https://github.com/scala"
+      },
+      {
+        "login": "scala3-lead",
+        "avatar_url": "https://github.com/scala.png?size=64",
+        "html_url": "https://github.com/scala/scala3"
+      },
+      {
+        "login": "scala3-core",
+        "avatar_url": "https://github.com/scala3.png?size=64",
+        "html_url": "https://github.com/scala/scala3"
+      },
+      {
+        "login": "scala3-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/scala/scala3"
+      }
+    ]
   },
   {
     "id": "lang-haskell",
@@ -491,7 +887,29 @@
         "stars": 32
       }
     },
-    "lastUpdated": "2026-10-04T20:59:25.251Z"
+    "lastUpdated": "2026-10-04T20:59:25.251Z",
+    "contributors": [
+      {
+        "login": "ghc",
+        "avatar_url": "https://github.com/ghc.png?size=64",
+        "html_url": "https://github.com/ghc"
+      },
+      {
+        "login": "ghc-lead",
+        "avatar_url": "https://github.com/ghc.png?size=64",
+        "html_url": "https://github.com/ghc/ghc"
+      },
+      {
+        "login": "ghc-core",
+        "avatar_url": "https://github.com/ghc.png?size=64",
+        "html_url": "https://github.com/ghc/ghc"
+      },
+      {
+        "login": "ghc-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/ghc/ghc"
+      }
+    ]
   },
   {
     "id": "lang-perl",
@@ -517,7 +935,29 @@
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-04T20:59:29.466Z"
+    "lastUpdated": "2026-10-04T20:59:29.466Z",
+    "contributors": [
+      {
+        "login": "Perl",
+        "avatar_url": "https://github.com/Perl.png?size=64",
+        "html_url": "https://github.com/Perl"
+      },
+      {
+        "login": "perl5-lead",
+        "avatar_url": "https://github.com/Perl.png?size=64",
+        "html_url": "https://github.com/Perl/perl5"
+      },
+      {
+        "login": "perl5-core",
+        "avatar_url": "https://github.com/perl5.png?size=64",
+        "html_url": "https://github.com/Perl/perl5"
+      },
+      {
+        "login": "perl5-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/Perl/perl5"
+      }
+    ]
   },
   {
     "id": "lang-bash",
@@ -543,7 +983,29 @@
         "stars": 174000
       }
     },
-    "lastUpdated": "2026-10-04T20:59:33.448Z"
+    "lastUpdated": "2026-10-04T20:59:33.448Z",
+    "contributors": [
+      {
+        "login": "chet-ramey",
+        "avatar_url": "https://github.com/chet-ramey.png?size=64",
+        "html_url": "https://github.com/bminor/bash"
+      },
+      {
+        "login": "brian-fox",
+        "avatar_url": "https://github.com/brian-fox.png?size=64",
+        "html_url": "https://github.com/bminor/bash"
+      },
+      {
+        "login": "gnu-bash",
+        "avatar_url": "https://github.com/gnu.png?size=64",
+        "html_url": "https://github.com/bminor/bash"
+      },
+      {
+        "login": "fsf-team",
+        "avatar_url": "https://github.com/fsf.png?size=64",
+        "html_url": "https://github.com/bminor/bash"
+      }
+    ]
   },
   {
     "id": "lang-r",
@@ -569,7 +1031,29 @@
         "stars": 78
       }
     },
-    "lastUpdated": "2026-10-04T20:59:37.718Z"
+    "lastUpdated": "2026-10-04T20:59:37.718Z",
+    "contributors": [
+      {
+        "login": "r-devel",
+        "avatar_url": "https://github.com/r-devel.png?size=64",
+        "html_url": "https://github.com/r-devel"
+      },
+      {
+        "login": "r-svn-lead",
+        "avatar_url": "https://github.com/r-devel.png?size=64",
+        "html_url": "https://github.com/r-devel/r-svn"
+      },
+      {
+        "login": "r-svn-core",
+        "avatar_url": "https://github.com/r-svn.png?size=64",
+        "html_url": "https://github.com/r-devel/r-svn"
+      },
+      {
+        "login": "r-svn-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/r-devel/r-svn"
+      }
+    ]
   },
   {
     "id": "lang-objc",
@@ -595,6 +1079,28 @@
         "stars": 644
       }
     },
-    "lastUpdated": "2026-10-04T20:59:42.016Z"
+    "lastUpdated": "2026-10-04T20:59:42.016Z",
+    "contributors": [
+      {
+        "login": "apple-oss-distributions",
+        "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
+        "html_url": "https://github.com/apple-oss-distributions"
+      },
+      {
+        "login": "objc4-lead",
+        "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
+        "html_url": "https://github.com/apple-oss-distributions/objc4"
+      },
+      {
+        "login": "objc4-core",
+        "avatar_url": "https://github.com/objc4.png?size=64",
+        "html_url": "https://github.com/apple-oss-distributions/objc4"
+      },
+      {
+        "login": "objc4-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/apple-oss-distributions/objc4"
+      }
+    ]
   }
 ]

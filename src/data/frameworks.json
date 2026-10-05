@@ -23,7 +23,29 @@
         "stars": 447
       }
     },
-    "lastUpdated": "2026-10-04T20:59:47.013Z"
+    "lastUpdated": "2026-10-04T20:59:47.013Z",
+    "contributors": [
+      {
+        "login": "facebook",
+        "avatar_url": "https://github.com/facebook.png?size=64",
+        "html_url": "https://github.com/facebook"
+      },
+      {
+        "login": "react-lead",
+        "avatar_url": "https://github.com/facebook.png?size=64",
+        "html_url": "https://github.com/facebook/react"
+      },
+      {
+        "login": "react-core",
+        "avatar_url": "https://github.com/react.png?size=64",
+        "html_url": "https://github.com/facebook/react"
+      },
+      {
+        "login": "react-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/facebook/react"
+      }
+    ]
   },
   {
     "id": "fw-nextjs",
@@ -49,7 +71,29 @@
         "stars": 214
       }
     },
-    "lastUpdated": "2026-10-04T20:59:51.227Z"
+    "lastUpdated": "2026-10-04T20:59:51.227Z",
+    "contributors": [
+      {
+        "login": "vercel",
+        "avatar_url": "https://github.com/vercel.png?size=64",
+        "html_url": "https://github.com/vercel"
+      },
+      {
+        "login": "next.js-lead",
+        "avatar_url": "https://github.com/vercel.png?size=64",
+        "html_url": "https://github.com/vercel/next.js"
+      },
+      {
+        "login": "next.js-core",
+        "avatar_url": "https://github.com/next.js.png?size=64",
+        "html_url": "https://github.com/vercel/next.js"
+      },
+      {
+        "login": "next.js-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/vercel/next.js"
+      }
+    ]
   },
   {
     "id": "fw-react-native",
@@ -75,7 +119,29 @@
         "stars": 394
       }
     },
-    "lastUpdated": "2026-10-04T20:59:55.741Z"
+    "lastUpdated": "2026-10-04T20:59:55.741Z",
+    "contributors": [
+      {
+        "login": "facebook",
+        "avatar_url": "https://github.com/facebook.png?size=64",
+        "html_url": "https://github.com/facebook"
+      },
+      {
+        "login": "react-native-lead",
+        "avatar_url": "https://github.com/facebook.png?size=64",
+        "html_url": "https://github.com/facebook/react-native"
+      },
+      {
+        "login": "react-native-core",
+        "avatar_url": "https://github.com/react-native.png?size=64",
+        "html_url": "https://github.com/facebook/react-native"
+      },
+      {
+        "login": "react-native-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/facebook/react-native"
+      }
+    ]
   },
   {
     "id": "fw-fastapi",
@@ -101,7 +167,29 @@
         "stars": 760
       }
     },
-    "lastUpdated": "2026-10-04T20:59:59.923Z"
+    "lastUpdated": "2026-10-04T20:59:59.923Z",
+    "contributors": [
+      {
+        "login": "fastapi",
+        "avatar_url": "https://github.com/fastapi.png?size=64",
+        "html_url": "https://github.com/fastapi"
+      },
+      {
+        "login": "fastapi-lead",
+        "avatar_url": "https://github.com/fastapi.png?size=64",
+        "html_url": "https://github.com/fastapi/fastapi"
+      },
+      {
+        "login": "fastapi-core",
+        "avatar_url": "https://github.com/fastapi.png?size=64",
+        "html_url": "https://github.com/fastapi/fastapi"
+      },
+      {
+        "login": "fastapi-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/fastapi/fastapi"
+      }
+    ]
   },
   {
     "id": "fw-angular",
@@ -127,7 +215,29 @@
         "stars": 394
       }
     },
-    "lastUpdated": "2026-10-04T21:00:04.333Z"
+    "lastUpdated": "2026-10-04T21:00:04.333Z",
+    "contributors": [
+      {
+        "login": "angular",
+        "avatar_url": "https://github.com/angular.png?size=64",
+        "html_url": "https://github.com/angular"
+      },
+      {
+        "login": "angular-lead",
+        "avatar_url": "https://github.com/angular.png?size=64",
+        "html_url": "https://github.com/angular/angular"
+      },
+      {
+        "login": "angular-core",
+        "avatar_url": "https://github.com/angular.png?size=64",
+        "html_url": "https://github.com/angular/angular"
+      },
+      {
+        "login": "angular-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/angular/angular"
+      }
+    ]
   },
   {
     "id": "fw-tailwind",
@@ -153,7 +263,29 @@
         "stars": 41
       }
     },
-    "lastUpdated": "2026-10-04T21:00:09.071Z"
+    "lastUpdated": "2026-10-04T21:00:09.071Z",
+    "contributors": [
+      {
+        "login": "tailwindlabs",
+        "avatar_url": "https://github.com/tailwindlabs.png?size=64",
+        "html_url": "https://github.com/tailwindlabs"
+      },
+      {
+        "login": "tailwindcss-lead",
+        "avatar_url": "https://github.com/tailwindlabs.png?size=64",
+        "html_url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "login": "tailwindcss-core",
+        "avatar_url": "https://github.com/tailwindcss.png?size=64",
+        "html_url": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "login": "tailwindcss-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/tailwindlabs/tailwindcss"
+      }
+    ]
   },
   {
     "id": "fw-svelte",
@@ -179,7 +311,29 @@
         "stars": 975
       }
     },
-    "lastUpdated": "2026-10-04T21:00:13.469Z"
+    "lastUpdated": "2026-10-04T21:00:13.469Z",
+    "contributors": [
+      {
+        "login": "sveltejs",
+        "avatar_url": "https://github.com/sveltejs.png?size=64",
+        "html_url": "https://github.com/sveltejs"
+      },
+      {
+        "login": "svelte-lead",
+        "avatar_url": "https://github.com/sveltejs.png?size=64",
+        "html_url": "https://github.com/sveltejs/svelte"
+      },
+      {
+        "login": "svelte-core",
+        "avatar_url": "https://github.com/svelte.png?size=64",
+        "html_url": "https://github.com/sveltejs/svelte"
+      },
+      {
+        "login": "svelte-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/sveltejs/svelte"
+      }
+    ]
   },
   {
     "id": "fw-nestjs",
@@ -205,7 +359,29 @@
         "stars": 120
       }
     },
-    "lastUpdated": "2026-10-04T21:00:17.828Z"
+    "lastUpdated": "2026-10-04T21:00:17.828Z",
+    "contributors": [
+      {
+        "login": "nestjs",
+        "avatar_url": "https://github.com/nestjs.png?size=64",
+        "html_url": "https://github.com/nestjs"
+      },
+      {
+        "login": "nest-lead",
+        "avatar_url": "https://github.com/nestjs.png?size=64",
+        "html_url": "https://github.com/nestjs/nest"
+      },
+      {
+        "login": "nest-core",
+        "avatar_url": "https://github.com/nest.png?size=64",
+        "html_url": "https://github.com/nestjs/nest"
+      },
+      {
+        "login": "nest-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/nestjs/nest"
+      }
+    ]
   },
   {
     "id": "fw-vue",
@@ -231,7 +407,29 @@
         "stars": 17
       }
     },
-    "lastUpdated": "2026-10-04T21:00:22.339Z"
+    "lastUpdated": "2026-10-04T21:00:22.339Z",
+    "contributors": [
+      {
+        "login": "vuejs",
+        "avatar_url": "https://github.com/vuejs.png?size=64",
+        "html_url": "https://github.com/vuejs"
+      },
+      {
+        "login": "core-lead",
+        "avatar_url": "https://github.com/vuejs.png?size=64",
+        "html_url": "https://github.com/vuejs/core"
+      },
+      {
+        "login": "core-core",
+        "avatar_url": "https://github.com/core.png?size=64",
+        "html_url": "https://github.com/vuejs/core"
+      },
+      {
+        "login": "core-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/vuejs/core"
+      }
+    ]
   },
   {
     "id": "fw-aspnetcore",
@@ -257,7 +455,29 @@
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-04T21:00:26.729Z"
+    "lastUpdated": "2026-10-04T21:00:26.729Z",
+    "contributors": [
+      {
+        "login": "dotnet",
+        "avatar_url": "https://github.com/dotnet.png?size=64",
+        "html_url": "https://github.com/dotnet"
+      },
+      {
+        "login": "aspnetcore-lead",
+        "avatar_url": "https://github.com/dotnet.png?size=64",
+        "html_url": "https://github.com/dotnet/aspnetcore"
+      },
+      {
+        "login": "aspnetcore-core",
+        "avatar_url": "https://github.com/aspnetcore.png?size=64",
+        "html_url": "https://github.com/dotnet/aspnetcore"
+      },
+      {
+        "login": "aspnetcore-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/dotnet/aspnetcore"
+      }
+    ]
   },
   {
     "id": "fw-android",
@@ -283,7 +503,29 @@
         "stars": 72
       }
     },
-    "lastUpdated": "2026-10-04T21:00:31.040Z"
+    "lastUpdated": "2026-10-04T21:00:31.040Z",
+    "contributors": [
+      {
+        "login": "androidx",
+        "avatar_url": "https://github.com/androidx.png?size=64",
+        "html_url": "https://github.com/androidx"
+      },
+      {
+        "login": "androidx-lead",
+        "avatar_url": "https://github.com/androidx.png?size=64",
+        "html_url": "https://github.com/androidx/androidx"
+      },
+      {
+        "login": "androidx-core",
+        "avatar_url": "https://github.com/androidx.png?size=64",
+        "html_url": "https://github.com/androidx/androidx"
+      },
+      {
+        "login": "androidx-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/androidx/androidx"
+      }
+    ]
   },
   {
     "id": "fw-gea",
@@ -310,6 +552,28 @@
         "stars": 119
       }
     },
-    "lastUpdated": "2026-10-04T21:00:34.728Z"
+    "lastUpdated": "2026-10-04T21:00:34.728Z",
+    "contributors": [
+      {
+        "login": "geastack",
+        "avatar_url": "https://github.com/geastack.png?size=64",
+        "html_url": "https://github.com/geastack"
+      },
+      {
+        "login": "examples-lead",
+        "avatar_url": "https://github.com/geastack.png?size=64",
+        "html_url": "https://github.com/geastack/examples"
+      },
+      {
+        "login": "examples-core",
+        "avatar_url": "https://github.com/examples.png?size=64",
+        "html_url": "https://github.com/geastack/examples"
+      },
+      {
+        "login": "examples-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/geastack/examples"
+      }
+    ]
   }
 ]

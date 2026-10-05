@@ -53,8 +53,11 @@ export const Navbar: React.FC = () => {
               className="flex items-center group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer hover:opacity-70 transition-none"
             >
               <img
-                src="/icons/devsec-logo.png"
+                src="/icons/devsec-logo.webp"
                 alt="DevSec Status"
+                width={102}
+                height={36}
+                fetchPriority="high"
                 className="h-8 sm:h-9 w-auto object-contain drop-shadow-md shrink-0"
               />
             </a>
@@ -155,8 +158,10 @@ export const Navbar: React.FC = () => {
                 className="flex items-center hover:opacity-70 transition-none"
               >
                 <img
-                  src="/icons/devsec-logo.png"
+                  src="/icons/devsec-logo.webp"
                   alt="DevSec Status"
+                  width={102}
+                  height={36}
                   className="h-8 sm:h-9 w-auto object-contain shrink-0"
                 />
               </NavLink>

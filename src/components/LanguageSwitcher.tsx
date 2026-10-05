@@ -3,10 +3,18 @@ import { useTranslation } from 'react-i18next';
 import { Earth, Check } from 'lucide-react';
 
 const languages = [
-  { code: 'tr', label: 'TR', name: 'Türkçe', flagUrl: '/icons/tr-flag.png' },
-  { code: 'en', label: 'ENG', name: 'English', flagUrl: '/icons/usa-flag.png' },
-  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: '/icons/de-flag.png' },
+  { code: 'tr', label: 'TR', name: 'Türkçe', flagUrl: '/icons/tr-flag.webp' },
+  { code: 'en', label: 'ENG', name: 'English', flagUrl: '/icons/usa-flag.webp' },
+  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: '/icons/de-flag.webp' },
 ];
+
+// Preload flag images immediately into browser cache to eliminate any open delay
+if (typeof window !== 'undefined') {
+  languages.forEach((lang) => {
+    const img = new Image();
+    img.src = lang.flagUrl;
+  });
+}
 
 interface LanguageSwitcherProps {
   onSelectLanguage?: () => void;
@@ -79,6 +87,10 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                     <img
                       src={lang.flagUrl}
                       alt={lang.name}
+                      width={18}
+                      height={18}
+                      loading="eager"
+                      decoding="sync"
                       className="w-[18px] h-[18px] object-cover rounded-full shadow-xs shrink-0 border border-black/10 dark:border-white/10"
                     />
                     <span className="text-xs">{lang.name}</span>
@@ -130,6 +142,10 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                   <img
                     src={lang.flagUrl}
                     alt={lang.name}
+                    width={18}
+                    height={18}
+                    loading="eager"
+                    decoding="sync"
                     className="w-[18px] h-[18px] object-cover rounded-full shadow-xs shrink-0 border border-black/10 dark:border-white/10"
                   />
                   <span>{lang.name}</span>
