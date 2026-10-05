@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 122602,
-      "totalStars": 111113
+      "totalRepos": 122800,
+      "totalStars": 111130
     },
     "momentum": {
-      "newReposLast30Days": 8525,
+      "newReposLast30Days": 8708,
       "topStarredNewRepo": {
         "name": "mikehasa/golive-skill",
-        "stars": 1222
+        "stars": 1228
       }
     },
-    "lastUpdated": "2026-10-05T13:55:39.300Z",
+    "lastUpdated": "2026-10-05T23:53:25.361Z",
     "contributors": [
       {
         "login": "supabase",
@@ -63,17 +63,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 60267,
+      "totalRepos": 60281,
       "totalStars": 78194
     },
     "momentum": {
-      "newReposLast30Days": 585,
+      "newReposLast30Days": 598,
       "topStarredNewRepo": {
         "name": "awslabs/aws-service-eol-data",
         "stars": 24
       }
     },
-    "lastUpdated": "2026-10-05T13:55:44.036Z",
+    "lastUpdated": "2026-10-05T23:53:29.833Z",
     "contributors": [
       {
         "login": "elastic",
@@ -112,17 +112,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 236862,
-      "totalStars": 76597
+      "totalRepos": 236966,
+      "totalStars": 76606
     },
     "momentum": {
-      "newReposLast30Days": 7209,
+      "newReposLast30Days": 7305,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 340
+        "stars": 344
       }
     },
-    "lastUpdated": "2026-10-05T13:55:48.539Z",
+    "lastUpdated": "2026-10-05T23:53:34.219Z",
     "contributors": [
       {
         "login": "redis",
@@ -161,17 +161,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 624352,
-      "totalStars": 28614
+      "totalRepos": 624544,
+      "totalStars": 28615
     },
     "momentum": {
-      "newReposLast30Days": 9619,
+      "newReposLast30Days": 9792,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 340
+        "stars": 344
       }
     },
-    "lastUpdated": "2026-10-05T13:55:53.030Z",
+    "lastUpdated": "2026-10-05T23:53:38.689Z",
     "contributors": [
       {
         "login": "mongodb",
@@ -210,17 +210,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 404277,
-      "totalStars": 22285
+      "totalRepos": 404837,
+      "totalStars": 22294
     },
     "momentum": {
-      "newReposLast30Days": 24424,
+      "newReposLast30Days": 24912,
       "topStarredNewRepo": {
         "name": "KKKKhazix/AIHOT",
-        "stars": 5931
+        "stars": 5990
       }
     },
-    "lastUpdated": "2026-10-05T13:55:57.526Z",
+    "lastUpdated": "2026-10-05T23:53:43.178Z",
     "contributors": [
       {
         "login": "postgres",
@@ -259,17 +259,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 32849,
-      "totalStars": 17273
+      "totalRepos": 32864,
+      "totalStars": 17275
     },
     "momentum": {
-      "newReposLast30Days": 811,
+      "newReposLast30Days": 827,
       "topStarredNewRepo": {
         "name": "jexp/neo4jev",
         "stars": 164
       }
     },
-    "lastUpdated": "2026-10-05T13:56:02.023Z",
+    "lastUpdated": "2026-10-05T23:53:47.510Z",
     "contributors": [
       {
         "login": "neo4j",
@@ -308,17 +308,17 @@
       "latestVersion": "SQL:2023 Standard"
     },
     "popularity": {
-      "totalRepos": 1454992,
-      "totalStars": 22285
+      "totalRepos": 1455721,
+      "totalStars": 22294
     },
     "momentum": {
-      "newReposLast30Days": 44474,
+      "newReposLast30Days": 45247,
       "topStarredNewRepo": {
         "name": "planetscale/lead",
         "stars": 160
       }
     },
-    "lastUpdated": "2026-10-05T13:56:06.560Z",
+    "lastUpdated": "2026-10-05T23:53:51.845Z",
     "contributors": [
       {
         "login": "postgres",
@@ -357,17 +357,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 781183,
+      "totalRepos": 781517,
       "totalStars": 12440
     },
     "momentum": {
-      "newReposLast30Days": 21488,
+      "newReposLast30Days": 21815,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 340
+        "stars": 344
       }
     },
-    "lastUpdated": "2026-10-05T13:56:10.917Z",
+    "lastUpdated": "2026-10-05T23:53:56.048Z",
     "contributors": [
       {
         "login": "mysql",
@@ -406,17 +406,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 266941,
-      "totalStars": 10603
+      "totalRepos": 267326,
+      "totalStars": 10604
     },
     "momentum": {
-      "newReposLast30Days": 18048,
+      "newReposLast30Days": 18378,
       "topStarredNewRepo": {
         "name": "RaycarlLei/tool-journal",
-        "stars": 385
+        "stars": 384
       }
     },
-    "lastUpdated": "2026-10-05T13:56:15.447Z",
+    "lastUpdated": "2026-10-05T23:54:00.243Z",
     "contributors": [
       {
         "login": "sqlite",
@@ -455,17 +455,17 @@
       "latestVersion": "v5.0.2"
     },
     "popularity": {
-      "totalRepos": 2792,
-      "totalStars": 10115
+      "totalRepos": 2795,
+      "totalStars": 10114
     },
     "momentum": {
-      "newReposLast30Days": 19,
+      "newReposLast30Days": 22,
       "topStarredNewRepo": {
         "name": "VitorRodrig15/ecommerce-kafka-pyspark-cassandra-streaming",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-05T13:56:21.605Z",
+    "lastUpdated": "2026-10-05T23:54:04.663Z",
     "contributors": [
       {
         "login": "apache",
@@ -504,17 +504,17 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 26489,
-      "totalStars": 8318
+      "totalRepos": 26512,
+      "totalStars": 8320
     },
     "momentum": {
-      "newReposLast30Days": 799,
+      "newReposLast30Days": 818,
       "topStarredNewRepo": {
         "name": "2giosangmitom/sqmeow.nvim",
-        "stars": 145
+        "stars": 148
       }
     },
-    "lastUpdated": "2026-10-05T13:56:26.214Z",
+    "lastUpdated": "2026-10-05T23:54:09.141Z",
     "contributors": [
       {
         "login": "MariaDB",
