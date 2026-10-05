@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ShieldCheck } from 'lucide-react';
-import { PageInfo } from '../components/PageInfo';
-import { TechSection } from '../components/TechSection';
+import { HeaderShowcase } from '../components/HeaderShowcase';
+import { TechTable } from '../components/TechTable';
 import { ProximitySidebar } from '../components/ProximitySidebar';
 import { TechEntry } from '../types/tech';
 
@@ -25,17 +25,13 @@ export const SecurityPage: React.FC = () => {
     <div className="space-y-4 relative">
       <ProximitySidebar sections={sections} />
 
-      <PageInfo
-        title={t('nav.security')}
-        description={t('info.security')}
-        badge="Cybersecurity & SecOps"
-      />
+      <HeaderShowcase mode="security" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <TechSection
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <TechTable
           id="section-security"
           title={t('sections.securityTools')}
-          icon={<ShieldCheck className="w-5 h-5 text-[#CEFF00]" />}
+          icon={<ShieldCheck className="w-5 h-5" />}
           entries={sortedSecurityTools}
         />
       </div>

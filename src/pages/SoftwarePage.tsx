@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Code2, Layers, Database } from 'lucide-react';
-import { PageInfo } from '../components/PageInfo';
-import { TechSection } from '../components/TechSection';
+import { HeaderShowcase } from '../components/HeaderShowcase';
+import { TechTable } from '../components/TechTable';
 import { ProximitySidebar } from '../components/ProximitySidebar';
 import { TechEntry } from '../types/tech';
 
@@ -42,31 +42,27 @@ export const SoftwarePage: React.FC = () => {
     <div className="space-y-4 relative">
       <ProximitySidebar sections={sections} />
 
-      <PageInfo
-        title={t('nav.software')}
-        description={t('info.software')}
-        badge="Software Ecosystem"
-      />
+      <HeaderShowcase mode="software" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <TechSection
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <TechTable
           id="section-languages"
           title={t('sections.languages')}
-          icon={<Code2 className="w-5 h-5 text-[#CEFF00]" />}
+          icon={<Code2 className="w-5 h-5" />}
           entries={sortedLanguages}
         />
 
-        <TechSection
+        <TechTable
           id="section-frameworks"
           title={t('sections.frameworks')}
-          icon={<Layers className="w-5 h-5 text-[#CEFF00]" />}
+          icon={<Layers className="w-5 h-5" />}
           entries={sortedFrameworks}
         />
 
-        <TechSection
+        <TechTable
           id="section-databases"
           title={t('sections.databases')}
-          icon={<Database className="w-5 h-5 text-[#CEFF00]" />}
+          icon={<Database className="w-5 h-5" />}
           entries={sortedDatabases}
         />
       </div>
