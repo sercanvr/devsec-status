@@ -104,7 +104,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               className="flex items-center cursor-pointer hover:opacity-70 transition-none"
             >
               <img
-                src="/icons/devsec-logo.png"
+                src="/icons/devsec-logo.webp"
                 alt="DevSec Status"
                 width={91}
                 height={32}
@@ -177,7 +177,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             className="flex items-center cursor-pointer hover:opacity-70 transition-none"
           >
             <img
-              src="/icons/devsec-logo.png"
+              src="/icons/devsec-logo.webp"
               alt="DevSec Status"
               width={91}
               height={32}
