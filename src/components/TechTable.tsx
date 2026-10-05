@@ -1,5 +1,4 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   ExternalLink,
   ChevronDown,
@@ -94,7 +93,6 @@ const CustomDropdown: React.FC<{
 };
 
 export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }) => {
-  const { t } = useTranslation();
   const [selectedStatus, setSelectedStatus] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('stars');
 
@@ -178,19 +176,19 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
           </div>
 
           {/* Desktop & Laptop Fintech Table View */}
-          <div className="hidden md:block w-full">
+          <div className="hidden md:block w-full overflow-x-auto custom-scrollbar">
             <table className="w-full text-left border-collapse table-auto">
               <thead>
                 <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
-                  <th className="py-3.5 px-5">TEKNOLOJİ</th>
-                  <th className="py-3.5 px-3">GELİŞTİRİCİ</th>
-                  <th className="py-3.5 px-3 text-center">TÜR</th>
-                  <th className="py-3.5 px-4 min-w-[190px]">POPÜLARİTE & YILDIZ BARI</th>
-                  <th className="py-3.5 px-3 text-center">İVMELENME</th>
-                  <th className="py-3.5 px-3 text-center">GÜNCEL SÜRÜM</th>
-                  <th className="py-3.5 px-3 text-center">TOPLULUK</th>
-                  <th className="py-3.5 px-4 text-center">EKOSİSTEM HACMİ</th>
-                  <th className="py-3.5 px-5 text-right">GİTHUB</th>
+                  <th className="py-3 px-3 sm:px-4">TEKNOLOJİ</th>
+                  <th className="py-3 px-2">GELİŞTİRİCİ</th>
+                  <th className="py-3 px-1.5 text-center">TÜR</th>
+                  <th className="py-3 px-2 text-left">POPÜLARİTE & YILDIZ BARI</th>
+                  <th className="py-3 px-2 text-center">İVMELENME</th>
+                  <th className="py-3 px-2 text-center">GÜNCEL SÜRÜM</th>
+                  <th className="py-3 px-1.5 text-center">TOPLULUK</th>
+                  <th className="py-3 px-2 text-center">EKOSİSTEM HACMİ</th>
+                  <th className="py-3 px-2.5 text-center">GİTHUB</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
@@ -226,7 +224,6 @@ interface TableRowProps {
 }
 
 const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
-  const { t } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);
@@ -251,16 +248,16 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       className="group hover:bg-neutral-50 dark:hover:bg-neutral-800/30 transition-colors"
     >
       {/* 1. Teknoloji (Item Name) - Enlarged Logo in Blurred High-Contrast Square */}
-      <td className="py-4 px-5">
-        <div className="flex items-center gap-3">
+      <td className="py-3 px-3 sm:px-4">
+        <div className="flex items-center gap-2.5">
           {/* Logo container: dark in light theme, light in dark theme, blurred */}
-          <div className="w-12 h-12 rounded-2xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-xs">
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1 flex items-center justify-center shrink-0 shadow-xs">
             <img
               src={entry.iconUrl}
               alt={cleanName}
-              width={34}
-              height={34}
-              className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0 filter drop-shadow-xs"
+              width={32}
+              height={32}
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain shrink-0 filter drop-shadow-xs"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).src =
                   'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
@@ -268,10 +265,10 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             />
           </div>
           <div>
-            <div className="font-bold text-sm sm:text-base text-foreground group-hover:text-[#0066FF] dark:group-hover:text-[#CEFF00] transition-colors">
+            <div className="font-bold text-sm text-foreground group-hover:text-[#0066FF] dark:group-hover:text-[#CEFF00] transition-colors whitespace-nowrap">
               {cleanName}
             </div>
-            <div className="text-[11px] text-neutral-500 dark:text-neutral-400 truncate max-w-[140px]">
+            <div className="text-[10px] sm:text-[11px] text-neutral-500 dark:text-neutral-400 truncate max-w-[110px] sm:max-w-[130px]">
               {cleanSubCategory || entry.category}
             </div>
           </div>
@@ -279,14 +276,14 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 2. Geliştirici (Creator + Full Gün Ay Yıl Date) */}
-      <td className="py-4 px-3">
-        <div className="flex items-center gap-2">
+      <td className="py-3 px-2">
+        <div className="flex items-center gap-1.5">
           {entry.creator?.avatarUrl ? (
             <img
               src={entry.creator.avatarUrl}
               alt={cleanCreatorName}
-              width={26}
-              height={26}
+              width={24}
+              height={24}
               className="w-6 h-6 rounded-full object-cover border border-neutral-300 dark:border-neutral-700 shrink-0"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).style.display = 'none';
@@ -298,10 +295,10 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             </div>
           )}
           <div>
-            <div className="font-semibold text-xs text-foreground truncate max-w-[130px]">
+            <div className="font-semibold text-xs text-foreground truncate max-w-[105px] sm:max-w-[125px]">
               {cleanCreatorName}
             </div>
-            <div className="text-[10px] text-neutral-500 dark:text-neutral-400">
+            <div className="text-[10px] text-neutral-500 dark:text-neutral-400 truncate max-w-[105px]">
               {cleanReleaseDate || 'Maintainer'}
             </div>
           </div>
@@ -309,16 +306,16 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 3. Tür (Type Pill) */}
-      <td className="py-4 px-3 text-center">
-        <span className="inline-block px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
+      <td className="py-3 px-1.5 text-center">
+        <span className="inline-block px-2 py-0.5 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
           {entry.category}
         </span>
       </td>
 
       {/* 4. Popülarite & Kapsül Barı */}
-      <td className="py-4 px-4 min-w-[190px]">
-        <div className="space-y-1">
-          <div className="flex justify-between items-center text-[11px]">
+      <td className="py-3 px-2">
+        <div className="space-y-1 w-32 sm:w-36 lg:w-40">
+          <div className="flex justify-between items-center text-[10px] sm:text-[11px]">
             <span className="font-mono font-bold text-foreground">
               {formattedStars}{' '}
               <span className="text-neutral-400 font-normal">/ {formattedMaxStars}</span>
@@ -327,12 +324,12 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               {Math.round(percentage)}%
             </span>
           </div>
-          <SegmentedProgressBar percentage={percentage} totalSegments={20} />
+          <SegmentedProgressBar percentage={percentage} totalSegments={16} />
         </div>
       </td>
 
       {/* 5. İvmelenme */}
-      <td className="py-4 px-3 text-center">
+      <td className="py-3 px-2 text-center">
         <div className="inline-flex items-center gap-1 font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
           <TrendingUp className="w-3 h-3" />
           <span>+{formattedNewRepos}</span>
@@ -340,16 +337,16 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 6. GÜNCEL SÜRÜM */}
-      <td className="py-4 px-3 text-center">
-        <span className="font-mono text-[11px] font-semibold text-neutral-700 dark:text-neutral-300 bg-neutral-200/60 dark:bg-neutral-800 px-2 py-0.5 rounded border border-neutral-300/60 dark:border-neutral-700 whitespace-nowrap">
+      <td className="py-3 px-2 text-center">
+        <span className="font-mono text-[10px] sm:text-[11px] font-semibold text-neutral-700 dark:text-neutral-300 bg-neutral-200/60 dark:bg-neutral-800 px-1.5 py-0.5 rounded border border-neutral-300/60 dark:border-neutral-700 whitespace-nowrap max-w-[110px] truncate inline-block">
           {cleanVersion}
         </span>
       </td>
 
       {/* 7. TOPLULUK & KATKIDA BULUNANLAR (Directly in Column) */}
-      <td className="py-4 px-3 text-center">
+      <td className="py-3 px-1.5 text-center">
         <div className="flex items-center justify-center -space-x-1.5">
-          {contributors.slice(0, 4).map((c, idx) => (
+          {contributors.slice(0, 3).map((c, idx) => (
             <a
               key={c.login + idx}
               href={c.html_url}
@@ -359,7 +356,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               className="inline-block transition-transform hover:-translate-y-1 relative"
             >
               <img
-                className="h-6 w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                className="h-5.5 w-5.5 sm:h-6 sm:w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
                 src={c.avatar_url}
                 alt={c.login}
                 width={24}
@@ -374,14 +371,14 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 8. CANLI EKOSİSTEM HACMİ */}
-      <td className="py-4 px-4 text-center">
+      <td className="py-3 px-2 text-center">
         <div className="space-y-0.5 text-center">
           <div className="font-mono font-bold text-xs text-foreground flex items-center justify-center gap-1">
             <GitFork className="w-3 h-3 text-neutral-400" />
             <span>{formattedTotalRepos}</span>
           </div>
           {entry.momentum.topStarredNewRepo && (
-            <div className="text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[120px] mx-auto">
+            <div className="text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[110px] mx-auto">
               <Sparkles className="w-2.5 h-2.5 shrink-0" />
               <span className="truncate">{entry.momentum.topStarredNewRepo.stars} ★</span>
             </div>
@@ -390,16 +387,17 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 9. GİTHUB (Direct Link) */}
-      <td className="py-4 px-5 text-right whitespace-nowrap">
+      <td className="py-3 px-2.5 text-center whitespace-nowrap">
         <a
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${cleanName} GitHub`}
-          className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-700 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-2xs"
+          title={`${cleanName} GitHub`}
+          className="inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-700 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-2xs"
         >
-          <span className="hidden xl:inline">GitHub</span>
-          <ExternalLink className="w-3.5 h-3.5" />
+          <span className="text-[11px]">Git</span>
+          <ExternalLink className="w-3 h-3" />
         </a>
       </td>
     </tr>
@@ -407,7 +405,6 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 };
 
 const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
-  const { t } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);

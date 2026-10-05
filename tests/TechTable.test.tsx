@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { TechTable } from '../src/components/TechTable';
 import { TechEntry } from '../src/types/tech';
@@ -59,6 +59,7 @@ const mockEntries: TechEntry[] = [
     },
     momentum: {
       newReposLast30Days: 800,
+      topStarredNewRepo: null,
     },
     lastUpdated: '2026-10-01T00:00:00.000Z',
   },

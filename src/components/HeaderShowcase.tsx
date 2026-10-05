@@ -1,9 +1,7 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import {
   Code2,
   Layers,
-  Database,
   ShieldCheck,
   Sparkles,
   TrendingUp,
@@ -18,8 +16,6 @@ interface HeaderShowcaseProps {
 }
 
 export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software' }) => {
-  const { t } = useTranslation();
-
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
