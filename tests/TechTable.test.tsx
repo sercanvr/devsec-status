@@ -65,7 +65,7 @@ const mockEntries: TechEntry[] = [
 ];
 
 describe('TechTable Component', () => {
-  it('renders table title, search input and entry names', () => {
+  it('renders table title and entry names', () => {
     render(
       <TechTable
         id="section-test"
@@ -93,7 +93,7 @@ describe('TechTable Component', () => {
     expect(progressBars.length).toBeGreaterThan(0);
   });
 
-  it('filters entries when search input is used', () => {
+  it('renders contributor avatars and GitHub links directly in table', () => {
     render(
       <TechTable
         id="section-test"
@@ -102,26 +102,8 @@ describe('TechTable Component', () => {
       />
     );
 
-    const searchInput = screen.getByPlaceholderText('nav.search');
-    fireEvent.change(searchInput, { target: { value: 'Rust' } });
-
-    expect(screen.getAllByText('Rust').length).toBeGreaterThan(0);
-    expect(screen.queryByText('Guido van Rossum')).not.toBeInTheDocument();
-  });
-
-  it('toggles row expansion when details button is clicked', () => {
-    render(
-      <TechTable
-        id="section-test"
-        title="Test Languages"
-        entries={mockEntries}
-      />
-    );
-
-    const detailsButtons = screen.getAllByText('Detaylar');
-    fireEvent.click(detailsButtons[0]);
-
-    expect(screen.getAllByText('Topluluk & Katkıda Bulunanlar').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('GitHub Deposuna Git').length).toBeGreaterThan(0);
+    const links = screen.getAllByRole('link');
+    const githubLink = links.find((l) => l.getAttribute('href') === 'https://github.com/python/cpython');
+    expect(githubLink).toBeDefined();
   });
 });

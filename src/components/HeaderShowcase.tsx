@@ -11,6 +11,7 @@ import {
   ArrowRight,
   PieChart as PieChartIcon,
 } from 'lucide-react';
+import devsecIcon from '../assets/icons/devsec-icon.webp';
 
 interface HeaderShowcaseProps {
   mode?: 'software' | 'security';
@@ -29,7 +30,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   if (mode === 'security') {
     return (
       <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="relative rounded-3xl bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
+        {/* Luxury Frosted-Glass Outer Frame / Border */}
+        <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl">
+          <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
           {/* Blueprint vector road/highway background graphic */}
           <div className="absolute inset-0 pointer-events-none opacity-[0.08] dark:opacity-[0.04]">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -176,14 +179,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
           </div>
         </div>
       </div>
+      </div>
     );
   }
 
   // Default: Software Page Showcase (Birebir Image 1 Tasarımı)
   return (
     <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Outer Card with Blueprint / Grid Line Graphics (Image 1) */}
-      <div className="relative rounded-3xl bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
+      {/* Luxury Frosted-Glass Outer Frame / Border */}
+      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl">
+        <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
         {/* Subtle blueprint highway vector lines & grid in background */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           {/* Architectural Road Lines Vector (Electric Blue from Image 1) */}
@@ -362,7 +367,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 {/* Center Hub Circle with DevSec Logo */}
                 <div className="w-14 h-14 rounded-full bg-white dark:bg-neutral-800 border-2 border-[#0066FF] shadow-xl flex items-center justify-center z-10 p-2">
                   <img
-                    src="/icons/devsec-icon.webp"
+                    src={devsecIcon}
                     alt="DevSec"
                     width={32}
                     height={32}
@@ -441,6 +446,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
