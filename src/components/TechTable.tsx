@@ -229,7 +229,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
   const cleanSubCategory = entry.subCategory ? sanitizeText(entry.subCategory) : '';
-  const cleanCreatorName = entry.creator ? sanitizeText(entry.creator.name) : 'Açık Kaynak';
+  const cleanCreatorName = entry.creator
+    ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
+    : 'Açık Kaynak';
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
 
@@ -238,7 +240,6 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
   );
   const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
-  const formattedMaxStars = new Intl.NumberFormat().format(maxStars);
   const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
   const formattedTotalRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
 
@@ -316,11 +317,11 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       <td className="py-3 px-2">
         <div className="space-y-1 w-32 sm:w-36 lg:w-40">
           <div className="flex justify-between items-center text-[10px] sm:text-[11px]">
-            <span className="font-mono font-bold text-foreground">
-              {formattedStars}{' '}
-              <span className="text-neutral-400 font-normal">/ {formattedMaxStars}</span>
+            <span className="font-mono font-bold text-foreground flex items-center gap-1">
+              <span className="text-amber-500 font-normal">★</span>
+              <span>{formattedStars}</span>
             </span>
-            <span className="font-mono font-bold text-neutral-600 dark:text-neutral-300">
+            <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
               {Math.round(percentage)}%
             </span>
           </div>
@@ -344,28 +345,35 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 7. TOPLULUK & KATKIDA BULUNANLAR (Directly in Column) */}
-      <td className="py-3 px-1.5 text-center">
-        <div className="flex items-center justify-center -space-x-1.5">
+      <td className="py-3 px-1.5 text-center overflow-visible">
+        <div className="flex items-center justify-center -space-x-1.5 overflow-visible">
           {contributors.slice(0, 3).map((c, idx) => (
-            <a
-              key={c.login + idx}
-              href={c.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={c.login}
-              className="inline-block transition-transform hover:-translate-y-1 relative"
-            >
-              <img
-                className="h-5.5 w-5.5 sm:h-6 sm:w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                src={c.avatar_url}
-                alt={c.login}
-                width={24}
-                height={24}
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png?size=64`;
-                }}
-              />
-            </a>
+            <div key={c.login + idx} className="relative group/contributor inline-block hover:z-30">
+              <a
+                href={c.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Contributor: ${c.login}`}
+                title={c.login}
+                className="inline-block transition-transform duration-150 group-hover/contributor:-translate-y-1 relative"
+              >
+                <img
+                  className="h-5.5 w-5.5 sm:h-6 sm:w-6 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
+                  src={c.avatar_url}
+                  alt={c.login}
+                  width={24}
+                  height={24}
+                  loading="lazy"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png?size=64`;
+                  }}
+                />
+              </a>
+              {/* Floating Instant Tooltip */}
+              <div className="hidden group-hover/contributor:block absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-md bg-[#141414] dark:bg-neutral-800 text-white text-[10px] font-mono whitespace-nowrap shadow-lg border border-neutral-700 pointer-events-none z-40">
+                {c.login}
+              </div>
+            </div>
           ))}
         </div>
       </td>
@@ -410,7 +418,9 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
   const cleanSubCategory = entry.subCategory ? sanitizeText(entry.subCategory) : '';
-  const cleanCreatorName = entry.creator ? sanitizeText(entry.creator.name) : 'Açık Kaynak';
+  const cleanCreatorName = entry.creator
+    ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
+    : 'Açık Kaynak';
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
 
@@ -419,7 +429,6 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
   );
   const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
-  const formattedMaxStars = new Intl.NumberFormat().format(maxStars);
   const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
   const formattedTotalRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
 
@@ -482,11 +491,11 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       {/* Segmented Metric Bar */}
       <div className="space-y-1">
         <div className="flex justify-between items-center text-xs">
-          <span className="font-mono font-bold text-foreground">
-            {formattedStars}{' '}
-            <span className="text-neutral-400 font-normal">/ {formattedMaxStars} ★</span>
+          <span className="font-mono font-bold text-foreground flex items-center gap-1">
+            <span className="text-amber-500 font-normal">★</span>
+            <span>{formattedStars}</span>
           </span>
-          <span className="font-mono font-bold text-neutral-600 dark:text-neutral-300">
+          <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
             {Math.round(percentage)}%
           </span>
         </div>
