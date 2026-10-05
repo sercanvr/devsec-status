@@ -1,11 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Earth, Check } from 'lucide-react';
+import trFlag from '../assets/icons/tr-flag.webp';
+import usaFlag from '../assets/icons/usa-flag.webp';
+import deFlag from '../assets/icons/de-flag.webp';
 
 const languages = [
-  { code: 'tr', label: 'TR', name: 'Türkçe', flagUrl: '/icons/tr-flag.webp' },
-  { code: 'en', label: 'ENG', name: 'English', flagUrl: '/icons/usa-flag.webp' },
-  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: '/icons/de-flag.webp' },
+  { code: 'tr', label: 'TR', name: 'Türkçe', flagUrl: trFlag },
+  { code: 'en', label: 'ENG', name: 'English', flagUrl: usaFlag },
+  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: deFlag },
 ];
 
 // Preload flag images immediately into browser cache to eliminate any open delay

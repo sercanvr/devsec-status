@@ -9,7 +9,7 @@
       "name": "Dennis Ritchie (Bell Labs)",
       "avatarUrl": "https://github.com/torvalds.png",
       "type": "person",
-      "releaseDate": "1972",
+      "releaseDate": "Kasım 1972",
       "latestVersion": "C23 (ISO/IEC 9899)"
     },
     "popularity": {
@@ -345,7 +345,7 @@
       "name": "Andrew Kelley",
       "avatarUrl": "https://github.com/ziglang.png",
       "type": "person",
-      "releaseDate": "2016",
+      "releaseDate": "8 Şubat 2016",
       "latestVersion": "v0.13.0"
     },
     "popularity": {
@@ -393,7 +393,7 @@
       "name": "Bjarne Stroustrup (Bell Labs)",
       "avatarUrl": "https://github.com/llvm.png",
       "type": "person",
-      "releaseDate": "1985",
+      "releaseDate": "14 Ekim 1985",
       "latestVersion": "C++23 Standard"
     },
     "popularity": {
@@ -489,7 +489,7 @@
       "name": "José Valim",
       "avatarUrl": "https://github.com/josevalim.png",
       "type": "person",
-      "releaseDate": "2011",
+      "releaseDate": "24 Mayıs 2012",
       "latestVersion": "v1.18.0"
     },
     "popularity": {
@@ -681,7 +681,7 @@
       "name": "Anders Hejlsberg (Microsoft)",
       "avatarUrl": "https://github.com/dotnet.png",
       "type": "organization",
-      "releaseDate": "Ağustos 2000",
+      "releaseDate": "11 Temmuz 2000",
       "latestVersion": "C# 13 (.NET 9)"
     },
     "popularity": {
@@ -777,7 +777,7 @@
       "name": "Roberto Ierusalimschy (PUC-Rio)",
       "avatarUrl": "https://github.com/lua.png",
       "type": "person",
-      "releaseDate": "1993",
+      "releaseDate": "28 Temmuz 1993",
       "latestVersion": "v5.4.7"
     },
     "popularity": {
@@ -825,7 +825,7 @@
       "name": "Martin Odersky",
       "avatarUrl": "https://github.com/odersky.png",
       "type": "person",
-      "releaseDate": "2004",
+      "releaseDate": "20 Ocak 2004",
       "latestVersion": "v3.6.3"
     },
     "popularity": {
@@ -873,7 +873,7 @@
       "name": "Lennart Augustsson & Team",
       "avatarUrl": "https://github.com/haskell.png",
       "type": "organization",
-      "releaseDate": "1990",
+      "releaseDate": "1 Nisan 1990",
       "latestVersion": "GHC 9.10"
     },
     "popularity": {
@@ -1065,7 +1065,7 @@
       "name": "Brad Cox & Tom Love",
       "avatarUrl": "https://github.com/apple.png",
       "type": "person",
-      "releaseDate": "1984",
+      "releaseDate": "1984 (Stepstone)",
       "latestVersion": "Objective-C 2.0"
     },
     "popularity": {

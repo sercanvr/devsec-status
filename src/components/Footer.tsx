@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Plug, Star } from 'lucide-react';
+import devsecLogo from '../assets/icons/devsec-logo.webp';
 import rawLanguages from '../data/languages.json';
 import rawFrameworks from '../data/frameworks.json';
 import rawDatabases from '../data/databases.json';
@@ -104,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               className="flex items-center cursor-pointer hover:opacity-70 transition-none"
             >
               <img
-                src="/icons/devsec-logo.webp"
+                src={devsecLogo}
                 alt="DevSec Status"
                 width={91}
                 height={32}
@@ -177,7 +178,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             className="flex items-center cursor-pointer hover:opacity-70 transition-none"
           >
             <img
-              src="/icons/devsec-logo.webp"
+              src={devsecLogo}
               alt="DevSec Status"
               width={91}
               height={32}
