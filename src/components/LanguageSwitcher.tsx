@@ -112,10 +112,10 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     <div className="relative inline-block text-left group z-30" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-200/70 dark:bg-neutral-800 text-xs font-semibold border border-neutral-300/60 dark:border-neutral-700/60 text-neutral-800 dark:text-neutral-200 transition-colors shrink-0"
+        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-colors shrink-0"
         aria-label="Select Language"
       >
-        <Earth className="w-3.5 h-3.5 text-neutral-500 dark:text-neutral-400" />
+        <Earth className="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" />
         <span>{currentLang.label}</span>
       </button>
 
@@ -128,7 +128,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] w-36 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-[70] overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+12px)] w-36 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-lg z-[70] overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (

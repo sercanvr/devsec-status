@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Search, X, ChevronRight, CornerDownLeft } from 'lucide-react';
 import { TechEntry } from '../types/tech';
@@ -7,6 +8,7 @@ import frameworksData from '../data/frameworks.json';
 import databasesData from '../data/databases.json';
 import securityData from '../data/security-tools.json';
 import { sanitizeText } from '../lib/sanitize';
+import { highlightTechElement } from '../lib/highlight';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -16,6 +18,7 @@ interface SearchModalProps {
 
 export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onItemSelect }) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -78,21 +81,22 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
       onClose();
     }
 
-    setTimeout(() => {
-      // Check if target element exists on current page
-      const element = document.getElementById(item.id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        element.classList.add('ring-2', 'ring-[#CEFF00]');
-        setTimeout(() => {
-          element.classList.remove('ring-2', 'ring-[#CEFF00]');
-        }, 1200);
-      } else {
-        // Navigate to target page then scroll
-        const targetUrl = item.page === 'security' ? `/security#${item.id}` : `/#${item.id}`;
-        window.location.href = targetUrl;
-      }
-    }, 120);
+    const currentPath = window.location.pathname;
+    const isTargetOnCurrentPage =
+      (item.page === 'software' && (currentPath === '/' || currentPath === '')) ||
+      (item.page === 'security' && currentPath.startsWith('/security'));
+
+    if (isTargetOnCurrentPage) {
+      setTimeout(() => {
+        highlightTechElement(item.id);
+      }, 100);
+    } else {
+      const targetPath = item.page === 'security' ? `/security#${item.id}` : `/#${item.id}`;
+      navigate(targetPath);
+      setTimeout(() => {
+        highlightTechElement(item.id);
+      }, 250);
+    }
   };
 
   if (!isOpen) return null;
@@ -101,21 +105,23 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-[1050] flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/70 backdrop-blur-md animate-fade-in"
+      className="fixed inset-0 z-[1050] flex items-start justify-center pt-14 sm:pt-20 px-4 bg-black/75 backdrop-blur-md animate-fade-in"
     >
+      {/* Luxury Frosted-Glass Outer Frame / Border - Sleek slim frame */}
       <div
-        className="w-full max-w-2xl bg-[#ECECEC] dark:bg-[#141414] rounded-2xl border border-neutral-300 dark:border-neutral-800 shadow-2xl overflow-hidden flex flex-col max-h-[80vh] text-foreground animate-scale-up"
+        className="w-full max-w-2xl p-1.5 rounded-[26px] bg-neutral-300/70 dark:bg-neutral-800/80 border border-neutral-400/70 dark:border-neutral-600/70 backdrop-blur-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Search Input Bar */}
-        <div className="relative flex items-center px-4 py-3.5 border-b border-neutral-300 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/50">
+        <div className="w-full bg-[#ECECEC] dark:bg-[#141414] rounded-[20px] border border-neutral-300/90 dark:border-neutral-800/90 shadow-2xl overflow-hidden flex flex-col max-h-[75vh] text-foreground">
+          {/* Search Input Bar */}
+          <div className="relative flex items-center px-4 py-3.5 border-b border-neutral-300 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/50">
           <Search className="w-5 h-5 text-neutral-400 shrink-0 mr-3" />
           <input
             ref={inputRef}
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Python"
+            placeholder={t('searchModal.placeholder')}
             className="w-full bg-transparent text-base font-medium placeholder:text-neutral-400 focus:outline-none text-foreground"
           />
           {query && (
@@ -202,5 +208,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
         </div>
       </div>
     </div>
-  );
+  </div>
+);
 };

@@ -146,3 +146,25 @@ body::-webkit-scrollbar-thumb {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #ceff00;
 }
+
+/* 1200ms Search Result Accent Highlight */
+.highlight-glow {
+  outline: 2.5px solid #0066FF !important;
+  outline-offset: -1px;
+  background-color: rgba(0, 102, 255, 0.12) !important;
+  transition: all 0.3s ease;
+}
+
+.dark .highlight-glow {
+  outline: 2.5px solid #CEFF00 !important;
+  outline-offset: -1px;
+  background-color: rgba(206, 255, 0, 0.14) !important;
+}
+
+tr.highlight-glow td {
+  background-color: rgba(0, 102, 255, 0.12) !important;
+}
+
+.dark tr.highlight-glow td {
+  background-color: rgba(206, 255, 0, 0.14) !important;
+}

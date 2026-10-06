@@ -47,28 +47,28 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
 
       {/* Top Border with Concave Inverted Radius (Ters Kavis) at Corners */}
       <div className="absolute top-0 left-0 right-0 pointer-events-none z-10">
-        {/* Left Corner Concave Inverted Radius (Mirrored from right corner) */}
+        {/* Left Corner Concave Inverted Radius */}
         <svg
-          className="absolute left-0 -top-8 w-8 h-8 pointer-events-none overflow-visible scale-x-[-1]"
+          className="absolute left-0 -top-8 w-8 h-8 pointer-events-none overflow-visible"
           viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M 32 0 A 32 32 0 0 1 0 32 L 32 32 Z"
+            d="M 0 0 A 32 32 0 0 0 32 32 L 0 32 Z"
             className="fill-[#ECECEC] dark:fill-[#141414] transition-colors duration-200"
           />
           <path
-            d="M 32 0 A 32 32 0 0 1 0 32"
-            className="stroke-[#C7C7C7] dark:stroke-neutral-700 transition-colors duration-200"
-            strokeWidth="1.5"
+            d="M 0 0 A 32 32 0 0 0 32 32"
+            className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
+            strokeWidth="2.5"
             fill="none"
-            strokeLinecap="butt"
+            strokeLinecap="round"
           />
         </svg>
 
-        {/* Middle Horizontal Border Line */}
-        <div className="absolute top-0 left-[31px] right-[31px] border-t-[1.5px] border-[#C7C7C7] dark:border-neutral-700 transition-colors duration-200" />
+        {/* Middle Horizontal Border Line - Perfectly aligned with SVG stroke center */}
+        <div className="absolute -top-[1.25px] left-8 right-8 h-[2.5px] bg-[#B8B8B8] dark:bg-neutral-600 transition-colors duration-200" />
 
         {/* Right Corner Concave Inverted Radius */}
         <svg
@@ -83,10 +83,10 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
           />
           <path
             d="M 32 0 A 32 32 0 0 1 0 32"
-            className="stroke-[#C7C7C7] dark:stroke-neutral-700 transition-colors duration-200"
-            strokeWidth="1.5"
+            className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
+            strokeWidth="2.5"
             fill="none"
-            strokeLinecap="butt"
+            strokeLinecap="round"
           />
         </svg>
       </div>
@@ -107,9 +107,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               <img
                 src={devsecLogo}
                 alt="DevSec Status"
-                width={91}
-                height={32}
-                className="h-8 w-auto object-contain shrink-0"
+                width={132}
+                height={46}
+                className="h-12 sm:h-13 w-auto object-contain shrink-0 drop-shadow-sm"
               />
             </a>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
@@ -180,9 +180,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             <img
               src={devsecLogo}
               alt="DevSec Status"
-              width={91}
-              height={32}
-              className="h-8 w-auto object-contain shrink-0"
+              width={128}
+              height={44}
+              className="h-11 sm:h-12 w-auto object-contain shrink-0 drop-shadow-sm"
             />
           </a>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">

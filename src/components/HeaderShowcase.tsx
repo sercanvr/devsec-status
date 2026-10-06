@@ -2,20 +2,24 @@ import React from 'react';
 import {
   Code2,
   Layers,
+  Database,
   ShieldCheck,
   Sparkles,
   TrendingUp,
   GitFork,
-  ArrowRight,
+  ChevronRight,
   PieChart as PieChartIcon,
 } from 'lucide-react';
-import devsecIcon from '../assets/icons/devsec-icon.webp';
+import { useTranslation } from 'react-i18next';
+import { WorldMap } from './WorldMap';
 
 interface HeaderShowcaseProps {
   mode?: 'software' | 'security';
 }
 
 export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software' }) => {
+  const { t } = useTranslation();
+
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -23,426 +27,377 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
     }
   };
 
+
+
+  // Clean, sleek CTA Button with stemless Chevron arrow like scroll up button
+  const renderCtaButton = (label: string, targetId: string) => (
+    <div className="flex justify-center items-center w-full mt-2.5">
+      <button
+        onClick={() => scrollToSection(targetId)}
+        className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_12px_rgba(0,102,255,0.28)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
+      >
+        <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-1.5">
+          <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
+          <ChevronRight className="w-4 h-4 text-white stroke-[2.8] transition-transform group-hover:translate-x-0.5" />
+        </div>
+      </button>
+    </div>
+  );
+
   if (mode === 'security') {
     return (
-      <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Luxury Frosted-Glass Outer Frame / Border */}
-        <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl">
-          <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
-          {/* Blueprint vector road/highway background graphic */}
-          <div className="absolute inset-0 pointer-events-none opacity-[0.08] dark:opacity-[0.04]">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="sec-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0066FF" strokeWidth="0.8" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#sec-grid)" />
-            </svg>
-          </div>
+      <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
+        <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
+          <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
+            <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
-            {/* Col 1: Offensive Security */}
-            <div className="flex flex-col justify-between space-y-5 lg:px-6">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
-                    <span>Saldırı & Keşif</span>
-                  </div>
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    <span>Ghidra • Metasploit</span>
-                  </div>
-                </div>
-
-                <div className="p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                      <PieChartIcon className="w-4 h-4" />
+            <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
+              {/* Col 1: Offensive Security - Centered */}
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.secOffensiveBadge')}</span>
                     </div>
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">Araştırma Hacmi</div>
-                      <div className="font-bold text-sm text-foreground">420,000+ Yıldız</div>
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>Ghidra • Metasploit</span>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                    +%32 İvme
-                  </span>
+
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.secResearchVolume')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">420,000+ ★</div>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        +32%
+                      </span>
+                    </div>
+
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                        {t('showcase.secOffensiveTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secOffensiveDesc')}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="font-serif font-bold text-xl text-foreground">Ofansif Güvenlik Araçları</h3>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed">
-                    Tersine mühendislik, sızma testleri ve exploit araştırmalarında kullanılan açık kaynak araçların topluluk momentumu.
-                  </p>
-                </div>
+                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
 
-              <button
-                onClick={() => scrollToSection('section-security')}
-                className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md cursor-pointer"
-              >
-                <span>Araçları Keşfet</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-
-            {/* Col 2: Defensive & SAST */}
-            <div className="flex flex-col justify-between space-y-5 lg:px-6 pt-6 lg:pt-0">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
-                    <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-                    <span>Savunma & SAST</span>
-                  </div>
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
-                    <GitFork className="w-3.5 h-3.5 text-[#0066FF]" />
-                    <span>Trivy • Nuclei</span>
-                  </div>
-                </div>
-
-                <div className="p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                      <PieChartIcon className="w-4 h-4" />
+              {/* Col 2: Defensive & SAST - Centered */}
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
+                      <span>{t('showcase.secDefensiveBadge')}</span>
                     </div>
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">Zafiyet Taraması</div>
-                      <div className="font-bold text-sm text-foreground">85,000+ Günlük Repo</div>
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <GitFork className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>Trivy • Nuclei</span>
                     </div>
                   </div>
-                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 border border-blue-500/20">
-                    +48%
-                  </span>
+
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.secVulnScan')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">85,000+ Repo</div>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 border border-blue-500/20">
+                        +48%
+                      </span>
+                    </div>
+
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                        {t('showcase.secDefensiveTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secDefensiveDesc')}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <h3 className="font-serif font-bold text-xl text-foreground">Defansif & Statik Analiz</h3>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed">
-                    Konteyner tarama, kod zafiyeti tespiti (SAST/DAST) ve güvenli yazılım geliştirme döngüsü araçları.
-                  </p>
-                </div>
+                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
 
-              <button
-                onClick={() => scrollToSection('section-security')}
-                className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md cursor-pointer"
-              >
-                <span>Taramaları İncele</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
+              {/* Col 3: SecOps Stack Hub - Centered */}
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.secStackBadge')}</span>
+                    </div>
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>OWASP ZAP • Nmap</span>
+                    </div>
+                  </div>
 
-            {/* Col 3: SecOps Stack Hub */}
-            <div className="flex flex-col justify-between space-y-5 lg:px-6 pt-6 lg:pt-0">
-              <div className="space-y-4">
-                {/* Circular Partner Hub (Image 1 Style) */}
-                <div className="relative w-44 h-28 mx-auto flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white dark:bg-neutral-800 border-2 border-[#0066FF] shadow-lg flex items-center justify-center z-10">
-                    <ShieldCheck className="w-6 h-6 text-[#0066FF]" />
-                  </div>
-                  <div className="absolute top-1 left-2 w-7 h-7 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-[9px] font-bold">
-                    ZAP
-                  </div>
-                  <div className="absolute top-1 right-2 w-7 h-7 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-[9px] font-bold">
-                    Nmap
-                  </div>
-                  <div className="absolute bottom-1 left-6 w-7 h-7 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-[9px] font-bold">
-                    Trivy
-                  </div>
-                  <div className="absolute bottom-1 right-6 w-7 h-7 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-[9px] font-bold">
-                    Nuclei
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.totalEcosystem')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">1,250,000+</div>
+                        </div>
+                      </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        +28%
+                      </span>
+                    </div>
+
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                        {t('showcase.secStackTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secStackDesc')}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="font-serif font-bold text-xl text-foreground">Siber Güvenlik Yığını</h3>
-                  <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed">
-                    Etik güvenlik araştırmalarında, CI/CD pipeline korumasında ve CTF süreçlerinde kullanılan küresel araçlar.
-                  </p>
-                </div>
+                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
-
-              <button
-                onClick={() => scrollToSection('section-security')}
-                className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md cursor-pointer"
-              >
-                <span>Yığını İncele</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
 
-  // Default: Software Page Showcase (Birebir Image 1 Tasarımı)
+  // Default: Software Page Showcase (Programlama Dilleri, Frameworkler, Veritabanları)
   return (
-    <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Luxury Frosted-Glass Outer Frame / Border */}
-      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl">
-        <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
-        {/* Subtle blueprint highway vector lines & grid in background */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          {/* Architectural Road Lines Vector (Electric Blue from Image 1) */}
-          <svg
-            className="absolute top-0 right-0 w-full h-full opacity-[0.14] dark:opacity-[0.08]"
-            viewBox="0 0 1200 400"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M 500 0 C 530 80, 560 120, 600 200 C 640 280, 700 360, 750 400"
-              stroke="#0066FF"
-              strokeWidth="24"
-              strokeLinecap="round"
-            />
-            <path
-              d="M 480 0 C 510 80, 540 120, 580 200 C 620 280, 680 360, 730 400"
-              stroke="#0066FF"
-              strokeWidth="8"
-            />
-            <path
-              d="M 0 350 C 300 320, 500 180, 900 80 C 1050 40, 1150 20, 1200 0"
-              stroke="#0066FF"
-              strokeWidth="12"
-            />
-            {/* Grid pattern */}
-            <defs>
-              <pattern id="soft-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0066FF" strokeWidth="0.5" strokeOpacity="0.4" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#soft-grid)" />
-          </svg>
-        </div>
+    <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
+        <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
+          <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
 
-        {/* 3 Columns Showcase Grid (Image 1 Structure) */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
-          {/* =========================================================================
-              Column 1: Capacity for Carrier Sales -> Programlama Dilleri Ekosistemi
-          ========================================================================= */}
-          <div className="flex flex-col justify-between space-y-6 lg:px-6">
-            <div className="space-y-4">
-              {/* Top Mini Badges (Image 1: Carriers 979 / Saved Time 129 Hr) */}
-              <div className="flex items-center gap-2">
-                <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                  <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
-                  <span>24 Çekirdek Dil</span>
-                  <span className="text-neutral-400 font-normal">| %100 Açık</span>
-                </div>
-                <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                  <span>Python #1</span>
-                  <span className="text-emerald-500 font-normal">62k+ ★</span>
-                </div>
-              </div>
-
-              {/* Floating Pill/Card (Image 1: Revenue $176,513 Margin 25.5%) */}
-              <div className="p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
-                  <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                    <PieChartIcon className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">Toplam Yıldız</div>
-                    <div className="font-bold text-sm text-foreground">1,480,210 ★</div>
-                  </div>
-                </div>
-
-                {/* Mini Sparkline Chart */}
-                <div className="flex items-center gap-2">
-                  <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
-                    <path
-                      d="M 2 20 Q 15 18, 25 10 T 48 3"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
-                    +%25.5
-                  </span>
-                </div>
-              </div>
-
-              {/* Title & Description */}
-              <div className="pt-1">
-                <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                  Programlama Dilleri
-                </h3>
-                <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">
-                  Sistem, web, veri bilimi ve yapay zekâda en çok tercih edilen 24 çekirdek dilin gerçek zamanlı GitHub kullanım, repo hacmi ve popülarite ivmesi.
-                </p>
-              </div>
-            </div>
-
-            {/* Pill CTA Button (Image 1: Learn More >) */}
-            <button
-              onClick={() => scrollToSection('section-languages')}
-              className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md shadow-blue-500/20 hover:shadow-lg cursor-pointer group"
-            >
-              <span>Dilleri İncele</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-            </button>
-          </div>
-
-          {/* =========================================================================
-              Column 2: Advantage for Shipper Sales -> Framework & Kütüphane Gücü
-          ========================================================================= */}
-          <div className="flex flex-col justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
-            <div className="space-y-4">
-              {/* Top Mini Badges (Image 1: Bids 979 / Loads 99) */}
-              <div className="flex items-center gap-2">
-                <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                  <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
-                  <span>11 Framework</span>
-                  <span className="text-neutral-400 font-normal">| Web & App</span>
-                </div>
-                <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                  <GitFork className="w-3.5 h-3.5 text-emerald-500" />
-                  <span>5.2M+ Repolar</span>
-                  <span className="text-emerald-500 font-normal">+49%</span>
-                </div>
-              </div>
-
-              {/* Floating Pill/Card (Image 1: Revenue $176,513 (+%49) Gross Margin: 10.5%) */}
-              <div className="p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
-                  <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                    <PieChartIcon className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">Toplam Etkileşim</div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-bold text-sm text-foreground">2,120,490</span>
-                      <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
-                        +%49
-                      </span>
+          {/* 3 Columns Showcase Grid - All Centered */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
+            {/* =========================================================================
+                Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
+            ========================================================================= */}
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[44px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topLanguageBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">Python</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">251k+ ★</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="text-right">
-                  <div className="text-[10px] font-mono text-neutral-400">Brüt İvme</div>
-                  <div className="text-xs font-bold font-mono text-foreground">%10.5</div>
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalStars')}
+                        </div>
+                        <div className="font-bold text-sm text-foreground">1,480,210 ★</div>
+                      </div>
+                    </div>
+
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
+                      +%25.5
+                    </span>
+                  </div>
+
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                      {t('sections.languages')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.languagesDesc')}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Title & Description */}
-              <div className="pt-1">
-                <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                  Framework & Kütüphaneler
-                </h3>
-                <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">
-                  React, Next.js, FastAPI ve Vue gibi modern uygulama geliştirme kütüphanelerinin gerçek zamanlı geliştirici kabul oranları ve sürüm ivmelenme metrikleri.
-                </p>
-              </div>
+              {/* Integrated Layered Gradient Button - Centered */}
+              {renderCtaButton(t('showcase.exploreLanguages'), 'section-languages')}
             </div>
 
-            {/* Pill CTA Button (Image 1: Learn More >) */}
-            <button
-              onClick={() => scrollToSection('section-frameworks')}
-              className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md shadow-blue-500/20 hover:shadow-lg cursor-pointer group"
-            >
-              <span>Framework'leri İncele</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-            </button>
-          </div>
-
-          {/* =========================================================================
-              Column 3: Our Tech Stack -> Modern Teknoloji & Veritabanı Yığını
-          ========================================================================= */}
-          <div className="flex flex-col justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
-            <div className="space-y-4">
-              {/* Circular Partner Logo Hub (Birebir Image 1: Our Tech Stack Hub) */}
-              <div className="relative w-48 h-28 mx-auto flex items-center justify-center">
-                {/* Center Hub Circle with DevSec Logo */}
-                <div className="w-14 h-14 rounded-full bg-white dark:bg-neutral-800 border-2 border-[#0066FF] shadow-xl flex items-center justify-center z-10 p-2">
-                  <img
-                    src={devsecIcon}
-                    alt="DevSec"
-                    width={32}
-                    height={32}
-                    className="w-7 h-7 object-contain"
-                  />
+            {/* =========================================================================
+                Column 2: Framework & Kütüphaneler (Framework Top 1: React) - CENTERED & BALANCED
+            ========================================================================= */}
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[44px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topFrameworkBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">React</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <GitFork className="w-3.5 h-3.5 text-emerald-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">230k+ ★</span>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Orbital Satellite 1: PostgreSQL (Top Left) */}
-                <div
-                  className="absolute top-0 left-2 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center p-1.5 hover:scale-110 transition-transform"
-                  title="PostgreSQL"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                    alt="PostgreSQL"
-                    className="w-5 h-5 object-contain"
-                  />
-                </div>
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalEngagements')}
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-sm text-foreground">2,120,490</span>
+                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
+                            +%49
+                          </span>
+                        </div>
+                      </div>
+                    </div>
 
-                {/* Orbital Satellite 2: Redis (Top Right) */}
-                <div
-                  className="absolute top-0 right-2 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center p-1.5 hover:scale-110 transition-transform"
-                  title="Redis"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
-                    alt="Redis"
-                    className="w-5 h-5 object-contain"
-                  />
-                </div>
+                    <div className="text-right">
+                      <div className="text-[10px] font-mono text-neutral-400">{t('showcase.grossMomentum')}</div>
+                      <div className="text-xs font-bold font-mono text-foreground">%10.5</div>
+                    </div>
+                  </div>
 
-                {/* Orbital Satellite 3: Supabase (Bottom Left) */}
-                <div
-                  className="absolute bottom-0 left-4 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center p-1.5 hover:scale-110 transition-transform"
-                  title="Supabase"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
-                    alt="Supabase"
-                    className="w-5 h-5 object-contain"
-                  />
-                </div>
-
-                {/* Orbital Satellite 4: MongoDB (Bottom Right) */}
-                <div
-                  className="absolute bottom-0 right-4 w-8 h-8 rounded-full bg-white dark:bg-neutral-800 shadow-md border border-neutral-200 dark:border-neutral-700 flex items-center justify-center p-1.5 hover:scale-110 transition-transform"
-                  title="MongoDB"
-                >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                    alt="MongoDB"
-                    className="w-5 h-5 object-contain"
-                  />
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                      {t('sections.frameworks')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.frameworksDesc')}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Title & Description */}
-              <div className="pt-1">
-                <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                  Veritabanları & Altyapı
-                </h3>
-                <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">
-                  İlişkisel, NoSQL, in-memory ve arama motoru veritabanlarının kurumsal mimarilerdeki aktif kabul oranları ve canlı repo istatistikleri.
-                </p>
-              </div>
+              {/* Integrated Layered Gradient Button - Centered */}
+              {renderCtaButton(t('showcase.exploreFrameworks'), 'section-frameworks')}
             </div>
 
-            {/* Pill CTA Button (Image 1: Learn More >) */}
-            <button
-              onClick={() => scrollToSection('section-databases')}
-              className="w-full sm:w-auto self-start mt-2 px-6 py-2.5 rounded-full text-xs font-semibold bg-[#0066FF] hover:bg-[#0052CC] text-white flex items-center justify-center gap-1.5 transition-all shadow-md shadow-blue-500/20 hover:shadow-lg cursor-pointer group"
-            >
-              <span>Veritabanlarını İncele</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-            </button>
+            {/* =========================================================================
+                Column 3: Veritabanları & Altyapı (Database Top 1: PostgreSQL) - CENTERED & BALANCED
+            ========================================================================= */}
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[44px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Database className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topDatabaseBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">PostgreSQL</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">140k+ ★</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalDatabases')}
+                        </div>
+                        <div className="font-bold text-sm text-foreground">890,400 ★</div>
+                      </div>
+                    </div>
+
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                      +18.4%
+                    </span>
+                  </div>
+
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                      {t('sections.databases')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.databasesDesc')}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Integrated Layered Gradient Button - Centered */}
+              {renderCtaButton(t('showcase.exploreDatabases'), 'section-databases')}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
