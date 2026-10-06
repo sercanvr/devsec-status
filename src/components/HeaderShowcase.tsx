@@ -11,6 +11,7 @@ import {
   PieChart as PieChartIcon,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { WorldMap } from './WorldMap';
 
 interface HeaderShowcaseProps {
   mode?: 'software' | 'security';
@@ -26,86 +27,18 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
     }
   };
 
-  // Minimalist 3D isometric topographic elevation / map mesh background (Distinct & Prominent)
-  const renderBackgroundMesh = () => (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
-      <svg
-        className="absolute inset-0 w-full h-full opacity-45 dark:opacity-30"
-        viewBox="0 0 1200 480"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <defs>
-          <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0066FF" stopOpacity="0.9" />
-            <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#0066FF" stopOpacity="0.3" />
-          </linearGradient>
-          <pattern id="isoDots" width="36" height="36" patternUnits="userSpaceOnUse">
-            <circle cx="18" cy="18" r="1.2" fill="#0066FF" fillOpacity="0.4" />
-          </pattern>
-        </defs>
 
-        {/* 3D Isometric Elevation Contours / Topo Map Lines */}
-        <path
-          d="M -100 320 C 180 300, 360 160, 620 200 C 880 240, 980 100, 1300 80"
-          stroke="url(#mapGradient)"
-          strokeWidth="2"
-          strokeDasharray="5 5"
-        />
-        <path
-          d="M -100 370 C 160 350, 390 210, 640 240 C 890 270, 1010 140, 1300 120"
-          stroke="url(#mapGradient)"
-          strokeWidth="2.5"
-        />
-        <path
-          d="M -100 420 C 140 400, 420 260, 660 280 C 900 300, 1040 180, 1300 160"
-          stroke="url(#mapGradient)"
-          strokeWidth="2"
-          strokeDasharray="7 7"
-        />
 
-        {/* 3D Isometric Coordinate Mesh / Topo Wireframe */}
-        <path
-          d="M 150 60 L 380 220 L 380 440"
-          stroke="#0066FF"
-          strokeWidth="1.5"
-          strokeOpacity="0.45"
-        />
-        <path
-          d="M 520 30 L 740 190 L 740 420"
-          stroke="#0066FF"
-          strokeWidth="1.5"
-          strokeOpacity="0.45"
-        />
-        <path
-          d="M 880 10 L 1100 170 L 1100 400"
-          stroke="#0066FF"
-          strokeWidth="1.5"
-          strokeOpacity="0.45"
-        />
-
-        {/* Subtle grid pattern background */}
-        <rect width="100%" height="100%" fill="url(#isoDots)" />
-      </svg>
-    </div>
-  );
-
-  // Modern Layered Gradient Button matching user's custom design spec
+  // Clean, sleek CTA Button without distracting outer frame
   const renderCtaButton = (label: string, targetId: string) => (
     <div className="flex justify-center items-center w-full mt-4">
-      <div className="bg-gradient-to-b from-blue-400/35 dark:from-blue-500/30 to-transparent p-[3px] rounded-[16px] shadow-sm">
-        <button
-          onClick={() => scrollToSection(targetId)}
-          className="group p-[3px] rounded-[12px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.35)] active:shadow-[0_1px_3px_rgba(0,102,255,0.4)] active:scale-[0.99] transition-colors duration-150 cursor-pointer"
-        >
-          <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[8px] px-5 py-2 flex items-center justify-center gap-2">
-            <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
-            <ArrowRight className="w-3.5 h-3.5 text-white transition-transform group-hover:translate-x-0.5" />
-          </div>
-        </button>
-      </div>
+      <button
+        onClick={() => scrollToSection(targetId)}
+        className="group px-6 py-2.5 rounded-xl bg-gradient-to-b from-[#0066FF] to-[#0052CC] hover:from-[#0052CC] hover:to-[#0040A8] text-white shadow-[0_2px_10px_rgba(0,102,255,0.3)] hover:shadow-[0_4px_14px_rgba(0,102,255,0.45)] active:scale-[0.98] transition-all duration-150 cursor-pointer flex items-center justify-center gap-2"
+      >
+        <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
+        <ArrowRight className="w-3.5 h-3.5 text-white transition-transform group-hover:translate-x-0.5" />
+      </button>
     </div>
   );
 
@@ -115,7 +48,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
-            {renderBackgroundMesh()}
+            <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-40 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_95%)]" />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
               {/* Col 1: Offensive Security - Centered */}
@@ -150,8 +83,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div>
-                    <h3 className="font-serif font-bold text-xl text-foreground">
-                      {t('showcase.secOffensiveTitle')}
+                    <h3 className="font-serif font-bold text-xl">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                        {t('showcase.secOffensiveTitle')}
+                      </span>
                     </h3>
                     <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.secOffensiveDesc')}
@@ -194,8 +129,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div>
-                    <h3 className="font-serif font-bold text-xl text-foreground">
-                      {t('showcase.secDefensiveTitle')}
+                    <h3 className="font-serif font-bold text-xl">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                        {t('showcase.secDefensiveTitle')}
+                      </span>
                     </h3>
                     <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.secDefensiveDesc')}
@@ -238,8 +175,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div>
-                    <h3 className="font-serif font-bold text-xl text-foreground">
-                      {t('showcase.secStackTitle')}
+                    <h3 className="font-serif font-bold text-xl">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                        {t('showcase.secStackTitle')}
+                      </span>
                     </h3>
                     <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.secStackDesc')}
@@ -262,7 +201,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
-          {renderBackgroundMesh()}
+          <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-40 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_95%)]" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
           <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
@@ -319,8 +258,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
                 {/* Title & Description - Centered & Balanced Height */}
                 <div className="pt-1 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                    {t('sections.languages')}
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                      {t('sections.languages')}
+                    </span>
                   </h3>
                   <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
@@ -382,8 +323,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
                 {/* Title & Description - Centered & Balanced Height */}
                 <div className="pt-1 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                    {t('sections.frameworks')}
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                      {t('sections.frameworks')}
+                    </span>
                   </h3>
                   <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
@@ -450,8 +393,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
                 {/* Title & Description - Centered & Balanced Height */}
                 <div className="pt-1 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
-                    {t('sections.databases')}
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+                      {t('sections.databases')}
+                    </span>
                   </h3>
                   <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">

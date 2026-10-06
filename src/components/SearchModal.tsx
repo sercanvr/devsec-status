@@ -121,7 +121,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Python"
+            placeholder={t('searchModal.placeholder')}
             className="w-full bg-transparent text-base font-medium placeholder:text-neutral-400 focus:outline-none text-foreground"
           />
           {query && (

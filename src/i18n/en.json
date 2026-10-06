@@ -11,6 +11,7 @@
     "search": "Search"
   },
   "searchModal": {
+    "placeholder": "Search for a technology, library or tool...",
     "selectToNavigate": "Select item to scroll",
     "shortcut": "Shortcut: ⌘K / Ctrl+K",
     "noResultsFound": "No technology found for:"

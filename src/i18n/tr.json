@@ -11,6 +11,7 @@
     "search": "Ara"
   },
   "searchModal": {
+    "placeholder": "İstediğiniz bir teknolojiyi arayın...",
     "selectToNavigate": "Gezinmek için öge seçin",
     "shortcut": "Kısayol: ⌘K / Ctrl+K",
     "noResultsFound": "Sonuç bulunamadı:"

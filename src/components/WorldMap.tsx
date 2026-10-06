@@ -1,0 +1,210 @@
+import React, { useMemo } from 'react';
+// @ts-expect-error dotted-map doesn't provide built-in typescript types
+import DottedMap from 'dotted-map';
+import { useTheme } from '../hooks/useTheme';
+
+export interface MapConnection {
+  start: { lat: number; lng: number; label?: string };
+  end: { lat: number; lng: number; label?: string };
+}
+
+interface WorldMapProps {
+  dots?: MapConnection[];
+  lineColor?: string;
+  className?: string;
+}
+
+const DEFAULT_DOTS: MapConnection[] = [
+  {
+    start: { lat: 37.7749, lng: -122.4194, label: 'San Francisco' },
+    end: { lat: 50.1109, lng: 8.6821, label: 'Frankfurt' },
+  },
+  {
+    start: { lat: 40.7128, lng: -74.006, label: 'New York' },
+    end: { lat: 51.5074, lng: -0.1278, label: 'London' },
+  },
+  {
+    start: { lat: 51.5074, lng: -0.1278, label: 'London' },
+    end: { lat: 35.6762, lng: 139.6503, label: 'Tokyo' },
+  },
+  {
+    start: { lat: 35.6762, lng: 139.6503, label: 'Tokyo' },
+    end: { lat: 1.3521, lng: 103.8198, label: 'Singapore' },
+  },
+  {
+    start: { lat: 52.52, lng: 13.405, label: 'Berlin' },
+    end: { lat: 41.0082, lng: 28.9784, label: 'Istanbul' },
+  },
+  {
+    start: { lat: 37.7749, lng: -122.4194, label: 'San Francisco' },
+    end: { lat: -33.8688, lng: 151.2093, label: 'Sydney' },
+  },
+];
+
+export const WorldMap: React.FC<WorldMapProps> = ({
+  dots = DEFAULT_DOTS,
+  lineColor = '#0066FF',
+  className = '',
+}) => {
+  const { theme } = useTheme();
+
+  // Generate dotted world map SVG dynamically based on current active theme
+  const svgMap = useMemo(() => {
+    try {
+      const DottedMapClass = (DottedMap as { default?: unknown }).default || DottedMap;
+      // @ts-expect-error instantiate dynamic class
+      const map = new DottedMapClass({ height: 100, grid: 'diagonal' });
+      return map.getSVG({
+        radius: 0.22,
+        color: theme === 'dark' ? '#FFFFFF35' : '#00000030',
+        shape: 'circle',
+        backgroundColor: 'transparent',
+      });
+    } catch {
+      return '';
+    }
+  }, [theme]);
+
+  // Project latitude/longitude coordinates to 800x400 SVG viewBox space
+  const projectPoint = (lat: number, lng: number) => {
+    const x = (lng + 180) * (800 / 360);
+    const y = (90 - lat) * (400 / 180);
+    return { x, y };
+  };
+
+  // Create quadratic bezier curve path connecting two points on the map
+  const createCurvedPath = (
+    start: { x: number; y: number },
+    end: { x: number; y: number }
+  ) => {
+    const midX = (start.x + end.x) / 2;
+    const midY = Math.min(start.y, end.y) - 50;
+    return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
+  };
+
+  return (
+    <div className={`w-full h-full relative font-sans overflow-hidden ${className}`}>
+      {svgMap && (
+        <img
+          src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
+          className="h-full w-full object-cover [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+          alt="world map"
+          draggable={false}
+        />
+      )}
+      <svg
+        viewBox="0 0 800 400"
+        className="w-full h-full absolute inset-0 pointer-events-none select-none"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <defs>
+          <linearGradient id="map-path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="white" stopOpacity="0" />
+            <stop offset="5%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="95%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="100%" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+
+        {dots.map((dot, i) => {
+          const startPoint = projectPoint(dot.start.lat, dot.start.lng);
+          const endPoint = projectPoint(dot.end.lat, dot.end.lng);
+          const pathD = createCurvedPath(startPoint, endPoint);
+
+          return (
+            <g key={`path-group-${i}`}>
+              <path
+                d={pathD}
+                fill="none"
+                stroke="url(#map-path-gradient)"
+                strokeWidth="1.5"
+                strokeDasharray="400"
+                strokeDashoffset="400"
+              >
+                <animate
+                  attributeName="stroke-dashoffset"
+                  values="400;0;0;400"
+                  dur="4.5s"
+                  begin={`${0.5 * i}s`}
+                  repeatCount="indefinite"
+                  keyTimes="0;0.5;0.8;1"
+                />
+              </path>
+            </g>
+          );
+        })}
+
+        {dots.map((dot, i) => (
+          <g key={`points-group-${i}`}>
+            <g key={`start-${i}`}>
+              <circle
+                cx={projectPoint(dot.start.lat, dot.start.lng).x}
+                cy={projectPoint(dot.start.lat, dot.start.lng).y}
+                r="2.5"
+                fill={lineColor}
+              />
+              <circle
+                cx={projectPoint(dot.start.lat, dot.start.lng).x}
+                cy={projectPoint(dot.start.lat, dot.start.lng).y}
+                r="2.5"
+                fill={lineColor}
+                opacity="0.5"
+              >
+                <animate
+                  attributeName="r"
+                  from="2.5"
+                  to="9"
+                  dur="1.8s"
+                  begin={`${0.3 * i}s`}
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  from="0.6"
+                  to="0"
+                  dur="1.8s"
+                  begin={`${0.3 * i}s`}
+                  repeatCount="indefinite"
+                />
+              </circle>
+            </g>
+            <g key={`end-${i}`}>
+              <circle
+                cx={projectPoint(dot.end.lat, dot.end.lng).x}
+                cy={projectPoint(dot.end.lat, dot.end.lng).y}
+                r="2.5"
+                fill={lineColor}
+              />
+              <circle
+                cx={projectPoint(dot.end.lat, dot.end.lng).x}
+                cy={projectPoint(dot.end.lat, dot.end.lng).y}
+                r="2.5"
+                fill={lineColor}
+                opacity="0.5"
+              >
+                <animate
+                  attributeName="r"
+                  from="2.5"
+                  to="9"
+                  dur="1.8s"
+                  begin={`${0.3 * i + 0.5}s`}
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  from="0.6"
+                  to="0"
+                  dur="1.8s"
+                  begin={`${0.3 * i + 0.5}s`}
+                  repeatCount="indefinite"
+                />
+              </circle>
+            </g>
+          </g>
+        ))}
+      </svg>
+    </div>
+  );
+};
+
+export default WorldMap;
