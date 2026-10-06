@@ -276,15 +276,15 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             <img
               src={entry.creator.avatarUrl}
               alt={cleanCreatorName}
-              width={24}
-              height={24}
-              className="w-6 h-6 rounded-full object-cover border border-neutral-300 dark:border-neutral-700 shrink-0"
+              width={30}
+              height={30}
+              className="w-7.5 h-7.5 rounded-full object-cover border border-neutral-300 dark:border-neutral-700 shrink-0"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).style.display = 'none';
               }}
             />
           ) : (
-            <div className="w-6 h-6 rounded-full bg-neutral-200 dark:bg-neutral-700 text-[10px] font-bold flex items-center justify-center text-neutral-600 dark:text-neutral-300 shrink-0">
+            <div className="w-7.5 h-7.5 rounded-full bg-neutral-200 dark:bg-neutral-700 text-[11px] font-bold flex items-center justify-center text-neutral-600 dark:text-neutral-300 shrink-0">
               {cleanName.slice(0, 1)}
             </div>
           )}
@@ -472,9 +472,9 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             <img
               src={entry.creator.avatarUrl}
               alt={cleanCreatorName}
-              width={18}
-              height={18}
-              className="w-4 h-4 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover"
+              width={24}
+              height={24}
+              className="w-6 h-6 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
             />
           )}
           <span className="text-neutral-700 dark:text-neutral-200 font-medium">

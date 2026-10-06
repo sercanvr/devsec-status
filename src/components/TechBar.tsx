@@ -74,9 +74,9 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
                   <img
                     src={entry.creator.avatarUrl}
                     alt={cleanCreatorName}
-                    width={16}
-                    height={16}
-                    className="w-4 h-4 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
                     }}

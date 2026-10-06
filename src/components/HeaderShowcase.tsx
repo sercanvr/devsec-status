@@ -68,7 +68,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -87,7 +87,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
 
                     <div className="pt-3.5 text-center">
-                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                         {t('showcase.secOffensiveTitle')}
                       </h3>
                       <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -117,7 +117,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -136,7 +136,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
 
                     <div className="pt-3.5 text-center">
-                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                         {t('showcase.secDefensiveTitle')}
                       </h3>
                       <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -166,7 +166,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -185,7 +185,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
 
                     <div className="pt-3.5 text-center">
-                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                         {t('showcase.secStackTitle')}
                       </h3>
                       <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -238,7 +238,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -269,7 +269,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div className="pt-3.5 text-center">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                       {t('sections.languages')}
                     </h3>
                     <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -307,7 +307,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -333,7 +333,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div className="pt-3.5 text-center">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                       {t('sections.frameworks')}
                     </h3>
                     <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -371,7 +371,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -402,7 +402,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div className="pt-3.5 text-center">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
                       {t('sections.databases')}
                     </h3>
                     <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
