@@ -60,15 +60,15 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
           />
           <path
             d="M 32 0 A 32 32 0 0 1 0 32"
-            className="stroke-[#C7C7C7] dark:stroke-neutral-700 transition-colors duration-200"
-            strokeWidth="1.5"
+            className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
+            strokeWidth="2.5"
             fill="none"
             strokeLinecap="butt"
           />
         </svg>
 
-        {/* Middle Horizontal Border Line */}
-        <div className="absolute top-0 left-[31px] right-[31px] border-t-[1.5px] border-[#C7C7C7] dark:border-neutral-700 transition-colors duration-200" />
+        {/* Middle Horizontal Border Line - Slightly Thicker */}
+        <div className="absolute top-0 left-[31px] right-[31px] border-t-[2.5px] border-[#B8B8B8] dark:border-neutral-600 transition-colors duration-200" />
 
         {/* Right Corner Concave Inverted Radius */}
         <svg
@@ -83,8 +83,8 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
           />
           <path
             d="M 32 0 A 32 32 0 0 1 0 32"
-            className="stroke-[#C7C7C7] dark:stroke-neutral-700 transition-colors duration-200"
-            strokeWidth="1.5"
+            className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
+            strokeWidth="2.5"
             fill="none"
             strokeLinecap="butt"
           />
@@ -107,9 +107,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               <img
                 src={devsecLogo}
                 alt="DevSec Status"
-                width={120}
-                height={42}
-                className="h-10 sm:h-11 w-auto object-contain shrink-0 drop-shadow-sm"
+                width={132}
+                height={46}
+                className="h-12 sm:h-13 w-auto object-contain shrink-0 drop-shadow-sm"
               />
             </a>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
@@ -180,9 +180,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             <img
               src={devsecLogo}
               alt="DevSec Status"
-              width={120}
-              height={42}
-              className="h-10 w-auto object-contain shrink-0 drop-shadow-sm"
+              width={128}
+              height={44}
+              className="h-11 sm:h-12 w-auto object-contain shrink-0 drop-shadow-sm"
             />
           </a>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">

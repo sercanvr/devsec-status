@@ -197,7 +197,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
           </div>
 
           {/* Mobile & Small Screen Fintech Cards View (< md) */}
-          <div className="md:hidden divide-y divide-neutral-200/70 dark:divide-neutral-800/70 p-3 sm:p-4 space-y-3">
+          <div className="md:hidden p-3 sm:p-4 space-y-3.5">
             {processedEntries.map((entry) => (
               <MobileCard key={entry.id} entry={entry} maxStars={maxStars} />
             ))}
@@ -437,7 +437,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <div
       id={entry.id}
-      className="p-4 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200/90 dark:border-neutral-800 space-y-3.5 transition-colors"
+      className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors"
     >
       {/* Top: Blurred Icon Container + Name */}
       <div className="flex items-center justify-between gap-2">

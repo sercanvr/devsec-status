@@ -50,7 +50,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-            <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
+            <WorldMap lineColor="#10B981" className="opacity-30 dark:opacity-20" />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
               {/* Col 1: Offensive Security - Centered */}
@@ -84,14 +84,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </span>
                   </div>
 
-                  <div>
-                    <h3 className="font-serif font-bold text-xl">
-                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                        {t('showcase.secOffensiveTitle')}
-                      </span>
+                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('showcase.secOffensiveTitle')}
                     </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                         {t('showcase.secOffensiveDesc')}
                       </p>
                     </div>
@@ -132,14 +130,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </span>
                   </div>
 
-                  <div>
-                    <h3 className="font-serif font-bold text-xl">
-                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                        {t('showcase.secDefensiveTitle')}
-                      </span>
+                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('showcase.secDefensiveTitle')}
                     </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                         {t('showcase.secDefensiveDesc')}
                       </p>
                     </div>
@@ -180,14 +176,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </span>
                   </div>
 
-                  <div>
-                    <h3 className="font-serif font-bold text-xl">
-                      <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                        {t('showcase.secStackTitle')}
-                      </span>
+                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('showcase.secStackTitle')}
                     </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                         {t('showcase.secStackDesc')}
                       </p>
                     </div>
@@ -209,7 +203,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-          <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
+          <WorldMap lineColor="#E36A17" className="opacity-30 dark:opacity-20" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
           <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
@@ -264,15 +258,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-0.5 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                      {t('sections.languages')}
-                    </span>
+                {/* Title & Description - Protected with Glass Backdrop */}
+                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    {t('sections.languages')}
                   </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.languagesDesc')}
                     </p>
                   </div>
@@ -329,15 +321,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-0.5 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                      {t('sections.frameworks')}
-                    </span>
+                {/* Title & Description - Protected with Glass Backdrop */}
+                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    {t('sections.frameworks')}
                   </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.frameworksDesc')}
                     </p>
                   </div>
@@ -399,15 +389,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-0.5 w-full">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
-                      {t('sections.databases')}
-                    </span>
+                {/* Title & Description - Protected with Glass Backdrop */}
+                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
+                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                    {t('sections.databases')}
                   </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
-                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.databasesDesc')}
                     </p>
                   </div>
