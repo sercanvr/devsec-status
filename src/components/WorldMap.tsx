@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react';
-// @ts-expect-error dotted-map doesn't provide built-in typescript types
 import DottedMap from 'dotted-map';
 import { useTheme } from '../hooks/useTheme';
 
