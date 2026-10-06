@@ -128,7 +128,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+16px)] w-36 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-[70] overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+12px)] w-36 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-lg z-[70] overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (

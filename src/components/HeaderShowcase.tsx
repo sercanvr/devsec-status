@@ -34,7 +34,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
     <div className="flex justify-center items-center w-full mt-2.5">
       <button
         onClick={() => scrollToSection(targetId)}
-        className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_10px_rgba(0,102,255,0.35)] hover:shadow-[0_4px_14px_rgba(0,102,255,0.45)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
+        className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_12px_rgba(0,102,255,0.28)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
       >
         <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-1.5">
           <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
@@ -68,8 +68,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -117,8 +117,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -166,8 +166,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -238,8 +238,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -252,20 +252,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                       </div>
                     </div>
 
-                    {/* Mini Sparkline Chart */}
-                    <div className="flex items-center gap-2">
-                      <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
-                        <path
-                          d="M 2 20 Q 15 18, 25 10 T 48 3"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
-                        +%25.5
-                      </span>
-                    </div>
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
+                      +%25.5
+                    </span>
                   </div>
 
                   <div className="pt-3.5 text-center">
@@ -307,8 +296,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -371,8 +360,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -385,20 +374,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                       </div>
                     </div>
 
-                    {/* Mini Sparkline Chart */}
-                    <div className="flex items-center gap-2">
-                      <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
-                        <path
-                          d="M 2 18 Q 15 15, 25 8 T 48 4"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                        +18.4%
-                      </span>
-                    </div>
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                      +18.4%
+                    </span>
                   </div>
 
                   <div className="pt-3.5 text-center">
