@@ -47,28 +47,28 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
 
       {/* Top Border with Concave Inverted Radius (Ters Kavis) at Corners */}
       <div className="absolute top-0 left-0 right-0 pointer-events-none z-10">
-        {/* Left Corner Concave Inverted Radius (Mirrored from right corner) */}
+        {/* Left Corner Concave Inverted Radius */}
         <svg
-          className="absolute left-0 -top-8 w-8 h-8 pointer-events-none overflow-visible scale-x-[-1]"
+          className="absolute left-0 -top-8 w-8 h-8 pointer-events-none overflow-visible"
           viewBox="0 0 32 32"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M 32 0 A 32 32 0 0 1 0 32 L 32 32 Z"
+            d="M 0 0 A 32 32 0 0 0 32 32 L 0 32 Z"
             className="fill-[#ECECEC] dark:fill-[#141414] transition-colors duration-200"
           />
           <path
-            d="M 32 0 A 32 32 0 0 1 0 32"
+            d="M 0 0 A 32 32 0 0 0 32 32"
             className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
             strokeWidth="2.5"
             fill="none"
-            strokeLinecap="butt"
+            strokeLinecap="round"
           />
         </svg>
 
-        {/* Middle Horizontal Border Line - Slightly Thicker */}
-        <div className="absolute top-0 left-[31px] right-[31px] border-t-[2.5px] border-[#B8B8B8] dark:border-neutral-600 transition-colors duration-200" />
+        {/* Middle Horizontal Border Line - Perfectly aligned with SVG stroke center */}
+        <div className="absolute -top-[1.25px] left-8 right-8 h-[2.5px] bg-[#B8B8B8] dark:bg-neutral-600 transition-colors duration-200" />
 
         {/* Right Corner Concave Inverted Radius */}
         <svg
@@ -86,7 +86,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             className="stroke-[#B8B8B8] dark:stroke-neutral-600 transition-colors duration-200"
             strokeWidth="2.5"
             fill="none"
-            strokeLinecap="butt"
+            strokeLinecap="round"
           />
         </svg>
       </div>

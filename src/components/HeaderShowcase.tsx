@@ -67,9 +67,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -116,9 +116,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -165,9 +165,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  {/* Unified Frosted Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                  {/* Unified Liquid Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                           <PieChartIcon className="w-4 h-4" />
@@ -237,9 +237,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -306,9 +306,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -370,9 +370,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Unified Frosted Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/15 dark:bg-black/20 backdrop-blur-2xl border border-neutral-200/50 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
-                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                {/* Unified Liquid Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-white/40 via-neutral-100/35 to-neutral-200/25 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-white/60 dark:border-white/10 shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.7),0_10px_25px_-5px_rgba(0,0,0,0.06)] dark:shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.15),0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/50 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
