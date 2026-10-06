@@ -105,7 +105,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
     <div
       role="dialog"
       aria-modal="true"
-      onClick={onClose}
       className="fixed inset-0 z-[1050] flex items-start justify-center pt-14 sm:pt-20 px-4 bg-black/75 backdrop-blur-md animate-fade-in"
     >
       {/* Luxury Frosted-Glass Outer Frame / Border */}
