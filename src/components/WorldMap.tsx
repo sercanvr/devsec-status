@@ -52,42 +52,106 @@ export const WorldMap: React.FC<WorldMapProps> = ({
   const [isVisible, setIsVisible] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Generate dotted world map SVG dynamically based on current active theme
-  const svgMap = useMemo(() => {
+  // Reusable DottedMap instance to project pins to exact map coordinates
+  const mapInstance = useMemo(() => {
     try {
       const DottedMapClass = (DottedMap as { default?: unknown }).default || DottedMap;
       // @ts-expect-error instantiate dynamic class
-      const map = new DottedMapClass({ height: 100, grid: 'diagonal' });
-      return map.getSVG({
+      return new DottedMapClass({ height: 100, grid: 'diagonal' });
+    } catch {
+      return null;
+    }
+  }, []);
+
+  // Generate dotted world map SVG dynamically based on active theme
+  // We expand the viewBox from 0 0 198 100 to 0 -10 198 115 so northern latitudes and cyber arcs never clip
+  const svgMap = useMemo(() => {
+    try {
+      if (!mapInstance) return '';
+      const rawSvg = mapInstance.getSVG({
         radius: 0.22,
         color: theme === 'dark' ? '#FFFFFF30' : '#00000025',
         shape: 'circle',
         backgroundColor: 'transparent',
       });
+      return rawSvg.replace('viewBox="0 0 198 100"', 'viewBox="0 -10 198 115"');
     } catch {
       return '';
     }
-  }, [theme]);
+  }, [mapInstance, theme]);
 
-  // Pause & Play observer: pause animations when 80% out of viewport (< 20% visible)
+  // Project lat/lng coordinates directly to the 198x100 (extended to 198x115) map space
+  const projectPoint = (lat: number, lng: number) => {
+    if (mapInstance && typeof mapInstance.getPin === 'function') {
+      try {
+        const pin = mapInstance.getPin({ lat, lng });
+        if (pin && typeof pin.x === 'number' && typeof pin.y === 'number') {
+          return { x: pin.x, y: pin.y };
+        }
+      } catch {
+        // Fallback below
+      }
+    }
+    return {
+      x: ((lng + 180) / 360) * 198,
+      y: ((90 - lat) / 180) * 100,
+    };
+  };
+
+  // Quadratic bezier cyber arc with apex safely below y = -10
+  const createCurvedPath = (
+    start: { x: number; y: number },
+    end: { x: number; y: number }
+  ) => {
+    const midX = (start.x + end.x) / 2;
+    const midY = Math.min(start.y, end.y) - 8;
+    return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
+  };
+
+  // Immediate and precise visibility check via scroll, resize & sticky navbar position
   useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
+    const checkVisibility = () => {
+      const el = containerRef.current;
+      if (!el) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Active when at least 20% visible (i.e. not 80% out of screen)
-        const inView = entry.isIntersecting && entry.intersectionRatio >= 0.2;
-        setIsVisible(inView);
-      },
-      { threshold: [0, 0.2, 0.5, 0.8, 1.0] }
-    );
+      const rect = el.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    observer.observe(el);
-    return () => observer.disconnect();
+      // 1. Scrolled out of view above (e.g. past the sticky navbar, which has bottom ~80px)
+      // When card bottom <= 150px, the map is off-screen
+      if (rect.bottom <= 150) {
+        setIsVisible(false);
+        return;
+      }
+
+      // 2. Scrolled out of view below
+      if (rect.top >= windowHeight - 40) {
+        setIsVisible(false);
+        return;
+      }
+
+      // 3. Compute vertical visible ratio of the container
+      const visibleTop = Math.max(rect.top, 80); // Sticky navbar offset
+      const visibleBottom = Math.min(rect.bottom, windowHeight);
+      const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+      const ratio = visibleHeight / rect.height;
+
+      // Active when at least 25% of the card is in view
+      setIsVisible(ratio >= 0.25);
+    };
+
+    checkVisibility();
+
+    window.addEventListener('scroll', checkVisibility, { passive: true });
+    window.addEventListener('resize', checkVisibility, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', checkVisibility);
+      window.removeEventListener('resize', checkVisibility);
+    };
   }, []);
 
-  // Modal detection: pause when search modal or dialog is open
+  // Modal detection: pause when search modal or dialog is open, or tab is hidden
   useEffect(() => {
     const checkModal = () => {
       const dialog = document.querySelector('[role="dialog"]');
@@ -113,65 +177,77 @@ export const WorldMap: React.FC<WorldMapProps> = ({
     };
   }, []);
 
-  // Native SVG Animation Control: pauseAnimations() & unpauseAnimations()
+  const shouldPlay = isVisible && !isModalOpen;
+
+  // Native SMIL SVG Animation Control: pauseAnimations() & unpauseAnimations()
   useEffect(() => {
     const svg = svgRef.current;
     if (!svg) return;
 
-    const shouldPlay = isVisible && !isModalOpen;
-
     try {
       if (shouldPlay) {
-        svg.unpauseAnimations();
+        if (typeof svg.unpauseAnimations === 'function' && svg.animationsPaused?.()) {
+          svg.unpauseAnimations();
+        }
       } else {
-        svg.pauseAnimations();
+        if (typeof svg.pauseAnimations === 'function' && !svg.animationsPaused?.()) {
+          svg.pauseAnimations();
+        }
       }
     } catch {
-      // Fallback for browsers without SVGAnimationElement control
+      // Fallback
     }
-  }, [isVisible, isModalOpen]);
-
-  // Project latitude/longitude coordinates to 800x400 SVG viewBox space
-  const projectPoint = (lat: number, lng: number) => {
-    const x = (lng + 180) * (800 / 360);
-    const y = (90 - lat) * (400 / 180);
-    return { x, y };
-  };
-
-  // Create quadratic bezier curve path connecting two points on the map
-  const createCurvedPath = (
-    start: { x: number; y: number },
-    end: { x: number; y: number }
-  ) => {
-    const midX = (start.x + end.x) / 2;
-    const midY = Math.min(start.y, end.y) - 50;
-    return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
-  };
+  }, [shouldPlay]);
 
   return (
     <div
       ref={containerRef}
       className={`absolute inset-0 z-0 w-full h-full pointer-events-none select-none overflow-hidden ${className}`}
     >
+      {/* Dynamic Keyframe & CSS play-state injection to guarantee pause/play on compositor thread */}
+      <style>{`
+        @keyframes mapDashOffset {
+          0% { stroke-dashoffset: 100; }
+          50% { stroke-dashoffset: 0; }
+          80% { stroke-dashoffset: 0; }
+          100% { stroke-dashoffset: 100; }
+        }
+        @keyframes mapBeaconPulse {
+          0% { r: 0.7; opacity: 0.7; }
+          100% { r: 2.8; opacity: 0; }
+        }
+        .map-anim-path {
+          animation: mapDashOffset 4.5s infinite ease-in-out;
+          animation-play-state: ${shouldPlay ? 'running' : 'paused'} !important;
+        }
+        .map-anim-pulse {
+          animation: mapBeaconPulse 1.8s infinite ease-out;
+          animation-play-state: ${shouldPlay ? 'running' : 'paused'} !important;
+        }
+      `}</style>
+
+      {/* Dotted Map Base Image: object-contain fits completely inside the card without clipping the top */}
       {svgMap && (
         <img
           src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-          className="h-full w-full object-cover blur-[0.6px] [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+          className="h-full w-full object-contain blur-[0.5px] [mask-image:linear-gradient(to_bottom,white_85%,transparent_100%)] pointer-events-none select-none"
           alt="world map"
           draggable={false}
         />
       )}
+
+      {/* Cyber Arc Lines & Beacons: exact viewBox match with preserveAspectRatio meet */}
       <svg
         ref={svgRef}
-        viewBox="0 0 800 400"
+        viewBox="0 -10 198 115"
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
-        preserveAspectRatio="xMidYMid slice"
+        preserveAspectRatio="xMidYMid meet"
       >
         <defs>
           <linearGradient id={`map-path-gradient-${lineColor.replace('#', '')}`} x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="white" stopOpacity="0" />
-            <stop offset="5%" stopColor={lineColor} stopOpacity="1" />
-            <stop offset="95%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="10%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="90%" stopColor={lineColor} stopOpacity="1" />
             <stop offset="100%" stopColor="white" stopOpacity="0" />
           </linearGradient>
         </defs>
@@ -187,13 +263,17 @@ export const WorldMap: React.FC<WorldMapProps> = ({
                 d={pathD}
                 fill="none"
                 stroke={`url(#map-path-gradient-${lineColor.replace('#', '')})`}
-                strokeWidth="1.5"
-                strokeDasharray="400"
-                strokeDashoffset="400"
+                strokeWidth="0.45"
+                strokeDasharray="100"
+                strokeDashoffset="100"
+                className="map-anim-path"
+                style={{
+                  animationDelay: `${0.5 * i}s`,
+                }}
               >
                 <animate
                   attributeName="stroke-dashoffset"
-                  values="400;0;0;400"
+                  values="100;0;0;100"
                   dur="4.5s"
                   begin={`${0.5 * i}s`}
                   repeatCount="indefinite"
@@ -204,74 +284,90 @@ export const WorldMap: React.FC<WorldMapProps> = ({
           );
         })}
 
-        {dots.map((dot, i) => (
-          <g key={`points-group-${i}`}>
-            <g key={`start-${i}`}>
-              <circle
-                cx={projectPoint(dot.start.lat, dot.start.lng).x}
-                cy={projectPoint(dot.start.lat, dot.start.lng).y}
-                r="2.5"
-                fill={lineColor}
-              />
-              <circle
-                cx={projectPoint(dot.start.lat, dot.start.lng).x}
-                cy={projectPoint(dot.start.lat, dot.start.lng).y}
-                r="2.5"
-                fill={lineColor}
-                opacity="0.5"
-              >
-                <animate
-                  attributeName="r"
-                  from="2.5"
-                  to="9"
-                  dur="1.8s"
-                  begin={`${0.3 * i}s`}
-                  repeatCount="indefinite"
+        {dots.map((dot, i) => {
+          const startP = projectPoint(dot.start.lat, dot.start.lng);
+          const endP = projectPoint(dot.end.lat, dot.end.lng);
+
+          return (
+            <g key={`points-group-${i}`}>
+              {/* Start Beacon */}
+              <g key={`start-${i}`}>
+                <circle
+                  cx={startP.x}
+                  cy={startP.y}
+                  r="0.7"
+                  fill={lineColor}
                 />
-                <animate
-                  attributeName="opacity"
-                  from="0.6"
-                  to="0"
-                  dur="1.8s"
-                  begin={`${0.3 * i}s`}
-                  repeatCount="indefinite"
+                <circle
+                  cx={startP.x}
+                  cy={startP.y}
+                  r="0.7"
+                  fill={lineColor}
+                  opacity="0.6"
+                  className="map-anim-pulse"
+                  style={{
+                    animationDelay: `${0.3 * i}s`,
+                  }}
+                >
+                  <animate
+                    attributeName="r"
+                    from="0.7"
+                    to="2.8"
+                    dur="1.8s"
+                    begin={`${0.3 * i}s`}
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    from="0.6"
+                    to="0"
+                    dur="1.8s"
+                    begin={`${0.3 * i}s`}
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </g>
+
+              {/* End Beacon */}
+              <g key={`end-${i}`}>
+                <circle
+                  cx={endP.x}
+                  cy={endP.y}
+                  r="0.7"
+                  fill={lineColor}
                 />
-              </circle>
+                <circle
+                  cx={endP.x}
+                  cy={endP.y}
+                  r="0.7"
+                  fill={lineColor}
+                  opacity="0.6"
+                  className="map-anim-pulse"
+                  style={{
+                    animationDelay: `${0.3 * i + 0.5}s`,
+                  }}
+                >
+                  <animate
+                    attributeName="r"
+                    from="0.7"
+                    to="2.8"
+                    dur="1.8s"
+                    begin={`${0.3 * i + 0.5}s`}
+                    repeatCount="indefinite"
+                  />
+                  <animate
+                    attributeName="opacity"
+                    from="0.6"
+                    to="0"
+                    dur="1.8s"
+                    begin={`${0.3 * i + 0.5}s`}
+                    repeatCount="indefinite"
+                  />
+                </circle>
+              </g>
             </g>
-            <g key={`end-${i}`}>
-              <circle
-                cx={projectPoint(dot.end.lat, dot.end.lng).x}
-                cy={projectPoint(dot.end.lat, dot.end.lng).y}
-                r="2.5"
-                fill={lineColor}
-              />
-              <circle
-                cx={projectPoint(dot.end.lat, dot.end.lng).x}
-                cy={projectPoint(dot.end.lat, dot.end.lng).y}
-                r="2.5"
-                fill={lineColor}
-                opacity="0.5"
-              >
-                <animate
-                  attributeName="r"
-                  from="2.5"
-                  to="9"
-                  dur="1.8s"
-                  begin={`${0.3 * i + 0.5}s`}
-                  repeatCount="indefinite"
-                />
-                <animate
-                  attributeName="opacity"
-                  from="0.6"
-                  to="0"
-                  dur="1.8s"
-                  begin={`${0.3 * i + 0.5}s`}
-                  repeatCount="indefinite"
-                />
-              </circle>
-            </g>
-          </g>
-        ))}
+          );
+        })}
       </svg>
     </div>
   );

@@ -112,7 +112,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${cleanName} - ${t('techBar.viewOnGithub')}`}
-          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-colors flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
+          className="p-2 rounded-xl text-neutral-500 hover:text-[#141414] hover:bg-[#CEFF00] dark:text-neutral-400 dark:hover:text-[#141414] dark:hover:bg-[#CEFF00] transition-none flex items-center gap-1 text-xs font-medium shrink-0 self-start sm:self-center"
           title={t('techBar.viewOnGithub')}
         >
           <span className="hidden sm:inline font-sans">{t('techBar.viewOnGithub')}</span>

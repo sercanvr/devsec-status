@@ -404,7 +404,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           rel="noopener noreferrer"
           aria-label={`${cleanName} GitHub`}
           title={`${cleanName} GitHub`}
-          className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-2xs whitespace-nowrap"
+          className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-none shadow-2xs whitespace-nowrap active:scale-95"
         >
           <span>GitHub</span>
           <ExternalLink className="w-3.5 h-3.5" />
@@ -540,7 +540,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             href={cleanGithubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700"
+            className="p-1.5 rounded-xl bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-600 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-none"
             aria-label="GitHub"
           >
             <ExternalLink className="w-3.5 h-3.5" />
