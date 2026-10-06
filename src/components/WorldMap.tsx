@@ -26,14 +26,12 @@ export const WorldMap: React.FC<WorldMapProps> = ({
       const DottedMapClass = (DottedMap as { default?: unknown }).default || DottedMap;
       // @ts-expect-error instantiate dynamic class
       const map = new DottedMapClass({ height: 100, grid: 'diagonal' });
-      const rawSvg = map.getSVG({
+      return map.getSVG({
         radius: 0.25,
         color: theme === 'dark' ? '#FFFFFF55' : '#00000038',
         shape: 'circle',
         backgroundColor: 'transparent',
       });
-      // Expand viewBox with 8 units top margin to ensure northern latitudes (Canada, Greenland, Scandinavia, Siberia) are fully visible without clipping
-      return rawSvg.replace('viewBox="0 0 198 100"', 'viewBox="0 -8 198 112"');
     } catch {
       return '';
     }
@@ -43,11 +41,11 @@ export const WorldMap: React.FC<WorldMapProps> = ({
 
   return (
     <div
-      className={`absolute inset-0 z-0 w-full h-full pointer-events-none select-none overflow-hidden flex items-center justify-center ${className}`}
+      className={`absolute inset-0 z-0 w-full h-full pointer-events-none select-none overflow-hidden ${className}`}
     >
       <img
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-        className="h-full w-full object-contain pointer-events-none select-none blur-[0.4px] transition-opacity duration-300"
+        className="h-full w-full object-cover pointer-events-none select-none blur-[0.4px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_18%,black_85%,transparent_100%)] transition-opacity duration-300"
         alt="world map"
         draggable={false}
       />

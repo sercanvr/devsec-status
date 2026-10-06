@@ -7,7 +7,7 @@ import {
   Sparkles,
   TrendingUp,
   GitFork,
-  ArrowRight,
+  ChevronRight,
   PieChart as PieChartIcon,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -29,16 +29,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
 
 
-  // Clean, sleek CTA Button with single gradient border and internal highlight (no ghost outer double border)
+  // Clean, sleek CTA Button with stemless Chevron arrow like scroll up button
   const renderCtaButton = (label: string, targetId: string) => (
     <div className="flex justify-center items-center w-full mt-2.5">
       <button
         onClick={() => scrollToSection(targetId)}
         className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_10px_rgba(0,102,255,0.35)] hover:shadow-[0_4px_14px_rgba(0,102,255,0.45)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
       >
-        <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-2">
+        <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-1.5">
           <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
-          <ArrowRight className="w-3.5 h-3.5 text-white transition-transform group-hover:translate-x-0.5" />
+          <ChevronRight className="w-4 h-4 text-white stroke-[2.8] transition-transform group-hover:translate-x-0.5" />
         </div>
       </button>
     </div>
@@ -50,9 +50,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-            <WorldMap lineColor="#10B981" className="opacity-75 dark:opacity-65 [mask-image:radial-gradient(ellipse_at_center,black_80%,transparent_100%)]" />
+            <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
+            <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
               {/* Col 1: Offensive Security - Centered */}
               <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6">
                 <div className="space-y-3 w-full flex flex-col items-center">
@@ -67,7 +67,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -115,7 +115,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -163,7 +163,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -209,10 +209,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-          <WorldMap lineColor="#E36A17" className="opacity-75 dark:opacity-65 [mask-image:radial-gradient(ellipse_at_center,black_80%,transparent_100%)]" />
+          <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
+          <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
             {/* =========================================================================
                 Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
             ========================================================================= */}
@@ -235,7 +235,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Floating Metric Card - Centered with blur show-through */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />
@@ -305,7 +305,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Floating Metric Card - Centered with blur show-through */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />
@@ -370,7 +370,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Floating Metric Card - Matching Columns 1 & 2 */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />

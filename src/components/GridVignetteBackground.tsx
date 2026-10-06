@@ -31,8 +31,8 @@ export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
       )}
       style={{
         backgroundSize: `${size}px ${size}px`,
-        maskImage: `radial-gradient(ellipse 80% 80% at 50% 50%, black 45%, transparent 95%)`,
-        WebkitMaskImage: `radial-gradient(ellipse 80% 80% at 50% 50%, black 45%, transparent 95%)`,
+        maskImage: `radial-gradient(ellipse 65% 65% at 50% 50%, black 20%, transparent 85%)`,
+        WebkitMaskImage: `radial-gradient(ellipse 65% 65% at 50% 50%, black 20%, transparent 85%)`,
       }}
     />
   );
