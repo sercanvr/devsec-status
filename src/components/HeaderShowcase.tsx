@@ -50,7 +50,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-            <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-45 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
+            <WorldMap lineColor="#10B981" className="opacity-40 dark:opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
               {/* Col 1: Offensive Security - Centered */}
@@ -209,7 +209,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-          <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-45 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
+          <WorldMap lineColor="#E36A17" className="opacity-40 dark:opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
           <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">

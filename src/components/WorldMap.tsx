@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef, useEffect, useState } from 'react';
 // @ts-expect-error dotted-map doesn't provide built-in typescript types
 import DottedMap from 'dotted-map';
 import { useTheme } from '../hooks/useTheme';
@@ -43,10 +43,14 @@ const DEFAULT_DOTS: MapConnection[] = [
 
 export const WorldMap: React.FC<WorldMapProps> = ({
   dots = DEFAULT_DOTS,
-  lineColor = '#0066FF',
+  lineColor = '#E36A17',
   className = '',
 }) => {
   const { theme } = useTheme();
+  const svgRef = useRef<SVGSVGElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Generate dotted world map SVG dynamically based on current active theme
   const svgMap = useMemo(() => {
@@ -56,7 +60,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
       const map = new DottedMapClass({ height: 100, grid: 'diagonal' });
       return map.getSVG({
         radius: 0.22,
-        color: theme === 'dark' ? '#FFFFFF35' : '#00000030',
+        color: theme === 'dark' ? '#FFFFFF30' : '#00000025',
         shape: 'circle',
         backgroundColor: 'transparent',
       });
@@ -64,6 +68,68 @@ export const WorldMap: React.FC<WorldMapProps> = ({
       return '';
     }
   }, [theme]);
+
+  // Pause & Play observer: pause animations when 80% out of viewport (< 20% visible)
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Active when at least 20% visible (i.e. not 80% out of screen)
+        const inView = entry.isIntersecting && entry.intersectionRatio >= 0.2;
+        setIsVisible(inView);
+      },
+      { threshold: [0, 0.2, 0.5, 0.8, 1.0] }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Modal detection: pause when search modal or dialog is open
+  useEffect(() => {
+    const checkModal = () => {
+      const dialog = document.querySelector('[role="dialog"]');
+      setIsModalOpen(!!dialog);
+    };
+
+    checkModal();
+
+    const observer = new MutationObserver(checkModal);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setIsVisible(false);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
+
+  // Native SVG Animation Control: pauseAnimations() & unpauseAnimations()
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const shouldPlay = isVisible && !isModalOpen;
+
+    try {
+      if (shouldPlay) {
+        svg.unpauseAnimations();
+      } else {
+        svg.pauseAnimations();
+      }
+    } catch {
+      // Fallback for browsers without SVGAnimationElement control
+    }
+  }, [isVisible, isModalOpen]);
 
   // Project latitude/longitude coordinates to 800x400 SVG viewBox space
   const projectPoint = (lat: number, lng: number) => {
@@ -83,22 +149,26 @@ export const WorldMap: React.FC<WorldMapProps> = ({
   };
 
   return (
-    <div className={`w-full h-full relative font-sans overflow-hidden ${className}`}>
+    <div
+      ref={containerRef}
+      className={`absolute inset-0 z-0 w-full h-full pointer-events-none select-none overflow-hidden ${className}`}
+    >
       {svgMap && (
         <img
           src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
-          className="h-full w-full object-cover [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
+          className="h-full w-full object-cover blur-[0.6px] [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
           alt="world map"
           draggable={false}
         />
       )}
       <svg
+        ref={svgRef}
         viewBox="0 0 800 400"
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
         preserveAspectRatio="xMidYMid slice"
       >
         <defs>
-          <linearGradient id="map-path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <linearGradient id={`map-path-gradient-${lineColor.replace('#', '')}`} x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="white" stopOpacity="0" />
             <stop offset="5%" stopColor={lineColor} stopOpacity="1" />
             <stop offset="95%" stopColor={lineColor} stopOpacity="1" />
@@ -116,7 +186,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
               <path
                 d={pathD}
                 fill="none"
-                stroke="url(#map-path-gradient)"
+                stroke={`url(#map-path-gradient-${lineColor.replace('#', '')})`}
                 strokeWidth="1.5"
                 strokeDasharray="400"
                 strokeDashoffset="400"

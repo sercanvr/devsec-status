@@ -181,11 +181,11 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                   <th className="py-3 px-1 text-left">{t('table.creator')}</th>
                   <th className="py-3 px-2 text-center">{t('table.type')}</th>
                   <th className="py-3 px-2 text-left">{t('table.popularity')}</th>
-                  <th className="py-3 px-3 text-center">{t('table.momentum')}</th>
-                  <th className="py-3 px-3 text-center">{t('table.latestVersion')}</th>
-                  <th className="py-3 px-1.5 text-center">{t('table.community')}</th>
-                  <th className="py-3 px-2 text-center">{t('table.ecosystem')}</th>
-                  <th className="py-3 px-2.5 text-center">{t('table.github')}</th>
+                  <th className="py-3 px-1 text-center">{t('table.momentum')}</th>
+                  <th className="py-3 px-1 text-center">{t('table.latestVersion')}</th>
+                  <th className="py-3 px-1 text-center">{t('table.community')}</th>
+                  <th className="py-3 px-1.5 text-center">{t('table.ecosystem')}</th>
+                  <th className="py-3 px-3 text-center">{t('table.github')}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
@@ -322,8 +322,8 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 5. İvmelenme - Shifted right with more spacing, yellow '-' badge when zero */}
-      <td className="py-3 px-3 text-center">
+      {/* 5. İvmelenme - Compact left padding */}
+      <td className="py-3 px-1 text-center">
         {entry.momentum.newReposLast30Days > 0 ? (
           <div className="inline-flex items-center gap-1 font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
             <TrendingUp className="w-3 h-3" />
@@ -339,15 +339,15 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         )}
       </td>
 
-      {/* 6. GÜNCEL SÜRÜM - Orange background, white text, spacious & no wrap */}
-      <td className="py-3 px-3 text-center">
+      {/* 6. GÜNCEL SÜRÜM - Compact padding, close to momentum */}
+      <td className="py-3 px-1 text-center">
         <span className="font-mono text-[10px] sm:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-block shadow-2xs">
           {cleanVersion}
         </span>
       </td>
 
-      {/* 7. TOPLULUK & KATKIDA BULUNANLAR */}
-      <td className="py-3 px-1.5 text-center overflow-visible">
+      {/* 7. TOPLULUK & KATKIDA BULUNANLAR - Shifted left */}
+      <td className="py-3 px-1 text-center overflow-visible">
         <div className="flex items-center justify-center -space-x-1.5 overflow-visible">
           {contributors.slice(0, 3).map((c, idx) => (
             <div key={c.login + idx} className="relative group/contributor inline-block hover:z-30">
@@ -380,8 +380,8 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 8. CANLI EKOSİSTEM HACMİ */}
-      <td className="py-3 px-2 text-center">
+      {/* 8. CANLI EKOSİSTEM HACMİ - Shifted left */}
+      <td className="py-3 px-1.5 text-center">
         <div className="space-y-0.5 text-center">
           <div className="font-mono font-bold text-xs text-foreground flex items-center justify-center gap-1">
             <GitFork className="w-3 h-3 text-neutral-400" />
@@ -396,18 +396,18 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 9. GİTHUB (Direct Link) */}
-      <td className="py-3 px-2.5 text-center whitespace-nowrap">
+      {/* 9. GİTHUB (Direct Link) - Generous space for full "GitHub" text */}
+      <td className="py-3 px-3 text-center whitespace-nowrap">
         <a
           href={cleanGithubUrl}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${cleanName} GitHub`}
           title={`${cleanName} GitHub`}
-          className="inline-flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-700 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-2xs"
+          className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-colors shadow-2xs whitespace-nowrap"
         >
-          <span className="text-[11px]">Git</span>
-          <ExternalLink className="w-3 h-3" />
+          <span>GitHub</span>
+          <ExternalLink className="w-3.5 h-3.5" />
         </a>
       </td>
     </tr>
