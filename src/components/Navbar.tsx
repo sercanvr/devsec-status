@@ -69,7 +69,7 @@ export const Navbar: React.FC = () => {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
               <NavLink
                 to="/security"
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'

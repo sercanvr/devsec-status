@@ -25,14 +25,14 @@ export const GridVignetteBackground: React.FC<GridVignetteBackgroundProps> = ({
       aria-hidden="true"
       className={cn(
         "fixed inset-0 z-0 pointer-events-none transition-opacity duration-300",
-        "bg-[image:linear-gradient(to_right,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.08)_1px,transparent_1px)] opacity-50",
-        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.10)_1px,transparent_1px)] dark:opacity-60",
+        "bg-[image:linear-gradient(to_right,rgba(0,0,0,0.13)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.13)_1px,transparent_1px)] opacity-60",
+        "dark:bg-[image:linear-gradient(to_right,rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.15)_1px,transparent_1px)] dark:opacity-75",
         className
       )}
       style={{
         backgroundSize: `${size}px ${size}px`,
-        maskImage: `radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 90%)`,
-        WebkitMaskImage: `radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 90%)`,
+        maskImage: `radial-gradient(ellipse 80% 80% at 50% 50%, black 45%, transparent 95%)`,
+        WebkitMaskImage: `radial-gradient(ellipse 80% 80% at 50% 50%, black 45%, transparent 95%)`,
       }}
     />
   );
