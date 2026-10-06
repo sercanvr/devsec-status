@@ -50,7 +50,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-            <WorldMap lineColor="#10B981" className="opacity-30 dark:opacity-20" />
+            <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
               {/* Col 1: Offensive Security - Centered */}
@@ -67,31 +67,34 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
-                    <div className="flex items-center gap-2.5 text-left">
-                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                        <PieChartIcon className="w-4 h-4" />
-                      </div>
-                      <div>
-                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                          {t('showcase.secResearchVolume')}
+                  {/* Unified Frosted Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
                         </div>
-                        <div className="font-bold text-sm text-foreground">420,000+ ★</div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.secResearchVolume')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">420,000+ ★</div>
+                        </div>
                       </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        +32%
+                      </span>
                     </div>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                      +32%
-                    </span>
-                  </div>
 
-                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                      {t('showcase.secOffensiveTitle')}
-                    </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                        {t('showcase.secOffensiveDesc')}
-                      </p>
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                        {t('showcase.secOffensiveTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secOffensiveDesc')}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -113,31 +116,34 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
-                    <div className="flex items-center gap-2.5 text-left">
-                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                        <PieChartIcon className="w-4 h-4" />
-                      </div>
-                      <div>
-                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                          {t('showcase.secVulnScan')}
+                  {/* Unified Frosted Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
                         </div>
-                        <div className="font-bold text-sm text-foreground">85,000+ Repo</div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.secVulnScan')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">85,000+ Repo</div>
+                        </div>
                       </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 border border-blue-500/20">
+                        +48%
+                      </span>
                     </div>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 border border-blue-500/20">
-                      +48%
-                    </span>
-                  </div>
 
-                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                      {t('showcase.secDefensiveTitle')}
-                    </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                        {t('showcase.secDefensiveDesc')}
-                      </p>
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                        {t('showcase.secDefensiveTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secDefensiveDesc')}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -159,31 +165,34 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg flex items-center justify-between">
-                    <div className="flex items-center gap-2.5 text-left">
-                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                        <PieChartIcon className="w-4 h-4" />
-                      </div>
-                      <div>
-                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                          {t('showcase.totalEcosystem')}
+                  {/* Unified Frosted Glass Showcase Card */}
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                    <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                      <div className="flex items-center gap-2.5 text-left">
+                        <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                          <PieChartIcon className="w-4 h-4" />
                         </div>
-                        <div className="font-bold text-sm text-foreground">1,250,000+</div>
+                        <div>
+                          <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                            {t('showcase.totalEcosystem')}
+                          </div>
+                          <div className="font-bold text-sm text-foreground">1,250,000+</div>
+                        </div>
                       </div>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        +28%
+                      </span>
                     </div>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                      +28%
-                    </span>
-                  </div>
 
-                  <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                      {t('showcase.secStackTitle')}
-                    </h3>
-                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                        {t('showcase.secStackDesc')}
-                      </p>
+                    <div className="pt-3.5 text-center">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                        {t('showcase.secStackTitle')}
+                      </h3>
+                      <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                        <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                          {t('showcase.secStackDesc')}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -203,7 +212,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
-          <WorldMap lineColor="#E36A17" className="opacity-30 dark:opacity-20" />
+          <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
           <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
@@ -228,45 +237,46 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Floating Metric Card - Centered with blur show-through */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
-                  <div className="flex items-center gap-2.5 text-left">
-                    <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                      <PieChartIcon className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                        {t('showcase.totalStars')}
+                {/* Unified Frosted Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
                       </div>
-                      <div className="font-bold text-sm text-foreground">1,480,210 ★</div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalStars')}
+                        </div>
+                        <div className="font-bold text-sm text-foreground">1,480,210 ★</div>
+                      </div>
+                    </div>
+
+                    {/* Mini Sparkline Chart */}
+                    <div className="flex items-center gap-2">
+                      <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
+                        <path
+                          d="M 2 20 Q 15 18, 25 10 T 48 3"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
+                        +%25.5
+                      </span>
                     </div>
                   </div>
 
-                  {/* Mini Sparkline Chart */}
-                  <div className="flex items-center gap-2">
-                    <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
-                      <path
-                        d="M 2 20 Q 15 18, 25 10 T 48 3"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
-                      +%25.5
-                    </span>
-                  </div>
-                </div>
-
-                {/* Title & Description - Protected with Glass Backdrop */}
-                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                    {t('sections.languages')}
-                  </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.languagesDesc')}
-                    </p>
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('sections.languages')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.languagesDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -296,40 +306,41 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Floating Metric Card - Centered with blur show-through */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
-                  <div className="flex items-center gap-2.5 text-left">
-                    <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                      <PieChartIcon className="w-4 h-4" />
+                {/* Unified Frosted Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalEngagements')}
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="font-bold text-sm text-foreground">2,120,490</span>
+                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
+                            +%49
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                        {t('showcase.totalEngagements')}
-                      </div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="font-bold text-sm text-foreground">2,120,490</span>
-                        <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
-                          +%49
-                        </span>
-                      </div>
+
+                    <div className="text-right">
+                      <div className="text-[10px] font-mono text-neutral-400">{t('showcase.grossMomentum')}</div>
+                      <div className="text-xs font-bold font-mono text-foreground">%10.5</div>
                     </div>
                   </div>
 
-                  <div className="text-right">
-                    <div className="text-[10px] font-mono text-neutral-400">{t('showcase.grossMomentum')}</div>
-                    <div className="text-xs font-bold font-mono text-foreground">%10.5</div>
-                  </div>
-                </div>
-
-                {/* Title & Description - Protected with Glass Backdrop */}
-                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                    {t('sections.frameworks')}
-                  </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.frameworksDesc')}
-                    </p>
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('sections.frameworks')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.frameworksDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -359,45 +370,46 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Floating Metric Card - Matching Columns 1 & 2 */}
-                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/45 dark:bg-black/35 backdrop-blur-md border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex items-center justify-between">
-                  <div className="flex items-center gap-2.5 text-left">
-                    <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
-                      <PieChartIcon className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
-                        {t('showcase.totalDatabases')}
+                {/* Unified Frosted Glass Showcase Card */}
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-white/40 dark:bg-black/30 backdrop-blur-xl border border-neutral-200/70 dark:border-white/10 shadow-lg shadow-black/5 flex flex-col justify-between">
+                  <div className="flex items-center justify-between pb-3.5 border-b border-neutral-200/50 dark:border-white/10">
+                    <div className="flex items-center gap-2.5 text-left">
+                      <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
+                        <PieChartIcon className="w-4 h-4" />
                       </div>
-                      <div className="font-bold text-sm text-foreground">890,400 ★</div>
+                      <div>
+                        <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
+                          {t('showcase.totalDatabases')}
+                        </div>
+                        <div className="font-bold text-sm text-foreground">890,400 ★</div>
+                      </div>
+                    </div>
+
+                    {/* Mini Sparkline Chart */}
+                    <div className="flex items-center gap-2">
+                      <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
+                        <path
+                          d="M 2 18 Q 15 15, 25 8 T 48 4"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                        +18.4%
+                      </span>
                     </div>
                   </div>
 
-                  {/* Mini Sparkline Chart */}
-                  <div className="flex items-center gap-2">
-                    <svg className="w-12 h-6 text-[#0066FF]" viewBox="0 0 50 25" fill="none">
-                      <path
-                        d="M 2 18 Q 15 15, 25 8 T 48 4"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                      />
-                    </svg>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                      +18.4%
-                    </span>
-                  </div>
-                </div>
-
-                {/* Title & Description - Protected with Glass Backdrop */}
-                <div className="w-full rounded-2xl p-3 bg-white/50 dark:bg-black/40 backdrop-blur-md border border-neutral-200/60 dark:border-white/10 shadow-sm">
-                  <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
-                    {t('sections.databases')}
-                  </h3>
-                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
-                    <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.databasesDesc')}
-                    </p>
+                  <div className="pt-3.5 text-center">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-neutral-950 dark:text-white drop-shadow-sm">
+                      {t('sections.databases')}
+                    </h3>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
+                      <p className="text-xs sm:text-sm font-medium text-neutral-700 dark:text-neutral-200 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.databasesDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
