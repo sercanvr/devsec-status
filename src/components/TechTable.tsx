@@ -5,7 +5,6 @@ import {
   TrendingUp,
   Sparkles,
   ArrowUpDown,
-  Filter,
   Check,
   GitFork,
 } from 'lucide-react';
@@ -93,45 +92,45 @@ const CustomDropdown: React.FC<{
 };
 
 export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }) => {
-  const [selectedStatus, setSelectedStatus] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<string>('stars');
+  const [sortBy, setSortBy] = useState<string>('name');
 
   // Compute maximum stars dynamically for accurate scaling
   const maxStars = useMemo(() => {
     return Math.max(...entries.map((item) => item.popularity.totalStars), 1);
   }, [entries]);
 
-  // Filter & Sort entries
+  // Sort entries
   const processedEntries = useMemo(() => {
-    let result = [...entries];
+    const result = [...entries];
 
-    // Status filter
-    if (selectedStatus === 'trending') {
-      result = result.filter((item) => item.momentum.newReposLast30Days > 50);
-    }
-
-    // Sort
-    if (sortBy === 'stars') {
+    if (sortBy === 'name') {
+      result.sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+    } else if (sortBy === 'stars') {
       result.sort((a, b) => b.popularity.totalStars - a.popularity.totalStars);
     } else if (sortBy === 'momentum') {
       result.sort((a, b) => b.momentum.newReposLast30Days - a.momentum.newReposLast30Days);
-    } else if (sortBy === 'name') {
-      result.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortBy === 'ecosystem') {
+      result.sort((a, b) => b.popularity.totalRepos - a.popularity.totalRepos);
+    } else if (sortBy === 'year') {
+      const getYear = (item: TechEntry) => {
+        const match = (item.creator?.releaseDate || '').match(/\b(19\d\d|20\d\d)\b/);
+        return match ? parseInt(match[1], 10) : 0;
+      };
+      result.sort((a, b) => {
+        const yearDiff = getYear(b) - getYear(a);
+        return yearDiff !== 0 ? yearDiff : b.popularity.totalStars - a.popularity.totalStars;
+      });
     }
 
     return result;
-  }, [entries, selectedStatus, sortBy]);
-
-  const statusOptions: DropdownOption[] = [
-    { value: 'all', label: 'Tüm Durumlar (All)' },
-    { value: 'active', label: 'Aktif (Active)' },
-    { value: 'trending', label: 'Trending (>50 Repo)' },
-  ];
+  }, [entries, sortBy]);
 
   const sortOptions: DropdownOption[] = [
+    { value: 'name', label: 'İsim (A-Z)' },
     { value: 'stars', label: 'En Çok Yıldız' },
     { value: 'momentum', label: 'En Yüksek İvme' },
-    { value: 'name', label: 'İsim (A-Z)' },
+    { value: 'ecosystem', label: 'Ekosistem Hacmi' },
+    { value: 'year', label: 'Çıkış Yılı' },
   ];
 
   return (
@@ -140,7 +139,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
       <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl transition-all">
         {/* Table Container Card */}
         <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[28px] overflow-hidden transition-colors duration-200 shadow-inner">
-          {/* Table Top Header Bar: Title + Status Dropdown + Sort Dropdown */}
+          {/* Table Top Header Bar: Title + Single Sort Dropdown */}
           <div className="px-5 py-4 sm:px-6 sm:py-5 border-b border-neutral-200/80 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-4 bg-neutral-50/60 dark:bg-neutral-900/50">
             <div className="flex items-center gap-3">
               {icon && (
@@ -156,15 +155,8 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
               </h2>
             </div>
 
-            {/* Filter Dropdowns Matching LanguageSwitcher UI */}
+            {/* Single Sort Dropdown Matching LanguageSwitcher UI */}
             <div className="flex items-center gap-2.5 ml-auto">
-              <CustomDropdown
-                value={selectedStatus}
-                options={statusOptions}
-                onChange={setSelectedStatus}
-                icon={<Filter className="w-3.5 h-3.5 text-neutral-400" />}
-                ariaLabel="Durum Filtresi"
-              />
               <CustomDropdown
                 value={sortBy}
                 options={sortOptions}
@@ -228,7 +220,6 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
-  const cleanSubCategory = entry.subCategory ? sanitizeText(entry.subCategory) : '';
   const cleanCreatorName = entry.creator
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
     : 'Açık Kaynak';
@@ -268,9 +259,6 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           <div>
             <div className="font-bold text-sm text-foreground group-hover:text-[#0066FF] dark:group-hover:text-[#CEFF00] transition-colors whitespace-nowrap">
               {cleanName}
-            </div>
-            <div className="text-[10px] sm:text-[11px] text-neutral-500 dark:text-neutral-400 truncate max-w-[110px] sm:max-w-[130px]">
-              {cleanSubCategory || entry.category}
             </div>
           </div>
         </div>
@@ -417,7 +405,6 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
-  const cleanSubCategory = entry.subCategory ? sanitizeText(entry.subCategory) : '';
   const cleanCreatorName = entry.creator
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
     : 'Açık Kaynak';
@@ -437,7 +424,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       id={entry.id}
       className="p-4 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200/90 dark:border-neutral-800 space-y-3.5 transition-colors"
     >
-      {/* Top: Blurred Icon Container + Name + Category */}
+      {/* Top: Blurred Icon Container + Name */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-2xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-xs">
@@ -455,9 +442,6 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           </div>
           <div>
             <h3 className="font-bold text-base text-foreground">{cleanName}</h3>
-            <span className="text-[11px] text-neutral-500 dark:text-neutral-400">
-              {cleanSubCategory || entry.category}
-            </span>
           </div>
         </div>
 

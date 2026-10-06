@@ -39,9 +39,9 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-4 z-50 my-3">
-        <header className="w-full rounded-2xl border border-[#C7C7C7] dark:border-neutral-700 bg-[#DFDFDF]/75 dark:bg-[#1E1E1E]/80 backdrop-blur-xl backdrop-saturate-150 shadow-xl transition-colors duration-200 relative">
+        <header className="w-full rounded-2xl border-[1.5px] border-neutral-400/90 dark:border-white/25 bg-[#DFDFDF]/80 dark:bg-[#1E1E1E]/85 backdrop-blur-xl backdrop-saturate-150 shadow-xl shadow-black/5 dark:shadow-[0_0_24px_rgba(255,255,255,0.06)] transition-colors duration-200 relative">
           {/* Subtle bottom-to-top accent gradient glow extending up smoothly */}
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#CEFF00]/[0.06] via-[#CEFF00]/[0.015] to-transparent dark:from-[#CEFF00]/[0.05] dark:via-[#CEFF00]/[0.01] dark:to-transparent pointer-events-none z-0" />
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#CEFF00]/[0.08] via-[#CEFF00]/[0.02] to-transparent dark:from-[#CEFF00]/[0.06] dark:via-[#CEFF00]/[0.015] to-transparent pointer-events-none z-0" />
 
           <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 sm:gap-3 relative z-10">
             {/* Left: Logo (Page reload on click) */}

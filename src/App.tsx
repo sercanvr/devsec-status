@@ -8,12 +8,29 @@ import { GridVignetteBackground } from './components/GridVignetteBackground';
 import { SoftwarePage } from './pages/SoftwarePage';
 import { SecurityPage } from './pages/SecurityPage';
 
+import { highlightTechElement } from './lib/highlight';
+
 export const App: React.FC = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
     document.title = t('common.pageTitle');
   }, [t, i18n.language]);
+
+  useEffect(() => {
+    const triggerHashHighlight = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        setTimeout(() => {
+          highlightTechElement(hash);
+        }, 200);
+      }
+    };
+
+    triggerHashHighlight();
+    window.addEventListener('hashchange', triggerHashHighlight);
+    return () => window.removeEventListener('hashchange', triggerHashHighlight);
+  }, []);
 
   return (
     <BrowserRouter>
