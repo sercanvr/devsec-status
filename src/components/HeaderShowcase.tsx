@@ -267,21 +267,23 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
           {/* 3 Columns Showcase Grid - All Centered */}
           <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
             {/* =========================================================================
-                Column 1: Programlama Dilleri (Language Top 1: Python / C) - CENTERED
+                Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6">
+            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 h-full my-auto">
               <div className="space-y-4 w-full flex flex-col items-center">
-                {/* Top Mini Badges: Top 1 Language */}
-                <div className="flex justify-center items-center gap-2 flex-wrap">
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
-                    <span>{t('showcase.topLanguageBadge')}</span>
-                    <span className="text-[#0066FF] font-bold">Python</span>
-                  </div>
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    <span>{t('showcase.top1')}</span>
-                    <span className="text-emerald-500 font-normal">251k+ ★</span>
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[64px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topLanguageBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">Python</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">251k+ ★</span>
+                    </div>
                   </div>
                 </div>
 
@@ -315,14 +317,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered */}
-                <div className="pt-1">
+                {/* Title & Description - Centered & Balanced Height */}
+                <div className="pt-1 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
                     {t('sections.languages')}
                   </h3>
-                  <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed max-w-sm mx-auto">
-                    {t('showcase.languagesDesc')}
-                  </p>
+                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                      {t('showcase.languagesDesc')}
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -331,21 +335,23 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             </div>
 
             {/* =========================================================================
-                Column 2: Framework & Kütüphaneler (Framework Top 1: React) - CENTERED
+                Column 2: Framework & Kütüphaneler (Framework Top 1: React) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
+            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0 h-full my-auto">
               <div className="space-y-4 w-full flex flex-col items-center">
-                {/* Top Mini Badges: Top 1 Framework */}
-                <div className="flex justify-center items-center gap-2 flex-wrap">
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
-                    <span>{t('showcase.topFrameworkBadge')}</span>
-                    <span className="text-[#0066FF] font-bold">React</span>
-                  </div>
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <GitFork className="w-3.5 h-3.5 text-emerald-500" />
-                    <span>{t('showcase.top1')}</span>
-                    <span className="text-emerald-500 font-normal">230k+ ★</span>
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[64px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topFrameworkBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">React</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <GitFork className="w-3.5 h-3.5 text-emerald-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">230k+ ★</span>
+                    </div>
                   </div>
                 </div>
 
@@ -374,14 +380,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered */}
-                <div className="pt-1">
+                {/* Title & Description - Centered & Balanced Height */}
+                <div className="pt-1 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
                     {t('sections.frameworks')}
                   </h3>
-                  <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed max-w-sm mx-auto">
-                    {t('showcase.frameworksDesc')}
-                  </p>
+                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                      {t('showcase.frameworksDesc')}
+                    </p>
+                  </div>
                 </div>
               </div>
 
@@ -390,21 +398,23 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             </div>
 
             {/* =========================================================================
-                Column 3: Veritabanları & Altyapı (Database Top 1: PostgreSQL) - CENTERED
+                Column 3: Veritabanları & Altyapı (Database Top 1: PostgreSQL) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
+            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0 h-full my-auto">
               <div className="space-y-4 w-full flex flex-col items-center">
-                {/* Top Mini Badges: Top 1 Database */}
-                <div className="flex justify-center items-center gap-2 flex-wrap">
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <Database className="w-3.5 h-3.5 text-[#0066FF]" />
-                    <span>{t('showcase.topDatabaseBadge')}</span>
-                    <span className="text-[#0066FF] font-bold">PostgreSQL</span>
-                  </div>
-                  <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    <span>{t('showcase.top1')}</span>
-                    <span className="text-emerald-500 font-normal">140k+ ★</span>
+                {/* Top Mini Badges: Balanced height across all columns */}
+                <div className="min-h-[64px] flex items-center justify-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Database className="w-3.5 h-3.5 text-[#0066FF]" />
+                      <span>{t('showcase.topDatabaseBadge')}</span>
+                      <span className="text-[#0066FF] font-bold">PostgreSQL</span>
+                    </div>
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                      <span>{t('showcase.top1')}</span>
+                      <span className="text-emerald-500 font-normal">140k+ ★</span>
+                    </div>
                   </div>
                 </div>
 
@@ -438,14 +448,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Title & Description - Centered */}
-                <div className="pt-1">
+                {/* Title & Description - Centered & Balanced Height */}
+                <div className="pt-1 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl text-foreground tracking-tight">
                     {t('sections.databases')}
                   </h3>
-                  <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed max-w-sm mx-auto">
-                    {t('showcase.databasesDesc')}
-                  </p>
+                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                    <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
+                      {t('showcase.databasesDesc')}
+                    </p>
+                  </div>
                 </div>
               </div>
 

@@ -177,7 +177,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                 <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
                   <th className="py-3 pl-3 pr-1 sm:pl-4 sm:pr-2 text-left">{t('table.technology')}</th>
                   <th className="py-3 px-1 text-left">{t('table.creator')}</th>
-                  <th className="py-3 px-1.5 text-center">{t('table.type')}</th>
+                  <th className="py-3 pl-1 pr-3 text-left">{t('table.type')}</th>
                   <th className="py-3 px-2 text-left">{t('table.popularity')}</th>
                   <th className="py-3 px-2 text-center">{t('table.momentum')}</th>
                   <th className="py-3 px-2 text-center">{t('table.latestVersion')}</th>
@@ -297,8 +297,8 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 3. Tür (Type Pill) */}
-      <td className="py-3 px-1.5 text-center">
+      {/* 3. Tür (Type Pill) - Shifted left */}
+      <td className="py-3 pl-1 pr-3 text-left">
         <span className="inline-block px-2 py-0.5 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
           {entry.category}
         </span>
@@ -328,9 +328,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 6. GÜNCEL SÜRÜM - High contrast background pill + multi-line wrapping */}
+      {/* 6. GÜNCEL SÜRÜM - Orange background, white text, compact padding */}
       <td className="py-3 px-2 text-center">
-        <span className="font-mono text-[10px] sm:text-[11px] font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-200/90 dark:bg-neutral-800/90 px-2 py-1 rounded-md border border-neutral-300/80 dark:border-neutral-700/80 max-w-[125px] break-words leading-tight inline-block shadow-2xs">
+        <span className="font-mono text-[10px] sm:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 w-fit max-w-[105px] break-words leading-tight inline-block shadow-2xs">
           {cleanVersion}
         </span>
       </td>
@@ -471,7 +471,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           </span>
           <span className="text-[10px] text-neutral-400">({cleanReleaseDate})</span>
         </div>
-        <span className="font-mono text-[10px] font-bold bg-neutral-200/80 dark:bg-neutral-800 px-2 py-0.5 rounded text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700">
+        <span className="font-mono text-[10px] font-bold bg-orange-600 dark:bg-orange-500/90 text-white px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50">
           {cleanVersion}
         </span>
       </div>

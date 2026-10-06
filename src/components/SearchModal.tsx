@@ -107,9 +107,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
       aria-modal="true"
       className="fixed inset-0 z-[1050] flex items-start justify-center pt-14 sm:pt-20 px-4 bg-black/75 backdrop-blur-md animate-fade-in"
     >
-      {/* Luxury Frosted-Glass Outer Frame / Border */}
+      {/* Luxury Frosted-Glass Outer Frame / Border - Distinct background & visible border */}
       <div
-        className="w-full max-w-2xl p-2 sm:p-2.5 rounded-[32px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl animate-scale-up"
+        className="w-full max-w-2xl p-2 sm:p-2.5 rounded-[32px] bg-neutral-300/70 dark:bg-neutral-800/80 border border-neutral-400/70 dark:border-neutral-600/70 backdrop-blur-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="w-full bg-[#ECECEC] dark:bg-[#141414] rounded-[24px] border border-neutral-300/90 dark:border-neutral-800/90 shadow-2xl overflow-hidden flex flex-col max-h-[75vh] text-foreground">
