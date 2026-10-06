@@ -8,6 +8,7 @@ import {
   Check,
   GitFork,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
 import { SegmentedProgressBar } from './SegmentedProgressBar';
@@ -92,7 +93,9 @@ const CustomDropdown: React.FC<{
 };
 
 export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }) => {
-  const [sortBy, setSortBy] = useState<string>('name');
+  const { t } = useTranslation();
+  // Default sort is ALWAYS 'stars' (En Çok Yıldız) as requested
+  const [sortBy, setSortBy] = useState<string>('stars');
 
   // Compute maximum stars dynamically for accurate scaling
   const maxStars = useMemo(() => {
@@ -104,7 +107,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
     const result = [...entries];
 
     if (sortBy === 'name') {
-      result.sort((a, b) => a.name.localeCompare(b.name, 'tr'));
+      result.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortBy === 'stars') {
       result.sort((a, b) => b.popularity.totalStars - a.popularity.totalStars);
     } else if (sortBy === 'momentum') {
@@ -126,17 +129,17 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
   }, [entries, sortBy]);
 
   const sortOptions: DropdownOption[] = [
-    { value: 'name', label: 'İsim (A-Z)' },
-    { value: 'stars', label: 'En Çok Yıldız' },
-    { value: 'momentum', label: 'En Yüksek İvme' },
-    { value: 'ecosystem', label: 'Ekosistem Hacmi' },
-    { value: 'year', label: 'Çıkış Yılı' },
+    { value: 'name', label: t('table.sortName') },
+    { value: 'stars', label: t('table.sortStars') },
+    { value: 'momentum', label: t('table.sortMomentum') },
+    { value: 'ecosystem', label: t('table.sortEcosystem') },
+    { value: 'year', label: t('table.sortYear') },
   ];
 
   return (
     <section id={id} className="w-full space-y-4 pt-2">
-      {/* Luxury Frosted-Glass Outer Frame / Border */}
-      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/50 dark:bg-white/[0.04] border border-neutral-300/80 dark:border-white/[0.08] backdrop-blur-2xl shadow-2xl transition-all">
+      {/* Luxury Frosted-Glass Outer Frame / Border - High contrast & distinctive */}
+      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-2xl shadow-2xl transition-all">
         {/* Table Container Card */}
         <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[28px] overflow-hidden transition-colors duration-200 shadow-inner">
           {/* Table Top Header Bar: Title + Single Sort Dropdown */}
@@ -162,7 +165,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                 options={sortOptions}
                 onChange={setSortBy}
                 icon={<ArrowUpDown className="w-3.5 h-3.5 text-neutral-400" />}
-                ariaLabel="Sıralama Ölçütü"
+                ariaLabel={t('table.sortAria')}
               />
             </div>
           </div>
@@ -172,15 +175,15 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
             <table className="w-full text-left border-collapse table-auto">
               <thead>
                 <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
-                  <th className="py-3 px-3 sm:px-4">TEKNOLOJİ</th>
-                  <th className="py-3 px-2">GELİŞTİRİCİ</th>
-                  <th className="py-3 px-1.5 text-center">TÜR</th>
-                  <th className="py-3 px-2 text-left">POPÜLARİTE & YILDIZ BARI</th>
-                  <th className="py-3 px-2 text-center">İVMELENME</th>
-                  <th className="py-3 px-2 text-center">GÜNCEL SÜRÜM</th>
-                  <th className="py-3 px-1.5 text-center">TOPLULUK</th>
-                  <th className="py-3 px-2 text-center">EKOSİSTEM HACMİ</th>
-                  <th className="py-3 px-2.5 text-center">GİTHUB</th>
+                  <th className="py-3 pl-3 pr-1 sm:pl-4 sm:pr-2 text-left">{t('table.technology')}</th>
+                  <th className="py-3 px-1 text-left">{t('table.creator')}</th>
+                  <th className="py-3 px-1.5 text-center">{t('table.type')}</th>
+                  <th className="py-3 px-2 text-left">{t('table.popularity')}</th>
+                  <th className="py-3 px-2 text-center">{t('table.momentum')}</th>
+                  <th className="py-3 px-2 text-center">{t('table.latestVersion')}</th>
+                  <th className="py-3 px-1.5 text-center">{t('table.community')}</th>
+                  <th className="py-3 px-2 text-center">{t('table.ecosystem')}</th>
+                  <th className="py-3 px-2.5 text-center">{t('table.github')}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
@@ -201,7 +204,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
           {/* Empty Fallback */}
           {processedEntries.length === 0 && (
             <div className="py-12 text-center text-neutral-500 dark:text-neutral-400 text-xs">
-              Kritere uygun teknoloji bulunamadı.
+              {t('table.noResults')}
             </div>
           )}
         </div>
@@ -216,13 +219,14 @@ interface TableRowProps {
 }
 
 const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
+  const { t } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
   const cleanCreatorName = entry.creator
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
-    : 'Açık Kaynak';
+    : t('table.openSource');
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
 
@@ -239,10 +243,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       id={entry.id}
       className="group hover:bg-neutral-50 dark:hover:bg-neutral-800/30 transition-colors"
     >
-      {/* 1. Teknoloji (Item Name) - Enlarged Logo in Blurred High-Contrast Square */}
-      <td className="py-3 px-3 sm:px-4">
+      {/* 1. Teknoloji (Item Name) - Compact right-padding to shift Creator left */}
+      <td className="py-3 pl-3 pr-1 sm:pl-4 sm:pr-2">
         <div className="flex items-center gap-2.5">
-          {/* Logo container: dark in light theme, light in dark theme, blurred */}
           <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1 flex items-center justify-center shrink-0 shadow-xs">
             <img
               src={entry.iconUrl}
@@ -264,8 +267,8 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 2. Geliştirici (Creator + Full Gün Ay Yıl Date) */}
-      <td className="py-3 px-2">
+      {/* 2. Geliştirici (Shifted Left, multi-line wrap if text is long) */}
+      <td className="py-3 px-1">
         <div className="flex items-center gap-1.5">
           {entry.creator?.avatarUrl ? (
             <img
@@ -284,11 +287,11 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             </div>
           )}
           <div>
-            <div className="font-semibold text-xs text-foreground truncate max-w-[105px] sm:max-w-[125px]">
+            <div className="font-semibold text-xs text-foreground max-w-[125px] break-words leading-tight">
               {cleanCreatorName}
             </div>
-            <div className="text-[10px] text-neutral-500 dark:text-neutral-400 truncate max-w-[105px]">
-              {cleanReleaseDate || 'Maintainer'}
+            <div className="text-[10px] text-neutral-500 dark:text-neutral-400 max-w-[125px] break-words leading-tight mt-0.5">
+              {cleanReleaseDate || t('table.maintainer')}
             </div>
           </div>
         </div>
@@ -325,14 +328,14 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 6. GÜNCEL SÜRÜM */}
+      {/* 6. GÜNCEL SÜRÜM - High contrast background pill + multi-line wrapping */}
       <td className="py-3 px-2 text-center">
-        <span className="font-mono text-[10px] sm:text-[11px] font-semibold text-neutral-700 dark:text-neutral-300 bg-neutral-200/60 dark:bg-neutral-800 px-1.5 py-0.5 rounded border border-neutral-300/60 dark:border-neutral-700 whitespace-nowrap max-w-[110px] truncate inline-block">
+        <span className="font-mono text-[10px] sm:text-[11px] font-bold text-neutral-800 dark:text-neutral-200 bg-neutral-200/90 dark:bg-neutral-800/90 px-2 py-1 rounded-md border border-neutral-300/80 dark:border-neutral-700/80 max-w-[125px] break-words leading-tight inline-block shadow-2xs">
           {cleanVersion}
         </span>
       </td>
 
-      {/* 7. TOPLULUK & KATKIDA BULUNANLAR (Directly in Column) */}
+      {/* 7. TOPLULUK & KATKIDA BULUNANLAR */}
       <td className="py-3 px-1.5 text-center overflow-visible">
         <div className="flex items-center justify-center -space-x-1.5 overflow-visible">
           {contributors.slice(0, 3).map((c, idx) => (
@@ -401,13 +404,14 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 };
 
 const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
+  const { t } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
   const cleanCreatorName = entry.creator
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
-    : 'Açık Kaynak';
+    : t('table.openSource');
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
 
@@ -467,7 +471,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           </span>
           <span className="text-[10px] text-neutral-400">({cleanReleaseDate})</span>
         </div>
-        <span className="font-mono text-[10px] bg-neutral-200/70 dark:bg-neutral-800 px-2 py-0.5 rounded text-neutral-700 dark:text-neutral-300 font-semibold border border-neutral-300/60 dark:border-neutral-700">
+        <span className="font-mono text-[10px] font-bold bg-neutral-200/80 dark:bg-neutral-800 px-2 py-0.5 rounded text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700">
           {cleanVersion}
         </span>
       </div>
@@ -505,7 +509,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             ))}
           </div>
           <span className="text-[11px] text-neutral-500 font-mono">
-            {formattedTotalRepos} depo
+            {formattedTotalRepos} repo
           </span>
         </div>
 
