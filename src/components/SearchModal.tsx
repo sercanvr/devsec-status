@@ -107,12 +107,12 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
       aria-modal="true"
       className="fixed inset-0 z-[1050] flex items-start justify-center pt-14 sm:pt-20 px-4 bg-black/75 backdrop-blur-md animate-fade-in"
     >
-      {/* Luxury Frosted-Glass Outer Frame / Border - Distinct background & visible border */}
+      {/* Luxury Frosted-Glass Outer Frame / Border - Sleek slim frame */}
       <div
-        className="w-full max-w-2xl p-2 sm:p-2.5 rounded-[32px] bg-neutral-300/70 dark:bg-neutral-800/80 border border-neutral-400/70 dark:border-neutral-600/70 backdrop-blur-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] animate-scale-up"
+        className="w-full max-w-2xl p-1.5 rounded-[26px] bg-neutral-300/70 dark:bg-neutral-800/80 border border-neutral-400/70 dark:border-neutral-600/70 backdrop-blur-2xl shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] animate-scale-up"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full bg-[#ECECEC] dark:bg-[#141414] rounded-[24px] border border-neutral-300/90 dark:border-neutral-800/90 shadow-2xl overflow-hidden flex flex-col max-h-[75vh] text-foreground">
+        <div className="w-full bg-[#ECECEC] dark:bg-[#141414] rounded-[20px] border border-neutral-300/90 dark:border-neutral-800/90 shadow-2xl overflow-hidden flex flex-col max-h-[75vh] text-foreground">
           {/* Search Input Bar */}
           <div className="relative flex items-center px-4 py-3.5 border-b border-neutral-300 dark:border-neutral-800 bg-neutral-100/50 dark:bg-neutral-900/50">
           <Search className="w-5 h-5 text-neutral-400 shrink-0 mr-3" />

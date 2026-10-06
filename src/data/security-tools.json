@@ -3,7 +3,7 @@
     "id": "sec-ghidra",
     "name": "Ghidra",
     "category": "security-tool",
-    "iconUrl": "https://ghidra-sre.org/images/GHIDRA_128.png",
+    "iconUrl": "https://github.com/NationalSecurityAgency.png?size=128",
     "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
     "creator": {
       "name": "NSA (National Security Agency)",
@@ -51,7 +51,7 @@
     "id": "sec-metasploit",
     "name": "Metasploit Framework",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/external/source/meterpreter/source/extensions/stdapi/server/stdapi.png",
+    "iconUrl": "https://github.com/rapid7.png?size=128",
     "githubUrl": "https://github.com/rapid7/metasploit-framework",
     "creator": {
       "name": "H. D. Moore (Rapid7)",
@@ -99,7 +99,7 @@
     "id": "sec-sqlmap",
     "name": "sqlmap",
     "category": "security-tool",
-    "iconUrl": "https://sqlmap.org/favicon.ico",
+    "iconUrl": "https://github.com/sqlmapproject.png?size=128",
     "githubUrl": "https://github.com/sqlmapproject/sqlmap",
     "creator": {
       "name": "Bernardo Damele & Miroslav Stampar",
@@ -147,7 +147,7 @@
     "id": "sec-trivy",
     "name": "Trivy",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/aquasecurity/trivy/main/docs/imgs/logo.png",
+    "iconUrl": "https://github.com/aquasecurity.png?size=128",
     "githubUrl": "https://github.com/aquasecurity/trivy",
     "creator": {
       "name": "Teppei Fukuda (Aqua Security)",
@@ -195,7 +195,7 @@
     "id": "sec-nuclei",
     "name": "Nuclei",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/projectdiscovery/nuclei/main/static/nuclei-logo.png",
+    "iconUrl": "https://github.com/projectdiscovery.png?size=128",
     "githubUrl": "https://github.com/projectdiscovery/nuclei",
     "creator": {
       "name": "ProjectDiscovery Team",
@@ -243,7 +243,7 @@
     "id": "sec-hashcat",
     "name": "Hashcat",
     "category": "security-tool",
-    "iconUrl": "https://hashcat.net/favicon.ico",
+    "iconUrl": "https://github.com/hashcat.png?size=128",
     "githubUrl": "https://github.com/hashcat/hashcat",
     "creator": {
       "name": "Jens Steube (atom)",
@@ -291,7 +291,7 @@
     "id": "sec-trufflehog",
     "name": "TruffleHog",
     "category": "security-tool",
-    "iconUrl": "https://trufflesecurity.com/favicon.ico",
+    "iconUrl": "https://github.com/trufflesecurity.png?size=128",
     "githubUrl": "https://github.com/trufflesecurity/trufflehog",
     "creator": {
       "name": "Dylan Ayrey (Truffle Security)",
@@ -339,7 +339,7 @@
     "id": "sec-owasp-zap",
     "name": "OWASP ZAP (Zaproxy)",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap128x128.png",
+    "iconUrl": "https://github.com/zaproxy.png?size=128",
     "githubUrl": "https://github.com/zaproxy/zaproxy",
     "creator": {
       "name": "Simon Bennetts (OWASP)",
@@ -387,7 +387,7 @@
     "id": "sec-nmap",
     "name": "Nmap",
     "category": "security-tool",
-    "iconUrl": "https://nmap.org/images/nmap-logo-256x256.png",
+    "iconUrl": "https://github.com/nmap.png?size=128",
     "githubUrl": "https://github.com/nmap/nmap",
     "creator": {
       "name": "Gordon Lyon (Fyodor)",
@@ -435,7 +435,7 @@
     "id": "sec-john-the-ripper",
     "name": "John the Ripper",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/doc/john.png",
+    "iconUrl": "https://github.com/openwall.png?size=128",
     "githubUrl": "https://github.com/openwall/john",
     "creator": {
       "name": "Solar Designer (Openwall)",
@@ -483,7 +483,7 @@
     "id": "sec-wireshark",
     "name": "Wireshark",
     "category": "security-tool",
-    "iconUrl": "https://www.wireshark.org/assets/icons/wireshark-fin.png",
+    "iconUrl": "https://github.com/wireshark.png?size=128",
     "githubUrl": "https://github.com/wireshark/wireshark",
     "creator": {
       "name": "Gerald Combs",
@@ -531,7 +531,7 @@
     "id": "sec-volatility",
     "name": "Volatility 3",
     "category": "security-tool",
-    "iconUrl": "https://raw.githubusercontent.com/volatilityfoundation/volatility3/main/doc/source/_static/favicon.ico",
+    "iconUrl": "https://github.com/volatilityfoundation.png?size=128",
     "githubUrl": "https://github.com/volatilityfoundation/volatility3",
     "creator": {
       "name": "AAron Walters (Volatility)",

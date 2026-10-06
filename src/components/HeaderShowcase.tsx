@@ -26,11 +26,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
     }
   };
 
-  // Minimalist 3D isometric topographic elevation / map mesh background
+  // Minimalist 3D isometric topographic elevation / map mesh background (Distinct & Prominent)
   const renderBackgroundMesh = () => (
     <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.16] dark:opacity-[0.10]"
+        className="absolute inset-0 w-full h-full opacity-45 dark:opacity-30"
         viewBox="0 0 1200 480"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -38,52 +38,52 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       >
         <defs>
           <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0066FF" stopOpacity="0.8" />
-            <stop offset="50%" stopColor="#0066FF" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#38BDF8" stopOpacity="0.1" />
+            <stop offset="0%" stopColor="#0066FF" stopOpacity="0.9" />
+            <stop offset="50%" stopColor="#38BDF8" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#0066FF" stopOpacity="0.3" />
           </linearGradient>
-          <pattern id="isoDots" width="32" height="32" patternUnits="userSpaceOnUse">
-            <circle cx="16" cy="16" r="1" fill="#0066FF" fillOpacity="0.3" />
+          <pattern id="isoDots" width="36" height="36" patternUnits="userSpaceOnUse">
+            <circle cx="18" cy="18" r="1.2" fill="#0066FF" fillOpacity="0.4" />
           </pattern>
         </defs>
 
         {/* 3D Isometric Elevation Contours / Topo Map Lines */}
         <path
-          d="M -100 360 C 200 340, 350 220, 600 240 C 850 260, 950 140, 1300 120"
-          stroke="url(#mapGradient)"
-          strokeWidth="1.5"
-          strokeDasharray="4 4"
-        />
-        <path
-          d="M -100 400 C 180 380, 380 260, 620 280 C 860 300, 980 180, 1300 160"
+          d="M -100 320 C 180 300, 360 160, 620 200 C 880 240, 980 100, 1300 80"
           stroke="url(#mapGradient)"
           strokeWidth="2"
+          strokeDasharray="5 5"
         />
         <path
-          d="M -100 440 C 160 420, 410 300, 640 320 C 870 340, 1010 220, 1300 200"
+          d="M -100 370 C 160 350, 390 210, 640 240 C 890 270, 1010 140, 1300 120"
           stroke="url(#mapGradient)"
-          strokeWidth="1.5"
-          strokeDasharray="6 6"
+          strokeWidth="2.5"
+        />
+        <path
+          d="M -100 420 C 140 400, 420 260, 660 280 C 900 300, 1040 180, 1300 160"
+          stroke="url(#mapGradient)"
+          strokeWidth="2"
+          strokeDasharray="7 7"
         />
 
-        {/* Isometric Coordinate Ridge Lines */}
+        {/* 3D Isometric Coordinate Mesh / Topo Wireframe */}
         <path
-          d="M 250 80 L 450 240 L 450 420"
+          d="M 150 60 L 380 220 L 380 440"
           stroke="#0066FF"
-          strokeWidth="1"
-          strokeOpacity="0.35"
+          strokeWidth="1.5"
+          strokeOpacity="0.45"
         />
         <path
-          d="M 600 40 L 800 200 L 800 400"
+          d="M 520 30 L 740 190 L 740 420"
           stroke="#0066FF"
-          strokeWidth="1"
-          strokeOpacity="0.35"
+          strokeWidth="1.5"
+          strokeOpacity="0.45"
         />
         <path
-          d="M 950 20 L 1150 180 L 1150 380"
+          d="M 880 10 L 1100 170 L 1100 400"
           stroke="#0066FF"
-          strokeWidth="1"
-          strokeOpacity="0.35"
+          strokeWidth="1.5"
+          strokeOpacity="0.45"
         />
 
         {/* Subtle grid pattern background */}
@@ -98,7 +98,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
       <div className="bg-gradient-to-b from-blue-400/35 dark:from-blue-500/30 to-transparent p-[3px] rounded-[16px] shadow-sm">
         <button
           onClick={() => scrollToSection(targetId)}
-          className="group p-[3px] rounded-[12px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.35)] active:shadow-[0_1px_3px_rgba(0,102,255,0.4)] active:scale-[0.99] transition-all cursor-pointer"
+          className="group p-[3px] rounded-[12px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.35)] active:shadow-[0_1px_3px_rgba(0,102,255,0.4)] active:scale-[0.99] transition-colors duration-150 cursor-pointer"
         >
           <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[8px] px-5 py-2 flex items-center justify-center gap-2">
             <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
@@ -112,9 +112,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   if (mode === 'security') {
     return (
       <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Luxury Frosted-Glass Outer Frame / Distinctive High Contrast Border */}
-        <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-2xl shadow-2xl">
-          <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
+        {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
+        <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
+          <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
             {renderBackgroundMesh()}
 
             <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
@@ -259,9 +259,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   // Default: Software Page Showcase (Programlama Dilleri, Frameworkler, Veritabanları)
   return (
     <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Luxury Frosted-Glass Outer Frame / Distinctive High Contrast Border */}
-      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-2xl shadow-2xl transition-all">
-        <div className="relative rounded-[28px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
+      {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
+        <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
           {renderBackgroundMesh()}
 
           {/* 3 Columns Showcase Grid - All Centered */}

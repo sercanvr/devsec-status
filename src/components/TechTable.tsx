@@ -138,10 +138,10 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
 
   return (
     <section id={id} className="w-full space-y-4 pt-2">
-      {/* Luxury Frosted-Glass Outer Frame / Border - High contrast & distinctive */}
-      <div className="p-2 sm:p-2.5 rounded-[36px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-2xl shadow-2xl transition-all">
+      {/* Luxury Frosted-Glass Outer Frame - Slimmer border, isolated from hover bugs */}
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
         {/* Table Container Card */}
-        <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[28px] overflow-hidden transition-colors duration-200 shadow-inner">
+        <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[24px] overflow-hidden transition-colors duration-200 shadow-inner">
           {/* Table Top Header Bar: Title + Single Sort Dropdown */}
           <div className="px-5 py-4 sm:px-6 sm:py-5 border-b border-neutral-200/80 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-4 bg-neutral-50/60 dark:bg-neutral-900/50">
             <div className="flex items-center gap-3">
@@ -177,10 +177,10 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                 <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[11px] font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
                   <th className="py-3 pl-3 pr-1 sm:pl-4 sm:pr-2 text-left">{t('table.technology')}</th>
                   <th className="py-3 px-1 text-left">{t('table.creator')}</th>
-                  <th className="py-3 pl-1 pr-3 text-left">{t('table.type')}</th>
+                  <th className="py-3 px-2 text-center">{t('table.type')}</th>
                   <th className="py-3 px-2 text-left">{t('table.popularity')}</th>
-                  <th className="py-3 px-2 text-center">{t('table.momentum')}</th>
-                  <th className="py-3 px-2 text-center">{t('table.latestVersion')}</th>
+                  <th className="py-3 px-3 text-center">{t('table.momentum')}</th>
+                  <th className="py-3 px-3 text-center">{t('table.latestVersion')}</th>
                   <th className="py-3 px-1.5 text-center">{t('table.community')}</th>
                   <th className="py-3 px-2 text-center">{t('table.ecosystem')}</th>
                   <th className="py-3 px-2.5 text-center">{t('table.github')}</th>
@@ -297,9 +297,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 3. Tür (Type Pill) - Shifted left */}
-      <td className="py-3 pl-1 pr-3 text-left">
-        <span className="inline-block px-2 py-0.5 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
+      {/* 3. Tür (Type Pill) - Perfectly centered and aligned with header */}
+      <td className="py-3 px-2 text-center">
+        <span className="inline-flex items-center justify-center min-w-[70px] px-2 py-0.5 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
           {entry.category}
         </span>
       </td>
@@ -320,17 +320,26 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 5. İvmelenme */}
-      <td className="py-3 px-2 text-center">
-        <div className="inline-flex items-center gap-1 font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
-          <TrendingUp className="w-3 h-3" />
-          <span>+{formattedNewRepos}</span>
-        </div>
+      {/* 5. İvmelenme - Shifted right with more spacing, yellow '-' badge when zero */}
+      <td className="py-3 px-3 text-center">
+        {entry.momentum.newReposLast30Days > 0 ? (
+          <div className="inline-flex items-center gap-1 font-mono text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
+            <TrendingUp className="w-3 h-3" />
+            <span>+{formattedNewRepos}</span>
+          </div>
+        ) : (
+          <div
+            className="inline-flex items-center justify-center font-mono text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 px-3 py-0.5 rounded-md border border-amber-500/25 whitespace-nowrap"
+            title="Son 30 günde yeni repo eklenmedi"
+          >
+            <span>–</span>
+          </div>
+        )}
       </td>
 
-      {/* 6. GÜNCEL SÜRÜM - Orange background, white text, compact padding */}
-      <td className="py-3 px-2 text-center">
-        <span className="font-mono text-[10px] sm:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 w-fit max-w-[105px] break-words leading-tight inline-block shadow-2xs">
+      {/* 6. GÜNCEL SÜRÜM - Orange background, white text, spacious & no wrap */}
+      <td className="py-3 px-3 text-center">
+        <span className="font-mono text-[10px] sm:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-block shadow-2xs">
           {cleanVersion}
         </span>
       </td>
@@ -514,10 +523,16 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
-            <TrendingUp className="w-3 h-3" />
-            <span>+{formattedNewRepos}</span>
-          </div>
+          {entry.momentum.newReposLast30Days > 0 ? (
+            <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
+              <TrendingUp className="w-3 h-3" />
+              <span>+{formattedNewRepos}</span>
+            </div>
+          ) : (
+            <div className="flex items-center justify-center font-mono text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/25">
+              <span>–</span>
+            </div>
+          )}
 
           <a
             href={cleanGithubUrl}
