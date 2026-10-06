@@ -64,15 +64,15 @@ export const Navbar: React.FC = () => {
             </a>
 
             {/* Center: Navigation Links (Desktop & Tablet) - Centered Exactly */}
-            <nav className="hidden md:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center gap-1 bg-neutral-200/70 dark:bg-neutral-900/80 p-1 rounded-xl border border-neutral-300/60 dark:border-neutral-800/80 shadow-inner z-10">
+            <nav className="hidden md:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center gap-1 bg-neutral-300/85 dark:bg-neutral-900/80 p-1 rounded-xl border border-neutral-400/80 dark:border-neutral-800/80 shadow-inner z-10">
               <NavLink
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
-                      : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
+                      : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
                   }`
                 }
               >
@@ -86,15 +86,15 @@ export const Navbar: React.FC = () => {
                 )}
               </NavLink>
 
-              <span className="w-px h-4 bg-neutral-400 dark:bg-neutral-600 shrink-0 mx-0.5" />
+              <span className="w-px h-4 bg-neutral-500/70 dark:bg-neutral-600 shrink-0 mx-0.5" />
 
               <NavLink
                 to="/security"
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
-                      : 'text-neutral-700 dark:text-neutral-300 hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5'
+                      : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
                   }`
                 }
               >
@@ -114,12 +114,12 @@ export const Navbar: React.FC = () => {
               {/* Search Bar Trigger Button */}
               <button
                 onClick={() => setSearchModalOpen(true)}
-                className="flex items-center justify-center gap-2 px-2.5 sm:px-3 h-9 lg:w-44 rounded-xl bg-neutral-200/80 dark:bg-neutral-800/80 border border-neutral-300/70 dark:border-neutral-700/60 text-neutral-600 dark:text-neutral-300 hover:text-foreground hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group shrink-0"
+                className="flex items-center justify-center gap-2 px-2.5 sm:px-3 h-9 lg:w-44 rounded-xl bg-neutral-300/85 dark:bg-neutral-800/80 border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-800 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:border-[#CEFF00]/50 transition-colors text-xs font-mono group shrink-0"
                 title="Search (Ctrl+K)"
               >
-                <Search className="w-3.5 h-3.5 text-neutral-400 group-hover:text-[#CEFF00] transition-colors shrink-0" />
-                <span className="hidden lg:inline">{t('nav.search')}</span>
-                <kbd className="hidden lg:inline-block ml-auto px-1.5 py-0.5 rounded bg-neutral-300 dark:bg-neutral-900 text-[10px] text-neutral-500 dark:text-neutral-400 border border-neutral-400/40 dark:border-neutral-700">
+                <Search className="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400 group-hover:text-[#CEFF00] transition-colors shrink-0" />
+                <span className="hidden lg:inline font-medium">{t('nav.search')}</span>
+                <kbd className="hidden lg:inline-block ml-auto px-1.5 py-0.5 rounded bg-neutral-400/40 dark:bg-neutral-900 text-[10px] text-neutral-800 dark:text-neutral-400 border border-neutral-400/60 dark:border-neutral-700">
                   ⌘K
                 </kbd>
               </button>

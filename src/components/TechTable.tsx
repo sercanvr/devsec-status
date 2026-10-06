@@ -150,11 +150,11 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                   {icon}
                 </div>
               )}
-              <h2 className="font-serif text-xl sm:text-2xl font-bold tracking-tight flex items-center gap-2">
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight flex items-center gap-2.5">
                 <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
                   {sanitizeText(title)}
                 </span>
-                <span className="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300">
+                <span className="text-xs sm:text-sm font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300">
                   {processedEntries.length}
                 </span>
               </h2>

@@ -29,43 +29,45 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
 
 
-  // Clean, sleek CTA Button without distracting outer frame
+  // Clean, sleek CTA Button with single gradient border and internal highlight (no ghost outer double border)
   const renderCtaButton = (label: string, targetId: string) => (
-    <div className="flex justify-center items-center w-full mt-4">
+    <div className="flex justify-center items-center w-full mt-2.5">
       <button
         onClick={() => scrollToSection(targetId)}
-        className="group px-6 py-2.5 rounded-xl bg-gradient-to-b from-[#0066FF] to-[#0052CC] hover:from-[#0052CC] hover:to-[#0040A8] text-white shadow-[0_2px_10px_rgba(0,102,255,0.3)] hover:shadow-[0_4px_14px_rgba(0,102,255,0.45)] active:scale-[0.98] transition-all duration-150 cursor-pointer flex items-center justify-center gap-2"
+        className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_10px_rgba(0,102,255,0.35)] hover:shadow-[0_4px_14px_rgba(0,102,255,0.45)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
       >
-        <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
-        <ArrowRight className="w-3.5 h-3.5 text-white transition-transform group-hover:translate-x-0.5" />
+        <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-2">
+          <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
+          <ArrowRight className="w-3.5 h-3.5 text-white transition-transform group-hover:translate-x-0.5" />
+        </div>
       </button>
     </div>
   );
 
   if (mode === 'security') {
     return (
-      <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
         <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
-          <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8">
-            <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-40 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_95%)]" />
+          <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
+            <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-45 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
+            <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
               {/* Col 1: Offensive Security - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6">
-                <div className="space-y-4 w-full flex flex-col items-center">
-                  <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secOffensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>Ghidra • Metasploit</span>
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -88,9 +90,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                         {t('showcase.secOffensiveTitle')}
                       </span>
                     </h3>
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.secOffensiveDesc')}
-                    </p>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
+                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.secOffensiveDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -98,20 +102,20 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
               </div>
 
               {/* Col 2: Defensive & SAST - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
-                <div className="space-y-4 w-full flex flex-col items-center">
-                  <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                       <span>{t('showcase.secDefensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <GitFork className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>Trivy • Nuclei</span>
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -134,9 +138,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                         {t('showcase.secDefensiveTitle')}
                       </span>
                     </h3>
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.secDefensiveDesc')}
-                    </p>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
+                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.secDefensiveDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -144,20 +150,20 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
               </div>
 
               {/* Col 3: SecOps Stack Hub - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0">
-                <div className="space-y-4 w-full flex flex-col items-center">
-                  <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+                <div className="space-y-3 w-full flex flex-col items-center">
+                  <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secStackBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100 dark:bg-neutral-800 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>OWASP ZAP • Nmap</span>
                     </div>
                   </div>
 
-                  <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
+                  <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md flex items-center justify-between">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                         <PieChartIcon className="w-4 h-4" />
@@ -180,9 +186,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                         {t('showcase.secStackTitle')}
                       </span>
                     </h3>
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed max-w-sm mx-auto">
-                      {t('showcase.secStackDesc')}
-                    </p>
+                    <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
+                      <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1 leading-relaxed max-w-sm mx-auto">
+                        {t('showcase.secStackDesc')}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -197,21 +205,21 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
   // Default: Software Page Showcase (Programlama Dilleri, Frameworkler, Veritabanları)
   return (
-    <div className="w-full py-6 md:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
-        <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-6 sm:p-8 md:p-10">
-          <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-40 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_95%)]" />
+        <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
+          <WorldMap lineColor="#0066FF" className="absolute inset-0 pointer-events-none select-none opacity-45 dark:opacity-35 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_95%)]" />
 
           {/* 3 Columns Showcase Grid - All Centered */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-8 lg:gap-0">
+          <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-neutral-200/90 dark:divide-neutral-800 relative z-10 gap-6 lg:gap-0">
             {/* =========================================================================
                 Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 h-full my-auto">
-              <div className="space-y-4 w-full flex flex-col items-center">
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
-                <div className="min-h-[64px] flex items-center justify-center">
+                <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
                     <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
                       <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
@@ -226,8 +234,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Floating Metric Card - Centered */}
-                <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                {/* Floating Metric Card - Centered with blur show-through */}
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />
@@ -257,13 +265,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-1 w-full">
+                <div className="pt-0.5 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
                       {t('sections.languages')}
                     </span>
                   </h3>
-                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.languagesDesc')}
                     </p>
@@ -278,10 +286,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             {/* =========================================================================
                 Column 2: Framework & Kütüphaneler (Framework Top 1: React) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0 h-full my-auto">
-              <div className="space-y-4 w-full flex flex-col items-center">
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
-                <div className="min-h-[64px] flex items-center justify-center">
+                <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
                     <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
                       <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
@@ -296,8 +304,8 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
 
-                {/* Floating Metric Card - Centered */}
-                <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                {/* Floating Metric Card - Centered with blur show-through */}
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />
@@ -322,13 +330,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-1 w-full">
+                <div className="pt-0.5 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
                       {t('sections.frameworks')}
                     </span>
                   </h3>
-                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.frameworksDesc')}
                     </p>
@@ -343,10 +351,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             {/* =========================================================================
                 Column 3: Veritabanları & Altyapı (Database Top 1: PostgreSQL) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-6 lg:px-6 pt-6 lg:pt-0 h-full my-auto">
-              <div className="space-y-4 w-full flex flex-col items-center">
+            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+              <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
-                <div className="min-h-[64px] flex items-center justify-center">
+                <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
                     <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
                       <Database className="w-3.5 h-3.5 text-[#0066FF]" />
@@ -362,7 +370,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Floating Metric Card - Matching Columns 1 & 2 */}
-                <div className="w-full max-w-xs mx-auto p-3.5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
+                <div className="w-full max-w-xs mx-auto p-3 rounded-2xl bg-white/75 dark:bg-neutral-900/75 backdrop-blur-sm border border-neutral-200/80 dark:border-neutral-800 shadow-md shadow-black/5 flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-left">
                     <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
                       <PieChartIcon className="w-4 h-4" />
@@ -392,13 +400,13 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Title & Description - Centered & Balanced Height */}
-                <div className="pt-1 w-full">
+                <div className="pt-0.5 w-full">
                   <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight">
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
                       {t('sections.databases')}
                     </span>
                   </h3>
-                  <div className="min-h-[58px] sm:min-h-[68px] flex items-center justify-center">
+                  <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center">
                     <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm mx-auto">
                       {t('showcase.databasesDesc')}
                     </p>

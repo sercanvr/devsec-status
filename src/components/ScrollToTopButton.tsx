@@ -29,7 +29,7 @@ export const ScrollToTopButton: React.FC = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed right-3 sm:right-5 bottom-6 sm:bottom-8 z-50 p-1.5 rounded-[22px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-xl transition-all duration-200 hover:scale-105 active:scale-95">
+    <div className="fixed right-3 sm:right-5 bottom-6 sm:bottom-8 z-50 p-1 rounded-[20px] bg-neutral-200/70 dark:bg-white/[0.06] border border-neutral-400/90 dark:border-white/35 backdrop-blur-md shadow-xl">
       <a
         href="#top"
         onClick={scrollToTop}
