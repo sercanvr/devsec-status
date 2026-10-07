@@ -12,7 +12,7 @@ import aiInfrastructureData from '../data/ai-infrastructure.json';
 import securityData from '../data/security-tools.json';
 import securityDistrosData from '../data/security-distros.json';
 import { sanitizeText } from '../lib/sanitize';
-import { highlightTechElement, highlightWithRetry } from '../lib/highlight';
+import { highlightWithRetry } from '../lib/highlight';
 
 interface SearchModalProps {
   isOpen: boolean;
