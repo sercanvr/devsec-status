@@ -23,12 +23,25 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
   // Total dashes in minimap - increased for a longer vertical profile
   const totalDashes = 28;
 
+  // Map each section to a single unique dash index evenly distributed across totalDashes
+  const sectionTitleMap = React.useMemo(() => {
+    const map = new Map<number, SectionItem>();
+    if (!sections.length) return map;
+    sections.forEach((sec, idx) => {
+      const targetDash = Math.round((idx / Math.max(1, sections.length - 1)) * (totalDashes - 1));
+      map.set(targetDash, sec);
+    });
+    return map;
+  }, [sections, totalDashes]);
+
   const getSectionForDashIndex = (index: number): { section: SectionItem; isTitle: boolean } => {
     if (!sections.length) return { section: { id: '', label: '' }, isTitle: false };
-    const step = Math.max(1, Math.floor(totalDashes / sections.length));
-    const sectionIdx = Math.min(Math.floor(index / step), sections.length - 1);
-    const isTitle = index % step === 0;
-    return { section: sections[sectionIdx], isTitle };
+    if (sectionTitleMap.has(index)) {
+      return { section: sectionTitleMap.get(index)!, isTitle: true };
+    }
+    const ratio = index / (totalDashes - 1);
+    const closestIdx = Math.min(Math.round(ratio * (sections.length - 1)), sections.length - 1);
+    return { section: sections[closestIdx], isTitle: false };
   };
 
   useEffect(() => {

@@ -39,11 +39,13 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-4 z-50 my-3">
-        <header className="w-full rounded-2xl border-[1.5px] border-neutral-400/90 dark:border-white/25 bg-[#DFDFDF]/80 dark:bg-[#1E1E1E]/85 backdrop-blur-xl backdrop-saturate-150 shadow-xl shadow-black/5 dark:shadow-[0_0_24px_rgba(255,255,255,0.06)] transition-colors duration-200 relative">
-          {/* Subtle bottom-to-top accent gradient glow extending up smoothly */}
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#CEFF00]/[0.08] via-[#CEFF00]/[0.02] to-transparent dark:from-[#CEFF00]/[0.06] dark:via-[#CEFF00]/[0.015] to-transparent pointer-events-none z-0" />
+        {/* Luxury Frosted-Glass Outer Frame matching table frames */}
+        <div className="p-1 rounded-[22px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/80 dark:border-white/[0.12] backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-black/20 transition-colors duration-200">
+          <header className="w-full rounded-[18px] border border-neutral-300/80 dark:border-white/[0.12] bg-[#DFDFDF]/80 dark:bg-[#1E1E1E]/85 backdrop-blur-xl backdrop-saturate-150 shadow-sm transition-colors duration-200 relative">
+            {/* Subtle bottom-to-top neutral gradient accent */}
+            <div className="absolute inset-0 rounded-[18px] bg-gradient-to-t from-black/[0.04] to-transparent dark:from-white/[0.04] dark:to-transparent pointer-events-none z-0" />
 
-          <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 sm:gap-3 relative z-10">
+            <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 sm:gap-3 relative z-10">
             {/* Left: Logo (Page reload on click) */}
             <a
               href="/"
@@ -59,7 +61,7 @@ export const Navbar: React.FC = () => {
                 width={102}
                 height={36}
                 fetchPriority="high"
-                className="h-8 sm:h-9 w-auto object-contain drop-shadow-md shrink-0"
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] shrink-0"
               />
             </a>
 
@@ -69,7 +71,7 @@ export const Navbar: React.FC = () => {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center justify-center gap-1 px-3 sm:px-3.5 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
@@ -79,7 +81,7 @@ export const Navbar: React.FC = () => {
                 {({ isActive }) => (
                   <>
                     {isActive && (
-                      <span className="text-[14px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                      <span className="text-[13px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none -mr-0.5">⛶</span>
                     )}
                     <span>{t('nav.software')}</span>
                   </>
@@ -91,7 +93,7 @@ export const Navbar: React.FC = () => {
               <NavLink
                 to="/security"
                 className={({ isActive }) =>
-                  `flex items-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  `flex items-center justify-center gap-1 px-3 sm:px-3.5 py-1.5 rounded-md text-xs sm:text-sm font-semibold transition-all duration-200 ${
                     isActive
                       ? 'bg-[#CEFF00] text-[#141414] shadow-sm font-bold'
                       : 'text-neutral-900 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5'
@@ -101,7 +103,7 @@ export const Navbar: React.FC = () => {
                 {({ isActive }) => (
                   <>
                     {isActive && (
-                      <span className="text-[14px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none">⛶</span>
+                      <span className="text-[13px] font-bold text-[#141414] dark:text-[#141414] shrink-0 select-none leading-none -mr-0.5">⛶</span>
                     )}
                     <span>{t('nav.security')}</span>
                   </>
@@ -142,6 +144,7 @@ export const Navbar: React.FC = () => {
           </div>
         </header>
       </div>
+    </div>
 
       {/* Mobile Navigation Drawer - FULLSCREEN & INSTANT DROPDOWNS */}
       {mobileMenuOpen && (

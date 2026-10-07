@@ -107,9 +107,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               <img
                 src={devsecLogo}
                 alt="DevSec Status"
-                width={132}
-                height={46}
-                className="h-12 sm:h-13 w-auto object-contain shrink-0 drop-shadow-sm"
+                width={160}
+                height={56}
+                className="h-14 sm:h-16 w-auto object-contain shrink-0 drop-shadow-sm"
               />
             </a>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
@@ -180,9 +180,9 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             <img
               src={devsecLogo}
               alt="DevSec Status"
-              width={128}
-              height={44}
-              className="h-11 sm:h-12 w-auto object-contain shrink-0 drop-shadow-sm"
+              width={144}
+              height={50}
+              className="h-12 sm:h-13 w-auto object-contain shrink-0 drop-shadow-sm"
             />
           </a>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">

@@ -6,9 +6,13 @@ import { TechEntry } from '../types/tech';
 import languagesData from '../data/languages.json';
 import frameworksData from '../data/frameworks.json';
 import databasesData from '../data/databases.json';
+import linuxDistrosData from '../data/linux-distros.json';
+import aiToolsData from '../data/ai-tools.json';
+import aiInfrastructureData from '../data/ai-infrastructure.json';
 import securityData from '../data/security-tools.json';
+import securityDistrosData from '../data/security-distros.json';
 import { sanitizeText } from '../lib/sanitize';
-import { highlightTechElement } from '../lib/highlight';
+import { highlightTechElement, highlightWithRetry } from '../lib/highlight';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -20,19 +24,27 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
+  const [randomSuggestions, setRandomSuggestions] = useState<(TechEntry & { page: 'software' | 'security' })[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Combine all technologies into a unified search list
+  // Combine all technologies across software & security into a unified search list
   const allItems: (TechEntry & { page: 'software' | 'security' })[] = [
     ...(languagesData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
     ...(frameworksData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
     ...(databasesData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
+    ...(linuxDistrosData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
+    ...(aiToolsData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
+    ...(aiInfrastructureData as TechEntry[]).map((item) => ({ ...item, page: 'software' as const })),
     ...(securityData as TechEntry[]).map((item) => ({ ...item, page: 'security' as const })),
+    ...(securityDistrosData as TechEntry[]).map((item) => ({ ...item, page: 'security' as const })),
   ];
 
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
+      // Pick 8 random diverse items across all categories
+      const shuffled = [...allItems].sort(() => 0.5 - Math.random());
+      setRandomSuggestions(shuffled.slice(0, 8));
     } else {
       setQuery('');
     }
@@ -72,13 +84,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
         const creator = item.creator ? item.creator.name.toLowerCase() : '';
         return name.includes(q) || cat.includes(q) || subCat.includes(q) || creator.includes(q);
       })
-    : allItems.slice(0, 8); // Default top items
+    : (randomSuggestions.length > 0 ? randomSuggestions : allItems.slice(0, 8));
 
   const handleSelectItem = (item: TechEntry & { page: 'software' | 'security' }) => {
+    document.body.style.overflow = '';
+    onClose();
     if (onItemSelect) {
       onItemSelect();
-    } else {
-      onClose();
     }
 
     const currentPath = window.location.pathname;
@@ -87,15 +99,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
       (item.page === 'security' && currentPath.startsWith('/security'));
 
     if (isTargetOnCurrentPage) {
-      setTimeout(() => {
-        highlightTechElement(item.id);
-      }, 100);
+      highlightWithRetry(item.id, 25, 20);
     } else {
       const targetPath = item.page === 'security' ? `/security#${item.id}` : `/#${item.id}`;
-      navigate(targetPath);
-      setTimeout(() => {
-        highlightTechElement(item.id);
-      }, 250);
+      navigate(targetPath, { state: { targetId: item.id } });
+      highlightWithRetry(item.id, 35, 25);
     }
   };
 
@@ -154,10 +162,16 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
                   <img
                     src={item.iconUrl}
                     alt={item.name}
+                    loading="lazy"
+                    decoding="async"
                     className="w-7 h-7 object-contain shrink-0"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src =
-                        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                      const img = e.currentTarget as HTMLImageElement;
+                      if (!img.dataset.failed) {
+                        img.dataset.failed = 'true';
+                        img.src =
+                          'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                      }
                     }}
                   />
                   <div>
@@ -165,8 +179,11 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
                       <span className="font-serif font-bold text-sm text-foreground group-hover:text-[#CEFF00] transition-colors">
                         {sanitizeText(item.name)}
                       </span>
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded uppercase bg-neutral-200 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400">
-                        {item.category}
+                      <span
+                        lang="en"
+                        className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-200 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 font-semibold"
+                      >
+                        {(item.category || '').toUpperCase().replace(/İ/g, 'I').replace(/ı/g, 'I')}
                       </span>
                     </div>
                     {item.creator && (

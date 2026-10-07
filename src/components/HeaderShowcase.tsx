@@ -7,7 +7,6 @@ import {
   Sparkles,
   TrendingUp,
   GitFork,
-  ChevronRight,
   PieChart as PieChartIcon,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -20,30 +19,6 @@ interface HeaderShowcaseProps {
 export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software' }) => {
   const { t } = useTranslation();
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-
-
-  // Clean, sleek CTA Button with stemless Chevron arrow like scroll up button
-  const renderCtaButton = (label: string, targetId: string) => (
-    <div className="flex justify-center items-center w-full mt-2.5">
-      <button
-        onClick={() => scrollToSection(targetId)}
-        className="group p-[2px] rounded-[13px] bg-gradient-to-b from-[#0066FF] to-[#0052CC] shadow-[0_2px_8px_rgba(0,102,255,0.25)] hover:shadow-[0_4px_12px_rgba(0,102,255,0.28)] active:scale-[0.98] transition-all duration-150 cursor-pointer"
-      >
-        <div className="bg-gradient-to-b from-white/20 to-transparent rounded-[11px] px-5 py-2 flex items-center justify-center gap-1.5">
-          <span className="font-semibold text-xs text-white tracking-wide">{label}</span>
-          <ChevronRight className="w-4 h-4 text-white stroke-[2.8] transition-transform group-hover:translate-x-0.5" />
-        </div>
-      </button>
-    </div>
-  );
-
   if (mode === 'security') {
     return (
       <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -54,7 +29,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
 
             <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
               {/* Col 1: Offensive Security - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6">
+              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
                     <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
@@ -68,7 +43,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -98,12 +73,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
                 </div>
-
-                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
 
               {/* Col 2: Defensive & SAST - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
                     <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
@@ -117,7 +90,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -147,12 +120,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
                 </div>
-
-                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
 
               {/* Col 3: SecOps Stack Hub - Centered */}
-              <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0">
+              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
                     <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
@@ -166,7 +137,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -196,8 +167,6 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     </div>
                   </div>
                 </div>
-
-                {renderCtaButton(t('showcase.exploreSecurity'), 'section-security')}
               </div>
             </div>
           </div>
@@ -218,8 +187,10 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
           <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
             {/* =========================================================================
                 Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
+            ======================================================================            {/* =========================================================================
+                Column 1: Programlama Dilleri (Language #1: Python) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 h-full my-auto">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
@@ -238,7 +209,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -269,15 +240,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
               </div>
-
-              {/* Integrated Layered Gradient Button - Centered */}
-              {renderCtaButton(t('showcase.exploreLanguages'), 'section-languages')}
             </div>
 
             {/* =========================================================================
-                Column 2: Framework & Kütüphaneler (Framework Top 1: React) - CENTERED & BALANCED
+                Column 2: Framework & Kütüphaneler (Framework #1: React) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
@@ -296,7 +264,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -333,15 +301,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
               </div>
-
-              {/* Integrated Layered Gradient Button - Centered */}
-              {renderCtaButton(t('showcase.exploreFrameworks'), 'section-frameworks')}
             </div>
 
             {/* =========================================================================
-                Column 3: Veritabanları & Altyapı (Database Top 1: PostgreSQL) - CENTERED & BALANCED
+                Column 3: Veritabanları & Altyapı (Database #1: PostgreSQL) - CENTERED & BALANCED
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-between space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
@@ -360,7 +325,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-4.5 rounded-2xl bg-gradient-to-b from-neutral-200/90 via-neutral-150/80 to-neutral-200/75 dark:from-white/[0.08] dark:via-neutral-800/35 dark:to-neutral-900/45 backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/90 dark:border-white/10 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -380,7 +345,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
 
                   <div className="pt-3.5 text-center">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-50 drop-shadow-sm">
                       {t('sections.databases')}
                     </h3>
                     <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -391,9 +356,6 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                   </div>
                 </div>
               </div>
-
-              {/* Integrated Layered Gradient Button - Centered */}
-              {renderCtaButton(t('showcase.exploreDatabases'), 'section-databases')}
             </div>
           </div>
         </div>
