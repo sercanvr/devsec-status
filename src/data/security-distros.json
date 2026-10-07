@@ -1,0 +1,310 @@
+[
+  {
+    "id": "secdistro-kali",
+    "name": "Kali Linux",
+    "category": "linux-distro",
+    "subCategory": "Advanced Penetration Testing Linux OS",
+    "iconUrl": "https://cdn.simpleicons.org/kalilinux",
+    "githubUrl": "https://gitlab.com/kalilinux/build-scripts/live-build-config",
+    "creator": {
+      "name": "OffSec (Mati Aharoni & Devon Kearns)",
+      "avatarUrl": "https://github.com/offensive-security.png",
+      "type": "organization",
+      "releaseDate": "13 Mart 2013",
+      "latestVersion": "2025.1"
+    },
+    "popularity": {
+      "totalRepos": 16040,
+      "totalStars": 89400
+    },
+    "momentum": {
+      "newReposLast30Days": 954,
+      "topStarredNewRepo": {
+        "name": "madeye/ServerBox",
+        "stars": 255
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:18.808Z",
+    "contributors": [
+      {
+        "login": "steev",
+        "avatar_url": "https://github.com/steev.png?size=64",
+        "html_url": "https://github.com/steev"
+      },
+      {
+        "login": "rhertzog",
+        "avatar_url": "https://github.com/rhertzog.png?size=64",
+        "html_url": "https://github.com/rhertzog"
+      },
+      {
+        "login": "dcampitelli",
+        "avatar_url": "https://github.com/dcampitelli.png?size=64",
+        "html_url": "https://github.com/dcampitelli"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-parrot",
+    "name": "Parrot Security OS",
+    "category": "linux-distro",
+    "subCategory": "Security, Development & Privacy Centric OS",
+    "iconUrl": "https://cdn.simpleicons.org/parrotsecurity",
+    "githubUrl": "https://github.com/ParrotSec/parrot-core",
+    "creator": {
+      "name": "Lorenzo Faletra (Parrot Project)",
+      "avatarUrl": "https://github.com/ParrotSec.png",
+      "type": "organization",
+      "releaseDate": "10 Nisan 2013",
+      "latestVersion": "Parrot 6.2"
+    },
+    "popularity": {
+      "totalRepos": 89,
+      "totalStars": 59
+    },
+    "momentum": {
+      "newReposLast30Days": 6,
+      "topStarredNewRepo": {
+        "name": "leandroibov/parrot-menu",
+        "stars": 0
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:23.345Z",
+    "contributors": [
+      {
+        "login": "palinuro",
+        "avatar_url": "https://github.com/palinuro.png?size=64",
+        "html_url": "https://github.com/palinuro"
+      },
+      {
+        "login": "danterolle",
+        "avatar_url": "https://github.com/danterolle.png?size=64",
+        "html_url": "https://github.com/danterolle"
+      },
+      {
+        "login": "cappetta",
+        "avatar_url": "https://github.com/cappetta.png?size=64",
+        "html_url": "https://github.com/cappetta"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-blackarch",
+    "name": "BlackArch",
+    "category": "linux-distro",
+    "subCategory": "Arch-Based Pentesting OS with 2800+ Tools",
+    "iconUrl": "https://blackarch.org/images/logo.png",
+    "githubUrl": "https://github.com/BlackArch/blackarch",
+    "creator": {
+      "name": "Evan Teitelman (BlackArch Team)",
+      "avatarUrl": "https://github.com/BlackArch.png",
+      "type": "organization",
+      "releaseDate": "2013",
+      "latestVersion": "v2024.09"
+    },
+    "popularity": {
+      "totalRepos": 464,
+      "totalStars": 3524
+    },
+    "momentum": {
+      "newReposLast30Days": 17,
+      "topStarredNewRepo": {
+        "name": "rodixworld-star/Blackarchive",
+        "stars": 0
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:27.835Z",
+    "contributors": [
+      {
+        "login": "noptrix",
+        "avatar_url": "https://github.com/noptrix.png?size=64",
+        "html_url": "https://github.com/noptrix"
+      },
+      {
+        "login": "f4lc0n",
+        "avatar_url": "https://github.com/f4lc0n.png?size=64",
+        "html_url": "https://github.com/f4lc0n"
+      },
+      {
+        "login": "abysamr",
+        "avatar_url": "https://github.com/abysamr.png?size=64",
+        "html_url": "https://github.com/abysamr"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-tails",
+    "name": "Tails",
+    "category": "linux-distro",
+    "subCategory": "The Amnesic Incognito Live System (Tor-Enforced)",
+    "iconUrl": "https://cdn.simpleicons.org/tails",
+    "githubUrl": "https://gitlab.tails.boum.org/tails/tails",
+    "creator": {
+      "name": "Tails Project & Tor Community",
+      "avatarUrl": "https://github.com/tails-project.png",
+      "type": "organization",
+      "releaseDate": "23 Haziran 2009",
+      "latestVersion": "Tails 6.11"
+    },
+    "popularity": {
+      "totalRepos": 13153,
+      "totalStars": 18200
+    },
+    "momentum": {
+      "newReposLast30Days": 1066,
+      "topStarredNewRepo": {
+        "name": "holdmysocks/ps5-tailscale",
+        "stars": 40
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:31.563Z",
+    "contributors": [
+      {
+        "login": "intrigeri",
+        "avatar_url": "https://github.com/intrigeri.png?size=64",
+        "html_url": "https://github.com/intrigeri"
+      },
+      {
+        "login": "sajolida",
+        "avatar_url": "https://github.com/sajolida.png?size=64",
+        "html_url": "https://github.com/sajolida"
+      },
+      {
+        "login": "anonym",
+        "avatar_url": "https://github.com/anonym.png?size=64",
+        "html_url": "https://github.com/anonym"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-qubes",
+    "name": "Qubes OS",
+    "category": "linux-distro",
+    "subCategory": "Security-Oriented OS via Xen Compartmentalization",
+    "iconUrl": "https://cdn.simpleicons.org/qubesos",
+    "githubUrl": "https://github.com/QubesOS/qubes-issues",
+    "creator": {
+      "name": "Joanna Rutkowska (Invisible Things Lab)",
+      "avatarUrl": "https://github.com/QubesOS.png",
+      "type": "organization",
+      "releaseDate": "3 Eylül 2012",
+      "latestVersion": "Qubes 4.2.3"
+    },
+    "popularity": {
+      "totalRepos": 327,
+      "totalStars": 620
+    },
+    "momentum": {
+      "newReposLast30Days": 6,
+      "topStarredNewRepo": {
+        "name": "1mirax/qubes-os-dotfiles",
+        "stars": 0
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:35.650Z",
+    "contributors": [
+      {
+        "login": "marmarek",
+        "avatar_url": "https://github.com/marmarek.png?size=64",
+        "html_url": "https://github.com/marmarek"
+      },
+      {
+        "login": "rootkovska",
+        "avatar_url": "https://github.com/rootkovska.png?size=64",
+        "html_url": "https://github.com/rootkovska"
+      },
+      {
+        "login": "woju",
+        "avatar_url": "https://github.com/woju.png?size=64",
+        "html_url": "https://github.com/woju"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-pentoo",
+    "name": "Pentoo",
+    "category": "linux-distro",
+    "subCategory": "Gentoo-Based Live CD/USB for Penetration Testing",
+    "iconUrl": "https://avatars.githubusercontent.com/u/496245?s=200&v=4",
+    "githubUrl": "https://github.com/pentoo/pentoo-overlay",
+    "creator": {
+      "name": "Michael Zanetta & Pentoo Team",
+      "avatarUrl": "https://github.com/pentoo.png",
+      "type": "organization",
+      "releaseDate": "Haziran 2005",
+      "latestVersion": "Pentoo 2024.0"
+    },
+    "popularity": {
+      "totalRepos": 239,
+      "totalStars": 384
+    },
+    "momentum": {
+      "newReposLast30Days": 5,
+      "topStarredNewRepo": {
+        "name": "agkomyint/pentoolgg",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:39.935Z",
+    "contributors": [
+      {
+        "login": "blshkv",
+        "avatar_url": "https://github.com/blshkv.png?size=64",
+        "html_url": "https://github.com/blshkv"
+      },
+      {
+        "login": "zerochaos",
+        "avatar_url": "https://github.com/zerochaos.png?size=64",
+        "html_url": "https://github.com/zerochaos"
+      },
+      {
+        "login": "grim-gentoo",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/pentoo"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-caine",
+    "name": "CAINE",
+    "category": "linux-distro",
+    "subCategory": "Computer Aided Investigative Digital Forensics OS",
+    "iconUrl": "https://www.distrowiz.com/wp-content/uploads/2024/08/caine-logo-150x150.png",
+    "githubUrl": "https://www.caine-live.net",
+    "creator": {
+      "name": "Nanni Bassetti",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/12171140?v=4",
+      "type": "person",
+      "releaseDate": "2008",
+      "latestVersion": "CAINE 14.0"
+    },
+    "popularity": {
+      "totalRepos": 473,
+      "totalStars": 3890
+    },
+    "momentum": {
+      "newReposLast30Days": 21,
+      "topStarredNewRepo": {
+        "name": "securizart/offensive-forensic-distros-installer-macbook-air-M1-M2-external-disk-luks",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:44.128Z",
+    "contributors": [
+      {
+        "login": "nannibassetti",
+        "avatar_url": "https://avatars.githubusercontent.com/u/12171140?size=64&v=4",
+        "html_url": "https://github.com/nannibassetti"
+      },
+      {
+        "login": "caine-team",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://www.caine-live.net"
+      },
+      {
+        "login": "forensics-core",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://www.caine-live.net"
+      }
+    ]
+  }
+]

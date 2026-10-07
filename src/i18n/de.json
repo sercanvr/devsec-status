@@ -17,19 +17,23 @@
     "noResultsFound": "Keine Technologie gefunden für:"
   },
   "info": {
-    "software": "Echtzeit-GitHub-Sterne, Gesamtrepository-Volumen und 30-Tage-Schwung-Metriken für Programmiersprachen, Frameworks, Bibliotheken und Datenbanktechnologien.",
-    "security": "GitHub-Sterntrends und Community-Aktivitätsstatistiken für beliebte Open-Source-Cybersecurity-Tools und Frameworks (Ghidra, Metasploit, Nmap, OWASP ZAP usw.). Diese Tools dienen Informations- und Forschungszwecken im Rahmen ethischer und rechtlicher Grenzen."
+    "software": "Echtzeit-GitHub-Sterne, Gesamtrepository-Volumen und 30-Tage-Schwung-Metriken für Programmiersprachen, Frameworks, Datenbanken, Linux-Distributionen sowie Open-Source-KI-Tools und Infrastruktur.",
+    "security": "GitHub-Sterntrends und Community-Aktivitätsstatistiken für Sicherheitstools, Frameworks und Linux-Sicherheitsdistributionen (Ghidra, Metasploit, Nmap, Kali, Parrot usw.). Diese Tools dienen Informations- und Forschungszwecken im Rahmen ethischer und rechtlicher Grenzen (Sicherheitsforschung, Penetrationstests, CTF-Wettbewerbe und Systemverteidigung)."
   },
   "sections": {
     "languages": "Programmiersprachen",
     "frameworks": "Frameworks & Bibliotheken",
     "databases": "Datenbanken & Infrastruktur",
-    "securityTools": "Open-Source-Sicherheitstools & Frameworks"
+    "linuxDistros": "Linux-Distributionen",
+    "aiTools": "KI-Tools",
+    "aiInfrastructure": "KI-Infrastruktur & Bibliotheken",
+    "securityTools": "Sicherheitstools & Frameworks",
+    "securityDistros": "Linux-Sicherheitsdistributionen"
   },
   "showcase": {
-    "topLanguageBadge": "Top-Sprache",
-    "topFrameworkBadge": "Top-Framework",
-    "topDatabaseBadge": "Top-Datenbank",
+    "topLanguageBadge": "#1 in der Liste",
+    "topFrameworkBadge": "#1 in der Liste",
+    "topDatabaseBadge": "#1 in der Liste",
     "top1": "Top 1",
     "totalStars": "Gesamte Sterne",
     "totalEngagements": "Gesamtinteraktionen",
@@ -100,7 +104,10 @@
     "search-engine": "SEARCH ENGINE",
     "baas": "BAAS",
     "security-tool": "SECURITY TOOL",
-    "security-framework": "SECURITY FRAMEWORK"
+    "security-framework": "SECURITY FRAMEWORK",
+    "linux-distro": "LINUX DISTRO",
+    "ai-tool": "AI TOOL",
+    "ai-infrastructure": "AI INFRASTRUCTURE"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

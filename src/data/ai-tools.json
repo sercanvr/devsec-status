@@ -1,0 +1,530 @@
+[
+  {
+    "id": "ai-ollama",
+    "name": "Ollama",
+    "category": "ai-tool",
+    "subCategory": "Local LLM Runner & Inference Server",
+    "iconUrl": "https://cdn.simpleicons.org/ollama",
+    "githubUrl": "https://github.com/ollama/ollama",
+    "creator": {
+      "name": "Jeffrey Morgan & Michael Chi",
+      "avatarUrl": "https://github.com/ollama.png",
+      "type": "organization",
+      "releaseDate": "Temmuz 2023",
+      "latestVersion": "v0.5.7"
+    },
+    "popularity": {
+      "totalRepos": 104792,
+      "totalStars": 182427
+    },
+    "momentum": {
+      "newReposLast30Days": 8427,
+      "topStarredNewRepo": {
+        "name": "ollaya-dev/ollaya",
+        "stars": 1226
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:34.699Z",
+    "contributors": [
+      {
+        "login": "jmorganca",
+        "avatar_url": "https://github.com/jmorganca.png?size=64",
+        "html_url": "https://github.com/jmorganca"
+      },
+      {
+        "login": "michaelfeil",
+        "avatar_url": "https://github.com/michaelfeil.png?size=64",
+        "html_url": "https://github.com/michaelfeil"
+      },
+      {
+        "login": "dhiltgen",
+        "avatar_url": "https://github.com/dhiltgen.png?size=64",
+        "html_url": "https://github.com/dhiltgen"
+      }
+    ]
+  },
+  {
+    "id": "ai-langchain",
+    "name": "LangChain",
+    "category": "ai-tool",
+    "subCategory": "LLM Application Orchestration Framework",
+    "iconUrl": "https://cdn.simpleicons.org/langchain",
+    "githubUrl": "https://github.com/langchain-ai/langchain",
+    "creator": {
+      "name": "Harrison Chase",
+      "avatarUrl": "https://github.com/hwchase17.png",
+      "type": "person",
+      "releaseDate": "Ekim 2022",
+      "latestVersion": "v0.3.14"
+    },
+    "popularity": {
+      "totalRepos": 159904,
+      "totalStars": 147517
+    },
+    "momentum": {
+      "newReposLast30Days": 7392,
+      "topStarredNewRepo": {
+        "name": "ningmeng446/LocalSmartRAG",
+        "stars": 47
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:39.378Z",
+    "contributors": [
+      {
+        "login": "hwchase17",
+        "avatar_url": "https://github.com/hwchase17.png?size=64",
+        "html_url": "https://github.com/hwchase17"
+      },
+      {
+        "login": "eyurtsev",
+        "avatar_url": "https://github.com/eyurtsev.png?size=64",
+        "html_url": "https://github.com/eyurtsev"
+      },
+      {
+        "login": "baskaryan",
+        "avatar_url": "https://github.com/baskaryan.png?size=64",
+        "html_url": "https://github.com/baskaryan"
+      }
+    ]
+  },
+  {
+    "id": "ai-autogpt",
+    "name": "AutoGPT",
+    "category": "ai-tool",
+    "subCategory": "Autonomous Agent Development Platform",
+    "iconUrl": "https://avatars.githubusercontent.com/u/130738209?s=60&v=4",
+    "githubUrl": "https://github.com/Significant-Gravitas/AutoGPT",
+    "creator": {
+      "name": "Toran Bruce Richards",
+      "avatarUrl": "https://github.com/Significant-Gravitas.png",
+      "type": "organization",
+      "releaseDate": "Mart 2023",
+      "latestVersion": "v0.5.1"
+    },
+    "popularity": {
+      "totalRepos": 1698,
+      "totalStars": 187679
+    },
+    "momentum": {
+      "newReposLast30Days": 24,
+      "topStarredNewRepo": {
+        "name": "Significant-Gravitas/skills-catalog",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:44.389Z",
+    "contributors": [
+      {
+        "login": "Torantulino",
+        "avatar_url": "https://github.com/Torantulino.png?size=64",
+        "html_url": "https://github.com/Torantulino"
+      },
+      {
+        "login": "Pwuts",
+        "avatar_url": "https://github.com/Pwuts.png?size=64",
+        "html_url": "https://github.com/Pwuts"
+      },
+      {
+        "login": "swarnals",
+        "avatar_url": "https://github.com/swarnals.png?size=64",
+        "html_url": "https://github.com/swarnals"
+      }
+    ]
+  },
+  {
+    "id": "ai-comfyui",
+    "name": "ComfyUI",
+    "category": "ai-tool",
+    "subCategory": "Node-Based Modular Stable Diffusion GUI",
+    "iconUrl": "https://avatars.githubusercontent.com/u/166579949?s=60&v=4",
+    "githubUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "creator": {
+      "name": "comfyanonymous",
+      "avatarUrl": "https://github.com/comfyanonymous.png",
+      "type": "person",
+      "releaseDate": "Ocak 2023",
+      "latestVersion": "v0.3.10"
+    },
+    "popularity": {
+      "totalRepos": 30133,
+      "totalStars": 136368
+    },
+    "momentum": {
+      "newReposLast30Days": 2525,
+      "topStarredNewRepo": {
+        "name": "Work-Fisher/AIFISHER",
+        "stars": 259
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:49.204Z",
+    "contributors": [
+      {
+        "login": "comfyanonymous",
+        "avatar_url": "https://github.com/comfyanonymous.png?size=64",
+        "html_url": "https://github.com/comfyanonymous"
+      },
+      {
+        "login": "Acly",
+        "avatar_url": "https://github.com/Acly.png?size=64",
+        "html_url": "https://github.com/Acly"
+      },
+      {
+        "login": "ltdrdata",
+        "avatar_url": "https://github.com/ltdrdata.png?size=64",
+        "html_url": "https://github.com/ltdrdata"
+      }
+    ]
+  },
+  {
+    "id": "ai-n8n",
+    "name": "n8n",
+    "category": "ai-tool",
+    "subCategory": "AI-Powered Workflow Automation Platform",
+    "iconUrl": "https://cdn.simpleicons.org/n8n",
+    "githubUrl": "https://github.com/n8n-io/n8n",
+    "creator": {
+      "name": "Jan Oberhauser (n8n)",
+      "avatarUrl": "https://github.com/n8n-io.png",
+      "type": "organization",
+      "releaseDate": "Haziran 2019",
+      "latestVersion": "v1.75.2"
+    },
+    "popularity": {
+      "totalRepos": 118825,
+      "totalStars": 206788
+    },
+    "momentum": {
+      "newReposLast30Days": 8499,
+      "topStarredNewRepo": {
+        "name": "ZeroDayEvil/CVE-2026-21858-n8n-FullChain",
+        "stars": 88
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:53.931Z",
+    "contributors": [
+      {
+        "login": "janober",
+        "avatar_url": "https://github.com/janober.png?size=64",
+        "html_url": "https://github.com/janober"
+      },
+      {
+        "login": "ivov",
+        "avatar_url": "https://github.com/ivov.png?size=64",
+        "html_url": "https://github.com/ivov"
+      },
+      {
+        "login": "krynble",
+        "avatar_url": "https://github.com/krynble.png?size=64",
+        "html_url": "https://github.com/krynble"
+      }
+    ]
+  },
+  {
+    "id": "ai-openwebui",
+    "name": "Open WebUI",
+    "category": "ai-tool",
+    "subCategory": "Self-Hosted Extensible Web Interface for LLMs",
+    "iconUrl": "https://raw.githubusercontent.com/open-webui/open-webui/main/static/favicon.png",
+    "githubUrl": "https://github.com/open-webui/open-webui",
+    "creator": {
+      "name": "Timothy J. Baek",
+      "avatarUrl": "https://github.com/open-webui.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2023",
+      "latestVersion": "v0.5.6"
+    },
+    "popularity": {
+      "totalRepos": 4124,
+      "totalStars": 154115
+    },
+    "momentum": {
+      "newReposLast30Days": 264,
+      "topStarredNewRepo": {
+        "name": "TiancongLx/open-mcp-gateway",
+        "stars": 51
+      }
+    },
+    "lastUpdated": "2026-10-07T06:48:58.704Z",
+    "contributors": [
+      {
+        "login": "tjbck",
+        "avatar_url": "https://github.com/tjbck.png?size=64",
+        "html_url": "https://github.com/tjbck"
+      },
+      {
+        "login": "cheahjs",
+        "avatar_url": "https://github.com/cheahjs.png?size=64",
+        "html_url": "https://github.com/cheahjs"
+      },
+      {
+        "login": "drinfernoo",
+        "avatar_url": "https://github.com/drinfernoo.png?size=64",
+        "html_url": "https://github.com/drinfernoo"
+      }
+    ]
+  },
+  {
+    "id": "ai-flowise",
+    "name": "Flowise",
+    "category": "ai-tool",
+    "subCategory": "Drag-and-Drop UI for LLM Apps & Agents",
+    "iconUrl": "https://raw.githubusercontent.com/FlowiseAI/Flowise/main/packages/ui/public/favicon.ico",
+    "githubUrl": "https://github.com/FlowiseAI/Flowise",
+    "creator": {
+      "name": "Henry Heng (FlowiseAI)",
+      "avatarUrl": "https://github.com/FlowiseAI.png",
+      "type": "organization",
+      "releaseDate": "Nisan 2023",
+      "latestVersion": "v2.2.4"
+    },
+    "popularity": {
+      "totalRepos": 3898,
+      "totalStars": 55486
+    },
+    "momentum": {
+      "newReposLast30Days": 48,
+      "topStarredNewRepo": {
+        "name": "Perruer/keelflow",
+        "stars": 38
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:03.747Z",
+    "contributors": [
+      {
+        "login": "HenryHengZJ",
+        "avatar_url": "https://github.com/HenryHengZJ.png?size=64",
+        "html_url": "https://github.com/HenryHengZJ"
+      },
+      {
+        "login": "ChakshuGautam",
+        "avatar_url": "https://github.com/ChakshuGautam.png?size=64",
+        "html_url": "https://github.com/ChakshuGautam"
+      },
+      {
+        "login": "bhardwaj-yash",
+        "avatar_url": "https://github.com/bhardwaj-yash.png?size=64",
+        "html_url": "https://github.com/bhardwaj-yash"
+      }
+    ]
+  },
+  {
+    "id": "ai-dify",
+    "name": "Dify",
+    "category": "ai-tool",
+    "subCategory": "LLM App Development & Agentic Workflow Platform",
+    "iconUrl": "https://cdn.simpleicons.org/dify",
+    "githubUrl": "https://github.com/langgenius/dify",
+    "creator": {
+      "name": "LangGenius Team",
+      "avatarUrl": "https://github.com/langgenius.png",
+      "type": "organization",
+      "releaseDate": "Mayıs 2023",
+      "latestVersion": "v1.0.0"
+    },
+    "popularity": {
+      "totalRepos": 7282,
+      "totalStars": 157985
+    },
+    "momentum": {
+      "newReposLast30Days": 374,
+      "topStarredNewRepo": {
+        "name": "alphaparkinc/genpark-dify-agentic-workflow-orchestrator-skill",
+        "stars": 7
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:08.722Z",
+    "contributors": [
+      {
+        "login": "tjjfvi",
+        "avatar_url": "https://github.com/tjjfvi.png?size=64",
+        "html_url": "https://github.com/tjjfvi"
+      },
+      {
+        "login": "crazywoola",
+        "avatar_url": "https://github.com/crazywoola.png?size=64",
+        "html_url": "https://github.com/crazywoola"
+      },
+      {
+        "login": "iamjooger",
+        "avatar_url": "https://github.com/iamjooger.png?size=64",
+        "html_url": "https://github.com/iamjooger"
+      }
+    ]
+  },
+  {
+    "id": "ai-crewai",
+    "name": "CrewAI",
+    "category": "ai-tool",
+    "subCategory": "Multi-Agent Automation & Collaboration Framework",
+    "iconUrl": "https://cdn.simpleicons.org/crewai",
+    "githubUrl": "https://github.com/crewAIInc/crewAI",
+    "creator": {
+      "name": "João Moura",
+      "avatarUrl": "https://github.com/joaomdmoura.png",
+      "type": "person",
+      "releaseDate": "Kasım 2023",
+      "latestVersion": "v0.100.0"
+    },
+    "popularity": {
+      "totalRepos": 19202,
+      "totalStars": 59404
+    },
+    "momentum": {
+      "newReposLast30Days": 712,
+      "topStarredNewRepo": {
+        "name": "Harvey-cream/accountings",
+        "stars": 52
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:13.393Z",
+    "contributors": [
+      {
+        "login": "joaomdmoura",
+        "avatar_url": "https://github.com/joaomdmoura.png?size=64",
+        "html_url": "https://github.com/joaomdmoura"
+      },
+      {
+        "login": "yosef-adel",
+        "avatar_url": "https://github.com/yosef-adel.png?size=64",
+        "html_url": "https://github.com/yosef-adel"
+      },
+      {
+        "login": "tonykipkemboi",
+        "avatar_url": "https://github.com/tonykipkemboi.png?size=64",
+        "html_url": "https://github.com/tonykipkemboi"
+      }
+    ]
+  },
+  {
+    "id": "ai-oobabooga",
+    "name": "text-generation-webui",
+    "category": "ai-tool",
+    "subCategory": "Gradio Web UI for Large Language Models",
+    "iconUrl": "https://avatars.githubusercontent.com/u/112222186?s=60&v=4",
+    "githubUrl": "https://github.com/oobabooga/text-generation-webui",
+    "creator": {
+      "name": "oobabooga",
+      "avatarUrl": "https://github.com/oobabooga.png",
+      "type": "person",
+      "releaseDate": "Aralık 2022",
+      "latestVersion": "v1.8"
+    },
+    "popularity": {
+      "totalRepos": 392,
+      "totalStars": 47726
+    },
+    "momentum": {
+      "newReposLast30Days": 7,
+      "topStarredNewRepo": {
+        "name": "official-imvoiid/ShareUI",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:17.951Z",
+    "contributors": [
+      {
+        "login": "oobabooga",
+        "avatar_url": "https://github.com/oobabooga.png?size=64",
+        "html_url": "https://github.com/oobabooga"
+      },
+      {
+        "login": "wawawa",
+        "avatar_url": "https://github.com/wawawa.png?size=64",
+        "html_url": "https://github.com/wawawa"
+      },
+      {
+        "login": "mattsilv",
+        "avatar_url": "https://github.com/mattsilv.png?size=64",
+        "html_url": "https://github.com/mattsilv"
+      }
+    ]
+  },
+  {
+    "id": "ai-invokeai",
+    "name": "InvokeAI",
+    "category": "ai-tool",
+    "subCategory": "Professional Creative Engine for Stable Diffusion",
+    "iconUrl": "https://avatars.githubusercontent.com/u/113954515?s=60&v=4",
+    "githubUrl": "https://github.com/invoke-ai/InvokeAI",
+    "creator": {
+      "name": "Lincoln Stein & Community",
+      "avatarUrl": "https://github.com/invoke-ai.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2022",
+      "latestVersion": "v5.5.0"
+    },
+    "popularity": {
+      "totalRepos": 351,
+      "totalStars": 28388
+    },
+    "momentum": {
+      "newReposLast30Days": 16,
+      "topStarredNewRepo": {
+        "name": "licyk/Hanaikada",
+        "stars": 3
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:22.204Z",
+    "contributors": [
+      {
+        "login": "lstein",
+        "avatar_url": "https://github.com/lstein.png?size=64",
+        "html_url": "https://github.com/lstein"
+      },
+      {
+        "login": "psychedelicious",
+        "avatar_url": "https://github.com/psychedelicious.png?size=64",
+        "html_url": "https://github.com/psychedelicious"
+      },
+      {
+        "login": "blessedcoolant",
+        "avatar_url": "https://github.com/blessedcoolant.png?size=64",
+        "html_url": "https://github.com/blessedcoolant"
+      }
+    ]
+  },
+  {
+    "id": "ai-jan",
+    "name": "Jan",
+    "category": "ai-tool",
+    "subCategory": "Open Source Alternative to LM Studio",
+    "iconUrl": "https://avatars.githubusercontent.com/u/102363196?s=60&v=4",
+    "githubUrl": "https://github.com/janhq/jan",
+    "creator": {
+      "name": "Jan Technologies",
+      "avatarUrl": "https://github.com/janhq.png",
+      "type": "organization",
+      "releaseDate": "Ekim 2023",
+      "latestVersion": "v0.5.10"
+    },
+    "popularity": {
+      "totalRepos": 176108,
+      "totalStars": 44834
+    },
+    "momentum": {
+      "newReposLast30Days": 4835,
+      "topStarredNewRepo": {
+        "name": "Vibra-Ingenn/Janus",
+        "stars": 129
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:27.560Z",
+    "contributors": [
+      {
+        "login": "urmauur",
+        "avatar_url": "https://github.com/urmauur.png?size=64",
+        "html_url": "https://github.com/urmauur"
+      },
+      {
+        "login": "hiento09",
+        "avatar_url": "https://github.com/hiento09.png?size=64",
+        "html_url": "https://github.com/hiento09"
+      },
+      {
+        "login": "louis-jan",
+        "avatar_url": "https://github.com/louis-jan.png?size=64",
+        "html_url": "https://github.com/louis-jan"
+      }
+    ]
+  }
+]

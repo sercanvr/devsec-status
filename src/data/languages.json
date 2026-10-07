@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/torvalds/linux",
     "creator": {
       "name": "Dennis Ritchie (Bell Labs)",
-      "avatarUrl": "https://github.com/torvalds.png",
+      "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Dennis_Ritchie_2011.jpg?utm_source=tr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "type": "person",
       "releaseDate": "Kasım 1972",
       "latestVersion": "C23 (ISO/IEC 9899)"
@@ -963,8 +963,8 @@
     "id": "lang-bash",
     "name": "Shell / Bash",
     "category": "language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-    "githubUrl": "https://github.com/bminor/bash",
+    "iconUrl": "https://cdn.simpleicons.org/gnubash",
+    "githubUrl": "https://github.com/mirror/bash",
     "creator": {
       "name": "Brian Fox (GNU)",
       "avatarUrl": "https://github.com/bash.png",
@@ -1100,6 +1100,226 @@
         "login": "objc4-team",
         "avatar_url": "https://github.com/github.png?size=64",
         "html_url": "https://github.com/apple-oss-distributions/objc4"
+      }
+    ]
+  },
+  {
+    "id": "lang-julia",
+    "name": "Julia",
+    "category": "language",
+    "subCategory": "High-Performance Scientific Computing Language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg",
+    "githubUrl": "https://github.com/JuliaLang/julia",
+    "creator": {
+      "name": "Jeff Bezanson & Stefan Karpinski (JuliaLab)",
+      "avatarUrl": "https://github.com/JuliaLang.png",
+      "type": "organization",
+      "releaseDate": "Şubat 2012",
+      "latestVersion": "v1.11.3"
+    },
+    "popularity": {
+      "totalRepos": 84012,
+      "totalStars": 49189
+    },
+    "momentum": {
+      "newReposLast30Days": 1587,
+      "topStarredNewRepo": {
+        "name": "ZhuochengLu/WannierNLQG",
+        "stars": 30
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:48.015Z",
+    "contributors": [
+      {
+        "login": "vtjnash",
+        "avatar_url": "https://github.com/vtjnash.png?size=64",
+        "html_url": "https://github.com/vtjnash"
+      },
+      {
+        "login": "JeffBezanson",
+        "avatar_url": "https://github.com/JeffBezanson.png?size=64",
+        "html_url": "https://github.com/JeffBezanson"
+      },
+      {
+        "login": "StefanKarpinski",
+        "avatar_url": "https://github.com/StefanKarpinski.png?size=64",
+        "html_url": "https://github.com/StefanKarpinski"
+      }
+    ]
+  },
+  {
+    "id": "lang-erlang",
+    "name": "Erlang",
+    "category": "language",
+    "subCategory": "Concurrent Telecom & Distributed Language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/erlang/erlang-original.svg",
+    "githubUrl": "https://github.com/erlang/otp",
+    "creator": {
+      "name": "Joe Armstrong (Ericsson)",
+      "avatarUrl": "https://github.com/erlang.png",
+      "type": "organization",
+      "releaseDate": "1986",
+      "latestVersion": "OTP 27.2"
+    },
+    "popularity": {
+      "totalRepos": 24388,
+      "totalStars": 12355
+    },
+    "momentum": {
+      "newReposLast30Days": 181,
+      "topStarredNewRepo": {
+        "name": "alphaparkinc/genpark-actor-model-supervision-tree-skill",
+        "stars": 7
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:52.860Z",
+    "contributors": [
+      {
+        "login": "josevalim",
+        "avatar_url": "https://github.com/josevalim.png?size=64",
+        "html_url": "https://github.com/josevalim"
+      },
+      {
+        "login": "garazdawi",
+        "avatar_url": "https://github.com/garazdawi.png?size=64",
+        "html_url": "https://github.com/garazdawi"
+      },
+      {
+        "login": "rickard-green",
+        "avatar_url": "https://github.com/rickard-green.png?size=64",
+        "html_url": "https://github.com/rickard-green"
+      }
+    ]
+  },
+  {
+    "id": "lang-clojure",
+    "name": "Clojure",
+    "category": "language",
+    "subCategory": "Dynamic Functional Lisp Dialect for JVM",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg",
+    "githubUrl": "https://github.com/clojure/clojure",
+    "creator": {
+      "name": "Rich Hickey",
+      "avatarUrl": "https://github.com/richhickey.png",
+      "type": "person",
+      "releaseDate": "16 Ekim 2007",
+      "latestVersion": "v1.12.0"
+    },
+    "popularity": {
+      "totalRepos": 44808,
+      "totalStars": 10969
+    },
+    "momentum": {
+      "newReposLast30Days": 205,
+      "topStarredNewRepo": {
+        "name": "unclebob/crapper",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:58.105Z",
+    "contributors": [
+      {
+        "login": "richhickey",
+        "avatar_url": "https://github.com/richhickey.png?size=64",
+        "html_url": "https://github.com/richhickey"
+      },
+      {
+        "login": "stuarthalloway",
+        "avatar_url": "https://github.com/stuarthalloway.png?size=64",
+        "html_url": "https://github.com/stuarthalloway"
+      },
+      {
+        "login": "alexdmiller",
+        "avatar_url": "https://github.com/alexdmiller.png?size=64",
+        "html_url": "https://github.com/alexdmiller"
+      }
+    ]
+  },
+  {
+    "id": "lang-fsharp",
+    "name": "F#",
+    "category": "language",
+    "subCategory": "Functional-First Cross-Platform .NET Language",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fsharp/fsharp-original.svg",
+    "githubUrl": "https://github.com/dotnet/fsharp",
+    "creator": {
+      "name": "Don Syme (Microsoft Research)",
+      "avatarUrl": "https://github.com/dsyme.png",
+      "type": "person",
+      "releaseDate": "Mayıs 2005",
+      "latestVersion": "v9.0"
+    },
+    "popularity": {
+      "totalRepos": 58558,
+      "totalStars": 4343
+    },
+    "momentum": {
+      "newReposLast30Days": 1999,
+      "topStarredNewRepo": {
+        "name": "thefreemike31/fear-vr",
+        "stars": 139
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:02.894Z",
+    "contributors": [
+      {
+        "login": "dsyme",
+        "avatar_url": "https://github.com/dsyme.png?size=64",
+        "html_url": "https://github.com/dsyme"
+      },
+      {
+        "login": "TIHan",
+        "avatar_url": "https://github.com/TIHan.png?size=64",
+        "html_url": "https://github.com/TIHan"
+      },
+      {
+        "login": "vladima",
+        "avatar_url": "https://github.com/vladima.png?size=64",
+        "html_url": "https://github.com/vladima"
+      }
+    ]
+  },
+  {
+    "id": "lang-solidity",
+    "name": "Solidity",
+    "category": "language",
+    "subCategory": "Object-Oriented Smart Contract Language",
+    "iconUrl": "https://cdn.simpleicons.org/solidity",
+    "githubUrl": "https://github.com/ethereum/solidity",
+    "creator": {
+      "name": "Gavin Wood (Ethereum)",
+      "avatarUrl": "https://github.com/ethereum.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2014",
+      "latestVersion": "v0.8.28"
+    },
+    "popularity": {
+      "totalRepos": 99146,
+      "totalStars": 25747
+    },
+    "momentum": {
+      "newReposLast30Days": 1290,
+      "topStarredNewRepo": {
+        "name": "shinthink/blitzstrike",
+        "stars": 501
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:08.054Z",
+    "contributors": [
+      {
+        "login": "chriseth",
+        "avatar_url": "https://github.com/chriseth.png?size=64",
+        "html_url": "https://github.com/chriseth"
+      },
+      {
+        "login": "cameel",
+        "avatar_url": "https://github.com/cameel.png?size=64",
+        "html_url": "https://github.com/cameel"
+      },
+      {
+        "login": "axic",
+        "avatar_url": "https://github.com/axic.png?size=64",
+        "html_url": "https://github.com/axic"
       }
     ]
   }

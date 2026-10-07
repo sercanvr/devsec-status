@@ -1,0 +1,530 @@
+[
+  {
+    "id": "ai-pytorch",
+    "name": "PyTorch",
+    "category": "ai-infrastructure",
+    "subCategory": "Tensors and Dynamic Neural Networks in Python",
+    "iconUrl": "https://cdn.simpleicons.org/pytorch",
+    "githubUrl": "https://github.com/pytorch/pytorch",
+    "creator": {
+      "name": "Meta AI (Soumith Chintala)",
+      "avatarUrl": "https://github.com/pytorch.png",
+      "type": "organization",
+      "releaseDate": "Ekim 2016",
+      "latestVersion": "v2.6.0"
+    },
+    "popularity": {
+      "totalRepos": 246032,
+      "totalStars": 103816
+    },
+    "momentum": {
+      "newReposLast30Days": 7304,
+      "topStarredNewRepo": {
+        "name": "NandhaKishorM/laya",
+        "stars": 31266
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:32.204Z",
+    "contributors": [
+      {
+        "login": "soumith",
+        "avatar_url": "https://github.com/soumith.png?size=64",
+        "html_url": "https://github.com/soumith"
+      },
+      {
+        "login": "ezyang",
+        "avatar_url": "https://github.com/ezyang.png?size=64",
+        "html_url": "https://github.com/ezyang"
+      },
+      {
+        "login": "gchanan",
+        "avatar_url": "https://github.com/gchanan.png?size=64",
+        "html_url": "https://github.com/gchanan"
+      }
+    ]
+  },
+  {
+    "id": "ai-tensorflow",
+    "name": "TensorFlow",
+    "category": "ai-infrastructure",
+    "subCategory": "End-to-End Machine Learning Platform",
+    "iconUrl": "https://cdn.simpleicons.org/tensorflow",
+    "githubUrl": "https://github.com/tensorflow/tensorflow",
+    "creator": {
+      "name": "Google Brain Team",
+      "avatarUrl": "https://github.com/tensorflow.png",
+      "type": "organization",
+      "releaseDate": "9 Kasım 2015",
+      "latestVersion": "v2.18.0"
+    },
+    "popularity": {
+      "totalRepos": 214828,
+      "totalStars": 200723
+    },
+    "momentum": {
+      "newReposLast30Days": 2547,
+      "topStarredNewRepo": {
+        "name": "anshutiwari9917-ui/survival-stat-tuner",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:36.696Z",
+    "contributors": [
+      {
+        "login": "jeffdean",
+        "avatar_url": "https://github.com/jeffdean.png?size=64",
+        "html_url": "https://github.com/jeffdean"
+      },
+      {
+        "login": "mrry",
+        "avatar_url": "https://github.com/mrry.png?size=64",
+        "html_url": "https://github.com/mrry"
+      },
+      {
+        "login": "concretevitamin",
+        "avatar_url": "https://github.com/concretevitamin.png?size=64",
+        "html_url": "https://github.com/concretevitamin"
+      }
+    ]
+  },
+  {
+    "id": "ai-transformers",
+    "name": "Transformers",
+    "category": "ai-infrastructure",
+    "subCategory": "State-of-the-art ML for PyTorch, TF, and JAX",
+    "iconUrl": "https://cdn.simpleicons.org/huggingface",
+    "githubUrl": "https://github.com/huggingface/transformers",
+    "creator": {
+      "name": "Clément Delangue (Hugging Face)",
+      "avatarUrl": "https://github.com/huggingface.png",
+      "type": "organization",
+      "releaseDate": "Ekim 2018",
+      "latestVersion": "v4.48.1"
+    },
+    "popularity": {
+      "totalRepos": 118336,
+      "totalStars": 167011
+    },
+    "momentum": {
+      "newReposLast30Days": 4719,
+      "topStarredNewRepo": {
+        "name": "youngyangyang04/llm-master",
+        "stars": 1096
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:41.205Z",
+    "contributors": [
+      {
+        "login": "LysandreJik",
+        "avatar_url": "https://github.com/LysandreJik.png?size=64",
+        "html_url": "https://github.com/LysandreJik"
+      },
+      {
+        "login": "ArthurZucker",
+        "avatar_url": "https://github.com/ArthurZucker.png?size=64",
+        "html_url": "https://github.com/ArthurZucker"
+      },
+      {
+        "login": "sgugger",
+        "avatar_url": "https://github.com/sgugger.png?size=64",
+        "html_url": "https://github.com/sgugger"
+      }
+    ]
+  },
+  {
+    "id": "ai-llamacpp",
+    "name": "llama.cpp",
+    "category": "ai-infrastructure",
+    "subCategory": "Port of Facebook's LLaMA model in pure C/C++",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    "githubUrl": "https://github.com/ggerganov/llama.cpp",
+    "creator": {
+      "name": "Georgi Gerganov",
+      "avatarUrl": "https://github.com/ggerganov.png",
+      "type": "person",
+      "releaseDate": "Mart 2023",
+      "latestVersion": "b4525"
+    },
+    "popularity": {
+      "totalRepos": 9633,
+      "totalStars": 130540
+    },
+    "momentum": {
+      "newReposLast30Days": 1250,
+      "topStarredNewRepo": {
+        "name": "kvmem/kvmem-llama.cpp",
+        "stars": 859
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:46.414Z",
+    "contributors": [
+      {
+        "login": "ggerganov",
+        "avatar_url": "https://github.com/ggerganov.png?size=64",
+        "html_url": "https://github.com/ggerganov"
+      },
+      {
+        "login": "slaren",
+        "avatar_url": "https://github.com/slaren.png?size=64",
+        "html_url": "https://github.com/slaren"
+      },
+      {
+        "login": "ngxson",
+        "avatar_url": "https://github.com/ngxson.png?size=64",
+        "html_url": "https://github.com/ngxson"
+      }
+    ]
+  },
+  {
+    "id": "ai-stablediffusion",
+    "name": "Stable Diffusion",
+    "category": "ai-infrastructure",
+    "subCategory": "High-Resolution Latent Diffusion Model for Images",
+    "iconUrl": "https://avatars.githubusercontent.com/u/30233788?s=60&v=4",
+    "githubUrl": "https://github.com/CompVis/stable-diffusion",
+    "creator": {
+      "name": "Robin Rombach (CompVis & Stability AI)",
+      "avatarUrl": "https://github.com/CompVis.png",
+      "type": "organization",
+      "releaseDate": "Ağustos 2022",
+      "latestVersion": "v2.1"
+    },
+    "popularity": {
+      "totalRepos": 18315,
+      "totalStars": 73493
+    },
+    "momentum": {
+      "newReposLast30Days": 322,
+      "topStarredNewRepo": {
+        "name": "Davinchy/macuda",
+        "stars": 40
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:51.018Z",
+    "contributors": [
+      {
+        "login": "rromb",
+        "avatar_url": "https://github.com/rromb.png?size=64",
+        "html_url": "https://github.com/rromb"
+      },
+      {
+        "login": "pesser",
+        "avatar_url": "https://github.com/pesser.png?size=64",
+        "html_url": "https://github.com/pesser"
+      },
+      {
+        "login": "hafriedlander",
+        "avatar_url": "https://github.com/hafriedlander.png?size=64",
+        "html_url": "https://github.com/hafriedlander"
+      }
+    ]
+  },
+  {
+    "id": "ai-scikitlearn",
+    "name": "scikit-learn",
+    "category": "ai-infrastructure",
+    "subCategory": "Machine Learning in Python",
+    "iconUrl": "https://cdn.simpleicons.org/scikitlearn",
+    "githubUrl": "https://github.com/scikit-learn/scikit-learn",
+    "creator": {
+      "name": "David Cournapeau & Inria",
+      "avatarUrl": "https://github.com/scikit-learn.png",
+      "type": "organization",
+      "releaseDate": "Haziran 2007",
+      "latestVersion": "v1.6.1"
+    },
+    "popularity": {
+      "totalRepos": 112800,
+      "totalStars": 67485
+    },
+    "momentum": {
+      "newReposLast30Days": 6000,
+      "topStarredNewRepo": {
+        "name": "anshutiwari9917-ui/survival-stat-tuner",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:49:55.684Z",
+    "contributors": [
+      {
+        "login": "ogrisel",
+        "avatar_url": "https://github.com/ogrisel.png?size=64",
+        "html_url": "https://github.com/ogrisel"
+      },
+      {
+        "login": "GaelVaroquaux",
+        "avatar_url": "https://github.com/GaelVaroquaux.png?size=64",
+        "html_url": "https://github.com/GaelVaroquaux"
+      },
+      {
+        "login": "amueller",
+        "avatar_url": "https://github.com/amueller.png?size=64",
+        "html_url": "https://github.com/amueller"
+      }
+    ]
+  },
+  {
+    "id": "ai-keras",
+    "name": "Keras",
+    "category": "ai-infrastructure",
+    "subCategory": "Deep Learning for Humans (JAX, PyTorch, TF)",
+    "iconUrl": "https://cdn.simpleicons.org/keras",
+    "githubUrl": "https://github.com/keras-team/keras",
+    "creator": {
+      "name": "François Chollet",
+      "avatarUrl": "https://github.com/fchollet.png",
+      "type": "person",
+      "releaseDate": "27 Mart 2015",
+      "latestVersion": "v3.8.0"
+    },
+    "popularity": {
+      "totalRepos": 93487,
+      "totalStars": 64351
+    },
+    "momentum": {
+      "newReposLast30Days": 1426,
+      "topStarredNewRepo": {
+        "name": "abelchrispin5-glitch/Keras-Forge-CNN-Studio",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:00.712Z",
+    "contributors": [
+      {
+        "login": "fchollet",
+        "avatar_url": "https://github.com/fchollet.png?size=64",
+        "html_url": "https://github.com/fchollet"
+      },
+      {
+        "login": "qlzh727",
+        "avatar_url": "https://github.com/qlzh727.png?size=64",
+        "html_url": "https://github.com/qlzh727"
+      },
+      {
+        "login": "haifeng-jin",
+        "avatar_url": "https://github.com/haifeng-jin.png?size=64",
+        "html_url": "https://github.com/haifeng-jin"
+      }
+    ]
+  },
+  {
+    "id": "ai-jax",
+    "name": "JAX",
+    "category": "ai-infrastructure",
+    "subCategory": "Composable Transformations of Python+NumPy",
+    "iconUrl": "https://avatars.githubusercontent.com/u/58486408?s=60&v=4",
+    "githubUrl": "https://github.com/jax-ml/jax",
+    "creator": {
+      "name": "Matt Johnson (Google Research)",
+      "avatarUrl": "https://github.com/jax-ml.png",
+      "type": "organization",
+      "releaseDate": "Aralık 2018",
+      "latestVersion": "v0.4.38"
+    },
+    "popularity": {
+      "totalRepos": 30033,
+      "totalStars": 36380
+    },
+    "momentum": {
+      "newReposLast30Days": 807,
+      "topStarredNewRepo": {
+        "name": "GabrielNicolas10/haiku-forge",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:05.492Z",
+    "contributors": [
+      {
+        "login": "mattjj",
+        "avatar_url": "https://github.com/mattjj.png?size=64",
+        "html_url": "https://github.com/mattjj"
+      },
+      {
+        "login": "hawkinsp",
+        "avatar_url": "https://github.com/hawkinsp.png?size=64",
+        "html_url": "https://github.com/hawkinsp"
+      },
+      {
+        "login": "shoyer",
+        "avatar_url": "https://github.com/shoyer.png?size=64",
+        "html_url": "https://github.com/shoyer"
+      }
+    ]
+  },
+  {
+    "id": "ai-vllm",
+    "name": "vLLM",
+    "category": "ai-infrastructure",
+    "subCategory": "High-Throughput and Memory-Efficient LLM Serving",
+    "iconUrl": "https://cdn.simpleicons.org/vllm",
+    "githubUrl": "https://github.com/vllm-project/vllm",
+    "creator": {
+      "name": "Woosuk Kwon (UC Berkeley LMSYS)",
+      "avatarUrl": "https://github.com/vllm-project.png",
+      "type": "organization",
+      "releaseDate": "Haziran 2023",
+      "latestVersion": "v0.7.0"
+    },
+    "popularity": {
+      "totalRepos": 15002,
+      "totalStars": 93305
+    },
+    "momentum": {
+      "newReposLast30Days": 1718,
+      "topStarredNewRepo": {
+        "name": "nokia-applied-research/AnyJev",
+        "stars": 1088
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:10.917Z",
+    "contributors": [
+      {
+        "login": "WoosukKwon",
+        "avatar_url": "https://github.com/WoosukKwon.png?size=64",
+        "html_url": "https://github.com/WoosukKwon"
+      },
+      {
+        "login": "zhuohan123",
+        "avatar_url": "https://github.com/zhuohan123.png?size=64",
+        "html_url": "https://github.com/zhuohan123"
+      },
+      {
+        "login": "youkaichao",
+        "avatar_url": "https://github.com/youkaichao.png?size=64",
+        "html_url": "https://github.com/youkaichao"
+      }
+    ]
+  },
+  {
+    "id": "ai-whisper",
+    "name": "Whisper",
+    "category": "ai-infrastructure",
+    "subCategory": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "iconUrl": "https://avatars.githubusercontent.com/u/14957082?s=200&v=4",
+    "githubUrl": "https://github.com/openai/whisper",
+    "creator": {
+      "name": "Alec Radford (OpenAI)",
+      "avatarUrl": "https://github.com/openai.png",
+      "type": "organization",
+      "releaseDate": "Eylül 2022",
+      "latestVersion": "v20231117"
+    },
+    "popularity": {
+      "totalRepos": 66550,
+      "totalStars": 110069
+    },
+    "momentum": {
+      "newReposLast30Days": 4086,
+      "topStarredNewRepo": {
+        "name": "vincentsch/explainroo",
+        "stars": 474
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:15.669Z",
+    "contributors": [
+      {
+        "login": "jongwook",
+        "avatar_url": "https://github.com/jongwook.png?size=64",
+        "html_url": "https://github.com/jongwook"
+      },
+      {
+        "login": "radford",
+        "avatar_url": "https://github.com/radford.png?size=64",
+        "html_url": "https://github.com/radford"
+      },
+      {
+        "login": "gmpatel",
+        "avatar_url": "https://github.com/gmpatel.png?size=64",
+        "html_url": "https://github.com/gmpatel"
+      }
+    ]
+  },
+  {
+    "id": "ai-llamaindex",
+    "name": "LlamaIndex",
+    "category": "ai-infrastructure",
+    "subCategory": "Data Framework for LLM Context Augmentation & RAG",
+    "iconUrl": "https://avatars.githubusercontent.com/u/130722866?s=60&v=4",
+    "githubUrl": "https://github.com/run-llama/llama_index",
+    "creator": {
+      "name": "Jerry Liu",
+      "avatarUrl": "https://github.com/jerryjliu.png",
+      "type": "person",
+      "releaseDate": "Kasım 2022",
+      "latestVersion": "v0.12.14"
+    },
+    "popularity": {
+      "totalRepos": 6767,
+      "totalStars": 52427
+    },
+    "momentum": {
+      "newReposLast30Days": 245,
+      "topStarredNewRepo": {
+        "name": "erendikmenn/jev-rag-benchmark",
+        "stars": 15
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:20.816Z",
+    "contributors": [
+      {
+        "login": "jerryjliu",
+        "avatar_url": "https://github.com/jerryjliu.png?size=64",
+        "html_url": "https://github.com/jerryjliu"
+      },
+      {
+        "login": "logan-markewich",
+        "avatar_url": "https://github.com/logan-markewich.png?size=64",
+        "html_url": "https://github.com/logan-markewich"
+      },
+      {
+        "login": "discdiver",
+        "avatar_url": "https://github.com/discdiver.png?size=64",
+        "html_url": "https://github.com/discdiver"
+      }
+    ]
+  },
+  {
+    "id": "ai-onnx",
+    "name": "ONNX",
+    "category": "ai-infrastructure",
+    "subCategory": "Open Standard for Machine Learning Interoperability",
+    "iconUrl": "https://cdn.simpleicons.org/onnx",
+    "githubUrl": "https://github.com/onnx/onnx",
+    "creator": {
+      "name": "Linux Foundation (Microsoft & Meta)",
+      "avatarUrl": "https://github.com/onnx.png",
+      "type": "organization",
+      "releaseDate": "Aralık 2017",
+      "latestVersion": "v1.17.0"
+    },
+    "popularity": {
+      "totalRepos": 20192,
+      "totalStars": 21561
+    },
+    "momentum": {
+      "newReposLast30Days": 1724,
+      "topStarredNewRepo": {
+        "name": "ollaya-dev/ollaya",
+        "stars": 1226
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:27.527Z",
+    "contributors": [
+      {
+        "login": "danking",
+        "avatar_url": "https://github.com/danking.png?size=64",
+        "html_url": "https://github.com/danking"
+      },
+      {
+        "login": "jcwchen",
+        "avatar_url": "https://github.com/jcwchen.png?size=64",
+        "html_url": "https://github.com/jcwchen"
+      },
+      {
+        "login": "gramalingam",
+        "avatar_url": "https://github.com/gramalingam.png?size=64",
+        "html_url": "https://github.com/gramalingam"
+      }
+    ]
+  }
+]

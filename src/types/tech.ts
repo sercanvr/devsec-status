@@ -19,7 +19,10 @@ export type TechCategory =
   | "nosql" 
   | "search-engine" 
   | "baas" 
-  | "security-framework";
+  | "security-framework"
+  | "linux-distro"
+  | "ai-tool"
+  | "ai-infrastructure";
 
 export interface TechContributor {
   login: string;

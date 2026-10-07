@@ -3,7 +3,7 @@
     "id": "sec-ghidra",
     "name": "Ghidra",
     "category": "security-tool",
-    "iconUrl": "https://github.com/NationalSecurityAgency.png?size=128",
+    "iconUrl": "https://raw.githubusercontent.com/NationalSecurityAgency/ghidra/master/Ghidra/Framework/Gui/src/main/resources/images/GhidraIcon64.png",
     "githubUrl": "https://github.com/NationalSecurityAgency/ghidra",
     "creator": {
       "name": "NSA (National Security Agency)",
@@ -51,7 +51,7 @@
     "id": "sec-metasploit",
     "name": "Metasploit Framework",
     "category": "security-tool",
-    "iconUrl": "https://github.com/rapid7.png?size=128",
+    "iconUrl": "https://cdn.simpleicons.org/metasploit",
     "githubUrl": "https://github.com/rapid7/metasploit-framework",
     "creator": {
       "name": "H. D. Moore (Rapid7)",
@@ -435,7 +435,7 @@
     "id": "sec-john-the-ripper",
     "name": "John the Ripper",
     "category": "security-tool",
-    "iconUrl": "https://github.com/openwall.png?size=128",
+    "iconUrl": "https://avatars.githubusercontent.com/u/1579552?s=60&v=4",
     "githubUrl": "https://github.com/openwall/john",
     "creator": {
       "name": "Solar Designer (Openwall)",
@@ -572,6 +572,402 @@
         "login": "volatility3-team",
         "avatar_url": "https://github.com/github.png?size=64",
         "html_url": "https://github.com/volatilityfoundation/volatility3"
+      }
+    ]
+  },
+  {
+    "id": "sec-aircrackng",
+    "name": "Aircrack-ng",
+    "category": "security-tool",
+    "subCategory": "Wireless Security Auditing Suite",
+    "iconUrl": "https://avatars.githubusercontent.com/u/4042925?s=60&v=4",
+    "githubUrl": "https://github.com/aircrack-ng/aircrack-ng",
+    "creator": {
+      "name": "Thomas d'Otreppe",
+      "avatarUrl": "https://github.com/aircrack-ng.png",
+      "type": "organization",
+      "releaseDate": "Nisan 2006",
+      "latestVersion": "v1.7"
+    },
+    "popularity": {
+      "totalRepos": 848,
+      "totalStars": 7708
+    },
+    "momentum": {
+      "newReposLast30Days": 33,
+      "topStarredNewRepo": {
+        "name": "udhaybhat00/airscope",
+        "stars": 3
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:13.194Z",
+    "contributors": [
+      {
+        "login": "misterx",
+        "avatar_url": "https://github.com/misterx.png?size=64",
+        "html_url": "https://github.com/misterx"
+      },
+      {
+        "login": "chaonet",
+        "avatar_url": "https://github.com/chaonet.png?size=64",
+        "html_url": "https://github.com/chaonet"
+      },
+      {
+        "login": "b100dian",
+        "avatar_url": "https://github.com/b100dian.png?size=64",
+        "html_url": "https://github.com/b100dian"
+      }
+    ]
+  },
+  {
+    "id": "sec-amass",
+    "name": "OWASP Amass",
+    "category": "security-tool",
+    "subCategory": "Attack Surface Mapping & In-Depth Recon",
+    "iconUrl": "https://raw.githubusercontent.com/owasp-amass/amass/master/images/amass_logo.png",
+    "githubUrl": "https://github.com/owasp-amass/amass",
+    "creator": {
+      "name": "Jeff Foley (OWASP)",
+      "avatarUrl": "https://github.com/owasp-amass.png",
+      "type": "organization",
+      "releaseDate": "Ocak 2017",
+      "latestVersion": "v4.2.0"
+    },
+    "popularity": {
+      "totalRepos": 32,
+      "totalStars": 15316
+    },
+    "momentum": {
+      "newReposLast30Days": 3,
+      "topStarredNewRepo": {
+        "name": "Joey-Galligani/my-owasp-amass",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:17.734Z",
+    "contributors": [
+      {
+        "login": "caffix",
+        "avatar_url": "https://github.com/caffix.png?size=64",
+        "html_url": "https://github.com/caffix"
+      },
+      {
+        "login": "grit96",
+        "avatar_url": "https://github.com/grit96.png?size=64",
+        "html_url": "https://github.com/grit96"
+      },
+      {
+        "login": "proab居住",
+        "avatar_url": "https://github.com/github.png?size=64",
+        "html_url": "https://github.com/owasp-amass/amass"
+      }
+    ]
+  },
+  {
+    "id": "sec-ffuf",
+    "name": "ffuf",
+    "category": "security-tool",
+    "subCategory": "Fast Web Fuzzing Engine in Go",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    "githubUrl": "https://github.com/ffuf/ffuf",
+    "creator": {
+      "name": "Joona Hoikkala (joohoi)",
+      "avatarUrl": "https://github.com/joohoi.png",
+      "type": "person",
+      "releaseDate": "Kasım 2018",
+      "latestVersion": "v2.1.0"
+    },
+    "popularity": {
+      "totalRepos": 646,
+      "totalStars": 16833
+    },
+    "momentum": {
+      "newReposLast30Days": 42,
+      "topStarredNewRepo": {
+        "name": "MENPHIS7-DEV/Enumeration_cheat_heet",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:22.907Z",
+    "contributors": [
+      {
+        "login": "joohoi",
+        "avatar_url": "https://github.com/joohoi.png?size=64",
+        "html_url": "https://github.com/joohoi"
+      },
+      {
+        "login": "pielgrzym",
+        "avatar_url": "https://github.com/pielgrzym.png?size=64",
+        "html_url": "https://github.com/pielgrzym"
+      },
+      {
+        "login": "s0md3v",
+        "avatar_url": "https://github.com/s0md3v.png?size=64",
+        "html_url": "https://github.com/s0md3v"
+      }
+    ]
+  },
+  {
+    "id": "sec-mimikatz",
+    "name": "Mimikatz",
+    "category": "security-tool",
+    "subCategory": "Windows Post-Exploitation Credential Extractor",
+    "iconUrl": "https://raw.githubusercontent.com/gentilkiwi/mimikatz/master/mimikatz/mimikatz.ico",
+    "githubUrl": "https://github.com/gentilkiwi/mimikatz",
+    "creator": {
+      "name": "Benjamin Delpy (gentilkiwi)",
+      "avatarUrl": "https://github.com/gentilkiwi.png",
+      "type": "person",
+      "releaseDate": "2011",
+      "latestVersion": "v2.2.0"
+    },
+    "popularity": {
+      "totalRepos": 541,
+      "totalStars": 21888
+    },
+    "momentum": {
+      "newReposLast30Days": 5,
+      "topStarredNewRepo": {
+        "name": "ferecovilkin/active-directory-red-team-lab",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:26.764Z",
+    "contributors": [
+      {
+        "login": "gentilkiwi",
+        "avatar_url": "https://github.com/gentilkiwi.png?size=64",
+        "html_url": "https://github.com/gentilkiwi"
+      },
+      {
+        "login": "vletoux",
+        "avatar_url": "https://github.com/vletoux.png?size=64",
+        "html_url": "https://github.com/vletoux"
+      },
+      {
+        "login": "subTee",
+        "avatar_url": "https://github.com/subTee.png?size=64",
+        "html_url": "https://github.com/subTee"
+      }
+    ]
+  },
+  {
+    "id": "sec-suricata",
+    "name": "Suricata",
+    "category": "security-framework",
+    "subCategory": "Network Threat Detection & IDS/IPS Engine",
+    "iconUrl": "https://avatars.githubusercontent.com/u/2188963?s=60&v=4",
+    "githubUrl": "https://github.com/OISF/suricata",
+    "creator": {
+      "name": "Open Information Security Foundation (OISF)",
+      "avatarUrl": "https://github.com/OISF.png",
+      "type": "organization",
+      "releaseDate": "Aralık 2009",
+      "latestVersion": "v7.0.8"
+    },
+    "popularity": {
+      "totalRepos": 5411,
+      "totalStars": 6703
+    },
+    "momentum": {
+      "newReposLast30Days": 356,
+      "topStarredNewRepo": {
+        "name": "vulncheck-oss/initial-access-community",
+        "stars": 12
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:31.740Z",
+    "contributors": [
+      {
+        "login": "victorjulien",
+        "avatar_url": "https://github.com/victorjulien.png?size=64",
+        "html_url": "https://github.com/victorjulien"
+      },
+      {
+        "login": "inliniac",
+        "avatar_url": "https://github.com/inliniac.png?size=64",
+        "html_url": "https://github.com/inliniac"
+      },
+      {
+        "login": "jasonish",
+        "avatar_url": "https://github.com/jasonish.png?size=64",
+        "html_url": "https://github.com/jasonish"
+      }
+    ]
+  },
+  {
+    "id": "sec-ossec",
+    "name": "OSSEC",
+    "category": "security-tool",
+    "subCategory": "Host-Based Intrusion Detection System (HIDS)",
+    "iconUrl": "https://avatars.githubusercontent.com/u/5479983?s=60&v=4",
+    "githubUrl": "https://github.com/ossec/ossec-hids",
+    "creator": {
+      "name": "Daniel B. Cid (Atomicorp)",
+      "avatarUrl": "https://github.com/ossec.png",
+      "type": "organization",
+      "releaseDate": "2004",
+      "latestVersion": "v3.7.0"
+    },
+    "popularity": {
+      "totalRepos": 731,
+      "totalStars": 5062
+    },
+    "momentum": {
+      "newReposLast30Days": 6,
+      "topStarredNewRepo": {
+        "name": "xuxu298/rule-doctor-lite",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:36.096Z",
+    "contributors": [
+      {
+        "login": "ddpbsd",
+        "avatar_url": "https://github.com/ddpbsd.png?size=64",
+        "html_url": "https://github.com/ddpbsd"
+      },
+      {
+        "login": "jessek",
+        "avatar_url": "https://github.com/jessek.png?size=64",
+        "html_url": "https://github.com/jessek"
+      },
+      {
+        "login": "dcid",
+        "avatar_url": "https://github.com/dcid.png?size=64",
+        "html_url": "https://github.com/dcid"
+      }
+    ]
+  },
+  {
+    "id": "sec-radare2",
+    "name": "Radare2",
+    "category": "security-framework",
+    "subCategory": "Reverse Engineering & Binary Analysis Framework",
+    "iconUrl": "https://avatars.githubusercontent.com/u/2842539?s=60&v=4",
+    "githubUrl": "https://github.com/radareorg/radare2",
+    "creator": {
+      "name": "Sergi Àlvarez (pancake)",
+      "avatarUrl": "https://github.com/radareorg.png",
+      "type": "organization",
+      "releaseDate": "Şubat 2006",
+      "latestVersion": "v5.9.8"
+    },
+    "popularity": {
+      "totalRepos": 653,
+      "totalStars": 24940
+    },
+    "momentum": {
+      "newReposLast30Days": 19,
+      "topStarredNewRepo": {
+        "name": "radareorg/r2hexpat",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:40.624Z",
+    "contributors": [
+      {
+        "login": "trufae",
+        "avatar_url": "https://github.com/trufae.png?size=64",
+        "html_url": "https://github.com/trufae"
+      },
+      {
+        "login": "radare",
+        "avatar_url": "https://github.com/radare.png?size=64",
+        "html_url": "https://github.com/radare"
+      },
+      {
+        "login": "condret",
+        "avatar_url": "https://github.com/condret.png?size=64",
+        "html_url": "https://github.com/condret"
+      }
+    ]
+  },
+  {
+    "id": "sec-cyberchef",
+    "name": "CyberChef",
+    "category": "security-tool",
+    "subCategory": "The Cyber Swiss Army Knife for Analysis",
+    "iconUrl": "https://gchq.github.io/CyberChef/images/cyberchef-128x128.png",
+    "githubUrl": "https://github.com/gchq/CyberChef",
+    "creator": {
+      "name": "GCHQ",
+      "avatarUrl": "https://github.com/gchq.png",
+      "type": "organization",
+      "releaseDate": "Kasım 2016",
+      "latestVersion": "v10.19.4"
+    },
+    "popularity": {
+      "totalRepos": 535,
+      "totalStars": 36034
+    },
+    "momentum": {
+      "newReposLast30Days": 29,
+      "topStarredNewRepo": {
+        "name": "noor202401938-netizen/cyber-chef-mcp",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:45.827Z",
+    "contributors": [
+      {
+        "login": "matt-c-gchq",
+        "avatar_url": "https://github.com/matt-c-gchq.png?size=64",
+        "html_url": "https://github.com/matt-c-gchq"
+      },
+      {
+        "login": "b-b-gchq",
+        "avatar_url": "https://github.com/b-b-gchq.png?size=64",
+        "html_url": "https://github.com/b-b-gchq"
+      },
+      {
+        "login": "j-f-gchq",
+        "avatar_url": "https://github.com/j-f-gchq.png?size=64",
+        "html_url": "https://github.com/j-f-gchq"
+      }
+    ]
+  },
+  {
+    "id": "sec-sliver",
+    "name": "Sliver",
+    "category": "security-framework",
+    "subCategory": "Adversary Simulation & C2 Framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+    "githubUrl": "https://github.com/BishopFox/sliver",
+    "creator": {
+      "name": "Bishop Fox",
+      "avatarUrl": "https://github.com/BishopFox.png",
+      "type": "organization",
+      "releaseDate": "Haziran 2019",
+      "latestVersion": "v1.5.42"
+    },
+    "popularity": {
+      "totalRepos": 2198,
+      "totalStars": 11983
+    },
+    "momentum": {
+      "newReposLast30Days": 47,
+      "topStarredNewRepo": {
+        "name": "dagowda/notRDP",
+        "stars": 234
+      }
+    },
+    "lastUpdated": "2026-10-07T06:53:51.151Z",
+    "contributors": [
+      {
+        "login": "moloch--",
+        "avatar_url": "https://github.com/moloch--.png?size=64",
+        "html_url": "https://github.com/moloch--"
+      },
+      {
+        "login": "rkajew",
+        "avatar_url": "https://github.com/rkajew.png?size=64",
+        "html_url": "https://github.com/rkajew"
+      },
+      {
+        "login": "domchell",
+        "avatar_url": "https://github.com/domchell.png?size=64",
+        "html_url": "https://github.com/domchell"
       }
     ]
   }

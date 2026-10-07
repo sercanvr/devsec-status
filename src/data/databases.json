@@ -294,60 +294,11 @@
     ]
   },
   {
-    "id": "db-sql",
-    "name": "SQL",
-    "category": "query-language",
-    "subCategory": "Query Language",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    "githubUrl": "https://github.com/postgres/postgres",
-    "creator": {
-      "name": "Donald D. Chamberlin (IBM)",
-      "avatarUrl": "https://github.com/postgres.png",
-      "type": "person",
-      "releaseDate": "1974 (IBM)",
-      "latestVersion": "SQL:2023 Standard"
-    },
-    "popularity": {
-      "totalRepos": 1457443,
-      "totalStars": 22303
-    },
-    "momentum": {
-      "newReposLast30Days": 44243,
-      "topStarredNewRepo": {
-        "name": "planetscale/lead",
-        "stars": 160
-      }
-    },
-    "lastUpdated": "2026-10-07T04:52:25.771Z",
-    "contributors": [
-      {
-        "login": "postgres",
-        "avatar_url": "https://github.com/postgres.png?size=64",
-        "html_url": "https://github.com/postgres"
-      },
-      {
-        "login": "postgres-lead",
-        "avatar_url": "https://github.com/postgres.png?size=64",
-        "html_url": "https://github.com/postgres/postgres"
-      },
-      {
-        "login": "postgres-core",
-        "avatar_url": "https://github.com/postgres.png?size=64",
-        "html_url": "https://github.com/postgres/postgres"
-      },
-      {
-        "login": "postgres-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/postgres/postgres"
-      }
-    ]
-  },
-  {
     "id": "db-mysql",
     "name": "MySQL",
     "category": "rdbms",
     "subCategory": "Relational DBMS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "iconUrl": "https://cdn.simpleicons.org/mysql",
     "githubUrl": "https://github.com/mysql/mysql-server",
     "creator": {
       "name": "Michael Widenius (Oracle)",
@@ -494,7 +445,7 @@
     "name": "MariaDB",
     "category": "rdbms",
     "subCategory": "Relational DBMS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg",
+    "iconUrl": "https://cdn.simpleicons.org/mariadb",
     "githubUrl": "https://github.com/MariaDB/server",
     "creator": {
       "name": "Michael Widenius",
@@ -535,6 +486,226 @@
         "login": "server-team",
         "avatar_url": "https://github.com/github.png?size=64",
         "html_url": "https://github.com/MariaDB/server"
+      }
+    ]
+  },
+  {
+    "id": "db-clickhouse",
+    "name": "ClickHouse",
+    "category": "nosql",
+    "subCategory": "Column-Oriented OLAP DBMS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clickhouse/clickhouse-original.svg",
+    "githubUrl": "https://github.com/ClickHouse/ClickHouse",
+    "creator": {
+      "name": "Alexey Milovidov (ClickHouse Inc.)",
+      "avatarUrl": "https://github.com/ClickHouse.png",
+      "type": "organization",
+      "releaseDate": "15 Haziran 2016",
+      "latestVersion": "v24.12"
+    },
+    "popularity": {
+      "totalRepos": 10492,
+      "totalStars": 50276
+    },
+    "momentum": {
+      "newReposLast30Days": 480,
+      "topStarredNewRepo": {
+        "name": "alpcanaydin/tusk",
+        "stars": 353
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:48.884Z",
+    "contributors": [
+      {
+        "login": "alexey-milovidov",
+        "avatar_url": "https://github.com/alexey-milovidov.png?size=64",
+        "html_url": "https://github.com/alexey-milovidov"
+      },
+      {
+        "login": "chepath",
+        "avatar_url": "https://github.com/chepath.png?size=64",
+        "html_url": "https://github.com/chepath"
+      },
+      {
+        "login": "blinkov",
+        "avatar_url": "https://github.com/blinkov.png?size=64",
+        "html_url": "https://github.com/blinkov"
+      }
+    ]
+  },
+  {
+    "id": "db-kafka",
+    "name": "Apache Kafka",
+    "category": "nosql",
+    "subCategory": "Distributed Event Streaming Platform",
+    "iconUrl": "https://cdn.simpleicons.org/apachekafka",
+    "githubUrl": "https://github.com/apache/kafka",
+    "creator": {
+      "name": "Jay Kreps & Neha Narkhede (Apache)",
+      "avatarUrl": "https://github.com/apache.png",
+      "type": "organization",
+      "releaseDate": "1 Ağustos 2011",
+      "latestVersion": "v3.9.0"
+    },
+    "popularity": {
+      "totalRepos": 18465,
+      "totalStars": 33917
+    },
+    "momentum": {
+      "newReposLast30Days": 554,
+      "topStarredNewRepo": {
+        "name": "lisachenko/kafka-client",
+        "stars": 4
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:54.023Z",
+    "contributors": [
+      {
+        "login": "ijuma",
+        "avatar_url": "https://github.com/ijuma.png?size=64",
+        "html_url": "https://github.com/ijuma"
+      },
+      {
+        "login": "hachikuji",
+        "avatar_url": "https://github.com/hachikuji.png?size=64",
+        "html_url": "https://github.com/hachikuji"
+      },
+      {
+        "login": "guozhangwang",
+        "avatar_url": "https://github.com/guozhangwang.png?size=64",
+        "html_url": "https://github.com/guozhangwang"
+      }
+    ]
+  },
+  {
+    "id": "db-cockroachdb",
+    "name": "CockroachDB",
+    "category": "rdbms",
+    "subCategory": "Distributed Cloud-Native SQL DBMS",
+    "iconUrl": "https://cdn.simpleicons.org/cockroachlabs",
+    "githubUrl": "https://github.com/cockroachdb/cockroach",
+    "creator": {
+      "name": "Spencer Kimball & Peter Mattis",
+      "avatarUrl": "https://github.com/cockroachdb.png",
+      "type": "organization",
+      "releaseDate": "Şubat 2015",
+      "latestVersion": "v24.3"
+    },
+    "popularity": {
+      "totalRepos": 2756,
+      "totalStars": 32550
+    },
+    "momentum": {
+      "newReposLast30Days": 26,
+      "topStarredNewRepo": {
+        "name": "dusmamud/dbshift",
+        "stars": 6
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:59.270Z",
+    "contributors": [
+      {
+        "login": "petermattis",
+        "avatar_url": "https://github.com/petermattis.png?size=64",
+        "html_url": "https://github.com/petermattis"
+      },
+      {
+        "login": "spencerkimball",
+        "avatar_url": "https://github.com/spencerkimball.png?size=64",
+        "html_url": "https://github.com/spencerkimball"
+      },
+      {
+        "login": "tamird",
+        "avatar_url": "https://github.com/tamird.png?size=64",
+        "html_url": "https://github.com/tamird"
+      }
+    ]
+  },
+  {
+    "id": "db-qdrant",
+    "name": "Qdrant",
+    "category": "nosql",
+    "subCategory": "Vector Search Database for AI",
+    "iconUrl": "https://cdn.simpleicons.org/qdrant",
+    "githubUrl": "https://github.com/qdrant/qdrant",
+    "creator": {
+      "name": "Andrey Vasnetsov (Qdrant)",
+      "avatarUrl": "https://github.com/qdrant.png",
+      "type": "organization",
+      "releaseDate": "Mayıs 2021",
+      "latestVersion": "v1.12.5"
+    },
+    "popularity": {
+      "totalRepos": 13045,
+      "totalStars": 34955
+    },
+    "momentum": {
+      "newReposLast30Days": 1050,
+      "topStarredNewRepo": {
+        "name": "Jiarui-0410/real-time-recommendation-analytics",
+        "stars": 109
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:04.083Z",
+    "contributors": [
+      {
+        "login": "generall",
+        "avatar_url": "https://github.com/generall.png?size=64",
+        "html_url": "https://github.com/generall"
+      },
+      {
+        "login": "farnabaz",
+        "avatar_url": "https://github.com/farnabaz.png?size=64",
+        "html_url": "https://github.com/farnabaz"
+      },
+      {
+        "login": "timvisee",
+        "avatar_url": "https://github.com/timvisee.png?size=64",
+        "html_url": "https://github.com/timvisee"
+      }
+    ]
+  },
+  {
+    "id": "db-weaviate",
+    "name": "Weaviate",
+    "category": "nosql",
+    "subCategory": "Open Source Vector Database",
+    "iconUrl": "https://avatars.githubusercontent.com/u/37794290?s=60&v=4",
+    "githubUrl": "https://github.com/weaviate/weaviate",
+    "creator": {
+      "name": "Bob van Luijt (Weaviate)",
+      "avatarUrl": "https://github.com/weaviate.png",
+      "type": "organization",
+      "releaseDate": "Mart 2019",
+      "latestVersion": "v1.28.2"
+    },
+    "popularity": {
+      "totalRepos": 2164,
+      "totalStars": 16869
+    },
+    "momentum": {
+      "newReposLast30Days": 42,
+      "topStarredNewRepo": {
+        "name": "weaviate/weaviate-cloud",
+        "stars": 1
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:09.026Z",
+    "contributors": [
+      {
+        "login": "bobvanluijt",
+        "avatar_url": "https://github.com/bobvanluijt.png?size=64",
+        "html_url": "https://github.com/bobvanluijt"
+      },
+      {
+        "login": "etiennedi",
+        "avatar_url": "https://github.com/etiennedi.png?size=64",
+        "html_url": "https://github.com/etiennedi"
+      },
+      {
+        "login": "laura-ham",
+        "avatar_url": "https://github.com/laura-ham.png?size=64",
+        "html_url": "https://github.com/laura-ham"
       }
     ]
   }
