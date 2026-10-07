@@ -13,6 +13,16 @@ import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
 import { SegmentedProgressBar } from './SegmentedProgressBar';
 import { useGitHubContributors } from '../hooks/useGitHubContributors';
+import { useGitHubRelease } from '../hooks/useGitHubRelease';
+import { localizeDate } from '../lib/localizeDate';
+
+/**
+ * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
+ */
+export const formatAsciiTag = (val: string): string => {
+  if (!val) return '';
+  return val.toUpperCase().replace(/İ/g, 'I').replace(/ı/g, 'I');
+};
 
 interface TechTableProps {
   id?: string;
@@ -150,11 +160,11 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                   {icon}
                 </div>
               )}
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight flex items-center gap-2.5">
-                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400">
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight flex items-center gap-2.5 py-1 leading-normal">
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-block py-1">
                   {sanitizeText(title)}
                 </span>
-                <span className="text-xs sm:text-sm font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300">
+                <span className="text-xs sm:text-sm font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 shrink-0">
                   {processedEntries.length}
                 </span>
               </h2>
@@ -221,8 +231,9 @@ interface TableRowProps {
 }
 
 const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
+  const [avatarFailed, setAvatarFailed] = useState(false);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
@@ -230,7 +241,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
     : t('table.openSource');
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
+  const localizedReleaseDate = localizeDate(cleanReleaseDate, i18n.language);
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
+  const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
   const percentage = Math.min(
     100,
@@ -243,66 +256,74 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <tr
       id={entry.id}
-      className="group hover:bg-neutral-50 dark:hover:bg-neutral-800/30 transition-colors"
+      className="group hover:bg-neutral-100/70 dark:hover:bg-neutral-800/40 transition-none cv-row cursor-default"
     >
       {/* 1. Teknoloji (Item Name) */}
       <td className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2">
         <div className="flex items-center gap-2 lg:gap-2.5">
-          <div className="w-8.5 h-8.5 lg:w-11 lg:h-11 rounded-lg lg:rounded-xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1 flex items-center justify-center shrink-0 shadow-xs">
+          <div className="w-9 h-9 lg:w-11 lg:h-11 rounded-xl bg-neutral-900/85 dark:bg-white/85 border border-neutral-700/60 dark:border-white/30 backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-sm transition-none">
             <img
               src={entry.iconUrl}
               alt={cleanName}
               width={32}
               height={32}
-              className="w-6 h-6 lg:w-8 lg:h-8 object-contain shrink-0 filter drop-shadow-xs"
+              loading="lazy"
+              decoding="async"
+              className="w-6 h-6 lg:w-8 lg:h-8 object-contain shrink-0 filter drop-shadow-[0_1.5px_2.5px_rgba(255,255,255,0.55)] dark:drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.75)]"
               onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src =
-                  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                const img = e.currentTarget as HTMLImageElement;
+                if (!img.dataset.failed) {
+                  img.dataset.failed = 'true';
+                  img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                }
               }}
             />
           </div>
           <div>
-            <div className="font-bold text-xs lg:text-sm text-foreground group-hover:text-[#0066FF] dark:group-hover:text-[#CEFF00] transition-colors whitespace-nowrap">
+            <div className="font-bold text-xs lg:text-sm text-foreground group-hover:text-[#0066FF] dark:group-hover:text-[#CEFF00] transition-none whitespace-nowrap">
               {cleanName}
             </div>
           </div>
         </div>
       </td>
 
-      {/* 2. Geliştirici (Compact on tablet, spacious on desktop) */}
+      {/* 2. Geliştirici (Wrap without ellipsis when text is long) */}
       <td className="py-2.5 lg:py-3 px-1">
         <div className="flex items-center gap-1 lg:gap-1.5">
-          {entry.creator?.avatarUrl ? (
+          {!avatarFailed && entry.creator?.avatarUrl ? (
             <img
               src={entry.creator.avatarUrl}
               alt={cleanCreatorName}
               width={30}
               height={30}
-              className="w-6.5 h-6.5 lg:w-7.5 lg:h-7.5 rounded-full object-cover border border-neutral-300 dark:border-neutral-700 shrink-0"
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).style.display = 'none';
-              }}
+              loading="lazy"
+              decoding="async"
+              className="w-7 h-7 lg:w-8 lg:h-8 rounded-full object-cover aspect-square border border-neutral-300 dark:border-neutral-700 shrink-0"
+              onError={() => setAvatarFailed(true)}
             />
           ) : (
-            <div className="w-6.5 h-6.5 lg:w-7.5 lg:h-7.5 rounded-full bg-neutral-200 dark:bg-neutral-700 text-[10px] lg:text-[11px] font-bold flex items-center justify-center text-neutral-600 dark:text-neutral-300 shrink-0">
+            <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-full bg-neutral-200 dark:bg-neutral-700 text-[10px] lg:text-[11px] font-bold flex items-center justify-center text-neutral-600 dark:text-neutral-300 shrink-0">
               {cleanName.slice(0, 1)}
             </div>
           )}
           <div>
-            <div className="font-semibold text-[11px] lg:text-xs text-foreground max-w-[75px] md:max-w-[78px] lg:max-w-[125px] truncate lg:break-words leading-tight">
+            <div className="font-semibold text-[11px] lg:text-xs text-foreground whitespace-normal break-words leading-snug min-w-[90px] max-w-[140px] lg:max-w-[200px]">
               {cleanCreatorName}
             </div>
-            <div className="text-[9px] lg:text-[10px] text-neutral-500 dark:text-neutral-400 max-w-[75px] md:max-w-[78px] lg:max-w-[125px] truncate lg:break-words leading-tight mt-0.5">
-              {cleanReleaseDate || t('table.maintainer')}
+            <div className="text-[9px] lg:text-[10px] text-neutral-500 dark:text-neutral-400 whitespace-normal break-words leading-tight mt-0.5 min-w-[90px] max-w-[140px] lg:max-w-[200px]">
+              {localizedReleaseDate || t('table.maintainer')}
             </div>
           </div>
         </div>
       </td>
 
-      {/* 3. Tür (Type Pill) */}
+      {/* 3. Tür (Type Pill - Guaranteed English ASCII uppercase, no dotted İ) */}
       <td className="py-2.5 lg:py-3 px-1 text-center">
-        <span className="inline-flex items-center justify-center min-w-0 lg:min-w-[70px] px-1.5 lg:px-2 py-0.5 rounded-md text-[9px] lg:text-[10px] font-mono font-bold uppercase tracking-normal lg:tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap">
-          {entry.category}
+        <span
+          lang="en"
+          className="inline-flex items-center justify-center min-w-0 lg:min-w-[70px] px-1.5 lg:px-2 py-0.5 rounded-md text-[9px] lg:text-[10px] font-mono font-bold tracking-normal lg:tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap"
+        >
+          {formatAsciiTag(entry.category)}
         </span>
       </td>
 
@@ -331,18 +352,22 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           </div>
         ) : (
           <div
-            className="inline-flex items-center justify-center font-mono text-[10px] lg:text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 px-2 lg:px-3 py-0.5 rounded-md border border-amber-500/25 whitespace-nowrap"
-            title="Son 30 günde yeni repo eklenmedi"
+            className="inline-flex items-center justify-center gap-1 font-mono text-[9px] lg:text-[11px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap"
+            title="Son 30 günde repo sayısı sabit / Nötr ivmelenme"
           >
-            <span>–</span>
+            <span className="font-bold">±0</span>
+            <span className="text-[9px] font-sans font-medium opacity-90 hidden sm:inline">Nötr</span>
           </div>
         )}
       </td>
 
       {/* 6. GÜNCEL SÜRÜM */}
       <td className="py-2.5 lg:py-3 px-1 text-center">
-        <span className="font-mono text-[9px] lg:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-1.5 lg:px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-block shadow-2xs max-w-[72px] lg:max-w-none truncate">
-          {cleanVersion}
+        <span
+          className="font-mono text-[9px] lg:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-1.5 lg:px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-block shadow-2xs max-w-[85px] lg:max-w-none truncate"
+          title={liveVersion}
+        >
+          {liveVersion}
         </span>
       </td>
 
@@ -415,8 +440,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 };
 
 const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
+  const [avatarFailed, setAvatarFailed] = useState(false);
 
   const cleanName = sanitizeText(entry.name);
   const cleanGithubUrl = sanitizeUrl(entry.githubUrl);
@@ -424,7 +450,9 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     ? sanitizeText(entry.creator.name).replace(/\s*\(.*?\)/g, '').trim()
     : t('table.openSource');
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
+  const localizedReleaseDate = localizeDate(cleanReleaseDate, i18n.language);
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
+  const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
   const percentage = Math.min(
     100,
@@ -437,21 +465,26 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <div
       id={entry.id}
-      className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors"
+      className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors cv-card"
     >
       {/* Top: Blurred Icon Container + Name */}
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-2xl bg-neutral-900/10 dark:bg-white/[0.10] border border-neutral-900/15 dark:border-white/[0.15] backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-xs">
+          <div className="w-11 h-11 rounded-xl bg-neutral-900/85 dark:bg-white/85 border border-neutral-700/60 dark:border-white/30 backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-sm">
             <img
               src={entry.iconUrl}
               alt={cleanName}
               width={34}
               height={34}
-              className="w-8 h-8 object-contain shrink-0"
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0 filter drop-shadow-[0_1.5px_2.5px_rgba(255,255,255,0.55)] dark:drop-shadow-[0_1.5px_3px_rgba(0,0,0,0.75)]"
               onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src =
-                  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                const img = e.currentTarget as HTMLImageElement;
+                if (!img.dataset.failed) {
+                  img.dataset.failed = 'true';
+                  img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+                }
               }}
             />
           </div>
@@ -460,30 +493,45 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
           </div>
         </div>
 
-        <span className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold uppercase tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20">
-          {entry.category}
+        <span
+          lang="en"
+          className="px-2.5 py-1 rounded-lg text-[10px] font-mono font-bold tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20"
+        >
+          {formatAsciiTag(entry.category)}
         </span>
       </div>
 
       {/* Creator & Güncel Sürüm Info */}
       <div className="flex items-center justify-between text-xs pt-1 border-t border-neutral-100 dark:border-neutral-800/80">
-        <div className="flex items-center gap-1.5">
-          {entry.creator?.avatarUrl && (
+        <div className="flex items-center gap-1.5 flex-wrap max-w-[70%]">
+          {!avatarFailed && entry.creator?.avatarUrl ? (
             <img
               src={entry.creator.avatarUrl}
               alt={cleanCreatorName}
               width={24}
               height={24}
+              loading="lazy"
+              decoding="async"
               className="w-6 h-6 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
+              onError={() => setAvatarFailed(true)}
             />
+          ) : (
+            <div className="w-6 h-6 rounded-full bg-neutral-200 dark:bg-neutral-700 text-[9px] font-bold flex items-center justify-center text-neutral-600 dark:text-neutral-300 shrink-0">
+              {cleanName.slice(0, 1)}
+            </div>
           )}
-          <span className="text-neutral-700 dark:text-neutral-200 font-medium">
+          <span className="text-neutral-700 dark:text-neutral-200 font-medium whitespace-normal break-words">
             {cleanCreatorName}
           </span>
-          <span className="text-[10px] text-neutral-400">({cleanReleaseDate})</span>
+          {localizedReleaseDate && (
+            <span className="text-[10px] text-neutral-400">({localizedReleaseDate})</span>
+          )}
         </div>
-        <span className="font-mono text-[10px] font-bold bg-orange-600 dark:bg-orange-500/90 text-white px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50">
-          {cleanVersion}
+        <span
+          className="font-mono text-[10px] font-bold bg-orange-600 dark:bg-orange-500/90 text-white px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50"
+          title={liveVersion}
+        >
+          {liveVersion}
         </span>
       </div>
 
@@ -531,8 +579,12 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               <span>+{formattedNewRepos}</span>
             </div>
           ) : (
-            <div className="flex items-center justify-center font-mono text-xs font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/25">
-              <span>–</span>
+            <div
+              className="flex items-center justify-center gap-1 font-mono text-[10px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap"
+              title="Son 30 günde repo sayısı sabit / Nötr ivmelenme"
+            >
+              <span className="font-bold">±0</span>
+              <span className="text-[9px] font-sans font-medium opacity-90">Nötr</span>
             </div>
           )}
 

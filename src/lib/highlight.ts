@@ -11,11 +11,28 @@ export function highlightTechElement(id: string): boolean {
   const target = targets.find((el) => el.offsetParent !== null) || targets[0];
 
   target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  target.classList.remove('highlight-glow');
+  void target.offsetWidth; // Force reflow to re-trigger CSS animation
   target.classList.add('highlight-glow');
 
   setTimeout(() => {
     target.classList.remove('highlight-glow');
-  }, 1200);
+  }, 1600);
 
   return true;
 }
+
+export function highlightWithRetry(id: string, maxAttempts = 25, interval = 60): void {
+  if (!id) return;
+  // Immediate attempt
+  if (highlightTechElement(id)) return;
+
+  let attempts = 0;
+  const timer = setInterval(() => {
+    attempts++;
+    if (highlightTechElement(id) || attempts >= maxAttempts) {
+      clearInterval(timer);
+    }
+  }, interval);
+}
+

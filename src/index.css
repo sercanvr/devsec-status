@@ -168,3 +168,15 @@ tr.highlight-glow td {
 .dark tr.highlight-glow td {
   background-color: rgba(206, 255, 0, 0.14) !important;
 }
+
+/* High-performance scroll optimization (60+ FPS): off-screen row/card DOM layout & paint skipping */
+.cv-row {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 64px;
+}
+
+.cv-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 220px;
+}
+
