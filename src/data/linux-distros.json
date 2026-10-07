@@ -1,0 +1,486 @@
+[
+  {
+    "id": "distro-kernel",
+    "name": "Linux Kernel",
+    "category": "linux-distro",
+    "subCategory": "Monolithic Unix-Like OS Kernel",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "githubUrl": "https://github.com/torvalds/linux",
+    "creator": {
+      "name": "Linus Torvalds",
+      "avatarUrl": "https://github.com/torvalds.png",
+      "type": "person",
+      "releaseDate": "17 Eylül 1991",
+      "latestVersion": "v6.13"
+    },
+    "popularity": {
+      "totalRepos": 28837,
+      "totalStars": 251330
+    },
+    "momentum": {
+      "newReposLast30Days": 836,
+      "topStarredNewRepo": {
+        "name": "dikeckaan/mu300-linux",
+        "stars": 283
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:32.253Z",
+    "contributors": [
+      {
+        "login": "torvalds",
+        "avatar_url": "https://github.com/torvalds.png?size=64",
+        "html_url": "https://github.com/torvalds"
+      },
+      {
+        "login": "gregkh",
+        "avatar_url": "https://github.com/gregkh.png?size=64",
+        "html_url": "https://github.com/gregkh"
+      },
+      {
+        "login": "arndb",
+        "avatar_url": "https://github.com/arndb.png?size=64",
+        "html_url": "https://github.com/arndb"
+      }
+    ]
+  },
+  {
+    "id": "distro-ubuntu",
+    "name": "Ubuntu",
+    "category": "linux-distro",
+    "subCategory": "Debian-Based Linux OS by Canonical",
+    "iconUrl": "https://cdn.simpleicons.org/ubuntu",
+    "githubUrl": "https://github.com/canonical/snapd",
+    "creator": {
+      "name": "Mark Shuttleworth (Canonical)",
+      "avatarUrl": "https://github.com/canonical.png",
+      "type": "organization",
+      "releaseDate": "20 Ekim 2004",
+      "latestVersion": "26.04 LTS"
+    },
+    "popularity": {
+      "totalRepos": 141019,
+      "totalStars": 2055
+    },
+    "momentum": {
+      "newReposLast30Days": 3708,
+      "topStarredNewRepo": {
+        "name": "agentverse-os/AgentVerse-OS",
+        "stars": 977
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:37.138Z",
+    "contributors": [
+      {
+        "login": "didrocks",
+        "avatar_url": "https://github.com/didrocks.png?size=64",
+        "html_url": "https://github.com/didrocks"
+      },
+      {
+        "login": "seb128",
+        "avatar_url": "https://github.com/seb128.png?size=64",
+        "html_url": "https://github.com/seb128"
+      },
+      {
+        "login": "sil2100",
+        "avatar_url": "https://github.com/sil2100.png?size=64",
+        "html_url": "https://github.com/sil2100"
+      }
+    ]
+  },
+  {
+    "id": "distro-debian",
+    "name": "Debian",
+    "category": "linux-distro",
+    "subCategory": "The Universal Community Linux OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg",
+    "githubUrl": "https://github.com/Debian",
+    "creator": {
+      "name": "Ian Murdock (Debian Project)",
+      "avatarUrl": "https://github.com/Debian.png",
+      "type": "organization",
+      "releaseDate": "16 Ağustos 1993",
+      "latestVersion": "Debian 12"
+    },
+    "popularity": {
+      "totalRepos": 58323,
+      "totalStars": 52600
+    },
+    "momentum": {
+      "newReposLast30Days": 1690,
+      "topStarredNewRepo": {
+        "name": "madeye/ServerBox",
+        "stars": 255
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:40.776Z",
+    "contributors": [
+      {
+        "login": "rhonda",
+        "avatar_url": "https://github.com/rhonda.png?size=64",
+        "html_url": "https://github.com/rhonda"
+      },
+      {
+        "login": "dondelelcaro",
+        "avatar_url": "https://github.com/dondelelcaro.png?size=64",
+        "html_url": "https://github.com/dondelelcaro"
+      },
+      {
+        "login": "tille",
+        "avatar_url": "https://github.com/tille.png?size=64",
+        "html_url": "https://github.com/tille"
+      }
+    ]
+  },
+  {
+    "id": "distro-fedora",
+    "name": "Fedora",
+    "category": "linux-distro",
+    "subCategory": "Innovative Enterprise Upstream OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg",
+    "githubUrl": "https://github.com/fedora-infra",
+    "creator": {
+      "name": "Warren Togami (Red Hat)",
+      "avatarUrl": "https://github.com/fedora-infra.png",
+      "type": "organization",
+      "releaseDate": "6 Kasım 2003",
+      "latestVersion": "Fedora 41"
+    },
+    "popularity": {
+      "totalRepos": 49193,
+      "totalStars": 41200
+    },
+    "momentum": {
+      "newReposLast30Days": 853,
+      "topStarredNewRepo": {
+        "name": "uzayr-iqbal-hamid/nothing-os-dots-hyprland",
+        "stars": 32
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:44.724Z",
+    "contributors": [
+      {
+        "login": "kevin",
+        "avatar_url": "https://github.com/kevin.png?size=64",
+        "html_url": "https://github.com/kevin"
+      },
+      {
+        "login": "pingou",
+        "avatar_url": "https://github.com/pingou.png?size=64",
+        "html_url": "https://github.com/pingou"
+      },
+      {
+        "login": "bowlofeggs",
+        "avatar_url": "https://github.com/bowlofeggs.png?size=64",
+        "html_url": "https://github.com/bowlofeggs"
+      }
+    ]
+  },
+  {
+    "id": "distro-arch",
+    "name": "Arch Linux",
+    "category": "linux-distro",
+    "subCategory": "Lightweight Rolling-Release OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg",
+    "githubUrl": "https://github.com/archlinux",
+    "creator": {
+      "name": "Judd Vinet",
+      "avatarUrl": "https://github.com/archlinux.png",
+      "type": "organization",
+      "releaseDate": "11 Mart 2002",
+      "latestVersion": "2025.01"
+    },
+    "popularity": {
+      "totalRepos": 24659,
+      "totalStars": 49800
+    },
+    "momentum": {
+      "newReposLast30Days": 978,
+      "topStarredNewRepo": {
+        "name": "madeye/ServerBox",
+        "stars": 255
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:48.357Z",
+    "contributors": [
+      {
+        "login": "Torxed",
+        "avatar_url": "https://github.com/Torxed.png?size=64",
+        "html_url": "https://github.com/Torxed"
+      },
+      {
+        "login": "gromit",
+        "avatar_url": "https://github.com/gromit.png?size=64",
+        "html_url": "https://github.com/gromit"
+      },
+      {
+        "login": "alerque",
+        "avatar_url": "https://github.com/alerque.png?size=64",
+        "html_url": "https://github.com/alerque"
+      }
+    ]
+  },
+  {
+    "id": "distro-opensuse",
+    "name": "openSUSE",
+    "category": "linux-distro",
+    "subCategory": "Enterprise-Grade Stable & Tumbleweed OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opensuse/opensuse-original.svg",
+    "githubUrl": "https://github.com/openSUSE",
+    "creator": {
+      "name": "SUSE Linux / openSUSE Project",
+      "avatarUrl": "https://github.com/openSUSE.png",
+      "type": "organization",
+      "releaseDate": "Ekim 2005",
+      "latestVersion": "Leap 15.6"
+    },
+    "popularity": {
+      "totalRepos": 2581,
+      "totalStars": 28600
+    },
+    "momentum": {
+      "newReposLast30Days": 66,
+      "topStarredNewRepo": {
+        "name": "nixietab/vlcro",
+        "stars": 3
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:52.072Z",
+    "contributors": [
+      {
+        "login": "adrianSuSE",
+        "avatar_url": "https://github.com/adrianSuSE.png?size=64",
+        "html_url": "https://github.com/adrianSuSE"
+      },
+      {
+        "login": "mlschroe",
+        "avatar_url": "https://github.com/mlschroe.png?size=64",
+        "html_url": "https://github.com/mlschroe"
+      },
+      {
+        "login": "bmwiedemann",
+        "avatar_url": "https://github.com/bmwiedemann.png?size=64",
+        "html_url": "https://github.com/bmwiedemann"
+      }
+    ]
+  },
+  {
+    "id": "distro-mint",
+    "name": "Linux Mint",
+    "category": "linux-distro",
+    "subCategory": "User-Friendly Desktop Linux Distribution",
+    "iconUrl": "https://cdn.simpleicons.org/linuxmint",
+    "githubUrl": "https://github.com/linuxmint/cinnamon",
+    "creator": {
+      "name": "Clément Lefèbvre",
+      "avatarUrl": "https://github.com/clefebvre.png",
+      "type": "person",
+      "releaseDate": "27 Ağustos 2006",
+      "latestVersion": "Mint 22"
+    },
+    "popularity": {
+      "totalRepos": 3901,
+      "totalStars": 5600
+    },
+    "momentum": {
+      "newReposLast30Days": 174,
+      "topStarredNewRepo": {
+        "name": "o11x/mint-y-noir",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:50:57.045Z",
+    "contributors": [
+      {
+        "login": "clefebvre",
+        "avatar_url": "https://github.com/clefebvre.png?size=64",
+        "html_url": "https://github.com/clefebvre"
+      },
+      {
+        "login": "mtwebster",
+        "avatar_url": "https://github.com/mtwebster.png?size=64",
+        "html_url": "https://github.com/mtwebster"
+      },
+      {
+        "login": "JosephMcc",
+        "avatar_url": "https://github.com/JosephMcc.png?size=64",
+        "html_url": "https://github.com/JosephMcc"
+      }
+    ]
+  },
+  {
+    "id": "distro-popos",
+    "name": "Pop!_OS",
+    "category": "linux-distro",
+    "subCategory": "COSMIC Desktop OS by System76",
+    "iconUrl": "https://cdn.simpleicons.org/popos",
+    "githubUrl": "https://github.com/pop-os/cosmic-epoch",
+    "creator": {
+      "name": "Carl Richell (System76)",
+      "avatarUrl": "https://github.com/pop-os.png",
+      "type": "organization",
+      "releaseDate": "27 Ekim 2017",
+      "latestVersion": "COSMIC Alpha"
+    },
+    "popularity": {
+      "totalRepos": 977,
+      "totalStars": 6882
+    },
+    "momentum": {
+      "newReposLast30Days": 37,
+      "topStarredNewRepo": {
+        "name": "GabrielBaiano/Deskstamp",
+        "stars": 6
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:01.840Z",
+    "contributors": [
+      {
+        "login": "mmstick",
+        "avatar_url": "https://github.com/mmstick.png?size=64",
+        "html_url": "https://github.com/mmstick"
+      },
+      {
+        "login": "jackpot51",
+        "avatar_url": "https://github.com/jackpot51.png?size=64",
+        "html_url": "https://github.com/jackpot51"
+      },
+      {
+        "login": "edfloreshz",
+        "avatar_url": "https://github.com/edfloreshz.png?size=64",
+        "html_url": "https://github.com/edfloreshz"
+      }
+    ]
+  },
+  {
+    "id": "distro-manjaro",
+    "name": "Manjaro",
+    "category": "linux-distro",
+    "subCategory": "Accessible Arch-Based Rolling OS",
+    "iconUrl": "https://cdn.simpleicons.org/manjaro",
+    "githubUrl": "https://github.com/manjaro",
+    "creator": {
+      "name": "Philip Müller & Roland Singer",
+      "avatarUrl": "https://github.com/manjaro.png",
+      "type": "organization",
+      "releaseDate": "10 Temmuz 2011",
+      "latestVersion": "v24.2"
+    },
+    "popularity": {
+      "totalRepos": 3567,
+      "totalStars": 19400
+    },
+    "momentum": {
+      "newReposLast30Days": 62,
+      "topStarredNewRepo": {
+        "name": "dodog/awesome-gnome-extensions",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:05.736Z",
+    "contributors": [
+      {
+        "login": "philmmanjaro",
+        "avatar_url": "https://github.com/philmmanjaro.png?size=64",
+        "html_url": "https://github.com/philmmanjaro"
+      },
+      {
+        "login": "Chrysostomus",
+        "avatar_url": "https://github.com/Chrysostomus.png?size=64",
+        "html_url": "https://github.com/Chrysostomus"
+      },
+      {
+        "login": "LordHeavy",
+        "avatar_url": "https://github.com/LordHeavy.png?size=64",
+        "html_url": "https://github.com/LordHeavy"
+      }
+    ]
+  },
+  {
+    "id": "distro-nixos",
+    "name": "NixOS",
+    "category": "linux-distro",
+    "subCategory": "Declarative & Reproducible Linux OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nixos/nixos-original.svg",
+    "githubUrl": "https://github.com/NixOS/nixpkgs",
+    "creator": {
+      "name": "Eelco Dolstra (NixOS Foundation)",
+      "avatarUrl": "https://github.com/NixOS.png",
+      "type": "organization",
+      "releaseDate": "2003",
+      "latestVersion": "24.11"
+    },
+    "popularity": {
+      "totalRepos": 31655,
+      "totalStars": 26382
+    },
+    "momentum": {
+      "newReposLast30Days": 1288,
+      "topStarredNewRepo": {
+        "name": "fzakaria/omnibin",
+        "stars": 136
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:10.394Z",
+    "contributors": [
+      {
+        "login": "edolstra",
+        "avatar_url": "https://github.com/edolstra.png?size=64",
+        "html_url": "https://github.com/edolstra"
+      },
+      {
+        "login": "domenkozar",
+        "avatar_url": "https://github.com/domenkozar.png?size=64",
+        "html_url": "https://github.com/domenkozar"
+      },
+      {
+        "login": "zimbatm",
+        "avatar_url": "https://github.com/zimbatm.png?size=64",
+        "html_url": "https://github.com/zimbatm"
+      }
+    ]
+  },
+  {
+    "id": "distro-gentoo",
+    "name": "Gentoo",
+    "category": "linux-distro",
+    "subCategory": "Source-Based High-Performance OS",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gentoo/gentoo-original.svg",
+    "githubUrl": "https://github.com/gentoo/gentoo",
+    "creator": {
+      "name": "Daniel Robbins",
+      "avatarUrl": "https://github.com/gentoo.png",
+      "type": "organization",
+      "releaseDate": "31 Mart 2002",
+      "latestVersion": "Rolling"
+    },
+    "popularity": {
+      "totalRepos": 9351,
+      "totalStars": 2463
+    },
+    "momentum": {
+      "newReposLast30Days": 161,
+      "topStarredNewRepo": {
+        "name": "tarilka0gg/system-lab",
+        "stars": 7
+      }
+    },
+    "lastUpdated": "2026-10-07T06:51:15.140Z",
+    "contributors": [
+      {
+        "login": "mgorny",
+        "avatar_url": "https://github.com/mgorny.png?size=64",
+        "html_url": "https://github.com/mgorny"
+      },
+      {
+        "login": "ulm",
+        "avatar_url": "https://github.com/ulm.png?size=64",
+        "html_url": "https://github.com/ulm"
+      },
+      {
+        "login": "robbat2",
+        "avatar_url": "https://github.com/robbat2.png?size=64",
+        "html_url": "https://github.com/robbat2"
+      }
+    ]
+  }
+]

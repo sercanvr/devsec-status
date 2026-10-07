@@ -4,6 +4,7 @@ import { Star, GitFork, ExternalLink, TrendingUp, Sparkles, Calendar, Tag } from
 import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
 import { useGitHubContributors } from '../hooks/useGitHubContributors';
+import { useGitHubRelease } from '../hooks/useGitHubRelease';
 
 interface TechBarProps {
   entry: TechEntry;
@@ -20,6 +21,7 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
   const cleanCreatorName = entry.creator ? sanitizeText(entry.creator.name) : '';
   const cleanReleaseDate = entry.creator ? sanitizeText(entry.creator.releaseDate) : '';
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : '';
+  const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
   const starPercentage = Math.min(
     100,
@@ -46,9 +48,14 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
             width={40}
             height={40}
             className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0 filter drop-shadow-sm transition-colors"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
-              (e.currentTarget as HTMLImageElement).src =
-                'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+              const img = e.currentTarget as HTMLImageElement;
+              if (!img.dataset.failed) {
+                img.dataset.failed = 'true';
+                img.src = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg';
+              }
             }}
           />
           <div>
@@ -76,6 +83,8 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
                     alt={cleanCreatorName}
                     width={24}
                     height={24}
+                    loading="lazy"
+                    decoding="async"
                     className="w-6 h-6 rounded-full border border-neutral-300 dark:border-neutral-700 object-cover shrink-0"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
@@ -93,11 +102,11 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
                 )}
 
                 {/* Latest Version */}
-                {cleanVersion && (
+                {liveVersion && (
                   <div className="flex items-center gap-1 text-[11px]">
                     <Tag className="w-3 h-3 text-[#CEFF00] shrink-0" />
                     <span className="font-mono bg-neutral-200/70 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-foreground font-semibold">
-                      {cleanVersion}
+                      {liveVersion}
                     </span>
                   </div>
                 )}

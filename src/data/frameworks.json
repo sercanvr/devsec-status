@@ -532,7 +532,7 @@
     "name": "GeaStack",
     "category": "framework",
     "subCategory": "Full-Stack Web Framework",
-    "iconUrl": "https://github.com/geastack.png",
+    "iconUrl": "https://avatars.githubusercontent.com/u/285667311?s=200&v=4",
     "githubUrl": "https://github.com/geastack/examples",
     "creator": {
       "name": "Armağan Amcalar",
@@ -573,6 +573,314 @@
         "login": "examples-team",
         "avatar_url": "https://github.com/github.png?size=64",
         "html_url": "https://github.com/geastack/examples"
+      }
+    ]
+  },
+  {
+    "id": "fw-django",
+    "name": "Django",
+    "category": "framework",
+    "subCategory": "Python High-Level Web Framework",
+    "iconUrl": "https://cdn.simpleicons.org/django",
+    "githubUrl": "https://github.com/django/django",
+    "creator": {
+      "name": "Adrian Holovaty & Simon Willison",
+      "avatarUrl": "https://github.com/django.png",
+      "type": "organization",
+      "releaseDate": "15 Temmuz 2005",
+      "latestVersion": "v5.1.5"
+    },
+    "popularity": {
+      "totalRepos": 1198316,
+      "totalStars": 91355
+    },
+    "momentum": {
+      "newReposLast30Days": 13255,
+      "topStarredNewRepo": {
+        "name": "ajisaputro02/Deutlichkeits-Drill",
+        "stars": 56
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:13.951Z",
+    "contributors": [
+      {
+        "login": "felixxm",
+        "avatar_url": "https://github.com/felixxm.png?size=64",
+        "html_url": "https://github.com/felixxm"
+      },
+      {
+        "login": "claudep",
+        "avatar_url": "https://github.com/claudep.png?size=64",
+        "html_url": "https://github.com/claudep"
+      },
+      {
+        "login": "carltongibson",
+        "avatar_url": "https://github.com/carltongibson.png?size=64",
+        "html_url": "https://github.com/carltongibson"
+      }
+    ]
+  },
+  {
+    "id": "fw-springboot",
+    "name": "Spring Boot",
+    "category": "framework",
+    "subCategory": "Java Enterprise Microservices Framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+    "githubUrl": "https://github.com/spring-projects/spring-boot",
+    "creator": {
+      "name": "Pivotal (VMware Tanzu)",
+      "avatarUrl": "https://github.com/spring-projects.png",
+      "type": "organization",
+      "releaseDate": "1 Nisan 2014",
+      "latestVersion": "v3.4.2"
+    },
+    "popularity": {
+      "totalRepos": 819559,
+      "totalStars": 81564
+    },
+    "momentum": {
+      "newReposLast30Days": 17439,
+      "topStarredNewRepo": {
+        "name": "Jiarui-0410/multimodal-product-discovery",
+        "stars": 139
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:18.834Z",
+    "contributors": [
+      {
+        "login": "philwebb",
+        "avatar_url": "https://github.com/philwebb.png?size=64",
+        "html_url": "https://github.com/philwebb"
+      },
+      {
+        "login": "wilkinsona",
+        "avatar_url": "https://github.com/wilkinsona.png?size=64",
+        "html_url": "https://github.com/wilkinsona"
+      },
+      {
+        "login": "snicoll",
+        "avatar_url": "https://github.com/snicoll.png?size=64",
+        "html_url": "https://github.com/snicoll"
+      }
+    ]
+  },
+  {
+    "id": "fw-laravel",
+    "name": "Laravel",
+    "category": "framework",
+    "subCategory": "PHP Full-Stack Web Framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+    "githubUrl": "https://github.com/laravel/laravel",
+    "creator": {
+      "name": "Taylor Otwell",
+      "avatarUrl": "https://github.com/taylorotwell.png",
+      "type": "person",
+      "releaseDate": "9 Haziran 2011",
+      "latestVersion": "v11.38.2"
+    },
+    "popularity": {
+      "totalRepos": 924085,
+      "totalStars": 85054
+    },
+    "momentum": {
+      "newReposLast30Days": 10947,
+      "topStarredNewRepo": {
+        "name": "Heyosseus/sloppy",
+        "stars": 149
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:23.531Z",
+    "contributors": [
+      {
+        "login": "taylorotwell",
+        "avatar_url": "https://github.com/taylorotwell.png?size=64",
+        "html_url": "https://github.com/taylorotwell"
+      },
+      {
+        "login": "driesvints",
+        "avatar_url": "https://github.com/driesvints.png?size=64",
+        "html_url": "https://github.com/driesvints"
+      },
+      {
+        "login": "crynobone",
+        "avatar_url": "https://github.com/crynobone.png?size=64",
+        "html_url": "https://github.com/crynobone"
+      }
+    ]
+  },
+  {
+    "id": "fw-express",
+    "name": "Express.js",
+    "category": "framework",
+    "subCategory": "Fast Minimalist Node.js Web Framework",
+    "iconUrl": "https://cdn.simpleicons.org/express",
+    "githubUrl": "https://github.com/expressjs/express",
+    "creator": {
+      "name": "TJ Holowaychuk (OpenJS)",
+      "avatarUrl": "https://github.com/expressjs.png",
+      "type": "organization",
+      "releaseDate": "16 Kasım 2010",
+      "latestVersion": "v5.0.1"
+    },
+    "popularity": {
+      "totalRepos": 312688,
+      "totalStars": 69589
+    },
+    "momentum": {
+      "newReposLast30Days": 8761,
+      "topStarredNewRepo": {
+        "name": "openstatusHQ/health",
+        "stars": 17
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:28.154Z",
+    "contributors": [
+      {
+        "login": "dougwilson",
+        "avatar_url": "https://github.com/dougwilson.png?size=64",
+        "html_url": "https://github.com/dougwilson"
+      },
+      {
+        "login": "wesleytodd",
+        "avatar_url": "https://github.com/wesleytodd.png?size=64",
+        "html_url": "https://github.com/wesleytodd"
+      },
+      {
+        "login": "jonathanong",
+        "avatar_url": "https://github.com/jonathanong.png?size=64",
+        "html_url": "https://github.com/jonathanong"
+      }
+    ]
+  },
+  {
+    "id": "fw-flutter",
+    "name": "Flutter",
+    "category": "framework",
+    "subCategory": "Multi-Platform UI Toolkit by Google",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+    "githubUrl": "https://github.com/flutter/flutter",
+    "creator": {
+      "name": "Google Flutter Team",
+      "avatarUrl": "https://github.com/flutter.png",
+      "type": "organization",
+      "releaseDate": "Mayıs 2017",
+      "latestVersion": "v3.27.3"
+    },
+    "popularity": {
+      "totalRepos": 1086574,
+      "totalStars": 179357
+    },
+    "momentum": {
+      "newReposLast30Days": 20656,
+      "topStarredNewRepo": {
+        "name": "Clash-Projects/LastWave-Desktop",
+        "stars": 494
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:33.097Z",
+    "contributors": [
+      {
+        "login": "Hixie",
+        "avatar_url": "https://github.com/Hixie.png?size=64",
+        "html_url": "https://github.com/Hixie"
+      },
+      {
+        "login": "abarth",
+        "avatar_url": "https://github.com/abarth.png?size=64",
+        "html_url": "https://github.com/abarth"
+      },
+      {
+        "login": "HansMuller",
+        "avatar_url": "https://github.com/HansMuller.png?size=64",
+        "html_url": "https://github.com/HansMuller"
+      }
+    ]
+  },
+  {
+    "id": "fw-nuxt",
+    "name": "Nuxt.js",
+    "category": "framework",
+    "subCategory": "Vue.js Full-Stack Web Meta-Framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",
+    "githubUrl": "https://github.com/nuxt/nuxt",
+    "creator": {
+      "name": "Alexandre & Sébastien Chopin",
+      "avatarUrl": "https://github.com/nuxt.png",
+      "type": "organization",
+      "releaseDate": "25 Ekim 2016",
+      "latestVersion": "v3.15.2"
+    },
+    "popularity": {
+      "totalRepos": 12386,
+      "totalStars": 60923
+    },
+    "momentum": {
+      "newReposLast30Days": 69,
+      "topStarredNewRepo": {
+        "name": "ThienHN0910/Template-P",
+        "stars": 2
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:37.974Z",
+    "contributors": [
+      {
+        "login": "danielroe",
+        "avatar_url": "https://github.com/danielroe.png?size=64",
+        "html_url": "https://github.com/danielroe"
+      },
+      {
+        "login": "Atinux",
+        "avatar_url": "https://github.com/Atinux.png?size=64",
+        "html_url": "https://github.com/Atinux"
+      },
+      {
+        "login": "pi0",
+        "avatar_url": "https://github.com/pi0.png?size=64",
+        "html_url": "https://github.com/pi0"
+      }
+    ]
+  },
+  {
+    "id": "fw-bootstrap",
+    "name": "Bootstrap",
+    "category": "css-framework",
+    "subCategory": "Responsive Component-Based CSS Framework",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    "githubUrl": "https://github.com/twbs/bootstrap",
+    "creator": {
+      "name": "Mark Otto & Jacob Thornton (Twitter)",
+      "avatarUrl": "https://github.com/twbs.png",
+      "type": "organization",
+      "releaseDate": "19 Ağustos 2011",
+      "latestVersion": "v5.3.3"
+    },
+    "popularity": {
+      "totalRepos": 808074,
+      "totalStars": 174990
+    },
+    "momentum": {
+      "newReposLast30Days": 7347,
+      "topStarredNewRepo": {
+        "name": "2vchs/vocab-forge-flask",
+        "stars": 53
+      }
+    },
+    "lastUpdated": "2026-10-07T06:52:42.706Z",
+    "contributors": [
+      {
+        "login": "mdo",
+        "avatar_url": "https://github.com/mdo.png?size=64",
+        "html_url": "https://github.com/mdo"
+      },
+      {
+        "login": "fat",
+        "avatar_url": "https://github.com/fat.png?size=64",
+        "html_url": "https://github.com/fat"
+      },
+      {
+        "login": "XhmikosR",
+        "avatar_url": "https://github.com/XhmikosR.png?size=64",
+        "html_url": "https://github.com/XhmikosR"
       }
     ]
   }

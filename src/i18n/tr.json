@@ -17,19 +17,23 @@
     "noResultsFound": "Sonuç bulunamadı:"
   },
   "info": {
-    "software": "Programlama dilleri, popüler framework'ler, kütüphaneler ve veritabanı teknolojilerinin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme (momentum) verileri.",
-    "security": "En popüler açık kaynak siber güvenlik araçlarının ve framework'lerinin (Ghidra, Metasploit, Nmap, OWASP ZAP vb.) GitHub üzerindeki star trendleri ve topluluk aktivite istatistikleri. Bu araçlar etik ve yasal sınırlar dahilinde (siber güvenlik araştırmaları, sızma testleri, CTF yarışmaları ve sistem savunması) kullanım için geliştiricilere ve araştırmacılara yönelik bilgilendirme amaçlıdır."
+    "software": "Programlama dilleri, framework'ler, veritabanları, Linux dağıtımları ve açık kaynak AI araçları ile altyapı kütüphanelerinin GitHub üzerindeki anlık yıldız sayıları, toplam depo hacimleri ve son 30 gündeki ivmelenme verileri.",
+    "security": "Siber güvenlik araçları, güvenlik odaklı framework'ler ve Linux güvenlik dağıtımlarının (Ghidra, Metasploit, Nmap, Kali, Parrot vb.) GitHub üzerindeki star trendleri ve topluluk aktivite istatistikleri. Bu araçlar etik ve yasal sınırlar dahilinde (siber güvenlik araştırmaları, sızma testleri, CTF yarışmaları ve sistem savunması) kullanım için geliştiricilere ve araştırmacılara yönelik bilgilendirme amaçlıdır."
   },
   "sections": {
     "languages": "Programlama Dilleri",
     "frameworks": "Framework & Kütüphaneler",
     "databases": "Veritabanları & Altyapı",
-    "securityTools": "Açık Kaynak Güvenlik Araçları & Framework'ler"
+    "linuxDistros": "Linux Dağıtımları",
+    "aiTools": "AI Araçları",
+    "aiInfrastructure": "AI Altyapı & Kütüphaneleri",
+    "securityTools": "Güvenlik Araçları & Framework'ler",
+    "securityDistros": "Linux Güvenlik Dağıtımları"
   },
   "showcase": {
-    "topLanguageBadge": "Dil Lideri",
-    "topFrameworkBadge": "Framework Lideri",
-    "topDatabaseBadge": "Veritabanı Lideri",
+    "topLanguageBadge": "Listede 1.",
+    "topFrameworkBadge": "Listede 1.",
+    "topDatabaseBadge": "Listede 1.",
     "top1": "Top 1",
     "totalStars": "Toplam Yıldız",
     "totalEngagements": "Toplam Etkileşim",
@@ -100,7 +104,10 @@
     "search-engine": "SEARCH ENGINE",
     "baas": "BAAS",
     "security-tool": "SECURITY TOOL",
-    "security-framework": "SECURITY FRAMEWORK"
+    "security-framework": "SECURITY FRAMEWORK",
+    "linux-distro": "LINUX DISTRO",
+    "ai-tool": "AI TOOL",
+    "ai-infrastructure": "AI INFRASTRUCTURE"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
