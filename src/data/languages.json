@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/torvalds/linux",
     "creator": {
       "name": "Dennis Ritchie (Bell Labs)",
-      "avatarUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/Dennis_Ritchie_2011.jpg?utm_source=tr.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "avatarUrl": "/icons/dennis-ritchie.png",
       "type": "person",
       "releaseDate": "Kasım 1972",
       "latestVersion": "C23 (ISO/IEC 9899)"
@@ -538,7 +538,7 @@
       "avatarUrl": "https://github.com/brendaneich.png",
       "type": "person",
       "releaseDate": "4 Aralık 1995",
-      "latestVersion": "ES2026 (17. Sürüm)"
+      "latestVersion": "ES2026"
     },
     "popularity": {
       "totalRepos": 47899442,

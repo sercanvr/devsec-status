@@ -100,6 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               href="/"
               onClick={(e) => {
                 e.preventDefault();
+                window.dispatchEvent(new CustomEvent('devsec:start-loading'));
                 window.location.href = '/';
               }}
               className="flex items-center cursor-pointer hover:opacity-70 transition-none"
@@ -173,6 +174,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             href="/"
             onClick={(e) => {
               e.preventDefault();
+              window.dispatchEvent(new CustomEvent('devsec:start-loading'));
               window.location.href = '/';
             }}
             className="flex items-center cursor-pointer hover:opacity-70 transition-none"

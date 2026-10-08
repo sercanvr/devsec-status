@@ -180,3 +180,124 @@ tr.highlight-glow td {
   contain-intrinsic-size: 1px 220px;
 }
 
+/* ==========================================================================
+   Code Loader - UI Verse Component (Neon Accent Gradient)
+   ========================================================================== */
+.code-loader {
+  font-family: Consolas, Menlo, Monaco, 'JetBrains Mono', monospace;
+  font-weight: 800;
+  font-size: clamp(64px, 12vw, 100px);
+  line-height: 1;
+  opacity: 0.95;
+  user-select: none;
+}
+
+.code-loader span {
+  display: inline-block;
+  background: linear-gradient(to top, #9BCC00 0%, #CEFF00 50%, #F4FFB8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 24px rgba(206, 255, 0, 0.45));
+  animation: pulse_414 0.4s alternate infinite ease-in-out;
+}
+
+.code-loader span:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+@keyframes pulse_414 {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+/* ==========================================================================
+   Glassmorphism Counter Badge - UI Verse Component
+   ========================================================================== */
+.glass-counter-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 11px;
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  user-select: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: none;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .glass-counter-badge {
+    font-size: 0.8125rem;
+    padding: 3.5px 13px;
+  }
+}
+
+/* Light mode: Accent color with reduced opacity */
+.glass-counter-badge {
+  background: rgba(206, 255, 0, 0.22);
+  color: #141414;
+  border: 1px solid rgba(160, 205, 0, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark mode: Accent color with reduced opacity and neon glow */
+.dark .glass-counter-badge {
+  background: rgba(206, 255, 0, 0.15);
+  color: #CEFF00;
+  text-shadow: 0 0 10px rgba(206, 255, 0, 0.35);
+  border: 1px solid rgba(206, 255, 0, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Static glint sparkle on upper-right corner (No CPU/GPU animation) */
+.glass-counter-glint {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
+  right: -3px;
+  pointer-events: none;
+  transform: rotate(-20deg);
+  filter: blur(0.3px);
+}
+
+.glass-counter-glint:before,
+.glass-counter-glint:after {
+  content: "";
+  position: absolute;
+}
+
+/* Light mode glint lines */
+.glass-counter-glint:before {
+  width: 1px;
+  height: 100%;
+  left: 9.5px;
+  background: linear-gradient(to bottom, transparent, rgba(20, 20, 20, 0.5), transparent);
+}
+
+.glass-counter-glint:after {
+  width: 100%;
+  height: 1px;
+  top: 9.5px;
+  background: linear-gradient(to left, transparent, rgba(20, 20, 20, 0.5), transparent);
+}
+
+/* Dark mode glint lines */
+.dark .glass-counter-glint:before {
+  background: linear-gradient(to bottom, transparent, rgba(206, 255, 0, 0.85), transparent);
+}
+
+.dark .glass-counter-glint:after {
+  background: linear-gradient(to left, transparent, rgba(206, 255, 0, 0.85), transparent);
+}
+
+

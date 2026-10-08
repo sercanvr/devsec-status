@@ -38,9 +38,20 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          // React ve diğer kütüphaneleri ayrı paketle (Daha hızlı açılış)
           if (id.includes('node_modules')) {
-            return 'vendor';
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'vendor-react';
+            }
+            if (id.includes('i18next')) {
+              return 'vendor-i18n';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-icons';
+            }
+            if (id.includes('dotted-map')) {
+              return 'vendor-map';
+            }
+            return 'vendor-utils';
           }
         },
       },

@@ -51,6 +51,7 @@ export const Navbar: React.FC = () => {
               href="/"
               onClick={(e) => {
                 e.preventDefault();
+                window.dispatchEvent(new CustomEvent('devsec:start-loading'));
                 window.location.href = '/';
               }}
               className="flex items-center group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer hover:opacity-70 transition-none"
