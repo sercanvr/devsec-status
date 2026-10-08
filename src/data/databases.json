@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 123640,
-      "totalStars": 111212
+      "totalRepos": 123726,
+      "totalStars": 111222
     },
     "momentum": {
-      "newReposLast30Days": 8846,
+      "newReposLast30Days": 8605,
       "topStarredNewRepo": {
         "name": "mikehasa/golive-skill",
-        "stars": 1235
+        "stars": 1237
       }
     },
-    "lastUpdated": "2026-10-07T22:55:52.378Z",
+    "lastUpdated": "2026-10-08T05:03:45.102Z",
     "contributors": [
       {
         "login": "supabase",
@@ -63,17 +63,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 60332,
-      "totalStars": 78206
+      "totalRepos": 60338,
+      "totalStars": 78208
     },
     "momentum": {
-      "newReposLast30Days": 607,
+      "newReposLast30Days": 589,
       "topStarredNewRepo": {
         "name": "kudakwashechanda-byte/Bee-Swarm-Task-Automation-Suite",
         "stars": 68
       }
     },
-    "lastUpdated": "2026-10-07T22:55:56.930Z",
+    "lastUpdated": "2026-10-08T05:03:49.566Z",
     "contributors": [
       {
         "login": "elastic",
@@ -112,17 +112,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 237468,
-      "totalStars": 76643
+      "totalRepos": 237510,
+      "totalStars": 76644
     },
     "momentum": {
-      "newReposLast30Days": 7293,
+      "newReposLast30Days": 7084,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 355
+        "stars": 356
       }
     },
-    "lastUpdated": "2026-10-07T22:56:01.327Z",
+    "lastUpdated": "2026-10-08T05:03:53.817Z",
     "contributors": [
       {
         "login": "redis",
@@ -161,17 +161,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 625253,
-      "totalStars": 28621
+      "totalRepos": 625305,
+      "totalStars": 28622
     },
     "momentum": {
-      "newReposLast30Days": 9965,
+      "newReposLast30Days": 9614,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 355
+        "stars": 356
       }
     },
-    "lastUpdated": "2026-10-07T22:56:05.615Z",
+    "lastUpdated": "2026-10-08T05:03:58.054Z",
     "contributors": [
       {
         "login": "mongodb",
@@ -210,17 +210,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 407202,
-      "totalStars": 22307
+      "totalRepos": 407404,
+      "totalStars": 22311
     },
     "momentum": {
-      "newReposLast30Days": 25506,
+      "newReposLast30Days": 24764,
       "topStarredNewRepo": {
         "name": "KKKKhazix/AIHOT",
-        "stars": 6381
+        "stars": 6510
       }
     },
-    "lastUpdated": "2026-10-07T22:56:09.974Z",
+    "lastUpdated": "2026-10-08T05:04:02.391Z",
     "contributors": [
       {
         "login": "postgres",
@@ -259,17 +259,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 32919,
+      "totalRepos": 32925,
       "totalStars": 17281
     },
     "momentum": {
-      "newReposLast30Days": 833,
+      "newReposLast30Days": 804,
       "topStarredNewRepo": {
         "name": "jexp/neo4jev",
         "stars": 167
       }
     },
-    "lastUpdated": "2026-10-07T22:56:14.401Z",
+    "lastUpdated": "2026-10-08T05:04:06.937Z",
     "contributors": [
       {
         "login": "neo4j",
@@ -308,17 +308,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 783160,
-      "totalStars": 12442
+      "totalRepos": 783314,
+      "totalStars": 12444
     },
     "momentum": {
-      "newReposLast30Days": 22128,
+      "newReposLast30Days": 21493,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 355
+        "stars": 356
       }
     },
-    "lastUpdated": "2026-10-07T22:56:19.004Z",
+    "lastUpdated": "2026-10-08T05:04:11.659Z",
     "contributors": [
       {
         "login": "mysql",
@@ -357,17 +357,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 268900,
+      "totalRepos": 269030,
       "totalStars": 10614
     },
     "momentum": {
-      "newReposLast30Days": 18822,
+      "newReposLast30Days": 18314,
       "topStarredNewRepo": {
         "name": "elstongun/leviathan",
-        "stars": 664
+        "stars": 671
       }
     },
-    "lastUpdated": "2026-10-07T22:56:23.384Z",
+    "lastUpdated": "2026-10-08T05:04:16.046Z",
     "contributors": [
       {
         "login": "sqlite",
@@ -407,16 +407,16 @@
     },
     "popularity": {
       "totalRepos": 2800,
-      "totalStars": 10115
+      "totalStars": 10116
     },
     "momentum": {
-      "newReposLast30Days": 25,
+      "newReposLast30Days": 23,
       "topStarredNewRepo": {
         "name": "VitorRodrig15/ecommerce-kafka-pyspark-cassandra-streaming",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-07T22:56:27.781Z",
+    "lastUpdated": "2026-10-08T05:04:20.515Z",
     "contributors": [
       {
         "login": "apache",
@@ -455,17 +455,17 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 26601,
+      "totalRepos": 26606,
       "totalStars": 8332
     },
     "momentum": {
-      "newReposLast30Days": 853,
+      "newReposLast30Days": 836,
       "topStarredNewRepo": {
         "name": "2giosangmitom/sqmeow.nvim",
         "stars": 151
       }
     },
-    "lastUpdated": "2026-10-07T22:56:32.304Z",
+    "lastUpdated": "2026-10-08T05:04:25.110Z",
     "contributors": [
       {
         "login": "MariaDB",
@@ -504,17 +504,17 @@
       "latestVersion": "v24.12"
     },
     "popularity": {
-      "totalRepos": 10510,
-      "totalStars": 50287
+      "totalRepos": 10513,
+      "totalStars": 50288
     },
     "momentum": {
-      "newReposLast30Days": 494,
+      "newReposLast30Days": 477,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
-        "stars": 355
+        "stars": 356
       }
     },
-    "lastUpdated": "2026-10-07T22:56:36.598Z",
+    "lastUpdated": "2026-10-08T05:04:29.696Z",
     "contributors": [
       {
         "login": "alexey-milovidov",
@@ -548,17 +548,17 @@
       "latestVersion": "v3.9.0"
     },
     "popularity": {
-      "totalRepos": 18483,
+      "totalRepos": 18484,
       "totalStars": 33920
     },
     "momentum": {
-      "newReposLast30Days": 575,
+      "newReposLast30Days": 548,
       "topStarredNewRepo": {
-        "name": "lisachenko/kafka-client",
-        "stars": 4
+        "name": "Intune-SoS/Intune_kd",
+        "stars": 3
       }
     },
-    "lastUpdated": "2026-10-07T22:56:41.022Z",
+    "lastUpdated": "2026-10-08T05:04:34.490Z",
     "contributors": [
       {
         "login": "ijuma",
@@ -602,7 +602,7 @@
         "stars": 6
       }
     },
-    "lastUpdated": "2026-10-07T22:56:45.526Z",
+    "lastUpdated": "2026-10-08T05:04:39.857Z",
     "contributors": [
       {
         "login": "petermattis",
@@ -636,17 +636,17 @@
       "latestVersion": "v1.12.5"
     },
     "popularity": {
-      "totalRepos": 13083,
-      "totalStars": 34966
+      "totalRepos": 13096,
+      "totalStars": 34968
     },
     "momentum": {
-      "newReposLast30Days": 1078,
+      "newReposLast30Days": 1039,
       "topStarredNewRepo": {
         "name": "Jiarui-0410/real-time-recommendation-analytics",
         "stars": 109
       }
     },
-    "lastUpdated": "2026-10-07T22:56:50.121Z",
+    "lastUpdated": "2026-10-08T05:04:44.363Z",
     "contributors": [
       {
         "login": "generall",
@@ -684,13 +684,13 @@
       "totalStars": 16873
     },
     "momentum": {
-      "newReposLast30Days": 42,
+      "newReposLast30Days": 40,
       "topStarredNewRepo": {
         "name": "weaviate/weaviate-cloud",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-07T22:56:54.715Z",
+    "lastUpdated": "2026-10-08T05:04:49.942Z",
     "contributors": [
       {
         "login": "bobvanluijt",
