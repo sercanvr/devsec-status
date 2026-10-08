@@ -16,6 +16,7 @@ import { useGitHubContributors } from '../hooks/useGitHubContributors';
 import { useGitHubRelease } from '../hooks/useGitHubRelease';
 import { localizeDate } from '../lib/localizeDate';
 import { getOptimizedAvatarUrl } from '../lib/avatar';
+import { GlassBadge } from './GlassBadge';
 
 /**
  * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
@@ -165,9 +166,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                 <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-block py-1">
                   {sanitizeText(title)}
                 </span>
-                <span className="text-xs sm:text-sm font-mono font-semibold px-2.5 py-0.5 rounded-full bg-neutral-200/70 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 shrink-0">
-                  {processedEntries.length}
-                </span>
+                <GlassBadge count={processedEntries.length} />
               </h2>
             </div>
 

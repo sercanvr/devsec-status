@@ -17,7 +17,13 @@
     </noscript>
   </head>
   <body class="bg-background text-foreground antialiased selection:bg-[#CEFF00] selection:text-[#141414] transition-colors duration-150">
-    <div id="root"></div>
+    <div id="root">
+      <div id="initial-loader" class="fixed inset-0 z-[1050] flex items-center justify-center bg-black/75 backdrop-blur-md">
+        <div class="code-loader">
+          <span>{</span><span>}</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

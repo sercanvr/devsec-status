@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { GridVignetteBackground } from './components/GridVignetteBackground';
+import { CodeLoader } from './components/CodeLoader';
 const SoftwarePage = React.lazy(() =>
   import('./pages/SoftwarePage').then((m) => ({ default: m.SoftwarePage }))
 );
@@ -17,6 +18,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 
 export const App: React.FC = () => {
   const { t, i18n } = useTranslation();
+  const [isManualLoading, setIsManualLoading] = useState(false);
 
   useEffect(() => {
     document.title = t('common.pageTitle');
@@ -37,15 +39,22 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('hashchange', triggerHashHighlight);
   }, []);
 
+  useEffect(() => {
+    const handleStartLoading = () => setIsManualLoading(true);
+    window.addEventListener('devsec:start-loading', handleStartLoading);
+    return () => window.removeEventListener('devsec:start-loading', handleStartLoading);
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="min-h-screen flex flex-col bg-[#ECECEC]/60 dark:bg-[#141414]/60 text-[#141414] dark:text-[#FFFFFF] transition-colors duration-300 relative selection:bg-[#CEFF00] selection:text-[#141414]">
+        {isManualLoading && <CodeLoader />}
         <GridVignetteBackground className="opacity-80" x={50} y={50} intensity={0} horizontalVignetteSize={100} verticalVignetteSize={100} />
         <Navbar />
 
         <main className="flex-1 pb-12">
           <ErrorBoundary>
-            <React.Suspense fallback={<div className="min-h-[50vh] flex items-center justify-center text-neutral-400 font-mono text-xs" />}>
+            <React.Suspense fallback={<CodeLoader />}>
               <Routes>
                 <Route path="/" element={<SoftwarePage />} />
                 <Route path="/security" element={<SecurityPage />} />
