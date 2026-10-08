@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  tinypool: '>=2.1.2'
-  braces: '>=3.0.3'
-  postcss-selector-parser: '>=7.1.6'
-
 importers:
 
   .:
@@ -23,8 +18,8 @@ importers:
         specifier: ^3.1.0
         version: 3.1.0
       i18next:
-        specifier: ^24.2.2
-        version: 24.2.3(typescript@5.9.3)
+        specifier: ^26.4.2
+        version: 26.4.2(typescript@5.9.3)
       i18next-browser-languagedetector:
         specifier: ^8.0.4
         version: 8.2.1
@@ -39,7 +34,7 @@ importers:
         version: 19.3.0(react@19.3.0)
       react-i18next:
         specifier: ^15.4.0
-        version: 15.7.4(i18next@24.2.3(typescript@5.9.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.9.3)
+        version: 15.7.4(i18next@26.4.2(typescript@5.9.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.9.3)
       react-router-dom:
         specifier: ^7.2.0
         version: 7.18.4(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -1077,10 +1072,10 @@ packages:
   i18next-browser-languagedetector@8.2.1:
     resolution: {integrity: sha512-bZg8+4bdmaOiApD7N7BPT9W8MLZG+nPTOFlLiJiT8uzKXFjhxw4v2ierCXOwB5sFDMtuA5G4kgYZ0AznZxQ/cw==}
 
-  i18next@24.2.3:
-    resolution: {integrity: sha512-lfbf80OzkocvX7nmZtu7nSTNbrTYR52sLWxPtlXX1zAhVw8WEnFk4puUkCR4B1dNQwbSpEHHHemcZu//7EcB7A==}
+  i18next@26.4.2:
+    resolution: {integrity: sha512-RX+R0VLg13IbvRuJSxnqykUFS9vQZTl8wYpWPCIUDWVrSGjsQywB5Y+pjzrkboxGAuYfJZVH1InFTdgBdxq6ug==}
     peerDependencies:
-      typescript: ^5
+      typescript: ^5 || ^6 || ^7
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -1285,8 +1280,8 @@ packages:
     peerDependencies:
       postcss: ^8.2.14
 
-  postcss-selector-parser@7.1.6:
-    resolution: {integrity: sha512-7qASPzhKF2l2KLboRZux8CCTRMdGiV08vWmyKzPz22qZ7ZjQBOeY7rNzNoCLSUiftJ7HUq0GERHmxw/t0dCdMw==}
+  postcss-selector-parser@6.1.4:
+    resolution: {integrity: sha512-bIoJLOmjCO1S9XdY/DcnR5hJxvrDir1PbGChrzXG3vw0/FOliy/fA3dmdhQ441kah4gKv+TwckGzex6wNS5cnQ==}
     engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
@@ -1472,9 +1467,9 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tinypool@2.2.0:
-    resolution: {integrity: sha512-jBrmx4lYmaC9k/mgPbylxs7kBUxHtD8256up+HjLaDFfXScKJQyil+SWXSvhAtT7XHo+yTVlpB81PGmHP8oLSQ==}
-    engines: {node: ^20.0.0 || >=22.0.0}
+  tinypool@1.1.1:
+    resolution: {integrity: sha512-Zba82s87IFq9A9XmjiX5uZA/ARWDrB03OHlq+Vw1fSdt0I+4/Kutwy8BP4Y/y/aORMo61FQ0vIb5j44vSo5Pkg==}
+    engines: {node: ^18.0.0 || >=20.0.0}
 
   tinyrainbow@2.0.0:
     resolution: {integrity: sha512-op4nsTR47R6p0vMUUoYl/a+ljLFVtlfaXkLQmqfLR1qHma1h/ysYk4hEXZ880bf2CYgTskvTa/e196Vd5dDQXw==}
@@ -2501,9 +2496,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.7
 
-  i18next@24.2.3(typescript@5.9.3):
-    dependencies:
-      '@babel/runtime': 7.29.7
+  i18next@26.4.2(typescript@5.9.3):
     optionalDependencies:
       typescript: 5.9.3
 
@@ -2666,9 +2659,9 @@ snapshots:
   postcss-nested@6.2.0(postcss@8.5.28):
     dependencies:
       postcss: 8.5.28
-      postcss-selector-parser: 7.1.6
+      postcss-selector-parser: 6.1.4
 
-  postcss-selector-parser@7.1.6:
+  postcss-selector-parser@6.1.4:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -2701,11 +2694,11 @@ snapshots:
       react: 19.3.0
       scheduler: 0.28.0
 
-  react-i18next@15.7.4(i18next@24.2.3(typescript@5.9.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.9.3):
+  react-i18next@15.7.4(i18next@26.4.2(typescript@5.9.3))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@5.9.3):
     dependencies:
       '@babel/runtime': 7.29.7
       html-parse-stringify: 3.1.0
-      i18next: 24.2.3(typescript@5.9.3)
+      i18next: 26.4.2(typescript@5.9.3)
       react: 19.3.0
     optionalDependencies:
       react-dom: 19.3.0(react@19.3.0)
@@ -2856,7 +2849,7 @@ snapshots:
       postcss-js: 4.1.0(postcss@8.5.28)
       postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.28)(tsx@4.23.15)
       postcss-nested: 6.2.0(postcss@8.5.28)
-      postcss-selector-parser: 7.1.6
+      postcss-selector-parser: 6.1.4
       resolve: 1.22.12
       sucrase: 3.35.1
     transitivePeerDependencies:
@@ -2880,7 +2873,7 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  tinypool@2.2.0: {}
+  tinypool@1.1.1: {}
 
   tinyrainbow@2.0.0: {}
 
@@ -2981,7 +2974,7 @@ snapshots:
       tinybench: 2.9.0
       tinyexec: 0.3.2
       tinyglobby: 0.2.17
-      tinypool: 2.2.0
+      tinypool: 1.1.1
       tinyrainbow: 2.0.0
       vite: 6.4.3(@types/node@22.20.4)(jiti@1.21.7)(tsx@4.23.15)
       vite-node: 3.2.4(@types/node@22.20.4)(jiti@1.21.7)(tsx@4.23.15)
