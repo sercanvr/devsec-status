@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Search } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -9,7 +9,6 @@ import devsecLogo from '../assets/icons/devsec-logo.webp';
 
 export const Navbar: React.FC = () => {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
@@ -47,17 +46,13 @@ export const Navbar: React.FC = () => {
             <div className="absolute inset-0 rounded-[18px] bg-gradient-to-t from-black/[0.04] to-transparent dark:from-white/[0.04] dark:to-transparent pointer-events-none z-0" />
 
             <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-2 sm:gap-3 relative z-10">
-            {/* Left: Logo (Instant smooth navigate to top) */}
+            {/* Left: Logo (Page refresh with CodeLoader on click) */}
             <a
               href="/"
               onClick={(e) => {
                 e.preventDefault();
-                if (window.location.pathname === '/') {
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                } else {
-                  navigate('/');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                window.dispatchEvent(new CustomEvent('devsec:start-loading'));
+                window.location.href = '/';
               }}
               className="flex items-center group focus:outline-none rounded-lg p-0.5 shrink-0 cursor-pointer hover:opacity-70 transition-none"
             >
