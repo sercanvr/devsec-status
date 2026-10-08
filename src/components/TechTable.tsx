@@ -15,6 +15,7 @@ import { SegmentedProgressBar } from './SegmentedProgressBar';
 import { useGitHubContributors } from '../hooks/useGitHubContributors';
 import { useGitHubRelease } from '../hooks/useGitHubRelease';
 import { localizeDate } from '../lib/localizeDate';
+import { getOptimizedAvatarUrl } from '../lib/avatar';
 
 /**
  * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
@@ -292,7 +293,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         <div className="flex items-center gap-1 lg:gap-1.5">
           {!avatarFailed && entry.creator?.avatarUrl ? (
             <img
-              src={entry.creator.avatarUrl}
+              src={getOptimizedAvatarUrl(entry.creator.avatarUrl, 64)}
               alt={cleanCreatorName}
               width={30}
               height={30}
@@ -344,19 +345,25 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 5. İvmelenme */}
-      <td className="py-2.5 lg:py-3 px-1 text-center">
+      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible">
         {entry.momentum.newReposLast30Days > 0 ? (
           <div className="inline-flex items-center gap-0.5 lg:gap-1 font-mono text-[10px] lg:text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
             <TrendingUp className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
             <span>+{formattedNewRepos}</span>
           </div>
         ) : (
-          <div
-            className="inline-flex items-center justify-center gap-1 font-mono text-[9px] lg:text-[11px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap"
-            title="Son 30 günde repo sayısı sabit / Nötr ivmelenme"
-          >
-            <span className="font-bold">±0</span>
-            <span className="text-[9px] font-sans font-medium opacity-90 hidden sm:inline">Nötr</span>
+          <div className="relative group/neutral inline-flex">
+            <div
+              className="inline-flex items-center justify-center gap-1 font-mono text-[9px] lg:text-[11px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap cursor-default"
+            >
+              <span className="font-bold">±0</span>
+              <span className="text-[9px] font-sans font-medium opacity-90 hidden sm:inline">{t('table.neutralBadge')}</span>
+            </div>
+            {/* Custom Styled Instant Tooltip */}
+            <div className="hidden group-hover/neutral:block absolute bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+              <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+              {t('table.neutralTooltip')}
+            </div>
           </div>
         )}
       </td>
@@ -386,7 +393,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               >
                 <img
                   className="h-5 w-5 lg:h-6 lg:w-6 rounded-full ring-1.5 lg:ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                  src={c.avatar_url}
+                  src={getOptimizedAvatarUrl(c.avatar_url, 48)}
                   alt={c.login}
                   width={24}
                   height={24}
@@ -506,7 +513,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         <div className="flex items-center gap-1.5 flex-wrap max-w-[70%]">
           {!avatarFailed && entry.creator?.avatarUrl ? (
             <img
-              src={entry.creator.avatarUrl}
+              src={getOptimizedAvatarUrl(entry.creator.avatarUrl, 48)}
               alt={cleanCreatorName}
               width={24}
               height={24}
@@ -557,7 +564,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               <img
                 key={c.login + idx}
                 className="h-5 w-5 rounded-full ring-2 ring-white dark:ring-neutral-900 object-cover bg-neutral-800"
-                src={c.avatar_url}
+                src={getOptimizedAvatarUrl(c.avatar_url, 40)}
                 alt={c.login}
                 width={20}
                 height={20}
@@ -579,12 +586,18 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               <span>+{formattedNewRepos}</span>
             </div>
           ) : (
-            <div
-              className="flex items-center justify-center gap-1 font-mono text-[10px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap"
-              title="Son 30 günde repo sayısı sabit / Nötr ivmelenme"
-            >
-              <span className="font-bold">±0</span>
-              <span className="text-[9px] font-sans font-medium opacity-90">Nötr</span>
+            <div className="relative group/neutral inline-flex">
+              <div
+                className="flex items-center justify-center gap-1 font-mono text-[10px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap cursor-default"
+              >
+                <span className="font-bold">±0</span>
+                <span className="text-[9px] font-sans font-medium opacity-90">{t('table.neutralBadge')}</span>
+              </div>
+              {/* Custom Styled Instant Tooltip */}
+              <div className="hidden group-hover/neutral:block absolute bottom-[calc(100%+8px)] right-0 sm:left-1/2 sm:-translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+                <span className="absolute -bottom-1.5 right-4 sm:left-1/2 sm:-translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+                {t('table.neutralTooltip')}
+              </div>
             </div>
           )}
 

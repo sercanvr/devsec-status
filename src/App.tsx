@@ -5,8 +5,12 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { GridVignetteBackground } from './components/GridVignetteBackground';
-import { SoftwarePage } from './pages/SoftwarePage';
-import { SecurityPage } from './pages/SecurityPage';
+const SoftwarePage = React.lazy(() =>
+  import('./pages/SoftwarePage').then((m) => ({ default: m.SoftwarePage }))
+);
+const SecurityPage = React.lazy(() =>
+  import('./pages/SecurityPage').then((m) => ({ default: m.SecurityPage }))
+);
 
 import { highlightTechElement } from './lib/highlight';
 
@@ -39,11 +43,13 @@ export const App: React.FC = () => {
         <Navbar />
 
         <main className="flex-1 pb-12">
-          <Routes>
-            <Route path="/" element={<SoftwarePage />} />
-            <Route path="/security" element={<SecurityPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+          <React.Suspense fallback={<div className="min-h-[50vh] flex items-center justify-center text-neutral-400 font-mono text-xs" />}>
+            <Routes>
+              <Route path="/" element={<SoftwarePage />} />
+              <Route path="/security" element={<SecurityPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </React.Suspense>
         </main>
 
         <ScrollToTopButton />
