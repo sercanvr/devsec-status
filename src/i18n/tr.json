@@ -77,7 +77,9 @@
     "sortYear": "Çıkış Yılı",
     "noResults": "Kritere uygun teknoloji bulunamadı.",
     "openSource": "Açık Kaynak",
-    "maintainer": "Maintainer"
+    "maintainer": "Maintainer",
+    "neutralBadge": "Nötr",
+    "neutralTooltip": "Son 30 günde repo sayısı sabit / Nötr ivmelenme"
   },
   "techBar": {
     "popularity": "Popülerlik",

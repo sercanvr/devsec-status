@@ -77,7 +77,9 @@
     "sortYear": "Erscheinungsjahr",
     "noResults": "Keine Technologien gefunden.",
     "openSource": "Open Source",
-    "maintainer": "Maintainer"
+    "maintainer": "Maintainer",
+    "neutralBadge": "Neutral",
+    "neutralTooltip": "Repository-Anzahl in den letzten 30 Tagen unverändert / Neutrale Dynamik"
   },
   "techBar": {
     "popularity": "Beliebtheit",
