@@ -11,7 +11,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://*.githubusercontent.com https://github.com https://cdn.jsdelivr.net https://raw.githubusercontent.com https://nmap.org https://www.distrowiz.com; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
         },
         {
           "key": "Strict-Transport-Security",

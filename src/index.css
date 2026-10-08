@@ -241,34 +241,33 @@ tr.highlight-glow td {
   }
 }
 
-/* Light mode */
+/* Light mode: Accent color with reduced opacity */
 .glass-counter-badge {
-  background: rgba(255, 255, 255, 0.65);
-  color: #171717;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  background: rgba(206, 255, 0, 0.22);
+  color: #141414;
+  border: 1px solid rgba(160, 205, 0, 0.45);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Dark mode */
+/* Dark mode: Accent color with reduced opacity and neon glow */
 .dark .glass-counter-badge {
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  background: rgba(206, 255, 0, 0.15);
+  color: #CEFF00;
+  text-shadow: 0 0 10px rgba(206, 255, 0, 0.35);
+  border: 1px solid rgba(206, 255, 0, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Glint sparkle on upper-right corner */
+/* Static glint sparkle on upper-right corner (No CPU/GPU animation) */
 .glass-counter-glint {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: -10px;
+  top: -9px;
   right: -3px;
   pointer-events: none;
   transform: rotate(-20deg);
-  filter: blur(0.5px);
-  animation: glint-rotate 5s infinite ease-in-out;
+  filter: blur(0.3px);
 }
 
 .glass-counter-glint:before,
@@ -281,36 +280,24 @@ tr.highlight-glow td {
 .glass-counter-glint:before {
   width: 1px;
   height: 100%;
-  left: 10.5px;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4), transparent);
+  left: 9.5px;
+  background: linear-gradient(to bottom, transparent, rgba(20, 20, 20, 0.5), transparent);
 }
 
 .glass-counter-glint:after {
   width: 100%;
   height: 1px;
-  top: 10.5px;
-  background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.4), transparent);
+  top: 9.5px;
+  background: linear-gradient(to left, transparent, rgba(20, 20, 20, 0.5), transparent);
 }
 
 /* Dark mode glint lines */
 .dark .glass-counter-glint:before {
-  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.85), transparent);
+  background: linear-gradient(to bottom, transparent, rgba(206, 255, 0, 0.85), transparent);
 }
 
 .dark .glass-counter-glint:after {
-  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.85), transparent);
-}
-
-@keyframes glint-rotate {
-  0% {
-    transform: rotate(0deg) scale(0.9);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.35);
-  }
-  100% {
-    transform: rotate(360deg) scale(0.9);
-  }
+  background: linear-gradient(to left, transparent, rgba(206, 255, 0, 0.85), transparent);
 }
 
 
