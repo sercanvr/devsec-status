@@ -104,8 +104,29 @@ const CustomDropdown: React.FC<{
   );
 };
 
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    setIsMobile(mediaQuery.matches);
+    mediaQuery.addEventListener('change', handler);
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
+
+  return isMobile;
+};
+
 export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }) => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   // Default sort is ALWAYS 'stars' (En Çok Yıldız) as requested
   const [sortBy, setSortBy] = useState<string>('stars');
 
@@ -149,7 +170,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
   ];
 
   return (
-    <section id={id} className="w-full space-y-4 pt-2">
+    <section id={id} className="w-full space-y-4 pt-2 content-visibility-auto">
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border, isolated from hover bugs */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
         {/* Table Container Card */}
@@ -182,36 +203,37 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
             </div>
           </div>
 
-          {/* Desktop & Laptop Fintech Table View */}
-          <div className="hidden md:block w-full overflow-x-auto custom-scrollbar">
-            <table className="w-full text-left border-collapse table-auto">
-              <thead>
-                <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
-                  <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left">{t('table.technology')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-left">{t('table.creator')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.type')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left">{t('table.popularity')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.momentum')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
-                  <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.ecosystem')}</th>
-                  <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center">{t('table.github')}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
-                {processedEntries.map((entry) => (
-                  <TableRow key={entry.id} entry={entry} maxStars={maxStars} />
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Mobile & Small Screen Fintech Cards View (< md) */}
-          <div className="md:hidden p-3 sm:p-4 space-y-3.5">
-            {processedEntries.map((entry) => (
-              <MobileCard key={entry.id} entry={entry} maxStars={maxStars} />
-            ))}
-          </div>
+          {/* Conditional Desktop Table vs Mobile Cards rendering to prevent 14,000+ duplicate DOM nodes */}
+          {!isMobile ? (
+            <div className="w-full overflow-x-auto custom-scrollbar">
+              <table className="w-full text-left border-collapse table-auto">
+                <thead>
+                  <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
+                    <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left">{t('table.technology')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-left">{t('table.creator')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.type')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left">{t('table.popularity')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.momentum')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.ecosystem')}</th>
+                    <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center">{t('table.github')}</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
+                  {processedEntries.map((entry) => (
+                    <TableRow key={entry.id} entry={entry} maxStars={maxStars} />
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <div className="p-3 sm:p-4 space-y-3.5">
+              {processedEntries.map((entry) => (
+                <MobileCard key={entry.id} entry={entry} maxStars={maxStars} />
+              ))}
+            </div>
+          )}
 
           {/* Empty Fallback */}
           {processedEntries.length === 0 && (

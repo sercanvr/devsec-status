@@ -298,6 +298,8 @@ tr.highlight-glow td {
 
 .dark .glass-counter-glint:after {
   background: linear-gradient(to left, transparent, rgba(206, 255, 0, 0.85), transparent);
+}/* Performance: Defer off-screen section layout and rendering */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 750px;
 }
-
-

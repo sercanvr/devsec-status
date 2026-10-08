@@ -48,9 +48,6 @@ export default defineConfig({
             if (id.includes('lucide-react')) {
               return 'vendor-icons';
             }
-            if (id.includes('dotted-map')) {
-              return 'vendor-map';
-            }
             return 'vendor-utils';
           }
         },

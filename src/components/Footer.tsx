@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Plug, Star } from 'lucide-react';
 import devsecLogo from '../assets/icons/devsec-logo.webp';
@@ -26,6 +27,7 @@ const computeLatestUpdateDate = (): string => {
 
 export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const effectiveDate = lastUpdated || computeLatestUpdateDate();
   const dateLocale = i18n.language.startsWith('tr')
@@ -100,8 +102,12 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               href="/"
               onClick={(e) => {
                 e.preventDefault();
-                window.dispatchEvent(new CustomEvent('devsec:start-loading'));
-                window.location.href = '/';
+                if (window.location.pathname === '/') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                  navigate('/');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
               }}
               className="flex items-center cursor-pointer hover:opacity-70 transition-none"
             >
@@ -174,8 +180,12 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              window.dispatchEvent(new CustomEvent('devsec:start-loading'));
-              window.location.href = '/';
+              if (window.location.pathname === '/') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                navigate('/');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
             }}
             className="flex items-center cursor-pointer hover:opacity-70 transition-none"
           >
