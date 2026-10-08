@@ -1,10 +1,24 @@
 export function highlightTechElement(id: string): boolean {
-  if (!id) return false;
+  if (!id || typeof id !== 'string') return false;
+
+  const trimmedId = id.trim();
+  if (!trimmedId) return false;
+
+  // Escape special characters to prevent selector injection / DOMException
+  const escapedId = typeof CSS !== 'undefined' && typeof CSS.escape === 'function'
+    ? CSS.escape(trimmedId)
+    : trimmedId.replace(/["\\]/g, '\\$&');
 
   // Search for elements matching id or data-tech-id
-  const targets = Array.from(
-    document.querySelectorAll<HTMLElement>(`[id="${id}"], [data-tech-id="${id}"]`)
-  );
+  let targets: HTMLElement[] = [];
+  try {
+    targets = Array.from(
+      document.querySelectorAll<HTMLElement>(`[id="${escapedId}"], [data-tech-id="${escapedId}"]`)
+    );
+  } catch {
+    return false;
+  }
+
   if (targets.length === 0) return false;
 
   // Select the visible element (desktop tr vs mobile card)

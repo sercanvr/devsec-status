@@ -13,6 +13,7 @@ const SecurityPage = React.lazy(() =>
 );
 
 import { highlightTechElement } from './lib/highlight';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 export const App: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -43,13 +44,15 @@ export const App: React.FC = () => {
         <Navbar />
 
         <main className="flex-1 pb-12">
-          <React.Suspense fallback={<div className="min-h-[50vh] flex items-center justify-center text-neutral-400 font-mono text-xs" />}>
-            <Routes>
-              <Route path="/" element={<SoftwarePage />} />
-              <Route path="/security" element={<SecurityPage />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
-          </React.Suspense>
+          <ErrorBoundary>
+            <React.Suspense fallback={<div className="min-h-[50vh] flex items-center justify-center text-neutral-400 font-mono text-xs" />}>
+              <Routes>
+                <Route path="/" element={<SoftwarePage />} />
+                <Route path="/security" element={<SecurityPage />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </React.Suspense>
+          </ErrorBoundary>
         </main>
 
         <ScrollToTopButton />
