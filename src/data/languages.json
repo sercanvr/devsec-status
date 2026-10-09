@@ -55,8 +55,8 @@
     "githubUrl": "https://github.com/golang/go",
     "creator": {
       "name": "Rob Pike & Google Team",
-      "avatarUrl": "https://github.com/google.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/rob-pike.jpg",
+      "type": "person",
       "releaseDate": "10 Kasım 2009",
       "latestVersion": "v1.24.0"
     },
@@ -103,8 +103,8 @@
     "githubUrl": "https://github.com/rust-lang/rust",
     "creator": {
       "name": "Graydon Hoare (Mozilla)",
-      "avatarUrl": "https://github.com/rust-lang.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/graydon-hoare.jpg",
+      "type": "person",
       "releaseDate": "7 Temmuz 2010",
       "latestVersion": "v1.85.0"
     },
@@ -151,8 +151,8 @@
     "githubUrl": "https://github.com/microsoft/TypeScript",
     "creator": {
       "name": "Anders Hejlsberg (Microsoft)",
-      "avatarUrl": "https://github.com/microsoft.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/anders-hejlsberg.jpg",
+      "type": "person",
       "releaseDate": "1 Ekim 2012",
       "latestVersion": "v5.7.3"
     },
@@ -199,7 +199,7 @@
     "githubUrl": "https://github.com/python/cpython",
     "creator": {
       "name": "Guido van Rossum",
-      "avatarUrl": "https://github.com/gvanrossum.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/guido-van-rossum.jpg",
       "type": "person",
       "releaseDate": "20 Şubat 1991",
       "latestVersion": "v3.13.2"
@@ -247,8 +247,8 @@
     "githubUrl": "https://github.com/swiftlang/swift",
     "creator": {
       "name": "Chris Lattner (Apple)",
-      "avatarUrl": "https://github.com/apple.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/chris-lattner.jpg",
+      "type": "person",
       "releaseDate": "2 Haziran 2014",
       "latestVersion": "v6.0.3"
     },
@@ -295,8 +295,8 @@
     "githubUrl": "https://github.com/JetBrains/kotlin",
     "creator": {
       "name": "Dmitry Jemerov (JetBrains)",
-      "avatarUrl": "https://github.com/JetBrains.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/dmitry-jemerov.jpg",
+      "type": "person",
       "releaseDate": "22 Temmuz 2011",
       "latestVersion": "v2.1.10"
     },
@@ -343,7 +343,7 @@
     "githubUrl": "https://github.com/ziglang/zig",
     "creator": {
       "name": "Andrew Kelley",
-      "avatarUrl": "https://github.com/ziglang.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/andrew-kelley.jpg",
       "type": "person",
       "releaseDate": "8 Şubat 2016",
       "latestVersion": "v0.13.0"
@@ -391,7 +391,7 @@
     "githubUrl": "https://github.com/llvm/llvm-project",
     "creator": {
       "name": "Bjarne Stroustrup (Bell Labs)",
-      "avatarUrl": "https://github.com/llvm.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/bjarne-stroustrup.jpg",
       "type": "person",
       "releaseDate": "14 Ekim 1985",
       "latestVersion": "C++23 Standard"
@@ -439,7 +439,7 @@
     "githubUrl": "https://github.com/php/php-src",
     "creator": {
       "name": "Rasmus Lerdorf",
-      "avatarUrl": "https://github.com/rasmus.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/rasmus-lerdorf.jpg",
       "type": "person",
       "releaseDate": "8 Haziran 1995",
       "latestVersion": "v8.4.4"
@@ -487,7 +487,7 @@
     "githubUrl": "https://github.com/elixir-lang/elixir",
     "creator": {
       "name": "José Valim",
-      "avatarUrl": "https://github.com/josevalim.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jose-valim.jpg",
       "type": "person",
       "releaseDate": "24 Mayıs 2012",
       "latestVersion": "v1.18.0"
@@ -535,7 +535,7 @@
     "githubUrl": "https://github.com/v8/v8",
     "creator": {
       "name": "Brendan Eich (Netscape)",
-      "avatarUrl": "https://github.com/brendaneich.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/brendan-eich.jpg",
       "type": "person",
       "releaseDate": "4 Aralık 1995",
       "latestVersion": "ES2026"
@@ -583,7 +583,7 @@
     "githubUrl": "https://github.com/ruby/ruby",
     "creator": {
       "name": "Yukihiro Matsumoto (Matz)",
-      "avatarUrl": "https://github.com/matz.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/yukihiro-matsumoto.jpg",
       "type": "person",
       "releaseDate": "21 Aralık 1995",
       "latestVersion": "v3.4.2"
@@ -631,7 +631,7 @@
     "githubUrl": "https://github.com/openjdk/jdk",
     "creator": {
       "name": "James Gosling (Sun / Oracle)",
-      "avatarUrl": "https://github.com/oracle.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/james-gosling.jpg",
       "type": "person",
       "releaseDate": "23 Mayıs 1995",
       "latestVersion": "Java 23 (JDK 23)"
@@ -727,8 +727,8 @@
     "githubUrl": "https://github.com/dart-lang/sdk",
     "creator": {
       "name": "Lars Bak & Kasper Lund (Google)",
-      "avatarUrl": "https://github.com/dart-lang.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lars-bak.jpeg",
+      "type": "person",
       "releaseDate": "10 Ekim 2011",
       "latestVersion": "v3.7.0"
     },
@@ -775,7 +775,7 @@
     "githubUrl": "https://github.com/lua/lua",
     "creator": {
       "name": "Roberto Ierusalimschy (PUC-Rio)",
-      "avatarUrl": "https://github.com/lua.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/roberto-Ierusalimschy.jpg",
       "type": "person",
       "releaseDate": "28 Temmuz 1993",
       "latestVersion": "v5.4.7"
@@ -823,7 +823,7 @@
     "githubUrl": "https://github.com/scala/scala3",
     "creator": {
       "name": "Martin Odersky",
-      "avatarUrl": "https://github.com/odersky.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/martin-odersky.jpg",
       "type": "person",
       "releaseDate": "20 Ocak 2004",
       "latestVersion": "v3.6.3"
@@ -871,8 +871,8 @@
     "githubUrl": "https://github.com/ghc/ghc",
     "creator": {
       "name": "Lennart Augustsson & Team",
-      "avatarUrl": "https://github.com/haskell.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lennart-augustsson.jpg",
+      "type": "person",
       "releaseDate": "1 Nisan 1990",
       "latestVersion": "GHC 9.10"
     },
@@ -919,7 +919,7 @@
     "githubUrl": "https://github.com/Perl/perl5",
     "creator": {
       "name": "Larry Wall",
-      "avatarUrl": "https://github.com/Perl.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/larry-wall.jpg",
       "type": "person",
       "releaseDate": "18 Aralık 1987",
       "latestVersion": "v5.40.0"
@@ -967,8 +967,8 @@
     "githubUrl": "https://github.com/mirror/bash",
     "creator": {
       "name": "Brian Fox (GNU)",
-      "avatarUrl": "https://github.com/bash.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/brian-fox.png",
+      "type": "person",
       "releaseDate": "8 Haziran 1989",
       "latestVersion": "v5.2"
     },
@@ -1015,7 +1015,7 @@
     "githubUrl": "https://github.com/r-devel/r-svn",
     "creator": {
       "name": "Ross Ihaka & Robert Gentleman",
-      "avatarUrl": "https://github.com/r-devel.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/ross-ihaka.jpg",
       "type": "person",
       "releaseDate": "Ağustos 1993",
       "latestVersion": "v4.4.2"
@@ -1063,7 +1063,7 @@
     "githubUrl": "https://github.com/apple-oss-distributions/objc4",
     "creator": {
       "name": "Brad Cox & Tom Love",
-      "avatarUrl": "https://github.com/apple.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/brad-cox.webp",
       "type": "person",
       "releaseDate": "1984 (Stepstone)",
       "latestVersion": "Objective-C 2.0"
@@ -1112,8 +1112,8 @@
     "githubUrl": "https://github.com/JuliaLang/julia",
     "creator": {
       "name": "Jeff Bezanson & Stefan Karpinski (JuliaLab)",
-      "avatarUrl": "https://github.com/JuliaLang.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/stefan-karpinski.webp",
+      "type": "person",
       "releaseDate": "Şubat 2012",
       "latestVersion": "v1.11.3"
     },
@@ -1156,8 +1156,8 @@
     "githubUrl": "https://github.com/erlang/otp",
     "creator": {
       "name": "Joe Armstrong (Ericsson)",
-      "avatarUrl": "https://github.com/erlang.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/joe-armstrong.jpg",
+      "type": "person",
       "releaseDate": "1986",
       "latestVersion": "OTP 27.2"
     },
@@ -1200,7 +1200,7 @@
     "githubUrl": "https://github.com/clojure/clojure",
     "creator": {
       "name": "Rich Hickey",
-      "avatarUrl": "https://github.com/richhickey.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/rich-hickey.png",
       "type": "person",
       "releaseDate": "16 Ekim 2007",
       "latestVersion": "v1.12.0"
@@ -1244,7 +1244,7 @@
     "githubUrl": "https://github.com/dotnet/fsharp",
     "creator": {
       "name": "Don Syme (Microsoft Research)",
-      "avatarUrl": "https://github.com/dsyme.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/don-syme.webp",
       "type": "person",
       "releaseDate": "Mayıs 2005",
       "latestVersion": "v9.0"
@@ -1288,8 +1288,8 @@
     "githubUrl": "https://github.com/ethereum/solidity",
     "creator": {
       "name": "Gavin Wood (Ethereum)",
-      "avatarUrl": "https://github.com/ethereum.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/gavin-wood.jpg",
+      "type": "person",
       "releaseDate": "Ağustos 2014",
       "latestVersion": "v0.8.28"
     },

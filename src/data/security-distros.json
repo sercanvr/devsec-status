@@ -52,8 +52,8 @@
     "githubUrl": "https://github.com/ParrotSec/parrot-core",
     "creator": {
       "name": "Lorenzo Faletra (Parrot Project)",
-      "avatarUrl": "https://github.com/ParrotSec.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lorenzo-faletra.jpg",
+      "type": "person",
       "releaseDate": "10 Nisan 2013",
       "latestVersion": "Parrot 6.2"
     },
@@ -96,8 +96,8 @@
     "githubUrl": "https://github.com/BlackArch/blackarch",
     "creator": {
       "name": "Evan Teitelman (BlackArch Team)",
-      "avatarUrl": "https://github.com/BlackArch.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/evan-teitelman.jpg",
+      "type": "person",
       "releaseDate": "2013",
       "latestVersion": "v2024.09"
     },
@@ -184,8 +184,8 @@
     "githubUrl": "https://github.com/QubesOS/qubes-issues",
     "creator": {
       "name": "Joanna Rutkowska (Invisible Things Lab)",
-      "avatarUrl": "https://github.com/QubesOS.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/joanna-rutkowska.jpg",
+      "type": "person",
       "releaseDate": "3 Eylül 2012",
       "latestVersion": "Qubes 4.2.3"
     },
@@ -228,8 +228,8 @@
     "githubUrl": "https://github.com/pentoo/pentoo-overlay",
     "creator": {
       "name": "Michael Zanetta & Pentoo Team",
-      "avatarUrl": "https://github.com/pentoo.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/michael-zanetta.jpg",
+      "type": "person",
       "releaseDate": "Haziran 2005",
       "latestVersion": "Pentoo 2024.0"
     },
@@ -272,7 +272,7 @@
     "githubUrl": "https://www.caine-live.net",
     "creator": {
       "name": "Nanni Bassetti",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/12171140?v=4",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/nanni-bassetti.png",
       "type": "person",
       "releaseDate": "2008",
       "latestVersion": "CAINE 14.0"

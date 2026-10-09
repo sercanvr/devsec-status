@@ -8,8 +8,8 @@
     "githubUrl": "https://github.com/supabase/supabase",
     "creator": {
       "name": "Paul Copplestone & Ant Wilson",
-      "avatarUrl": "https://github.com/supabase.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/paul-copplestone.jpg",
+      "type": "person",
       "releaseDate": "9 Ocak 2020",
       "latestVersion": "v2.48.0"
     },
@@ -57,8 +57,8 @@
     "githubUrl": "https://github.com/elastic/elasticsearch",
     "creator": {
       "name": "Shay Banon (Elastic)",
-      "avatarUrl": "https://github.com/elastic.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/shay-banon.jpg",
+      "type": "person",
       "releaseDate": "8 Şubat 2010",
       "latestVersion": "v8.17.0"
     },
@@ -106,7 +106,7 @@
     "githubUrl": "https://github.com/redis/redis",
     "creator": {
       "name": "Salvatore Sanfilippo (antirez)",
-      "avatarUrl": "https://github.com/antirez.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/salvatore-sanfilippo.jpg",
       "type": "person",
       "releaseDate": "10 Mayıs 2009",
       "latestVersion": "v7.4.2"
@@ -155,8 +155,8 @@
     "githubUrl": "https://github.com/mongodb/mongo",
     "creator": {
       "name": "Eliot Horowitz (MongoDB)",
-      "avatarUrl": "https://github.com/mongodb.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/eliot-horowitz.jpg",
+      "type": "person",
       "releaseDate": "11 Şubat 2009",
       "latestVersion": "v8.0.0"
     },
@@ -204,8 +204,8 @@
     "githubUrl": "https://github.com/postgres/postgres",
     "creator": {
       "name": "Michael Stonebraker (UC Berkeley)",
-      "avatarUrl": "https://github.com/postgres.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/michael-stonebraker.jpg",
+      "type": "person",
       "releaseDate": "8 Temmuz 1996",
       "latestVersion": "v17.2"
     },
@@ -253,8 +253,8 @@
     "githubUrl": "https://github.com/neo4j/neo4j",
     "creator": {
       "name": "Emil Eifrem (Neo4j)",
-      "avatarUrl": "https://github.com/neo4j.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/emil-eifrem.jpg",
+      "type": "person",
       "releaseDate": "16 Şubat 2010",
       "latestVersion": "v5.26.0"
     },
@@ -302,8 +302,8 @@
     "githubUrl": "https://github.com/mysql/mysql-server",
     "creator": {
       "name": "Michael Widenius (Oracle)",
-      "avatarUrl": "https://github.com/mysql.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/michael-widenius.webp",
+      "type": "person",
       "releaseDate": "23 Mayıs 1995",
       "latestVersion": "v9.2.0"
     },
@@ -351,7 +351,7 @@
     "githubUrl": "https://github.com/sqlite/sqlite",
     "creator": {
       "name": "D. Richard Hipp",
-      "avatarUrl": "https://github.com/sqlite.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/dwayne-richard-hipp.jpg",
       "type": "person",
       "releaseDate": "17 Ağustos 2000",
       "latestVersion": "v3.48.0"
@@ -400,8 +400,8 @@
     "githubUrl": "https://github.com/apache/cassandra",
     "creator": {
       "name": "Avinash Lakshman (Facebook)",
-      "avatarUrl": "https://github.com/apache.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/avinash-lakshman.jpg",
+      "type": "person",
       "releaseDate": "11 Temmuz 2008",
       "latestVersion": "v5.0.2"
     },
@@ -498,8 +498,8 @@
     "githubUrl": "https://github.com/ClickHouse/ClickHouse",
     "creator": {
       "name": "Alexey Milovidov (ClickHouse Inc.)",
-      "avatarUrl": "https://github.com/ClickHouse.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/alexey-milovidov.jpg",
+      "type": "person",
       "releaseDate": "15 Haziran 2016",
       "latestVersion": "v24.12"
     },
@@ -542,8 +542,8 @@
     "githubUrl": "https://github.com/apache/kafka",
     "creator": {
       "name": "Jay Kreps & Neha Narkhede (Apache)",
-      "avatarUrl": "https://github.com/apache.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jay-kreps.jpg",
+      "type": "person",
       "releaseDate": "1 Ağustos 2011",
       "latestVersion": "v3.9.0"
     },
@@ -586,8 +586,8 @@
     "githubUrl": "https://github.com/cockroachdb/cockroach",
     "creator": {
       "name": "Spencer Kimball & Peter Mattis",
-      "avatarUrl": "https://github.com/cockroachdb.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/spencer-kimball.webp",
+      "type": "person",
       "releaseDate": "Şubat 2015",
       "latestVersion": "v24.3"
     },
@@ -630,8 +630,8 @@
     "githubUrl": "https://github.com/qdrant/qdrant",
     "creator": {
       "name": "Andrey Vasnetsov (Qdrant)",
-      "avatarUrl": "https://github.com/qdrant.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/andrey-vasnetsov.jpg",
+      "type": "person",
       "releaseDate": "Mayıs 2021",
       "latestVersion": "v1.12.5"
     },
@@ -674,8 +674,8 @@
     "githubUrl": "https://github.com/weaviate/weaviate",
     "creator": {
       "name": "Bob van Luijt (Weaviate)",
-      "avatarUrl": "https://github.com/weaviate.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/bob-van-luijt.jpg",
+      "type": "person",
       "releaseDate": "Mart 2019",
       "latestVersion": "v1.28.2"
     },

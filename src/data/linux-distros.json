@@ -8,7 +8,7 @@
     "githubUrl": "https://github.com/torvalds/linux",
     "creator": {
       "name": "Linus Torvalds",
-      "avatarUrl": "https://github.com/torvalds.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/linus-torvalds.jpg",
       "type": "person",
       "releaseDate": "17 Eylül 1991",
       "latestVersion": "v6.13"
@@ -52,8 +52,8 @@
     "githubUrl": "https://github.com/canonical/snapd",
     "creator": {
       "name": "Mark Shuttleworth (Canonical)",
-      "avatarUrl": "https://github.com/canonical.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/mark-shuttleworth.jpg",
+      "type": "person",
       "releaseDate": "20 Ekim 2004",
       "latestVersion": "26.04 LTS"
     },
@@ -96,8 +96,8 @@
     "githubUrl": "https://github.com/Debian",
     "creator": {
       "name": "Ian Murdock (Debian Project)",
-      "avatarUrl": "https://github.com/Debian.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/ian-murdock.jpg",
+      "type": "person",
       "releaseDate": "16 Ağustos 1993",
       "latestVersion": "Debian 12"
     },
@@ -140,8 +140,8 @@
     "githubUrl": "https://github.com/fedora-infra",
     "creator": {
       "name": "Warren Togami (Red Hat)",
-      "avatarUrl": "https://github.com/fedora-infra.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/warren-togami.jpg",
+      "type": "person",
       "releaseDate": "6 Kasım 2003",
       "latestVersion": "Fedora 41"
     },
@@ -184,8 +184,8 @@
     "githubUrl": "https://github.com/archlinux",
     "creator": {
       "name": "Judd Vinet",
-      "avatarUrl": "https://github.com/archlinux.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/judd-vinet.png",
+      "type": "person",
       "releaseDate": "11 Mart 2002",
       "latestVersion": "2025.01"
     },
@@ -228,8 +228,8 @@
     "githubUrl": "https://github.com/openSUSE",
     "creator": {
       "name": "SUSE Linux / openSUSE Project",
-      "avatarUrl": "https://github.com/openSUSE.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/roland-dyroff.jpg",
+      "type": "person",
       "releaseDate": "Ekim 2005",
       "latestVersion": "Leap 15.6"
     },
@@ -272,7 +272,7 @@
     "githubUrl": "https://github.com/linuxmint/cinnamon",
     "creator": {
       "name": "Clément Lefèbvre",
-      "avatarUrl": "https://github.com/clefebvre.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/clement-lefebvre.png",
       "type": "person",
       "releaseDate": "27 Ağustos 2006",
       "latestVersion": "Mint 22"
@@ -316,8 +316,8 @@
     "githubUrl": "https://github.com/pop-os/cosmic-epoch",
     "creator": {
       "name": "Carl Richell (System76)",
-      "avatarUrl": "https://github.com/pop-os.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/carl-richell.jpg",
+      "type": "person",
       "releaseDate": "27 Ekim 2017",
       "latestVersion": "COSMIC Alpha"
     },
@@ -360,8 +360,8 @@
     "githubUrl": "https://github.com/manjaro",
     "creator": {
       "name": "Philip Müller & Roland Singer",
-      "avatarUrl": "https://github.com/manjaro.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/philip-m%C3%BCller.jpg",
+      "type": "person",
       "releaseDate": "10 Temmuz 2011",
       "latestVersion": "v24.2"
     },
@@ -404,8 +404,8 @@
     "githubUrl": "https://github.com/NixOS/nixpkgs",
     "creator": {
       "name": "Eelco Dolstra (NixOS Foundation)",
-      "avatarUrl": "https://github.com/NixOS.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/eelco-dolstra.jpg",
+      "type": "person",
       "releaseDate": "2003",
       "latestVersion": "24.11"
     },
@@ -448,8 +448,8 @@
     "githubUrl": "https://github.com/gentoo/gentoo",
     "creator": {
       "name": "Daniel Robbins",
-      "avatarUrl": "https://github.com/gentoo.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/daniel-robbins.jpg",
+      "type": "person",
       "releaseDate": "31 Mart 2002",
       "latestVersion": "Rolling"
     },
