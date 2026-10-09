@@ -300,27 +300,20 @@ tr.highlight-glow td {
   background: linear-gradient(to left, transparent, rgba(206, 255, 0, 0.85), transparent);
 }
 
-/* Single-session glint twinkle animation (1-turn GPU-accelerated spin and glow) */
-@keyframes glint-twinkle-once {
+/* Single-session glint animation (Pure fast 1-turn 360deg spin in place, zero vertical movement) */
+@keyframes glint-spin-once {
   0% {
-    transform: rotate(-20deg) scale(0.6);
-    opacity: 0.3;
-  }
-  45% {
-    transform: rotate(160deg) scale(1.4);
-    opacity: 1;
-    filter: drop-shadow(0 0 5px rgba(206, 255, 0, 0.95)) blur(0px);
+    transform: rotate(-20deg);
   }
   100% {
-    transform: rotate(340deg) scale(1);
-    opacity: 0.85;
-    filter: blur(0.3px);
+    transform: rotate(340deg);
   }
 }
 
 .animate-glint-once {
-  animation: glint-twinkle-once 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.15s 1 normal forwards;
-  will-change: transform, opacity;
+  transform-origin: 10px 10px;
+  animation: glint-spin-once 0.55s cubic-bezier(0.33, 1, 0.68, 1) 0.1s 1 normal forwards;
+  will-change: transform;
 }
 
 /* Performance: Defer off-screen section layout and rendering */
