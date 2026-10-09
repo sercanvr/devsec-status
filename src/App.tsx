@@ -6,9 +6,8 @@ import { Footer } from './components/Footer';
 import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { GridVignetteBackground } from './components/GridVignetteBackground';
 import { CodeLoader } from './components/CodeLoader';
-const SoftwarePage = React.lazy(() =>
-  import('./pages/SoftwarePage').then((m) => ({ default: m.SoftwarePage }))
-);
+import { SoftwarePage } from './pages/SoftwarePage';
+
 const SecurityPage = React.lazy(() =>
   import('./pages/SecurityPage').then((m) => ({ default: m.SecurityPage }))
 );
@@ -25,6 +24,12 @@ export const App: React.FC = () => {
   }, [t, i18n.language]);
 
   useEffect(() => {
+    const handleStartLoading = () => setIsManualLoading(true);
+    window.addEventListener('devsec:start-loading', handleStartLoading);
+    return () => window.removeEventListener('devsec:start-loading', handleStartLoading);
+  }, []);
+
+  useEffect(() => {
     const triggerHashHighlight = () => {
       const hash = window.location.hash.replace('#', '');
       if (hash) {
@@ -37,12 +42,6 @@ export const App: React.FC = () => {
     triggerHashHighlight();
     window.addEventListener('hashchange', triggerHashHighlight);
     return () => window.removeEventListener('hashchange', triggerHashHighlight);
-  }, []);
-
-  useEffect(() => {
-    const handleStartLoading = () => setIsManualLoading(true);
-    window.addEventListener('devsec:start-loading', handleStartLoading);
-    return () => window.removeEventListener('devsec:start-loading', handleStartLoading);
   }, []);
 
   return (

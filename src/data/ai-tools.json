@@ -8,8 +8,8 @@
     "githubUrl": "https://github.com/ollama/ollama",
     "creator": {
       "name": "Jeffrey Morgan & Michael Chi",
-      "avatarUrl": "https://github.com/ollama.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jeffrey-morgan.jpg",
+      "type": "person",
       "releaseDate": "Temmuz 2023",
       "latestVersion": "v0.5.7"
     },
@@ -52,7 +52,7 @@
     "githubUrl": "https://github.com/langchain-ai/langchain",
     "creator": {
       "name": "Harrison Chase",
-      "avatarUrl": "https://github.com/hwchase17.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/harrison-chase.jpg",
       "type": "person",
       "releaseDate": "Ekim 2022",
       "latestVersion": "v0.3.14"
@@ -96,8 +96,8 @@
     "githubUrl": "https://github.com/Significant-Gravitas/AutoGPT",
     "creator": {
       "name": "Toran Bruce Richards",
-      "avatarUrl": "https://github.com/Significant-Gravitas.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/toran-bruce-richard.png",
+      "type": "person",
       "releaseDate": "Mart 2023",
       "latestVersion": "v0.5.1"
     },
@@ -140,7 +140,7 @@
     "githubUrl": "https://github.com/comfyanonymous/ComfyUI",
     "creator": {
       "name": "comfyanonymous",
-      "avatarUrl": "https://github.com/comfyanonymous.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/yannik-marek.jpg",
       "type": "person",
       "releaseDate": "Ocak 2023",
       "latestVersion": "v0.3.10"
@@ -184,8 +184,8 @@
     "githubUrl": "https://github.com/n8n-io/n8n",
     "creator": {
       "name": "Jan Oberhauser (n8n)",
-      "avatarUrl": "https://github.com/n8n-io.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jan-oberhauser.png",
+      "type": "person",
       "releaseDate": "Haziran 2019",
       "latestVersion": "v1.75.2"
     },
@@ -228,8 +228,8 @@
     "githubUrl": "https://github.com/open-webui/open-webui",
     "creator": {
       "name": "Timothy J. Baek",
-      "avatarUrl": "https://github.com/open-webui.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/timothy-j-baek.jpg",
+      "type": "person",
       "releaseDate": "Ağustos 2023",
       "latestVersion": "v0.5.6"
     },
@@ -272,8 +272,8 @@
     "githubUrl": "https://github.com/FlowiseAI/Flowise",
     "creator": {
       "name": "Henry Heng (FlowiseAI)",
-      "avatarUrl": "https://github.com/FlowiseAI.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/henry-heng.jpg",
+      "type": "person",
       "releaseDate": "Nisan 2023",
       "latestVersion": "v2.2.4"
     },
@@ -316,8 +316,8 @@
     "githubUrl": "https://github.com/langgenius/dify",
     "creator": {
       "name": "LangGenius Team",
-      "avatarUrl": "https://github.com/langgenius.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/luyu-zhang.jpg",
+      "type": "person",
       "releaseDate": "Mayıs 2023",
       "latestVersion": "v1.0.0"
     },
@@ -360,7 +360,7 @@
     "githubUrl": "https://github.com/crewAIInc/crewAI",
     "creator": {
       "name": "João Moura",
-      "avatarUrl": "https://github.com/joaomdmoura.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/joao-moura.jpg",
       "type": "person",
       "releaseDate": "Kasım 2023",
       "latestVersion": "v0.100.0"
@@ -397,7 +397,7 @@
   },
   {
     "id": "ai-oobabooga",
-    "name": "text-generation-webui",
+    "name": "TextGen",
     "category": "ai-tool",
     "subCategory": "Gradio Web UI for Large Language Models",
     "iconUrl": "https://avatars.githubusercontent.com/u/112222186?s=60&v=4",
@@ -448,8 +448,8 @@
     "githubUrl": "https://github.com/invoke-ai/InvokeAI",
     "creator": {
       "name": "Lincoln Stein & Community",
-      "avatarUrl": "https://github.com/invoke-ai.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lincoln-stein.jpg",
+      "type": "person",
       "releaseDate": "Ağustos 2022",
       "latestVersion": "v5.5.0"
     },

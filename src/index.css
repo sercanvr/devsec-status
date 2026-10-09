@@ -300,4 +300,25 @@ tr.highlight-glow td {
   background: linear-gradient(to left, transparent, rgba(206, 255, 0, 0.85), transparent);
 }
 
+/* Single-session glint animation (Pure fast 1-turn 360deg spin in place, zero vertical movement) */
+@keyframes glint-spin-once {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(340deg);
+  }
+}
+
+.animate-glint-once {
+  transform-origin: 10px 10px;
+  animation: glint-spin-once 0.55s cubic-bezier(0.33, 1, 0.68, 1) 0.1s 1 normal forwards;
+  will-change: transform;
+}
+
+/* Performance: Defer off-screen section layout and rendering */
+.content-visibility-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 750px;
+}
 

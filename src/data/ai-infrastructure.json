@@ -8,8 +8,8 @@
     "githubUrl": "https://github.com/pytorch/pytorch",
     "creator": {
       "name": "Meta AI (Soumith Chintala)",
-      "avatarUrl": "https://github.com/pytorch.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/soumith-chintala.jpg",
+      "type": "person",
       "releaseDate": "Ekim 2016",
       "latestVersion": "v2.6.0"
     },
@@ -52,8 +52,8 @@
     "githubUrl": "https://github.com/tensorflow/tensorflow",
     "creator": {
       "name": "Google Brain Team",
-      "avatarUrl": "https://github.com/tensorflow.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jeff-dean.jpg",
+      "type": "person",
       "releaseDate": "9 Kasım 2015",
       "latestVersion": "v2.18.0"
     },
@@ -96,8 +96,8 @@
     "githubUrl": "https://github.com/huggingface/transformers",
     "creator": {
       "name": "Clément Delangue (Hugging Face)",
-      "avatarUrl": "https://github.com/huggingface.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/clement-delangue.jpg",
+      "type": "person",
       "releaseDate": "Ekim 2018",
       "latestVersion": "v4.48.1"
     },
@@ -140,7 +140,7 @@
     "githubUrl": "https://github.com/ggerganov/llama.cpp",
     "creator": {
       "name": "Georgi Gerganov",
-      "avatarUrl": "https://github.com/ggerganov.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/georgi-gerganov.jpg",
       "type": "person",
       "releaseDate": "Mart 2023",
       "latestVersion": "b4525"
@@ -184,8 +184,8 @@
     "githubUrl": "https://github.com/CompVis/stable-diffusion",
     "creator": {
       "name": "Robin Rombach (CompVis & Stability AI)",
-      "avatarUrl": "https://github.com/CompVis.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/robin-rombach.webp",
+      "type": "person",
       "releaseDate": "Ağustos 2022",
       "latestVersion": "v2.1"
     },
@@ -228,8 +228,8 @@
     "githubUrl": "https://github.com/scikit-learn/scikit-learn",
     "creator": {
       "name": "David Cournapeau & Inria",
-      "avatarUrl": "https://github.com/scikit-learn.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/david-cournapeau.jpg",
+      "type": "person",
       "releaseDate": "Haziran 2007",
       "latestVersion": "v1.6.1"
     },
@@ -272,7 +272,7 @@
     "githubUrl": "https://github.com/keras-team/keras",
     "creator": {
       "name": "François Chollet",
-      "avatarUrl": "https://github.com/fchollet.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/francois-chollet.jpg",
       "type": "person",
       "releaseDate": "27 Mart 2015",
       "latestVersion": "v3.8.0"
@@ -316,8 +316,8 @@
     "githubUrl": "https://github.com/jax-ml/jax",
     "creator": {
       "name": "Matt Johnson (Google Research)",
-      "avatarUrl": "https://github.com/jax-ml.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/matt-johnson.jpg",
+      "type": "person",
       "releaseDate": "Aralık 2018",
       "latestVersion": "v0.4.38"
     },
@@ -360,8 +360,8 @@
     "githubUrl": "https://github.com/vllm-project/vllm",
     "creator": {
       "name": "Woosuk Kwon (UC Berkeley LMSYS)",
-      "avatarUrl": "https://github.com/vllm-project.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/woosuk-kwon.jpeg",
+      "type": "person",
       "releaseDate": "Haziran 2023",
       "latestVersion": "v0.7.0"
     },
@@ -404,8 +404,8 @@
     "githubUrl": "https://github.com/openai/whisper",
     "creator": {
       "name": "Alec Radford (OpenAI)",
-      "avatarUrl": "https://github.com/openai.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/alec-radford.webp",
+      "type": "person",
       "releaseDate": "Eylül 2022",
       "latestVersion": "v20231117"
     },
@@ -448,7 +448,7 @@
     "githubUrl": "https://github.com/run-llama/llama_index",
     "creator": {
       "name": "Jerry Liu",
-      "avatarUrl": "https://github.com/jerryjliu.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jerry-liu.jpg",
       "type": "person",
       "releaseDate": "Kasım 2022",
       "latestVersion": "v0.12.14"

@@ -10,6 +10,15 @@ export const getOptimizedAvatarUrl = (url?: string, size = 64): string => {
     return url;
   }
 
+  // Sirv CDN dynamic edge resizing (reduces multi-MB raw uploads down to ~2KB WebP/PNG on the edge)
+  if (url.includes('.sirv.com/')) {
+    if (!url.includes('w=')) {
+      const separator = url.includes('?') ? '&' : '?';
+      return `${url}${separator}w=${size}`;
+    }
+    return url;
+  }
+
   // Handle https://github.com/<name>.png
   if (url.includes('github.com/') && url.endsWith('.png')) {
     return `${url}?size=${size}`;
