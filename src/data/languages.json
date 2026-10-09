@@ -55,7 +55,7 @@
     "githubUrl": "https://github.com/golang/go",
     "creator": {
       "name": "Rob Pike & Google Team",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/rob-pike.jpg",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/rob-pike.jpg?v=2",
       "type": "person",
       "releaseDate": "10 Kasım 2009",
       "latestVersion": "v1.24.0"
@@ -679,8 +679,8 @@
     "githubUrl": "https://github.com/dotnet/roslyn",
     "creator": {
       "name": "Anders Hejlsberg (Microsoft)",
-      "avatarUrl": "https://github.com/dotnet.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/anders-hejlsberg.jpg",
+      "type": "person",
       "releaseDate": "11 Temmuz 2000",
       "latestVersion": "C# 13 (.NET 9)"
     },

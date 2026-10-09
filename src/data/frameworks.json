@@ -103,8 +103,8 @@
     "githubUrl": "https://github.com/facebook/react-native",
     "creator": {
       "name": "Jordan Walke & Meta Team",
-      "avatarUrl": "https://github.com/facebook.png",
-      "type": "organization",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/jordan-walke.jpg",
+      "type": "person",
       "releaseDate": "26 Mart 2015",
       "latestVersion": "v0.78.0"
     },
@@ -151,7 +151,7 @@
     "githubUrl": "https://github.com/fastapi/fastapi",
     "creator": {
       "name": "Sebastián Ramírez (tiangolo)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/sebastian-ramirez.jpg",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/sebastian-ramirez.jpg?v=2",
       "type": "person",
       "releaseDate": "5 Aralık 2018",
       "latestVersion": "v0.115.8"
