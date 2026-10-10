@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![DevSec Status Logo](/public/icons/devsec-logo.webp)
+![DevSec Status Logo](https://msercanvar.sirv.com/devsec-status-images/devsec-logo.webp)
 
 **Real-time statistics, popularity & momentum tracker for Programming Languages, Frameworks, Databases, and Open Source Cybersecurity Tools.**
 
