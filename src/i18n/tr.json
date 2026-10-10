@@ -79,7 +79,9 @@
     "openSource": "Açık Kaynak",
     "maintainer": "Maintainer",
     "neutralBadge": "Nötr",
-    "neutralTooltip": "Son 30 günde repo sayısı sabit / Nötr ivmelenme"
+    "neutralTooltip": "Son 30 günde repo sayısı sabit / Nötr ivmelenme",
+    "totalReposTooltip": "Toplam Açık Kaynak Ekosistem Reposu",
+    "topStarredNewRepoTooltip": "Son 30 Günün En Çok Yıldız Alan Yeni Reposu"
   },
   "techBar": {
     "popularity": "Popülerlik",
@@ -115,7 +117,10 @@
     "rights": "Tüm hakları saklıdır.",
     "disclaimer": "Veriler GitHub Search API ve resmi veri tabanları kullanılarak günlük olarak otomatik güncellenmektedir.",
     "lastUpdated": "Son Güncelleme",
-    "allContentUpToDate": "Tüm içerik güncel durumda."
+    "allContentUpToDate": "Tüm içerik güncel durumda.",
+    "description": "Programlama dilleri, kütüphane/framework'ler ve açık kaynak siber güvenlik araçlarının canlı GitHub Search API metriklerini ve ivmelenme verilerini sunan bilgilendirme platformu.",
+    "dataSourceTitle": "VERİ VE METRİK KAYNAĞI",
+    "dataSourceDesc": "Veriler GitHub Search API ve resmi veri tabanları kullanılarak otomatik olarak güncellenmektedir."
   },
   "common": {
     "scrollToTop": "Yukarı Çık",

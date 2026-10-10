@@ -108,8 +108,8 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
         <Contrast className={`w-4 h-4 text-neutral-900 dark:text-neutral-200 transition-none ${theme === 'light' ? '-scale-x-100' : 'scale-x-100'}`} />
       </button>
 
-      {/* Instant Hover Tooltip 2px below navbar */}
-      <div className="hidden group-hover:block absolute top-[calc(100%+16px)] left-1/2 -translate-x-1/2 z-[70] bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+      {/* Instant Hover Tooltip shifted to match navbar frame */}
+      <div className="hidden group-hover:block absolute top-[calc(100%+25px)] left-1/2 -translate-x-1/2 z-[70] bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
         <span className="absolute -top-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-b-[6px] border-b-[#CEFF00]" />
         {t('nav.changeTheme')}
       </div>

@@ -5,10 +5,16 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import tr from './tr.json';
 import en from './en.json';
 import de from './de.json';
+import fr from './fr.json';
+import es from './es.json';
+import it from './it.json';
+import pt from './pt.json';
+import ru from './ru.json';
+import zh from './zh.json';
 
 const STORAGE_KEY = 'devsec_lang';
 
-const savedLanguage = localStorage.getItem(STORAGE_KEY) || 'tr';
+const savedLanguage = localStorage.getItem(STORAGE_KEY) || 'en';
 
 i18n
   .use(LanguageDetector)
@@ -18,9 +24,15 @@ i18n
       tr: { translation: tr },
       en: { translation: en },
       de: { translation: de },
+      fr: { translation: fr },
+      es: { translation: es },
+      it: { translation: it },
+      pt: { translation: pt },
+      ru: { translation: ru },
+      zh: { translation: zh },
     },
     lng: savedLanguage,
-    fallbackLng: 'tr',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // React already protects from XSS
     },

@@ -33,7 +33,7 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
 | **Bundler & Tooling** | [Vite 6](https://vitejs.dev/) & [TypeScript 5](https://www.typescriptlang.org/) | Next-generation frontend tooling and strict type checking |
 | **Styling** | [Tailwind CSS 3](https://tailwindcss.com/) | Modern utility-first styling with custom glassmorphism and animations |
 | **Routing** | [React Router 7](https://reactrouter.com/) | Client-side routing between Software and Security pages |
-| **Localization (i18n)** | [i18next](https://www.i18next.com/) & [react-i18next](https://react.i18next.com/) | English, Turkish, and German with automatic browser detection |
+| **Localization (i18n)** | [i18next](https://www.i18next.com/) & [react-i18next](https://react.i18next.com/) | 9 languages (English, Turkish, German, French, Spanish, Italian, Portuguese, Russian, Chinese) with automatic browser detection |
 | **Icons & Media** | [Lucide React](https://lucide.dev/) & WebP | Crisp scalable vector icons and lightweight WebP graphics |
 | **Security & Sanitization** | [DOMPurify](https://github.com/cure53/DOMPurify) | Strict XSS sanitization for all rendered dynamic and static strings |
 | **Testing** | [Vitest](https://vitest.dev/) & [Testing Library](https://testing-library.com/) | Blazing-fast unit and component test suite |
@@ -56,7 +56,7 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
   - Total ecosystem repository count and official release dates
   - Direct external repository navigation
 - **Instant Search & Tag Filtering (`⌘K` / `Ctrl+K`)**: Global search modal supporting fuzzy name search, categories, creators, and hashtag syntax (e.g. `#framework`, `#systems`).
-- **Multilingual Support (EN / TR / DE)**: Instant language switching with zero-delay WebP flag preloading.
+- **Multilingual Support (9 Languages - EN / TR / DE / FR / ES / IT / PT / RU / ZH)**: Instant switching across 9 global languages with zero-delay CDN-optimized WebP flag preloading and persistent storage.
 - **Dark & Light Mode**: Seamless theme switching with persistent storage and system preference detection.
 - **Zero Client Rate Limits**: Metrics are pre-fetched via automated GitHub Actions and baked into static JSON, guaranteeing instant page loads without GitHub 403 API rate errors.
 - **AI Agentic & Search Engine Ready**: Built-in `sitemap.xml`, `robots.txt`, `llms.txt`, and `ai-catalog.json` for autonomous AI agents and web crawlers.
@@ -95,12 +95,15 @@ devsec-status/
 │   │   ├── LanguageSwitcher.tsx     # Instant language switcher with preloaded WebP flags
 │   │   ├── ProximitySidebar.tsx     # Quick section anchor sidebar
 │   │   ├── ScrollToTopButton.tsx    # Smooth scroll-to-top floating button
-│   │   └── CardSkeleton.tsx         # Shimmer loading skeleton
+│   │   ├── Skeleton.tsx             # Sunken well skeleton loader with metallic sheen
+│   │   ├── ui/
+│   │   │   └── skeleton.tsx         # Primitive Skeleton components (Block, Text, Circle, Swap)
+│   │   └── CardSkeleton.tsx         # High-fidelity card shimmer loading skeleton
 │   ├── data/                        # Static synced datasets (languages, frameworks, etc.)
 │   ├── hooks/
 │   │   ├── useGitHubContributors.ts # Contributor avatar resolver with fallback cache
 │   │   └── useTheme.ts              # Dark/light theme state manager
-│   ├── i18n/                        # Localization dictionaries (en.json, tr.json, de.json)
+│   ├── i18n/                        # 9 localization dictionaries (en, tr, de, fr, es, it, pt, ru, zh)
 │   ├── lib/
 │   │   └── sanitize.ts              # DOMPurify text and URL sanitization helpers
 │   ├── pages/

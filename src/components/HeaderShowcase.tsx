@@ -23,7 +23,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
     return (
       <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
-        <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl">
+        <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl isolate">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
             <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
 
@@ -32,18 +32,18 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
               <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secOffensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>Ghidra • Metasploit</span>
                     </div>
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -79,18 +79,18 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
               <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                       <span>{t('showcase.secDefensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <GitFork className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>Trivy • Nuclei</span>
                     </div>
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -126,18 +126,18 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
               <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secStackBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700">
+                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>OWASP ZAP • Nmap</span>
                     </div>
                   </div>
 
                   {/* Unified Liquid Glass Showcase Card */}
-                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                  <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                     <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                       <div className="flex items-center gap-2.5 text-left">
                         <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -179,7 +179,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   return (
     <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
-      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200">
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
           <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
 
@@ -195,12 +195,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.topLanguageBadge')}</span>
                       <span className="text-[#0066FF] font-bold">Python</span>
                     </div>
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>{t('showcase.top1')}</span>
                       <span className="text-emerald-500 font-normal">251k+ ★</span>
@@ -209,7 +209,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -250,12 +250,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Layers className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.topFrameworkBadge')}</span>
                       <span className="text-[#0066FF] font-bold">React</span>
                     </div>
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <GitFork className="w-3.5 h-3.5 text-emerald-500" />
                       <span>{t('showcase.top1')}</span>
                       <span className="text-emerald-500 font-normal">230k+ ★</span>
@@ -264,7 +264,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">
@@ -311,12 +311,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap">
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Database className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.topDatabaseBadge')}</span>
                       <span className="text-[#0066FF] font-bold">PostgreSQL</span>
                     </div>
-                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-200 dark:border-neutral-700 shadow-2xs">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>{t('showcase.top1')}</span>
                       <span className="text-emerald-500 font-normal">140k+ ★</span>
@@ -325,7 +325,7 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
 
                 {/* Unified Liquid Glass Showcase Card */}
-                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-300/70 dark:border-white/[0.08] shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
+                <div className="w-full max-w-sm mx-auto p-4 sm:p-5 rounded-2xl bg-neutral-100/50 dark:bg-white/[0.04] backdrop-blur-2xl backdrop-saturate-150 border border-neutral-400/80 dark:border-white/20 shadow-lg shadow-black/5 dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] flex flex-col justify-between">
                   <div className="flex items-center justify-between pb-3.5 border-b border-neutral-300/60 dark:border-white/10">
                     <div className="flex items-center gap-2.5 text-left">
                       <div className="p-2 rounded-xl bg-blue-500/10 text-[#0066FF]">

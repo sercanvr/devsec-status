@@ -555,23 +555,18 @@
     "lastUpdated": "2026-10-10T04:50:12.132Z",
     "contributors": [
       {
-        "login": "geastack",
+        "login": "dashersw",
+        "avatar_url": "https://github.com/dashersw.png?size=64",
+        "html_url": "https://github.com/dashersw"
+      },
+      {
+        "login": "dogukani",
+        "avatar_url": "https://github.com/dogukani.png?size=64",
+        "html_url": "https://github.com/dogukani"
+      },
+      {
+        "login": "example-core",
         "avatar_url": "https://github.com/geastack.png?size=64",
-        "html_url": "https://github.com/geastack"
-      },
-      {
-        "login": "examples-lead",
-        "avatar_url": "https://github.com/geastack.png?size=64",
-        "html_url": "https://github.com/geastack/examples"
-      },
-      {
-        "login": "examples-core",
-        "avatar_url": "https://github.com/examples.png?size=64",
-        "html_url": "https://github.com/geastack/examples"
-      },
-      {
-        "login": "examples-team",
-        "avatar_url": "https://github.com/github.png?size=64",
         "html_url": "https://github.com/geastack/examples"
       }
     ]

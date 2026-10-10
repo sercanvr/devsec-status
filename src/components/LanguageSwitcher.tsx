@@ -1,14 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Earth, Check } from 'lucide-react';
-import trFlag from '../assets/icons/tr-flag.webp';
-import usaFlag from '../assets/icons/usa-flag.webp';
-import deFlag from '../assets/icons/de-flag.webp';
+const SIRV_FLAG_BASE = 'https://msercanvar.sirv.com/devsec-status-images';
 
 const languages = [
-  { code: 'tr', label: 'TR', name: 'Türkçe', flagUrl: trFlag },
-  { code: 'en', label: 'ENG', name: 'English', flagUrl: usaFlag },
-  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: deFlag },
+  { code: 'tr', label: 'TR', name: 'Turkish', flagUrl: `${SIRV_FLAG_BASE}/tr-flag.webp` },
+  { code: 'en', label: 'ENG', name: 'English', flagUrl: `${SIRV_FLAG_BASE}/usa-flag.webp` },
+  { code: 'de', label: 'DE', name: 'Deutsch', flagUrl: `${SIRV_FLAG_BASE}/de-flag.webp` },
+  { code: 'fr', label: 'FR', name: 'French', flagUrl: `${SIRV_FLAG_BASE}/france-flag.webp` },
+  { code: 'es', label: 'ES', name: 'Spanish', flagUrl: `${SIRV_FLAG_BASE}/spain-flag.webp` },
+  { code: 'it', label: 'IT', name: 'Italian', flagUrl: `${SIRV_FLAG_BASE}/italy-flag.webp` },
+  { code: 'pt', label: 'PT', name: 'Portuguese', flagUrl: `${SIRV_FLAG_BASE}/portugal-flag.webp` },
+  { code: 'ru', label: 'RU', name: 'Russian', flagUrl: `${SIRV_FLAG_BASE}/russia-flag.webp` },
+  { code: 'zh', label: 'ZH', name: 'Chinese', flagUrl: `${SIRV_FLAG_BASE}/china-flag.webp` },
 ];
 
 // Preload flag images immediately into browser cache to eliminate any open delay
@@ -73,7 +77,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl overflow-hidden py-1.5 z-50">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
             {languages.map((lang) => {
               const isActive = i18n.language.startsWith(lang.code);
               return (
@@ -112,23 +116,23 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     <div className="relative inline-block text-left group z-30" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-colors shrink-0"
+        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-none shrink-0"
         aria-label="Select Language"
       >
         <Earth className="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" />
         <span>{currentLang.label}</span>
       </button>
 
-      {/* Instant Hover Tooltip 2px below navbar */}
+      {/* Instant Hover Tooltip shifted to match navbar frame */}
       {!isOpen && (
-        <div className="hidden group-hover:block absolute top-[calc(100%+16px)] left-1/2 -translate-x-1/2 z-[70] bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+        <div className="hidden group-hover:block absolute top-[calc(100%+25px)] left-1/2 -translate-x-1/2 z-[70] bg-[#CEFF00] text-[#141414] font-bold text-xs px-3 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
           <span className="absolute -top-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-b-[6px] border-b-[#CEFF00]" />
           {t('nav.changeLanguage')}
         </div>
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+12px)] w-36 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-lg z-[70] overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl dark:shadow-black/80 z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (

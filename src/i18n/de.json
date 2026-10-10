@@ -79,7 +79,9 @@
     "openSource": "Open Source",
     "maintainer": "Maintainer",
     "neutralBadge": "Neutral",
-    "neutralTooltip": "Repository-Anzahl in den letzten 30 Tagen unverändert / Neutrale Dynamik"
+    "neutralTooltip": "Repository-Anzahl in den letzten 30 Tagen unverändert / Neutrale Dynamik",
+    "totalReposTooltip": "Open-Source-Ökosystem Repos",
+    "topStarredNewRepoTooltip": "Top-bewertetes neues Repo (letzte 30 Tage)"
   },
   "techBar": {
     "popularity": "Beliebtheit",
@@ -115,7 +117,10 @@
     "rights": "Alle Rechte vorbehalten.",
     "disclaimer": "Die Daten werden täglich automatisch über die GitHub Search API aktualisiert.",
     "lastUpdated": "Zuletzt aktualisiert",
-    "allContentUpToDate": "Alle Inhalte sind aktuell."
+    "allContentUpToDate": "Alle Inhalte sind aktuell.",
+    "description": "Eine Informationsplattform, die Live-Metriken der GitHub Search API und Dynamikdaten für Programmiersprachen, Bibliotheken/Frameworks und Open-Source-Cybersecurity-Tools bereitstellt.",
+    "dataSourceTitle": "DATEN- & METRIKQUELLE",
+    "dataSourceDesc": "Daten werden automatisch über die GitHub Search API und offizielle Datenbanken aktualisiert."
   },
   "common": {
     "scrollToTop": "Nach oben scrollen",

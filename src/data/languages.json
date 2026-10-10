@@ -7,7 +7,7 @@
     "githubUrl": "https://github.com/torvalds/linux",
     "creator": {
       "name": "Dennis Ritchie (Bell Labs)",
-      "avatarUrl": "/icons/dennis-ritchie.png",
+      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/dennis-ritchie.webp",
       "type": "person",
       "releaseDate": "Kasım 1972",
       "latestVersion": "C23 (ISO/IEC 9899)"
@@ -964,7 +964,7 @@
     "name": "Shell / Bash",
     "category": "language",
     "iconUrl": "https://cdn.simpleicons.org/gnubash",
-    "githubUrl": "https://github.com/mirror/bash",
+    "githubUrl": "https://github.com/gitGNU/gnu_bash",
     "creator": {
       "name": "Brian Fox (GNU)",
       "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/brian-fox.png",
@@ -973,37 +973,37 @@
       "latestVersion": "v5.2"
     },
     "popularity": {
-      "totalRepos": 4900000,
-      "totalStars": 1
+      "totalRepos": 3338000,
+      "totalStars": 231
     },
     "momentum": {
-      "newReposLast30Days": 0,
+      "newReposLast30Days": 75784,
       "topStarredNewRepo": {
-        "name": "ohmyzsh/ohmyzsh",
-        "stars": 174000
+        "name": "realZachi/pg-jev",
+        "stars": 1091
       }
     },
-    "lastUpdated": "2026-10-10T04:48:48.901Z",
+    "lastUpdated": "2026-10-10T09:20:00.000Z",
     "contributors": [
       {
-        "login": "chet-ramey",
-        "avatar_url": "https://github.com/chet-ramey.png?size=64",
-        "html_url": "https://github.com/bminor/bash"
+        "login": "jaalto",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34601?v=4",
+        "html_url": "https://github.com/jaalto"
       },
       {
         "login": "brian-fox",
         "avatar_url": "https://github.com/brian-fox.png?size=64",
-        "html_url": "https://github.com/bminor/bash"
+        "html_url": "https://github.com/gitGNU/gnu_bash"
       },
       {
-        "login": "gnu-bash",
-        "avatar_url": "https://github.com/gnu.png?size=64",
-        "html_url": "https://github.com/bminor/bash"
+        "login": "chet-ramey",
+        "avatar_url": "https://github.com/chet-ramey.png?size=64",
+        "html_url": "https://github.com/gitGNU/gnu_bash"
       },
       {
-        "login": "fsf-team",
-        "avatar_url": "https://github.com/fsf.png?size=64",
-        "html_url": "https://github.com/bminor/bash"
+        "login": "gitGNU",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28318801?v=4",
+        "html_url": "https://github.com/gitGNU"
       }
     ]
   },

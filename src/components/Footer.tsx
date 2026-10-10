@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Plug, Star } from 'lucide-react';
-import devsecLogo from '../assets/icons/devsec-logo.webp';
+const devsecLogo = 'https://msercanvar.sirv.com/devsec-status-images/devsec-logo.webp';
 import rawLanguages from '../data/languages.json';
 import rawFrameworks from '../data/frameworks.json';
 import rawDatabases from '../data/databases.json';
@@ -114,10 +114,7 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
               />
             </a>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm">
-              Programlama dilleri, kütüphane/framework'ler<br className="hidden sm:inline" />
-              ve açık kaynak siber güvenlik araçlarının canlı GitHub<br className="hidden sm:inline" />
-              Search API metriklerini ve ivmelenme verilerini sunan<br className="hidden sm:inline" />
-              bilgilendirme platformu.
+              {t('footer.description')}
             </p>
           </div>
           <span className="text-xs font-mono font-medium text-neutral-500 dark:text-neutral-400 mt-2">
@@ -128,12 +125,10 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
         {/* Center Column: Data Info */}
         <div className="flex flex-col items-center justify-start text-center space-y-2 w-full mx-auto">
           <span className="text-xs font-bold uppercase tracking-wider text-foreground">
-            VERİ VE METRİK KAYNAĞI
+            {t('footer.dataSourceTitle')}
           </span>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-sm text-center">
-            Veriler GitHub Search API ve resmi veri<br className="hidden sm:inline" />
-            tabanları kullanılarak otomatik olarak<br className="hidden sm:inline" />
-            güncellenmektedir.
+            {t('footer.dataSourceDesc')}
           </p>
         </div>
 
@@ -188,17 +183,17 @@ export const Footer: React.FC<FooterProps> = ({ lastUpdated }) => {
             />
           </a>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
-            Programlama dilleri, kütüphane/framework'ler ve açık kaynak siber güvenlik araçlarının canlı GitHub Search API metriklerini ve ivmelenme verilerini sunan bilgilendirme platformu.
+            {t('footer.description')}
           </p>
         </div>
 
         {/* 2. Data Info Header & Description */}
         <div className="flex flex-col space-y-1.5">
           <span className="text-xs font-bold uppercase tracking-wider text-foreground">
-            VERİ VE METRİK KAYNAĞI
+            {t('footer.dataSourceTitle')}
           </span>
           <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
-            Veriler GitHub Search API ve resmi veri tabanları kullanılarak otomatik olarak güncellenmektedir.
+            {t('footer.dataSourceDesc')}
           </p>
         </div>
 
