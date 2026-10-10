@@ -13,17 +13,17 @@
       "latestVersion": "v11.3"
     },
     "popularity": {
-      "totalRepos": 3498,
-      "totalStars": 82271
+      "totalRepos": 3501,
+      "totalStars": 82436
     },
     "momentum": {
-      "newReposLast30Days": 208,
+      "newReposLast30Days": 211,
       "topStarredNewRepo": {
-        "name": "Ablation-Tool/ablation",
-        "stars": 168
+        "name": "Spleefy167/frida-orbit-lab",
+        "stars": 53
       }
     },
-    "lastUpdated": "2026-10-10T04:50:49.292Z",
+    "lastUpdated": "2026-10-10T12:06:32.421Z",
     "contributors": [
       {
         "login": "NationalSecurityAgency",
@@ -62,7 +62,7 @@
     },
     "popularity": {
       "totalRepos": 993,
-      "totalStars": 39121
+      "totalStars": 39124
     },
     "momentum": {
       "newReposLast30Days": 13,
@@ -71,7 +71,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-10T04:50:53.337Z",
+    "lastUpdated": "2026-10-10T12:06:36.485Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -109,17 +109,17 @@
       "latestVersion": "v1.9"
     },
     "popularity": {
-      "totalRepos": 2500,
-      "totalStars": 38640
+      "totalRepos": 2502,
+      "totalStars": 38644
     },
     "momentum": {
-      "newReposLast30Days": 55,
+      "newReposLast30Days": 57,
       "topStarredNewRepo": {
         "name": "guaidao2/crackweb",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-10T04:50:57.963Z",
+    "lastUpdated": "2026-10-10T12:06:41.229Z",
     "contributors": [
       {
         "login": "sqlmapproject",
@@ -157,17 +157,17 @@
       "latestVersion": "v0.59.0"
     },
     "popularity": {
-      "totalRepos": 5964,
-      "totalStars": 38318
+      "totalRepos": 5976,
+      "totalStars": 38325
     },
     "momentum": {
-      "newReposLast30Days": 409,
+      "newReposLast30Days": 419,
       "topStarredNewRepo": {
         "name": "Delivery-Plus0/delivery-plus",
         "stars": 9
       }
     },
-    "lastUpdated": "2026-10-10T04:51:02.607Z",
+    "lastUpdated": "2026-10-10T12:06:45.662Z",
     "contributors": [
       {
         "login": "aquasecurity",
@@ -205,17 +205,17 @@
       "latestVersion": "v3.3.8"
     },
     "popularity": {
-      "totalRepos": 5824,
-      "totalStars": 31866
+      "totalRepos": 5828,
+      "totalStars": 31880
     },
     "momentum": {
-      "newReposLast30Days": 204,
+      "newReposLast30Days": 208,
       "topStarredNewRepo": {
         "name": "shinthink/blitzstrike",
         "stars": 503
       }
     },
-    "lastUpdated": "2026-10-10T04:51:06.905Z",
+    "lastUpdated": "2026-10-10T12:06:49.960Z",
     "contributors": [
       {
         "login": "projectdiscovery",
@@ -254,16 +254,16 @@
     },
     "popularity": {
       "totalRepos": 2290,
-      "totalStars": 26968
+      "totalStars": 26970
     },
     "momentum": {
-      "newReposLast30Days": 96,
+      "newReposLast30Days": 97,
       "topStarredNewRepo": {
         "name": "ADScanPro/ad-audit-wordlist",
         "stars": 14
       }
     },
-    "lastUpdated": "2026-10-10T04:51:11.290Z",
+    "lastUpdated": "2026-10-10T12:06:54.311Z",
     "contributors": [
       {
         "login": "hashcat",
@@ -301,17 +301,17 @@
       "latestVersion": "v3.88.0"
     },
     "popularity": {
-      "totalRepos": 570,
-      "totalStars": 28405
+      "totalRepos": 572,
+      "totalStars": 28407
     },
     "momentum": {
-      "newReposLast30Days": 27,
+      "newReposLast30Days": 29,
       "topStarredNewRepo": {
         "name": "ardahankanatli021/git-secret-audit-desktop-2026",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-10T04:51:15.830Z",
+    "lastUpdated": "2026-10-10T12:06:59.008Z",
     "contributors": [
       {
         "login": "trufflesecurity",
@@ -350,7 +350,7 @@
     },
     "popularity": {
       "totalRepos": 11,
-      "totalStars": 15908
+      "totalStars": 15909
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -359,7 +359,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-10T04:51:19.246Z",
+    "lastUpdated": "2026-10-10T12:07:02.405Z",
     "contributors": [
       {
         "login": "zaproxy",
@@ -397,17 +397,17 @@
       "latestVersion": "v7.95"
     },
     "popularity": {
-      "totalRepos": 21060,
+      "totalRepos": 21071,
       "totalStars": 13731
     },
     "momentum": {
-      "newReposLast30Days": 907,
+      "newReposLast30Days": 918,
       "topStarredNewRepo": {
         "name": "TW4RDYDEV/NEXUS",
         "stars": 10
       }
     },
-    "lastUpdated": "2026-10-10T04:51:23.670Z",
+    "lastUpdated": "2026-10-10T12:07:06.764Z",
     "contributors": [
       {
         "login": "nmap",
@@ -446,7 +446,7 @@
     },
     "popularity": {
       "totalRepos": 902,
-      "totalStars": 13748
+      "totalStars": 13749
     },
     "momentum": {
       "newReposLast30Days": 149,
@@ -455,7 +455,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-10T04:51:28.430Z",
+    "lastUpdated": "2026-10-10T12:07:11.719Z",
     "contributors": [
       {
         "login": "openwall",
@@ -493,17 +493,17 @@
       "latestVersion": "v4.4.4"
     },
     "popularity": {
-      "totalRepos": 16365,
-      "totalStars": 9977
+      "totalRepos": 16374,
+      "totalStars": 9979
     },
     "momentum": {
-      "newReposLast30Days": 820,
+      "newReposLast30Days": 834,
       "topStarredNewRepo": {
         "name": "Spleefy167/frida-orbit-lab",
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-10T04:51:33.049Z",
+    "lastUpdated": "2026-10-10T12:07:16.318Z",
     "contributors": [
       {
         "login": "wireshark",
@@ -541,17 +541,17 @@
       "latestVersion": "v2.8.0"
     },
     "popularity": {
-      "totalRepos": 834,
-      "totalStars": 4473
+      "totalRepos": 835,
+      "totalStars": 4475
     },
     "momentum": {
-      "newReposLast30Days": 61,
+      "newReposLast30Days": 62,
       "topStarredNewRepo": {
         "name": "AtlasFO/Atlas-Community",
         "stars": 4
       }
     },
-    "lastUpdated": "2026-10-10T04:51:37.631Z",
+    "lastUpdated": "2026-10-10T12:07:20.761Z",
     "contributors": [
       {
         "login": "volatilityfoundation",
@@ -590,17 +590,17 @@
       "latestVersion": "v1.7"
     },
     "popularity": {
-      "totalRepos": 848,
+      "totalRepos": 849,
       "totalStars": 7716
     },
     "momentum": {
-      "newReposLast30Days": 32,
+      "newReposLast30Days": 33,
       "topStarredNewRepo": {
         "name": "udhaybhat00/airscope",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-10T04:51:42.093Z",
+    "lastUpdated": "2026-10-10T12:07:25.395Z",
     "contributors": [
       {
         "login": "misterx",
@@ -635,7 +635,7 @@
     },
     "popularity": {
       "totalRepos": 32,
-      "totalStars": 15331
+      "totalStars": 15332
     },
     "momentum": {
       "newReposLast30Days": 2,
@@ -644,7 +644,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-10T04:51:45.978Z",
+    "lastUpdated": "2026-10-10T12:07:29.418Z",
     "contributors": [
       {
         "login": "caffix",
@@ -678,17 +678,17 @@
       "latestVersion": "v2.1.0"
     },
     "popularity": {
-      "totalRepos": 646,
-      "totalStars": 16855
+      "totalRepos": 647,
+      "totalStars": 16857
     },
     "momentum": {
-      "newReposLast30Days": 42,
+      "newReposLast30Days": 43,
       "topStarredNewRepo": {
         "name": "MENPHIS7-DEV/Enumeration_cheat_heet",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-10T04:51:50.800Z",
+    "lastUpdated": "2026-10-10T12:07:34.382Z",
     "contributors": [
       {
         "login": "joohoi",
@@ -723,7 +723,7 @@
     },
     "popularity": {
       "totalRepos": 541,
-      "totalStars": 21896
+      "totalStars": 21897
     },
     "momentum": {
       "newReposLast30Days": 4,
@@ -732,7 +732,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-10T04:51:54.719Z",
+    "lastUpdated": "2026-10-10T12:07:38.225Z",
     "contributors": [
       {
         "login": "gentilkiwi",
@@ -766,17 +766,17 @@
       "latestVersion": "v7.0.8"
     },
     "popularity": {
-      "totalRepos": 5454,
+      "totalRepos": 5460,
       "totalStars": 6719
     },
     "momentum": {
-      "newReposLast30Days": 355,
+      "newReposLast30Days": 359,
       "topStarredNewRepo": {
         "name": "vulncheck-oss/initial-access-community",
         "stars": 12
       }
     },
-    "lastUpdated": "2026-10-10T04:51:59.158Z",
+    "lastUpdated": "2026-10-10T12:07:42.653Z",
     "contributors": [
       {
         "login": "victorjulien",
@@ -820,7 +820,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-10T04:52:03.239Z",
+    "lastUpdated": "2026-10-10T12:07:46.441Z",
     "contributors": [
       {
         "login": "ddpbsd",
@@ -854,17 +854,17 @@
       "latestVersion": "v5.9.8"
     },
     "popularity": {
-      "totalRepos": 656,
-      "totalStars": 24976
+      "totalRepos": 655,
+      "totalStars": 24983
     },
     "momentum": {
-      "newReposLast30Days": 21,
+      "newReposLast30Days": 20,
       "topStarredNewRepo": {
         "name": "radareorg/r2hexpat",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-10T04:52:07.596Z",
+    "lastUpdated": "2026-10-10T12:07:50.669Z",
     "contributors": [
       {
         "login": "trufae",
@@ -899,7 +899,7 @@
     },
     "popularity": {
       "totalRepos": 537,
-      "totalStars": 36064
+      "totalStars": 36066
     },
     "momentum": {
       "newReposLast30Days": 26,
@@ -908,7 +908,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-10T04:52:12.360Z",
+    "lastUpdated": "2026-10-10T12:07:55.260Z",
     "contributors": [
       {
         "login": "matt-c-gchq",
@@ -943,16 +943,16 @@
     },
     "popularity": {
       "totalRepos": 2203,
-      "totalStars": 12007
+      "totalStars": 12021
     },
     "momentum": {
       "newReposLast30Days": 52,
       "topStarredNewRepo": {
         "name": "dagowda/notRDP",
-        "stars": 239
+        "stars": 240
       }
     },
-    "lastUpdated": "2026-10-10T04:52:16.920Z",
+    "lastUpdated": "2026-10-10T12:07:59.903Z",
     "contributors": [
       {
         "login": "moloch--",
