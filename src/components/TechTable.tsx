@@ -6,7 +6,7 @@ import {
   Sparkles,
   ArrowUpDown,
   Check,
-  GitFork,
+  Boxes,
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { TechEntry } from '../types/tech';
@@ -17,6 +17,8 @@ import { useGitHubRelease } from '../hooks/useGitHubRelease';
 import { localizeDate } from '../lib/localizeDate';
 import { getOptimizedAvatarUrl } from '../lib/avatar';
 import { GlassBadge } from './GlassBadge';
+import { CardSkeleton } from './CardSkeleton';
+import { Skeleton } from './ui/skeleton';
 
 /**
  * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
@@ -183,8 +185,8 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                   {icon}
                 </div>
               )}
-              <h2 className="font-serif text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight flex items-center gap-2.5 py-1 leading-normal">
-                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-block py-1">
+              <h2 className="font-serif text-xl sm:text-2xl lg:text-[26px] xl:text-[28px] font-bold tracking-tight flex items-center gap-2 sm:gap-2.5 py-1 leading-snug">
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-block py-0.5">
                   {sanitizeText(title)}
                 </span>
                 <GlassBadge count={processedEntries.length} />
@@ -214,9 +216,9 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
                     <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.type')}</th>
                     <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left">{t('table.popularity')}</th>
                     <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.momentum')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
                     <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.ecosystem')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
                     <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center">{t('table.github')}</th>
                   </tr>
                 </thead>
@@ -229,8 +231,8 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
             </div>
           ) : (
             <div className="p-3 sm:p-4 space-y-3.5">
-              {processedEntries.map((entry) => (
-                <MobileCard key={entry.id} entry={entry} maxStars={maxStars} />
+              {processedEntries.map((entry, index) => (
+                <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} />
               ))}
             </div>
           )}
@@ -278,10 +280,10 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <tr
       id={entry.id}
-      className="group hover:bg-neutral-100/70 dark:hover:bg-neutral-800/40 transition-none cv-row cursor-default"
+      className="group hover:bg-neutral-100/70 dark:hover:bg-neutral-800/40 transition-none cv-row cursor-default align-middle"
     >
       {/* 1. Teknoloji (Item Name) */}
-      <td className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2">
+      <td className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 align-middle">
         <div className="flex items-center gap-2 lg:gap-2.5">
           <div className="w-9 h-9 lg:w-11 lg:h-11 rounded-xl bg-neutral-900/85 dark:bg-white/85 border border-neutral-700/60 dark:border-white/30 backdrop-blur-md p-1.5 flex items-center justify-center shrink-0 shadow-sm transition-none">
             <img
@@ -310,7 +312,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 2. Geliştirici (Wrap without ellipsis when text is long) */}
-      <td className="py-2.5 lg:py-3 px-1">
+      <td className="py-2.5 lg:py-3 px-1 align-middle">
         <div className="flex items-center gap-1 lg:gap-1.5">
           {!avatarFailed && entry.creator?.avatarUrl ? (
             <img
@@ -340,18 +342,20 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 3. Tür (Type Pill - Guaranteed English ASCII uppercase, no dotted İ) */}
-      <td className="py-2.5 lg:py-3 px-1 text-center">
-        <span
-          lang="en"
-          className="inline-flex items-center justify-center min-w-0 lg:min-w-[70px] px-1.5 lg:px-2 py-0.5 rounded-md text-[9px] lg:text-[10px] font-mono font-bold tracking-normal lg:tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap"
-        >
-          {formatAsciiTag(entry.category)}
-        </span>
+      <td className="py-2.5 lg:py-3 px-1 text-center align-middle">
+        <div className="flex items-center justify-center">
+          <span
+            lang="en"
+            className="inline-flex items-center justify-center min-w-0 lg:min-w-[70px] px-1.5 lg:px-2 py-0.5 rounded-md text-[9px] lg:text-[10px] font-mono font-bold tracking-normal lg:tracking-wider bg-blue-500/10 text-[#0066FF] dark:text-[#38BDF8] border border-blue-500/20 whitespace-nowrap"
+          >
+            {formatAsciiTag(entry.category)}
+          </span>
+        </div>
       </td>
 
       {/* 4. Popülarite & Kapsül Barı */}
-      <td className="py-2.5 lg:py-3 px-1 lg:px-2">
-        <div className="space-y-1 w-20 md:w-22 lg:w-36">
+      <td className="py-2.5 lg:py-3 px-1 lg:px-2 align-middle">
+        <div className="space-y-1 w-20 md:w-22 lg:w-36 my-auto">
           <div className="flex justify-between items-center text-[9px] sm:text-[10px] lg:text-[11px]">
             <span className="font-mono font-bold text-foreground flex items-center gap-0.5 lg:gap-1">
               <span className="text-amber-500 font-normal">★</span>
@@ -366,41 +370,61 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </td>
 
       {/* 5. İvmelenme */}
-      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible">
-        {entry.momentum.newReposLast30Days > 0 ? (
-          <div className="inline-flex items-center gap-0.5 lg:gap-1 font-mono text-[10px] lg:text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
-            <TrendingUp className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
-            <span>+{formattedNewRepos}</span>
-          </div>
-        ) : (
-          <div className="relative group/neutral inline-flex">
-            <div
-              className="inline-flex items-center justify-center gap-1 font-mono text-[9px] lg:text-[11px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap cursor-default"
-            >
-              <span className="font-bold">±0</span>
-              <span className="text-[9px] font-sans font-medium opacity-90 hidden sm:inline">{t('table.neutralBadge')}</span>
+      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible align-middle">
+        <div className="flex items-center justify-center">
+          {entry.momentum.newReposLast30Days > 0 ? (
+            <div className="inline-flex items-center gap-0.5 lg:gap-1 font-mono text-[10px] lg:text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
+              <TrendingUp className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
+              <span>+{formattedNewRepos}</span>
             </div>
-            {/* Custom Styled Instant Tooltip */}
-            <div className="hidden group-hover/neutral:block absolute bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
-              <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
-              {t('table.neutralTooltip')}
+          ) : (
+            <div className="relative group/neutral inline-flex">
+              <div
+                className="inline-flex items-center justify-center gap-1 font-mono text-[9px] lg:text-[11px] font-semibold text-amber-700 dark:text-amber-400 bg-amber-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-amber-500/30 whitespace-nowrap cursor-default"
+              >
+                <span className="font-bold">±0</span>
+                <span className="text-[9px] font-sans font-medium opacity-90 hidden sm:inline">{t('table.neutralBadge')}</span>
+              </div>
+              {/* Custom Styled Instant Tooltip */}
+              <div className="hidden group-hover/neutral:block absolute bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md whitespace-nowrap pointer-events-none">
+                <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+                {t('table.neutralTooltip')}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </td>
 
-      {/* 6. GÜNCEL SÜRÜM */}
-      <td className="py-2.5 lg:py-3 px-1 text-center">
-        <span
-          className="font-mono text-[9px] lg:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-1.5 lg:px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-block shadow-2xs max-w-[85px] lg:max-w-none truncate"
-          title={liveVersion}
-        >
-          {liveVersion}
-        </span>
+      {/* 6. CANLI EKOSİSTEM HACMİ (Swapped with Latest Version) */}
+      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible align-middle">
+        <div className="space-y-0.5 text-center flex flex-col items-center justify-center">
+          <div className="relative group/ecosystem inline-flex items-center justify-center gap-0.5 lg:gap-1 font-mono font-bold text-[10px] lg:text-xs text-foreground cursor-default">
+            <Boxes className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-neutral-400" />
+            <span>{formattedTotalRepos}</span>
+            {/* Custom Styled Instant Tooltip - Constrained to prevent horizontal scrolling or clipping */}
+            <div className="hidden group-hover/ecosystem:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
+              <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+              {t('table.totalReposTooltip')}
+            </div>
+          </div>
+          {entry.momentum.topStarredNewRepo && (
+            <div className="relative group/toprepo block mx-auto cursor-default">
+              <div className="text-[9px] lg:text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[75px] lg:max-w-[110px] mx-auto">
+                <Sparkles className="w-2 h-2 lg:w-2.5 lg:h-2.5 shrink-0" />
+                <span className="truncate">{entry.momentum.topStarredNewRepo.stars} ★</span>
+              </div>
+              {/* Custom Styled Instant Tooltip - Constrained to prevent horizontal scrolling or clipping */}
+              <div className="hidden group-hover/toprepo:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
+                <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+                {t('table.topStarredNewRepoTooltip')}: {entry.momentum.topStarredNewRepo.stars} ★
+              </div>
+            </div>
+          )}
+        </div>
       </td>
 
       {/* 7. TOPLULUK & KATKIDA BULUNANLAR */}
-      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible">
+      <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible align-middle">
         <div className="flex items-center justify-center -space-x-1 lg:-space-x-1.5 overflow-visible">
           {contributors.slice(0, 3).map((c, idx) => (
             <div key={c.login + idx} className="relative group/contributor inline-block hover:z-30">
@@ -433,37 +457,113 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 8. CANLI EKOSİSTEM HACMİ */}
-      <td className="py-2.5 lg:py-3 px-1 text-center">
-        <div className="space-y-0.5 text-center">
-          <div className="font-mono font-bold text-[10px] lg:text-xs text-foreground flex items-center justify-center gap-0.5 lg:gap-1">
-            <GitFork className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-neutral-400" />
-            <span>{formattedTotalRepos}</span>
-          </div>
-          {entry.momentum.topStarredNewRepo && (
-            <div className="text-[9px] lg:text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[75px] lg:max-w-[110px] mx-auto">
-              <Sparkles className="w-2 h-2 lg:w-2.5 lg:h-2.5 shrink-0" />
-              <span className="truncate">{entry.momentum.topStarredNewRepo.stars} ★</span>
-            </div>
-          )}
+      {/* 8. GÜNCEL SÜRÜM (Swapped with Ecosystem Volume) */}
+      <td className="py-2.5 lg:py-3 px-1 text-center align-middle">
+        <div className="flex items-center justify-center">
+          <span
+            className="font-mono text-[9px] lg:text-[11px] font-bold text-white bg-orange-600 dark:bg-orange-500/90 px-1.5 lg:px-2 py-0.5 rounded-md border border-orange-700/60 dark:border-orange-400/50 whitespace-nowrap inline-flex items-center justify-center shadow-2xs max-w-[85px] lg:max-w-none truncate"
+            title={liveVersion}
+          >
+            {liveVersion}
+          </span>
         </div>
       </td>
 
       {/* 9. GİTHUB (Direct Link) */}
-      <td className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center whitespace-nowrap">
-        <a
-          href={cleanGithubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${cleanName} GitHub`}
-          title={`${cleanName} GitHub`}
-          className="inline-flex items-center justify-center gap-1 lg:gap-1.5 px-2 lg:px-3 py-1 lg:py-1.5 rounded-lg lg:rounded-xl text-[10px] lg:text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-none shadow-2xs whitespace-nowrap active:scale-95"
-        >
-          <span>GitHub</span>
-          <ExternalLink className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
-        </a>
+      <td className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center whitespace-nowrap align-middle">
+        <div className="flex items-center justify-center">
+          <a
+            href={cleanGithubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${cleanName} GitHub`}
+            title={`${cleanName} GitHub`}
+            className="inline-flex items-center justify-center gap-1 lg:gap-1.5 px-2 lg:px-3 py-1 lg:py-1.5 rounded-lg lg:rounded-xl text-[10px] lg:text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-none shadow-2xs whitespace-nowrap active:scale-95"
+          >
+            <span>GitHub</span>
+            <ExternalLink className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
+          </a>
+        </div>
       </td>
     </tr>
+  );
+};
+
+interface LazyMobileCardProps extends TableRowProps {
+  index: number;
+}
+
+// Ultra-performant singleton IntersectionObserver: 1 shared instance across all cards on page
+const sharedCardObserver = (() => {
+  let observer: IntersectionObserver | null = null;
+  const callbacks = new Map<Element, () => void>();
+
+  const getObserver = () => {
+    if (!observer && typeof IntersectionObserver !== 'undefined') {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              const cb = callbacks.get(entry.target);
+              if (cb) {
+                cb();
+                callbacks.delete(entry.target);
+                observer?.unobserve(entry.target);
+              }
+            }
+          }
+        },
+        { rootMargin: '350px 0px', threshold: 0.01 }
+      );
+    }
+    return observer;
+  };
+
+  return {
+    observe: (element: Element, callback: () => void) => {
+      callbacks.set(element, callback);
+      getObserver()?.observe(element);
+    },
+    unobserve: (element: Element) => {
+      callbacks.delete(element);
+      observer?.unobserve(element);
+    },
+  };
+})();
+
+const LazyMobileCard: React.FC<LazyMobileCardProps> = ({ entry, maxStars, index }) => {
+  // First 4 cards in each section render immediately without waiting (0ms initial paint)
+  const isInitial = index < 4;
+  const [inView, setInView] = useState(isInitial);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (inView) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setInView(true);
+      return;
+    }
+
+    const el = containerRef.current;
+    if (el) {
+      sharedCardObserver.observe(el, () => setInView(true));
+    }
+
+    return () => {
+      if (el) sharedCardObserver.unobserve(el);
+    };
+  }, [inView]);
+
+  return (
+    <div ref={containerRef} id={entry.id} className="contain-content">
+      <Skeleton.Swap
+        loading={!inView}
+        label={`Loading ${entry.name}`}
+        fallback={<CardSkeleton />}
+      >
+        {inView ? <MobileCard entry={entry} maxStars={maxStars} /> : null}
+      </Skeleton.Swap>
+    </div>
   );
 };
 
@@ -492,7 +592,6 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   return (
     <div
-      id={entry.id}
       className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors cv-card"
     >
       {/* Top: Blurred Icon Container + Name */}
@@ -595,9 +694,10 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               />
             ))}
           </div>
-          <span className="text-[11px] text-neutral-500 font-mono">
-            {formattedTotalRepos} repo
-          </span>
+          <div className="flex items-center gap-1 text-[11px] text-neutral-500 font-mono">
+            <Boxes className="w-3 h-3 text-neutral-400" />
+            <span>{formattedTotalRepos} repo</span>
+          </div>
         </div>
 
         <div className="flex items-center gap-2">

@@ -1,23 +1,64 @@
 import React from 'react';
+import { Skeleton } from './ui/skeleton';
 
-export const CardSkeleton: React.FC = () => {
+export interface CardSkeletonProps {
+  className?: string;
+}
+
+export const CardSkeleton: React.FC<CardSkeletonProps> = ({ className = '' }) => {
   return (
-    <div className="glass-card rounded-2xl p-4 sm:p-5 flex flex-col gap-3 animate-pulse border border-[#C7C7C7] dark:border-neutral-700">
+    <div
+      className={`p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors ${className}`}
+      role="status"
+      aria-busy="true"
+      aria-label="Loading card"
+    >
+      {/* Top: Icon + Title + Category Badge */}
       <div className="flex items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-neutral-300/60 dark:bg-neutral-800 shrink-0" />
-          <div className="space-y-2">
-            <div className="h-5 w-32 bg-neutral-300/60 dark:bg-neutral-800 rounded-md" />
-            <div className="h-3 w-48 bg-neutral-200/60 dark:bg-neutral-900 rounded-md" />
+        <div className="flex items-center gap-3 flex-1 min-w-0">
+          <Skeleton.Circle size={44} className="rounded-xl! flex-none" />
+          <div className="flex-1 min-w-0">
+            <Skeleton width="48%" height={20} className="rounded-md" />
           </div>
         </div>
-        <div className="h-8 w-20 bg-neutral-300/60 dark:bg-neutral-800 rounded-xl" />
+        <Skeleton width={68} height={22} className="rounded-lg shrink-0" />
       </div>
-      <div className="h-3 w-full bg-neutral-200/60 dark:bg-neutral-800 rounded-full mt-2" />
-      <div className="flex justify-between items-center pt-2 border-t border-neutral-200/40 dark:border-neutral-800/40">
-        <div className="h-4 w-28 bg-neutral-200/60 dark:bg-neutral-800 rounded-md" />
-        <div className="h-4 w-36 bg-neutral-200/60 dark:bg-neutral-800 rounded-md" />
+
+      {/* Creator & Version Sub-row */}
+      <div className="flex items-center justify-between pt-1 border-t border-neutral-100 dark:border-neutral-800/80">
+        <div className="flex items-center gap-2">
+          <Skeleton.Circle size={24} />
+          <Skeleton width={110} height={13} className="rounded-md" />
+        </div>
+        <Skeleton width={48} height={20} className="rounded-md" />
+      </div>
+
+      {/* Segmented Progress Bar */}
+      <div className="space-y-1.5">
+        <div className="flex justify-between items-center">
+          <Skeleton width={70} height={13} className="rounded-md" />
+          <Skeleton width={32} height={13} className="rounded-md" />
+        </div>
+        <Skeleton width="100%" height={10} className="rounded-pill" />
+      </div>
+
+      {/* Footer: Contributors + Repos + Actions */}
+      <div className="flex items-center justify-between pt-2 border-t border-neutral-100 dark:border-neutral-800/80">
+        <div className="flex items-center gap-2">
+          <div className="flex -space-x-1.5">
+            <Skeleton.Circle size={20} />
+            <Skeleton.Circle size={20} />
+            <Skeleton.Circle size={20} />
+          </div>
+          <Skeleton width={64} height={13} className="rounded-md ml-1" />
+        </div>
+        <div className="flex items-center gap-2">
+          <Skeleton width={56} height={22} className="rounded-md" />
+          <Skeleton width={28} height={28} className="rounded-xl" />
+        </div>
       </div>
     </div>
   );
 };
+
+export default CardSkeleton;
