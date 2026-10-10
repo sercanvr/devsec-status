@@ -5,7 +5,7 @@ import { Menu, X, Search } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
 import { SearchModal } from './SearchModal';
-import devsecLogo from '../assets/icons/devsec-logo.webp';
+const devsecLogo = 'https://msercanvar.sirv.com/devsec-status-images/devsec-logo.webp';
 
 export const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
     <>
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sticky top-4 z-50 my-3">
         {/* Luxury Frosted-Glass Outer Frame matching table frames */}
-        <div className="p-1 rounded-[22px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/80 dark:border-white/[0.12] backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-black/20 transition-colors duration-200">
+        <div className="p-1 rounded-[22px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/80 dark:border-white/[0.12] backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-black/20 transition-colors duration-200 isolate">
           <header className="w-full rounded-[18px] border border-neutral-300/80 dark:border-white/[0.12] bg-[#DFDFDF]/80 dark:bg-[#1E1E1E]/85 backdrop-blur-xl backdrop-saturate-150 shadow-sm transition-colors duration-200 relative">
             {/* Subtle bottom-to-top neutral gradient accent */}
             <div className="absolute inset-0 rounded-[18px] bg-gradient-to-t from-black/[0.04] to-transparent dark:from-white/[0.04] dark:to-transparent pointer-events-none z-0" />
