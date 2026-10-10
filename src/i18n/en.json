@@ -79,7 +79,9 @@
     "openSource": "Open Source",
     "maintainer": "Maintainer",
     "neutralBadge": "Neutral",
-    "neutralTooltip": "Repository count unchanged in last 30 days / Neutral momentum"
+    "neutralTooltip": "Repository count unchanged in last 30 days / Neutral momentum",
+    "totalReposTooltip": "Total Open-Source Ecosystem Repositories",
+    "topStarredNewRepoTooltip": "Top Starred New Repo (30 Days)"
   },
   "techBar": {
     "popularity": "Popularity",
@@ -115,7 +117,10 @@
     "rights": "All rights reserved.",
     "disclaimer": "Data is automatically updated daily via GitHub Search API and official databases.",
     "lastUpdated": "Last Updated",
-    "allContentUpToDate": "All content is up to date."
+    "allContentUpToDate": "All content is up to date.",
+    "description": "An information platform offering real-time GitHub Search API metrics and momentum data for programming languages, libraries/frameworks, and open-source cybersecurity tools.",
+    "dataSourceTitle": "DATA & METRICS SOURCE",
+    "dataSourceDesc": "Data is automatically updated using the GitHub Search API and official databases."
   },
   "common": {
     "scrollToTop": "Scroll to Top",
