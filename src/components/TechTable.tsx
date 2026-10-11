@@ -15,7 +15,7 @@ import { SegmentedProgressBar } from './SegmentedProgressBar';
 import { useGitHubContributors } from '../hooks/useGitHubContributors';
 import { useGitHubRelease } from '../hooks/useGitHubRelease';
 import { localizeDate } from '../lib/localizeDate';
-import { getOptimizedAvatarUrl } from '../lib/avatar';
+import { getOptimizedAvatarUrl, DEFAULT_AVATAR } from '../lib/avatar';
 import { GlassBadge } from './GlassBadge';
 import { CardSkeleton } from './CardSkeleton';
 import { Skeleton } from './ui/skeleton';
@@ -33,6 +33,7 @@ interface TechTableProps {
   title: string;
   icon?: React.ReactNode;
   entries: TechEntry[];
+  priority?: boolean;
 }
 
 interface DropdownOption {
@@ -126,11 +127,61 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }) => {
+export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, priority = false }) => {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
-  // Default sort is ALWAYS 'stars' (En Çok Yıldız) as requested
   const [sortBy, setSortBy] = useState<string>('stars');
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Check if current hash points to this section or an item inside it
+  const isHashTarget = typeof window !== 'undefined' && Boolean(
+    window.location.hash && (
+      (id && window.location.hash.includes(id)) ||
+      entries.some((e) => window.location.hash.includes(e.id))
+    )
+  );
+
+  const [isHydrated, setIsHydrated] = useState(() => {
+    if (priority || isHashTarget) return true;
+    if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') return true;
+    return false;
+  });
+
+  useEffect(() => {
+    if (isHydrated) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setIsHydrated(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entriesObs) => {
+        if (entriesObs[0]?.isIntersecting) {
+          setIsHydrated(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '600px 0px', threshold: 0.01 }
+    );
+
+    const el = sectionRef.current;
+    if (el) observer.observe(el);
+
+    const handleHash = () => {
+      if (
+        (id && window.location.hash.includes(id)) ||
+        entries.some((e) => window.location.hash.includes(e.id))
+      ) {
+        setIsHydrated(true);
+      }
+    };
+    window.addEventListener('hashchange', handleHash);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('hashchange', handleHash);
+    };
+  }, [isHydrated, id, entries]);
 
   // Compute maximum stars dynamically for accurate scaling
   const maxStars = useMemo(() => {
@@ -172,7 +223,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
   ];
 
   return (
-    <section id={id} className="w-full space-y-4 pt-2 content-visibility-auto">
+    <section ref={sectionRef} id={id} className="w-full space-y-4 pt-2 content-visibility-auto">
       {/* Luxury Frosted-Glass Outer Frame - Slimmer border, isolated from hover bugs */}
       <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
         {/* Table Container Card */}
@@ -205,8 +256,29 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
             </div>
           </div>
 
-          {/* Conditional Desktop Table vs Mobile Cards rendering to prevent 14,000+ duplicate DOM nodes */}
-          {!isMobile ? (
+          {/* Conditional Desktop Table vs Mobile Cards rendering */}
+          {!isHydrated ? (
+            !isMobile ? (
+              <div className="w-full p-5 space-y-4">
+                {[1, 2, 3].map((idx) => (
+                  <div key={idx} className="flex items-center justify-between gap-4 py-2 border-b border-neutral-200/40 dark:border-neutral-800/40">
+                    <div className="flex items-center gap-3">
+                      <Skeleton.Circle size={32} />
+                      <Skeleton.Text lines={1} className="w-36" />
+                    </div>
+                    <Skeleton width={120} height={18} />
+                    <Skeleton width={90} height={18} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="p-3 sm:p-4 space-y-3.5">
+                {[1, 2].map((idx) => (
+                  <CardSkeleton key={idx} />
+                ))}
+              </div>
+            )
+          ) : !isMobile ? (
             <div className="w-full overflow-x-auto custom-scrollbar">
               <table className="w-full text-left border-collapse table-auto">
                 <thead>
@@ -232,7 +304,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries }
           ) : (
             <div className="p-3 sm:p-4 space-y-3.5">
               {processedEntries.map((entry, index) => (
-                <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} />
+                <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} priority={priority} />
               ))}
             </div>
           )}
@@ -444,7 +516,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
                   height={24}
                   loading="lazy"
                   onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png?size=64`;
+                    (e.currentTarget as HTMLImageElement).src = DEFAULT_AVATAR;
                   }}
                 />
               </a>
@@ -491,6 +563,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
 interface LazyMobileCardProps extends TableRowProps {
   index: number;
+  priority?: boolean;
 }
 
 // Ultra-performant singleton IntersectionObserver: 1 shared instance across all cards on page
@@ -531,9 +604,9 @@ const sharedCardObserver = (() => {
   };
 })();
 
-const LazyMobileCard: React.FC<LazyMobileCardProps> = ({ entry, maxStars, index }) => {
-  // First 4 cards in each section render immediately without waiting (0ms initial paint)
-  const isInitial = index < 4;
+const LazyMobileCard: React.FC<LazyMobileCardProps> = ({ entry, maxStars, index, priority = false }) => {
+  // Only first 2 cards in the priority section render immediately without waiting
+  const isInitial = priority && index < 2;
   const [inView, setInView] = useState(isInitial);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -689,7 +762,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
                 width={20}
                 height={20}
                 onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = `https://github.com/github.png?size=64`;
+                  (e.currentTarget as HTMLImageElement).src = DEFAULT_AVATAR;
                 }}
               />
             ))}

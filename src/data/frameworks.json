@@ -529,45 +529,50 @@
   },
   {
     "id": "fw-gea",
-    "name": "GeaStack",
+    "name": "Gea",
     "category": "framework",
-    "subCategory": "Full-Stack Web Framework",
-    "iconUrl": "https://avatars.githubusercontent.com/u/285667311?s=200&v=4",
-    "githubUrl": "https://github.com/geastack/examples",
+    "subCategory": "Reactive JavaScript UI Framework",
+    "iconUrl": "https://raw.githubusercontent.com/dashersw/gea/main/docs/public/logo.png",
+    "githubUrl": "https://github.com/dashersw/gea",
     "creator": {
       "name": "Armağan Amcalar",
       "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/armagan-amcalar.jpg",
       "type": "person",
-      "releaseDate": "23 Eylül 2026",
-      "latestVersion": "compiler 1.0.22"
+      "releaseDate": "18 Mart 2026",
+      "latestVersion": "@geajs/core 1.5.1"
     },
     "popularity": {
-      "totalRepos": 21,
-      "totalStars": 120
+      "totalRepos": 50,
+      "totalStars": 1259
     },
     "momentum": {
-      "newReposLast30Days": 20,
+      "newReposLast30Days": 12,
       "topStarredNewRepo": {
-        "name": "geastack/examples",
-        "stars": 120
+        "name": "dashersw/gea",
+        "stars": 1259
       }
     },
     "lastUpdated": "2026-10-11T21:39:00.590Z",
     "contributors": [
       {
         "login": "dashersw",
-        "avatar_url": "https://github.com/dashersw.png?size=64",
+        "avatar_url": "https://avatars.githubusercontent.com/u/698308?v=4",
         "html_url": "https://github.com/dashersw"
       },
       {
-        "login": "dogukani",
-        "avatar_url": "https://github.com/dogukani.png?size=64",
-        "html_url": "https://github.com/dogukani"
+        "login": "puskuruk",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22892227?v=4",
+        "html_url": "https://github.com/puskuruk"
       },
       {
-        "login": "example-core",
-        "avatar_url": "https://github.com/geastack.png?size=64",
-        "html_url": "https://github.com/geastack/examples"
+        "login": "ilkaydnc",
+        "avatar_url": "https://avatars.githubusercontent.com/u/39930145?v=4",
+        "html_url": "https://github.com/ilkaydnc"
+      },
+      {
+        "login": "kraus-milan",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9005778?v=4",
+        "html_url": "https://github.com/kraus-milan"
       }
     ]
   },

@@ -53,6 +53,7 @@ export const SecurityPage: React.FC = () => {
           title={t('sections.securityTools')}
           icon={<ShieldCheck className="w-5 h-5" />}
           entries={sortedSecurityTools}
+          priority
         />
 
         <TechTable
