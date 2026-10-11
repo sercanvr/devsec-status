@@ -13,17 +13,17 @@
       "latestVersion": "C23 (ISO/IEC 9899)"
     },
     "popularity": {
-      "totalRepos": 4377236,
-      "totalStars": 251519
+      "totalRepos": 4378424,
+      "totalStars": 251556
     },
     "momentum": {
-      "newReposLast30Days": 80505,
+      "newReposLast30Days": 81857,
       "topStarredNewRepo": {
         "name": "facebookincubator/muse-gadget-sdk",
-        "stars": 1966
+        "stars": 1980
       }
     },
-    "lastUpdated": "2026-10-11T12:16:18.654Z",
+    "lastUpdated": "2026-10-11T21:36:15.129Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -61,17 +61,17 @@
       "latestVersion": "v1.24.0"
     },
     "popularity": {
-      "totalRepos": 2562838,
-      "totalStars": 139197
+      "totalRepos": 2561841,
+      "totalStars": 139206
     },
     "momentum": {
-      "newReposLast30Days": 65802,
+      "newReposLast30Days": 64976,
       "topStarredNewRepo": {
         "name": "yetone/magpie",
-        "stars": 8872
+        "stars": 9142
       }
     },
-    "lastUpdated": "2026-10-11T12:16:22.903Z",
+    "lastUpdated": "2026-10-11T21:36:19.291Z",
     "contributors": [
       {
         "login": "rsc",
@@ -109,17 +109,17 @@
       "latestVersion": "v1.85.0"
     },
     "popularity": {
-      "totalRepos": 1393367,
-      "totalStars": 119686
+      "totalRepos": 1394553,
+      "totalStars": 119709
     },
     "momentum": {
-      "newReposLast30Days": 55146,
+      "newReposLast30Days": 56382,
       "topStarredNewRepo": {
         "name": "storytold/photocraft",
-        "stars": 44705
+        "stars": 47099
       }
     },
-    "lastUpdated": "2026-10-11T12:16:27.090Z",
+    "lastUpdated": "2026-10-11T21:36:23.570Z",
     "contributors": [
       {
         "login": "bors",
@@ -157,17 +157,17 @@
       "latestVersion": "v5.7.3"
     },
     "popularity": {
-      "totalRepos": 19139286,
-      "totalStars": 111405
+      "totalRepos": 19147797,
+      "totalStars": 111407
     },
     "momentum": {
-      "newReposLast30Days": 835682,
+      "newReposLast30Days": 845964,
       "topStarredNewRepo": {
         "name": "zai-org/ZCode",
-        "stars": 7668
+        "stars": 7680
       }
     },
-    "lastUpdated": "2026-10-11T12:16:31.422Z",
+    "lastUpdated": "2026-10-11T21:36:28.015Z",
     "contributors": [
       {
         "login": "ahejlsberg",
@@ -205,17 +205,17 @@
       "latestVersion": "v3.13.2"
     },
     "popularity": {
-      "totalRepos": 34633424,
+      "totalRepos": 34651149,
       "totalStars": 77611
     },
     "momentum": {
-      "newReposLast30Days": 1316716,
+      "newReposLast30Days": 1336115,
       "topStarredNewRepo": {
         "name": "NandhaKishorM/laya",
-        "stars": 32239
+        "stars": 32326
       }
     },
-    "lastUpdated": "2026-10-11T12:16:35.943Z",
+    "lastUpdated": "2026-10-11T21:36:32.111Z",
     "contributors": [
       {
         "login": "gvanrossum",
@@ -253,17 +253,17 @@
       "latestVersion": "v6.0.3"
     },
     "popularity": {
-      "totalRepos": 1717992,
-      "totalStars": 70487
+      "totalRepos": 1718485,
+      "totalStars": 70490
     },
     "momentum": {
-      "newReposLast30Days": 33450,
+      "newReposLast30Days": 34056,
       "topStarredNewRepo": {
         "name": "robbietilton/Compositor",
-        "stars": 15725
+        "stars": 15873
       }
     },
-    "lastUpdated": "2026-10-11T12:16:40.295Z",
+    "lastUpdated": "2026-10-11T21:36:36.362Z",
     "contributors": [
       {
         "login": "swift-ci",
@@ -301,17 +301,17 @@
       "latestVersion": "v2.1.10"
     },
     "popularity": {
-      "totalRepos": 2385821,
+      "totalRepos": 2387001,
       "totalStars": 53489
     },
     "momentum": {
-      "newReposLast30Days": 75605,
+      "newReposLast30Days": 76872,
       "topStarredNewRepo": {
         "name": "shihabal3amri/DiPlay",
-        "stars": 9210
+        "stars": 9338
       }
     },
-    "lastUpdated": "2026-10-11T12:16:44.398Z",
+    "lastUpdated": "2026-10-11T21:36:40.598Z",
     "contributors": [
       {
         "login": "udalov",
@@ -349,17 +349,17 @@
       "latestVersion": "v0.13.0"
     },
     "popularity": {
-      "totalRepos": 39079,
+      "totalRepos": 39107,
       "totalStars": 43302
     },
     "momentum": {
-      "newReposLast30Days": 1273,
+      "newReposLast30Days": 1306,
       "topStarredNewRepo": {
         "name": "beamivalice/sushi",
-        "stars": 202
+        "stars": 207
       }
     },
-    "lastUpdated": "2026-10-11T12:16:48.534Z",
+    "lastUpdated": "2026-10-11T21:36:44.787Z",
     "contributors": [
       {
         "login": "andrewrk",
@@ -397,17 +397,17 @@
       "latestVersion": "C++23 Standard"
     },
     "popularity": {
-      "totalRepos": 7202195,
-      "totalStars": 41005
+      "totalRepos": 7204139,
+      "totalStars": 41011
     },
     "momentum": {
-      "newReposLast30Days": 128162,
+      "newReposLast30Days": 130431,
       "topStarredNewRepo": {
         "name": "Niko1221/Strata",
-        "stars": 21138
+        "stars": 21521
       }
     },
-    "lastUpdated": "2026-10-11T12:16:52.743Z",
+    "lastUpdated": "2026-10-11T21:36:49.186Z",
     "contributors": [
       {
         "login": "lattner",
@@ -445,17 +445,17 @@
       "latestVersion": "v8.4.4"
     },
     "popularity": {
-      "totalRepos": 6434489,
-      "totalStars": 40441
+      "totalRepos": 6435286,
+      "totalStars": 40440
     },
     "momentum": {
-      "newReposLast30Days": 80413,
+      "newReposLast30Days": 81467,
       "topStarredNewRepo": {
         "name": "phprs-cms/kaletacms",
-        "stars": 111
+        "stars": 112
       }
     },
-    "lastUpdated": "2026-10-11T12:16:57.315Z",
+    "lastUpdated": "2026-10-11T21:36:53.641Z",
     "contributors": [
       {
         "login": "dstogov",
@@ -493,17 +493,17 @@
       "latestVersion": "v1.18.0"
     },
     "popularity": {
-      "totalRepos": 132732,
+      "totalRepos": 132756,
       "totalStars": 26685
     },
     "momentum": {
-      "newReposLast30Days": 1160,
+      "newReposLast30Days": 1187,
       "topStarredNewRepo": {
         "name": "AFK-surf/Comma",
-        "stars": 243
+        "stars": 247
       }
     },
-    "lastUpdated": "2026-10-11T12:17:01.718Z",
+    "lastUpdated": "2026-10-11T21:36:57.948Z",
     "contributors": [
       {
         "login": "josevalim",
@@ -541,17 +541,17 @@
       "latestVersion": "ES2026"
     },
     "popularity": {
-      "totalRepos": 47976388,
-      "totalStars": 25267
+      "totalRepos": 47988043,
+      "totalStars": 25266
     },
     "momentum": {
-      "newReposLast30Days": 958881,
+      "newReposLast30Days": 973262,
       "topStarredNewRepo": {
         "name": "Ebony-Vinyl/dsh-our-free-model",
-        "stars": 8042
+        "stars": 8829
       }
     },
-    "lastUpdated": "2026-10-11T12:17:06.076Z",
+    "lastUpdated": "2026-10-11T21:37:02.185Z",
     "contributors": [
       {
         "login": "backes",
@@ -589,17 +589,17 @@
       "latestVersion": "v3.4.2"
     },
     "popularity": {
-      "totalRepos": 2971766,
-      "totalStars": 23770
+      "totalRepos": 2971801,
+      "totalStars": 23769
     },
     "momentum": {
-      "newReposLast30Days": 9121,
+      "newReposLast30Days": 9245,
       "topStarredNewRepo": {
         "name": "makevoid/motion-graphics-music-video-skill",
-        "stars": 144
+        "stars": 146
       }
     },
-    "lastUpdated": "2026-10-11T12:17:10.354Z",
+    "lastUpdated": "2026-10-11T21:37:06.496Z",
     "contributors": [
       {
         "login": "nobu",
@@ -637,17 +637,17 @@
       "latestVersion": "Java 23 (JDK 23)"
     },
     "popularity": {
-      "totalRepos": 21819518,
-      "totalStars": 23424
+      "totalRepos": 21822928,
+      "totalStars": 23425
     },
     "momentum": {
-      "newReposLast30Days": 277739,
+      "newReposLast30Days": 281955,
       "topStarredNewRepo": {
         "name": "Leviidev/Husk",
-        "stars": 1364
+        "stars": 1436
       }
     },
-    "lastUpdated": "2026-10-11T12:17:14.674Z",
+    "lastUpdated": "2026-10-11T21:37:10.989Z",
     "contributors": [
       {
         "login": "shipilev",
@@ -685,17 +685,17 @@
       "latestVersion": "C# 13 (.NET 9)"
     },
     "popularity": {
-      "totalRepos": 7742455,
-      "totalStars": 20722
+      "totalRepos": 7744041,
+      "totalStars": 20724
     },
     "momentum": {
-      "newReposLast30Days": 122088,
+      "newReposLast30Days": 124080,
       "topStarredNewRepo": {
         "name": "BlueHeisenberg/SCSKiller",
-        "stars": 1960
+        "stars": 2100
       }
     },
-    "lastUpdated": "2026-10-11T12:17:19.149Z",
+    "lastUpdated": "2026-10-11T21:37:15.282Z",
     "contributors": [
       {
         "login": "dotnet",
@@ -733,17 +733,17 @@
       "latestVersion": "v3.7.0"
     },
     "popularity": {
-      "totalRepos": 2149893,
+      "totalRepos": 2150644,
       "totalStars": 11304
     },
     "momentum": {
-      "newReposLast30Days": 52028,
+      "newReposLast30Days": 52869,
       "topStarredNewRepo": {
         "name": "zhoufuweigg/guoapp",
-        "stars": 681
+        "stars": 718
       }
     },
-    "lastUpdated": "2026-10-11T12:17:23.324Z",
+    "lastUpdated": "2026-10-11T21:37:19.482Z",
     "contributors": [
       {
         "login": "dart-lang",
@@ -781,17 +781,17 @@
       "latestVersion": "v5.4.7"
     },
     "popularity": {
-      "totalRepos": 756753,
+      "totalRepos": 757238,
       "totalStars": 10366
     },
     "momentum": {
-      "newReposLast30Days": 26308,
+      "newReposLast30Days": 26882,
       "topStarredNewRepo": {
         "name": "angusdevgo/Seep-Reverse-Lab",
-        "stars": 1230
+        "stars": 1242
       }
     },
-    "lastUpdated": "2026-10-11T12:17:27.507Z",
+    "lastUpdated": "2026-10-11T21:37:23.710Z",
     "contributors": [
       {
         "login": "lua",
@@ -829,17 +829,17 @@
       "latestVersion": "v3.6.3"
     },
     "popularity": {
-      "totalRepos": 260495,
-      "totalStars": 6314
+      "totalRepos": 260497,
+      "totalStars": 6315
     },
     "momentum": {
-      "newReposLast30Days": 930,
+      "newReposLast30Days": 938,
       "topStarredNewRepo": {
         "name": "NotProtonNot/NotProton",
-        "stars": 1372
+        "stars": 1414
       }
     },
-    "lastUpdated": "2026-10-11T12:17:31.944Z",
+    "lastUpdated": "2026-10-11T21:37:27.994Z",
     "contributors": [
       {
         "login": "scala",
@@ -877,17 +877,17 @@
       "latestVersion": "GHC 9.10"
     },
     "popularity": {
-      "totalRepos": 164529,
+      "totalRepos": 164534,
       "totalStars": 3275
     },
     "momentum": {
-      "newReposLast30Days": 927,
+      "newReposLast30Days": 938,
       "topStarredNewRepo": {
         "name": "ekmett/hide",
         "stars": 38
       }
     },
-    "lastUpdated": "2026-10-11T12:17:36.636Z",
+    "lastUpdated": "2026-10-11T21:37:32.285Z",
     "contributors": [
       {
         "login": "ghc",
@@ -925,17 +925,17 @@
       "latestVersion": "v5.40.0"
     },
     "popularity": {
-      "totalRepos": 188792,
-      "totalStars": 2340
+      "totalRepos": 188794,
+      "totalStars": 2341
     },
     "momentum": {
-      "newReposLast30Days": 540,
+      "newReposLast30Days": 549,
       "topStarredNewRepo": {
         "name": "apimartd9uqov94/llm-api-proxy-cost-guide",
         "stars": 31
       }
     },
-    "lastUpdated": "2026-10-11T12:17:40.858Z",
+    "lastUpdated": "2026-10-11T21:37:36.605Z",
     "contributors": [
       {
         "login": "Perl",
@@ -983,7 +983,7 @@
         "stars": 1091
       }
     },
-    "lastUpdated": "2026-10-11T12:17:43.920Z",
+    "lastUpdated": "2026-10-11T21:37:39.615Z",
     "contributors": [
       {
         "login": "jaalto",
@@ -1021,17 +1021,17 @@
       "latestVersion": "v4.4.2"
     },
     "popularity": {
-      "totalRepos": 1139279,
+      "totalRepos": 1139413,
       "totalStars": 161
     },
     "momentum": {
-      "newReposLast30Days": 13109,
+      "newReposLast30Days": 13279,
       "topStarredNewRepo": {
         "name": "weikaixi/CrossDomainAdjust",
         "stars": 80
       }
     },
-    "lastUpdated": "2026-10-11T12:17:48.356Z",
+    "lastUpdated": "2026-10-11T21:37:43.971Z",
     "contributors": [
       {
         "login": "r-devel",
@@ -1069,17 +1069,17 @@
       "latestVersion": "Objective-C 2.0"
     },
     "popularity": {
-      "totalRepos": 543206,
+      "totalRepos": 543204,
       "totalStars": 496
     },
     "momentum": {
-      "newReposLast30Days": 1249,
+      "newReposLast30Days": 1276,
       "topStarredNewRepo": {
         "name": "0xjohnnydev/airlift",
         "stars": 406
       }
     },
-    "lastUpdated": "2026-10-11T12:17:52.589Z",
+    "lastUpdated": "2026-10-11T21:37:48.115Z",
     "contributors": [
       {
         "login": "apple-oss-distributions",
@@ -1118,17 +1118,17 @@
       "latestVersion": "v1.11.3"
     },
     "popularity": {
-      "totalRepos": 94816,
+      "totalRepos": 94824,
       "totalStars": 49203
     },
     "momentum": {
-      "newReposLast30Days": 1075,
+      "newReposLast30Days": 1086,
       "topStarredNewRepo": {
         "name": "aryavorskiy/XKCDMakie.jl",
         "stars": 39
       }
     },
-    "lastUpdated": "2026-10-11T12:17:57.012Z",
+    "lastUpdated": "2026-10-11T21:37:52.491Z",
     "contributors": [
       {
         "login": "vtjnash",
@@ -1162,17 +1162,17 @@
       "latestVersion": "OTP 27.2"
     },
     "popularity": {
-      "totalRepos": 34334,
-      "totalStars": 12359
+      "totalRepos": 34337,
+      "totalStars": 12360
     },
     "momentum": {
-      "newReposLast30Days": 149,
+      "newReposLast30Days": 150,
       "topStarredNewRepo": {
         "name": "imboy-pub/erlang_pay",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-11T12:18:01.524Z",
+    "lastUpdated": "2026-10-11T21:37:56.992Z",
     "contributors": [
       {
         "login": "josevalim",
@@ -1206,17 +1206,17 @@
       "latestVersion": "v1.12.0"
     },
     "popularity": {
-      "totalRepos": 97565,
-      "totalStars": 10973
+      "totalRepos": 97568,
+      "totalStars": 10972
     },
     "momentum": {
-      "newReposLast30Days": 435,
+      "newReposLast30Days": 439,
       "topStarredNewRepo": {
         "name": "unclebob/uml-viewer",
-        "stars": 419
+        "stars": 421
       }
     },
-    "lastUpdated": "2026-10-11T12:18:05.835Z",
+    "lastUpdated": "2026-10-11T21:38:01.255Z",
     "contributors": [
       {
         "login": "richhickey",
@@ -1250,17 +1250,17 @@
       "latestVersion": "v9.0"
     },
     "popularity": {
-      "totalRepos": 35055,
-      "totalStars": 4345
+      "totalRepos": 35062,
+      "totalStars": 4344
     },
     "momentum": {
-      "newReposLast30Days": 245,
+      "newReposLast30Days": 252,
       "topStarredNewRepo": {
         "name": "shayanhabibi/Ranvier",
         "stars": 16
       }
     },
-    "lastUpdated": "2026-10-11T12:18:10.207Z",
+    "lastUpdated": "2026-10-11T21:38:05.483Z",
     "contributors": [
       {
         "login": "dsyme",
@@ -1294,17 +1294,17 @@
       "latestVersion": "v0.8.28"
     },
     "popularity": {
-      "totalRepos": 298080,
-      "totalStars": 25753
+      "totalRepos": 298119,
+      "totalStars": 25752
     },
     "momentum": {
-      "newReposLast30Days": 3927,
+      "newReposLast30Days": 3988,
       "topStarredNewRepo": {
         "name": "0xhamssog/evm-trading-executor",
         "stars": 163
       }
     },
-    "lastUpdated": "2026-10-11T12:18:14.716Z",
+    "lastUpdated": "2026-10-11T21:38:09.899Z",
     "contributors": [
       {
         "login": "chriseth",
