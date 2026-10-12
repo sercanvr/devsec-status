@@ -147,7 +147,7 @@ body::-webkit-scrollbar-thumb {
   background: #ceff00;
 }
 
-/* 1200ms Search Result Accent Highlight */
+/* 1600ms Search Result Accent Highlight */
 .highlight-glow {
   outline: 2.5px solid #0066FF !important;
   outline-offset: -1px;
@@ -167,6 +167,23 @@ tr.highlight-glow td {
 
 .dark tr.highlight-glow td {
   background-color: rgba(206, 255, 0, 0.14) !important;
+}
+
+/* Mobile Card Search Result Highlight */
+.cv-card.highlight-glow,
+.highlight-glow .cv-card {
+  outline: 2.5px solid #0066FF !important;
+  outline-offset: -1px !important;
+  background-color: rgba(0, 102, 255, 0.16) !important;
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.3) !important;
+}
+
+.dark .cv-card.highlight-glow,
+.dark .highlight-glow .cv-card {
+  outline: 2.5px solid #CEFF00 !important;
+  outline-offset: -1px !important;
+  background-color: rgba(206, 255, 0, 0.20) !important;
+  box-shadow: 0 0 20px rgba(206, 255, 0, 0.35) !important;
 }
 
 /* High-performance scroll optimization (60+ FPS): off-screen row/card DOM layout & paint skipping */
@@ -320,6 +337,27 @@ tr.highlight-glow td {
 .content-visibility-auto {
   content-visibility: auto;
   contain-intrinsic-size: auto 750px;
+}
+
+/* Layered soft shadow recipe (Image 4 reference: 5% alpha progressive blur + natural elevation) */
+.card-layered-shadow {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    0 1px 1px 0 rgba(0, 0, 0, 0.05),
+    0 2px 2px 0 rgba(0, 0, 0, 0.05),
+    0 4px 4px 0 rgba(0, 0, 0, 0.05),
+    0 8px 8px 0 rgba(0, 0, 0, 0.05),
+    0 16px 16px 0 rgba(0, 0, 0, 0.05),
+    0 20px 30px -8px rgba(0, 0, 0, 0.08);
+}
+
+.dark .card-layered-shadow {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 2px 4px 0 rgba(0, 0, 0, 0.4),
+    0 8px 16px 0 rgba(0, 0, 0, 0.45),
+    0 16px 32px 0 rgba(0, 0, 0, 0.5),
+    0 24px 48px -12px rgba(0, 0, 0, 0.6);
 }
 
 /* ==========================================================================

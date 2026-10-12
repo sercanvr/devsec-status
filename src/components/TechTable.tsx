@@ -223,11 +223,11 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, 
   ];
 
   return (
-    <section ref={sectionRef} id={id} className="w-full space-y-4 pt-2 content-visibility-auto">
-      {/* Luxury Frosted-Glass Outer Frame - Slimmer border, isolated from hover bugs */}
-      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
-        {/* Table Container Card */}
-        <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[24px] overflow-hidden transition-colors duration-200 shadow-inner">
+    <section ref={sectionRef} id={id} className="w-full space-y-4 pt-2 pb-2">
+      {/* Luxury Frosted-Glass Outer Frame - Frosted blur restored with layered shadow & overflow-hidden */}
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/70 dark:bg-white/[0.06] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md card-layered-shadow transition-colors duration-200 isolate overflow-hidden">
+        {/* Table Container Card - Matching HeaderShowcase shadow-2xl and rounded-24px */}
+        <div className="bg-white dark:bg-[#141414] border border-neutral-200/90 dark:border-neutral-800/90 rounded-[24px] overflow-hidden transition-colors duration-200 shadow-2xl">
           {/* Table Top Header Bar: Title + Single Sort Dropdown */}
           <div className="px-5 py-4 sm:px-6 sm:py-5 border-b border-neutral-200/80 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-4 bg-neutral-50/60 dark:bg-neutral-900/50">
             <div className="flex items-center gap-3">
@@ -279,7 +279,7 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, 
               </div>
             )
           ) : !isMobile ? (
-            <div className="w-full overflow-x-auto custom-scrollbar">
+            <div className="w-full overflow-x-auto custom-scrollbar rounded-b-[24px]">
               <table className="w-full text-left border-collapse table-auto">
                 <thead>
                   <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
@@ -665,6 +665,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   return (
     <div
+      data-tech-id={entry.id}
       className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors cv-card"
     >
       {/* Top: Blurred Icon Container + Name */}
