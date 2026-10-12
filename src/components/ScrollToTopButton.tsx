@@ -6,16 +6,21 @@ export const ScrollToTopButton: React.FC = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
+    let rafId: number | null = null;
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(() => {
+        const isPastThreshold = window.scrollY > 40;
+        setVisible((prev) => (prev !== isPastThreshold ? isPastThreshold : prev));
+        rafId = null;
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const scrollToTop = (e: React.MouseEvent) => {
