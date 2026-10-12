@@ -22,21 +22,21 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   if (mode === 'security') {
     return (
       <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
-        <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl isolate">
+        {/* Luxury Frosted-Glass Outer Frame - Frosted blur restored with matching card-layered-shadow */}
+        <div className="p-1.5 rounded-[30px] bg-neutral-200/70 dark:bg-white/[0.06] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md card-layered-shadow isolate overflow-hidden">
           <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
             <WorldMap lineColor="#10B981" className="opacity-70 dark:opacity-60" />
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
-              {/* Col 1: Offensive Security - Centered */}
-              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8 items-start">
+              {/* Col 1: Offensive Security - Top Centered */}
+              <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secOffensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>Ghidra • Metasploit</span>
                     </div>
@@ -75,15 +75,15 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
               </div>
 
-              {/* Col 2: Defensive & SAST - Centered */}
-              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
+              {/* Col 2: Defensive & SAST - Top Centered */}
+              <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                       <span>{t('showcase.secDefensiveBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <GitFork className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>Trivy • Nuclei</span>
                     </div>
@@ -122,15 +122,15 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                 </div>
               </div>
 
-              {/* Col 3: SecOps Stack Hub - Centered */}
-              <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0">
+              {/* Col 3: SecOps Stack Hub - Top Centered */}
+              <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6 pt-5 lg:pt-0">
                 <div className="space-y-3 w-full flex flex-col items-center">
                   <div className="flex justify-center items-center gap-2 flex-wrap min-h-[44px]">
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <ShieldCheck className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.secStackBadge')}</span>
                     </div>
-                    <div className="px-3 py-1.5 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20">
+                    <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                       <span>OWASP ZAP • Nmap</span>
                     </div>
@@ -178,19 +178,17 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
   // Default: Software Page Showcase (Programlama Dilleri, Frameworkler, Veritabanları)
   return (
     <div className="w-full py-4 sm:py-5 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Luxury Frosted-Glass Outer Frame - Slimmer border & padding */}
-      <div className="p-1.5 rounded-[30px] bg-neutral-200/60 dark:bg-white/[0.05] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md shadow-2xl transition-colors duration-200 isolate">
+      {/* Luxury Frosted-Glass Outer Frame - Frosted blur restored with matching card-layered-shadow */}
+      <div className="p-1.5 rounded-[30px] bg-neutral-200/70 dark:bg-white/[0.06] border border-neutral-300/90 dark:border-white/[0.14] backdrop-blur-md card-layered-shadow transition-colors duration-200 isolate overflow-hidden">
         <div className="relative rounded-[24px] bg-white dark:bg-[#18181b] border border-neutral-200/90 dark:border-neutral-800 shadow-2xl overflow-hidden p-5 sm:p-6 lg:p-7">
           <WorldMap lineColor="#E36A17" className="opacity-70 dark:opacity-60" />
 
-          {/* 3 Columns Showcase Grid - All Centered */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8">
+          {/* 3 Columns Showcase Grid - Top-Aligned Across Columns */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 relative z-10 gap-6 lg:gap-8 items-start">
             {/* =========================================================================
-                Column 1: Programlama Dilleri (Language Top 1: Python) - CENTERED & BALANCED
-            ======================================================================            {/* =========================================================================
-                Column 1: Programlama Dilleri (Language #1: Python) - CENTERED & BALANCED
+                Column 1: Programlama Dilleri (Language #1: Python) - Top-Aligned
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
@@ -243,9 +241,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             </div>
 
             {/* =========================================================================
-                Column 2: Framework & Kütüphaneler (Framework #1: React) - CENTERED & BALANCED
+                Column 2: Framework & Kütüphaneler (Framework #1: React) - Top-Aligned
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6 pt-5 lg:pt-0">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">
@@ -304,9 +302,9 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
             </div>
 
             {/* =========================================================================
-                Column 3: Veritabanları & Altyapı (Database #1: PostgreSQL) - CENTERED & BALANCED
+                Column 3: Veritabanları & Altyapı (Database #1: PostgreSQL) - Top-Aligned
             ========================================================================= */}
-            <div className="flex flex-col items-center text-center justify-center space-y-4 lg:px-6 pt-5 lg:pt-0 h-full my-auto">
+            <div className="flex flex-col items-center text-center justify-start space-y-4 lg:px-6 pt-5 lg:pt-0">
               <div className="space-y-3 w-full flex flex-col items-center">
                 {/* Top Mini Badges: Balanced height across all columns */}
                 <div className="min-h-[44px] flex items-center justify-center">

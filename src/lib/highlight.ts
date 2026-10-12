@@ -25,12 +25,24 @@ export function highlightTechElement(id: string): boolean {
   const target = targets.find((el) => el.offsetParent !== null) || targets[0];
 
   target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  target.classList.remove('highlight-glow');
-  void target.offsetWidth; // Force reflow to re-trigger CSS animation
-  target.classList.add('highlight-glow');
+
+  // If target has an inner .cv-card or is one, ensure both receive the glow
+  const cardElement = target.classList.contains('cv-card')
+    ? target
+    : target.querySelector<HTMLElement>('.cv-card');
+
+  const elementsToHighlight = cardElement && cardElement !== target
+    ? [target, cardElement]
+    : [target];
+
+  elementsToHighlight.forEach((el) => {
+    el.classList.remove('highlight-glow');
+    void el.offsetWidth; // Force reflow to re-trigger CSS animation
+    el.classList.add('highlight-glow');
+  });
 
   setTimeout(() => {
-    target.classList.remove('highlight-glow');
+    elementsToHighlight.forEach((el) => el.classList.remove('highlight-glow'));
   }, 1600);
 
   return true;

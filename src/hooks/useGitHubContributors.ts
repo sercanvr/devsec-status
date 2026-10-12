@@ -1,10 +1,12 @@
 import { useMemo } from 'react';
 import { TechContributor } from '../types/tech';
+import { DEFAULT_AVATAR } from '../lib/avatar';
 
 export type Contributor = TechContributor;
 
 function ensureAvatarSize(url: string, size = 64): string {
-  if (!url) return 'https://github.com/github.png?size=64';
+  if (!url) return DEFAULT_AVATAR;
+  if (url.includes('github.com/github.png')) return DEFAULT_AVATAR;
   if (url.includes('githubusercontent.com') || url.includes('github.com')) {
     const separator = url.includes('?') ? '&' : '?';
     if (!url.includes('s=') && !url.includes('size=')) {
@@ -40,7 +42,7 @@ export function useGitHubContributors(
           { login: owner, avatar_url: `https://github.com/${owner}.png?size=64`, html_url: `https://github.com/${owner}` },
           { login: `${repo}-contrib-1`, avatar_url: `https://github.com/${owner}.png?size=64`, html_url: githubUrl },
           { login: `${repo}-contrib-2`, avatar_url: `https://github.com/${repo}.png?size=64`, html_url: githubUrl },
-          { login: `${repo}-contrib-3`, avatar_url: `https://github.com/github.png?size=64`, html_url: githubUrl },
+          { login: `${repo}-contrib-3`, avatar_url: DEFAULT_AVATAR, html_url: githubUrl },
         ];
       }
     } catch {

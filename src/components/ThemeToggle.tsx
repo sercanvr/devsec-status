@@ -103,7 +103,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
           if (onToggleTheme) onToggleTheme();
         }}
         aria-label={t('nav.themeToggle')}
-        className="w-16 sm:w-20 h-9 rounded-xl flex items-center justify-center gap-1.5 bg-neutral-300/85 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-200 border border-neutral-400/80 dark:border-neutral-700/60 focus:outline-none shrink-0 transition-none hover:text-black dark:hover:text-white"
+        className="w-9 sm:w-10 h-9 rounded-xl flex items-center justify-center gap-1.5 bg-neutral-300/85 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-200 border border-neutral-400/80 dark:border-neutral-700/60 focus:outline-none shrink-0 transition-none hover:text-black dark:hover:text-white"
       >
         <Contrast className={`w-4 h-4 text-neutral-900 dark:text-neutral-200 transition-none ${theme === 'light' ? '-scale-x-100' : 'scale-x-100'}`} />
       </button>

@@ -17,7 +17,7 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
     { id: 'section-security', label: 'Güvenlik' },
   ],
 }) => {
-  const [scrollProgress, setScrollProgress] = useState<number>(0);
+  const [activeDashCenter, setActiveDashCenter] = useState<number>(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   // Total dashes in minimap - increased for a longer vertical profile
@@ -51,7 +51,8 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
       rafId = window.requestAnimationFrame(() => {
         const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
         const progress = totalScroll > 0 ? Math.min(1, Math.max(0, window.scrollY / totalScroll)) : 0;
-        setScrollProgress(progress);
+        const newDash = Math.min(totalDashes - 1, Math.max(0, Math.round(progress * (totalDashes - 1))));
+        setActiveDashCenter((prev) => (prev !== newDash ? newDash : prev));
         rafId = null;
       });
     };
@@ -64,7 +65,7 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
     };
-  }, [sections]);
+  }, [sections, totalDashes]);
 
   const scrollToDash = (index: number, sectionId: string, isTitle: boolean) => {
     const el = document.getElementById(sectionId);
@@ -78,13 +79,10 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
     }
   };
 
-  // Active center dash index in the array of dashes, dynamically synchronized with scroll position
-  const activeDashCenter = Math.min(totalDashes - 1, Math.max(0, Math.round(scrollProgress * (totalDashes - 1))));
-
   return (
     <div
       aria-label="Proximity Navigation Minimap"
-      className="fixed left-2 lg:left-3 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-start p-0 select-none pointer-events-auto"
+      className="fixed left-3 sm:left-4 lg:left-5 xl:left-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-start p-0 select-none pointer-events-auto"
     >
       <div className="flex flex-col items-start gap-1 py-1">
         {Array.from({ length: totalDashes }).map((_, index) => {
@@ -124,7 +122,7 @@ export const ProximitySidebar: React.FC<ProximitySidebarProps> = ({
               aria-label={isTitle ? section.label : undefined}
             >
               <div
-                className={`h-0.5 transition-all duration-200 ease-out rounded-full origin-left ${widthClass} ${glowClass}`}
+                className={`h-0.5 transition-[width,background-color] duration-75 ease-out rounded-full origin-left will-change-[width] ${widthClass} ${glowClass}`}
               />
 
               {/* Tooltip for Section Title Bars or Hovered Dash */}

@@ -15,12 +15,23 @@ const languages = [
   { code: 'zh', label: 'ZH', name: 'Chinese', flagUrl: `${SIRV_FLAG_BASE}/china-flag.webp` },
 ];
 
-// Preload flag images immediately into browser cache to eliminate any open delay
-if (typeof window !== 'undefined') {
+let flagsPreloaded = false;
+export const preloadFlags = () => {
+  if (flagsPreloaded || typeof window === 'undefined') return;
+  flagsPreloaded = true;
   languages.forEach((lang) => {
     const img = new Image();
     img.src = lang.flagUrl;
   });
+};
+
+// Defer background prefetching until main-thread idle time (after critical render & LCP)
+if (typeof window !== 'undefined') {
+  if ('requestIdleCallback' in window) {
+    (window as Window & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => void }).requestIdleCallback(preloadFlags, { timeout: 4000 });
+  } else {
+    setTimeout(preloadFlags, 3500);
+  }
 }
 
 interface LanguageSwitcherProps {
@@ -62,7 +73,10 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       <div className="relative flex flex-col items-center" ref={dropdownRef}>
         <button
           type="button"
+          onMouseEnter={preloadFlags}
+          onFocus={preloadFlags}
           onClick={(e) => {
+            preloadFlags();
             e.stopPropagation();
             setIsOpen((prev) => !prev);
           }}
@@ -77,7 +91,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
             {languages.map((lang) => {
               const isActive = i18n.language.startsWith(lang.code);
               return (
@@ -115,8 +129,13 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   return (
     <div className="relative inline-block text-left group z-30" ref={dropdownRef}>
       <button
-        onClick={() => setIsOpen((prev) => !prev)}
-        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-none shrink-0"
+        onMouseEnter={preloadFlags}
+        onFocus={preloadFlags}
+        onClick={() => {
+          preloadFlags();
+          setIsOpen((prev) => !prev);
+        }}
+        className="flex items-center justify-center gap-1.5 px-2.5 sm:px-3 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-none shrink-0"
         aria-label="Select Language"
       >
         <Earth className="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" />
@@ -132,7 +151,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl dark:shadow-black/80 z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (

@@ -14,6 +14,7 @@ const SecurityPage = React.lazy(() =>
 
 import { highlightTechElement } from './lib/highlight';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { InitialViewportVignette } from './components/InitialViewportVignette';
 
 export const App: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -50,6 +51,7 @@ export const App: React.FC = () => {
         {isManualLoading && <CodeLoader />}
         <GridVignetteBackground className="opacity-80" x={50} y={50} intensity={0} horizontalVignetteSize={100} verticalVignetteSize={100} />
         <Navbar />
+        <InitialViewportVignette />
 
         <main className="flex-1 pb-12">
           <ErrorBoundary>

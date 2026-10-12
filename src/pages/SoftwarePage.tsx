@@ -86,6 +86,7 @@ export const SoftwarePage: React.FC = () => {
           title={t('sections.languages')}
           icon={<Code2 className="w-5 h-5" />}
           entries={sortedLanguages}
+          priority
         />
 
         <TechTable
