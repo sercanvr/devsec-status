@@ -31,19 +31,14 @@
         "html_url": "https://github.com/torvalds"
       },
       {
-        "login": "linux-lead",
-        "avatar_url": "https://github.com/torvalds.png?size=64",
-        "html_url": "https://github.com/torvalds/linux"
+        "login": "davem330",
+        "avatar_url": "https://github.com/davem330.png?size=64",
+        "html_url": "https://github.com/davem330"
       },
       {
-        "login": "linux-core",
-        "avatar_url": "https://github.com/torvalds.png?size=64",
-        "html_url": "https://github.com/torvalds/linux"
-      },
-      {
-        "login": "linux-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/torvalds/linux"
+        "login": "arndb",
+        "avatar_url": "https://github.com/arndb.png?size=64",
+        "html_url": "https://github.com/arndb"
       }
     ]
   },

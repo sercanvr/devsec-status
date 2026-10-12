@@ -91,7 +91,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
             {languages.map((lang) => {
               const isActive = i18n.language.startsWith(lang.code);
               return (
@@ -135,7 +135,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
           preloadFlags();
           setIsOpen((prev) => !prev);
         }}
-        className="flex items-center justify-center gap-1.5 w-16 sm:w-20 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-none shrink-0"
+        className="flex items-center justify-center gap-1.5 px-2.5 sm:px-3 h-9 rounded-xl bg-neutral-300/85 dark:bg-neutral-800 text-xs font-semibold border border-neutral-400/80 dark:border-neutral-700/60 text-neutral-900 dark:text-neutral-200 hover:text-black dark:hover:text-white transition-none shrink-0"
         aria-label="Select Language"
       >
         <Earth className="w-3.5 h-3.5 text-neutral-600 dark:text-neutral-400" />
@@ -151,7 +151,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl dark:shadow-black/80 z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (
