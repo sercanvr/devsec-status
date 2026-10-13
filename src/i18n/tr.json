@@ -82,7 +82,8 @@
     "neutralBadge": "Nötr",
     "neutralTooltip": "Son 30 günde repo sayısı sabit / Nötr ivmelenme",
     "totalReposTooltip": "Toplam Açık Kaynak Ekosistem Reposu",
-    "topStarredNewRepoTooltip": "Son 30 Günün En Çok Yıldız Alan Yeni Reposu"
+    "topStarredNewRepoTooltip": "Son 30 Günün En Çok Yıldız Alan Yeni Reposu",
+    "notHostedOnGitHub": "GitHub'da barınmıyor"
   },
   "techBar": {
     "popularity": "Popülerlik",

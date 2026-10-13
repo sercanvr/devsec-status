@@ -696,21 +696,6 @@
         "login": "dotnet",
         "avatar_url": "https://github.com/dotnet.png?size=64",
         "html_url": "https://github.com/dotnet"
-      },
-      {
-        "login": "roslyn-lead",
-        "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
-      },
-      {
-        "login": "roslyn-core",
-        "avatar_url": "https://github.com/roslyn.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
-      },
-      {
-        "login": "roslyn-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
       }
     ]
   },
@@ -744,21 +729,6 @@
         "login": "dart-lang",
         "avatar_url": "https://github.com/dart-lang.png?size=64",
         "html_url": "https://github.com/dart-lang"
-      },
-      {
-        "login": "sdk-lead",
-        "avatar_url": "https://github.com/dart-lang.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
-      },
-      {
-        "login": "sdk-core",
-        "avatar_url": "https://github.com/sdk.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
-      },
-      {
-        "login": "sdk-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
       }
     ]
   },
@@ -792,21 +762,6 @@
         "login": "lua",
         "avatar_url": "https://github.com/lua.png?size=64",
         "html_url": "https://github.com/lua"
-      },
-      {
-        "login": "lua-lead",
-        "avatar_url": "https://github.com/lua.png?size=64",
-        "html_url": "https://github.com/lua/lua"
-      },
-      {
-        "login": "lua-core",
-        "avatar_url": "https://github.com/lua.png?size=64",
-        "html_url": "https://github.com/lua/lua"
-      },
-      {
-        "login": "lua-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/lua/lua"
       }
     ]
   },
@@ -840,21 +795,6 @@
         "login": "scala",
         "avatar_url": "https://github.com/scala.png?size=64",
         "html_url": "https://github.com/scala"
-      },
-      {
-        "login": "scala3-lead",
-        "avatar_url": "https://github.com/scala.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
-      },
-      {
-        "login": "scala3-core",
-        "avatar_url": "https://github.com/scala3.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
-      },
-      {
-        "login": "scala3-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
       }
     ]
   },
@@ -888,21 +828,6 @@
         "login": "ghc",
         "avatar_url": "https://github.com/ghc.png?size=64",
         "html_url": "https://github.com/ghc"
-      },
-      {
-        "login": "ghc-lead",
-        "avatar_url": "https://github.com/ghc.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
-      },
-      {
-        "login": "ghc-core",
-        "avatar_url": "https://github.com/ghc.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
-      },
-      {
-        "login": "ghc-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
       }
     ]
   },
@@ -936,21 +861,6 @@
         "login": "Perl",
         "avatar_url": "https://github.com/Perl.png?size=64",
         "html_url": "https://github.com/Perl"
-      },
-      {
-        "login": "perl5-lead",
-        "avatar_url": "https://github.com/Perl.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
-      },
-      {
-        "login": "perl5-core",
-        "avatar_url": "https://github.com/perl5.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
-      },
-      {
-        "login": "perl5-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
       }
     ]
   },
@@ -1032,21 +942,6 @@
         "login": "r-devel",
         "avatar_url": "https://github.com/r-devel.png?size=64",
         "html_url": "https://github.com/r-devel"
-      },
-      {
-        "login": "r-svn-lead",
-        "avatar_url": "https://github.com/r-devel.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
-      },
-      {
-        "login": "r-svn-core",
-        "avatar_url": "https://github.com/r-svn.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
-      },
-      {
-        "login": "r-svn-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
       }
     ]
   },
@@ -1080,21 +975,6 @@
         "login": "apple-oss-distributions",
         "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
         "html_url": "https://github.com/apple-oss-distributions"
-      },
-      {
-        "login": "objc4-lead",
-        "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
-      },
-      {
-        "login": "objc4-core",
-        "avatar_url": "https://github.com/objc4.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
-      },
-      {
-        "login": "objc4-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
       }
     ]
   },

@@ -82,7 +82,8 @@
     "neutralBadge": "Neutral",
     "neutralTooltip": "Repository count unchanged in last 30 days / Neutral momentum",
     "totalReposTooltip": "Total Open-Source Ecosystem Repositories",
-    "topStarredNewRepoTooltip": "Top Starred New Repo (30 Days)"
+    "topStarredNewRepoTooltip": "Top Starred New Repo (30 Days)",
+    "notHostedOnGitHub": "Not hosted on GitHub"
   },
   "techBar": {
     "popularity": "Popularity",

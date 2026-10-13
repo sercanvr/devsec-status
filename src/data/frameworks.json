@@ -29,21 +29,6 @@
         "login": "facebook",
         "avatar_url": "https://github.com/facebook.png?size=64",
         "html_url": "https://github.com/facebook"
-      },
-      {
-        "login": "react-lead",
-        "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook/react"
-      },
-      {
-        "login": "react-core",
-        "avatar_url": "https://github.com/react.png?size=64",
-        "html_url": "https://github.com/facebook/react"
-      },
-      {
-        "login": "react-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/facebook/react"
       }
     ]
   },
@@ -77,21 +62,6 @@
         "login": "vercel",
         "avatar_url": "https://github.com/vercel.png?size=64",
         "html_url": "https://github.com/vercel"
-      },
-      {
-        "login": "next.js-lead",
-        "avatar_url": "https://github.com/vercel.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
-      },
-      {
-        "login": "next.js-core",
-        "avatar_url": "https://github.com/next.js.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
-      },
-      {
-        "login": "next.js-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
       }
     ]
   },
@@ -125,21 +95,6 @@
         "login": "facebook",
         "avatar_url": "https://github.com/facebook.png?size=64",
         "html_url": "https://github.com/facebook"
-      },
-      {
-        "login": "react-native-lead",
-        "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
-      },
-      {
-        "login": "react-native-core",
-        "avatar_url": "https://github.com/react-native.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
-      },
-      {
-        "login": "react-native-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
       }
     ]
   },
@@ -157,37 +112,22 @@
       "latestVersion": "v0.115.8"
     },
     "popularity": {
-      "totalRepos": 492584,
-      "totalStars": 103051
+      "totalRepos": 493463,
+      "totalStars": 103068
     },
     "momentum": {
-      "newReposLast30Days": 36121,
+      "newReposLast30Days": 35950,
       "topStarredNewRepo": {
         "name": "aixisstudio/Snitch",
-        "stars": 299
+        "stars": 311
       }
     },
-    "lastUpdated": "2026-10-12T14:42:58.570Z",
+    "lastUpdated": "2026-10-13T05:44:53.213Z",
     "contributors": [
       {
         "login": "fastapi",
         "avatar_url": "https://github.com/fastapi.png?size=64",
         "html_url": "https://github.com/fastapi"
-      },
-      {
-        "login": "fastapi-lead",
-        "avatar_url": "https://github.com/fastapi.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
-      },
-      {
-        "login": "fastapi-core",
-        "avatar_url": "https://github.com/fastapi.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
-      },
-      {
-        "login": "fastapi-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
       }
     ]
   },
@@ -221,21 +161,6 @@
         "login": "angular",
         "avatar_url": "https://github.com/angular.png?size=64",
         "html_url": "https://github.com/angular"
-      },
-      {
-        "login": "angular-lead",
-        "avatar_url": "https://github.com/angular.png?size=64",
-        "html_url": "https://github.com/angular/angular"
-      },
-      {
-        "login": "angular-core",
-        "avatar_url": "https://github.com/angular.png?size=64",
-        "html_url": "https://github.com/angular/angular"
-      },
-      {
-        "login": "angular-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/angular/angular"
       }
     ]
   },
@@ -269,21 +194,6 @@
         "login": "tailwindlabs",
         "avatar_url": "https://github.com/tailwindlabs.png?size=64",
         "html_url": "https://github.com/tailwindlabs"
-      },
-      {
-        "login": "tailwindcss-lead",
-        "avatar_url": "https://github.com/tailwindlabs.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
-      },
-      {
-        "login": "tailwindcss-core",
-        "avatar_url": "https://github.com/tailwindcss.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
-      },
-      {
-        "login": "tailwindcss-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
       }
     ]
   },
@@ -317,21 +227,6 @@
         "login": "sveltejs",
         "avatar_url": "https://github.com/sveltejs.png?size=64",
         "html_url": "https://github.com/sveltejs"
-      },
-      {
-        "login": "svelte-lead",
-        "avatar_url": "https://github.com/sveltejs.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
-      },
-      {
-        "login": "svelte-core",
-        "avatar_url": "https://github.com/svelte.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
-      },
-      {
-        "login": "svelte-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
       }
     ]
   },
@@ -365,21 +260,6 @@
         "login": "nestjs",
         "avatar_url": "https://github.com/nestjs.png?size=64",
         "html_url": "https://github.com/nestjs"
-      },
-      {
-        "login": "nest-lead",
-        "avatar_url": "https://github.com/nestjs.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
-      },
-      {
-        "login": "nest-core",
-        "avatar_url": "https://github.com/nest.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
-      },
-      {
-        "login": "nest-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
       }
     ]
   },
@@ -413,21 +293,6 @@
         "login": "vuejs",
         "avatar_url": "https://github.com/vuejs.png?size=64",
         "html_url": "https://github.com/vuejs"
-      },
-      {
-        "login": "core-lead",
-        "avatar_url": "https://github.com/vuejs.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
-      },
-      {
-        "login": "core-core",
-        "avatar_url": "https://github.com/core.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
-      },
-      {
-        "login": "core-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
       }
     ]
   },
@@ -461,21 +326,6 @@
         "login": "dotnet",
         "avatar_url": "https://github.com/dotnet.png?size=64",
         "html_url": "https://github.com/dotnet"
-      },
-      {
-        "login": "aspnetcore-lead",
-        "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
-      },
-      {
-        "login": "aspnetcore-core",
-        "avatar_url": "https://github.com/aspnetcore.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
-      },
-      {
-        "login": "aspnetcore-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
       }
     ]
   },
@@ -509,21 +359,6 @@
         "login": "androidx",
         "avatar_url": "https://github.com/androidx.png?size=64",
         "html_url": "https://github.com/androidx"
-      },
-      {
-        "login": "androidx-lead",
-        "avatar_url": "https://github.com/androidx.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
-      },
-      {
-        "login": "androidx-core",
-        "avatar_url": "https://github.com/androidx.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
-      },
-      {
-        "login": "androidx-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
       }
     ]
   },

@@ -58,7 +58,7 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
     - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
     - *Security Operating Systems* (7 penetration testing distributions: Kali Linux, Parrot OS, BlackArch, Tails, etc.)
 - **Expandable Community Drawer**:
-  - Top 4 live GitHub contributors with interactive avatar cards and profile links
+  - Notable project contributors & maintainers with interactive avatar cards and direct profile links
   - Top starred new repository of the month
   - Total ecosystem repository count and official release dates
   - Direct external repository navigation
@@ -79,6 +79,7 @@ devsec-status/
 │   ├── ISSUE_TEMPLATE/
 │   │   └── suggest_technology.yml   # Template for suggesting new tools & tech
 │   ├── workflows/
+│   │   ├── ci.yml                   # CI PR verification (tests, schema integrity, build)
 │   │   └── update-data.yml          # Automated 6-hour cron workflow for GitHub API sync
 │   └── pull_request_template.md     # Standard pull request checklist
 ├── public/
@@ -88,6 +89,7 @@ devsec-status/
 │   ├── robots.txt                   # Crawler directives
 │   └── sitemap.xml                  # SEO URL index
 ├── scripts/
+│   ├── fetch-all.ts                 # Unified metric synchronization for all 8 datasets
 │   ├── fetch-languages.ts           # GitHub Search API crawler for languages
 │   ├── fetch-frameworks.ts          # GitHub Search API crawler for frameworks
 │   ├── fetch-databases.ts           # GitHub Search API crawler for databases
@@ -153,10 +155,19 @@ flowchart LR
     D -->|Static Build Import| E[React Frontend<br/>Production Client]
 ```
 
-1. **Scheduled Sync**: A GitHub Actions workflow triggers every 6 hours (`0 */6 * * *`).
-2. **API Query**: `scripts/fetch-*.ts` requests repository search metrics, stars, and creation velocity using `GITHUB_TOKEN`.
+1. **Scheduled Sync**: A GitHub Actions workflow triggers every 6 hours (`0 */6 * * *`) executing `pnpm run fetch:data` via `scripts/fetch-all.ts`.
+2. **API Query**: All 8 datasets are traversed. For GitHub-hosted entries, repository metrics (stars, search volume, and 30-day velocity) are fetched using `GITHUB_TOKEN`.
 3. **Commit & Push**: Updated metrics are verified and committed back to `src/data/*.json`.
 4. **Edge CDN Delivery**: Data is bundled as static assets and served globally via Vercel's Edge CDN, eliminating browser rate limits and third-party query latency.
+
+---
+
+## Methodology & Data Transparency
+
+- **Metrics Source**: Repository popularity metrics (stars, ecosystem repo count, 30-day velocity) reflect the linked open-source repository fetched via GitHub REST and Search APIs.
+- **Repository Scope & Upstream Mirrors**: For technologies primarily maintained outside GitHub (e.g. Linux distributions such as Debian on Salsa, Fedora on Pagure, Arch on Arch GitLab, Tails on self-hosted GitLab, or Kali Linux build configurations), the linked repository represents the official upstream mirror, build configuration, or package tooling.
+- **Non-GitHub Hosted Projects**: Projects without an active GitHub repository (e.g., Tails, CAINE) display `N/A (Not hosted on GitHub)` and are excluded from star-relative bar scaling to avoid comparative distortion.
+- **Contributor Stack**: Displayed contributors represent verified maintainers and active contributors from pre-rendered datasets, avoiding client-side runtime API rate limits.
 
 ---
 

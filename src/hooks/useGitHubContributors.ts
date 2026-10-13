@@ -16,9 +16,23 @@ function ensureAvatarSize(url: string, size = 64): string {
   return url;
 }
 
+function isPlaceholderLogin(login: string): boolean {
+  if (!login) return true;
+  const l = login.toLowerCase();
+  return (
+    l.endsWith('-lead') ||
+    l.endsWith('-core') ||
+    l.endsWith('-team') ||
+    l.includes('-contrib-') ||
+    l === 'forensics-core' ||
+    l === 'github'
+  );
+}
+
 /**
- * Returns contributors from pre-populated datasets.
- * Client-side runtime fetch is disabled to eliminate 403 Rate Limit errors and network bottlenecks.
+ * Returns verified contributors from pre-populated datasets.
+ * Filters out synthetic placeholders (-lead, -core, -team) and falls back to
+ * legitimate project maintainers/owners without runtime network bottlenecks.
  */
 export function useGitHubContributors(
   githubUrl: string,
@@ -26,24 +40,29 @@ export function useGitHubContributors(
 ): Contributor[] {
   return useMemo(() => {
     if (initialContributors && initialContributors.length > 0) {
-      return initialContributors.map((c) => ({
-        ...c,
-        avatar_url: ensureAvatarSize(c.avatar_url),
-      }));
+      const valid = initialContributors.filter((c) => !isPlaceholderLogin(c.login));
+      if (valid.length > 0) {
+        return valid.map((c) => ({
+          ...c,
+          avatar_url: ensureAvatarSize(c.avatar_url),
+        }));
+      }
     }
 
     try {
       const urlObj = new URL(githubUrl);
-      const parts = urlObj.pathname.split('/').filter(Boolean);
-      if (parts.length >= 2) {
-        const owner = parts[0];
-        const repo = parts[1];
-        return [
-          { login: owner, avatar_url: `https://github.com/${owner}.png?size=64`, html_url: `https://github.com/${owner}` },
-          { login: `${repo}-contrib-1`, avatar_url: `https://github.com/${owner}.png?size=64`, html_url: githubUrl },
-          { login: `${repo}-contrib-2`, avatar_url: `https://github.com/${repo}.png?size=64`, html_url: githubUrl },
-          { login: `${repo}-contrib-3`, avatar_url: DEFAULT_AVATAR, html_url: githubUrl },
-        ];
+      if (urlObj.hostname === 'github.com') {
+        const parts = urlObj.pathname.split('/').filter(Boolean);
+        if (parts.length >= 1) {
+          const owner = parts[0];
+          return [
+            {
+              login: owner,
+              avatar_url: `https://github.com/${owner}.png?size=64`,
+              html_url: `https://github.com/${owner}`,
+            },
+          ];
+        }
       }
     } catch {
       // Ignore URL parsing errors

@@ -20,6 +20,7 @@ import { GlassBadge } from './GlassBadge';
 import { CardSkeleton } from './CardSkeleton';
 import { Skeleton } from './ui/skeleton';
 import { formatNumber, formatPercent } from '../lib/formatNumber';
+import { isGitHubRepo } from '../lib/urlPolicy';
 
 /**
  * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
@@ -186,7 +187,10 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, 
 
   // Compute maximum stars dynamically for accurate scaling
   const maxStars = useMemo(() => {
-    return Math.max(...entries.map((item) => item.popularity.totalStars), 1);
+    const validStars = entries
+      .filter((item) => isGitHubRepo(item.githubUrl))
+      .map((item) => item.popularity.totalStars);
+    return validStars.length > 0 ? Math.max(...validStars, 1) : 1;
   }, [entries]);
 
   // Sort entries
@@ -196,11 +200,29 @@ export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, 
     if (sortBy === 'name') {
       result.sort((a, b) => a.name.localeCompare(b.name));
     } else if (sortBy === 'stars') {
-      result.sort((a, b) => b.popularity.totalStars - a.popularity.totalStars);
+      result.sort((a, b) => {
+        const aRepo = isGitHubRepo(a.githubUrl);
+        const bRepo = isGitHubRepo(b.githubUrl);
+        if (aRepo && !bRepo) return -1;
+        if (!aRepo && bRepo) return 1;
+        return b.popularity.totalStars - a.popularity.totalStars;
+      });
     } else if (sortBy === 'momentum') {
-      result.sort((a, b) => b.momentum.newReposLast30Days - a.momentum.newReposLast30Days);
+      result.sort((a, b) => {
+        const aRepo = isGitHubRepo(a.githubUrl);
+        const bRepo = isGitHubRepo(b.githubUrl);
+        if (aRepo && !bRepo) return -1;
+        if (!aRepo && bRepo) return 1;
+        return b.momentum.newReposLast30Days - a.momentum.newReposLast30Days;
+      });
     } else if (sortBy === 'ecosystem') {
-      result.sort((a, b) => b.popularity.totalRepos - a.popularity.totalRepos);
+      result.sort((a, b) => {
+        const aRepo = isGitHubRepo(a.githubUrl);
+        const bRepo = isGitHubRepo(b.githubUrl);
+        if (aRepo && !bRepo) return -1;
+        if (!aRepo && bRepo) return 1;
+        return b.popularity.totalRepos - a.popularity.totalRepos;
+      });
     } else if (sortBy === 'year') {
       const getYear = (item: TechEntry) => {
         const match = (item.creator?.releaseDate || '').match(/\b(19\d\d|20\d\d)\b/);
@@ -342,6 +364,8 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
   const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
+  const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
+
   const percentage = Math.min(
     100,
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
@@ -428,24 +452,41 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
       {/* 4. Popülarite & Kapsül Barı */}
       <td className="py-2.5 lg:py-3 px-1 lg:px-2 align-middle">
-        <div className="space-y-1 w-20 md:w-22 lg:w-36 my-auto">
-          <div className="flex justify-between items-center text-[9px] sm:text-[10px] lg:text-[11px]">
-            <span className="font-mono font-bold text-foreground flex items-center gap-0.5 lg:gap-1">
-              <span className="text-amber-500 font-normal">★</span>
-              <span>{formattedStars}</span>
-            </span>
-            <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
-              {formatPercent(percentage, i18n.language)}
-            </span>
+        {isHostedOnGitHub ? (
+          <div className="space-y-1 w-20 md:w-22 lg:w-36 my-auto">
+            <div className="flex justify-between items-center text-[9px] sm:text-[10px] lg:text-[11px]">
+              <span className="font-mono font-bold text-foreground flex items-center gap-0.5 lg:gap-1">
+                <span className="text-amber-500 font-normal">★</span>
+                <span>{formattedStars}</span>
+              </span>
+              <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
+                {formatPercent(percentage, i18n.language)}
+              </span>
+            </div>
+            <SegmentedProgressBar percentage={percentage} totalSegments={12} className="py-0.5" />
           </div>
-          <SegmentedProgressBar percentage={percentage} totalSegments={12} className="py-0.5" />
-        </div>
+        ) : (
+          <div className="space-y-1 w-20 md:w-22 lg:w-36 my-auto">
+            <div className="flex items-center gap-1.5">
+              <span className="font-mono font-bold text-[10px] lg:text-xs text-neutral-400 dark:text-neutral-500">
+                N/A
+              </span>
+              <span className="text-[9px] lg:text-[10px] text-neutral-400 dark:text-neutral-500 whitespace-nowrap">
+                ({t('table.notHostedOnGitHub')})
+              </span>
+            </div>
+          </div>
+        )}
       </td>
 
       {/* 5. İvmelenme */}
       <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible align-middle">
         <div className="flex items-center justify-center">
-          {entry.momentum.newReposLast30Days > 0 ? (
+          {!isHostedOnGitHub ? (
+            <span className="font-mono text-[10px] lg:text-xs font-semibold text-neutral-400 dark:text-neutral-500">
+              N/A
+            </span>
+          ) : entry.momentum.newReposLast30Days > 0 ? (
             <div className="inline-flex items-center gap-0.5 lg:gap-1 font-mono text-[10px] lg:text-xs font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-1.5 lg:px-2.5 py-0.5 rounded-md border border-emerald-500/20 whitespace-nowrap">
               <TrendingUp className="w-2.5 h-2.5 lg:w-3 lg:h-3" />
               <span>+{formattedNewRepos}</span>
@@ -470,30 +511,36 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
       {/* 6. CANLI EKOSİSTEM HACMİ (Swapped with Latest Version) */}
       <td className="py-2.5 lg:py-3 px-1 text-center overflow-visible align-middle">
-        <div className="space-y-0.5 text-center flex flex-col items-center justify-center">
-          <div className="relative group/ecosystem inline-flex items-center justify-center gap-0.5 lg:gap-1 font-mono font-bold text-[10px] lg:text-xs text-foreground cursor-default">
-            <Boxes className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-neutral-400" />
-            <span>{formattedTotalRepos}</span>
-            {/* Custom Styled Instant Tooltip - Constrained to prevent horizontal scrolling or clipping */}
-            <div className="hidden group-hover/ecosystem:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
-              <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
-              {t('table.totalReposTooltip')}
-            </div>
-          </div>
-          {entry.momentum.topStarredNewRepo && (
-            <div className="relative group/toprepo block mx-auto cursor-default">
-              <div className="text-[9px] lg:text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[75px] lg:max-w-[110px] mx-auto">
-                <Sparkles className="w-2 h-2 lg:w-2.5 lg:h-2.5 shrink-0" />
-                <span className="truncate">{entry.momentum.topStarredNewRepo.stars} ★</span>
-              </div>
+        {!isHostedOnGitHub ? (
+          <span className="font-mono font-bold text-[10px] lg:text-xs text-neutral-400 dark:text-neutral-500">
+            N/A
+          </span>
+        ) : (
+          <div className="space-y-0.5 text-center flex flex-col items-center justify-center">
+            <div className="relative group/ecosystem inline-flex items-center justify-center gap-0.5 lg:gap-1 font-mono font-bold text-[10px] lg:text-xs text-foreground cursor-default">
+              <Boxes className="w-2.5 h-2.5 lg:w-3 lg:h-3 text-neutral-400" />
+              <span>{formattedTotalRepos}</span>
               {/* Custom Styled Instant Tooltip - Constrained to prevent horizontal scrolling or clipping */}
-              <div className="hidden group-hover/toprepo:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
+              <div className="hidden group-hover/ecosystem:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
                 <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
-                {t('table.topStarredNewRepoTooltip')}: {entry.momentum.topStarredNewRepo.stars} ★
+                {t('table.totalReposTooltip')}
               </div>
             </div>
-          )}
-        </div>
+            {entry.momentum.topStarredNewRepo && (
+              <div className="relative group/toprepo block mx-auto cursor-default">
+                <div className="text-[9px] lg:text-[10px] text-amber-500 font-mono flex items-center justify-center gap-0.5 truncate max-w-[75px] lg:max-w-[110px] mx-auto">
+                  <Sparkles className="w-2 h-2 lg:w-2.5 lg:h-2.5 shrink-0" />
+                  <span className="truncate">{entry.momentum.topStarredNewRepo.stars} ★</span>
+                </div>
+                {/* Custom Styled Instant Tooltip - Constrained to prevent horizontal scrolling or clipping */}
+                <div className="hidden group-hover/toprepo:block absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 z-[80] bg-[#CEFF00] text-[#141414] font-bold text-xs px-2.5 py-1 rounded-xl shadow-md max-w-[190px] w-max whitespace-normal text-center leading-snug pointer-events-none">
+                  <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-x-[5px] border-x-transparent border-t-[6px] border-t-[#CEFF00]" />
+                  {t('table.topStarredNewRepoTooltip')}: {entry.momentum.topStarredNewRepo.stars} ★
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </td>
 
       {/* 7. TOPLULUK & KATKIDA BULUNANLAR */}
@@ -661,6 +708,8 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : 'v1.0.0';
   const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
+  const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
+
   const percentage = Math.min(
     100,
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
@@ -743,18 +792,25 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
       </div>
 
       {/* Segmented Metric Bar */}
-      <div className="space-y-1">
-        <div className="flex justify-between items-center text-xs">
-          <span className="font-mono font-bold text-foreground flex items-center gap-1">
-            <span className="text-amber-500 font-normal">★</span>
-            <span>{formattedStars}</span>
-          </span>
-          <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
-            {formatPercent(percentage, i18n.language)}
-          </span>
+      {isHostedOnGitHub ? (
+        <div className="space-y-1">
+          <div className="flex justify-between items-center text-xs">
+            <span className="font-mono font-bold text-foreground flex items-center gap-1">
+              <span className="text-amber-500 font-normal">★</span>
+              <span>{formattedStars}</span>
+            </span>
+            <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
+              {formatPercent(percentage, i18n.language)}
+            </span>
+          </div>
+          <SegmentedProgressBar percentage={percentage} totalSegments={18} />
         </div>
-        <SegmentedProgressBar percentage={percentage} totalSegments={18} />
-      </div>
+      ) : (
+        <div className="flex items-center gap-1.5 py-1 text-xs">
+          <span className="font-mono font-bold text-neutral-400 dark:text-neutral-500">N/A</span>
+          <span className="text-[11px] text-neutral-400 dark:text-neutral-500">({t('table.notHostedOnGitHub')})</span>
+        </div>
+      )}
 
       {/* Contributors Stack & Ekosistem Hacmi */}
       <div className="flex items-center justify-between pt-2 border-t border-neutral-100 dark:border-neutral-800/80 text-xs">
@@ -775,13 +831,21 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             ))}
           </div>
           <div className="flex items-center gap-1 text-[11px] text-neutral-500 font-mono">
-            <Boxes className="w-3 h-3 text-neutral-400" />
-            <span>{formattedTotalRepos} repo</span>
+            {isHostedOnGitHub ? (
+              <>
+                <Boxes className="w-3 h-3 text-neutral-400" />
+                <span>{formattedTotalRepos} repo</span>
+              </>
+            ) : (
+              <span>N/A</span>
+            )}
           </div>
         </div>
 
         <div className="flex items-center gap-2">
-          {entry.momentum.newReposLast30Days > 0 ? (
+          {!isHostedOnGitHub ? (
+            <span className="font-mono text-xs text-neutral-400 dark:text-neutral-500">N/A</span>
+          ) : entry.momentum.newReposLast30Days > 0 ? (
             <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
               <TrendingUp className="w-3 h-3" />
               <span>+{formattedNewRepos}</span>

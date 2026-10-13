@@ -14,15 +14,12 @@
       "latestVersion": "2025.1"
     },
     "popularity": {
-      "totalRepos": 16040,
-      "totalStars": 89400
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 954,
-      "topStarredNewRepo": {
-        "name": "madeye/ServerBox",
-        "stars": 255
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:18.808Z",
     "contributors": [
@@ -92,7 +89,7 @@
     "name": "BlackArch",
     "category": "linux-distro",
     "subCategory": "Arch-Based Pentesting OS with 2800+ Tools",
-    "iconUrl": "https://blackarch.org/images/logo.png",
+    "iconUrl": "https://cdn.simpleicons.org/blackarch",
     "githubUrl": "https://github.com/BlackArch/blackarch",
     "creator": {
       "name": "Evan Teitelman (BlackArch Team)",
@@ -146,15 +143,12 @@
       "latestVersion": "Tails 6.11"
     },
     "popularity": {
-      "totalRepos": 13153,
-      "totalStars": 18200
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 1066,
-      "topStarredNewRepo": {
-        "name": "holdmysocks/ps5-tailscale",
-        "stars": 40
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:31.563Z",
     "contributors": [
@@ -268,7 +262,7 @@
     "name": "CAINE",
     "category": "linux-distro",
     "subCategory": "Computer Aided Investigative Digital Forensics OS",
-    "iconUrl": "https://www.distrowiz.com/wp-content/uploads/2024/08/caine-logo-150x150.png",
+    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     "githubUrl": "https://www.caine-live.net",
     "creator": {
       "name": "Nanni Bassetti",
@@ -278,15 +272,12 @@
       "latestVersion": "CAINE 14.0"
     },
     "popularity": {
-      "totalRepos": 473,
-      "totalStars": 3890
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 21,
-      "topStarredNewRepo": {
-        "name": "securizart/offensive-forensic-distros-installer-macbook-air-M1-M2-external-disk-luks",
-        "stars": 1
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:44.128Z",
     "contributors": [
@@ -294,16 +285,6 @@
         "login": "nannibassetti",
         "avatar_url": "https://avatars.githubusercontent.com/u/12171140?size=64&v=4",
         "html_url": "https://github.com/nannibassetti"
-      },
-      {
-        "login": "caine-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://www.caine-live.net"
-      },
-      {
-        "login": "forensics-core",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://www.caine-live.net"
       }
     ]
   }

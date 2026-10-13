@@ -102,15 +102,12 @@
       "latestVersion": "Debian 12"
     },
     "popularity": {
-      "totalRepos": 58323,
-      "totalStars": 52600
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 1690,
-      "topStarredNewRepo": {
-        "name": "madeye/ServerBox",
-        "stars": 255
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:50:40.776Z",
     "contributors": [
@@ -146,15 +143,12 @@
       "latestVersion": "Fedora 41"
     },
     "popularity": {
-      "totalRepos": 49193,
-      "totalStars": 41200
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 853,
-      "topStarredNewRepo": {
-        "name": "uzayr-iqbal-hamid/nothing-os-dots-hyprland",
-        "stars": 32
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:50:44.724Z",
     "contributors": [
@@ -190,15 +184,12 @@
       "latestVersion": "2025.01"
     },
     "popularity": {
-      "totalRepos": 24659,
-      "totalStars": 49800
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 978,
-      "topStarredNewRepo": {
-        "name": "madeye/ServerBox",
-        "stars": 255
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:50:48.357Z",
     "contributors": [
@@ -234,15 +225,12 @@
       "latestVersion": "Leap 15.6"
     },
     "popularity": {
-      "totalRepos": 2581,
-      "totalStars": 28600
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 66,
-      "topStarredNewRepo": {
-        "name": "nixietab/vlcro",
-        "stars": 3
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:50:52.072Z",
     "contributors": [
@@ -366,15 +354,12 @@
       "latestVersion": "v24.2"
     },
     "popularity": {
-      "totalRepos": 3567,
-      "totalStars": 19400
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 62,
-      "topStarredNewRepo": {
-        "name": "dodog/awesome-gnome-extensions",
-        "stars": 2
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:05.736Z",
     "contributors": [

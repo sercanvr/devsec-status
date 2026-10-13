@@ -1,6 +1,14 @@
 import { describe, it, expect } from 'vitest';
 import fs from 'fs';
 import path from 'path';
+import {
+  isSafeLocalAsset,
+  isAllowedIconUrl,
+  isAllowedAvatarUrl,
+  isAllowedRepoUrl,
+  ALLOWED_CATEGORIES,
+  ALLOWED_CREATOR_TYPES,
+} from '../src/lib/urlPolicy';
 
 const dataFiles = [
   'ai-infrastructure.json',
@@ -47,63 +55,50 @@ describe('Dataset Integrity & Schema Validation', () => {
     }
   });
 
-  it('all URLs adhere to HTTPS security standards and trusted host allowlist', () => {
-    const allowedHosts = new Set([
-      'cdn.simpleicons.org',
-      'cdn.jsdelivr.net',
-      'avatars.githubusercontent.com',
-      'raw.githubusercontent.com',
-      'github.com',
-      'msercanvar.sirv.com',
-      'blackarch.org',
-      'www.distrowiz.com',
-      'gchq.github.io',
-    ]);
-
-    const allowedRepoHosts = new Set([
-      'github.com',
-      'gitlab.com',
-      'gitlab.tails.boum.org',
-      'www.caine-live.net',
-    ]);
-
+  it('validates enum values for category and creator.type', () => {
     for (const file of dataFiles) {
       const filePath = path.resolve(__dirname, '../src/data', file);
       const entries = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
       for (const entry of entries) {
-        // 1. githubUrl must use HTTPS and belong to trusted code repositories
         expect(
-          entry.githubUrl.startsWith('https://'),
-          `Invalid githubUrl in ${entry.id}: must use HTTPS`
-        ).toBe(true);
-        const repoHost = new URL(entry.githubUrl).hostname;
-        expect(
-          allowedRepoHosts.has(repoHost),
-          `Untrusted githubUrl host '${repoHost}' in entry ${entry.id}`
+          ALLOWED_CATEGORIES.has(entry.category),
+          `Invalid category '${entry.category}' in entry ${entry.id} (${file})`
         ).toBe(true);
 
-        // 2. iconUrl must be a valid local asset (/...) or an HTTPS URL from allowed hosts
-        // Disallow protocol-relative (//evil.com) or backslash bypasses (/\\evil.com)
-        const isLocalAsset = /^\/(?![\/\\])/.test(entry.iconUrl);
-        if (isLocalAsset) {
-          // Valid local icon path
-        } else {
-          expect(entry.iconUrl.startsWith('https://'), `iconUrl must use HTTPS: ${entry.iconUrl}`).toBe(true);
-          const iconHost = new URL(entry.iconUrl).hostname;
+        if (entry.creator) {
           expect(
-            allowedHosts.has(iconHost),
-            `Untrusted iconUrl host '${iconHost}' in entry ${entry.id}`
+            ALLOWED_CREATOR_TYPES.has(entry.creator.type),
+            `Invalid creator.type '${entry.creator.type}' in entry ${entry.id} (${file})`
           ).toBe(true);
         }
+      }
+    }
+  });
 
-        // 3. creator avatarUrl must be an HTTPS URL from allowed hosts
+  it('all URLs adhere to HTTPS security standards and trusted host allowlist', () => {
+    for (const file of dataFiles) {
+      const filePath = path.resolve(__dirname, '../src/data', file);
+      const entries = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+      for (const entry of entries) {
+        // 1. githubUrl must adhere to allowed repo hosts
+        expect(
+          isAllowedRepoUrl(entry.githubUrl),
+          `Untrusted githubUrl in entry ${entry.id}: ${entry.githubUrl}`
+        ).toBe(true);
+
+        // 2. iconUrl must be a safe local asset or allowed remote icon host
+        expect(
+          isAllowedIconUrl(entry.iconUrl),
+          `Untrusted or invalid iconUrl in entry ${entry.id}: ${entry.iconUrl}`
+        ).toBe(true);
+
+        // 3. creator avatarUrl must belong to allowed avatar hosts
         if (entry.creator?.avatarUrl) {
-          expect(entry.creator.avatarUrl.startsWith('https://'), `avatarUrl must use HTTPS: ${entry.creator.avatarUrl}`).toBe(true);
-          const avatarHost = new URL(entry.creator.avatarUrl).hostname;
           expect(
-            allowedHosts.has(avatarHost),
-            `Untrusted avatarUrl host '${avatarHost}' in entry ${entry.id}`
+            isAllowedAvatarUrl(entry.creator.avatarUrl),
+            `Untrusted creator avatarUrl in entry ${entry.id}: ${entry.creator.avatarUrl}`
           ).toBe(true);
         }
       }
@@ -112,13 +107,25 @@ describe('Dataset Integrity & Schema Validation', () => {
 
   describe('Security Validation Edge Cases (Negative Testing)', () => {
     it('correctly rejects protocol-relative, backslash bypasses, and javascript URLs', () => {
-      const isSafeLocalPath = (url: string) => /^\/(?![\/\\])/.test(url);
-      expect(isSafeLocalPath('/icons/python.webp')).toBe(true);
-      expect(isSafeLocalPath('/icons/sub/logo.svg')).toBe(true);
-      expect(isSafeLocalPath('//evil.com/x.png')).toBe(false);
-      expect(isSafeLocalPath('/\\evil.com/x.png')).toBe(false);
-      expect(isSafeLocalPath('javascript:alert(1)')).toBe(false);
-      expect(isSafeLocalPath('http://insecure.com/x.png')).toBe(false);
+      expect(isSafeLocalAsset('/icons/python.webp')).toBe(true);
+      expect(isSafeLocalAsset('/icons/sub/logo.svg')).toBe(true);
+      expect(isSafeLocalAsset('//evil.com/x.png')).toBe(false);
+      expect(isSafeLocalAsset('/\\evil.com/x.png')).toBe(false);
+      expect(isSafeLocalAsset('javascript:alert(1)')).toBe(false);
+      expect(isSafeLocalAsset('http://insecure.com/x.png')).toBe(false);
+    });
+
+    it('correctly validates icon allowlist policy', () => {
+      expect(isAllowedIconUrl('/icons/python.webp')).toBe(true);
+      expect(isAllowedIconUrl('https://cdn.simpleicons.org/react')).toBe(true);
+      expect(isAllowedIconUrl('https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg')).toBe(true);
+      expect(isAllowedIconUrl('https://raw.githubusercontent.com/user/repo/main/logo.png')).toBe(true);
+      expect(isAllowedIconUrl('https://evil.com/fake-logo.png')).toBe(false);
+      expect(isAllowedIconUrl('http://cdn.simpleicons.org/react')).toBe(false); // Insecure HTTP rejected
+      expect(isAllowedIconUrl('//evil.com/exploit.png')).toBe(false);
+      expect(isAllowedIconUrl('https://www.distrowiz.com/evil.png')).toBe(false); // Removed third-party rejected
+      expect(isAllowedIconUrl('https://blackarch.org/images/logo.png')).toBe(false); // Removed third-party rejected
+      expect(isAllowedIconUrl('https://gchq.github.io/CyberChef/images/logo.png')).toBe(false); // Removed third-party rejected
     });
   });
 });
