@@ -17,7 +17,7 @@
     "noResultsFound": "No technology found for:"
   },
   "info": {
-    "software": "Real-time GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, frameworks, databases, Linux distributions, and open-source AI tools & infrastructure.",
+    "software": "Automated GitHub star counts, total repository volume, and 30-day momentum metrics for programming languages, frameworks, databases, Linux distributions, and open-source AI tools & infrastructure.",
     "security": "GitHub star trends and community activity stats for cybersecurity tools, frameworks, and Linux security distributions (Ghidra, Metasploit, Nmap, Kali, Parrot, etc.). These tools are provided for educational and research purposes within ethical and legal boundaries (security research, pentesting, CTF challenges, and system defense)."
   },
   "sections": {
@@ -31,18 +31,20 @@
     "securityDistros": "Linux Security Distributions"
   },
   "showcase": {
-    "topLanguageBadge": "#1 in List",
+    "topLanguageBadge": "Top Volume",
+    "topStarredLanguageBadge": "Most Starred (Ref. Repo)",
     "topFrameworkBadge": "#1 in List",
     "topDatabaseBadge": "#1 in List",
     "top1": "Top 1",
     "totalStars": "Total Stars",
     "totalEngagements": "Total Engagements",
-    "grossMomentum": "Gross Momentum",
+    "grossMomentum": "Momentum",
+    "momentum": "Momentum",
     "totalDatabases": "Total Stars",
     "totalEcosystem": "Ecosystem Volume",
-    "languagesDesc": "Real-time GitHub usage, repository volume, and popularity momentum for the most adopted technologies across system, web, and AI.",
-    "frameworksDesc": "Real-time developer adoption and release momentum metrics for modern application libraries such as React, Next.js, FastAPI, and Vue.",
-    "databasesDesc": "Production adoption rates and live repository statistics for relational, NoSQL, in-memory, and search engine database technologies.",
+    "languagesDesc": "Automated GitHub usage, repository volume, and popularity momentum for the most adopted technologies across system, web, and AI.",
+    "frameworksDesc": "Automated developer adoption and release momentum metrics for modern application libraries such as React, Next.js, FastAPI, and Vue.",
+    "databasesDesc": "Production adoption rates and repository statistics for relational, NoSQL, in-memory, and search engine database technologies.",
     "exploreLanguages": "Explore Languages",
     "exploreFrameworks": "Explore Frameworks",
     "exploreDatabases": "Explore Databases",
@@ -63,7 +65,7 @@
     "technology": "TECHNOLOGY",
     "creator": "CREATOR",
     "type": "TYPE",
-    "popularity": "POPULARITY & STAR BAR",
+    "popularity": "POPULARITY (REF. REPO ★)",
     "momentum": "MOMENTUM",
     "latestVersion": "LATEST VERSION",
     "community": "COMMUNITY",
@@ -81,7 +83,8 @@
     "neutralBadge": "Neutral",
     "neutralTooltip": "Repository count unchanged in last 30 days / Neutral momentum",
     "totalReposTooltip": "Total Open-Source Ecosystem Repositories",
-    "topStarredNewRepoTooltip": "Top Starred New Repo (30 Days)"
+    "topStarredNewRepoTooltip": "Top Starred New Repo (30 Days)",
+    "notHostedOnGitHub": "Not hosted on GitHub"
   },
   "techBar": {
     "popularity": "Popularity",
@@ -118,7 +121,7 @@
     "disclaimer": "Data is automatically updated daily via GitHub Search API and official databases.",
     "lastUpdated": "Last Updated",
     "allContentUpToDate": "All content is up to date.",
-    "description": "An information platform offering real-time GitHub Search API metrics and momentum data for programming languages, libraries/frameworks, and open-source cybersecurity tools.",
+    "description": "An information platform offering automated GitHub Search API metrics and momentum data for programming languages, libraries/frameworks, and open-source cybersecurity tools.",
     "dataSourceTitle": "DATA & METRICS SOURCE",
     "dataSourceDesc": "Data is automatically updated using the GitHub Search API and official databases."
   },

@@ -20,33 +20,42 @@ export const InitialViewportVignette: React.FC = () => {
     if (!isVisible || isFadingOut) return;
 
     let dismissed = false;
-    const handleScroll = () => {
-      // Calculate remaining distance to page bottom
-      const scrollBottom = window.innerHeight + window.scrollY;
-      const totalHeight = document.documentElement.scrollHeight;
-      const distanceToBottom = totalHeight - scrollBottom;
+    let rafId: number | null = null;
 
-      // When reaching near the footer (~350px before end), smoothly fade out and dismiss
-      if (distanceToBottom <= 350 && !dismissed) {
-        dismissed = true;
-        setIsFadingOut(true);
-        try {
-          sessionStorage.setItem(SESSION_KEY, 'true');
-        } catch {
-          // Ignore storage quota or access errors
+    const handleScroll = () => {
+      if (rafId !== null) return;
+      rafId = window.requestAnimationFrame(() => {
+        // Calculate remaining distance to page bottom
+        const scrollBottom = window.innerHeight + window.scrollY;
+        const totalHeight = document.documentElement.scrollHeight;
+        const distanceToBottom = totalHeight - scrollBottom;
+
+        // When reaching near the footer (~350px before end), smoothly fade out and dismiss
+        if (distanceToBottom <= 350 && !dismissed) {
+          dismissed = true;
+          setIsFadingOut(true);
+          try {
+            sessionStorage.setItem(SESSION_KEY, 'true');
+          } catch {
+            // Ignore storage quota or access errors
+          }
+          // After transition completes, remove from DOM
+          setTimeout(() => {
+            setIsVisible(false);
+          }, 700);
         }
-        // After transition completes, remove from DOM
-        setTimeout(() => {
-          setIsVisible(false);
-        }, 700);
-      }
+        rafId = null;
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     // Check initial position in case page loads at the bottom
     handleScroll();
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [isVisible, isFadingOut]);
 
   if (!isVisible) return null;

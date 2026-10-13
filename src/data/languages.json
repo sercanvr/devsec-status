@@ -28,17 +28,20 @@
       {
         "login": "torvalds",
         "avatar_url": "https://github.com/torvalds.png?size=64",
-        "html_url": "https://github.com/torvalds"
+        "html_url": "https://github.com/torvalds",
+        "type": "User"
       },
       {
         "login": "davem330",
         "avatar_url": "https://github.com/davem330.png?size=64",
-        "html_url": "https://github.com/davem330"
+        "html_url": "https://github.com/davem330",
+        "type": "User"
       },
       {
         "login": "arndb",
         "avatar_url": "https://github.com/arndb.png?size=64",
-        "html_url": "https://github.com/arndb"
+        "html_url": "https://github.com/arndb",
+        "type": "User"
       }
     ]
   },
@@ -71,22 +74,26 @@
       {
         "login": "rsc",
         "avatar_url": "https://avatars.githubusercontent.com/u/104030?v=4&s=64",
-        "html_url": "https://github.com/rsc"
+        "html_url": "https://github.com/rsc",
+        "type": "User"
       },
       {
         "login": "griesemer",
         "avatar_url": "https://avatars.githubusercontent.com/u/8528975?v=4&s=64",
-        "html_url": "https://github.com/griesemer"
+        "html_url": "https://github.com/griesemer",
+        "type": "User"
       },
       {
         "login": "robpike",
         "avatar_url": "https://avatars.githubusercontent.com/u/4324516?v=4&s=64",
-        "html_url": "https://github.com/robpike"
+        "html_url": "https://github.com/robpike",
+        "type": "User"
       },
       {
         "login": "ianlancetaylor",
         "avatar_url": "https://avatars.githubusercontent.com/u/3194333?v=4&s=64",
-        "html_url": "https://github.com/ianlancetaylor"
+        "html_url": "https://github.com/ianlancetaylor",
+        "type": "User"
       }
     ]
   },
@@ -119,22 +126,26 @@
       {
         "login": "bors",
         "avatar_url": "https://avatars.githubusercontent.com/u/3372342?v=4&s=64",
-        "html_url": "https://github.com/bors"
+        "html_url": "https://github.com/bors",
+        "type": "Bot"
       },
       {
         "login": "matthiaskrgr",
         "avatar_url": "https://avatars.githubusercontent.com/u/476013?v=4&s=64",
-        "html_url": "https://github.com/matthiaskrgr"
+        "html_url": "https://github.com/matthiaskrgr",
+        "type": "User"
       },
       {
         "login": "RalfJung",
         "avatar_url": "https://avatars.githubusercontent.com/u/330628?v=4&s=64",
-        "html_url": "https://github.com/RalfJung"
+        "html_url": "https://github.com/RalfJung",
+        "type": "User"
       },
       {
         "login": "GuillaumeGomez",
         "avatar_url": "https://avatars.githubusercontent.com/u/3050060?v=4&s=64",
-        "html_url": "https://github.com/GuillaumeGomez"
+        "html_url": "https://github.com/GuillaumeGomez",
+        "type": "User"
       }
     ]
   },
@@ -167,22 +178,26 @@
       {
         "login": "ahejlsberg",
         "avatar_url": "https://avatars.githubusercontent.com/u/4226954?v=4&s=64",
-        "html_url": "https://github.com/ahejlsberg"
+        "html_url": "https://github.com/ahejlsberg",
+        "type": "User"
       },
       {
         "login": "sheetalkamat",
         "avatar_url": "https://avatars.githubusercontent.com/u/8052792?v=4&s=64",
-        "html_url": "https://github.com/sheetalkamat"
+        "html_url": "https://github.com/sheetalkamat",
+        "type": "User"
       },
       {
         "login": "DanielRosenwasser",
         "avatar_url": "https://avatars.githubusercontent.com/u/972891?v=4&s=64",
-        "html_url": "https://github.com/DanielRosenwasser"
+        "html_url": "https://github.com/DanielRosenwasser",
+        "type": "User"
       },
       {
         "login": "sandersn",
         "avatar_url": "https://avatars.githubusercontent.com/u/293473?v=4&s=64",
-        "html_url": "https://github.com/sandersn"
+        "html_url": "https://github.com/sandersn",
+        "type": "User"
       }
     ]
   },
@@ -215,22 +230,26 @@
       {
         "login": "gvanrossum",
         "avatar_url": "https://avatars.githubusercontent.com/u/2894642?v=4&s=64",
-        "html_url": "https://github.com/gvanrossum"
+        "html_url": "https://github.com/gvanrossum",
+        "type": "User"
       },
       {
         "login": "vstinner",
         "avatar_url": "https://avatars.githubusercontent.com/u/194129?v=4&s=64",
-        "html_url": "https://github.com/vstinner"
+        "html_url": "https://github.com/vstinner",
+        "type": "User"
       },
       {
         "login": "benjaminp",
         "avatar_url": "https://avatars.githubusercontent.com/u/219470?v=4&s=64",
-        "html_url": "https://github.com/benjaminp"
+        "html_url": "https://github.com/benjaminp",
+        "type": "User"
       },
       {
         "login": "serhiy-storchaka",
         "avatar_url": "https://avatars.githubusercontent.com/u/3659035?v=4&s=64",
-        "html_url": "https://github.com/serhiy-storchaka"
+        "html_url": "https://github.com/serhiy-storchaka",
+        "type": "User"
       }
     ]
   },
@@ -263,22 +282,26 @@
       {
         "login": "swift-ci",
         "avatar_url": "https://avatars.githubusercontent.com/u/15467072?v=4&s=64",
-        "html_url": "https://github.com/swift-ci"
+        "html_url": "https://github.com/swift-ci",
+        "type": "Bot"
       },
       {
         "login": "DougGregor",
         "avatar_url": "https://avatars.githubusercontent.com/u/989428?v=4&s=64",
-        "html_url": "https://github.com/DougGregor"
+        "html_url": "https://github.com/DougGregor",
+        "type": "User"
       },
       {
         "login": "slavapestov",
         "avatar_url": "https://avatars.githubusercontent.com/u/66486?v=4&s=64",
-        "html_url": "https://github.com/slavapestov"
+        "html_url": "https://github.com/slavapestov",
+        "type": "User"
       },
       {
         "login": "gottesmm",
         "avatar_url": "https://avatars.githubusercontent.com/u/499423?v=4&s=64",
-        "html_url": "https://github.com/gottesmm"
+        "html_url": "https://github.com/gottesmm",
+        "type": "User"
       }
     ]
   },
@@ -311,22 +334,26 @@
       {
         "login": "udalov",
         "avatar_url": "https://avatars.githubusercontent.com/u/292714?v=4&s=64",
-        "html_url": "https://github.com/udalov"
+        "html_url": "https://github.com/udalov",
+        "type": "User"
       },
       {
         "login": "mglukhikh",
         "avatar_url": "https://avatars.githubusercontent.com/u/1127631?v=4&s=64",
-        "html_url": "https://github.com/mglukhikh"
+        "html_url": "https://github.com/mglukhikh",
+        "type": "User"
       },
       {
         "login": "demiurg906",
         "avatar_url": "https://avatars.githubusercontent.com/u/14974409?v=4&s=64",
-        "html_url": "https://github.com/demiurg906"
+        "html_url": "https://github.com/demiurg906",
+        "type": "User"
       },
       {
         "login": "dimonchik0036",
         "avatar_url": "https://avatars.githubusercontent.com/u/22503910?v=4&s=64",
-        "html_url": "https://github.com/dimonchik0036"
+        "html_url": "https://github.com/dimonchik0036",
+        "type": "User"
       }
     ]
   },
@@ -359,22 +386,26 @@
       {
         "login": "andrewrk",
         "avatar_url": "https://avatars.githubusercontent.com/u/106511?v=4&s=64",
-        "html_url": "https://github.com/andrewrk"
+        "html_url": "https://github.com/andrewrk",
+        "type": "User"
       },
       {
         "login": "kubkon",
         "avatar_url": "https://avatars.githubusercontent.com/u/1519747?v=4&s=64",
-        "html_url": "https://github.com/kubkon"
+        "html_url": "https://github.com/kubkon",
+        "type": "User"
       },
       {
         "login": "alexrp",
         "avatar_url": "https://avatars.githubusercontent.com/u/44076?v=4&s=64",
-        "html_url": "https://github.com/alexrp"
+        "html_url": "https://github.com/alexrp",
+        "type": "User"
       },
       {
         "login": "Vexu",
         "avatar_url": "https://avatars.githubusercontent.com/u/15308111?v=4&s=64",
-        "html_url": "https://github.com/Vexu"
+        "html_url": "https://github.com/Vexu",
+        "type": "User"
       }
     ]
   },
@@ -407,22 +438,26 @@
       {
         "login": "lattner",
         "avatar_url": "https://avatars.githubusercontent.com/u/15152540?v=4&s=64",
-        "html_url": "https://github.com/lattner"
+        "html_url": "https://github.com/lattner",
+        "type": "User"
       },
       {
         "login": "topperc",
         "avatar_url": "https://avatars.githubusercontent.com/u/22566570?v=4&s=64",
-        "html_url": "https://github.com/topperc"
+        "html_url": "https://github.com/topperc",
+        "type": "User"
       },
       {
         "login": "RKSimon",
         "avatar_url": "https://avatars.githubusercontent.com/u/2175834?v=4&s=64",
-        "html_url": "https://github.com/RKSimon"
+        "html_url": "https://github.com/RKSimon",
+        "type": "User"
       },
       {
         "login": "arsenm",
         "avatar_url": "https://avatars.githubusercontent.com/u/138339?v=4&s=64",
-        "html_url": "https://github.com/arsenm"
+        "html_url": "https://github.com/arsenm",
+        "type": "User"
       }
     ]
   },
@@ -455,22 +490,26 @@
       {
         "login": "dstogov",
         "avatar_url": "https://avatars.githubusercontent.com/u/2510034?v=4&s=64",
-        "html_url": "https://github.com/dstogov"
+        "html_url": "https://github.com/dstogov",
+        "type": "User"
       },
       {
         "login": "nikic",
         "avatar_url": "https://avatars.githubusercontent.com/u/216080?v=4&s=64",
-        "html_url": "https://github.com/nikic"
+        "html_url": "https://github.com/nikic",
+        "type": "User"
       },
       {
         "login": "weltling",
         "avatar_url": "https://avatars.githubusercontent.com/u/22016?v=4&s=64",
-        "html_url": "https://github.com/weltling"
+        "html_url": "https://github.com/weltling",
+        "type": "User"
       },
       {
         "login": "cmb69",
         "avatar_url": "https://avatars.githubusercontent.com/u/2306138?v=4&s=64",
-        "html_url": "https://github.com/cmb69"
+        "html_url": "https://github.com/cmb69",
+        "type": "User"
       }
     ]
   },
@@ -503,22 +542,26 @@
       {
         "login": "josevalim",
         "avatar_url": "https://avatars.githubusercontent.com/u/9582?v=4&s=64",
-        "html_url": "https://github.com/josevalim"
+        "html_url": "https://github.com/josevalim",
+        "type": "User"
       },
       {
         "login": "eksperimental",
         "avatar_url": "https://avatars.githubusercontent.com/u/9133420?v=4&s=64",
-        "html_url": "https://github.com/eksperimental"
+        "html_url": "https://github.com/eksperimental",
+        "type": "User"
       },
       {
         "login": "lexmag",
         "avatar_url": "https://avatars.githubusercontent.com/u/248290?v=4&s=64",
-        "html_url": "https://github.com/lexmag"
+        "html_url": "https://github.com/lexmag",
+        "type": "User"
       },
       {
         "login": "whatyouhide",
         "avatar_url": "https://avatars.githubusercontent.com/u/3890250?v=4&s=64",
-        "html_url": "https://github.com/whatyouhide"
+        "html_url": "https://github.com/whatyouhide",
+        "type": "User"
       }
     ]
   },
@@ -551,22 +594,26 @@
       {
         "login": "backes",
         "avatar_url": "https://avatars.githubusercontent.com/u/468727?v=4&s=64",
-        "html_url": "https://github.com/backes"
+        "html_url": "https://github.com/backes",
+        "type": "User"
       },
       {
         "login": "mi-ac",
         "avatar_url": "https://avatars.githubusercontent.com/u/20834365?v=4&s=64",
-        "html_url": "https://github.com/mi-ac"
+        "html_url": "https://github.com/mi-ac",
+        "type": "User"
       },
       {
         "login": "bmeurer",
         "avatar_url": "https://avatars.githubusercontent.com/u/815988?v=4&s=64",
-        "html_url": "https://github.com/bmeurer"
+        "html_url": "https://github.com/bmeurer",
+        "type": "User"
       },
       {
         "login": "LeszekSwirski",
         "avatar_url": "https://avatars.githubusercontent.com/u/593597?v=4&s=64",
-        "html_url": "https://github.com/LeszekSwirski"
+        "html_url": "https://github.com/LeszekSwirski",
+        "type": "User"
       }
     ]
   },
@@ -599,22 +646,26 @@
       {
         "login": "nobu",
         "avatar_url": "https://avatars.githubusercontent.com/u/16700?v=4&s=64",
-        "html_url": "https://github.com/nobu"
+        "html_url": "https://github.com/nobu",
+        "type": "User"
       },
       {
         "login": "matzbot",
         "avatar_url": "https://avatars.githubusercontent.com/u/29403229?v=4&s=64",
-        "html_url": "https://github.com/matzbot"
+        "html_url": "https://github.com/matzbot",
+        "type": "Bot"
       },
       {
         "login": "hsbt",
         "avatar_url": "https://avatars.githubusercontent.com/u/12301?v=4&s=64",
-        "html_url": "https://github.com/hsbt"
+        "html_url": "https://github.com/hsbt",
+        "type": "User"
       },
       {
         "login": "akr",
         "avatar_url": "https://avatars.githubusercontent.com/u/10538?v=4&s=64",
-        "html_url": "https://github.com/akr"
+        "html_url": "https://github.com/akr",
+        "type": "User"
       }
     ]
   },
@@ -647,22 +698,26 @@
       {
         "login": "shipilev",
         "avatar_url": "https://avatars.githubusercontent.com/u/1858943?v=4&s=64",
-        "html_url": "https://github.com/shipilev"
+        "html_url": "https://github.com/shipilev",
+        "type": "User"
       },
       {
         "login": "prrace",
         "avatar_url": "https://avatars.githubusercontent.com/u/30127347?v=4&s=64",
-        "html_url": "https://github.com/prrace"
+        "html_url": "https://github.com/prrace",
+        "type": "User"
       },
       {
         "login": "jonathan-gibbons",
         "avatar_url": "https://avatars.githubusercontent.com/u/61436102?v=4&s=64",
-        "html_url": "https://github.com/jonathan-gibbons"
+        "html_url": "https://github.com/jonathan-gibbons",
+        "type": "User"
       },
       {
         "login": "coleenp",
         "avatar_url": "https://avatars.githubusercontent.com/u/61806773?v=4&s=64",
-        "html_url": "https://github.com/coleenp"
+        "html_url": "https://github.com/coleenp",
+        "type": "User"
       }
     ]
   },
@@ -695,22 +750,8 @@
       {
         "login": "dotnet",
         "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet"
-      },
-      {
-        "login": "roslyn-lead",
-        "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
-      },
-      {
-        "login": "roslyn-core",
-        "avatar_url": "https://github.com/roslyn.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
-      },
-      {
-        "login": "roslyn-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dotnet/roslyn"
+        "html_url": "https://github.com/dotnet",
+        "type": "User"
       }
     ]
   },
@@ -743,22 +784,8 @@
       {
         "login": "dart-lang",
         "avatar_url": "https://github.com/dart-lang.png?size=64",
-        "html_url": "https://github.com/dart-lang"
-      },
-      {
-        "login": "sdk-lead",
-        "avatar_url": "https://github.com/dart-lang.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
-      },
-      {
-        "login": "sdk-core",
-        "avatar_url": "https://github.com/sdk.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
-      },
-      {
-        "login": "sdk-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dart-lang/sdk"
+        "html_url": "https://github.com/dart-lang",
+        "type": "User"
       }
     ]
   },
@@ -791,22 +818,8 @@
       {
         "login": "lua",
         "avatar_url": "https://github.com/lua.png?size=64",
-        "html_url": "https://github.com/lua"
-      },
-      {
-        "login": "lua-lead",
-        "avatar_url": "https://github.com/lua.png?size=64",
-        "html_url": "https://github.com/lua/lua"
-      },
-      {
-        "login": "lua-core",
-        "avatar_url": "https://github.com/lua.png?size=64",
-        "html_url": "https://github.com/lua/lua"
-      },
-      {
-        "login": "lua-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/lua/lua"
+        "html_url": "https://github.com/lua",
+        "type": "User"
       }
     ]
   },
@@ -839,22 +852,8 @@
       {
         "login": "scala",
         "avatar_url": "https://github.com/scala.png?size=64",
-        "html_url": "https://github.com/scala"
-      },
-      {
-        "login": "scala3-lead",
-        "avatar_url": "https://github.com/scala.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
-      },
-      {
-        "login": "scala3-core",
-        "avatar_url": "https://github.com/scala3.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
-      },
-      {
-        "login": "scala3-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/scala/scala3"
+        "html_url": "https://github.com/scala",
+        "type": "User"
       }
     ]
   },
@@ -887,22 +886,8 @@
       {
         "login": "ghc",
         "avatar_url": "https://github.com/ghc.png?size=64",
-        "html_url": "https://github.com/ghc"
-      },
-      {
-        "login": "ghc-lead",
-        "avatar_url": "https://github.com/ghc.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
-      },
-      {
-        "login": "ghc-core",
-        "avatar_url": "https://github.com/ghc.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
-      },
-      {
-        "login": "ghc-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/ghc/ghc"
+        "html_url": "https://github.com/ghc",
+        "type": "User"
       }
     ]
   },
@@ -935,22 +920,8 @@
       {
         "login": "Perl",
         "avatar_url": "https://github.com/Perl.png?size=64",
-        "html_url": "https://github.com/Perl"
-      },
-      {
-        "login": "perl5-lead",
-        "avatar_url": "https://github.com/Perl.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
-      },
-      {
-        "login": "perl5-core",
-        "avatar_url": "https://github.com/perl5.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
-      },
-      {
-        "login": "perl5-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/Perl/perl5"
+        "html_url": "https://github.com/Perl",
+        "type": "User"
       }
     ]
   },
@@ -983,22 +954,26 @@
       {
         "login": "jaalto",
         "avatar_url": "https://avatars.githubusercontent.com/u/34601?v=4",
-        "html_url": "https://github.com/jaalto"
+        "html_url": "https://github.com/jaalto",
+        "type": "User"
       },
       {
         "login": "brian-fox",
         "avatar_url": "https://github.com/brian-fox.png?size=64",
-        "html_url": "https://github.com/gitGNU/gnu_bash"
+        "html_url": "https://github.com/gitGNU/gnu_bash",
+        "type": "User"
       },
       {
         "login": "chet-ramey",
         "avatar_url": "https://github.com/chet-ramey.png?size=64",
-        "html_url": "https://github.com/gitGNU/gnu_bash"
+        "html_url": "https://github.com/gitGNU/gnu_bash",
+        "type": "User"
       },
       {
         "login": "gitGNU",
         "avatar_url": "https://avatars.githubusercontent.com/u/28318801?v=4",
-        "html_url": "https://github.com/gitGNU"
+        "html_url": "https://github.com/gitGNU",
+        "type": "User"
       }
     ]
   },
@@ -1031,22 +1006,8 @@
       {
         "login": "r-devel",
         "avatar_url": "https://github.com/r-devel.png?size=64",
-        "html_url": "https://github.com/r-devel"
-      },
-      {
-        "login": "r-svn-lead",
-        "avatar_url": "https://github.com/r-devel.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
-      },
-      {
-        "login": "r-svn-core",
-        "avatar_url": "https://github.com/r-svn.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
-      },
-      {
-        "login": "r-svn-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/r-devel/r-svn"
+        "html_url": "https://github.com/r-devel",
+        "type": "User"
       }
     ]
   },
@@ -1079,22 +1040,8 @@
       {
         "login": "apple-oss-distributions",
         "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions"
-      },
-      {
-        "login": "objc4-lead",
-        "avatar_url": "https://github.com/apple-oss-distributions.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
-      },
-      {
-        "login": "objc4-core",
-        "avatar_url": "https://github.com/objc4.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
-      },
-      {
-        "login": "objc4-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/apple-oss-distributions/objc4"
+        "html_url": "https://github.com/apple-oss-distributions",
+        "type": "User"
       }
     ]
   },
@@ -1128,17 +1075,20 @@
       {
         "login": "vtjnash",
         "avatar_url": "https://github.com/vtjnash.png?size=64",
-        "html_url": "https://github.com/vtjnash"
+        "html_url": "https://github.com/vtjnash",
+        "type": "User"
       },
       {
         "login": "JeffBezanson",
         "avatar_url": "https://github.com/JeffBezanson.png?size=64",
-        "html_url": "https://github.com/JeffBezanson"
+        "html_url": "https://github.com/JeffBezanson",
+        "type": "User"
       },
       {
         "login": "StefanKarpinski",
         "avatar_url": "https://github.com/StefanKarpinski.png?size=64",
-        "html_url": "https://github.com/StefanKarpinski"
+        "html_url": "https://github.com/StefanKarpinski",
+        "type": "User"
       }
     ]
   },
@@ -1172,17 +1122,20 @@
       {
         "login": "josevalim",
         "avatar_url": "https://github.com/josevalim.png?size=64",
-        "html_url": "https://github.com/josevalim"
+        "html_url": "https://github.com/josevalim",
+        "type": "User"
       },
       {
         "login": "garazdawi",
         "avatar_url": "https://github.com/garazdawi.png?size=64",
-        "html_url": "https://github.com/garazdawi"
+        "html_url": "https://github.com/garazdawi",
+        "type": "User"
       },
       {
         "login": "rickard-green",
         "avatar_url": "https://github.com/rickard-green.png?size=64",
-        "html_url": "https://github.com/rickard-green"
+        "html_url": "https://github.com/rickard-green",
+        "type": "User"
       }
     ]
   },
@@ -1216,17 +1169,20 @@
       {
         "login": "richhickey",
         "avatar_url": "https://github.com/richhickey.png?size=64",
-        "html_url": "https://github.com/richhickey"
+        "html_url": "https://github.com/richhickey",
+        "type": "User"
       },
       {
         "login": "stuarthalloway",
         "avatar_url": "https://github.com/stuarthalloway.png?size=64",
-        "html_url": "https://github.com/stuarthalloway"
+        "html_url": "https://github.com/stuarthalloway",
+        "type": "User"
       },
       {
         "login": "alexdmiller",
         "avatar_url": "https://github.com/alexdmiller.png?size=64",
-        "html_url": "https://github.com/alexdmiller"
+        "html_url": "https://github.com/alexdmiller",
+        "type": "User"
       }
     ]
   },
@@ -1260,17 +1216,20 @@
       {
         "login": "dsyme",
         "avatar_url": "https://github.com/dsyme.png?size=64",
-        "html_url": "https://github.com/dsyme"
+        "html_url": "https://github.com/dsyme",
+        "type": "User"
       },
       {
         "login": "TIHan",
         "avatar_url": "https://github.com/TIHan.png?size=64",
-        "html_url": "https://github.com/TIHan"
+        "html_url": "https://github.com/TIHan",
+        "type": "User"
       },
       {
         "login": "vladima",
         "avatar_url": "https://github.com/vladima.png?size=64",
-        "html_url": "https://github.com/vladima"
+        "html_url": "https://github.com/vladima",
+        "type": "User"
       }
     ]
   },
@@ -1304,17 +1263,20 @@
       {
         "login": "chriseth",
         "avatar_url": "https://github.com/chriseth.png?size=64",
-        "html_url": "https://github.com/chriseth"
+        "html_url": "https://github.com/chriseth",
+        "type": "User"
       },
       {
         "login": "cameel",
         "avatar_url": "https://github.com/cameel.png?size=64",
-        "html_url": "https://github.com/cameel"
+        "html_url": "https://github.com/cameel",
+        "type": "User"
       },
       {
         "login": "axic",
         "avatar_url": "https://github.com/axic.png?size=64",
-        "html_url": "https://github.com/axic"
+        "html_url": "https://github.com/axic",
+        "type": "User"
       }
     ]
   }

@@ -13,37 +13,23 @@
       "latestVersion": "v19.0.0"
     },
     "popularity": {
-      "totalRepos": 7312095,
-      "totalStars": 250940
+      "totalRepos": 7310734,
+      "totalStars": 250912
     },
     "momentum": {
-      "newReposLast30Days": 91393,
+      "newReposLast30Days": 92607,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 4576
+        "stars": 4543
       }
     },
-    "lastUpdated": "2026-10-13T00:17:56.053Z",
+    "lastUpdated": "2026-10-12T14:42:45.055Z",
     "contributors": [
       {
         "login": "facebook",
         "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook"
-      },
-      {
-        "login": "react-lead",
-        "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook/react"
-      },
-      {
-        "login": "react-core",
-        "avatar_url": "https://github.com/react.png?size=64",
-        "html_url": "https://github.com/facebook/react"
-      },
-      {
-        "login": "react-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/facebook/react"
+        "html_url": "https://github.com/facebook",
+        "type": "Organization"
       }
     ]
   },
@@ -61,37 +47,23 @@
       "latestVersion": "v15.1.7"
     },
     "popularity": {
-      "totalRepos": 522529,
-      "totalStars": 143151
+      "totalRepos": 522158,
+      "totalStars": 143146
     },
     "momentum": {
-      "newReposLast30Days": 20196,
+      "newReposLast30Days": 20435,
       "topStarredNewRepo": {
         "name": "bas3line/ascii",
-        "stars": 804
+        "stars": 787
       }
     },
-    "lastUpdated": "2026-10-13T00:18:00.687Z",
+    "lastUpdated": "2026-10-12T14:42:49.659Z",
     "contributors": [
       {
         "login": "vercel",
         "avatar_url": "https://github.com/vercel.png?size=64",
-        "html_url": "https://github.com/vercel"
-      },
-      {
-        "login": "next.js-lead",
-        "avatar_url": "https://github.com/vercel.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
-      },
-      {
-        "login": "next.js-core",
-        "avatar_url": "https://github.com/next.js.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
-      },
-      {
-        "login": "next.js-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/vercel/next.js"
+        "html_url": "https://github.com/vercel",
+        "type": "User"
       }
     ]
   },
@@ -109,37 +81,23 @@
       "latestVersion": "v0.78.0"
     },
     "popularity": {
-      "totalRepos": 604828,
-      "totalStars": 126644
+      "totalRepos": 604735,
+      "totalStars": 126641
     },
     "momentum": {
-      "newReposLast30Days": 6421,
+      "newReposLast30Days": 6490,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
-        "stars": 475
+        "stars": 471
       }
     },
-    "lastUpdated": "2026-10-13T00:18:05.755Z",
+    "lastUpdated": "2026-10-12T14:42:54.191Z",
     "contributors": [
       {
         "login": "facebook",
         "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook"
-      },
-      {
-        "login": "react-native-lead",
-        "avatar_url": "https://github.com/facebook.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
-      },
-      {
-        "login": "react-native-core",
-        "avatar_url": "https://github.com/react-native.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
-      },
-      {
-        "login": "react-native-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/facebook/react-native"
+        "html_url": "https://github.com/facebook",
+        "type": "Organization"
       }
     ]
   },
@@ -157,37 +115,23 @@
       "latestVersion": "v0.115.8"
     },
     "popularity": {
-      "totalRepos": 493200,
-      "totalStars": 103063
+      "totalRepos": 493527,
+      "totalStars": 103067
     },
     "momentum": {
-      "newReposLast30Days": 35703,
+      "newReposLast30Days": 36017,
       "topStarredNewRepo": {
         "name": "aixisstudio/Snitch",
-        "stars": 303
+        "stars": 314
       }
     },
-    "lastUpdated": "2026-10-13T00:18:10.366Z",
+    "lastUpdated": "2026-10-13T06:42:40.850Z",
     "contributors": [
       {
         "login": "fastapi",
         "avatar_url": "https://github.com/fastapi.png?size=64",
-        "html_url": "https://github.com/fastapi"
-      },
-      {
-        "login": "fastapi-lead",
-        "avatar_url": "https://github.com/fastapi.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
-      },
-      {
-        "login": "fastapi-core",
-        "avatar_url": "https://github.com/fastapi.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
-      },
-      {
-        "login": "fastapi-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/fastapi/fastapi"
+        "html_url": "https://github.com/fastapi",
+        "type": "User"
       }
     ]
   },
@@ -205,37 +149,23 @@
       "latestVersion": "v19.1.0"
     },
     "popularity": {
-      "totalRepos": 1431771,
-      "totalStars": 101039
+      "totalRepos": 1431669,
+      "totalStars": 101033
     },
     "momentum": {
-      "newReposLast30Days": 7951,
+      "newReposLast30Days": 8024,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
-        "stars": 475
+        "stars": 471
       }
     },
-    "lastUpdated": "2026-10-13T00:18:15.391Z",
+    "lastUpdated": "2026-10-12T14:43:03.087Z",
     "contributors": [
       {
         "login": "angular",
         "avatar_url": "https://github.com/angular.png?size=64",
-        "html_url": "https://github.com/angular"
-      },
-      {
-        "login": "angular-lead",
-        "avatar_url": "https://github.com/angular.png?size=64",
-        "html_url": "https://github.com/angular/angular"
-      },
-      {
-        "login": "angular-core",
-        "avatar_url": "https://github.com/angular.png?size=64",
-        "html_url": "https://github.com/angular/angular"
-      },
-      {
-        "login": "angular-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/angular/angular"
+        "html_url": "https://github.com/angular",
+        "type": "User"
       }
     ]
   },
@@ -253,37 +183,23 @@
       "latestVersion": "v4.0.6"
     },
     "popularity": {
-      "totalRepos": 244247,
-      "totalStars": 97896
+      "totalRepos": 244116,
+      "totalStars": 97890
     },
     "momentum": {
-      "newReposLast30Days": 8093,
+      "newReposLast30Days": 8301,
       "topStarredNewRepo": {
         "name": "leeuc10/blurssism",
         "stars": 40
       }
     },
-    "lastUpdated": "2026-10-13T00:18:20.080Z",
+    "lastUpdated": "2026-10-12T14:43:07.865Z",
     "contributors": [
       {
         "login": "tailwindlabs",
         "avatar_url": "https://github.com/tailwindlabs.png?size=64",
-        "html_url": "https://github.com/tailwindlabs"
-      },
-      {
-        "login": "tailwindcss-lead",
-        "avatar_url": "https://github.com/tailwindlabs.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
-      },
-      {
-        "login": "tailwindcss-core",
-        "avatar_url": "https://github.com/tailwindcss.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
-      },
-      {
-        "login": "tailwindcss-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/tailwindlabs/tailwindcss"
+        "html_url": "https://github.com/tailwindlabs",
+        "type": "User"
       }
     ]
   },
@@ -301,37 +217,23 @@
       "latestVersion": "v5.19.0"
     },
     "popularity": {
-      "totalRepos": 93116,
-      "totalStars": 88453
+      "totalRepos": 93100,
+      "totalStars": 88446
     },
     "momentum": {
-      "newReposLast30Days": 1410,
+      "newReposLast30Days": 1419,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 4576
+        "stars": 4544
       }
     },
-    "lastUpdated": "2026-10-13T00:18:24.624Z",
+    "lastUpdated": "2026-10-12T14:43:12.715Z",
     "contributors": [
       {
         "login": "sveltejs",
         "avatar_url": "https://github.com/sveltejs.png?size=64",
-        "html_url": "https://github.com/sveltejs"
-      },
-      {
-        "login": "svelte-lead",
-        "avatar_url": "https://github.com/sveltejs.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
-      },
-      {
-        "login": "svelte-core",
-        "avatar_url": "https://github.com/svelte.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
-      },
-      {
-        "login": "svelte-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/sveltejs/svelte"
+        "html_url": "https://github.com/sveltejs",
+        "type": "User"
       }
     ]
   },
@@ -349,37 +251,23 @@
       "latestVersion": "v11.0.0"
     },
     "popularity": {
-      "totalRepos": 173130,
-      "totalStars": 76817
+      "totalRepos": 173075,
+      "totalStars": 76815
     },
     "momentum": {
-      "newReposLast30Days": 3475,
+      "newReposLast30Days": 3507,
       "topStarredNewRepo": {
         "name": "Local-Settle/local-settle-backend",
         "stars": 132
       }
     },
-    "lastUpdated": "2026-10-13T00:18:29.416Z",
+    "lastUpdated": "2026-10-12T14:43:17.510Z",
     "contributors": [
       {
         "login": "nestjs",
         "avatar_url": "https://github.com/nestjs.png?size=64",
-        "html_url": "https://github.com/nestjs"
-      },
-      {
-        "login": "nest-lead",
-        "avatar_url": "https://github.com/nestjs.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
-      },
-      {
-        "login": "nest-core",
-        "avatar_url": "https://github.com/nest.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
-      },
-      {
-        "login": "nest-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/nestjs/nest"
+        "html_url": "https://github.com/nestjs",
+        "type": "User"
       }
     ]
   },
@@ -397,37 +285,23 @@
       "latestVersion": "v3.5.13"
     },
     "popularity": {
-      "totalRepos": 166055,
-      "totalStars": 54643
+      "totalRepos": 166043,
+      "totalStars": 54635
     },
     "momentum": {
-      "newReposLast30Days": 957,
+      "newReposLast30Days": 965,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 4576
+        "stars": 4544
       }
     },
-    "lastUpdated": "2026-10-13T00:18:33.943Z",
+    "lastUpdated": "2026-10-12T14:43:22.954Z",
     "contributors": [
       {
         "login": "vuejs",
         "avatar_url": "https://github.com/vuejs.png?size=64",
-        "html_url": "https://github.com/vuejs"
-      },
-      {
-        "login": "core-lead",
-        "avatar_url": "https://github.com/vuejs.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
-      },
-      {
-        "login": "core-core",
-        "avatar_url": "https://github.com/core.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
-      },
-      {
-        "login": "core-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/vuejs/core"
+        "html_url": "https://github.com/vuejs",
+        "type": "User"
       }
     ]
   },
@@ -445,37 +319,23 @@
       "latestVersion": ".NET 9.0"
     },
     "popularity": {
-      "totalRepos": 133138,
-      "totalStars": 38471
+      "totalRepos": 133050,
+      "totalStars": 38470
     },
     "momentum": {
-      "newReposLast30Days": 3682,
+      "newReposLast30Days": 3693,
       "topStarredNewRepo": {
-        "name": "codelovingcat/Backend-Safety-Kit",
-        "stars": 10
+        "name": "renatogroffe/opentelemetry_data-ai-saturday-vitoria-2026-09",
+        "stars": 5
       }
     },
-    "lastUpdated": "2026-10-13T00:18:38.565Z",
+    "lastUpdated": "2026-10-12T14:43:28.075Z",
     "contributors": [
       {
         "login": "dotnet",
         "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet"
-      },
-      {
-        "login": "aspnetcore-lead",
-        "avatar_url": "https://github.com/dotnet.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
-      },
-      {
-        "login": "aspnetcore-core",
-        "avatar_url": "https://github.com/aspnetcore.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
-      },
-      {
-        "login": "aspnetcore-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/dotnet/aspnetcore"
+        "html_url": "https://github.com/dotnet",
+        "type": "User"
       }
     ]
   },
@@ -493,37 +353,23 @@
       "latestVersion": "Jetpack 2026"
     },
     "popularity": {
-      "totalRepos": 31212,
-      "totalStars": 6111
+      "totalRepos": 31174,
+      "totalStars": 6110
     },
     "momentum": {
-      "newReposLast30Days": 1951,
+      "newReposLast30Days": 1974,
       "topStarredNewRepo": {
         "name": "kinotvapp/kino-light",
         "stars": 80
       }
     },
-    "lastUpdated": "2026-10-13T00:18:43.053Z",
+    "lastUpdated": "2026-10-12T14:43:32.992Z",
     "contributors": [
       {
         "login": "androidx",
         "avatar_url": "https://github.com/androidx.png?size=64",
-        "html_url": "https://github.com/androidx"
-      },
-      {
-        "login": "androidx-lead",
-        "avatar_url": "https://github.com/androidx.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
-      },
-      {
-        "login": "androidx-core",
-        "avatar_url": "https://github.com/androidx.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
-      },
-      {
-        "login": "androidx-team",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/androidx/androidx"
+        "html_url": "https://github.com/androidx",
+        "type": "User"
       }
     ]
   },
@@ -542,37 +388,41 @@
       "latestVersion": "@geajs/core 1.5.1"
     },
     "popularity": {
-      "totalRepos": 44189,
+      "totalRepos": 44168,
       "totalStars": 1260
     },
     "momentum": {
-      "newReposLast30Days": 1818,
+      "newReposLast30Days": 1838,
       "topStarredNewRepo": {
         "name": "geastack/examples",
         "stars": 120
       }
     },
-    "lastUpdated": "2026-10-13T00:18:47.473Z",
+    "lastUpdated": "2026-10-12T14:43:37.563Z",
     "contributors": [
       {
         "login": "dashersw",
         "avatar_url": "https://avatars.githubusercontent.com/u/698308?v=4",
-        "html_url": "https://github.com/dashersw"
+        "html_url": "https://github.com/dashersw",
+        "type": "User"
       },
       {
         "login": "puskuruk",
         "avatar_url": "https://avatars.githubusercontent.com/u/22892227?v=4",
-        "html_url": "https://github.com/puskuruk"
+        "html_url": "https://github.com/puskuruk",
+        "type": "User"
       },
       {
         "login": "ilkaydnc",
         "avatar_url": "https://avatars.githubusercontent.com/u/39930145?v=4",
-        "html_url": "https://github.com/ilkaydnc"
+        "html_url": "https://github.com/ilkaydnc",
+        "type": "User"
       },
       {
         "login": "kraus-milan",
         "avatar_url": "https://avatars.githubusercontent.com/u/9005778?v=4",
-        "html_url": "https://github.com/kraus-milan"
+        "html_url": "https://github.com/kraus-milan",
+        "type": "User"
       }
     ]
   },
@@ -591,32 +441,35 @@
       "latestVersion": "v5.1.5"
     },
     "popularity": {
-      "totalRepos": 1196766,
-      "totalStars": 91406
+      "totalRepos": 1196632,
+      "totalStars": 91396
     },
     "momentum": {
-      "newReposLast30Days": 13353,
+      "newReposLast30Days": 13524,
       "topStarredNewRepo": {
         "name": "CycleChain/CycleWire",
         "stars": 58
       }
     },
-    "lastUpdated": "2026-10-13T00:18:52.010Z",
+    "lastUpdated": "2026-10-12T14:43:42.237Z",
     "contributors": [
       {
         "login": "felixxm",
         "avatar_url": "https://github.com/felixxm.png?size=64",
-        "html_url": "https://github.com/felixxm"
+        "html_url": "https://github.com/felixxm",
+        "type": "User"
       },
       {
         "login": "claudep",
         "avatar_url": "https://github.com/claudep.png?size=64",
-        "html_url": "https://github.com/claudep"
+        "html_url": "https://github.com/claudep",
+        "type": "User"
       },
       {
         "login": "carltongibson",
         "avatar_url": "https://github.com/carltongibson.png?size=64",
-        "html_url": "https://github.com/carltongibson"
+        "html_url": "https://github.com/carltongibson",
+        "type": "User"
       }
     ]
   },
@@ -635,32 +488,35 @@
       "latestVersion": "v3.4.2"
     },
     "popularity": {
-      "totalRepos": 823475,
-      "totalStars": 81591
+      "totalRepos": 823161,
+      "totalStars": 81590
     },
     "momentum": {
-      "newReposLast30Days": 18204,
+      "newReposLast30Days": 18346,
       "topStarredNewRepo": {
         "name": "wbr664393425-lgtm/scaffold-master",
-        "stars": 213
+        "stars": 199
       }
     },
-    "lastUpdated": "2026-10-13T00:18:56.646Z",
+    "lastUpdated": "2026-10-12T14:43:46.805Z",
     "contributors": [
       {
         "login": "philwebb",
         "avatar_url": "https://github.com/philwebb.png?size=64",
-        "html_url": "https://github.com/philwebb"
+        "html_url": "https://github.com/philwebb",
+        "type": "User"
       },
       {
         "login": "wilkinsona",
         "avatar_url": "https://github.com/wilkinsona.png?size=64",
-        "html_url": "https://github.com/wilkinsona"
+        "html_url": "https://github.com/wilkinsona",
+        "type": "User"
       },
       {
         "login": "snicoll",
         "avatar_url": "https://github.com/snicoll.png?size=64",
-        "html_url": "https://github.com/snicoll"
+        "html_url": "https://github.com/snicoll",
+        "type": "User"
       }
     ]
   },
@@ -679,32 +535,35 @@
       "latestVersion": "v11.38.2"
     },
     "popularity": {
-      "totalRepos": 926176,
-      "totalStars": 85069
+      "totalRepos": 926043,
+      "totalStars": 85068
     },
     "momentum": {
-      "newReposLast30Days": 11481,
+      "newReposLast30Days": 11579,
       "topStarredNewRepo": {
         "name": "marcreichel/laya-php",
-        "stars": 100
+        "stars": 99
       }
     },
-    "lastUpdated": "2026-10-13T00:19:01.133Z",
+    "lastUpdated": "2026-10-12T14:43:51.964Z",
     "contributors": [
       {
         "login": "taylorotwell",
         "avatar_url": "https://github.com/taylorotwell.png?size=64",
-        "html_url": "https://github.com/taylorotwell"
+        "html_url": "https://github.com/taylorotwell",
+        "type": "User"
       },
       {
         "login": "driesvints",
         "avatar_url": "https://github.com/driesvints.png?size=64",
-        "html_url": "https://github.com/driesvints"
+        "html_url": "https://github.com/driesvints",
+        "type": "User"
       },
       {
         "login": "crynobone",
         "avatar_url": "https://github.com/crynobone.png?size=64",
-        "html_url": "https://github.com/crynobone"
+        "html_url": "https://github.com/crynobone",
+        "type": "User"
       }
     ]
   },
@@ -723,32 +582,35 @@
       "latestVersion": "v5.0.1"
     },
     "popularity": {
-      "totalRepos": 314548,
-      "totalStars": 69626
+      "totalRepos": 314403,
+      "totalStars": 69627
     },
     "momentum": {
-      "newReposLast30Days": 8850,
+      "newReposLast30Days": 8988,
       "topStarredNewRepo": {
         "name": "yevody/express-newsletter-opt-in",
         "stars": 13
       }
     },
-    "lastUpdated": "2026-10-13T00:19:05.708Z",
+    "lastUpdated": "2026-10-12T14:43:56.983Z",
     "contributors": [
       {
         "login": "dougwilson",
         "avatar_url": "https://github.com/dougwilson.png?size=64",
-        "html_url": "https://github.com/dougwilson"
+        "html_url": "https://github.com/dougwilson",
+        "type": "User"
       },
       {
         "login": "wesleytodd",
         "avatar_url": "https://github.com/wesleytodd.png?size=64",
-        "html_url": "https://github.com/wesleytodd"
+        "html_url": "https://github.com/wesleytodd",
+        "type": "User"
       },
       {
         "login": "jonathanong",
         "avatar_url": "https://github.com/jonathanong.png?size=64",
-        "html_url": "https://github.com/jonathanong"
+        "html_url": "https://github.com/jonathanong",
+        "type": "User"
       }
     ]
   },
@@ -767,32 +629,35 @@
       "latestVersion": "v3.27.3"
     },
     "popularity": {
-      "totalRepos": 1091666,
-      "totalStars": 179959
+      "totalRepos": 1091293,
+      "totalStars": 179894
     },
     "momentum": {
-      "newReposLast30Days": 22042,
+      "newReposLast30Days": 22199,
       "topStarredNewRepo": {
         "name": "heijiji0527/guoapp",
-        "stars": 119
+        "stars": 118
       }
     },
-    "lastUpdated": "2026-10-13T00:19:10.180Z",
+    "lastUpdated": "2026-10-12T14:44:01.468Z",
     "contributors": [
       {
         "login": "Hixie",
         "avatar_url": "https://github.com/Hixie.png?size=64",
-        "html_url": "https://github.com/Hixie"
+        "html_url": "https://github.com/Hixie",
+        "type": "User"
       },
       {
         "login": "abarth",
         "avatar_url": "https://github.com/abarth.png?size=64",
-        "html_url": "https://github.com/abarth"
+        "html_url": "https://github.com/abarth",
+        "type": "User"
       },
       {
         "login": "HansMuller",
         "avatar_url": "https://github.com/HansMuller.png?size=64",
-        "html_url": "https://github.com/HansMuller"
+        "html_url": "https://github.com/HansMuller",
+        "type": "User"
       }
     ]
   },
@@ -811,32 +676,35 @@
       "latestVersion": "v3.15.2"
     },
     "popularity": {
-      "totalRepos": 12389,
-      "totalStars": 60933
+      "totalRepos": 12391,
+      "totalStars": 60932
     },
     "momentum": {
-      "newReposLast30Days": 74,
+      "newReposLast30Days": 75,
       "topStarredNewRepo": {
         "name": "webtech-network/lab-nuxt-vue",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-13T00:19:15.071Z",
+    "lastUpdated": "2026-10-12T14:44:06.347Z",
     "contributors": [
       {
         "login": "danielroe",
         "avatar_url": "https://github.com/danielroe.png?size=64",
-        "html_url": "https://github.com/danielroe"
+        "html_url": "https://github.com/danielroe",
+        "type": "User"
       },
       {
         "login": "Atinux",
         "avatar_url": "https://github.com/Atinux.png?size=64",
-        "html_url": "https://github.com/Atinux"
+        "html_url": "https://github.com/Atinux",
+        "type": "User"
       },
       {
         "login": "pi0",
         "avatar_url": "https://github.com/pi0.png?size=64",
-        "html_url": "https://github.com/pi0"
+        "html_url": "https://github.com/pi0",
+        "type": "User"
       }
     ]
   },
@@ -855,32 +723,35 @@
       "latestVersion": "v5.3.3"
     },
     "popularity": {
-      "totalRepos": 809150,
-      "totalStars": 174820
+      "totalRepos": 809078,
+      "totalStars": 174815
     },
     "momentum": {
-      "newReposLast30Days": 7294,
+      "newReposLast30Days": 7472,
       "topStarredNewRepo": {
         "name": "ToiCF/CF-Workers-TGProxy",
-        "stars": 761
+        "stars": 748
       }
     },
-    "lastUpdated": "2026-10-13T00:19:19.955Z",
+    "lastUpdated": "2026-10-12T14:44:11.454Z",
     "contributors": [
       {
         "login": "mdo",
         "avatar_url": "https://github.com/mdo.png?size=64",
-        "html_url": "https://github.com/mdo"
+        "html_url": "https://github.com/mdo",
+        "type": "User"
       },
       {
         "login": "fat",
         "avatar_url": "https://github.com/fat.png?size=64",
-        "html_url": "https://github.com/fat"
+        "html_url": "https://github.com/fat",
+        "type": "User"
       },
       {
         "login": "XhmikosR",
         "avatar_url": "https://github.com/XhmikosR.png?size=64",
-        "html_url": "https://github.com/XhmikosR"
+        "html_url": "https://github.com/XhmikosR",
+        "type": "User"
       }
     ]
   }

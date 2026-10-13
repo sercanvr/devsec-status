@@ -17,7 +17,7 @@
     "noResultsFound": "Nenhuma tecnologia encontrada para:"
   },
   "info": {
-    "software": "Contagem de estrelas no GitHub em tempo real, volume total de repositórios e métricas de impulso de 30 dias para linguagens de programação, frameworks, bancos de dados, distribuições Linux e ferramentas de IA de código aberto.",
+    "software": "Contagem de estrelas no GitHub automatizada, volume total de repositórios e métricas de impulso de 30 dias para linguagens de programação, frameworks, bancos de dados, distribuições Linux e ferramentas de IA de código aberto.",
     "security": "Tendências de estrelas no GitHub e estatísticas de atividade da comunidade para ferramentas de segurança cibernética, frameworks e distribuições de segurança Linux (Ghidra, Metasploit, Nmap, Kali, Parrot, etc.). Essas ferramentas são fornecidas para fins educacionais e de pesquisa dentro de limites éticos e legais (pesquisa de segurança, testes de invasão, desafios CTF e defesa de sistemas)."
   },
   "sections": {
@@ -37,11 +37,12 @@
     "top1": "Top 1",
     "totalStars": "Total de Estrelas",
     "totalEngagements": "Total de Engajamentos",
-    "grossMomentum": "Impulso Bruto",
+    "grossMomentum": "Impulso",
+    "momentum": "Impulso",
     "totalDatabases": "Total de Estrelas",
     "totalEcosystem": "Volume do Ecossistema",
-    "languagesDesc": "Uso do GitHub em tempo real, volume de repositórios e popularidade para as tecnologias mais adotadas em sistemas, web e IA.",
-    "frameworksDesc": "Métricas em tempo real de adoção por desenvolvedores e lançamentos para bibliotecas modernas de aplicativos como React, Next.js, FastAPI e Vue.",
+    "languagesDesc": "Uso do GitHub automatizado, volume de repositórios e popularidade para as tecnologias mais adotadas em sistemas, web e IA.",
+    "frameworksDesc": "Métricas automatizadas de adoção por desenvolvedores e lançamentos para bibliotecas modernas de aplicativos como React, Next.js, FastAPI e Vue.",
     "databasesDesc": "Taxas de adoção em produção e estatísticas de repositórios em tempo real para bancos relacionais, NoSQL, em memória e motores de busca.",
     "exploreLanguages": "Explorar Linguagens",
     "exploreFrameworks": "Explorar Frameworks",
@@ -118,7 +119,7 @@
     "disclaimer": "Os dados são atualizados automaticamente todos os dias por meio da API de pesquisa do GitHub e de bancos de dados oficiais.",
     "lastUpdated": "Última Atualização",
     "allContentUpToDate": "Todo o conteúdo está atualizado.",
-    "description": "Uma plataforma de informações que oferece métricas em tempo real da API de pesquisa do GitHub e dados de impulso para linguagens de programação, bibliotecas/frameworks e ferramentas de segurança cibernética de código aberto.",
+    "description": "Uma plataforma de informações que oferece métricas automatizadas da API de pesquisa do GitHub e dados de impulso para linguagens de programação, bibliotecas/frameworks e ferramentas de segurança cibernética de código aberto.",
     "dataSourceTitle": "FONTE DE DADOS E MÉTRICAS",
     "dataSourceDesc": "Os dados são atualizados automaticamente usando a API de pesquisa do GitHub e bancos de dados oficiais."
   },

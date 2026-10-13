@@ -17,7 +17,7 @@
     "noResultsFound": "Aucune technologie trouvée pour :"
   },
   "info": {
-    "software": "Nombre d'étoiles GitHub en temps réel, volume total de dépôts et métriques de dynamisme sur 30 jours pour les langages de programmation, frameworks, bases de données, distributions Linux et outils d'IA open source.",
+    "software": "Nombre d'étoiles GitHub automatisé, volume total de dépôts et métriques de dynamisme sur 30 jours pour les langages de programmation, frameworks, bases de données, distributions Linux et outils d'IA open source.",
     "security": "Tendances des étoiles GitHub et statistiques d'activité communautaire pour les outils de cybersécurité, frameworks et distributions Linux de sécurité (Ghidra, Metasploit, Nmap, Kali, Parrot, etc.). Ces outils sont présentés à des fins éducatives et de recherche dans un cadre éthique et légal (recherche en sécurité, tests d'intrusion, défis CTF et défense système)."
   },
   "sections": {
@@ -37,11 +37,12 @@
     "top1": "Top 1",
     "totalStars": "Total d'étoiles",
     "totalEngagements": "Engagements totaux",
-    "grossMomentum": "Dynamisme brut",
+    "grossMomentum": "Dynamisme",
+    "momentum": "Dynamisme",
     "totalDatabases": "Total d'étoiles",
     "totalEcosystem": "Volume de l'écosystème",
-    "languagesDesc": "Utilisation GitHub en temps réel, volume de dépôts et popularité pour les technologies les plus adoptées dans le système, le web et l'IA.",
-    "frameworksDesc": "Métriques en temps réel sur l'adoption par les développeurs et les versions pour les bibliothèques d'applications modernes telles que React, Next.js, FastAPI et Vue.",
+    "languagesDesc": "Utilisation GitHub automatisée, volume de dépôts et popularité pour les technologies les plus adoptées dans le système, le web et l'IA.",
+    "frameworksDesc": "Métriques automatisées sur l'adoption par les développeurs et les versions pour les bibliothèques d'applications modernes telles que React, Next.js, FastAPI et Vue.",
     "databasesDesc": "Taux d'adoption en production et statistiques de dépôts en direct pour les bases relationnelles, NoSQL, en mémoire et moteurs de recherche.",
     "exploreLanguages": "Explorer les langages",
     "exploreFrameworks": "Explorer les frameworks",
@@ -118,7 +119,7 @@
     "disclaimer": "Les données sont automatiquement mises à jour quotidiennement via l'API GitHub Search et les bases de données officielles.",
     "lastUpdated": "Dernière mise à jour",
     "allContentUpToDate": "Tout le contenu est à jour.",
-    "description": "Une plateforme d'information offrant des métriques en direct de l'API GitHub Search et des données de dynamisme pour les langages de programmation, bibliothèques/frameworks et outils de cybersécurité open source.",
+    "description": "Une plateforme d'information offrant des métriques automatisées de l'API GitHub Search et des données de dynamisme pour les langages de programmation, bibliothèques/frameworks et outils de cybersécurité open source.",
     "dataSourceTitle": "SOURCE DES DONNÉES & MÉTRIQUES",
     "dataSourceDesc": "Les données sont automatiquement mises à jour via l'API GitHub Search et les bases de données officielles."
   },

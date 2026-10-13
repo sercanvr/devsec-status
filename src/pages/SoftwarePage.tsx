@@ -28,10 +28,10 @@ export const SoftwarePage: React.FC = () => {
     }
   }, [location]);
 
-  // Dynamically sort entries by totalStars descending for accurate ranking
+  // Dynamically sort language entries by ecosystem volume (totalRepos) to avoid reference repo star distortion
   const sortedLanguages = useMemo(() => {
     return [...(rawLanguages as TechEntry[])].sort(
-      (a, b) => b.popularity.totalStars - a.popularity.totalStars
+      (a, b) => b.popularity.totalRepos - a.popularity.totalRepos
     );
   }, []);
 
@@ -86,6 +86,7 @@ export const SoftwarePage: React.FC = () => {
           title={t('sections.languages')}
           icon={<Code2 className="w-5 h-5" />}
           entries={sortedLanguages}
+          defaultSort="ecosystem"
           priority
         />
 

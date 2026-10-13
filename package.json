@@ -9,7 +9,7 @@
     "lint": "tsc --noEmit",
     "preview": "vite preview",
     "test": "vitest run",
-    "fetch:data": "tsx scripts/fetch-languages.ts && tsx scripts/fetch-frameworks.ts && tsx scripts/fetch-security-tools.ts && tsx scripts/fetch-databases.ts"
+    "fetch:data": "tsx scripts/fetch-all.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

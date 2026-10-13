@@ -17,7 +17,7 @@
     "noResultsFound": "未找到相关技术："
   },
   "info": {
-    "software": "实时 GitHub 星标数、开源仓库总量以及编程语言、框架、数据库、Linux 发行版和开源 AI 工具与基础设施的 30 天增长动力指标。",
+    "software": "自动化 GitHub 星标数、开源仓库总量以及编程语言、框架、数据库、Linux 发行版和开源 AI 工具与基础设施的 30 天增长动力指标。",
     "security": "网络安全工具、框架和 Linux 安全发行版（Ghidra、Metasploit、Nmap、Kali、Parrot 等）的 GitHub 星标趋势与社区活跃度统计。这些工具仅在道德和法律框架内用于教育和研究目的（安全研究、渗透测试、CTF 竞赛和系统防御）。"
   },
   "sections": {
@@ -37,11 +37,12 @@
     "top1": "Top 1",
     "totalStars": "总星标数",
     "totalEngagements": "总互动量",
-    "grossMomentum": "总体发展势头",
+    "grossMomentum": "增长势头",
+    "momentum": "增长势头",
     "totalDatabases": "总星标数",
     "totalEcosystem": "生态总量",
-    "languagesDesc": "系统、Web 和人工智能领域最广泛采用技术的实时 GitHub 使用情况、仓库数量及流行度走势。",
-    "frameworksDesc": "React、Next.js、FastAPI 和 Vue 等现代应用库的实时开发者采纳率与发布动向指标。",
+    "languagesDesc": "系统、Web 和人工智能领域最广泛采用技术的自动汇总 GitHub 使用情况、仓库数量及流行度走势。",
+    "frameworksDesc": "React、Next.js、FastAPI 和 Vue 等现代应用库的自动汇总开发者采纳率与发布动向指标。",
     "databasesDesc": "关系型、NoSQL、内存数据库和搜索引擎技术的生产环境采纳率及实时仓库统计。",
     "exploreLanguages": "探索编程语言",
     "exploreFrameworks": "探索框架",
@@ -118,7 +119,7 @@
     "disclaimer": "数据每日通过 GitHub Search API 和官方数据库自动更新。",
     "lastUpdated": "最后更新",
     "allContentUpToDate": "所有内容均已保持最新。",
-    "description": "提供编程语言、库/框架和开源网络安全工具的实时 GitHub Search API 指标与增长动力数据的信息平台。",
+    "description": "提供编程语言、库/框架和开源网络安全工具的自动化 GitHub Search API 指标与增长动力数据的信息平台。",
     "dataSourceTitle": "数据与指标来源",
     "dataSourceDesc": "数据通过 GitHub Search API 和官方数据库自动更新。"
   },
