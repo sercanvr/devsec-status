@@ -5,6 +5,7 @@ import { TechEntry } from '../types/tech';
 import { sanitizeText, sanitizeUrl } from '../lib/sanitize';
 import { useGitHubContributors } from '../hooks/useGitHubContributors';
 import { useGitHubRelease } from '../hooks/useGitHubRelease';
+import { formatNumber } from '../lib/formatNumber';
 
 interface TechBarProps {
   entry: TechEntry;
@@ -12,7 +13,7 @@ interface TechBarProps {
 }
 
 export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const contributors = useGitHubContributors(entry.githubUrl, entry.contributors);
 
   const cleanName = sanitizeText(entry.name);
@@ -28,9 +29,9 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
     Math.max(8, (entry.popularity.totalStars / (maxStars || 1)) * 100)
   );
 
-  const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
-  const formattedRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
-  const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
+  const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
+  const formattedRepos = formatNumber(entry.popularity.totalRepos, i18n.language);
+  const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
 
   const categoryLabel = t(`categories.${entry.category}`, entry.category);
 

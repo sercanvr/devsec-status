@@ -11,13 +11,14 @@ import {
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { WorldMap } from './WorldMap';
+import { formatNumber, formatPercent } from '../lib/formatNumber';
 
 interface HeaderShowcaseProps {
   mode?: 'software' | 'security';
 }
 
 export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software' }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   if (mode === 'security') {
     return (
@@ -53,11 +54,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                           <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
                             {t('showcase.secResearchVolume')}
                           </div>
-                          <div className="font-bold text-sm text-foreground">420,000+ ★</div>
+                          <div className="font-bold text-sm text-foreground">{formatNumber(420000, i18n.language)}+ ★</div>
                         </div>
                       </div>
                       <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                        +32%
+                        {formatPercent(32, i18n.language, { sign: true })}
                       </span>
                     </div>
 
@@ -100,16 +101,16 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                           <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
                             {t('showcase.secVulnScan')}
                           </div>
-                          <div className="font-bold text-sm text-foreground">85,000+ Repo</div>
+                          <div className="font-bold text-sm text-foreground">{formatNumber(85000, i18n.language)}+ Repo</div>
                         </div>
                       </div>
                       <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 border border-blue-500/20">
-                        +48%
+                        {formatPercent(48, i18n.language, { sign: true })}
                       </span>
                     </div>
 
                     <div className="pt-3.5 text-center">
-                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                      <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-50 drop-shadow-sm">
                         {t('showcase.secDefensiveTitle')}
                       </h3>
                       <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -147,11 +148,11 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                           <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
                             {t('showcase.totalEcosystem')}
                           </div>
-                          <div className="font-bold text-sm text-foreground">1,250,000+</div>
+                          <div className="font-bold text-sm text-foreground">{formatNumber(1250000, i18n.language)}+</div>
                         </div>
                       </div>
                       <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                        +28%
+                        {formatPercent(28, i18n.language, { sign: true })}
                       </span>
                     </div>
 
@@ -217,12 +218,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                         <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
                           {t('showcase.totalStars')}
                         </div>
-                        <div className="font-bold text-sm text-foreground">1,480,210 ★</div>
+                        <div className="font-bold text-sm text-foreground">{formatNumber(1480210, i18n.language)} ★</div>
                       </div>
                     </div>
 
                     <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-[#0066FF] border border-blue-500/20">
-                      +%25.5
+                      {formatPercent(25.5, i18n.language, { sign: true })}
                     </span>
                   </div>
 
@@ -273,22 +274,22 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                           {t('showcase.totalEngagements')}
                         </div>
                         <div className="flex items-center gap-1.5">
-                          <span className="font-bold text-sm text-foreground">2,120,490</span>
+                          <span className="font-bold text-sm text-foreground">{formatNumber(2120490, i18n.language)}</span>
                           <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
-                            +%49
+                            {formatPercent(49, i18n.language, { sign: true })}
                           </span>
                         </div>
                       </div>
                     </div>
 
                     <div className="text-right">
-                      <div className="text-[10px] font-mono text-neutral-400">{t('showcase.grossMomentum')}</div>
-                      <div className="text-xs font-bold font-mono text-foreground">%10.5</div>
+                      <div className="text-[10px] font-mono text-neutral-400">{t('showcase.momentum')}</div>
+                      <div className="text-xs font-bold font-mono text-foreground">{formatPercent(10.5, i18n.language)}</div>
                     </div>
                   </div>
 
                   <div className="pt-3.5 text-center">
-                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-500 drop-shadow-sm">
+                    <h3 className="font-serif font-bold text-xl sm:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-700 to-neutral-400 dark:from-white dark:via-neutral-200 dark:to-neutral-50 drop-shadow-sm">
                       {t('sections.frameworks')}
                     </h3>
                     <div className="min-h-[46px] sm:min-h-[50px] flex items-center justify-center mt-1">
@@ -333,12 +334,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                         <div className="text-[10px] uppercase font-bold text-neutral-400 font-mono">
                           {t('showcase.totalDatabases')}
                         </div>
-                        <div className="font-bold text-sm text-foreground">890,400 ★</div>
+                        <div className="font-bold text-sm text-foreground">{formatNumber(890400, i18n.language)} ★</div>
                       </div>
                     </div>
 
                     <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
-                      +18.4%
+                      {formatPercent(18.4, i18n.language, { sign: true })}
                     </span>
                   </div>
 

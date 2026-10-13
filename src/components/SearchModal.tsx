@@ -13,6 +13,7 @@ import securityData from '../data/security-tools.json';
 import securityDistrosData from '../data/security-distros.json';
 import { sanitizeText } from '../lib/sanitize';
 import { highlightWithRetry } from '../lib/highlight';
+import { formatNumber } from '../lib/formatNumber';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -21,7 +22,7 @@ interface SearchModalProps {
 }
 
 export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onItemSelect }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const [randomSuggestions, setRandomSuggestions] = useState<(TechEntry & { page: 'software' | 'security' })[]>([]);
@@ -196,7 +197,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onIte
 
                 <div className="flex items-center gap-2 shrink-0">
                   <span className="text-xs font-mono text-neutral-400 flex items-center gap-1">
-                    {item.popularity.totalStars.toLocaleString()} ★
+                    {formatNumber(item.popularity.totalStars, i18n.language)} ★
                   </span>
                   <ChevronRight className="w-4 h-4 text-neutral-400 group-hover:text-[#CEFF00] transition-colors" />
                 </div>

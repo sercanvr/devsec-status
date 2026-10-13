@@ -22,7 +22,7 @@
 
 **DevSec Status** is an open-source developer intelligence dashboard designed to monitor the growth, developer adoption, repository volume, and velocity of major programming languages, modern frameworks, database engines, and cybersecurity toolkits.
 
-Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Terminal UI**, DevSec Status visualizes technology popularity through interactive segmented metric bars, blueprint-styled architectural showcase heroes, dynamic community contributor stacks, and real-time search filtering.
+Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Terminal UI**, DevSec Status visualizes technology popularity through interactive segmented metric bars, blueprint-styled architectural showcase heroes, dynamic community contributor stacks, and instant search filtering.
 
 ---
 
@@ -46,14 +46,14 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
 
 - **Fintech & Stock-Terminal UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
 - **Blueprint Architecture Showcase**: High-impact hero container featuring SVG blueprint vectors, interactive sparkline charts, growth ratios, and a central orbital tech hub.
-- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables:
+- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (125 tracked technologies total):
   - **Software Ecosystem** ([Software Page](https://devsec-status.vercel.app/)):
-    - *Programming Languages* (24 core languages: Python, Rust, TypeScript, Go, C++, etc.)
-    - *Frameworks & Libraries* (12 modern stacks: React, Next.js, FastAPI, Vue, Gea, etc.)
-    - *Database Technologies* (11 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
+    - *Programming Languages* (28 core languages: Python, Rust, TypeScript, Go, C++, etc.)
+    - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, Gin, etc.)
+    - *Database Technologies* (15 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
     - *Linux Distributions* (11 core operating systems: Ubuntu, Debian, Arch, Fedora, Alpine, etc.)
-    - *AI Tools & Frameworks* (10 intelligence stacks: LangChain, Ollama, vLLM, AutoGen, etc.)
-    - *AI Infrastructure & Platforms* (10 deployment engines: Hugging Face, LocalAI, Triton, etc.)
+    - *AI Tools & Frameworks* (12 intelligence stacks: LangChain, Ollama, vLLM, AutoGen, etc.)
+    - *AI Infrastructure & Platforms* (12 deployment engines: Hugging Face, LocalAI, Triton, etc.)
   - **Security & SecOps Ecosystem** ([Security Page](https://devsec-status.vercel.app/security)):
     - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
     - *Security Operating Systems* (7 penetration testing distributions: Kali Linux, Parrot OS, BlackArch, Tails, etc.)

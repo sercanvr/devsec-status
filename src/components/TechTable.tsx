@@ -19,6 +19,7 @@ import { getOptimizedAvatarUrl, DEFAULT_AVATAR } from '../lib/avatar';
 import { GlassBadge } from './GlassBadge';
 import { CardSkeleton } from './CardSkeleton';
 import { Skeleton } from './ui/skeleton';
+import { formatNumber, formatPercent } from '../lib/formatNumber';
 
 /**
  * Ensures tags are displayed in standard English uppercase ASCII (I instead of Turkish dotted İ)
@@ -345,9 +346,9 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     100,
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
   );
-  const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
-  const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
-  const formattedTotalRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
+  const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
+  const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
+  const formattedTotalRepos = formatNumber(entry.popularity.totalRepos, i18n.language);
 
   return (
     <tr
@@ -434,7 +435,7 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
               <span>{formattedStars}</span>
             </span>
             <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
-              {Math.round(percentage)}%
+              {formatPercent(percentage, i18n.language)}
             </span>
           </div>
           <SegmentedProgressBar percentage={percentage} totalSegments={12} className="py-0.5" />
@@ -659,9 +660,9 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
     100,
     Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
   );
-  const formattedStars = new Intl.NumberFormat().format(entry.popularity.totalStars);
-  const formattedNewRepos = new Intl.NumberFormat().format(entry.momentum.newReposLast30Days);
-  const formattedTotalRepos = new Intl.NumberFormat().format(entry.popularity.totalRepos);
+  const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
+  const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
+  const formattedTotalRepos = formatNumber(entry.popularity.totalRepos, i18n.language);
 
   return (
     <div
@@ -744,7 +745,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             <span>{formattedStars}</span>
           </span>
           <span className="font-mono font-bold text-neutral-500 dark:text-neutral-400">
-            {Math.round(percentage)}%
+            {formatPercent(percentage, i18n.language)}
           </span>
         </div>
         <SegmentedProgressBar percentage={percentage} totalSegments={18} />
