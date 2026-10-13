@@ -28,7 +28,8 @@
       {
         "login": "NationalSecurityAgency",
         "avatar_url": "https://github.com/NationalSecurityAgency.png?size=64",
-        "html_url": "https://github.com/NationalSecurityAgency"
+        "html_url": "https://github.com/NationalSecurityAgency",
+        "type": "Organization"
       }
     ]
   },
@@ -61,7 +62,8 @@
       {
         "login": "rapid7",
         "avatar_url": "https://github.com/rapid7.png?size=64",
-        "html_url": "https://github.com/rapid7"
+        "html_url": "https://github.com/rapid7",
+        "type": "Organization"
       }
     ]
   },
@@ -94,7 +96,8 @@
       {
         "login": "sqlmapproject",
         "avatar_url": "https://github.com/sqlmapproject.png?size=64",
-        "html_url": "https://github.com/sqlmapproject"
+        "html_url": "https://github.com/sqlmapproject",
+        "type": "Organization"
       }
     ]
   },
@@ -127,7 +130,8 @@
       {
         "login": "aquasecurity",
         "avatar_url": "https://github.com/aquasecurity.png?size=64",
-        "html_url": "https://github.com/aquasecurity"
+        "html_url": "https://github.com/aquasecurity",
+        "type": "Organization"
       }
     ]
   },
@@ -160,7 +164,8 @@
       {
         "login": "projectdiscovery",
         "avatar_url": "https://github.com/projectdiscovery.png?size=64",
-        "html_url": "https://github.com/projectdiscovery"
+        "html_url": "https://github.com/projectdiscovery",
+        "type": "Organization"
       }
     ]
   },
@@ -193,7 +198,8 @@
       {
         "login": "hashcat",
         "avatar_url": "https://github.com/hashcat.png?size=64",
-        "html_url": "https://github.com/hashcat"
+        "html_url": "https://github.com/hashcat",
+        "type": "Organization"
       }
     ]
   },
@@ -226,7 +232,8 @@
       {
         "login": "trufflesecurity",
         "avatar_url": "https://github.com/trufflesecurity.png?size=64",
-        "html_url": "https://github.com/trufflesecurity"
+        "html_url": "https://github.com/trufflesecurity",
+        "type": "Organization"
       }
     ]
   },
@@ -259,7 +266,8 @@
       {
         "login": "zaproxy",
         "avatar_url": "https://github.com/zaproxy.png?size=64",
-        "html_url": "https://github.com/zaproxy"
+        "html_url": "https://github.com/zaproxy",
+        "type": "Organization"
       }
     ]
   },
@@ -292,7 +300,8 @@
       {
         "login": "nmap",
         "avatar_url": "https://github.com/nmap.png?size=64",
-        "html_url": "https://github.com/nmap"
+        "html_url": "https://github.com/nmap",
+        "type": "Organization"
       }
     ]
   },
@@ -325,7 +334,8 @@
       {
         "login": "openwall",
         "avatar_url": "https://github.com/openwall.png?size=64",
-        "html_url": "https://github.com/openwall"
+        "html_url": "https://github.com/openwall",
+        "type": "Organization"
       }
     ]
   },
@@ -358,7 +368,8 @@
       {
         "login": "wireshark",
         "avatar_url": "https://github.com/wireshark.png?size=64",
-        "html_url": "https://github.com/wireshark"
+        "html_url": "https://github.com/wireshark",
+        "type": "Organization"
       }
     ]
   },
@@ -391,7 +402,8 @@
       {
         "login": "volatilityfoundation",
         "avatar_url": "https://github.com/volatilityfoundation.png?size=64",
-        "html_url": "https://github.com/volatilityfoundation"
+        "html_url": "https://github.com/volatilityfoundation",
+        "type": "Organization"
       }
     ]
   },
@@ -425,17 +437,20 @@
       {
         "login": "misterx",
         "avatar_url": "https://github.com/misterx.png?size=64",
-        "html_url": "https://github.com/misterx"
+        "html_url": "https://github.com/misterx",
+        "type": "User"
       },
       {
         "login": "chaonet",
         "avatar_url": "https://github.com/chaonet.png?size=64",
-        "html_url": "https://github.com/chaonet"
+        "html_url": "https://github.com/chaonet",
+        "type": "User"
       },
       {
         "login": "b100dian",
         "avatar_url": "https://github.com/b100dian.png?size=64",
-        "html_url": "https://github.com/b100dian"
+        "html_url": "https://github.com/b100dian",
+        "type": "User"
       }
     ]
   },
@@ -469,17 +484,20 @@
       {
         "login": "caffix",
         "avatar_url": "https://github.com/caffix.png?size=64",
-        "html_url": "https://github.com/caffix"
+        "html_url": "https://github.com/caffix",
+        "type": "User"
       },
       {
         "login": "grit96",
         "avatar_url": "https://github.com/grit96.png?size=64",
-        "html_url": "https://github.com/grit96"
+        "html_url": "https://github.com/grit96",
+        "type": "User"
       },
       {
         "login": "proab居住",
         "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/owasp-amass/amass"
+        "html_url": "https://github.com/owasp-amass/amass",
+        "type": "User"
       }
     ]
   },
@@ -513,17 +531,20 @@
       {
         "login": "joohoi",
         "avatar_url": "https://github.com/joohoi.png?size=64",
-        "html_url": "https://github.com/joohoi"
+        "html_url": "https://github.com/joohoi",
+        "type": "User"
       },
       {
         "login": "pielgrzym",
         "avatar_url": "https://github.com/pielgrzym.png?size=64",
-        "html_url": "https://github.com/pielgrzym"
+        "html_url": "https://github.com/pielgrzym",
+        "type": "User"
       },
       {
         "login": "s0md3v",
         "avatar_url": "https://github.com/s0md3v.png?size=64",
-        "html_url": "https://github.com/s0md3v"
+        "html_url": "https://github.com/s0md3v",
+        "type": "User"
       }
     ]
   },
@@ -557,17 +578,20 @@
       {
         "login": "gentilkiwi",
         "avatar_url": "https://github.com/gentilkiwi.png?size=64",
-        "html_url": "https://github.com/gentilkiwi"
+        "html_url": "https://github.com/gentilkiwi",
+        "type": "User"
       },
       {
         "login": "vletoux",
         "avatar_url": "https://github.com/vletoux.png?size=64",
-        "html_url": "https://github.com/vletoux"
+        "html_url": "https://github.com/vletoux",
+        "type": "User"
       },
       {
         "login": "subTee",
         "avatar_url": "https://github.com/subTee.png?size=64",
-        "html_url": "https://github.com/subTee"
+        "html_url": "https://github.com/subTee",
+        "type": "User"
       }
     ]
   },
@@ -601,17 +625,20 @@
       {
         "login": "victorjulien",
         "avatar_url": "https://github.com/victorjulien.png?size=64",
-        "html_url": "https://github.com/victorjulien"
+        "html_url": "https://github.com/victorjulien",
+        "type": "User"
       },
       {
         "login": "inliniac",
         "avatar_url": "https://github.com/inliniac.png?size=64",
-        "html_url": "https://github.com/inliniac"
+        "html_url": "https://github.com/inliniac",
+        "type": "User"
       },
       {
         "login": "jasonish",
         "avatar_url": "https://github.com/jasonish.png?size=64",
-        "html_url": "https://github.com/jasonish"
+        "html_url": "https://github.com/jasonish",
+        "type": "User"
       }
     ]
   },
@@ -645,17 +672,20 @@
       {
         "login": "ddpbsd",
         "avatar_url": "https://github.com/ddpbsd.png?size=64",
-        "html_url": "https://github.com/ddpbsd"
+        "html_url": "https://github.com/ddpbsd",
+        "type": "User"
       },
       {
         "login": "jessek",
         "avatar_url": "https://github.com/jessek.png?size=64",
-        "html_url": "https://github.com/jessek"
+        "html_url": "https://github.com/jessek",
+        "type": "User"
       },
       {
         "login": "dcid",
         "avatar_url": "https://github.com/dcid.png?size=64",
-        "html_url": "https://github.com/dcid"
+        "html_url": "https://github.com/dcid",
+        "type": "User"
       }
     ]
   },
@@ -689,17 +719,20 @@
       {
         "login": "trufae",
         "avatar_url": "https://github.com/trufae.png?size=64",
-        "html_url": "https://github.com/trufae"
+        "html_url": "https://github.com/trufae",
+        "type": "User"
       },
       {
         "login": "radare",
         "avatar_url": "https://github.com/radare.png?size=64",
-        "html_url": "https://github.com/radare"
+        "html_url": "https://github.com/radare",
+        "type": "User"
       },
       {
         "login": "condret",
         "avatar_url": "https://github.com/condret.png?size=64",
-        "html_url": "https://github.com/condret"
+        "html_url": "https://github.com/condret",
+        "type": "User"
       }
     ]
   },
@@ -733,17 +766,20 @@
       {
         "login": "matt-c-gchq",
         "avatar_url": "https://github.com/matt-c-gchq.png?size=64",
-        "html_url": "https://github.com/matt-c-gchq"
+        "html_url": "https://github.com/matt-c-gchq",
+        "type": "User"
       },
       {
         "login": "b-b-gchq",
         "avatar_url": "https://github.com/b-b-gchq.png?size=64",
-        "html_url": "https://github.com/b-b-gchq"
+        "html_url": "https://github.com/b-b-gchq",
+        "type": "User"
       },
       {
         "login": "j-f-gchq",
         "avatar_url": "https://github.com/j-f-gchq.png?size=64",
-        "html_url": "https://github.com/j-f-gchq"
+        "html_url": "https://github.com/j-f-gchq",
+        "type": "User"
       }
     ]
   },
@@ -777,17 +813,20 @@
       {
         "login": "moloch--",
         "avatar_url": "https://github.com/moloch--.png?size=64",
-        "html_url": "https://github.com/moloch--"
+        "html_url": "https://github.com/moloch--",
+        "type": "User"
       },
       {
         "login": "rkajew",
         "avatar_url": "https://github.com/rkajew.png?size=64",
-        "html_url": "https://github.com/rkajew"
+        "html_url": "https://github.com/rkajew",
+        "type": "User"
       },
       {
         "login": "domchell",
         "avatar_url": "https://github.com/domchell.png?size=64",
-        "html_url": "https://github.com/domchell"
+        "html_url": "https://github.com/domchell",
+        "type": "User"
       }
     ]
   }

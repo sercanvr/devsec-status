@@ -36,6 +36,7 @@ interface TechTableProps {
   icon?: React.ReactNode;
   entries: TechEntry[];
   priority?: boolean;
+  defaultSort?: 'stars' | 'name' | 'momentum' | 'ecosystem' | 'year';
 }
 
 interface DropdownOption {
@@ -129,10 +130,17 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-export const TechTable: React.FC<TechTableProps> = ({ id, title, icon, entries, priority = false }) => {
+export const TechTable: React.FC<TechTableProps> = ({
+  id,
+  title,
+  icon,
+  entries,
+  priority = false,
+  defaultSort = 'stars',
+}) => {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
-  const [sortBy, setSortBy] = useState<string>('stars');
+  const [sortBy, setSortBy] = useState<string>(defaultSort);
   const sectionRef = useRef<HTMLElement>(null);
 
   // Check if current hash points to this section or an item inside it

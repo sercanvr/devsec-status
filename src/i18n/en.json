@@ -31,7 +31,8 @@
     "securityDistros": "Linux Security Distributions"
   },
   "showcase": {
-    "topLanguageBadge": "#1 in List",
+    "topLanguageBadge": "Top Volume",
+    "topStarredLanguageBadge": "Most Starred (Ref. Repo)",
     "topFrameworkBadge": "#1 in List",
     "topDatabaseBadge": "#1 in List",
     "top1": "Top 1",
@@ -64,7 +65,7 @@
     "technology": "TECHNOLOGY",
     "creator": "CREATOR",
     "type": "TYPE",
-    "popularity": "POPULARITY & STAR BAR",
+    "popularity": "POPULARITY (REF. REPO ★)",
     "momentum": "MOMENTUM",
     "latestVersion": "LATEST VERSION",
     "community": "COMMUNITY",

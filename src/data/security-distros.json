@@ -26,17 +26,20 @@
       {
         "login": "steev",
         "avatar_url": "https://github.com/steev.png?size=64",
-        "html_url": "https://github.com/steev"
+        "html_url": "https://github.com/steev",
+        "type": "User"
       },
       {
         "login": "rhertzog",
         "avatar_url": "https://github.com/rhertzog.png?size=64",
-        "html_url": "https://github.com/rhertzog"
+        "html_url": "https://github.com/rhertzog",
+        "type": "User"
       },
       {
         "login": "dcampitelli",
         "avatar_url": "https://github.com/dcampitelli.png?size=64",
-        "html_url": "https://github.com/dcampitelli"
+        "html_url": "https://github.com/dcampitelli",
+        "type": "User"
       }
     ]
   },
@@ -46,7 +49,7 @@
     "category": "linux-distro",
     "subCategory": "Security, Development & Privacy Centric OS",
     "iconUrl": "https://cdn.simpleicons.org/parrotsecurity",
-    "githubUrl": "https://github.com/ParrotSec/parrot-core",
+    "githubUrl": "https://github.com/ParrotSec",
     "creator": {
       "name": "Lorenzo Faletra (Parrot Project)",
       "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lorenzo-faletra.jpg?v=2",
@@ -55,32 +58,32 @@
       "latestVersion": "Parrot 6.2"
     },
     "popularity": {
-      "totalRepos": 89,
-      "totalStars": 59
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 6,
-      "topStarredNewRepo": {
-        "name": "leandroibov/parrot-menu",
-        "stars": 0
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:23.345Z",
     "contributors": [
       {
         "login": "palinuro",
         "avatar_url": "https://github.com/palinuro.png?size=64",
-        "html_url": "https://github.com/palinuro"
+        "html_url": "https://github.com/palinuro",
+        "type": "User"
       },
       {
         "login": "danterolle",
         "avatar_url": "https://github.com/danterolle.png?size=64",
-        "html_url": "https://github.com/danterolle"
+        "html_url": "https://github.com/danterolle",
+        "type": "User"
       },
       {
         "login": "cappetta",
         "avatar_url": "https://github.com/cappetta.png?size=64",
-        "html_url": "https://github.com/cappetta"
+        "html_url": "https://github.com/cappetta",
+        "type": "User"
       }
     ]
   },
@@ -114,17 +117,20 @@
       {
         "login": "noptrix",
         "avatar_url": "https://github.com/noptrix.png?size=64",
-        "html_url": "https://github.com/noptrix"
+        "html_url": "https://github.com/noptrix",
+        "type": "User"
       },
       {
         "login": "f4lc0n",
         "avatar_url": "https://github.com/f4lc0n.png?size=64",
-        "html_url": "https://github.com/f4lc0n"
+        "html_url": "https://github.com/f4lc0n",
+        "type": "User"
       },
       {
         "login": "abysamr",
         "avatar_url": "https://github.com/abysamr.png?size=64",
-        "html_url": "https://github.com/abysamr"
+        "html_url": "https://github.com/abysamr",
+        "type": "User"
       }
     ]
   },
@@ -155,17 +161,20 @@
       {
         "login": "intrigeri",
         "avatar_url": "https://github.com/intrigeri.png?size=64",
-        "html_url": "https://github.com/intrigeri"
+        "html_url": "https://github.com/intrigeri",
+        "type": "User"
       },
       {
         "login": "sajolida",
         "avatar_url": "https://github.com/sajolida.png?size=64",
-        "html_url": "https://github.com/sajolida"
+        "html_url": "https://github.com/sajolida",
+        "type": "User"
       },
       {
         "login": "anonym",
         "avatar_url": "https://github.com/anonym.png?size=64",
-        "html_url": "https://github.com/anonym"
+        "html_url": "https://github.com/anonym",
+        "type": "User"
       }
     ]
   },
@@ -175,7 +184,7 @@
     "category": "linux-distro",
     "subCategory": "Security-Oriented OS via Xen Compartmentalization",
     "iconUrl": "https://cdn.simpleicons.org/qubesos",
-    "githubUrl": "https://github.com/QubesOS/qubes-issues",
+    "githubUrl": "https://github.com/QubesOS",
     "creator": {
       "name": "Joanna Rutkowska (Invisible Things Lab)",
       "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/joanna-rutkowska.jpg",
@@ -184,32 +193,32 @@
       "latestVersion": "Qubes 4.2.3"
     },
     "popularity": {
-      "totalRepos": 327,
-      "totalStars": 620
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 6,
-      "topStarredNewRepo": {
-        "name": "1mirax/qubes-os-dotfiles",
-        "stars": 0
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:35.650Z",
     "contributors": [
       {
         "login": "marmarek",
         "avatar_url": "https://github.com/marmarek.png?size=64",
-        "html_url": "https://github.com/marmarek"
+        "html_url": "https://github.com/marmarek",
+        "type": "User"
       },
       {
         "login": "rootkovska",
         "avatar_url": "https://github.com/rootkovska.png?size=64",
-        "html_url": "https://github.com/rootkovska"
+        "html_url": "https://github.com/rootkovska",
+        "type": "User"
       },
       {
         "login": "woju",
         "avatar_url": "https://github.com/woju.png?size=64",
-        "html_url": "https://github.com/woju"
+        "html_url": "https://github.com/woju",
+        "type": "User"
       }
     ]
   },
@@ -219,7 +228,7 @@
     "category": "linux-distro",
     "subCategory": "Gentoo-Based Live CD/USB for Penetration Testing",
     "iconUrl": "https://avatars.githubusercontent.com/u/496245?s=200&v=4",
-    "githubUrl": "https://github.com/pentoo/pentoo-overlay",
+    "githubUrl": "https://github.com/pentoo",
     "creator": {
       "name": "Michael Zanetta & Pentoo Team",
       "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/michael-zanetta.jpg",
@@ -228,32 +237,32 @@
       "latestVersion": "Pentoo 2024.0"
     },
     "popularity": {
-      "totalRepos": 239,
-      "totalStars": 384
+      "totalRepos": 0,
+      "totalStars": 0
     },
     "momentum": {
-      "newReposLast30Days": 5,
-      "topStarredNewRepo": {
-        "name": "agkomyint/pentoolgg",
-        "stars": 2
-      }
+      "newReposLast30Days": 0,
+      "topStarredNewRepo": null
     },
     "lastUpdated": "2026-10-07T06:51:39.935Z",
     "contributors": [
       {
         "login": "blshkv",
         "avatar_url": "https://github.com/blshkv.png?size=64",
-        "html_url": "https://github.com/blshkv"
+        "html_url": "https://github.com/blshkv",
+        "type": "User"
       },
       {
         "login": "zerochaos",
         "avatar_url": "https://github.com/zerochaos.png?size=64",
-        "html_url": "https://github.com/zerochaos"
+        "html_url": "https://github.com/zerochaos",
+        "type": "User"
       },
       {
         "login": "grim-gentoo",
         "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/pentoo"
+        "html_url": "https://github.com/pentoo",
+        "type": "User"
       }
     ]
   },
@@ -284,7 +293,8 @@
       {
         "login": "nannibassetti",
         "avatar_url": "https://avatars.githubusercontent.com/u/12171140?size=64&v=4",
-        "html_url": "https://github.com/nannibassetti"
+        "html_url": "https://github.com/nannibassetti",
+        "type": "User"
       }
     ]
   }

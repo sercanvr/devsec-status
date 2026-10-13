@@ -31,7 +31,8 @@
     "securityDistros": "Linux Güvenlik Dağıtımları"
   },
   "showcase": {
-    "topLanguageBadge": "Listede 1.",
+    "topLanguageBadge": "En Çok Repo",
+    "topStarredLanguageBadge": "En Çok Yıldız (Ref. Repo)",
     "topFrameworkBadge": "Listede 1.",
     "topDatabaseBadge": "Listede 1.",
     "top1": "Top 1",
@@ -64,7 +65,7 @@
     "technology": "TEKNOLOJİ",
     "creator": "GELİŞTİRİCİ",
     "type": "TÜR",
-    "popularity": "POPÜLARİTE & YILDIZ BARI",
+    "popularity": "POPÜLERLİK (REF. REPO ★)",
     "momentum": "İVMELENME",
     "latestVersion": "GÜNCEL SÜRÜM",
     "community": "TOPLULUK",

@@ -148,7 +148,7 @@ DevSec Status avoids client-side GitHub API rate limits (60 requests/hour unauth
 
 ```mermaid
 flowchart LR
-    A[GitHub Actions Cron<br/>Every 6 Hours] -->|Executes| B[Fetch Scripts<br/>tsx scripts/fetch-*.ts]
+    A[GitHub Actions Cron<br/>Every 6 Hours] -->|Executes| B[Fetch Pipeline<br/>tsx scripts/fetch-all.ts]
     B -->|Authenticated Request| C[GitHub Search API]
     C -->|Stars, Repos, 30d Velocity| B
     B -->|Saves & Commits| D[Static Datasets<br/>src/data/*.json]
@@ -167,7 +167,7 @@ flowchart LR
 - **Metrics Source**: Repository popularity metrics (stars, ecosystem repo count, 30-day velocity) reflect the linked open-source repository fetched via GitHub REST and Search APIs.
 - **Repository Scope & Upstream Mirrors**: For technologies primarily maintained outside GitHub (e.g. Linux distributions such as Debian on Salsa, Fedora on Pagure, Arch on Arch GitLab, Tails on self-hosted GitLab, or Kali Linux build configurations), the linked repository represents the official upstream mirror, build configuration, or package tooling.
 - **Non-GitHub Hosted Projects**: Projects without an active GitHub repository (e.g., Tails, CAINE) display `N/A (Not hosted on GitHub)` and are excluded from star-relative bar scaling to avoid comparative distortion.
-- **Contributor Stack**: Displayed contributors represent verified maintainers and active contributors from pre-rendered datasets, avoiding client-side runtime API rate limits.
+- **Contributor Stack**: Displayed contributors represent notable maintainers and project contributors from pre-rendered datasets, avoiding client-side runtime API rate limits.
 
 ---
 
@@ -215,7 +215,7 @@ flowchart LR
 | `pnpm preview` | Serves the production build locally for verification |
 | `pnpm lint` | Runs strict TypeScript type checks across all files (`tsc --noEmit`) |
 | `pnpm test` | Runs the Vitest test suite once |
-| `pnpm run fetch:data` | Executes all 4 data crawlers to refresh static JSON files from GitHub |
+| `pnpm run fetch:data` | Executes scripts/fetch-all.ts to refresh static JSON metrics across all 8 datasets |
 
 ---
 
@@ -250,10 +250,10 @@ For detailed guidelines, please read our [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Adding a Technology Entry
 
-In DevSec Status, technology metrics are refreshed automatically every 6 hours via GitHub Actions. When adding a new entry to `src/data/<category>.json`:
+In DevSec Status, technology metrics are refreshed automatically every 6 hours via GitHub Actions for projects hosted on `github.com`. When adding a new entry to `src/data/<category>.json`:
 
-1. Ensure the technology is open-source with an active public GitHub repository.
-2. Provide only the essential metadata. You do **not** need to manually compute stars, repository totals, or 30-day velocity — initialize them with zeroes, and the automated cron workflow will populate them:
+1. Ensure the technology is open-source. For GitHub-hosted projects, link the active public repository (`https://github.com/owner/repo`). Projects hosted elsewhere (e.g. GitLab, custom domains) or maintained as package distributions/orgs link to their respective upstream profile, and their popularity metrics remain at zero (rendered as `N/A`).
+2. Provide only the essential metadata. You do **not** need to manually compute stars, repository totals, or 30-day velocity — initialize them with zeroes, and the automated cron workflow will populate them for GitHub repositories:
    ```json
    {
      "id": "tool-slug",

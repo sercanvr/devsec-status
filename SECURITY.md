@@ -19,7 +19,7 @@ Only the latest version deployed from the `main` branch is actively supported wi
 
 If you discover a security vulnerability, please **do not open a public issue**.
 
-Please submit reports through **[GitHub Private Vulnerability Reporting](https://github.com/sercanvr/devsec-status/security/advisories/new)**. This creates a confidential advisory directly with repository maintainers and ensures encrypted communication without exposing maintainer contact details to scraping bots.
+Please submit reports through **[GitHub Private Vulnerability Reporting](https://github.com/sercanvr/devsec-status/security/advisories/new)**. This creates a confidential advisory directly with repository maintainers and provides a private communication channel without exposing maintainer contact details to scraping bots.
 
 ### What to Include in Your Report
 
@@ -39,19 +39,18 @@ To help us triage and resolve the issue quickly, please provide:
 
 ---
 
-## Security Architecture & Defenses
+## Security Architecture & Practices
 
-DevSec Status adheres to defense-in-depth engineering principles:
 - **Client-Side Sanitization**: DOMPurify sanitizes externally rendered strings and descriptions.
 - **Dataset Schema & URL Allowlisting**: CI-enforced automated tests validate that external links and icons conform strictly to HTTPS and approved CDN domains.
 - **Zero Client-Side API Secrets**: No GitHub tokens or private credentials are bundled into frontend assets; repository metrics are compiled statically via GitHub Actions cron workflows.
-- **Content Security Policy (CSP)**: Hardened headers deployed via `vercel.json` restrict unauthorized script execution and object embedding.
+- **Content Security Policy (CSP)**: Headers deployed via `vercel.json` enforce `script-src 'self'` and `object-src 'none'` to restrict third-party executable scripts, while permitting inline styles for dynamic UI components.
 
 ---
 
 ## Out of Scope
 
-The following items are outside the scope of our security bug bounty / vulnerability program:
+The following items are outside the scope of our open-source vulnerability disclosure process:
 - Vulnerabilities in third-party cloud infrastructure (Vercel, GitHub, or upstream CDNs).
 - Automated scanner outputs (e.g. Nessus, Qualys, Burp) lacking a demonstrated, realistic exploit PoC.
 - Denial of Service (DoS/DDoS) attacks against frontend CDN edges.

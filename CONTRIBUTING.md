@@ -109,7 +109,7 @@ Add an object to the array in `src/data/<category>.json`:
   - `ai-tool`, `ai-infrastructure`
 - **`creator.type`** must be either `"person"` or `"organization"`.
 
-> **Note**: Initialize `popularity` and `momentum` with zeroes as shown above. The scheduled GitHub Actions crawler will calculate and populate real-time metrics automatically.
+> **Note**: Initialize `popularity` and `momentum` with zeroes as shown above. For technologies hosted on GitHub, the scheduled GitHub Actions crawler will calculate and populate repository metrics automatically. Projects hosted outside GitHub (e.g. GitLab, custom project sites) or without a dedicated repository will remain at zero and be displayed as `N/A` in the interface.
 
 ### Icon Guidelines
 

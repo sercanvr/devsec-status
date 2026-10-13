@@ -197,12 +197,12 @@ export const HeaderShowcase: React.FC<HeaderShowcaseProps> = ({ mode = 'software
                     <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Code2 className="w-3.5 h-3.5 text-[#0066FF]" />
                       <span>{t('showcase.topLanguageBadge')}</span>
-                      <span className="text-[#0066FF] font-bold">Python</span>
+                      <span className="text-[#0066FF] font-bold">Python (34M+)</span>
                     </div>
                     <div className="px-2.5 py-1 rounded-xl bg-neutral-100/90 dark:bg-neutral-800/90 text-[11px] font-mono font-semibold text-neutral-700 dark:text-neutral-300 flex items-center gap-1.5 border border-neutral-400/80 dark:border-white/20 shadow-2xs">
                       <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                      <span>{t('showcase.top1')}</span>
-                      <span className="text-emerald-500 font-normal">251k+ ★</span>
+                      <span>{t('showcase.topStarredLanguageBadge')}</span>
+                      <span className="text-emerald-500 font-normal">C • 251k+ ★</span>
                     </div>
                   </div>
                 </div>
