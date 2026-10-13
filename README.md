@@ -4,9 +4,10 @@
 
 ![DevSec Status Logo](https://msercanvar.sirv.com/devsec-status-images/devsec-logo.webp)
 
-**Real-time statistics, popularity & momentum tracker for Programming Languages, Frameworks, Databases, and Open Source Cybersecurity Tools.**
+**Automated statistics, popularity & momentum tracker for Programming Languages, Frameworks, Databases, and Open Source Cybersecurity Tools.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-devsec--status.vercel.app-CEFF00?logo=vercel&logoColor=black)](https://devsec-status.vercel.app)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?logo=vite)](https://vitejs.dev/)
@@ -45,11 +46,17 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
 
 - **Fintech & Stock-Terminal UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
 - **Blueprint Architecture Showcase**: High-impact hero container featuring SVG blueprint vectors, interactive sparkline charts, growth ratios, and a central orbital tech hub.
-- **Granular Category Tables**: Software ecosystem organized into 3 distinct, uncluttered tables:
-  - *Programming Languages* (24 core languages: Python, Rust, TypeScript, Go, C++, etc.)
-  - *Frameworks & Libraries* (11 modern stacks: React, Next.js, FastAPI, Vue, etc.)
-  - *Database Technologies* (11 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
-  - *Cybersecurity Tools* (Reverse engineering, SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
+- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables:
+  - **Software Ecosystem** ([Software Page](https://devsec-status.vercel.app/)):
+    - *Programming Languages* (24 core languages: Python, Rust, TypeScript, Go, C++, etc.)
+    - *Frameworks & Libraries* (12 modern stacks: React, Next.js, FastAPI, Vue, Gea, etc.)
+    - *Database Technologies* (11 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
+    - *Linux Distributions* (11 core operating systems: Ubuntu, Debian, Arch, Fedora, Alpine, etc.)
+    - *AI Tools & Frameworks* (10 intelligence stacks: LangChain, Ollama, vLLM, AutoGen, etc.)
+    - *AI Infrastructure & Platforms* (10 deployment engines: Hugging Face, LocalAI, Triton, etc.)
+  - **Security & SecOps Ecosystem** ([Security Page](https://devsec-status.vercel.app/security)):
+    - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
+    - *Security Operating Systems* (7 penetration testing distributions: Kali Linux, Parrot OS, BlackArch, Tails, etc.)
 - **Expandable Community Drawer**:
   - Top 4 live GitHub contributors with interactive avatar cards and profile links
   - Top starred new repository of the month
@@ -95,6 +102,7 @@ devsec-status/
 │   │   ├── LanguageSwitcher.tsx     # Instant language switcher with preloaded WebP flags
 │   │   ├── ProximitySidebar.tsx     # Quick section anchor sidebar
 │   │   ├── ScrollToTopButton.tsx    # Smooth scroll-to-top floating button
+│   │   ├── InitialViewportVignette.tsx # First-visit session depth atmospheric vignette
 │   │   ├── Skeleton.tsx             # Sunken well skeleton loader with metallic sheen
 │   │   ├── ui/
 │   │   │   └── skeleton.tsx         # Primitive Skeleton components (Block, Text, Circle, Swap)
@@ -107,8 +115,8 @@ devsec-status/
 │   ├── lib/
 │   │   └── sanitize.ts              # DOMPurify text and URL sanitization helpers
 │   ├── pages/
-│   │   ├── SoftwarePage.tsx         # Main software ecosystem page (3 distinct tables)
-│   │   └── SecurityPage.tsx         # Cybersecurity tools and SecOps page
+│   │   ├── SoftwarePage.tsx         # Main software ecosystem page (6 category tables)
+│   │   └── SecurityPage.tsx         # Cybersecurity tools & SecOps page (2 category tables)
 │   ├── types/
 │   │   └── tech.ts                  # Core TypeScript interfaces for technologies & metrics
 │   ├── App.tsx                      # Application root and route configuration
@@ -117,6 +125,7 @@ devsec-status/
 ├── tests/
 │   ├── TechTable.test.tsx           # Unit tests for fintech table filtering and expansion
 │   ├── TechBar.test.tsx             # Unit tests for technology row rendering
+│   ├── Skeleton.test.tsx            # Unit tests for skeleton loaders and fallback states
 │   └── setup.ts                     # Jest DOM test environment setup
 ├── package.json
 ├── tailwind.config.js
@@ -207,13 +216,76 @@ pnpm test
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions to **DevSec Status** are greatly appreciated!
 
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/your-feature-name`.
-3. Commit your changes adhering to [Conventional Commits](https://www.conventionalcommits.org/): `git commit -m "feat: add your feature"`.
-4. Push to your branch: `git push origin feat/your-feature-name`.
-5. Open a Pull Request.
+### How You Can Contribute
+
+- **Add New Technologies / Tools**: Add missing languages, frameworks, databases, security tools, or AI stacks to `src/data/*.json`.
+- **Translations (i18n)**: Help refine translations or add new languages in `src/i18n/`.
+- **UI / UX & Performance**: Propose design polish, mobile responsive improvements, or Core Web Vitals optimizations.
+- **Bug Reports & Ideas**: Open an issue on [GitHub Issues](https://github.com/sercanvr/devsec-status/issues).
+
+### Adding a New Technology or Security Tool
+
+To propose a new technology entry in `src/data/<category>.json`:
+
+1. Ensure the project is open-source with an active public GitHub repository.
+2. Add a new object conforming to the `TechEntry` schema:
+   ```json
+   {
+     "id": "unique-slug",
+     "name": "Technology Name",
+     "category": "CATEGORY_TAG",
+     "subCategory": "Subcategory Name",
+     "iconUrl": "https://msercanvar.sirv.com/devsec-status-images/...",
+     "githubUrl": "https://github.com/org/repo",
+     "creator": {
+       "name": "Creator or Org",
+       "avatarUrl": "https://avatars.githubusercontent.com/...",
+       "type": "organization",
+       "releaseDate": "YYYY",
+       "latestVersion": "vX.Y.Z"
+     },
+     "popularity": {
+       "totalRepos": 0,
+       "totalStars": 0
+     },
+     "momentum": {
+       "newReposLast30Days": 0,
+       "topStarredNewRepo": null
+     },
+     "lastUpdated": "2026-01-01T00:00:00.000Z"
+   }
+   ```
+3. Run `pnpm test` to verify dataset integrity and test suites.
+
+### Contribution Workflow
+
+1. **Fork** the repository.
+2. **Create a feature branch**:
+   ```bash
+   git checkout -b feat/add-new-tool
+   ```
+3. **Make your changes** following Clean Code principles and strict TypeScript typing.
+4. **Run tests**:
+   ```bash
+   pnpm test
+   ```
+5. **Commit your changes** adhering to [Conventional Commits](https://www.conventionalcommits.org/):
+   ```bash
+   git commit -m "feat(data): add new technology entry"
+   ```
+6. **Push to your fork**:
+   ```bash
+   git push origin feat/add-new-tool
+   ```
+7. **Open a Pull Request** against `main` with a clear explanation of your additions.
+
+---
+
+## Contributors
+
+Thank you to everyone who helps improve DevSec Status! Contributions of all kinds are credited directly in GitHub's official [Contributors](https://github.com/sercanvr/devsec-status/graphs/contributors) graph.
 
 ---
 
