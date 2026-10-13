@@ -14,14 +14,14 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1372,
+      "totalRepos": 29,
       "totalStars": 7812
     },
     "momentum": {
-      "newReposLast30Days": 69,
+      "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-13T07:25:23.094Z",
+    "lastUpdated": "2026-10-13T08:25:04.718Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -46,14 +46,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1273,
-      "totalStars": 5741
+      "totalRepos": 251,
+      "totalStars": 5742
     },
     "momentum": {
-      "newReposLast30Days": 64,
-      "topStarredNewRepo": null
+      "newReposLast30Days": 18,
+      "topStarredNewRepo": {
+        "name": "barnabe3/Metasploitable3",
+        "stars": 0
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:24.102Z",
+    "lastUpdated": "2026-10-13T08:25:11.578Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -78,14 +81,17 @@
       "latestVersion": "3/main"
     },
     "popularity": {
-      "totalRepos": 681,
+      "totalRepos": 676,
       "totalStars": 4924
     },
     "momentum": {
-      "newReposLast30Days": 34,
-      "topStarredNewRepo": null
+      "newReposLast30Days": 32,
+      "topStarredNewRepo": {
+        "name": "Quincunx33/hostOnion",
+        "stars": 7
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:24.988Z",
+    "lastUpdated": "2026-10-13T08:25:18.285Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -110,14 +116,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 690,
+      "totalRepos": 17,
       "totalStars": 3931
     },
     "momentum": {
-      "newReposLast30Days": 35,
-      "topStarredNewRepo": null
+      "newReposLast30Days": 1,
+      "topStarredNewRepo": {
+        "name": "Ak4-47/Kodiak-The-Cloud-Successor-to-Helk",
+        "stars": 0
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:25.876Z",
+    "lastUpdated": "2026-10-13T08:25:23.952Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -142,14 +151,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 683,
+      "totalRepos": 466,
       "totalStars": 3526
     },
     "momentum": {
-      "newReposLast30Days": 34,
-      "topStarredNewRepo": null
+      "newReposLast30Days": 13,
+      "topStarredNewRepo": {
+        "name": "Praxis1071/blackarch-toolset",
+        "stars": 0
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:26.790Z",
+    "lastUpdated": "2026-10-13T08:25:30.115Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -174,14 +186,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 287,
+      "totalRepos": 108,
       "totalStars": 3107
     },
     "momentum": {
-      "newReposLast30Days": 14,
-      "topStarredNewRepo": null
+      "newReposLast30Days": 6,
+      "topStarredNewRepo": {
+        "name": "DonAsako/exegol-resources",
+        "stars": 0
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:27.692Z",
+    "lastUpdated": "2026-10-13T08:25:36.401Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -206,14 +221,14 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 71,
+      "totalRepos": 81,
       "totalStars": 412
     },
     "momentum": {
-      "newReposLast30Days": 4,
+      "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-13T07:25:28.931Z",
+    "lastUpdated": "2026-10-13T08:25:42.686Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -238,14 +253,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 34,
+      "totalRepos": 148,
       "totalStars": 259
     },
     "momentum": {
       "newReposLast30Days": 2,
-      "topStarredNewRepo": null
+      "topStarredNewRepo": {
+        "name": "Hokutaka/ATHENA-04",
+        "stars": 0
+      }
     },
-    "lastUpdated": "2026-10-13T07:25:30.048Z",
+    "lastUpdated": "2026-10-13T08:25:49.269Z",
     "contributors": [
       {
         "login": "Athena-OS",
