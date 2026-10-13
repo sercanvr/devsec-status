@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
                 width={102}
                 height={36}
                 fetchPriority="high"
-                className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] shrink-0"
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.45)] dark:drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] shrink-0"
               />
             </a>
 
@@ -167,7 +167,7 @@ export const Navbar: React.FC = () => {
                   alt="DevSec Status"
                   width={102}
                   height={36}
-                  className="h-8 sm:h-9 w-auto object-contain shrink-0"
+                  className="h-8 sm:h-9 w-auto object-contain drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.45)] dark:drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] shrink-0"
                 />
               </NavLink>
 
