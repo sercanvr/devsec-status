@@ -1,0 +1,52 @@
+name: Suggest a Technology / Tool
+description: Propose a new programming language, framework, database, AI stack, or security tool to be tracked.
+title: "[Suggestion]: Add <Technology Name>"
+labels: ["Feature", "UI/UX"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand **DevSec Status**! Please provide the details of the technology you would like to see added.
+  - type: input
+    id: name
+    attributes:
+      label: Technology / Tool Name
+      placeholder: e.g. Bun, Polars, Nuclei, Suricata
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Programming Language (Software)
+        - Framework & Library (Software)
+        - Database & Infrastructure (Software)
+        - Linux Distribution (Software)
+        - AI Tool & Agent (Software)
+        - AI Infrastructure & Runtime (Software)
+        - Cybersecurity Tool (Security)
+        - Security Linux Distro (Security)
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub Repository URL
+      placeholder: https://github.com/org/repo
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: Creator or Organization
+      placeholder: e.g. Oven (Jarred Sumner)
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Why should this technology be included? (e.g. notable traction, category relevance)
+    validations:
+      required: false

@@ -22,7 +22,7 @@
 
 **DevSec Status** is an open-source developer intelligence dashboard designed to monitor the growth, developer adoption, repository volume, and velocity of major programming languages, modern frameworks, database engines, and cybersecurity toolkits.
 
-Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Terminal UI**, DevSec Status visualizes technology popularity through interactive segmented metric bars, blueprint-styled architectural showcase heroes, dynamic community contributor stacks, and instant search filtering.
+Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, DevSec Status visualizes technology popularity through interactive segmented metric bars, blueprint-styled architectural showcase heroes, dynamic community contributor stacks, and instant search filtering.
 
 ---
 
@@ -36,15 +36,15 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
 | **Routing** | [React Router 7](https://reactrouter.com/) | Client-side routing between Software and Security pages |
 | **Localization (i18n)** | [i18next](https://www.i18next.com/) & [react-i18next](https://react.i18next.com/) | 9 languages (English, Turkish, German, French, Spanish, Italian, Portuguese, Russian, Chinese) with automatic browser detection |
 | **Icons & Media** | [Lucide React](https://lucide.dev/) & WebP | Crisp scalable vector icons and lightweight WebP graphics |
-| **Security & Sanitization** | [DOMPurify](https://github.com/cure53/DOMPurify) | Strict XSS sanitization for all rendered dynamic and static strings |
-| **Testing** | [Vitest](https://vitest.dev/) & [Testing Library](https://testing-library.com/) | Blazing-fast unit and component test suite |
+| **Security & Sanitization** | [DOMPurify](https://github.com/cure53/DOMPurify) | DOMPurify sanitization for externally sourced data |
+| **Testing** | [Vitest](https://vitest.dev/) & [Testing Library](https://testing-library.com/) | Unit, component, and dataset schema test suite |
 | **Automation** | [GitHub Actions](https://github.com/features/actions) & `tsx` | Automated scheduled GitHub API fetch workflow every 6 hours |
 
 ---
 
 ## Key Features
 
-- **Fintech & Stock-Terminal UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
+- **Terminal & Fintech-Inspired UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
 - **Blueprint Architecture Showcase**: High-impact hero container featuring SVG blueprint vectors, interactive sparkline charts, growth ratios, and a central orbital tech hub.
 - **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (125 tracked technologies total):
   - **Software Ecosystem** ([Software Page](https://devsec-status.vercel.app/)):
@@ -52,8 +52,8 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
     - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, Gin, etc.)
     - *Database Technologies* (15 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
     - *Linux Distributions* (11 core operating systems: Ubuntu, Debian, Arch, Fedora, Alpine, etc.)
-    - *AI Tools & Frameworks* (12 intelligence stacks: LangChain, Ollama, vLLM, AutoGen, etc.)
-    - *AI Infrastructure & Platforms* (12 deployment engines: Hugging Face, LocalAI, Triton, etc.)
+    - *AI Tools & Agentic Frameworks* (12 application stacks: Ollama, LangChain, AutoGPT, ComfyUI, Open WebUI, CrewAI, etc.)
+    - *AI Infrastructure & Runtimes* (12 deep learning & inference engines: PyTorch, TensorFlow, Transformers, llama.cpp, vLLM, JAX, etc.)
   - **Security & SecOps Ecosystem** ([Security Page](https://devsec-status.vercel.app/security)):
     - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
     - *Security Operating Systems* (7 penetration testing distributions: Kali Linux, Parrot OS, BlackArch, Tails, etc.)
@@ -63,9 +63,9 @@ Combining GitHub Search API metrics with a financial-grade **Fintech & Stock-Ter
   - Total ecosystem repository count and official release dates
   - Direct external repository navigation
 - **Instant Search & Tag Filtering (`⌘K` / `Ctrl+K`)**: Global search modal supporting fuzzy name search, categories, creators, and hashtag syntax (e.g. `#framework`, `#systems`).
-- **Multilingual Support (9 Languages - EN / TR / DE / FR / ES / IT / PT / RU / ZH)**: Instant switching across 9 global languages with zero-delay CDN-optimized WebP flag preloading and persistent storage.
+- **Multilingual Support (9 Languages - EN / TR / DE / FR / ES / IT / PT / RU / ZH)**: Instant switching across 9 global languages with CDN-optimized WebP flag preloading. *(Translations are AI-assisted; improvements from native speakers are warmly welcomed).*
 - **Dark & Light Mode**: Seamless theme switching with persistent storage and system preference detection.
-- **Zero Client Rate Limits**: Metrics are pre-fetched via automated GitHub Actions and baked into static JSON, guaranteeing instant page loads without GitHub 403 API rate errors.
+- **Zero Runtime API Latency & No Rate Limits**: Metrics are pre-fetched via automated GitHub Actions and served as static JSON from Vercel's Edge CDN, eliminating browser rate limits (403 errors) and third-party query latency.
 - **AI Agentic & Search Engine Ready**: Built-in `sitemap.xml`, `robots.txt`, `llms.txt`, and `ai-catalog.json` for autonomous AI agents and web crawlers.
 - **Responsive Standard**: Tested and optimized across Mobile (`390 x 844 px`), Tablet (`768 x 1024 px`), Laptop (`1366 x 768 px`), and Desktop (`1920 x 1080 px`).
 
@@ -151,7 +151,7 @@ flowchart LR
 1. **Scheduled Sync**: A GitHub Actions workflow triggers every 6 hours (`0 */6 * * *`).
 2. **API Query**: `scripts/fetch-*.ts` requests repository search metrics, stars, and creation velocity using `GITHUB_TOKEN`.
 3. **Commit & Push**: Updated metrics are verified and committed back to `src/data/*.json`.
-4. **Instant Client Delivery**: Users receive data immediately from static files with 0 ms API delay and 100% uptime.
+4. **Edge CDN Delivery**: Data is bundled as static assets and served globally via Vercel's Edge CDN, eliminating browser rate limits and third-party query latency.
 
 ---
 
@@ -205,12 +205,17 @@ flowchart LR
 
 ## Testing
 
-The project uses [Vitest](https://vitest.dev/) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for unit and integration testing.
+The project uses [Vitest](https://vitest.dev/) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for unit, component, and dataset schema validation.
 
 To execute tests:
 ```bash
 pnpm test
 ```
+
+The test suite validates:
+- **Dataset Schema Integrity (`tests/dataIntegrity.test.ts`)**: Verifies that all 8 static JSON files exist, contain valid arrays, have unique IDs across all datasets, and include all required fields.
+- **Component & UI State Rendering (`tests/Skeleton.test.tsx`, `tests/TechTable.test.tsx`)**: Validates skeleton placeholders, accessibility labels, and table views.
+- **Popularity & Progress Bars (`tests/TechBar.test.tsx`)**: Tests 20-segment popularity progress calculations and secure external navigation links.
 
 ---
 
@@ -218,33 +223,35 @@ pnpm test
 
 Contributions make the open-source community an amazing place to learn, inspire, and create. Any contributions to **DevSec Status** are greatly appreciated!
 
+For detailed guidelines, please read our [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ### How You Can Contribute
 
-- **Add New Technologies / Tools**: Add missing languages, frameworks, databases, security tools, or AI stacks to `src/data/*.json`.
-- **Translations (i18n)**: Help refine translations or add new languages in `src/i18n/`.
-- **UI / UX & Performance**: Propose design polish, mobile responsive improvements, or Core Web Vitals optimizations.
-- **Bug Reports & Ideas**: Open an issue on [GitHub Issues](https://github.com/sercanvr/devsec-status/issues).
+- **Suggest a Technology**: Know a fast-growing open-source framework, database, AI system, or cybersecurity tool? Open an issue using the [Suggest a Technology Issue Template](https://github.com/sercanvr/devsec-status/issues/new?template=suggest_technology.yml) without needing to write code!
+- **Add a Technology via Pull Request**: Add an entry directly to `src/data/<category>.json` following the schema below.
+- **Translations (i18n)**: Review or refine translations in `src/i18n/` to ensure natural technical phrasing across all 9 supported languages. *(Translations are AI-assisted; native speaker contributions are warmly welcomed).*
+- **UI / UX & Performance**: Propose design improvements, mobile responsiveness enhancements, or accessibility fixes.
 
-### Adding a New Technology or Security Tool
+### Adding a Technology Entry
 
-To propose a new technology entry in `src/data/<category>.json`:
+In DevSec Status, technology metrics are refreshed automatically every 6 hours via GitHub Actions. When adding a new entry to `src/data/<category>.json`:
 
-1. Ensure the project is open-source with an active public GitHub repository.
-2. Add a new object conforming to the `TechEntry` schema:
+1. Ensure the technology is open-source with an active public GitHub repository.
+2. Provide only the essential metadata. You do **not** need to manually compute stars, repository totals, or 30-day velocity — initialize them with zeroes, and the automated cron workflow will populate them:
    ```json
    {
-     "id": "unique-slug",
-     "name": "Technology Name",
-     "category": "CATEGORY_TAG",
-     "subCategory": "Subcategory Name",
-     "iconUrl": "https://msercanvar.sirv.com/devsec-status-images/...",
+     "id": "tool-slug",
+     "name": "Tool Name",
+     "category": "security-tool",
+     "subCategory": "Vulnerability Scanner",
+     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nmap/nmap-original.svg",
      "githubUrl": "https://github.com/org/repo",
      "creator": {
-       "name": "Creator or Org",
-       "avatarUrl": "https://avatars.githubusercontent.com/...",
+       "name": "Author or Organization",
+       "avatarUrl": "https://github.com/org.png",
        "type": "organization",
-       "releaseDate": "YYYY",
-       "latestVersion": "vX.Y.Z"
+       "releaseDate": "2024",
+       "latestVersion": "v1.0.0"
      },
      "popularity": {
        "totalRepos": 0,
@@ -254,32 +261,27 @@ To propose a new technology entry in `src/data/<category>.json`:
        "newReposLast30Days": 0,
        "topStarredNewRepo": null
      },
-     "lastUpdated": "2026-01-01T00:00:00.000Z"
+     "lastUpdated": "2026-10-13T00:00:00.000Z"
    }
    ```
-3. Run `pnpm test` to verify dataset integrity and test suites.
-
-### Contribution Workflow
-
-1. **Fork** the repository.
-2. **Create a feature branch**:
-   ```bash
-   git checkout -b feat/add-new-tool
-   ```
-3. **Make your changes** following Clean Code principles and strict TypeScript typing.
-4. **Run tests**:
+3. **Icons & Fallbacks**:
+   - Use official SVG icons from [Devicon CDN](https://devicon.dev/) (`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/...`) or [SimpleIcons](https://simpleicons.org/) (`https://cdn.simpleicons.org/...`).
+   - If an external icon fails to load, the interface automatically renders a clean fallback GitHub SVG icon.
+4. **Creator Avatars**:
+   - For organizations or authors with active GitHub profiles, use `https://github.com/<username-or-org>.png`.
+5. **Run test verification**:
    ```bash
    pnpm test
    ```
-5. **Commit your changes** adhering to [Conventional Commits](https://www.conventionalcommits.org/):
-   ```bash
-   git commit -m "feat(data): add new technology entry"
-   ```
-6. **Push to your fork**:
-   ```bash
-   git push origin feat/add-new-tool
-   ```
-7. **Open a Pull Request** against `main` with a clear explanation of your additions.
+   This ensures your entry meets the schema requirements and has a unique ID.
+
+### Contribution Workflow
+
+1. **Fork** the repository and create your branch (`git checkout -b feat/add-new-tool`).
+2. **Make your additions** adhering to project conventions.
+3. **Run tests** (`pnpm test`) to verify schema integrity.
+4. **Commit your changes** following [Conventional Commits](https://www.conventionalcommits.org/) (`git commit -m "feat(data): add new technology entry"`).
+5. **Push and open a Pull Request** targeting `main`.
 
 ---
 
