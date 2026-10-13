@@ -73,18 +73,18 @@ Add an object to the array in `src/data/<category>.json`:
 
 ```json
 {
-  "id": "unique-slug",
-  "name": "Technology Name",
-  "category": "language | framework | library | rdbms | nosql | linux-distro | ai-tool | ai-infrastructure | security-tool | security-distro",
-  "subCategory": "Brief Subcategory Description",
-  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  "githubUrl": "https://github.com/org/repo",
+  "id": "fastapi",
+  "name": "FastAPI",
+  "category": "framework",
+  "subCategory": "High-Performance Modern Web Framework for Python",
+  "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+  "githubUrl": "https://github.com/fastapi/fastapi",
   "creator": {
-    "name": "Author or Organization",
-    "avatarUrl": "https://github.com/org.png",
-    "type": "person" | "organization",
-    "releaseDate": "YYYY",
-    "latestVersion": "vX.Y.Z"
+    "name": "Sebastián Ramírez",
+    "avatarUrl": "https://github.com/tiangolo.png",
+    "type": "person",
+    "releaseDate": "2018",
+    "latestVersion": "v0.115.0"
   },
   "popularity": {
     "totalRepos": 0,
@@ -98,18 +98,30 @@ Add an object to the array in `src/data/<category>.json`:
 }
 ```
 
-> **Note**: Initialize `popularity` and `momentum` with zero values as shown above. The scheduled fetch scripts will calculate and populate the true live metrics automatically.
+#### Allowed Field Values
+
+- **`category`** must be one of:
+  - `language`, `superset`, `query-language`
+  - `framework`, `library`, `css-framework`, `runtime`
+  - `rdbms`, `nosql`, `search-engine`, `baas`
+  - `security-tool`, `security-framework`
+  - `linux-distro`
+  - `ai-tool`, `ai-infrastructure`
+- **`creator.type`** must be either `"person"` or `"organization"`.
+
+> **Note**: Initialize `popularity` and `momentum` with zeroes as shown above. The scheduled GitHub Actions crawler will calculate and populate real-time metrics automatically.
 
 ### Icon Guidelines
 
 - **Primary Source**: Use official SVG vector icons from [Devicon CDN](https://devicon.dev/) (`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/...`) or [SimpleIcons](https://simpleicons.org/) (`https://cdn.simpleicons.org/...`).
+- **Local Assets**: You may also reference project icons under `/icons/<name>.webp`.
 - **Fallback**: If an external icon fails to load, the UI automatically renders a fallback GitHub SVG icon.
 
 ### Creator & Avatar Guidelines
 
 - For organizations or authors with active GitHub profiles, use their official GitHub avatar URL:  
   `https://github.com/<username-or-org>.png`
-- For historical figures without a GitHub profile, use an established public avatar URL.
+- Avatars must use HTTPS and come from verified allowlisted hosts (`github.com`, `avatars.githubusercontent.com`, `cdn.jsdelivr.net`, or `cdn.simpleicons.org`). Protocol-relative URLs (`//evil.com`) or unauthorized domains are automatically blocked by our CI data integrity test.
 
 ---
 

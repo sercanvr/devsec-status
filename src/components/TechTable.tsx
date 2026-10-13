@@ -542,20 +542,25 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
         </div>
       </td>
 
-      {/* 9. GİTHUB (Direct Link) */}
+      {/* 9. REPO (Direct Link) */}
       <td className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center whitespace-nowrap align-middle">
         <div className="flex items-center justify-center">
-          <a
-            href={cleanGithubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${cleanName} GitHub`}
-            title={`${cleanName} GitHub`}
-            className="inline-flex items-center justify-center gap-1 lg:gap-1.5 px-2 lg:px-3 py-1 lg:py-1.5 rounded-lg lg:rounded-xl text-[10px] lg:text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-none shadow-2xs whitespace-nowrap active:scale-95"
-          >
-            <span>GitHub</span>
-            <ExternalLink className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
-          </a>
+          {(() => {
+            const repoLabel = cleanGithubUrl.includes('gitlab') ? 'GitLab' : cleanGithubUrl.includes('github') ? 'GitHub' : 'Source';
+            return (
+              <a
+                href={cleanGithubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${cleanName} ${repoLabel}`}
+                title={`${cleanName} ${repoLabel}`}
+                className="inline-flex items-center justify-center gap-1 lg:gap-1.5 px-2 lg:px-3 py-1 lg:py-1.5 rounded-lg lg:rounded-xl text-[10px] lg:text-xs font-semibold bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-800 dark:text-neutral-200 border border-neutral-300/80 dark:border-neutral-700 transition-none shadow-2xs whitespace-nowrap active:scale-95"
+              >
+                <span>{repoLabel}</span>
+                <ExternalLink className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
+              </a>
+            );
+          })()}
         </div>
       </td>
     </tr>
@@ -797,15 +802,21 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
             </div>
           )}
 
-          <a
-            href={cleanGithubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-1.5 rounded-xl bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-600 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-none"
-            aria-label="GitHub"
-          >
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+          {(() => {
+            const repoLabel = cleanGithubUrl.includes('gitlab') ? 'GitLab' : cleanGithubUrl.includes('github') ? 'GitHub' : 'Source';
+            return (
+              <a
+                href={cleanGithubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 rounded-xl bg-neutral-100 hover:bg-[#0066FF] hover:text-white dark:bg-neutral-800 dark:hover:bg-[#CEFF00] dark:hover:text-neutral-900 text-neutral-600 dark:text-neutral-300 border border-neutral-300/80 dark:border-neutral-700 transition-none"
+                aria-label={repoLabel}
+                title={repoLabel}
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            );
+          })()}
         </div>
       </div>
     </div>

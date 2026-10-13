@@ -83,8 +83,10 @@ describe('Dataset Integrity & Schema Validation', () => {
           `Untrusted githubUrl host '${repoHost}' in entry ${entry.id}`
         ).toBe(true);
 
-        // 2. iconUrl must be a local asset (/...) or an HTTPS URL from allowed hosts
-        if (entry.iconUrl.startsWith('/')) {
+        // 2. iconUrl must be a valid local asset (/...) or an HTTPS URL from allowed hosts
+        // Disallow protocol-relative (//evil.com) or backslash bypasses (/\\evil.com)
+        const isLocalAsset = /^\/(?![\/\\])/.test(entry.iconUrl);
+        if (isLocalAsset) {
           // Valid local icon path
         } else {
           expect(entry.iconUrl.startsWith('https://'), `iconUrl must use HTTPS: ${entry.iconUrl}`).toBe(true);
@@ -106,5 +108,17 @@ describe('Dataset Integrity & Schema Validation', () => {
         }
       }
     }
+  });
+
+  describe('Security Validation Edge Cases (Negative Testing)', () => {
+    it('correctly rejects protocol-relative, backslash bypasses, and javascript URLs', () => {
+      const isSafeLocalPath = (url: string) => /^\/(?![\/\\])/.test(url);
+      expect(isSafeLocalPath('/icons/python.webp')).toBe(true);
+      expect(isSafeLocalPath('/icons/sub/logo.svg')).toBe(true);
+      expect(isSafeLocalPath('//evil.com/x.png')).toBe(false);
+      expect(isSafeLocalPath('/\\evil.com/x.png')).toBe(false);
+      expect(isSafeLocalPath('javascript:alert(1)')).toBe(false);
+      expect(isSafeLocalPath('http://insecure.com/x.png')).toBe(false);
+    });
   });
 });
