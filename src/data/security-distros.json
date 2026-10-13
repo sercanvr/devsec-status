@@ -4,7 +4,7 @@
     "name": "Commando VM",
     "category": "linux-distro",
     "subCategory": "Automated Offensive Security & Pentest OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/317070?s=200&v=4",
+    "iconUrl": "/icons/commando-vm.png",
     "githubUrl": "https://github.com/mandiant/commando-vm",
     "creator": {
       "name": "Mandiant (Google Cloud)",
@@ -68,7 +68,7 @@
     "name": "Security Onion",
     "category": "linux-distro",
     "subCategory": "Threat Hunting & Network Security OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/3277716?s=200&v=4",
+    "iconUrl": "/icons/security-onion.svg",
     "githubUrl": "https://github.com/Security-Onion-Solutions/securityonion",
     "creator": {
       "name": "Doug Burks (Security Onion Solutions)",
@@ -100,7 +100,7 @@
     "name": "The HELK",
     "category": "linux-distro",
     "subCategory": "Hunting ELK & Detection Engineering OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/7469372?s=200&v=4",
+    "iconUrl": "/icons/helk.png",
     "githubUrl": "https://github.com/Cyb3rWard0g/HELK",
     "creator": {
       "name": "Roberto Rodriguez (Cyb3rWard0g)",
@@ -132,7 +132,7 @@
     "name": "BlackArch",
     "category": "linux-distro",
     "subCategory": "Arch-Based Pentesting OS with 2800+ Tools",
-    "iconUrl": "https://cdn.simpleicons.org/blackarch",
+    "iconUrl": "/icons/blackarch.png",
     "githubUrl": "https://github.com/BlackArch/blackarch",
     "creator": {
       "name": "Evan Teitelman (BlackArch Team)",
@@ -164,7 +164,7 @@
     "name": "Exegol",
     "category": "linux-distro",
     "subCategory": "Community-Driven Hacking & Pentest OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/81775791?s=200&v=4",
+    "iconUrl": "/icons/exegol.svg",
     "githubUrl": "https://github.com/ThePorgs/Exegol",
     "creator": {
       "name": "Charlie Bromberg (ThePorgs)",
@@ -196,7 +196,7 @@
     "name": "SANS SIFT",
     "category": "linux-distro",
     "subCategory": "Digital Forensics & Incident Response OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/8497678?s=200&v=4",
+    "iconUrl": "/icons/sift.jpg",
     "githubUrl": "https://github.com/sans-dfir/sift-cli",
     "creator": {
       "name": "SANS Institute (Rob Lee)",
@@ -228,7 +228,7 @@
     "name": "Athena OS",
     "category": "linux-distro",
     "subCategory": "Cybersecurity & Bug Bounty Focused Linux OS",
-    "iconUrl": "https://avatars.githubusercontent.com/u/108537446?s=200&v=4",
+    "iconUrl": "/icons/athena.png",
     "githubUrl": "https://github.com/Athena-OS/athena-iso",
     "creator": {
       "name": "Athena Project",

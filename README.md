@@ -51,12 +51,12 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
     - *Programming Languages* (28 core languages: Python, Rust, TypeScript, Go, C++, etc.)
     - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, etc.)
     - *Database Technologies* (15 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
-    - *Linux Distributions* (12 container, immutable, gaming, and cloud OS distributions: Talos Linux, NixOS, Bottlerocket, Bazzite, DietPi, Void Linux, Gentoo, etc.)
+    - *Linux Distributions* (12 container, immutable, gaming, and cloud OS distributions: Talos Linux, NixOS, Bottlerocket, Bazzite, DietPi, k3OS, Void Linux, Batocera.linux, Gentoo Linux, ChimeraOS, Flatcar, Linux Kernel)
     - *AI Tools & Agentic Frameworks* (12 application stacks: Ollama, LangChain, AutoGPT, ComfyUI, Open WebUI, CrewAI, etc.)
     - *AI Infrastructure & Runtimes* (12 deep learning & inference engines: PyTorch, TensorFlow, Transformers, llama.cpp, vLLM, JAX, etc.)
   - **Security & SecOps Ecosystem** ([Security Page](https://devsec-status.vercel.app/security)):
     - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
-    - *Security Operating Systems & Lab Platforms* (8 penetration testing, threat hunting, and forensic OS distributions: Commando VM, Metasploitable 3, Security Onion, The HELK, BlackArch, Exegol, etc.)
+    - *Security Operating Systems & Lab Platforms* (8 penetration testing, threat hunting, and forensic OS distributions: Commando VM, Metasploitable 3, Security Onion, The HELK, BlackArch, Exegol, SANS SIFT, Athena OS)
 - **Expandable Community Drawer**:
   - Notable project contributors & maintainers with interactive avatar cards and direct profile links
   - Top starred new repository of the month
@@ -83,17 +83,14 @@ devsec-status/
 │   │   └── update-data.yml          # Automated 6-hour cron workflow for GitHub API sync
 │   └── pull_request_template.md     # Standard pull request checklist
 ├── public/
-│   ├── icons/                       # WebP brand logos, favicon, and country flags
+│   ├── icons/                       # High-fidelity official distro logos, brand assets, and country flags
 │   ├── ai-catalog.json              # Structured manifest for autonomous AI agents
 │   ├── llms.txt                     # Semantic dataset documentation for LLM ingestion
 │   ├── robots.txt                   # Crawler directives
 │   └── sitemap.xml                  # SEO URL index
 ├── scripts/
-│   ├── fetch-all.ts                 # Unified metric synchronization for all 8 datasets
-│   ├── fetch-languages.ts           # GitHub Search API crawler for languages
-│   ├── fetch-frameworks.ts          # GitHub Search API crawler for frameworks
-│   ├── fetch-databases.ts           # GitHub Search API crawler for databases
-│   └── fetch-security-tools.ts      # GitHub Search API crawler for security tools
+│   ├── curated-lists/               # Source metadata manifests for initial catalog bootstrapping
+│   └── fetch-all.ts                 # Unified metric synchronization for all 8 datasets (with transaction buffering)
 ├── src/
 │   ├── components/
 │   │   ├── HeaderShowcase.tsx       # 3-column blueprint hero showcase card
@@ -164,9 +161,9 @@ flowchart LR
 
 ## Methodology & Data Transparency
 
-- **Metrics Source**: Repository popularity metrics (stars, ecosystem repo count, 30-day velocity) reflect the linked open-source repository fetched via GitHub REST and Search APIs.
-- **Repository Scope & Upstream Mirrors**: For technologies primarily maintained outside GitHub (e.g. Linux distributions such as Debian on Salsa, Fedora on Pagure, Arch on Arch GitLab, Tails on self-hosted GitLab, or Kali Linux build configurations), the linked repository represents the official upstream mirror, build configuration, or package tooling.
-- **Non-GitHub Hosted Projects**: Projects without an active GitHub repository (e.g., Tails, CAINE) display `N/A (Not hosted on GitHub)` and are excluded from star-relative bar scaling to avoid comparative distortion.
+- **100% GitHub-Native Metric Tracking**: All 127 curated technologies (including all 12 Linux distributions and 8 security platforms) point to active, official public repositories hosted on GitHub. This guarantees consistent, real-time-comparable metrics (stars, total ecosystem volume, 30-day velocity) with zero `N/A` gaps across all 8 tables.
+- **Authentic Brand & Distro Asset Pipeline**: To eliminate generic identicons (pixelated placeholders), fallback octocats, or author personal photos, distribution and specialized toolkit logos are hosted as verified SVG/PNG/WebP assets locally in `public/icons/`. Every asset is tested and guaranteed to return `200 OK` with zero external CDN latency.
+- **Strict URL & Asset Policy**: All external icon URLs and repository links must strictly adhere to the security allowlist defined in `src/lib/urlPolicy.ts` and pass automated schema verification (`tests/dataIntegrity.test.ts`).
 - **Contributor Stack**: Displayed contributors represent notable maintainers and project contributors from pre-rendered datasets, avoiding client-side runtime API rate limits.
 
 ---
@@ -280,9 +277,11 @@ In DevSec Status, technology metrics are refreshed automatically every 6 hours v
      "lastUpdated": "2026-10-13T00:00:00.000Z"
    }
    ```
-3. **Icons & Fallbacks**:
-   - Use official SVG icons from [Devicon CDN](https://devicon.dev/) (`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/...`) or [SimpleIcons](https://simpleicons.org/) (`https://cdn.simpleicons.org/...`).
-   - If an external icon fails to load, the interface automatically renders a clean fallback GitHub SVG icon.
+3. **Icons & Asset Placement**:
+   - For technologies with official brand icons on CDNs, use [Devicon](https://devicon.dev/) (`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/...`) or [SimpleIcons](https://simpleicons.org/) (`https://cdn.simpleicons.org/...`).
+   - For standalone tools, Linux distros, or platforms without CDN icons, place verified vector/high-res assets into `public/icons/<name>.<svg|png|webp>` and set `"iconUrl": "/icons/<name>.<ext>"`.
+   - All icon URLs must pass `isAllowedIconUrl` validation according to `src/lib/urlPolicy.ts`.
+   - If an icon fails to load, the UI gracefully renders a clean fallback GitHub SVG icon.
 4. **Creator Avatars**:
    - For organizations or authors with active GitHub profiles, use `https://github.com/<username-or-org>.png`.
 5. **Run test verification**:

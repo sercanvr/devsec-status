@@ -114,7 +114,7 @@ Add an object to the array in `src/data/<category>.json`:
 ### Icon Guidelines
 
 - **Primary Source**: Use official SVG vector icons from [Devicon CDN](https://devicon.dev/) (`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/...`) or [SimpleIcons](https://simpleicons.org/) (`https://cdn.simpleicons.org/...`).
-- **Local Assets**: You may also reference project icons under `/icons/<name>.webp`.
+- **Local Assets**: For distributions or tools without CDN icons, place high-res/vector assets in `public/icons/<name>.<svg|png|webp>` and set `"iconUrl": "/icons/<name>.<ext>"`.
 - **Fallback**: If an external icon fails to load, the UI automatically renders a fallback GitHub SVG icon.
 
 ### Creator & Avatar Guidelines
