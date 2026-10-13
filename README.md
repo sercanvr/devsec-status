@@ -4,7 +4,7 @@
 
 ![DevSec Status Logo](https://msercanvar.sirv.com/devsec-status-images/devsec-logo.webp)
 
-**Automated statistics, popularity & momentum tracker for Programming Languages, Frameworks, Databases, and Open Source Cybersecurity Tools.**
+**Automated developer intelligence dashboard tracking Programming Languages, Frameworks, Databases, Linux Distros, AI Systems, and Cybersecurity Tools.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-devsec--status.vercel.app-CEFF00?logo=vercel&logoColor=black)](https://devsec-status.vercel.app)
@@ -20,7 +20,7 @@
 
 ## Overview
 
-**DevSec Status** is an open-source developer intelligence dashboard designed to monitor the growth, developer adoption, repository volume, and velocity of major programming languages, modern frameworks, database engines, and cybersecurity toolkits.
+**DevSec Status** is an open-source developer intelligence dashboard designed to monitor the growth, developer adoption, repository volume, and velocity of major programming languages, modern frameworks, database engines, Linux distributions, AI systems, and cybersecurity toolkits.
 
 Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, DevSec Status visualizes technology popularity through interactive segmented metric bars, blueprint-styled architectural showcase heroes, dynamic community contributor stacks, and instant search filtering.
 
@@ -76,8 +76,11 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
 ```
 devsec-status/
 ├── .github/
-│   └── workflows/
-│       └── update-data.yml          # Automated 6-hour cron workflow for GitHub API sync
+│   ├── ISSUE_TEMPLATE/
+│   │   └── suggest_technology.yml   # Template for suggesting new tools & tech
+│   ├── workflows/
+│   │   └── update-data.yml          # Automated 6-hour cron workflow for GitHub API sync
+│   └── pull_request_template.md     # Standard pull request checklist
 ├── public/
 │   ├── icons/                       # WebP brand logos, favicon, and country flags
 │   ├── ai-catalog.json              # Structured manifest for autonomous AI agents
@@ -85,7 +88,6 @@ devsec-status/
 │   ├── robots.txt                   # Crawler directives
 │   └── sitemap.xml                  # SEO URL index
 ├── scripts/
-│   ├── curated-lists/               # Target technology definitions and metadata
 │   ├── fetch-languages.ts           # GitHub Search API crawler for languages
 │   ├── fetch-frameworks.ts          # GitHub Search API crawler for frameworks
 │   ├── fetch-databases.ts           # GitHub Search API crawler for databases
@@ -107,12 +109,13 @@ devsec-status/
 │   │   ├── ui/
 │   │   │   └── skeleton.tsx         # Primitive Skeleton components (Block, Text, Circle, Swap)
 │   │   └── CardSkeleton.tsx         # High-fidelity card shimmer loading skeleton
-│   ├── data/                        # Static synced datasets (languages, frameworks, etc.)
+│   ├── data/                        # Master synced datasets (languages, frameworks, etc.)
 │   ├── hooks/
 │   │   ├── useGitHubContributors.ts # Contributor avatar resolver with fallback cache
 │   │   └── useTheme.ts              # Dark/light theme state manager
 │   ├── i18n/                        # 9 localization dictionaries (en, tr, de, fr, es, it, pt, ru, zh)
 │   ├── lib/
+│   │   ├── formatNumber.ts          # Locale-aware number and percent formatter
 │   │   └── sanitize.ts              # DOMPurify text and URL sanitization helpers
 │   ├── pages/
 │   │   ├── SoftwarePage.tsx         # Main software ecosystem page (6 category tables)
@@ -123,10 +126,12 @@ devsec-status/
 │   ├── main.tsx                     # React DOM entry point
 │   └── index.css                    # Tailwind CSS directives and custom styling tokens
 ├── tests/
+│   ├── dataIntegrity.test.ts        # Dataset schema, unique IDs, and HTTPS security checks
 │   ├── TechTable.test.tsx           # Unit tests for fintech table filtering and expansion
 │   ├── TechBar.test.tsx             # Unit tests for technology row rendering
 │   ├── Skeleton.test.tsx            # Unit tests for skeleton loaders and fallback states
 │   └── setup.ts                     # Jest DOM test environment setup
+├── CONTRIBUTING.md                  # Comprehensive contribution and data guidelines
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
@@ -145,7 +150,7 @@ flowchart LR
     B -->|Authenticated Request| C[GitHub Search API]
     C -->|Stars, Repos, 30d Velocity| B
     B -->|Saves & Commits| D[Static Datasets<br/>src/data/*.json]
-    D -->|Zero-Latency Import| E[React Frontend<br/>Production Client]
+    D -->|Static Build Import| E[React Frontend<br/>Production Client]
 ```
 
 1. **Scheduled Sync**: A GitHub Actions workflow triggers every 6 hours (`0 */6 * * *`).
@@ -197,7 +202,7 @@ flowchart LR
 | `pnpm dev` | Starts the Vite local development server with hot module replacement (HMR) |
 | `pnpm build` | Type-checks with `tsc` and builds production bundle to `dist/` |
 | `pnpm preview` | Serves the production build locally for verification |
-| `pnpm lint` | Performs strict TypeScript type checks across all `.ts` and `.tsx` files |
+| `pnpm lint` | Runs strict TypeScript type checks across all files (`tsc --noEmit`) |
 | `pnpm test` | Runs the Vitest test suite once |
 | `pnpm run fetch:data` | Executes all 4 data crawlers to refresh static JSON files from GitHub |
 
@@ -244,7 +249,7 @@ In DevSec Status, technology metrics are refreshed automatically every 6 hours v
      "name": "Tool Name",
      "category": "security-tool",
      "subCategory": "Vulnerability Scanner",
-     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nmap/nmap-original.svg",
+     "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
      "githubUrl": "https://github.com/org/repo",
      "creator": {
        "name": "Author or Organization",

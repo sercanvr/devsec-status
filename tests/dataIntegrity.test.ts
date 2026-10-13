@@ -46,4 +46,65 @@ describe('Dataset Integrity & Schema Validation', () => {
       }
     }
   });
+
+  it('all URLs adhere to HTTPS security standards and trusted host allowlist', () => {
+    const allowedHosts = new Set([
+      'cdn.simpleicons.org',
+      'cdn.jsdelivr.net',
+      'avatars.githubusercontent.com',
+      'raw.githubusercontent.com',
+      'github.com',
+      'msercanvar.sirv.com',
+      'blackarch.org',
+      'www.distrowiz.com',
+      'gchq.github.io',
+    ]);
+
+    const allowedRepoHosts = new Set([
+      'github.com',
+      'gitlab.com',
+      'gitlab.tails.boum.org',
+      'www.caine-live.net',
+    ]);
+
+    for (const file of dataFiles) {
+      const filePath = path.resolve(__dirname, '../src/data', file);
+      const entries = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+      for (const entry of entries) {
+        // 1. githubUrl must use HTTPS and belong to trusted code repositories
+        expect(
+          entry.githubUrl.startsWith('https://'),
+          `Invalid githubUrl in ${entry.id}: must use HTTPS`
+        ).toBe(true);
+        const repoHost = new URL(entry.githubUrl).hostname;
+        expect(
+          allowedRepoHosts.has(repoHost),
+          `Untrusted githubUrl host '${repoHost}' in entry ${entry.id}`
+        ).toBe(true);
+
+        // 2. iconUrl must be a local asset (/...) or an HTTPS URL from allowed hosts
+        if (entry.iconUrl.startsWith('/')) {
+          // Valid local icon path
+        } else {
+          expect(entry.iconUrl.startsWith('https://'), `iconUrl must use HTTPS: ${entry.iconUrl}`).toBe(true);
+          const iconHost = new URL(entry.iconUrl).hostname;
+          expect(
+            allowedHosts.has(iconHost),
+            `Untrusted iconUrl host '${iconHost}' in entry ${entry.id}`
+          ).toBe(true);
+        }
+
+        // 3. creator avatarUrl must be an HTTPS URL from allowed hosts
+        if (entry.creator?.avatarUrl) {
+          expect(entry.creator.avatarUrl.startsWith('https://'), `avatarUrl must use HTTPS: ${entry.creator.avatarUrl}`).toBe(true);
+          const avatarHost = new URL(entry.creator.avatarUrl).hostname;
+          expect(
+            allowedHosts.has(avatarHost),
+            `Untrusted avatarUrl host '${avatarHost}' in entry ${entry.id}`
+          ).toBe(true);
+        }
+      }
+    }
+  });
 });
