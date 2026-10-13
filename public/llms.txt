@@ -1,7 +1,8 @@
 # DevSec Status
 
 > Automated popularity, momentum, and statistics tracker for Programming Languages, Web Frameworks, Databases, and Cybersecurity Tools.
+> Curates 125 open-source technologies across 8 granular categories, actively tracking live GitHub metrics (stars, repository volume, 30-day velocity) for 111 repositories, with 14 upstream distributions/profiles documented as N/A.
 
 ## Pages
-- [Software Ecosystem](https://devsec-status.vercel.app/): Tracks automated GitHub stars, repositories, and momentum for programming languages, frameworks, and databases.
-- [Cybersecurity & SecOps](https://devsec-status.vercel.app/security): Tracks open-source security tools, vulnerability scanners, and penetration testing frameworks.
+- [Software Ecosystem](https://devsec-status.vercel.app/): Tracks automated GitHub stars, repositories, and momentum for programming languages, frameworks, databases, and Linux distributions.
+- [Cybersecurity & SecOps](https://devsec-status.vercel.app/security): Tracks open-source security tools, vulnerability scanners, and penetration testing distributions.

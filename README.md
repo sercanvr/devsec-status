@@ -46,7 +46,7 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
 
 - **Terminal & Fintech-Inspired UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
 - **Blueprint Architecture Showcase**: High-impact hero container featuring SVG blueprint vectors, interactive sparkline charts, growth ratios, and a central orbital tech hub.
-- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (125 tracked technologies total):
+- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (125 curated technologies total — 111 actively metric-tracked GitHub repositories and 14 upstream distributions/profiles marked `N/A`):
   - **Software Ecosystem** ([Software Page](https://devsec-status.vercel.app/)):
     - *Programming Languages* (28 core languages: Python, Rust, TypeScript, Go, C++, etc.)
     - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, Gin, etc.)
