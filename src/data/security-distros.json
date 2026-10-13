@@ -1,88 +1,128 @@
 [
   {
-    "id": "secdistro-kali",
-    "name": "Kali Linux",
+    "id": "secdistro-commando",
+    "name": "Commando VM",
     "category": "linux-distro",
-    "subCategory": "Advanced Penetration Testing Linux OS",
-    "iconUrl": "https://cdn.simpleicons.org/kalilinux",
-    "githubUrl": "https://gitlab.com/kalilinux/build-scripts/live-build-config",
+    "subCategory": "Automated Offensive Security & Pentest OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/317070?s=200&v=4",
+    "githubUrl": "https://github.com/mandiant/commando-vm",
     "creator": {
-      "name": "OffSec (Mati Aharoni & Devon Kearns)",
-      "avatarUrl": "https://github.com/offensive-security.png",
+      "name": "Mandiant (Google Cloud)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/331209?v=4",
       "type": "organization",
-      "releaseDate": "13 Mart 2013",
-      "latestVersion": "2025.1"
+      "releaseDate": "2019",
+      "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
+      "totalRepos": 1372,
+      "totalStars": 7812
     },
     "momentum": {
-      "newReposLast30Days": 0,
+      "newReposLast30Days": 69,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:18.808Z",
+    "lastUpdated": "2026-10-13T07:25:23.094Z",
     "contributors": [
       {
-        "login": "steev",
-        "avatar_url": "https://github.com/steev.png?size=64",
-        "html_url": "https://github.com/steev",
-        "type": "User"
-      },
-      {
-        "login": "rhertzog",
-        "avatar_url": "https://github.com/rhertzog.png?size=64",
-        "html_url": "https://github.com/rhertzog",
-        "type": "User"
-      },
-      {
-        "login": "dcampitelli",
-        "avatar_url": "https://github.com/dcampitelli.png?size=64",
-        "html_url": "https://github.com/dcampitelli",
-        "type": "User"
+        "login": "mandiant",
+        "avatar_url": "https://avatars.githubusercontent.com/u/331209?v=4",
+        "html_url": "https://github.com/mandiant",
+        "type": "Organization"
       }
     ]
   },
   {
-    "id": "secdistro-parrot",
-    "name": "Parrot Security OS",
+    "id": "secdistro-metasploitable",
+    "name": "Metasploitable 3",
     "category": "linux-distro",
-    "subCategory": "Security, Development & Privacy Centric OS",
-    "iconUrl": "https://cdn.simpleicons.org/parrotsecurity",
-    "githubUrl": "https://github.com/ParrotSec",
+    "subCategory": "Intentionally Vulnerable Security Lab OS",
+    "iconUrl": "https://cdn.simpleicons.org/metasploit",
+    "githubUrl": "https://github.com/rapid7/metasploitable3",
     "creator": {
-      "name": "Lorenzo Faletra (Parrot Project)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/lorenzo-faletra.jpg?v=2",
-      "type": "person",
-      "releaseDate": "10 Nisan 2013",
-      "latestVersion": "Parrot 6.2"
+      "name": "Rapid7",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1013671?v=4",
+      "type": "organization",
+      "releaseDate": "2016",
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
+      "totalRepos": 1273,
+      "totalStars": 5741
     },
     "momentum": {
-      "newReposLast30Days": 0,
+      "newReposLast30Days": 64,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:23.345Z",
+    "lastUpdated": "2026-10-13T07:25:24.102Z",
     "contributors": [
       {
-        "login": "palinuro",
-        "avatar_url": "https://github.com/palinuro.png?size=64",
-        "html_url": "https://github.com/palinuro",
-        "type": "User"
-      },
+        "login": "rapid7",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1013671?v=4",
+        "html_url": "https://github.com/rapid7",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-securityonion",
+    "name": "Security Onion",
+    "category": "linux-distro",
+    "subCategory": "Threat Hunting & Network Security OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/3277716?s=200&v=4",
+    "githubUrl": "https://github.com/Security-Onion-Solutions/securityonion",
+    "creator": {
+      "name": "Doug Burks (Security Onion Solutions)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/8959843?v=4",
+      "type": "organization",
+      "releaseDate": "2008",
+      "latestVersion": "3/main"
+    },
+    "popularity": {
+      "totalRepos": 681,
+      "totalStars": 4924
+    },
+    "momentum": {
+      "newReposLast30Days": 34,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:24.988Z",
+    "contributors": [
       {
-        "login": "danterolle",
-        "avatar_url": "https://github.com/danterolle.png?size=64",
-        "html_url": "https://github.com/danterolle",
-        "type": "User"
-      },
+        "login": "Security-Onion-Solutions",
+        "avatar_url": "https://avatars.githubusercontent.com/u/8959843?v=4",
+        "html_url": "https://github.com/Security-Onion-Solutions",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-helk",
+    "name": "The HELK",
+    "category": "linux-distro",
+    "subCategory": "Hunting ELK & Detection Engineering OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/7469372?s=200&v=4",
+    "githubUrl": "https://github.com/Cyb3rWard0g/HELK",
+    "creator": {
+      "name": "Roberto Rodriguez (Cyb3rWard0g)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/9653181?v=4",
+      "type": "person",
+      "releaseDate": "2017",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 690,
+      "totalStars": 3931
+    },
+    "momentum": {
+      "newReposLast30Days": 35,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:25.876Z",
+    "contributors": [
       {
-        "login": "cappetta",
-        "avatar_url": "https://github.com/cappetta.png?size=64",
-        "html_url": "https://github.com/cappetta",
+        "login": "Cyb3rWard0g",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9653181?v=4",
+        "html_url": "https://github.com/Cyb3rWard0g",
         "type": "User"
       }
     ]
@@ -96,205 +136,122 @@
     "githubUrl": "https://github.com/BlackArch/blackarch",
     "creator": {
       "name": "Evan Teitelman (BlackArch Team)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/evan-teitelman.jpg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6171113?v=4",
       "type": "person",
       "releaseDate": "2013",
-      "latestVersion": "v2024.09"
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 464,
-      "totalStars": 3524
+      "totalRepos": 683,
+      "totalStars": 3526
     },
     "momentum": {
-      "newReposLast30Days": 17,
-      "topStarredNewRepo": {
-        "name": "rodixworld-star/Blackarchive",
-        "stars": 0
-      }
+      "newReposLast30Days": 34,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:27.835Z",
+    "lastUpdated": "2026-10-13T07:25:26.790Z",
     "contributors": [
       {
-        "login": "noptrix",
-        "avatar_url": "https://github.com/noptrix.png?size=64",
-        "html_url": "https://github.com/noptrix",
-        "type": "User"
-      },
-      {
-        "login": "f4lc0n",
-        "avatar_url": "https://github.com/f4lc0n.png?size=64",
-        "html_url": "https://github.com/f4lc0n",
-        "type": "User"
-      },
-      {
-        "login": "abysamr",
-        "avatar_url": "https://github.com/abysamr.png?size=64",
-        "html_url": "https://github.com/abysamr",
-        "type": "User"
+        "login": "BlackArch",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6171113?v=4",
+        "html_url": "https://github.com/BlackArch",
+        "type": "Organization"
       }
     ]
   },
   {
-    "id": "secdistro-tails",
-    "name": "Tails",
+    "id": "secdistro-exegol",
+    "name": "Exegol",
     "category": "linux-distro",
-    "subCategory": "The Amnesic Incognito Live System (Tor-Enforced)",
-    "iconUrl": "https://cdn.simpleicons.org/tails",
-    "githubUrl": "https://gitlab.tails.boum.org/tails/tails",
+    "subCategory": "Community-Driven Hacking & Pentest OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/81775791?s=200&v=4",
+    "githubUrl": "https://github.com/ThePorgs/Exegol",
     "creator": {
-      "name": "Tails Project & Tor Community",
-      "avatarUrl": "https://github.com/tails-project.png",
+      "name": "Charlie Bromberg (ThePorgs)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/119009827?v=4",
+      "type": "person",
+      "releaseDate": "2020",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 287,
+      "totalStars": 3107
+    },
+    "momentum": {
+      "newReposLast30Days": 14,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:27.692Z",
+    "contributors": [
+      {
+        "login": "ThePorgs",
+        "avatar_url": "https://avatars.githubusercontent.com/u/119009827?v=4",
+        "html_url": "https://github.com/ThePorgs",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "secdistro-sift",
+    "name": "SANS SIFT",
+    "category": "linux-distro",
+    "subCategory": "Digital Forensics & Incident Response OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/8497678?s=200&v=4",
+    "githubUrl": "https://github.com/sans-dfir/sift-cli",
+    "creator": {
+      "name": "SANS Institute (Rob Lee)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/6148860?v=4",
       "type": "organization",
-      "releaseDate": "23 Haziran 2009",
-      "latestVersion": "Tails 6.11"
+      "releaseDate": "2014",
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
+      "totalRepos": 71,
+      "totalStars": 412
     },
     "momentum": {
-      "newReposLast30Days": 0,
+      "newReposLast30Days": 4,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:31.563Z",
+    "lastUpdated": "2026-10-13T07:25:28.931Z",
     "contributors": [
       {
-        "login": "intrigeri",
-        "avatar_url": "https://github.com/intrigeri.png?size=64",
-        "html_url": "https://github.com/intrigeri",
-        "type": "User"
-      },
-      {
-        "login": "sajolida",
-        "avatar_url": "https://github.com/sajolida.png?size=64",
-        "html_url": "https://github.com/sajolida",
-        "type": "User"
-      },
-      {
-        "login": "anonym",
-        "avatar_url": "https://github.com/anonym.png?size=64",
-        "html_url": "https://github.com/anonym",
-        "type": "User"
+        "login": "teamdfir",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6148860?v=4",
+        "html_url": "https://github.com/teamdfir",
+        "type": "Organization"
       }
     ]
   },
   {
-    "id": "secdistro-qubes",
-    "name": "Qubes OS",
+    "id": "secdistro-athena",
+    "name": "Athena OS",
     "category": "linux-distro",
-    "subCategory": "Security-Oriented OS via Xen Compartmentalization",
-    "iconUrl": "https://cdn.simpleicons.org/qubesos",
-    "githubUrl": "https://github.com/QubesOS",
+    "subCategory": "Cybersecurity & Bug Bounty Focused Linux OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/108537446?s=200&v=4",
+    "githubUrl": "https://github.com/Athena-OS/athena-iso",
     "creator": {
-      "name": "Joanna Rutkowska (Invisible Things Lab)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/joanna-rutkowska.jpg",
-      "type": "person",
-      "releaseDate": "3 Eylül 2012",
-      "latestVersion": "Qubes 4.2.3"
+      "name": "Athena Project",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/107514694?v=4",
+      "type": "organization",
+      "releaseDate": "2022",
+      "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
+      "totalRepos": 34,
+      "totalStars": 259
     },
     "momentum": {
-      "newReposLast30Days": 0,
+      "newReposLast30Days": 2,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:35.650Z",
+    "lastUpdated": "2026-10-13T07:25:30.048Z",
     "contributors": [
       {
-        "login": "marmarek",
-        "avatar_url": "https://github.com/marmarek.png?size=64",
-        "html_url": "https://github.com/marmarek",
-        "type": "User"
-      },
-      {
-        "login": "rootkovska",
-        "avatar_url": "https://github.com/rootkovska.png?size=64",
-        "html_url": "https://github.com/rootkovska",
-        "type": "User"
-      },
-      {
-        "login": "woju",
-        "avatar_url": "https://github.com/woju.png?size=64",
-        "html_url": "https://github.com/woju",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "secdistro-pentoo",
-    "name": "Pentoo",
-    "category": "linux-distro",
-    "subCategory": "Gentoo-Based Live CD/USB for Penetration Testing",
-    "iconUrl": "https://avatars.githubusercontent.com/u/496245?s=200&v=4",
-    "githubUrl": "https://github.com/pentoo",
-    "creator": {
-      "name": "Michael Zanetta & Pentoo Team",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/michael-zanetta.jpg",
-      "type": "person",
-      "releaseDate": "Haziran 2005",
-      "latestVersion": "Pentoo 2024.0"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:51:39.935Z",
-    "contributors": [
-      {
-        "login": "blshkv",
-        "avatar_url": "https://github.com/blshkv.png?size=64",
-        "html_url": "https://github.com/blshkv",
-        "type": "User"
-      },
-      {
-        "login": "zerochaos",
-        "avatar_url": "https://github.com/zerochaos.png?size=64",
-        "html_url": "https://github.com/zerochaos",
-        "type": "User"
-      },
-      {
-        "login": "grim-gentoo",
-        "avatar_url": "https://github.com/github.png?size=64",
-        "html_url": "https://github.com/pentoo",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "secdistro-caine",
-    "name": "CAINE",
-    "category": "linux-distro",
-    "subCategory": "Computer Aided Investigative Digital Forensics OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-    "githubUrl": "https://www.caine-live.net",
-    "creator": {
-      "name": "Nanni Bassetti",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/nanni-bassetti.png",
-      "type": "person",
-      "releaseDate": "2008",
-      "latestVersion": "CAINE 14.0"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:51:44.128Z",
-    "contributors": [
-      {
-        "login": "nannibassetti",
-        "avatar_url": "https://avatars.githubusercontent.com/u/12171140?size=64&v=4",
-        "html_url": "https://github.com/nannibassetti",
-        "type": "User"
+        "login": "Athena-OS",
+        "avatar_url": "https://avatars.githubusercontent.com/u/107514694?v=4",
+        "html_url": "https://github.com/Athena-OS",
+        "type": "Organization"
       }
     ]
   }

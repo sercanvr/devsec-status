@@ -46,17 +46,17 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
 
 - **Terminal & Fintech-Inspired UI**: Technology metrics visualized through 20-segment capsule progress bars with adaptive color tiers (Cobalt Blue, Emerald, Amber, Rose).
 - **Blueprint Architecture Showcase**: High-impact hero container featuring SVG blueprint vectors, interactive sparkline charts, growth ratios, and a central orbital tech hub.
-- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (125 curated technologies total — 111 actively metric-tracked GitHub repositories and 14 upstream distributions/profiles marked `N/A`):
+- **Granular Category Tables**: Full developer and security ecosystem organized across 8 dedicated tables (127 curated technologies total — 100% actively metric-tracked GitHub repositories):
   - **Software Ecosystem** ([Software Page](https://devsec-status.vercel.app/)):
     - *Programming Languages* (28 core languages: Python, Rust, TypeScript, Go, C++, etc.)
-    - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, Gin, etc.)
+    - *Frameworks & Libraries* (19 modern stacks: React, Next.js, FastAPI, Vue, etc.)
     - *Database Technologies* (15 relational, NoSQL, and vector engines: PostgreSQL, Redis, Supabase, MongoDB, SQLite, etc.)
-    - *Linux Distributions* (11 core operating systems: Ubuntu, Debian, Arch, Fedora, Alpine, etc.)
+    - *Linux Distributions* (12 container, immutable, gaming, and cloud OS distributions: Talos Linux, NixOS, Bottlerocket, Bazzite, DietPi, Void Linux, Gentoo, etc.)
     - *AI Tools & Agentic Frameworks* (12 application stacks: Ollama, LangChain, AutoGPT, ComfyUI, Open WebUI, CrewAI, etc.)
     - *AI Infrastructure & Runtimes* (12 deep learning & inference engines: PyTorch, TensorFlow, Transformers, llama.cpp, vLLM, JAX, etc.)
   - **Security & SecOps Ecosystem** ([Security Page](https://devsec-status.vercel.app/security)):
     - *Cybersecurity Tools* (21 SAST/DAST, scanners, and exploit frameworks: Ghidra, Metasploit, Nmap, Trivy, Nuclei, ZAP, etc.)
-    - *Security Operating Systems* (7 penetration testing distributions: Kali Linux, Parrot OS, BlackArch, Tails, etc.)
+    - *Security Operating Systems & Lab Platforms* (8 penetration testing, threat hunting, and forensic OS distributions: Commando VM, Metasploitable 3, Security Onion, The HELK, BlackArch, Exegol, etc.)
 - **Expandable Community Drawer**:
   - Notable project contributors & maintainers with interactive avatar cards and direct profile links
   - Top starred new repository of the month

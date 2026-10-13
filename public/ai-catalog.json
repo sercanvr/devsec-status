@@ -1,12 +1,12 @@
 {
   "name": "DevSec Status",
-  "description": "Automated statistics, popularity & momentum tracker for Programming Languages, Web Frameworks, Databases, and Cybersecurity Tools.",
+  "description": "Automated statistics, popularity & momentum tracker for Programming Languages, Web Frameworks, Databases, Linux Distributions, and Cybersecurity Tools.",
   "url": "https://devsec-status.vercel.app",
   "version": "1.0.0",
   "catalog": {
-    "totalCurated": 125,
-    "metricTrackedRepositories": 111,
-    "externalOrUpstreamDistributions": 14,
+    "totalCurated": 127,
+    "metricTrackedRepositories": 127,
+    "externalOrUpstreamDistributions": 0,
     "refreshIntervalHours": 6
   }
 }

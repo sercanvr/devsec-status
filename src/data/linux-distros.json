@@ -8,392 +8,25 @@
     "githubUrl": "https://github.com/torvalds/linux",
     "creator": {
       "name": "Linus Torvalds",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/linus-torvalds.jpg",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/1024025?v=4",
       "type": "person",
       "releaseDate": "17 Eylül 1991",
-      "latestVersion": "v6.13"
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 28837,
-      "totalStars": 251330
+      "totalRepos": 67679,
+      "totalStars": 251709
     },
     "momentum": {
-      "newReposLast30Days": 836,
-      "topStarredNewRepo": {
-        "name": "dikeckaan/mu300-linux",
-        "stars": 283
-      }
+      "newReposLast30Days": 3384,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:50:32.253Z",
+    "lastUpdated": "2026-10-13T07:25:11.471Z",
     "contributors": [
       {
         "login": "torvalds",
-        "avatar_url": "https://github.com/torvalds.png?size=64",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1024025?v=4",
         "html_url": "https://github.com/torvalds",
-        "type": "User"
-      },
-      {
-        "login": "gregkh",
-        "avatar_url": "https://github.com/gregkh.png?size=64",
-        "html_url": "https://github.com/gregkh",
-        "type": "User"
-      },
-      {
-        "login": "arndb",
-        "avatar_url": "https://github.com/arndb.png?size=64",
-        "html_url": "https://github.com/arndb",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-ubuntu",
-    "name": "Ubuntu",
-    "category": "linux-distro",
-    "subCategory": "Debian-Based Linux OS by Canonical",
-    "iconUrl": "https://cdn.simpleicons.org/ubuntu",
-    "githubUrl": "https://github.com/canonical",
-    "creator": {
-      "name": "Mark Shuttleworth (Canonical)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/mark-shuttleworth.jpg?v=2",
-      "type": "person",
-      "releaseDate": "20 Ekim 2004",
-      "latestVersion": "26.04 LTS"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:37.138Z",
-    "contributors": [
-      {
-        "login": "didrocks",
-        "avatar_url": "https://github.com/didrocks.png?size=64",
-        "html_url": "https://github.com/didrocks",
-        "type": "User"
-      },
-      {
-        "login": "seb128",
-        "avatar_url": "https://github.com/seb128.png?size=64",
-        "html_url": "https://github.com/seb128",
-        "type": "User"
-      },
-      {
-        "login": "sil2100",
-        "avatar_url": "https://github.com/sil2100.png?size=64",
-        "html_url": "https://github.com/sil2100",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-debian",
-    "name": "Debian",
-    "category": "linux-distro",
-    "subCategory": "The Universal Community Linux OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg",
-    "githubUrl": "https://github.com/Debian",
-    "creator": {
-      "name": "Ian Murdock (Debian Project)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/ian-murdock.jpg",
-      "type": "person",
-      "releaseDate": "16 Ağustos 1993",
-      "latestVersion": "Debian 12"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:40.776Z",
-    "contributors": [
-      {
-        "login": "rhonda",
-        "avatar_url": "https://github.com/rhonda.png?size=64",
-        "html_url": "https://github.com/rhonda",
-        "type": "User"
-      },
-      {
-        "login": "dondelelcaro",
-        "avatar_url": "https://github.com/dondelelcaro.png?size=64",
-        "html_url": "https://github.com/dondelelcaro",
-        "type": "User"
-      },
-      {
-        "login": "tille",
-        "avatar_url": "https://github.com/tille.png?size=64",
-        "html_url": "https://github.com/tille",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-fedora",
-    "name": "Fedora",
-    "category": "linux-distro",
-    "subCategory": "Innovative Enterprise Upstream OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg",
-    "githubUrl": "https://github.com/fedora-infra",
-    "creator": {
-      "name": "Warren Togami (Red Hat)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/warren-togami.jpg",
-      "type": "person",
-      "releaseDate": "6 Kasım 2003",
-      "latestVersion": "Fedora 41"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:44.724Z",
-    "contributors": [
-      {
-        "login": "kevin",
-        "avatar_url": "https://github.com/kevin.png?size=64",
-        "html_url": "https://github.com/kevin",
-        "type": "User"
-      },
-      {
-        "login": "pingou",
-        "avatar_url": "https://github.com/pingou.png?size=64",
-        "html_url": "https://github.com/pingou",
-        "type": "User"
-      },
-      {
-        "login": "bowlofeggs",
-        "avatar_url": "https://github.com/bowlofeggs.png?size=64",
-        "html_url": "https://github.com/bowlofeggs",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-arch",
-    "name": "Arch Linux",
-    "category": "linux-distro",
-    "subCategory": "Lightweight Rolling-Release OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/archlinux/archlinux-original.svg",
-    "githubUrl": "https://github.com/archlinux",
-    "creator": {
-      "name": "Judd Vinet",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/judd-vinet.png",
-      "type": "person",
-      "releaseDate": "11 Mart 2002",
-      "latestVersion": "2025.01"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:48.357Z",
-    "contributors": [
-      {
-        "login": "Torxed",
-        "avatar_url": "https://github.com/Torxed.png?size=64",
-        "html_url": "https://github.com/Torxed",
-        "type": "User"
-      },
-      {
-        "login": "gromit",
-        "avatar_url": "https://github.com/gromit.png?size=64",
-        "html_url": "https://github.com/gromit",
-        "type": "User"
-      },
-      {
-        "login": "alerque",
-        "avatar_url": "https://github.com/alerque.png?size=64",
-        "html_url": "https://github.com/alerque",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-opensuse",
-    "name": "openSUSE",
-    "category": "linux-distro",
-    "subCategory": "Enterprise-Grade Stable & Tumbleweed OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opensuse/opensuse-original.svg",
-    "githubUrl": "https://github.com/openSUSE",
-    "creator": {
-      "name": "SUSE Linux / openSUSE Project",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/roland-dyroff.jpg",
-      "type": "person",
-      "releaseDate": "Ekim 2005",
-      "latestVersion": "Leap 15.6"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:52.072Z",
-    "contributors": [
-      {
-        "login": "adrianSuSE",
-        "avatar_url": "https://github.com/adrianSuSE.png?size=64",
-        "html_url": "https://github.com/adrianSuSE",
-        "type": "User"
-      },
-      {
-        "login": "mlschroe",
-        "avatar_url": "https://github.com/mlschroe.png?size=64",
-        "html_url": "https://github.com/mlschroe",
-        "type": "User"
-      },
-      {
-        "login": "bmwiedemann",
-        "avatar_url": "https://github.com/bmwiedemann.png?size=64",
-        "html_url": "https://github.com/bmwiedemann",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-mint",
-    "name": "Linux Mint",
-    "category": "linux-distro",
-    "subCategory": "User-Friendly Desktop Linux Distribution",
-    "iconUrl": "https://cdn.simpleicons.org/linuxmint",
-    "githubUrl": "https://github.com/linuxmint",
-    "creator": {
-      "name": "Clément Lefèbvre",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/clement-lefebvre.png",
-      "type": "person",
-      "releaseDate": "27 Ağustos 2006",
-      "latestVersion": "Mint 22"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:50:57.045Z",
-    "contributors": [
-      {
-        "login": "clefebvre",
-        "avatar_url": "https://github.com/clefebvre.png?size=64",
-        "html_url": "https://github.com/clefebvre",
-        "type": "User"
-      },
-      {
-        "login": "mtwebster",
-        "avatar_url": "https://github.com/mtwebster.png?size=64",
-        "html_url": "https://github.com/mtwebster",
-        "type": "User"
-      },
-      {
-        "login": "JosephMcc",
-        "avatar_url": "https://github.com/JosephMcc.png?size=64",
-        "html_url": "https://github.com/JosephMcc",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-popos",
-    "name": "Pop!_OS",
-    "category": "linux-distro",
-    "subCategory": "COSMIC Desktop OS by System76",
-    "iconUrl": "https://cdn.simpleicons.org/popos",
-    "githubUrl": "https://github.com/pop-os",
-    "creator": {
-      "name": "Carl Richell (System76)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/carl-richell.jpg",
-      "type": "person",
-      "releaseDate": "27 Ekim 2017",
-      "latestVersion": "COSMIC Alpha"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:51:01.840Z",
-    "contributors": [
-      {
-        "login": "mmstick",
-        "avatar_url": "https://github.com/mmstick.png?size=64",
-        "html_url": "https://github.com/mmstick",
-        "type": "User"
-      },
-      {
-        "login": "jackpot51",
-        "avatar_url": "https://github.com/jackpot51.png?size=64",
-        "html_url": "https://github.com/jackpot51",
-        "type": "User"
-      },
-      {
-        "login": "edfloreshz",
-        "avatar_url": "https://github.com/edfloreshz.png?size=64",
-        "html_url": "https://github.com/edfloreshz",
-        "type": "User"
-      }
-    ]
-  },
-  {
-    "id": "distro-manjaro",
-    "name": "Manjaro",
-    "category": "linux-distro",
-    "subCategory": "Accessible Arch-Based Rolling OS",
-    "iconUrl": "https://cdn.simpleicons.org/manjaro",
-    "githubUrl": "https://github.com/manjaro",
-    "creator": {
-      "name": "Philip Müller & Roland Singer",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/philip-m%C3%BCller.jpg",
-      "type": "person",
-      "releaseDate": "10 Temmuz 2011",
-      "latestVersion": "v24.2"
-    },
-    "popularity": {
-      "totalRepos": 0,
-      "totalStars": 0
-    },
-    "momentum": {
-      "newReposLast30Days": 0,
-      "topStarredNewRepo": null
-    },
-    "lastUpdated": "2026-10-07T06:51:05.736Z",
-    "contributors": [
-      {
-        "login": "philmmanjaro",
-        "avatar_url": "https://github.com/philmmanjaro.png?size=64",
-        "html_url": "https://github.com/philmmanjaro",
-        "type": "User"
-      },
-      {
-        "login": "Chrysostomus",
-        "avatar_url": "https://github.com/Chrysostomus.png?size=64",
-        "html_url": "https://github.com/Chrysostomus",
-        "type": "User"
-      },
-      {
-        "login": "LordHeavy",
-        "avatar_url": "https://github.com/LordHeavy.png?size=64",
-        "html_url": "https://github.com/LordHeavy",
         "type": "User"
       }
     ]
@@ -403,92 +36,350 @@
     "name": "NixOS",
     "category": "linux-distro",
     "subCategory": "Declarative & Reproducible Linux OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nixos/nixos-original.svg",
+    "iconUrl": "https://cdn.simpleicons.org/nixos",
     "githubUrl": "https://github.com/NixOS/nixpkgs",
     "creator": {
       "name": "Eelco Dolstra (NixOS Foundation)",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/eelco-dolstra.jpg",
-      "type": "person",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/487568?v=4",
+      "type": "organization",
       "releaseDate": "2003",
-      "latestVersion": "24.11"
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 31655,
-      "totalStars": 26382
+      "totalRepos": 20372,
+      "totalStars": 26443
     },
     "momentum": {
-      "newReposLast30Days": 1288,
-      "topStarredNewRepo": {
-        "name": "fzakaria/omnibin",
-        "stars": 136
-      }
+      "newReposLast30Days": 1019,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:10.394Z",
+    "lastUpdated": "2026-10-13T07:25:12.456Z",
     "contributors": [
       {
-        "login": "edolstra",
-        "avatar_url": "https://github.com/edolstra.png?size=64",
-        "html_url": "https://github.com/edolstra",
-        "type": "User"
-      },
+        "login": "NixOS",
+        "avatar_url": "https://avatars.githubusercontent.com/u/487568?v=4",
+        "html_url": "https://github.com/NixOS",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-talos",
+    "name": "Talos Linux",
+    "category": "linux-distro",
+    "subCategory": "Immutable & Secure Kubernetes OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/58632607?s=200&v=4",
+    "githubUrl": "https://github.com/siderolabs/talos",
+    "creator": {
+      "name": "Sidero Labs",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/13804887?v=4",
+      "type": "organization",
+      "releaseDate": "2019",
+      "latestVersion": "main"
+    },
+    "popularity": {
+      "totalRepos": 923,
+      "totalStars": 11343
+    },
+    "momentum": {
+      "newReposLast30Days": 46,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:13.392Z",
+    "contributors": [
       {
-        "login": "domenkozar",
-        "avatar_url": "https://github.com/domenkozar.png?size=64",
-        "html_url": "https://github.com/domenkozar",
-        "type": "User"
-      },
+        "login": "siderolabs",
+        "avatar_url": "https://avatars.githubusercontent.com/u/13804887?v=4",
+        "html_url": "https://github.com/siderolabs",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-bottlerocket",
+    "name": "Bottlerocket",
+    "category": "linux-distro",
+    "subCategory": "Container-Optimized Linux OS by AWS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/57134265?s=200&v=4",
+    "githubUrl": "https://github.com/bottlerocket-os/bottlerocket",
+    "creator": {
+      "name": "Amazon Web Services",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/61023959?v=4",
+      "type": "organization",
+      "releaseDate": "2020",
+      "latestVersion": "develop"
+    },
+    "popularity": {
+      "totalRepos": 583,
+      "totalStars": 9676
+    },
+    "momentum": {
+      "newReposLast30Days": 29,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:14.305Z",
+    "contributors": [
       {
-        "login": "zimbatm",
-        "avatar_url": "https://github.com/zimbatm.png?size=64",
-        "html_url": "https://github.com/zimbatm",
+        "login": "bottlerocket-os",
+        "avatar_url": "https://avatars.githubusercontent.com/u/61023959?v=4",
+        "html_url": "https://github.com/bottlerocket-os",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-bazzite",
+    "name": "Bazzite",
+    "category": "linux-distro",
+    "subCategory": "Gaming & Handheld OCI Linux OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/119934187?s=200&v=4",
+    "githubUrl": "https://github.com/ublue-os/bazzite",
+    "creator": {
+      "name": "Universal Blue",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/120078124?v=4",
+      "type": "organization",
+      "releaseDate": "2023",
+      "latestVersion": "main"
+    },
+    "popularity": {
+      "totalRepos": 1130,
+      "totalStars": 9178
+    },
+    "momentum": {
+      "newReposLast30Days": 57,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:15.188Z",
+    "contributors": [
+      {
+        "login": "ublue-os",
+        "avatar_url": "https://avatars.githubusercontent.com/u/120078124?v=4",
+        "html_url": "https://github.com/ublue-os",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-dietpi",
+    "name": "DietPi",
+    "category": "linux-distro",
+    "subCategory": "Ultra-Lightweight Minimalist Linux for SBCs",
+    "iconUrl": "https://avatars.githubusercontent.com/u/13093202?s=200&v=4",
+    "githubUrl": "https://github.com/MichaIng/DietPi",
+    "creator": {
+      "name": "MichaIng",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/28480705?v=4",
+      "type": "person",
+      "releaseDate": "2015",
+      "latestVersion": "dev"
+    },
+    "popularity": {
+      "totalRepos": 569,
+      "totalStars": 6326
+    },
+    "momentum": {
+      "newReposLast30Days": 28,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:16.082Z",
+    "contributors": [
+      {
+        "login": "MichaIng",
+        "avatar_url": "https://avatars.githubusercontent.com/u/28480705?v=4",
+        "html_url": "https://github.com/MichaIng",
         "type": "User"
       }
     ]
   },
   {
-    "id": "distro-gentoo",
-    "name": "Gentoo",
+    "id": "distro-k3os",
+    "name": "k3OS",
     "category": "linux-distro",
-    "subCategory": "Source-Based High-Performance OS",
-    "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gentoo/gentoo-original.svg",
-    "githubUrl": "https://github.com/gentoo/gentoo",
+    "subCategory": "Lightweight Kubernetes OS by Rancher",
+    "iconUrl": "https://cdn.simpleicons.org/rancher",
+    "githubUrl": "https://github.com/rancher/k3os",
     "creator": {
-      "name": "Daniel Robbins",
-      "avatarUrl": "https://msercanvar.sirv.com/devsec-status-images/daniel-robbins.jpg",
-      "type": "person",
-      "releaseDate": "31 Mart 2002",
-      "latestVersion": "Rolling"
+      "name": "Rancher Labs",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/9343010?v=4",
+      "type": "organization",
+      "releaseDate": "2019",
+      "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 9351,
-      "totalStars": 2463
+      "totalRepos": 389,
+      "totalStars": 3476
     },
     "momentum": {
-      "newReposLast30Days": 161,
-      "topStarredNewRepo": {
-        "name": "tarilka0gg/system-lab",
-        "stars": 7
-      }
+      "newReposLast30Days": 19,
+      "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-07T06:51:15.140Z",
+    "lastUpdated": "2026-10-13T07:25:16.975Z",
     "contributors": [
       {
-        "login": "mgorny",
-        "avatar_url": "https://github.com/mgorny.png?size=64",
-        "html_url": "https://github.com/mgorny",
-        "type": "User"
-      },
+        "login": "rancher",
+        "avatar_url": "https://avatars.githubusercontent.com/u/9343010?v=4",
+        "html_url": "https://github.com/rancher",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-void",
+    "name": "Void Linux",
+    "category": "linux-distro",
+    "subCategory": "Independent Rolling-Release Linux OS",
+    "iconUrl": "https://cdn.simpleicons.org/voidlinux",
+    "githubUrl": "https://github.com/void-linux/void-packages",
+    "creator": {
+      "name": "Juan Romero Pardines (Void Team)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/37247796?v=4",
+      "type": "person",
+      "releaseDate": "2008",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 2820,
+      "totalStars": 3455
+    },
+    "momentum": {
+      "newReposLast30Days": 141,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:17.940Z",
+    "contributors": [
       {
-        "login": "ulm",
-        "avatar_url": "https://github.com/ulm.png?size=64",
-        "html_url": "https://github.com/ulm",
-        "type": "User"
-      },
+        "login": "void-linux",
+        "avatar_url": "https://avatars.githubusercontent.com/u/37247796?v=4",
+        "html_url": "https://github.com/void-linux",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-batocera",
+    "name": "Batocera.linux",
+    "category": "linux-distro",
+    "subCategory": "Retro-Gaming Plug-and-Play Linux OS",
+    "iconUrl": "https://cdn.simpleicons.org/batocera",
+    "githubUrl": "https://github.com/batocera-linux/batocera.linux",
+    "creator": {
+      "name": "Batocera Team",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/25185936?v=4",
+      "type": "organization",
+      "releaseDate": "2016",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 752,
+      "totalStars": 3254
+    },
+    "momentum": {
+      "newReposLast30Days": 38,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:18.953Z",
+    "contributors": [
       {
-        "login": "robbat2",
-        "avatar_url": "https://github.com/robbat2.png?size=64",
-        "html_url": "https://github.com/robbat2",
-        "type": "User"
+        "login": "batocera-linux",
+        "avatar_url": "https://avatars.githubusercontent.com/u/25185936?v=4",
+        "html_url": "https://github.com/batocera-linux",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-gentoo",
+    "name": "Gentoo Linux",
+    "category": "linux-distro",
+    "subCategory": "Source-Based Rolling Distribution",
+    "iconUrl": "https://cdn.simpleicons.org/gentoo",
+    "githubUrl": "https://github.com/gentoo/gentoo",
+    "creator": {
+      "name": "Daniel Robbins (Gentoo Foundation)",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52242?v=4",
+      "type": "organization",
+      "releaseDate": "26 Temmuz 2000",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 2241,
+      "totalStars": 2466
+    },
+    "momentum": {
+      "newReposLast30Days": 112,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:20.099Z",
+    "contributors": [
+      {
+        "login": "gentoo",
+        "avatar_url": "https://avatars.githubusercontent.com/u/52242?v=4",
+        "html_url": "https://github.com/gentoo",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-chimeraos",
+    "name": "ChimeraOS",
+    "category": "linux-distro",
+    "subCategory": "Big Picture Couch-Gaming Linux OS",
+    "iconUrl": "https://avatars.githubusercontent.com/u/64627038?s=200&v=4",
+    "githubUrl": "https://github.com/chimeraos/chimeraos",
+    "creator": {
+      "name": "ChimeraOS Project",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/75816437?v=4",
+      "type": "organization",
+      "releaseDate": "2019",
+      "latestVersion": "master"
+    },
+    "popularity": {
+      "totalRepos": 133,
+      "totalStars": 1998
+    },
+    "momentum": {
+      "newReposLast30Days": 7,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:21.040Z",
+    "contributors": [
+      {
+        "login": "ChimeraOS",
+        "avatar_url": "https://avatars.githubusercontent.com/u/75816437?v=4",
+        "html_url": "https://github.com/ChimeraOS",
+        "type": "Organization"
+      }
+    ]
+  },
+  {
+    "id": "distro-flatcar",
+    "name": "Flatcar",
+    "category": "linux-distro",
+    "subCategory": "Immutable Container Linux Distribution",
+    "iconUrl": "https://avatars.githubusercontent.com/u/38749877?s=200&v=4",
+    "githubUrl": "https://github.com/flatcar/flatcar",
+    "creator": {
+      "name": "Kinvolk / Flatcar Team",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/36193555?v=4",
+      "type": "organization",
+      "releaseDate": "2018",
+      "latestVersion": "main"
+    },
+    "popularity": {
+      "totalRepos": 145,
+      "totalStars": 1287
+    },
+    "momentum": {
+      "newReposLast30Days": 7,
+      "topStarredNewRepo": null
+    },
+    "lastUpdated": "2026-10-13T07:25:22.199Z",
+    "contributors": [
+      {
+        "login": "flatcar",
+        "avatar_url": "https://avatars.githubusercontent.com/u/36193555?v=4",
+        "html_url": "https://github.com/flatcar",
+        "type": "Organization"
       }
     ]
   }
