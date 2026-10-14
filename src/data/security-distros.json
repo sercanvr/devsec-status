@@ -21,7 +21,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T04:07:07.280Z",
+    "lastUpdated": "2026-10-14T11:35:17.483Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -46,17 +46,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 254,
-      "totalStars": 5742
+      "totalRepos": 256,
+      "totalStars": 5743
     },
     "momentum": {
-      "newReposLast30Days": 20,
+      "newReposLast30Days": 22,
       "topStarredNewRepo": {
         "name": "barnabe3/Metasploitable3",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T04:07:13.677Z",
+    "lastUpdated": "2026-10-14T11:35:24.353Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -82,7 +82,7 @@
     },
     "popularity": {
       "totalRepos": 678,
-      "totalStars": 4927
+      "totalStars": 4926
     },
     "momentum": {
       "newReposLast30Days": 33,
@@ -91,7 +91,7 @@
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-14T04:07:20.237Z",
+    "lastUpdated": "2026-10-14T11:35:31.507Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T04:07:25.626Z",
+    "lastUpdated": "2026-10-14T11:35:37.025Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -152,7 +152,7 @@
     },
     "popularity": {
       "totalRepos": 468,
-      "totalStars": 3528
+      "totalStars": 3529
     },
     "momentum": {
       "newReposLast30Days": 15,
@@ -161,7 +161,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T04:07:31.716Z",
+    "lastUpdated": "2026-10-14T11:35:43.335Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -196,7 +196,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T04:07:37.807Z",
+    "lastUpdated": "2026-10-14T11:35:49.490Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T04:07:43.775Z",
+    "lastUpdated": "2026-10-14T11:35:55.773Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,7 +263,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-14T04:07:49.919Z",
+    "lastUpdated": "2026-10-14T11:36:01.987Z",
     "contributors": [
       {
         "login": "Athena-OS",
