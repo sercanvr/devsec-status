@@ -15,13 +15,13 @@
     },
     "popularity": {
       "totalRepos": 29,
-      "totalStars": 7816
+      "totalStars": 7818
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T11:35:17.483Z",
+    "lastUpdated": "2026-10-14T16:56:27.797Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -46,17 +46,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 256,
-      "totalStars": 5743
+      "totalRepos": 257,
+      "totalStars": 5744
     },
     "momentum": {
-      "newReposLast30Days": 22,
+      "newReposLast30Days": 23,
       "topStarredNewRepo": {
         "name": "barnabe3/Metasploitable3",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T11:35:24.353Z",
+    "lastUpdated": "2026-10-14T16:56:34.485Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -81,17 +81,17 @@
       "latestVersion": "3/main"
     },
     "popularity": {
-      "totalRepos": 678,
+      "totalRepos": 679,
       "totalStars": 4926
     },
     "momentum": {
-      "newReposLast30Days": 33,
+      "newReposLast30Days": 34,
       "topStarredNewRepo": {
         "name": "Quincunx33/hostOnion",
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-14T11:35:31.507Z",
+    "lastUpdated": "2026-10-14T16:56:41.113Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T11:35:37.025Z",
+    "lastUpdated": "2026-10-14T16:56:46.723Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -151,17 +151,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 468,
+      "totalRepos": 470,
       "totalStars": 3529
     },
     "momentum": {
-      "newReposLast30Days": 15,
+      "newReposLast30Days": 16,
       "topStarredNewRepo": {
-        "name": "Praxis1071/blackarch-toolset",
+        "name": "metrytohack46-tech/BLACKARCH",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T11:35:43.335Z",
+    "lastUpdated": "2026-10-14T16:56:52.835Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -196,7 +196,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T11:35:49.490Z",
+    "lastUpdated": "2026-10-14T16:56:59.876Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T11:35:55.773Z",
+    "lastUpdated": "2026-10-14T16:57:06.158Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,7 +263,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-14T11:36:01.987Z",
+    "lastUpdated": "2026-10-14T16:57:12.319Z",
     "contributors": [
       {
         "login": "Athena-OS",
