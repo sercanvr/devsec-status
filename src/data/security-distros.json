@@ -15,13 +15,13 @@
     },
     "popularity": {
       "totalRepos": 29,
-      "totalStars": 7818
+      "totalStars": 7820
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T21:33:56.465Z",
+    "lastUpdated": "2026-10-15T03:49:44.034Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -56,7 +56,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T21:34:03.410Z",
+    "lastUpdated": "2026-10-15T03:49:50.634Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -82,16 +82,16 @@
     },
     "popularity": {
       "totalRepos": 678,
-      "totalStars": 4926
+      "totalStars": 4928
     },
     "momentum": {
-      "newReposLast30Days": 34,
+      "newReposLast30Days": 32,
       "topStarredNewRepo": {
         "name": "Quincunx33/hostOnion",
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-14T21:34:09.919Z",
+    "lastUpdated": "2026-10-15T03:49:57.347Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T21:34:15.483Z",
+    "lastUpdated": "2026-10-15T03:50:02.872Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -161,7 +161,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T21:34:21.586Z",
+    "lastUpdated": "2026-10-15T03:50:09.141Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -196,7 +196,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-14T21:34:27.706Z",
+    "lastUpdated": "2026-10-15T03:50:15.622Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-14T21:34:33.814Z",
+    "lastUpdated": "2026-10-15T03:50:21.824Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,7 +263,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-14T21:34:39.890Z",
+    "lastUpdated": "2026-10-15T03:50:28.176Z",
     "contributors": [
       {
         "login": "Athena-OS",
