@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 108112,
-      "totalStars": 183264
+      "totalRepos": 108260,
+      "totalStars": 183305
     },
     "momentum": {
-      "newReposLast30Days": 9594,
+      "newReposLast30Days": 9737,
       "topStarredNewRepo": {
         "name": "ollaya-dev/ollaya",
-        "stars": 1315
+        "stars": 1320
       }
     },
-    "lastUpdated": "2026-10-15T16:37:48.990Z",
+    "lastUpdated": "2026-10-15T21:10:55.717Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 162143,
-      "totalStars": 147870
+      "totalRepos": 162213,
+      "totalStars": 147881
     },
     "momentum": {
-      "newReposLast30Days": 7440,
+      "newReposLast30Days": 7512,
       "topStarredNewRepo": {
         "name": "ningmeng446/LocalSmartRAG",
         "stars": 61
       }
     },
-    "lastUpdated": "2026-10-15T16:37:55.282Z",
+    "lastUpdated": "2026-10-15T21:11:01.941Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -109,7 +109,7 @@
     },
     "popularity": {
       "totalRepos": 1702,
-      "totalStars": 187593
+      "totalStars": 187601
     },
     "momentum": {
       "newReposLast30Days": 22,
@@ -118,7 +118,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-15T16:38:02.362Z",
+    "lastUpdated": "2026-10-15T21:11:08.509Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 31057,
-      "totalStars": 137677
+      "totalRepos": 31071,
+      "totalStars": 137701
     },
     "momentum": {
-      "newReposLast30Days": 2803,
+      "newReposLast30Days": 2819,
       "topStarredNewRepo": {
         "name": "Arekejoker/qwen21-nsfw-pose-skill",
-        "stars": 1891
+        "stars": 1977
       }
     },
-    "lastUpdated": "2026-10-15T16:38:08.999Z",
+    "lastUpdated": "2026-10-15T21:11:15.193Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 120978,
-      "totalStars": 207485
+      "totalRepos": 121053,
+      "totalStars": 207520
     },
     "momentum": {
-      "newReposLast30Days": 8252,
+      "newReposLast30Days": 8330,
       "topStarredNewRepo": {
         "name": "n8n-io/automation-mining-skill",
         "stars": 39
       }
     },
-    "lastUpdated": "2026-10-15T16:38:15.349Z",
+    "lastUpdated": "2026-10-15T21:11:21.714Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4227,
-      "totalStars": 155791
+      "totalRepos": 4231,
+      "totalStars": 155820
     },
     "momentum": {
-      "newReposLast30Days": 306,
+      "newReposLast30Days": 310,
       "topStarredNewRepo": {
         "name": "igrbible/Ruach_Studio",
-        "stars": 41
+        "stars": 42
       }
     },
-    "lastUpdated": "2026-10-15T16:38:21.782Z",
+    "lastUpdated": "2026-10-15T21:11:28.199Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -296,17 +296,17 @@
       "latestVersion": "v2.2.4"
     },
     "popularity": {
-      "totalRepos": 3907,
-      "totalStars": 55504
+      "totalRepos": 3910,
+      "totalStars": 55505
     },
     "momentum": {
-      "newReposLast30Days": 60,
+      "newReposLast30Days": 63,
       "topStarredNewRepo": {
         "name": "Perruer/keelflow",
         "stars": 39
       }
     },
-    "lastUpdated": "2026-10-15T16:38:28.675Z",
+    "lastUpdated": "2026-10-15T21:11:35.519Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7399,
-      "totalStars": 158568
+      "totalRepos": 7402,
+      "totalStars": 158586
     },
     "momentum": {
-      "newReposLast30Days": 416,
+      "newReposLast30Days": 419,
       "topStarredNewRepo": {
         "name": "apimartpiszqx9lu/dify-vs-fastgpt",
         "stars": 54
       }
     },
-    "lastUpdated": "2026-10-15T16:38:35.191Z",
+    "lastUpdated": "2026-10-15T21:11:42.051Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 19379,
-      "totalStars": 59736
+      "totalRepos": 19399,
+      "totalStars": 59744
     },
     "momentum": {
-      "newReposLast30Days": 727,
+      "newReposLast30Days": 746,
       "topStarredNewRepo": {
         "name": "AryanDinakaran/EpochGo",
         "stars": 17
       }
     },
-    "lastUpdated": "2026-10-15T16:38:41.846Z",
+    "lastUpdated": "2026-10-15T21:11:48.623Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -437,17 +437,17 @@
       "latestVersion": "v1.8"
     },
     "popularity": {
-      "totalRepos": 1988,
-      "totalStars": 47730
+      "totalRepos": 1989,
+      "totalStars": 47731
     },
     "momentum": {
-      "newReposLast30Days": 22,
+      "newReposLast30Days": 23,
       "topStarredNewRepo": {
         "name": "khubaib12345/Decoder_only_model-TextGeneration-",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-15T16:38:48.421Z",
+    "lastUpdated": "2026-10-15T21:11:56.116Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -485,7 +485,7 @@
     },
     "popularity": {
       "totalRepos": 355,
-      "totalStars": 28658
+      "totalStars": 28662
     },
     "momentum": {
       "newReposLast30Days": 17,
@@ -494,7 +494,7 @@
         "stars": 68
       }
     },
-    "lastUpdated": "2026-10-15T16:38:54.605Z",
+    "lastUpdated": "2026-10-15T21:12:02.641Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 177052,
-      "totalStars": 44957
+      "totalRepos": 177070,
+      "totalStars": 44959
     },
     "momentum": {
-      "newReposLast30Days": 4933,
+      "newReposLast30Days": 4956,
       "topStarredNewRepo": {
         "name": "prabanta-dev/janas",
-        "stars": 412
+        "stars": 413
       }
     },
-    "lastUpdated": "2026-10-15T16:39:01.158Z",
+    "lastUpdated": "2026-10-15T21:12:08.959Z",
     "contributors": [
       {
         "login": "urmauur",
