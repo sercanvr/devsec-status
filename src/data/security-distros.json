@@ -15,13 +15,13 @@
     },
     "popularity": {
       "totalRepos": 29,
-      "totalStars": 7821
+      "totalStars": 7820
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-15T11:12:31.897Z",
+    "lastUpdated": "2026-10-15T16:41:42.000Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -47,7 +47,7 @@
     },
     "popularity": {
       "totalRepos": 257,
-      "totalStars": 5745
+      "totalStars": 5744
     },
     "momentum": {
       "newReposLast30Days": 23,
@@ -56,7 +56,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-15T11:12:38.782Z",
+    "lastUpdated": "2026-10-15T16:41:48.814Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -82,7 +82,7 @@
     },
     "popularity": {
       "totalRepos": 679,
-      "totalStars": 4930
+      "totalStars": 4931
     },
     "momentum": {
       "newReposLast30Days": 33,
@@ -91,7 +91,7 @@
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-15T11:12:45.539Z",
+    "lastUpdated": "2026-10-15T16:41:55.520Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-15T11:12:51.141Z",
+    "lastUpdated": "2026-10-15T16:42:01.140Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -152,16 +152,16 @@
     },
     "popularity": {
       "totalRepos": 470,
-      "totalStars": 3531
+      "totalStars": 3532
     },
     "momentum": {
       "newReposLast30Days": 16,
       "topStarredNewRepo": {
-        "name": "metrytohack46-tech/BLACKARCH",
-        "stars": 0
+        "name": "y-ro9/CodeAlpha_NetworkIntrusionDetectionSystem",
+        "stars": 3
       }
     },
-    "lastUpdated": "2026-10-15T11:12:57.326Z",
+    "lastUpdated": "2026-10-15T16:42:07.419Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -186,17 +186,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 108,
+      "totalRepos": 109,
       "totalStars": 3107
     },
     "momentum": {
-      "newReposLast30Days": 6,
+      "newReposLast30Days": 7,
       "topStarredNewRepo": {
         "name": "DonAsako/exegol-resources",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-15T11:13:03.453Z",
+    "lastUpdated": "2026-10-15T16:42:13.570Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-15T11:13:09.654Z",
+    "lastUpdated": "2026-10-15T16:42:19.750Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,7 +263,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-15T11:13:15.884Z",
+    "lastUpdated": "2026-10-15T16:42:26.129Z",
     "contributors": [
       {
         "login": "Athena-OS",
