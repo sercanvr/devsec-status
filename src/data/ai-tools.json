@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 108773,
-      "totalStars": 183448
+      "totalRepos": 108904,
+      "totalStars": 183489
     },
     "momentum": {
-      "newReposLast30Days": 9966,
+      "newReposLast30Days": 10103,
       "topStarredNewRepo": {
         "name": "ollaya-dev/ollaya",
-        "stars": 1324
+        "stars": 1326
       }
     },
-    "lastUpdated": "2026-10-16T16:23:13.839Z",
+    "lastUpdated": "2026-10-16T20:46:07.943Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 162508,
-      "totalStars": 147933
+      "totalRepos": 162572,
+      "totalStars": 147942
     },
     "momentum": {
-      "newReposLast30Days": 7533,
+      "newReposLast30Days": 7596,
       "topStarredNewRepo": {
         "name": "ningmeng446/LocalSmartRAG",
         "stars": 61
       }
     },
-    "lastUpdated": "2026-10-16T16:23:20.084Z",
+    "lastUpdated": "2026-10-16T20:46:14.230Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -118,7 +118,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-16T16:23:26.203Z",
+    "lastUpdated": "2026-10-16T20:46:20.337Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 31155,
-      "totalStars": 137885
+      "totalRepos": 31176,
+      "totalStars": 137908
     },
     "momentum": {
-      "newReposLast30Days": 2821,
+      "newReposLast30Days": 2842,
       "topStarredNewRepo": {
         "name": "Arekejoker/qwen21-nsfw-pose-skill",
-        "stars": 2446
+        "stars": 2493
       }
     },
-    "lastUpdated": "2026-10-16T16:23:32.522Z",
+    "lastUpdated": "2026-10-16T20:46:26.667Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 121261,
-      "totalStars": 207658
+      "totalRepos": 121313,
+      "totalStars": 207689
     },
     "momentum": {
-      "newReposLast30Days": 8295,
+      "newReposLast30Days": 8354,
       "topStarredNewRepo": {
         "name": "n8n-io/automation-mining-skill",
         "stars": 40
       }
     },
-    "lastUpdated": "2026-10-16T16:23:39.091Z",
+    "lastUpdated": "2026-10-16T20:46:32.681Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4245,
-      "totalStars": 155901
+      "totalRepos": 4254,
+      "totalStars": 155918
     },
     "momentum": {
-      "newReposLast30Days": 320,
+      "newReposLast30Days": 329,
       "topStarredNewRepo": {
         "name": "igrbible/Ruach_Studio",
         "stars": 45
       }
     },
-    "lastUpdated": "2026-10-16T16:23:45.707Z",
+    "lastUpdated": "2026-10-16T20:46:38.792Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -297,7 +297,7 @@
     },
     "popularity": {
       "totalRepos": 3910,
-      "totalStars": 55506
+      "totalStars": 55507
     },
     "momentum": {
       "newReposLast30Days": 57,
@@ -306,7 +306,7 @@
         "stars": 39
       }
     },
-    "lastUpdated": "2026-10-16T16:23:52.465Z",
+    "lastUpdated": "2026-10-16T20:46:45.219Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7419,
-      "totalStars": 158656
+      "totalRepos": 7420,
+      "totalStars": 158661
     },
     "momentum": {
-      "newReposLast30Days": 419,
+      "newReposLast30Days": 421,
       "topStarredNewRepo": {
         "name": "apimartpiszqx9lu/dify-vs-fastgpt",
         "stars": 54
       }
     },
-    "lastUpdated": "2026-10-16T16:23:58.776Z",
+    "lastUpdated": "2026-10-16T20:46:51.507Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 19422,
-      "totalStars": 59765
+      "totalRepos": 19430,
+      "totalStars": 59773
     },
     "momentum": {
-      "newReposLast30Days": 745,
+      "newReposLast30Days": 752,
       "topStarredNewRepo": {
         "name": "AryanDinakaran/EpochGo",
         "stars": 17
       }
     },
-    "lastUpdated": "2026-10-16T16:24:05.057Z",
+    "lastUpdated": "2026-10-16T20:46:57.855Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -437,17 +437,17 @@
       "latestVersion": "v1.8"
     },
     "popularity": {
-      "totalRepos": 1997,
+      "totalRepos": 2000,
       "totalStars": 47732
     },
     "momentum": {
-      "newReposLast30Days": 31,
+      "newReposLast30Days": 34,
       "topStarredNewRepo": {
         "name": "khubaib12345/Decoder_only_model-TextGeneration-",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-16T16:24:11.766Z",
+    "lastUpdated": "2026-10-16T20:47:04.440Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -485,7 +485,7 @@
     },
     "popularity": {
       "totalRepos": 355,
-      "totalStars": 28688
+      "totalStars": 28690
     },
     "momentum": {
       "newReposLast30Days": 17,
@@ -494,7 +494,7 @@
         "stars": 68
       }
     },
-    "lastUpdated": "2026-10-16T16:24:18.177Z",
+    "lastUpdated": "2026-10-16T20:47:10.600Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 177177,
-      "totalStars": 44974
+      "totalRepos": 177195,
+      "totalStars": 44973
     },
     "momentum": {
-      "newReposLast30Days": 4900,
+      "newReposLast30Days": 4920,
       "topStarredNewRepo": {
         "name": "prabanta-dev/janas",
-        "stars": 424
+        "stars": 426
       }
     },
-    "lastUpdated": "2026-10-16T16:24:24.548Z",
+    "lastUpdated": "2026-10-16T20:47:17.034Z",
     "contributors": [
       {
         "login": "urmauur",
