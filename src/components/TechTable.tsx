@@ -307,16 +307,16 @@ export const TechTable: React.FC<TechTableProps> = ({
             <div className="w-full overflow-x-auto custom-scrollbar rounded-b-[24px]">
               <table className="w-full text-left border-collapse table-auto">
                 <thead>
-                  <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
-                    <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left">{t('table.technology')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-left">{t('table.creator')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.type')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left">{t('table.popularity')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.momentum')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.ecosystem')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
-                    <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center">{t('table.github')}</th>
+                  <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70 whitespace-nowrap">
+                    <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left whitespace-nowrap">{t('table.technology')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-left whitespace-nowrap">{t('table.creator')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.type')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left whitespace-nowrap">{t('table.popularity')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.momentum')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.ecosystem')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.community')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.latestVersion')}</th>
+                    <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center whitespace-nowrap">{t('table.github')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
