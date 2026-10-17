@@ -8,7 +8,7 @@ export interface CardSkeletonProps {
 export const CardSkeleton: React.FC<CardSkeletonProps> = ({ className = '' }) => {
   return (
     <div
-      className={`p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors ${className}`}
+      className={`px-4 sm:px-6 py-4 space-y-3.5 transition-colors ${className}`}
       role="status"
       aria-busy="true"
       aria-label="Loading card"

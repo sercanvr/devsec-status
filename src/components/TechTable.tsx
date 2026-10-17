@@ -297,7 +297,7 @@ export const TechTable: React.FC<TechTableProps> = ({
                 ))}
               </div>
             ) : (
-              <div className="p-3 sm:p-4 space-y-3.5">
+              <div className="w-full divide-y divide-neutral-200/60 dark:divide-neutral-800/60">
                 {[1, 2].map((idx) => (
                   <CardSkeleton key={idx} />
                 ))}
@@ -327,7 +327,7 @@ export const TechTable: React.FC<TechTableProps> = ({
               </table>
             </div>
           ) : (
-            <div className="p-3 sm:p-4 space-y-3.5">
+            <div className="w-full divide-y divide-neutral-200/60 dark:divide-neutral-800/60">
               {processedEntries.map((entry, index) => (
                 <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} priority={priority} />
               ))}
@@ -723,7 +723,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <div
       data-tech-id={entry.id}
-      className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors cv-card"
+      className="px-4 sm:px-6 py-4 space-y-3.5 hover:bg-neutral-50/60 dark:hover:bg-white/[0.02] transition-colors cv-card"
     >
       {/* Top: Blurred Icon Container + Name */}
       <div className="flex items-center justify-between gap-2">
