@@ -297,7 +297,7 @@ export const TechTable: React.FC<TechTableProps> = ({
                 ))}
               </div>
             ) : (
-              <div className="w-full divide-y divide-neutral-200/60 dark:divide-neutral-800/60">
+              <div className="w-full divide-y divide-neutral-300 dark:divide-neutral-700">
                 {[1, 2].map((idx) => (
                   <CardSkeleton key={idx} />
                 ))}
@@ -327,7 +327,7 @@ export const TechTable: React.FC<TechTableProps> = ({
               </table>
             </div>
           ) : (
-            <div className="w-full divide-y divide-neutral-200/60 dark:divide-neutral-800/60">
+            <div className="w-full divide-y divide-neutral-300 dark:divide-neutral-700">
               {processedEntries.map((entry, index) => (
                 <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} priority={priority} />
               ))}
