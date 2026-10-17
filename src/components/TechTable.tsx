@@ -368,9 +368,10 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
 
+  const rawRatio = Math.max(0, entry.popularity.totalStars) / (maxStars || 1);
   const percentage = Math.min(
     100,
-    Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
+    Math.max(5, Math.round(Math.sqrt(rawRatio) * 1000) / 10)
   );
   const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
   const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
@@ -712,9 +713,10 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
 
+  const rawRatio = Math.max(0, entry.popularity.totalStars) / (maxStars || 1);
   const percentage = Math.min(
     100,
-    Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
+    Math.max(5, Math.round(Math.sqrt(rawRatio) * 1000) / 10)
   );
   const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
   const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
