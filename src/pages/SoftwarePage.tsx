@@ -1,7 +1,6 @@
 import React, { useMemo, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Code2, Layers, Database, Terminal, Bot, Cpu } from 'lucide-react';
 import { HeaderShowcase } from '../components/HeaderShowcase';
 import { TechTable } from '../components/TechTable';
 import { ProximitySidebar } from '../components/ProximitySidebar';
@@ -84,7 +83,6 @@ export const SoftwarePage: React.FC = () => {
         <TechTable
           id="section-languages"
           title={t('sections.languages')}
-          icon={<Code2 className="w-5 h-5" />}
           entries={sortedLanguages}
           defaultSort="ecosystem"
           priority
@@ -93,35 +91,30 @@ export const SoftwarePage: React.FC = () => {
         <TechTable
           id="section-frameworks"
           title={t('sections.frameworks')}
-          icon={<Layers className="w-5 h-5" />}
           entries={sortedFrameworks}
         />
 
         <TechTable
           id="section-databases"
           title={t('sections.databases')}
-          icon={<Database className="w-5 h-5" />}
           entries={sortedDatabases}
         />
 
         <TechTable
           id="section-linux-distros"
           title={t('sections.linuxDistros')}
-          icon={<Terminal className="w-5 h-5" />}
           entries={sortedLinuxDistros}
         />
 
         <TechTable
           id="section-ai-tools"
           title={t('sections.aiTools')}
-          icon={<Bot className="w-5 h-5" />}
           entries={sortedAiTools}
         />
 
         <TechTable
           id="section-ai-infrastructure"
           title={t('sections.aiInfrastructure')}
-          icon={<Cpu className="w-5 h-5" />}
           entries={sortedAiInfrastructure}
         />
       </div>
