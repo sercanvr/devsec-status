@@ -81,7 +81,7 @@ const CustomDropdown: React.FC<{
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-[calc(100%+8px)] w-48 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-50 overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="absolute right-0 top-[calc(100%+8px)] w-48 rounded-2xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-50 p-1.5 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-2 duration-150">
           {options.map((opt) => {
             const isSelected = opt.value === value;
             return (
@@ -92,9 +92,9 @@ const CustomDropdown: React.FC<{
                   onChange(opt.value);
                   setIsOpen(false);
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2 text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer ${
                   isSelected
-                    ? 'bg-[#CEFF00]/10 text-foreground font-bold'
+                    ? 'bg-[#CEFF00]/15 dark:bg-[#CEFF00]/15 text-foreground font-bold'
                     : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/80 hover:text-foreground'
                 }`}
               >
