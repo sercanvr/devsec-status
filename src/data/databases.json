@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 127192,
-      "totalStars": 111660
+      "totalRepos": 127265,
+      "totalStars": 111661
     },
     "momentum": {
-      "newReposLast30Days": 9475,
+      "newReposLast30Days": 9223,
       "topStarredNewRepo": {
         "name": "mikehasa/golive-skill",
-        "stars": 1292
+        "stars": 1294
       }
     },
-    "lastUpdated": "2026-10-16T20:42:17.838Z",
+    "lastUpdated": "2026-10-17T03:27:35.489Z",
     "contributors": [
       {
         "login": "supabase",
@@ -49,17 +49,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 60592,
-      "totalStars": 78292
+      "totalRepos": 60596,
+      "totalStars": 78294
     },
     "momentum": {
-      "newReposLast30Days": 670,
+      "newReposLast30Days": 654,
       "topStarredNewRepo": {
         "name": "kudakwashechanda-byte/Bee-Swarm-Task-Automation-Suite",
         "stars": 68
       }
     },
-    "lastUpdated": "2026-10-16T20:42:24.247Z",
+    "lastUpdated": "2026-10-17T03:27:41.634Z",
     "contributors": [
       {
         "login": "elastic",
@@ -84,17 +84,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 239877,
-      "totalStars": 76905
+      "totalRepos": 239922,
+      "totalStars": 76911
     },
     "momentum": {
-      "newReposLast30Days": 7274,
+      "newReposLast30Days": 7040,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
         "stars": 395
       }
     },
-    "lastUpdated": "2026-10-16T20:42:30.508Z",
+    "lastUpdated": "2026-10-17T03:27:47.766Z",
     "contributors": [
       {
         "login": "redis",
@@ -119,17 +119,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 629664,
-      "totalStars": 28646
+      "totalRepos": 629694,
+      "totalStars": 28647
     },
     "momentum": {
-      "newReposLast30Days": 11263,
+      "newReposLast30Days": 10990,
       "topStarredNewRepo": {
         "name": "marclou/mailcheap",
-        "stars": 1134
+        "stars": 1173
       }
     },
-    "lastUpdated": "2026-10-16T20:42:37.084Z",
+    "lastUpdated": "2026-10-17T03:27:53.909Z",
     "contributors": [
       {
         "login": "mongodb",
@@ -154,17 +154,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 417549,
-      "totalStars": 22437
+      "totalRepos": 417735,
+      "totalStars": 22443
     },
     "momentum": {
-      "newReposLast30Days": 27078,
+      "newReposLast30Days": 26347,
       "topStarredNewRepo": {
         "name": "KKKKhazix/AIHOT",
-        "stars": 7885
+        "stars": 7894
       }
     },
-    "lastUpdated": "2026-10-16T20:42:43.369Z",
+    "lastUpdated": "2026-10-17T03:28:00.098Z",
     "contributors": [
       {
         "login": "postgres",
@@ -189,17 +189,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 33248,
+      "totalRepos": 33254,
       "totalStars": 17327
     },
     "momentum": {
-      "newReposLast30Days": 868,
+      "newReposLast30Days": 851,
       "topStarredNewRepo": {
         "name": "FengZhenfei/carrel",
         "stars": 121
       }
     },
-    "lastUpdated": "2026-10-16T20:42:49.775Z",
+    "lastUpdated": "2026-10-17T03:28:06.228Z",
     "contributors": [
       {
         "login": "neo4j",
@@ -224,17 +224,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 791247,
+      "totalRepos": 789439,
       "totalStars": 12465
     },
     "momentum": {
-      "newReposLast30Days": 23896,
+      "newReposLast30Days": 23274,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
         "stars": 395
       }
     },
-    "lastUpdated": "2026-10-16T20:42:56.113Z",
+    "lastUpdated": "2026-10-17T03:28:12.519Z",
     "contributors": [
       {
         "login": "mysql",
@@ -259,17 +259,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 276458,
-      "totalStars": 10705
+      "totalRepos": 276586,
+      "totalStars": 10707
     },
     "momentum": {
-      "newReposLast30Days": 20585,
+      "newReposLast30Days": 20002,
       "topStarredNewRepo": {
         "name": "elstongun/leviathan",
-        "stars": 825
+        "stars": 826
       }
     },
-    "lastUpdated": "2026-10-16T20:43:02.499Z",
+    "lastUpdated": "2026-10-17T03:28:18.530Z",
     "contributors": [
       {
         "login": "sqlite",
@@ -295,16 +295,16 @@
     },
     "popularity": {
       "totalRepos": 2809,
-      "totalStars": 10125
+      "totalStars": 10126
     },
     "momentum": {
-      "newReposLast30Days": 30,
+      "newReposLast30Days": 29,
       "topStarredNewRepo": {
         "name": "ErickRamirezAU/cassandra-5-movie-search",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-16T20:43:09.081Z",
+    "lastUpdated": "2026-10-17T03:28:25.088Z",
     "contributors": [
       {
         "login": "apache",
@@ -329,17 +329,17 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 26961,
+      "totalRepos": 26971,
       "totalStars": 8378
     },
     "momentum": {
-      "newReposLast30Days": 959,
+      "newReposLast30Days": 935,
       "topStarredNewRepo": {
         "name": "VheissuLabs/tql",
-        "stars": 20
+        "stars": 22
       }
     },
-    "lastUpdated": "2026-10-16T20:43:15.404Z",
+    "lastUpdated": "2026-10-17T03:28:31.231Z",
     "contributors": [
       {
         "login": "MariaDB",
@@ -364,17 +364,17 @@
       "latestVersion": "v24.12"
     },
     "popularity": {
-      "totalRepos": 10742,
-      "totalStars": 50450
+      "totalRepos": 10743,
+      "totalStars": 50453
     },
     "momentum": {
-      "newReposLast30Days": 561,
+      "newReposLast30Days": 549,
       "topStarredNewRepo": {
         "name": "alpcanaydin/tusk",
         "stars": 395
       }
     },
-    "lastUpdated": "2026-10-16T20:43:21.746Z",
+    "lastUpdated": "2026-10-17T03:28:37.527Z",
     "contributors": [
       {
         "login": "alexey-milovidov",
@@ -411,17 +411,17 @@
       "latestVersion": "v3.9.0"
     },
     "popularity": {
-      "totalRepos": 18669,
-      "totalStars": 34028
+      "totalRepos": 18673,
+      "totalStars": 34030
     },
     "momentum": {
-      "newReposLast30Days": 576,
+      "newReposLast30Days": 560,
       "topStarredNewRepo": {
         "name": "ntailio/ntk",
         "stars": 103
       }
     },
-    "lastUpdated": "2026-10-16T20:43:28.455Z",
+    "lastUpdated": "2026-10-17T03:28:43.771Z",
     "contributors": [
       {
         "login": "ijuma",
@@ -459,16 +459,16 @@
     },
     "popularity": {
       "totalRepos": 2769,
-      "totalStars": 32574
+      "totalStars": 32573
     },
     "momentum": {
-      "newReposLast30Days": 30,
+      "newReposLast30Days": 29,
       "topStarredNewRepo": {
         "name": "chan-mai/Mecalo",
         "stars": 4
       }
     },
-    "lastUpdated": "2026-10-16T20:43:35.074Z",
+    "lastUpdated": "2026-10-17T03:28:50.044Z",
     "contributors": [
       {
         "login": "petermattis",
@@ -505,17 +505,17 @@
       "latestVersion": "v1.12.5"
     },
     "popularity": {
-      "totalRepos": 13550,
-      "totalStars": 35105
+      "totalRepos": 13556,
+      "totalStars": 35106
     },
     "momentum": {
-      "newReposLast30Days": 1143,
+      "newReposLast30Days": 1118,
       "topStarredNewRepo": {
         "name": "FengZhenfei/carrel",
         "stars": 121
       }
     },
-    "lastUpdated": "2026-10-16T20:43:41.494Z",
+    "lastUpdated": "2026-10-17T03:28:56.301Z",
     "contributors": [
       {
         "login": "generall",
@@ -553,16 +553,16 @@
     },
     "popularity": {
       "totalRepos": 2177,
-      "totalStars": 16887
+      "totalStars": 16886
     },
     "momentum": {
-      "newReposLast30Days": 36,
+      "newReposLast30Days": 32,
       "topStarredNewRepo": {
         "name": "dudanogueira/latinoware-2026",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-16T20:43:47.741Z",
+    "lastUpdated": "2026-10-17T03:29:02.887Z",
     "contributors": [
       {
         "login": "bobvanluijt",

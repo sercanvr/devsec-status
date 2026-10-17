@@ -15,13 +15,13 @@
     },
     "popularity": {
       "totalRepos": 29,
-      "totalStars": 7820
+      "totalStars": 7821
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-16T20:49:51.922Z",
+    "lastUpdated": "2026-10-17T03:35:04.216Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -50,13 +50,13 @@
       "totalStars": 5744
     },
     "momentum": {
-      "newReposLast30Days": 23,
+      "newReposLast30Days": 22,
       "topStarredNewRepo": {
         "name": "barnabe3/Metasploitable3",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-16T20:49:58.535Z",
+    "lastUpdated": "2026-10-17T03:35:10.679Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -81,17 +81,17 @@
       "latestVersion": "3/main"
     },
     "popularity": {
-      "totalRepos": 683,
+      "totalRepos": 684,
       "totalStars": 4932
     },
     "momentum": {
-      "newReposLast30Days": 36,
+      "newReposLast30Days": 35,
       "topStarredNewRepo": {
         "name": "Quincunx33/hostOnion",
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-16T20:50:05.011Z",
+    "lastUpdated": "2026-10-17T03:35:17.143Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-16T20:50:10.566Z",
+    "lastUpdated": "2026-10-17T03:35:22.530Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -151,7 +151,7 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 470,
+      "totalRepos": 471,
       "totalStars": 3532
     },
     "momentum": {
@@ -161,7 +161,7 @@
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-16T20:50:16.868Z",
+    "lastUpdated": "2026-10-17T03:35:28.507Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -187,7 +187,7 @@
     },
     "popularity": {
       "totalRepos": 109,
-      "totalStars": 3107
+      "totalStars": 3108
     },
     "momentum": {
       "newReposLast30Days": 7,
@@ -196,7 +196,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-16T20:50:23.012Z",
+    "lastUpdated": "2026-10-17T03:35:34.661Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-16T20:50:28.973Z",
+    "lastUpdated": "2026-10-17T03:35:40.835Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -254,7 +254,7 @@
     },
     "popularity": {
       "totalRepos": 149,
-      "totalStars": 259
+      "totalStars": 260
     },
     "momentum": {
       "newReposLast30Days": 3,
@@ -263,7 +263,7 @@
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-16T20:50:35.002Z",
+    "lastUpdated": "2026-10-17T03:35:47.197Z",
     "contributors": [
       {
         "login": "Athena-OS",
