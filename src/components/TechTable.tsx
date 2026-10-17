@@ -33,7 +33,6 @@ export const formatAsciiTag = (val: string): string => {
 interface TechTableProps {
   id?: string;
   title: string;
-  icon?: React.ReactNode;
   entries: TechEntry[];
   priority?: boolean;
   defaultSort?: 'stars' | 'name' | 'momentum' | 'ecosystem' | 'year';
@@ -133,7 +132,6 @@ const useIsMobile = () => {
 export const TechTable: React.FC<TechTableProps> = ({
   id,
   title,
-  icon,
   entries,
   priority = false,
   defaultSort = 'stars',
@@ -262,14 +260,10 @@ export const TechTable: React.FC<TechTableProps> = ({
           {/* Table Top Header Bar: Title + Single Sort Dropdown */}
           <div className="px-5 py-4 sm:px-6 sm:py-5 border-b border-neutral-200/80 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-4 bg-neutral-50/60 dark:bg-neutral-900/50">
             <div className="flex items-center gap-3">
-              {icon && (
-                <div className="p-2 rounded-xl bg-blue-500/10 dark:bg-[#CEFF00]/10 text-[#0066FF] dark:text-[#CEFF00] shrink-0">
-                  {icon}
-                </div>
-              )}
               <h2 className="font-serif text-xl sm:text-2xl lg:text-[26px] xl:text-[28px] font-bold tracking-tight flex items-center gap-2 sm:gap-2.5 py-1 leading-snug">
-                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-block py-0.5">
-                  {sanitizeText(title)}
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-neutral-950 via-neutral-800 to-neutral-500 dark:from-white dark:via-neutral-200 dark:to-neutral-400 inline-flex items-center py-0.5">
+                  <span className="mr-2 sm:mr-2.5 select-none" aria-hidden="true">✦</span>
+                  <span>{sanitizeText(title)}</span>
                 </span>
                 <GlassBadge count={processedEntries.length} />
               </h2>

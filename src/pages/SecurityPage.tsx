@@ -1,7 +1,6 @@
 import React, { useMemo, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ShieldCheck, Terminal } from 'lucide-react';
 import { HeaderShowcase } from '../components/HeaderShowcase';
 import { TechTable } from '../components/TechTable';
 import { ProximitySidebar } from '../components/ProximitySidebar';
@@ -51,7 +50,6 @@ export const SecurityPage: React.FC = () => {
         <TechTable
           id="section-security"
           title={t('sections.securityTools')}
-          icon={<ShieldCheck className="w-5 h-5" />}
           entries={sortedSecurityTools}
           priority
         />
@@ -59,7 +57,6 @@ export const SecurityPage: React.FC = () => {
         <TechTable
           id="section-security-distros"
           title={t('sections.securityDistros')}
-          icon={<Terminal className="w-5 h-5" />}
           entries={sortedSecurityDistros}
         />
       </div>

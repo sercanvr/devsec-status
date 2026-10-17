@@ -76,6 +76,7 @@ describe('TechTable Component', () => {
     );
 
     expect(screen.getByText('Test Languages')).toBeInTheDocument();
+    expect(screen.getByText('✦')).toBeInTheDocument();
     expect(screen.getAllByText('Python').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Rust').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Guido van Rossum').length).toBeGreaterThan(0);
