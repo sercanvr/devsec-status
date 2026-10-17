@@ -57,10 +57,10 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl overflow-hidden py-1.5 z-50">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-xl p-1.5 flex flex-col gap-0.5 z-50">
             <button
               onClick={() => handleSelectTheme('dark')}
-              className={`w-full flex items-center justify-between px-4 py-2.5 text-xs transition-colors ${
+              className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer ${
                 theme === 'dark'
                   ? 'bg-[#CEFF00]/15 text-foreground font-bold'
                   : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-300/60 dark:hover:bg-neutral-800/80'
@@ -75,7 +75,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({
 
             <button
               onClick={() => handleSelectTheme('light')}
-              className={`w-full flex items-center justify-between px-4 py-2.5 text-xs transition-colors ${
+              className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer ${
                 theme === 'light'
                   ? 'bg-[#CEFF00]/15 text-foreground font-bold'
                   : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-300/60 dark:hover:bg-neutral-800/80'

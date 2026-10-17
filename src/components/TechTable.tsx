@@ -81,7 +81,7 @@ const CustomDropdown: React.FC<{
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-[calc(100%+8px)] w-48 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-50 overflow-hidden py-1 animate-in fade-in slide-in-from-top-2 duration-150">
+        <div className="absolute right-0 top-[calc(100%+8px)] w-48 rounded-2xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-2xl z-50 p-1.5 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-2 duration-150">
           {options.map((opt) => {
             const isSelected = opt.value === value;
             return (
@@ -92,9 +92,9 @@ const CustomDropdown: React.FC<{
                   onChange(opt.value);
                   setIsOpen(false);
                 }}
-                className={`w-full flex items-center justify-between px-3.5 py-2 text-xs transition-colors cursor-pointer ${
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer ${
                   isSelected
-                    ? 'bg-[#CEFF00]/10 text-foreground font-bold'
+                    ? 'bg-[#CEFF00]/15 dark:bg-[#CEFF00]/15 text-foreground font-bold'
                     : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/80 hover:text-foreground'
                 }`}
               >
@@ -297,7 +297,7 @@ export const TechTable: React.FC<TechTableProps> = ({
                 ))}
               </div>
             ) : (
-              <div className="p-3 sm:p-4 space-y-3.5">
+              <div className="w-full divide-y divide-neutral-300 dark:divide-neutral-700">
                 {[1, 2].map((idx) => (
                   <CardSkeleton key={idx} />
                 ))}
@@ -307,16 +307,16 @@ export const TechTable: React.FC<TechTableProps> = ({
             <div className="w-full overflow-x-auto custom-scrollbar rounded-b-[24px]">
               <table className="w-full text-left border-collapse table-auto">
                 <thead>
-                  <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70">
-                    <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left">{t('table.technology')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-left">{t('table.creator')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.type')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left">{t('table.popularity')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.momentum')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.ecosystem')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.community')}</th>
-                    <th className="py-2.5 lg:py-3 px-1 text-center">{t('table.latestVersion')}</th>
-                    <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center">{t('table.github')}</th>
+                  <tr className="border-b border-neutral-200/80 dark:border-neutral-800/80 text-[10px] lg:text-[11px] font-semibold uppercase tracking-tight lg:tracking-wider text-neutral-500 dark:text-neutral-400 bg-neutral-50/80 dark:bg-neutral-900/70 whitespace-nowrap">
+                    <th className="py-2.5 lg:py-3 pl-2.5 pr-1 lg:pl-4 lg:pr-2 text-left whitespace-nowrap">{t('table.technology')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-left whitespace-nowrap">{t('table.creator')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.type')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 lg:px-2 text-left whitespace-nowrap">{t('table.popularity')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.momentum')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.ecosystem')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.community')}</th>
+                    <th className="py-2.5 lg:py-3 px-1 text-center whitespace-nowrap">{t('table.latestVersion')}</th>
+                    <th className="py-2.5 lg:py-3 px-1.5 lg:px-3 text-center whitespace-nowrap">{t('table.github')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-neutral-200/60 dark:divide-neutral-800/60 text-xs">
@@ -327,7 +327,7 @@ export const TechTable: React.FC<TechTableProps> = ({
               </table>
             </div>
           ) : (
-            <div className="p-3 sm:p-4 space-y-3.5">
+            <div className="w-full divide-y divide-neutral-300 dark:divide-neutral-700">
               {processedEntries.map((entry, index) => (
                 <LazyMobileCard key={entry.id} entry={entry} maxStars={maxStars} index={index} priority={priority} />
               ))}
@@ -368,9 +368,10 @@ const TableRow: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
 
+  const rawRatio = Math.max(0, entry.popularity.totalStars) / (maxStars || 1);
   const percentage = Math.min(
     100,
-    Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
+    Math.max(5, Math.round(Math.sqrt(rawRatio) * 1000) / 10)
   );
   const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
   const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
@@ -712,9 +713,10 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
 
   const isHostedOnGitHub = isGitHubRepo(entry.githubUrl);
 
+  const rawRatio = Math.max(0, entry.popularity.totalStars) / (maxStars || 1);
   const percentage = Math.min(
     100,
-    Math.max(5, (entry.popularity.totalStars / (maxStars || 1)) * 100)
+    Math.max(5, Math.round(Math.sqrt(rawRatio) * 1000) / 10)
   );
   const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);
   const formattedNewRepos = formatNumber(entry.momentum.newReposLast30Days, i18n.language);
@@ -723,7 +725,7 @@ const MobileCard: React.FC<TableRowProps> = ({ entry, maxStars }) => {
   return (
     <div
       data-tech-id={entry.id}
-      className="p-4 rounded-2xl bg-white dark:bg-[#1A1A1E] border-[1.5px] border-neutral-300/90 dark:border-neutral-700 shadow-xs dark:shadow-md dark:shadow-black/40 space-y-3.5 transition-colors cv-card"
+      className="px-4 sm:px-6 py-4 space-y-3.5 hover:bg-neutral-50/60 dark:hover:bg-white/[0.02] transition-colors cv-card"
     >
       {/* Top: Blurred Icon Container + Name */}
       <div className="flex items-center justify-between gap-2">

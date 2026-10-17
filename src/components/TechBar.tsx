@@ -24,9 +24,10 @@ export const TechBar: React.FC<TechBarProps> = ({ entry, maxStars }) => {
   const cleanVersion = entry.creator && entry.creator.latestVersion ? sanitizeText(entry.creator.latestVersion) : '';
   const liveVersion = useGitHubRelease(entry.githubUrl, cleanVersion);
 
+  const rawRatio = Math.max(0, entry.popularity.totalStars) / (maxStars || 1);
   const starPercentage = Math.min(
     100,
-    Math.max(8, (entry.popularity.totalStars / (maxStars || 1)) * 100)
+    Math.max(8, Math.round(Math.sqrt(rawRatio) * 1000) / 10)
   );
 
   const formattedStars = formatNumber(entry.popularity.totalStars, i18n.language);

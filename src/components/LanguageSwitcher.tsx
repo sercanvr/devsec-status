@@ -91,14 +91,14 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] py-1.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] p-1.5 flex flex-col gap-0.5 z-50">
             {languages.map((lang) => {
               const isActive = i18n.language.startsWith(lang.code);
               return (
                 <button
                   key={lang.code}
                   onClick={() => handleSelect(lang.code)}
-                  className={`w-full flex items-center justify-between px-4 py-2 text-xs transition-colors ${
+                  className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs transition-colors cursor-pointer ${
                     isActive
                       ? 'bg-[#CEFF00]/15 text-foreground font-bold'
                       : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-300/60 dark:hover:bg-neutral-800/80'
@@ -151,16 +151,16 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
       )}
 
       {isOpen && (
-        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-40 rounded-xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] z-[70] py-1 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[calc(100%+21px)] w-44 rounded-2xl bg-white dark:bg-neutral-900 border border-[#C7C7C7] dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] z-[70] p-1.5 flex flex-col gap-0.5 animate-in fade-in slide-in-from-top-2 duration-150 max-h-80 overflow-y-auto custom-scrollbar isolate">
           {languages.map((lang) => {
             const isActive = i18n.language.startsWith(lang.code);
             return (
               <button
                 key={lang.code}
                 onClick={() => handleSelect(lang.code)}
-                className={`w-full flex items-center justify-between px-3 py-1.5 text-xs transition-colors ${
+                className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer ${
                   isActive
-                    ? 'bg-[#CEFF00]/10 text-foreground font-bold'
+                    ? 'bg-[#CEFF00]/15 dark:bg-[#CEFF00]/15 text-foreground font-bold'
                     : 'text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800/80 hover:text-foreground'
                 }`}
               >
