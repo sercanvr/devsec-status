@@ -30,7 +30,7 @@ Combining GitHub Search API metrics with a **finance-terminal-inspired UI**, Dev
 
 | Layer | Technology | Description |
 |---|---|---|
-| **Framework** | [React 19](https://react.dev/) | Core UI rendering with concurrent React features |
+| **Library** | [React 19](https://react.dev/) | Core UI rendering with concurrent React features |
 | **Bundler & Tooling** | [Vite 6](https://vitejs.dev/) & [TypeScript 5](https://www.typescriptlang.org/) | Next-generation frontend tooling and strict type checking |
 | **Styling** | [Tailwind CSS 3](https://tailwindcss.com/) | Modern utility-first styling with custom glassmorphism and animations |
 | **Routing** | [React Router 7](https://reactrouter.com/) | Client-side routing between Software and Security pages |
