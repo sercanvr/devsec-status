@@ -33,7 +33,6 @@ export const formatAsciiTag = (val: string): string => {
 interface TechTableProps {
   id?: string;
   title: string;
-  icon?: React.ReactNode;
   entries: TechEntry[];
   priority?: boolean;
   defaultSort?: 'stars' | 'name' | 'momentum' | 'ecosystem' | 'year';
@@ -133,7 +132,6 @@ const useIsMobile = () => {
 export const TechTable: React.FC<TechTableProps> = ({
   id,
   title,
-  icon,
   entries,
   priority = false,
   defaultSort = 'stars',
