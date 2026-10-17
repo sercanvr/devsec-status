@@ -91,7 +91,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] p-1.5 flex flex-col gap-0.5 z-50 max-h-80 overflow-y-auto custom-scrollbar">
+          <div className="w-56 mt-2 rounded-2xl bg-neutral-200/95 dark:bg-neutral-900/95 border border-neutral-300 dark:border-neutral-700 shadow-[0_4px_16px_rgba(0,0,0,0.10)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.50)] p-1.5 flex flex-col gap-0.5 z-50">
             {languages.map((lang) => {
               const isActive = i18n.language.startsWith(lang.code);
               return (
