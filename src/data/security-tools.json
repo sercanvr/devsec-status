@@ -13,17 +13,17 @@
       "latestVersion": "v11.3"
     },
     "popularity": {
-      "totalRepos": 3768,
-      "totalStars": 91525
+      "totalRepos": 3772,
+      "totalStars": 91678
     },
     "momentum": {
-      "newReposLast30Days": 426,
+      "newReposLast30Days": 428,
       "topStarredNewRepo": {
         "name": "morluto/awesome-reverse-engineering",
-        "stars": 920
+        "stars": 931
       }
     },
-    "lastUpdated": "2026-10-19T22:11:38.208Z",
+    "lastUpdated": "2026-10-20T03:56:54.851Z",
     "contributors": [
       {
         "login": "NationalSecurityAgency",
@@ -48,16 +48,16 @@
     },
     "popularity": {
       "totalRepos": 999,
-      "totalStars": 39188
+      "totalStars": 39189
     },
     "momentum": {
-      "newReposLast30Days": 18,
+      "newReposLast30Days": 17,
       "topStarredNewRepo": {
         "name": "mujtaba815/metasploitable2-php-cgi-exploit",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-19T22:11:44.529Z",
+    "lastUpdated": "2026-10-20T03:57:01.017Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -82,16 +82,16 @@
     },
     "popularity": {
       "totalRepos": 2507,
-      "totalStars": 38746
+      "totalStars": 38748
     },
     "momentum": {
-      "newReposLast30Days": 51,
+      "newReposLast30Days": 50,
       "topStarredNewRepo": {
         "name": "guaidao2/crackweb",
         "stars": 6
       }
     },
-    "lastUpdated": "2026-10-19T22:11:51.262Z",
+    "lastUpdated": "2026-10-20T03:57:07.427Z",
     "contributors": [
       {
         "login": "sqlmapproject",
@@ -115,17 +115,17 @@
       "latestVersion": "v0.59.0"
     },
     "popularity": {
-      "totalRepos": 6213,
-      "totalStars": 38521
+      "totalRepos": 6218,
+      "totalStars": 38527
     },
     "momentum": {
-      "newReposLast30Days": 530,
+      "newReposLast30Days": 523,
       "topStarredNewRepo": {
         "name": "Rootast/rootsecops",
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-19T22:11:57.754Z",
+    "lastUpdated": "2026-10-20T03:57:13.525Z",
     "contributors": [
       {
         "login": "aquasecurity",
@@ -150,16 +150,16 @@
     },
     "popularity": {
       "totalRepos": 5891,
-      "totalStars": 32137
+      "totalStars": 32146
     },
     "momentum": {
-      "newReposLast30Days": 205,
+      "newReposLast30Days": 200,
       "topStarredNewRepo": {
         "name": "DeathShotXD/Comment2Shell",
         "stars": 65
       }
     },
-    "lastUpdated": "2026-10-19T22:12:04.273Z",
+    "lastUpdated": "2026-10-20T03:57:19.756Z",
     "contributors": [
       {
         "login": "projectdiscovery",
@@ -184,16 +184,16 @@
     },
     "popularity": {
       "totalRepos": 2338,
-      "totalStars": 27026
+      "totalStars": 27027
     },
     "momentum": {
-      "newReposLast30Days": 96,
+      "newReposLast30Days": 94,
       "topStarredNewRepo": {
         "name": "ADScanPro/ad-audit-wordlist",
         "stars": 16
       }
     },
-    "lastUpdated": "2026-10-19T22:12:11.193Z",
+    "lastUpdated": "2026-10-20T03:57:26.098Z",
     "contributors": [
       {
         "login": "hashcat",
@@ -218,16 +218,16 @@
     },
     "popularity": {
       "totalRepos": 576,
-      "totalStars": 28594
+      "totalStars": 28597
     },
     "momentum": {
-      "newReposLast30Days": 27,
+      "newReposLast30Days": 26,
       "topStarredNewRepo": {
         "name": "ardahankanatli021/git-secret-audit-desktop-2026",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-19T22:12:17.975Z",
+    "lastUpdated": "2026-10-20T03:57:32.217Z",
     "contributors": [
       {
         "login": "trufflesecurity",
@@ -252,7 +252,7 @@
     },
     "popularity": {
       "totalRepos": 11,
-      "totalStars": 15971
+      "totalStars": 15973
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -261,7 +261,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-10-19T22:12:23.423Z",
+    "lastUpdated": "2026-10-20T03:57:37.375Z",
     "contributors": [
       {
         "login": "zaproxy",
@@ -285,17 +285,17 @@
       "latestVersion": "v7.95"
     },
     "popularity": {
-      "totalRepos": 21426,
-      "totalStars": 13827
+      "totalRepos": 21433,
+      "totalStars": 13829
     },
     "momentum": {
-      "newReposLast30Days": 1017,
+      "newReposLast30Days": 979,
       "topStarredNewRepo": {
         "name": "Sived80/vedetta",
         "stars": 18
       }
     },
-    "lastUpdated": "2026-10-19T22:12:29.905Z",
+    "lastUpdated": "2026-10-20T03:57:43.396Z",
     "contributors": [
       {
         "login": "nmap",
@@ -320,16 +320,16 @@
     },
     "popularity": {
       "totalRepos": 911,
-      "totalStars": 13793
+      "totalStars": 13796
     },
     "momentum": {
-      "newReposLast30Days": 143,
+      "newReposLast30Days": 137,
       "topStarredNewRepo": {
         "name": "aristorechina/toJohn",
         "stars": 4
       }
     },
-    "lastUpdated": "2026-10-19T22:12:36.814Z",
+    "lastUpdated": "2026-10-20T03:57:50.036Z",
     "contributors": [
       {
         "login": "openwall",
@@ -353,17 +353,17 @@
       "latestVersion": "v4.4.4"
     },
     "popularity": {
-      "totalRepos": 16690,
-      "totalStars": 10044
+      "totalRepos": 16695,
+      "totalStars": 10046
     },
     "momentum": {
-      "newReposLast30Days": 927,
+      "newReposLast30Days": 909,
       "topStarredNewRepo": {
         "name": "Spleefy167/frida-orbit-lab",
         "stars": 53
       }
     },
-    "lastUpdated": "2026-10-19T22:12:43.429Z",
+    "lastUpdated": "2026-10-20T03:57:56.205Z",
     "contributors": [
       {
         "login": "wireshark",
@@ -388,7 +388,7 @@
     },
     "popularity": {
       "totalRepos": 857,
-      "totalStars": 4515
+      "totalStars": 4516
     },
     "momentum": {
       "newReposLast30Days": 64,
@@ -397,7 +397,7 @@
         "stars": 10
       }
     },
-    "lastUpdated": "2026-10-19T22:12:50.324Z",
+    "lastUpdated": "2026-10-20T03:58:02.709Z",
     "contributors": [
       {
         "login": "volatilityfoundation",
@@ -423,7 +423,7 @@
     },
     "popularity": {
       "totalRepos": 859,
-      "totalStars": 7786
+      "totalStars": 7787
     },
     "momentum": {
       "newReposLast30Days": 30,
@@ -432,7 +432,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-19T22:12:57.177Z",
+    "lastUpdated": "2026-10-20T03:58:08.978Z",
     "contributors": [
       {
         "login": "misterx",
@@ -470,7 +470,7 @@
     },
     "popularity": {
       "totalRepos": 32,
-      "totalStars": 15380
+      "totalStars": 15381
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -479,7 +479,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-19T22:13:03.049Z",
+    "lastUpdated": "2026-10-20T03:58:14.703Z",
     "contributors": [
       {
         "login": "caffix",
@@ -520,13 +520,13 @@
       "totalStars": 16909
     },
     "momentum": {
-      "newReposLast30Days": 42,
+      "newReposLast30Days": 40,
       "topStarredNewRepo": {
         "name": "guaidao2/fastfuzz",
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-19T22:13:09.775Z",
+    "lastUpdated": "2026-10-20T03:58:21.224Z",
     "contributors": [
       {
         "login": "joohoi",
@@ -573,7 +573,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-19T22:13:15.732Z",
+    "lastUpdated": "2026-10-20T03:58:26.845Z",
     "contributors": [
       {
         "login": "gentilkiwi",
@@ -610,17 +610,17 @@
       "latestVersion": "v7.0.8"
     },
     "popularity": {
-      "totalRepos": 5592,
+      "totalRepos": 5594,
       "totalStars": 6752
     },
     "momentum": {
-      "newReposLast30Days": 396,
+      "newReposLast30Days": 387,
       "topStarredNewRepo": {
         "name": "ngnicky-ai/pcap-forensics-analyzer",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-19T22:13:22.545Z",
+    "lastUpdated": "2026-10-20T03:58:33.069Z",
     "contributors": [
       {
         "login": "victorjulien",
@@ -657,17 +657,17 @@
       "latestVersion": "v3.7.0"
     },
     "popularity": {
-      "totalRepos": 736,
+      "totalRepos": 737,
       "totalStars": 5067
     },
     "momentum": {
-      "newReposLast30Days": 5,
+      "newReposLast30Days": 6,
       "topStarredNewRepo": {
         "name": "xuxu298/rule-doctor-lite",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-19T22:13:28.518Z",
+    "lastUpdated": "2026-10-20T03:58:38.881Z",
     "contributors": [
       {
         "login": "ddpbsd",
@@ -705,7 +705,7 @@
     },
     "popularity": {
       "totalRepos": 665,
-      "totalStars": 25102
+      "totalStars": 25103
     },
     "momentum": {
       "newReposLast30Days": 28,
@@ -714,7 +714,7 @@
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-19T22:13:34.945Z",
+    "lastUpdated": "2026-10-20T03:58:44.971Z",
     "contributors": [
       {
         "login": "trufae",
@@ -751,8 +751,8 @@
       "latestVersion": "v10.19.4"
     },
     "popularity": {
-      "totalRepos": 545,
-      "totalStars": 36158
+      "totalRepos": 544,
+      "totalStars": 36163
     },
     "momentum": {
       "newReposLast30Days": 35,
@@ -761,7 +761,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-10-19T22:13:41.631Z",
+    "lastUpdated": "2026-10-20T03:58:51.291Z",
     "contributors": [
       {
         "login": "matt-c-gchq",
@@ -802,13 +802,13 @@
       "totalStars": 12146
     },
     "momentum": {
-      "newReposLast30Days": 54,
+      "newReposLast30Days": 51,
       "topStarredNewRepo": {
         "name": "dagowda/notRDP",
-        "stars": 256
+        "stars": 257
       }
     },
-    "lastUpdated": "2026-10-19T22:13:48.526Z",
+    "lastUpdated": "2026-10-20T03:58:57.696Z",
     "contributors": [
       {
         "login": "moloch--",
