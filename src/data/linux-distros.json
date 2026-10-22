@@ -14,17 +14,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 29368,
-      "totalStars": 253101
+      "totalRepos": 29382,
+      "totalStars": 253133
     },
     "momentum": {
-      "newReposLast30Days": 964,
+      "newReposLast30Days": 980,
       "topStarredNewRepo": {
         "name": "Zfinix/eleven",
-        "stars": 827
+        "stars": 829
       }
     },
-    "lastUpdated": "2026-10-22T11:30:57.763Z",
+    "lastUpdated": "2026-10-22T16:59:07.616Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 32179,
-      "totalStars": 26569
+      "totalRepos": 32188,
+      "totalStars": 26573
     },
     "momentum": {
-      "newReposLast30Days": 1359,
+      "newReposLast30Days": 1371,
       "topStarredNewRepo": {
         "name": "fzakaria/omnibin",
         "stars": 146
       }
     },
-    "lastUpdated": "2026-10-22T11:31:04.100Z",
+    "lastUpdated": "2026-10-22T16:59:14.257Z",
     "contributors": [
       {
         "login": "NixOS",
@@ -85,7 +85,7 @@
     },
     "popularity": {
       "totalRepos": 462,
-      "totalStars": 11388
+      "totalStars": 11390
     },
     "momentum": {
       "newReposLast30Days": 33,
@@ -94,7 +94,7 @@
         "stars": 4
       }
     },
-    "lastUpdated": "2026-10-22T11:31:10.971Z",
+    "lastUpdated": "2026-10-22T16:59:21.585Z",
     "contributors": [
       {
         "login": "siderolabs",
@@ -119,7 +119,7 @@
       "latestVersion": "develop"
     },
     "popularity": {
-      "totalRepos": 228,
+      "totalRepos": 0,
       "totalStars": 9685
     },
     "momentum": {
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-22T11:31:17.149Z",
+    "lastUpdated": "2026-10-22T16:59:27.620Z",
     "contributors": [
       {
         "login": "bottlerocket-os",
@@ -154,8 +154,8 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1405,
-      "totalStars": 9207
+      "totalRepos": 0,
+      "totalStars": 9208
     },
     "momentum": {
       "newReposLast30Days": 183,
@@ -164,7 +164,7 @@
         "stars": 140
       }
     },
-    "lastUpdated": "2026-10-22T11:31:23.869Z",
+    "lastUpdated": "2026-10-22T16:59:34.105Z",
     "contributors": [
       {
         "login": "ublue-os",
@@ -189,17 +189,17 @@
       "latestVersion": "dev"
     },
     "popularity": {
-      "totalRepos": 332,
-      "totalStars": 6345
+      "totalRepos": 0,
+      "totalStars": 6348
     },
     "momentum": {
-      "newReposLast30Days": 10,
+      "newReposLast30Days": 0,
       "topStarredNewRepo": {
         "name": "amna606/DietPilot",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-22T11:31:29.966Z",
+    "lastUpdated": "2026-10-22T16:59:39.782Z",
     "contributors": [
       {
         "login": "MichaIng",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-22T11:31:36.007Z",
+    "lastUpdated": "2026-10-22T16:59:45.865Z",
     "contributors": [
       {
         "login": "rancher",
@@ -256,7 +256,7 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1450,
+      "totalRepos": 0,
       "totalStars": 3472
     },
     "momentum": {
@@ -266,7 +266,7 @@
         "stars": 46
       }
     },
-    "lastUpdated": "2026-10-22T11:31:42.790Z",
+    "lastUpdated": "2026-10-22T16:59:52.236Z",
     "contributors": [
       {
         "login": "void-linux",
@@ -295,13 +295,13 @@
       "totalStars": 3269
     },
     "momentum": {
-      "newReposLast30Days": 5,
+      "newReposLast30Days": 0,
       "topStarredNewRepo": {
         "name": "JyuHo/ES-NE",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-22T11:31:49.392Z",
+    "lastUpdated": "2026-10-22T16:59:59.014Z",
     "contributors": [
       {
         "login": "batocera-linux",
@@ -326,7 +326,7 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1207,
+      "totalRepos": 0,
       "totalStars": 2474
     },
     "momentum": {
@@ -336,7 +336,7 @@
         "stars": 14
       }
     },
-    "lastUpdated": "2026-10-22T11:31:56.311Z",
+    "lastUpdated": "2026-10-22T17:00:05.954Z",
     "contributors": [
       {
         "login": "gentoo",
@@ -371,7 +371,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-22T11:32:03.041Z",
+    "lastUpdated": "2026-10-22T17:00:12.246Z",
     "contributors": [
       {
         "login": "ChimeraOS",
@@ -406,7 +406,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-22T11:32:10.210Z",
+    "lastUpdated": "2026-10-22T17:00:19.277Z",
     "contributors": [
       {
         "login": "flatcar",
