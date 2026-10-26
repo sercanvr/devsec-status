@@ -13,17 +13,17 @@
       "latestVersion": "v19.0.0"
     },
     "popularity": {
-      "totalRepos": 7352101,
-      "totalStars": 251838
+      "totalRepos": 7352627,
+      "totalStars": 251852
     },
     "momentum": {
-      "newReposLast30Days": 99072,
+      "newReposLast30Days": 96874,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 5462
+        "stars": 5473
       }
     },
-    "lastUpdated": "2026-10-25T20:32:45.582Z",
+    "lastUpdated": "2026-10-26T03:43:00.418Z",
     "contributors": [
       {
         "login": "facebook",
@@ -47,17 +47,17 @@
       "latestVersion": "v15.1.7"
     },
     "popularity": {
-      "totalRepos": 532472,
-      "totalStars": 143286
+      "totalRepos": 532635,
+      "totalStars": 143291
     },
     "momentum": {
-      "newReposLast30Days": 21225,
+      "newReposLast30Days": 20658,
       "topStarredNewRepo": {
         "name": "trhhubsd/ARTEX",
-        "stars": 1911
+        "stars": 1923
       }
     },
-    "lastUpdated": "2026-10-25T20:32:51.755Z",
+    "lastUpdated": "2026-10-26T03:43:06.576Z",
     "contributors": [
       {
         "login": "vercel",
@@ -81,17 +81,17 @@
       "latestVersion": "v0.78.0"
     },
     "popularity": {
-      "totalRepos": 607540,
-      "totalStars": 126783
+      "totalRepos": 607558,
+      "totalStars": 126790
     },
     "momentum": {
-      "newReposLast30Days": 6967,
+      "newReposLast30Days": 6837,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
         "stars": 587
       }
     },
-    "lastUpdated": "2026-10-25T20:32:58.405Z",
+    "lastUpdated": "2026-10-26T03:43:13.125Z",
     "contributors": [
       {
         "login": "facebook",
@@ -115,17 +115,17 @@
       "latestVersion": "v0.115.8"
     },
     "popularity": {
-      "totalRepos": 513084,
-      "totalStars": 104166
+      "totalRepos": 513345,
+      "totalStars": 104185
     },
     "momentum": {
-      "newReposLast30Days": 39733,
+      "newReposLast30Days": 38796,
       "topStarredNewRepo": {
         "name": "aixisstudio/Snitch",
-        "stars": 567
+        "stars": 577
       }
     },
-    "lastUpdated": "2026-10-25T20:33:04.587Z",
+    "lastUpdated": "2026-10-26T03:43:19.233Z",
     "contributors": [
       {
         "login": "fastapi",
@@ -149,17 +149,17 @@
       "latestVersion": "v19.1.0"
     },
     "popularity": {
-      "totalRepos": 1434071,
+      "totalRepos": 1434112,
       "totalStars": 101102
     },
     "momentum": {
-      "newReposLast30Days": 8436,
+      "newReposLast30Days": 8297,
       "topStarredNewRepo": {
         "name": "ng-native/ng-native",
         "stars": 587
       }
     },
-    "lastUpdated": "2026-10-25T20:33:10.964Z",
+    "lastUpdated": "2026-10-26T03:43:25.499Z",
     "contributors": [
       {
         "login": "angular",
@@ -183,17 +183,17 @@
       "latestVersion": "v4.0.6"
     },
     "popularity": {
-      "totalRepos": 247904,
-      "totalStars": 98115
+      "totalRepos": 247961,
+      "totalStars": 98113
     },
     "momentum": {
-      "newReposLast30Days": 8233,
+      "newReposLast30Days": 8010,
       "topStarredNewRepo": {
         "name": "leeuc10/blurssism",
         "stars": 41
       }
     },
-    "lastUpdated": "2026-10-25T20:33:17.194Z",
+    "lastUpdated": "2026-10-26T03:43:31.709Z",
     "contributors": [
       {
         "login": "tailwindlabs",
@@ -217,17 +217,17 @@
       "latestVersion": "v5.19.0"
     },
     "popularity": {
-      "totalRepos": 93895,
-      "totalStars": 88450
+      "totalRepos": 93906,
+      "totalStars": 88461
     },
     "momentum": {
-      "newReposLast30Days": 1864,
+      "newReposLast30Days": 1843,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 5462
+        "stars": 5473
       }
     },
-    "lastUpdated": "2026-10-25T20:33:23.221Z",
+    "lastUpdated": "2026-10-26T03:43:37.846Z",
     "contributors": [
       {
         "login": "sveltejs",
@@ -251,17 +251,17 @@
       "latestVersion": "v11.0.0"
     },
     "popularity": {
-      "totalRepos": 174636,
-      "totalStars": 76907
+      "totalRepos": 174650,
+      "totalStars": 76906
     },
     "momentum": {
-      "newReposLast30Days": 3660,
+      "newReposLast30Days": 3570,
       "topStarredNewRepo": {
         "name": "VelaPayments/vela-server",
         "stars": 129
       }
     },
-    "lastUpdated": "2026-10-25T20:33:29.471Z",
+    "lastUpdated": "2026-10-26T03:43:43.936Z",
     "contributors": [
       {
         "login": "nestjs",
@@ -286,16 +286,16 @@
     },
     "popularity": {
       "totalRepos": 166239,
-      "totalStars": 54873
+      "totalStars": 54886
     },
     "momentum": {
-      "newReposLast30Days": 887,
+      "newReposLast30Days": 868,
       "topStarredNewRepo": {
         "name": "shader-effects-inc/shaders",
-        "stars": 5462
+        "stars": 5473
       }
     },
-    "lastUpdated": "2026-10-25T20:33:35.794Z",
+    "lastUpdated": "2026-10-26T03:43:50.073Z",
     "contributors": [
       {
         "login": "vuejs",
@@ -319,17 +319,17 @@
       "latestVersion": ".NET 9.0"
     },
     "popularity": {
-      "totalRepos": 135241,
+      "totalRepos": 135274,
       "totalStars": 38495
     },
     "momentum": {
-      "newReposLast30Days": 4196,
+      "newReposLast30Days": 4132,
       "topStarredNewRepo": {
         "name": "devmobasa/once-campfire-dotnet",
         "stars": 23
       }
     },
-    "lastUpdated": "2026-10-25T20:33:42.043Z",
+    "lastUpdated": "2026-10-26T03:43:56.515Z",
     "contributors": [
       {
         "login": "dotnet",
@@ -353,17 +353,17 @@
       "latestVersion": "Jetpack 2026"
     },
     "popularity": {
-      "totalRepos": 32561,
+      "totalRepos": 32590,
       "totalStars": 6121
     },
     "momentum": {
-      "newReposLast30Days": 2489,
+      "newReposLast30Days": 2458,
       "topStarredNewRepo": {
         "name": "kota-zo/myspoti",
-        "stars": 377
+        "stars": 389
       }
     },
-    "lastUpdated": "2026-10-25T20:33:48.353Z",
+    "lastUpdated": "2026-10-26T03:44:02.693Z",
     "contributors": [
       {
         "login": "androidx",
@@ -388,17 +388,17 @@
       "latestVersion": "@geajs/core 1.5.1"
     },
     "popularity": {
-      "totalRepos": 45081,
+      "totalRepos": 45091,
       "totalStars": 1264
     },
     "momentum": {
-      "newReposLast30Days": 2084,
+      "newReposLast30Days": 2024,
       "topStarredNewRepo": {
         "name": "Lapin/awesome-music-gear-firmware",
         "stars": 185
       }
     },
-    "lastUpdated": "2026-10-25T20:33:54.592Z",
+    "lastUpdated": "2026-10-26T03:44:09.042Z",
     "contributors": [
       {
         "login": "dashersw",
@@ -441,17 +441,17 @@
       "latestVersion": "v5.1.5"
     },
     "popularity": {
-      "totalRepos": 1200725,
-      "totalStars": 91642
+      "totalRepos": 1200788,
+      "totalStars": 91656
     },
     "momentum": {
-      "newReposLast30Days": 13925,
+      "newReposLast30Days": 13623,
       "topStarredNewRepo": {
         "name": "shaongitbd/doory",
-        "stars": 1832
+        "stars": 1834
       }
     },
-    "lastUpdated": "2026-10-25T20:34:00.810Z",
+    "lastUpdated": "2026-10-26T03:44:15.335Z",
     "contributors": [
       {
         "login": "felixxm",
@@ -488,17 +488,17 @@
       "latestVersion": "v3.4.2"
     },
     "popularity": {
-      "totalRepos": 831952,
+      "totalRepos": 832044,
       "totalStars": 81777
     },
     "momentum": {
-      "newReposLast30Days": 19412,
+      "newReposLast30Days": 19015,
       "topStarredNewRepo": {
         "name": "wbr664393425-lgtm/scaffold-master",
-        "stars": 385
+        "stars": 387
       }
     },
-    "lastUpdated": "2026-10-25T20:34:07.075Z",
+    "lastUpdated": "2026-10-26T03:44:21.393Z",
     "contributors": [
       {
         "login": "philwebb",
@@ -535,17 +535,17 @@
       "latestVersion": "v11.38.2"
     },
     "popularity": {
-      "totalRepos": 930260,
-      "totalStars": 85259
+      "totalRepos": 930299,
+      "totalStars": 85261
     },
     "momentum": {
-      "newReposLast30Days": 12125,
+      "newReposLast30Days": 11832,
       "topStarredNewRepo": {
-        "name": "marcreichel/laya-php",
-        "stars": 109
+        "name": "markleduna321/BasicLaravelReact-template",
+        "stars": 68
       }
     },
-    "lastUpdated": "2026-10-25T20:34:13.342Z",
+    "lastUpdated": "2026-10-26T03:44:27.515Z",
     "contributors": [
       {
         "login": "taylorotwell",
@@ -582,17 +582,17 @@
       "latestVersion": "v5.0.1"
     },
     "popularity": {
-      "totalRepos": 318984,
+      "totalRepos": 319015,
       "totalStars": 69578
     },
     "momentum": {
-      "newReposLast30Days": 9532,
+      "newReposLast30Days": 9299,
       "topStarredNewRepo": {
         "name": "7985200/github-account-hub",
         "stars": 17
       }
     },
-    "lastUpdated": "2026-10-25T20:34:19.614Z",
+    "lastUpdated": "2026-10-26T03:44:34.123Z",
     "contributors": [
       {
         "login": "dougwilson",
@@ -629,17 +629,17 @@
       "latestVersion": "v3.27.3"
     },
     "popularity": {
-      "totalRepos": 1101011,
-      "totalStars": 180368
+      "totalRepos": 1101121,
+      "totalStars": 180377
     },
     "momentum": {
-      "newReposLast30Days": 24057,
+      "newReposLast30Days": 23411,
       "topStarredNewRepo": {
         "name": "ikooc/baidujiexi_app",
-        "stars": 228
+        "stars": 227
       }
     },
-    "lastUpdated": "2026-10-25T20:34:25.658Z",
+    "lastUpdated": "2026-10-26T03:44:40.124Z",
     "contributors": [
       {
         "login": "Hixie",
@@ -676,17 +676,17 @@
       "latestVersion": "v3.15.2"
     },
     "popularity": {
-      "totalRepos": 12411,
-      "totalStars": 60990
+      "totalRepos": 12410,
+      "totalStars": 60991
     },
     "momentum": {
-      "newReposLast30Days": 85,
+      "newReposLast30Days": 82,
       "topStarredNewRepo": {
         "name": "laravelify-cloud/laravelify",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-25T20:34:32.042Z",
+    "lastUpdated": "2026-10-26T03:44:46.509Z",
     "contributors": [
       {
         "login": "danielroe",
@@ -723,17 +723,17 @@
       "latestVersion": "v5.3.3"
     },
     "popularity": {
-      "totalRepos": 811707,
-      "totalStars": 175016
+      "totalRepos": 811759,
+      "totalStars": 175017
     },
     "momentum": {
-      "newReposLast30Days": 7580,
+      "newReposLast30Days": 7446,
       "topStarredNewRepo": {
         "name": "ToiCF/CF-Workers-TGProxy",
-        "stars": 1039
+        "stars": 1043
       }
     },
-    "lastUpdated": "2026-10-25T20:34:38.403Z",
+    "lastUpdated": "2026-10-26T03:44:52.701Z",
     "contributors": [
       {
         "login": "mdo",
