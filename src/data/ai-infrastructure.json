@@ -14,17 +14,17 @@
       "latestVersion": "v2.6.0"
     },
     "popularity": {
-      "totalRepos": 253411,
-      "totalStars": 105095
+      "totalRepos": 253425,
+      "totalStars": 105101
     },
     "momentum": {
-      "newReposLast30Days": 8873,
+      "newReposLast30Days": 8888,
       "topStarredNewRepo": {
         "name": "PSRben/VisionHOPE",
-        "stars": 1251
+        "stars": 1252
       }
     },
-    "lastUpdated": "2026-10-26T21:10:29.795Z",
+    "lastUpdated": "2026-10-26T22:33:28.366Z",
     "contributors": [
       {
         "login": "soumith",
@@ -61,17 +61,17 @@
       "latestVersion": "v2.18.0"
     },
     "popularity": {
-      "totalRepos": 216914,
-      "totalStars": 201273
+      "totalRepos": 216922,
+      "totalStars": 201276
     },
     "momentum": {
-      "newReposLast30Days": 2733,
+      "newReposLast30Days": 2739,
       "topStarredNewRepo": {
         "name": "jmiravet/AnyInit",
         "stars": 8
       }
     },
-    "lastUpdated": "2026-10-26T21:10:38.481Z",
+    "lastUpdated": "2026-10-26T22:33:34.857Z",
     "contributors": [
       {
         "login": "jeffdean",
@@ -108,17 +108,17 @@
       "latestVersion": "v4.48.1"
     },
     "popularity": {
-      "totalRepos": 121854,
-      "totalStars": 168203
+      "totalRepos": 121865,
+      "totalStars": 168207
     },
     "momentum": {
-      "newReposLast30Days": 4933,
+      "newReposLast30Days": 4944,
       "topStarredNewRepo": {
         "name": "BaruqueRodrigues/llm-legislativo",
-        "stars": 488
+        "stars": 489
       }
     },
-    "lastUpdated": "2026-10-26T21:10:45.251Z",
+    "lastUpdated": "2026-10-26T22:33:41.205Z",
     "contributors": [
       {
         "login": "LysandreJik",
@@ -155,17 +155,17 @@
       "latestVersion": "b4525"
     },
     "popularity": {
-      "totalRepos": 10675,
-      "totalStars": 132446
+      "totalRepos": 10676,
+      "totalStars": 132451
     },
     "momentum": {
-      "newReposLast30Days": 1486,
+      "newReposLast30Days": 1489,
       "topStarredNewRepo": {
         "name": "StartLuxLabs/StartLux-Decision",
         "stars": 1582
       }
     },
-    "lastUpdated": "2026-10-26T21:10:52.229Z",
+    "lastUpdated": "2026-10-26T22:33:47.791Z",
     "contributors": [
       {
         "login": "ggerganov",
@@ -202,8 +202,8 @@
       "latestVersion": "v2.1"
     },
     "popularity": {
-      "totalRepos": 18509,
-      "totalStars": 73541
+      "totalRepos": 18508,
+      "totalStars": 73545
     },
     "momentum": {
       "newReposLast30Days": 332,
@@ -212,7 +212,7 @@
         "stars": 126
       }
     },
-    "lastUpdated": "2026-10-26T21:10:58.939Z",
+    "lastUpdated": "2026-10-26T22:33:54.053Z",
     "contributors": [
       {
         "login": "rromb",
@@ -249,17 +249,17 @@
       "latestVersion": "v1.6.1"
     },
     "popularity": {
-      "totalRepos": 119390,
-      "totalStars": 67931
+      "totalRepos": 119401,
+      "totalStars": 67934
     },
     "momentum": {
-      "newReposLast30Days": 7686,
+      "newReposLast30Days": 7691,
       "topStarredNewRepo": {
         "name": "AryanDinakaran/EpochGo",
         "stars": 23
       }
     },
-    "lastUpdated": "2026-10-26T21:11:09.291Z",
+    "lastUpdated": "2026-10-26T22:34:00.463Z",
     "contributors": [
       {
         "login": "ogrisel",
@@ -296,17 +296,17 @@
       "latestVersion": "v3.8.0"
     },
     "popularity": {
-      "totalRepos": 94687,
-      "totalStars": 64390
+      "totalRepos": 94692,
+      "totalStars": 64391
     },
     "momentum": {
-      "newReposLast30Days": 1538,
+      "newReposLast30Days": 1542,
       "topStarredNewRepo": {
         "name": "jonasherminiodev/resnet152v2-skin-cancer-ham10000",
         "stars": 18
       }
     },
-    "lastUpdated": "2026-10-26T21:11:16.170Z",
+    "lastUpdated": "2026-10-26T22:34:06.948Z",
     "contributors": [
       {
         "login": "fchollet",
@@ -343,17 +343,17 @@
       "latestVersion": "v0.4.38"
     },
     "popularity": {
-      "totalRepos": 30428,
-      "totalStars": 36503
+      "totalRepos": 30430,
+      "totalStars": 36505
     },
     "momentum": {
-      "newReposLast30Days": 678,
+      "newReposLast30Days": 679,
       "topStarredNewRepo": {
         "name": "UCSC-VLAA/ALPS",
         "stars": 28
       }
     },
-    "lastUpdated": "2026-10-26T21:11:23.447Z",
+    "lastUpdated": "2026-10-26T22:34:13.309Z",
     "contributors": [
       {
         "login": "mattjj",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.7.0"
     },
     "popularity": {
-      "totalRepos": 16425,
-      "totalStars": 95613
+      "totalRepos": 16434,
+      "totalStars": 95616
     },
     "momentum": {
-      "newReposLast30Days": 1994,
+      "newReposLast30Days": 2003,
       "topStarredNewRepo": {
         "name": "StartLuxLabs/StartLux-Decision",
         "stars": 1582
       }
     },
-    "lastUpdated": "2026-10-26T21:11:30.277Z",
+    "lastUpdated": "2026-10-26T22:34:19.343Z",
     "contributors": [
       {
         "login": "WoosukKwon",
@@ -437,17 +437,17 @@
       "latestVersion": "v20231117"
     },
     "popularity": {
-      "totalRepos": 70279,
-      "totalStars": 111336
+      "totalRepos": 70291,
+      "totalStars": 111338
     },
     "momentum": {
-      "newReposLast30Days": 5240,
+      "newReposLast30Days": 5253,
       "topStarredNewRepo": {
         "name": "opennookorg/betterwispr",
         "stars": 460
       }
     },
-    "lastUpdated": "2026-10-26T21:11:37.364Z",
+    "lastUpdated": "2026-10-26T22:34:25.697Z",
     "contributors": [
       {
         "login": "jongwook",
@@ -484,17 +484,17 @@
       "latestVersion": "v0.12.14"
     },
     "popularity": {
-      "totalRepos": 6994,
-      "totalStars": 52672
+      "totalRepos": 6995,
+      "totalStars": 52673
     },
     "momentum": {
-      "newReposLast30Days": 288,
+      "newReposLast30Days": 289,
       "topStarredNewRepo": {
         "name": "zhongke1214/spring-ai-alibaba-learning",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-26T21:11:44.571Z",
+    "lastUpdated": "2026-10-26T22:34:31.955Z",
     "contributors": [
       {
         "login": "jerryjliu",
@@ -531,17 +531,17 @@
       "latestVersion": "v1.17.0"
     },
     "popularity": {
-      "totalRepos": 21964,
+      "totalRepos": 21967,
       "totalStars": 21620
     },
     "momentum": {
-      "newReposLast30Days": 2205,
+      "newReposLast30Days": 2208,
       "topStarredNewRepo": {
         "name": "datalab-to/indra",
-        "stars": 1170
+        "stars": 1176
       }
     },
-    "lastUpdated": "2026-10-26T21:11:51.048Z",
+    "lastUpdated": "2026-10-26T22:34:38.299Z",
     "contributors": [
       {
         "login": "danking",
