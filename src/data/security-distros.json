@@ -15,13 +15,13 @@
     },
     "popularity": {
       "totalRepos": 29,
-      "totalStars": 7823
+      "totalStars": 7824
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-27T22:07:00.987Z",
+    "lastUpdated": "2026-10-28T04:43:17.053Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -47,7 +47,7 @@
     },
     "popularity": {
       "totalRepos": 258,
-      "totalStars": 5761
+      "totalStars": 5762
     },
     "momentum": {
       "newReposLast30Days": 18,
@@ -56,7 +56,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-27T22:07:07.825Z",
+    "lastUpdated": "2026-10-28T04:43:23.727Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -82,7 +82,7 @@
     },
     "popularity": {
       "totalRepos": 697,
-      "totalStars": 4949
+      "totalStars": 4950
     },
     "momentum": {
       "newReposLast30Days": 32,
@@ -91,7 +91,7 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-10-27T22:07:14.914Z",
+    "lastUpdated": "2026-10-28T04:43:30.387Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -126,7 +126,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-27T22:07:20.778Z",
+    "lastUpdated": "2026-10-28T04:43:35.971Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -155,13 +155,13 @@
       "totalStars": 3542
     },
     "momentum": {
-      "newReposLast30Days": 14,
+      "newReposLast30Days": 13,
       "topStarredNewRepo": {
         "name": "y-ro9/CodeAlpha_NetworkIntrusionDetectionSystem",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-10-27T22:07:27.430Z",
+    "lastUpdated": "2026-10-28T04:43:42.067Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -190,13 +190,13 @@
       "totalStars": 3114
     },
     "momentum": {
-      "newReposLast30Days": 7,
+      "newReposLast30Days": 6,
       "topStarredNewRepo": {
         "name": "Wallygatorkss/Exegol",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-27T22:07:33.955Z",
+    "lastUpdated": "2026-10-28T04:43:48.251Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -228,7 +228,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-27T22:07:40.751Z",
+    "lastUpdated": "2026-10-28T04:43:54.585Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,7 +263,7 @@
         "stars": 10
       }
     },
-    "lastUpdated": "2026-10-27T22:07:47.418Z",
+    "lastUpdated": "2026-10-28T04:44:01.138Z",
     "contributors": [
       {
         "login": "Athena-OS",
