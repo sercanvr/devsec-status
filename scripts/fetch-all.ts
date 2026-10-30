@@ -47,6 +47,54 @@ const DATA_FILES = [
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
+async function fetchWithRetry(
+  url: string,
+  options: { headers: Record<string, string> },
+  stats: { totalRequests: number; secondaryLimitHit: boolean },
+  maxRetries = 1
+): Promise<{ ok: boolean; status: number; data?: any; text?: string; isSecondaryLimit: boolean }> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    stats.totalRequests++;
+    try {
+      const res = await fetch(url, options);
+      if (res.ok) {
+        const data = await res.json();
+        return { ok: true, status: res.status, data, isSecondaryLimit: false };
+      }
+
+      const resText = await res.text().catch(() => '');
+      const isSecLimit = res.status === 403 && (
+        resText.toLowerCase().includes('secondary rate limit') ||
+        resText.toLowerCase().includes('rate limit exceeded')
+      );
+
+      if (isSecLimit && attempt < maxRetries) {
+        // Parse retry-after if provided or wait 45s backoff
+        const retryAfterHeader = res.headers.get('retry-after');
+        const waitSec = retryAfterHeader ? Math.min(Math.max(parseInt(retryAfterHeader, 10) || 45, 10), 60) : 45;
+        console.warn(`  [RETRY] GitHub secondary rate limit hit on attempt ${attempt + 1}. Backing off for ${waitSec}s...`);
+        await delay(waitSec * 1000);
+        continue;
+      }
+
+      if (isSecLimit) {
+        stats.secondaryLimitHit = true;
+      }
+
+      return { ok: false, status: res.status, text: resText, isSecondaryLimit: isSecLimit };
+    } catch (err: any) {
+      if (attempt < maxRetries) {
+        console.warn(`  [RETRY] Network exception on attempt ${attempt + 1}: ${err?.message || err}. Waiting 5s...`);
+        await delay(5000);
+        continue;
+      }
+      return { ok: false, status: 0, text: err?.message || String(err), isSecondaryLimit: false };
+    }
+  }
+
+  return { ok: false, status: 0, text: 'Max retries exhausted', isSecondaryLimit: false };
+}
+
 export function extractRepoFullName(githubUrl: string): string | null {
   try {
     const url = new URL(githubUrl);
@@ -88,21 +136,15 @@ export async function updateEntryMetrics(
   try {
     // 1. Fetch repo details for stargazers_count
     requestsMade++;
-    stats.totalRequests++;
-    const repoRes = await fetch(`https://api.github.com/repos/${repoFullName}`, { headers });
+    const repoRes = await fetchWithRetry(`https://api.github.com/repos/${repoFullName}`, { headers }, stats);
     
-    if (repoRes.ok) {
-      const repoData = (await repoRes.json()) as any;
-      if (typeof repoData.stargazers_count === 'number') {
-        item.popularity.totalStars = repoData.stargazers_count;
+    if (repoRes.ok && repoRes.data) {
+      if (typeof repoRes.data.stargazers_count === 'number') {
+        item.popularity.totalStars = repoRes.data.stargazers_count;
       }
     } else {
       apiErrors++;
-      const resText = await repoRes.text().catch(() => '');
-      if (repoRes.status === 403 && resText.toLowerCase().includes('secondary rate limit')) {
-        stats.secondaryLimitHit = true;
-      }
-      console.warn(`  [WARN] Repo API HTTP ${repoRes.status} for ${repoFullName}: ${resText.slice(0, 100)}`);
+      console.warn(`  [WARN] Repo API HTTP ${repoRes.status} for ${repoFullName}: ${(repoRes.text || '').slice(0, 100)}`);
     }
 
     // Rate-limit spacing (2.1s delay between calls)
@@ -115,56 +157,46 @@ export async function updateEntryMetrics(
         : item.name;
 
     requestsMade++;
-    stats.totalRequests++;
-    const searchRes = await fetch(
+    const searchRes = await fetchWithRetry(
       `https://api.github.com/search/repositories?q=${encodeURIComponent(searchQuery)}`,
-      { headers }
+      { headers },
+      stats
     );
     
-    if (searchRes.ok) {
-      const searchData = (await searchRes.json()) as any;
-      if (typeof searchData.total_count === 'number') {
-        item.popularity.totalRepos = searchData.total_count;
+    if (searchRes.ok && searchRes.data) {
+      if (typeof searchRes.data.total_count === 'number') {
+        item.popularity.totalRepos = searchRes.data.total_count;
       }
     } else {
       apiErrors++;
-      const resText = await searchRes.text().catch(() => '');
-      if (searchRes.status === 403 && resText.toLowerCase().includes('secondary rate limit')) {
-        stats.secondaryLimitHit = true;
-      }
-      console.warn(`  [WARN] Search API HTTP ${searchRes.status} for "${searchQuery}": ${resText.slice(0, 100)}`);
+      console.warn(`  [WARN] Search API HTTP ${searchRes.status} for "${searchQuery}": ${(searchRes.text || '').slice(0, 100)}`);
     }
 
     await delay(2100);
 
     // 3. Search momentum in last 30 days
     requestsMade++;
-    stats.totalRequests++;
-    const momentumRes = await fetch(
+    const momentumRes = await fetchWithRetry(
       `https://api.github.com/search/repositories?q=${encodeURIComponent(
         `${searchQuery} created:>${dateStr}`
       )}&sort=stars&order=desc`,
-      { headers }
+      { headers },
+      stats
     );
     
-    if (momentumRes.ok) {
-      const momentumData = (await momentumRes.json()) as any;
-      if (typeof momentumData.total_count === 'number') {
-        item.momentum.newReposLast30Days = momentumData.total_count;
+    if (momentumRes.ok && momentumRes.data) {
+      if (typeof momentumRes.data.total_count === 'number') {
+        item.momentum.newReposLast30Days = momentumRes.data.total_count;
       }
-      if (momentumData.items && momentumData.items.length > 0) {
+      if (momentumRes.data.items && momentumRes.data.items.length > 0) {
         item.momentum.topStarredNewRepo = {
-          name: momentumData.items[0].full_name,
-          stars: momentumData.items[0].stargazers_count,
+          name: momentumRes.data.items[0].full_name,
+          stars: momentumRes.data.items[0].stargazers_count,
         };
       }
     } else {
       apiErrors++;
-      const resText = await momentumRes.text().catch(() => '');
-      if (momentumRes.status === 403 && resText.toLowerCase().includes('secondary rate limit')) {
-        stats.secondaryLimitHit = true;
-      }
-      console.warn(`  [WARN] Momentum API HTTP ${momentumRes.status} for "${searchQuery}": ${resText.slice(0, 100)}`);
+      console.warn(`  [WARN] Momentum API HTTP ${momentumRes.status} for "${searchQuery}": ${(momentumRes.text || '').slice(0, 100)}`);
     }
 
     if (apiErrors === 0) {
