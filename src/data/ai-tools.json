@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 114116,
-      "totalStars": 185281
+      "totalRepos": 114240,
+      "totalStars": 185332
     },
     "momentum": {
-      "newReposLast30Days": 10891,
+      "newReposLast30Days": 11020,
       "topStarredNewRepo": {
         "name": "AienTech/dossier",
-        "stars": 3225
+        "stars": 3287
       }
     },
-    "lastUpdated": "2026-10-30T04:55:00.768Z",
+    "lastUpdated": "2026-10-30T12:28:02.200Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 165584,
-      "totalStars": 148691
+      "totalRepos": 165650,
+      "totalStars": 148707
     },
     "momentum": {
-      "newReposLast30Days": 6992,
+      "newReposLast30Days": 7066,
       "topStarredNewRepo": {
         "name": "heitorcarvalhohlbryzeis6-cloud/whatsapp-mcp-server",
         "stars": 58
       }
     },
-    "lastUpdated": "2026-10-30T04:55:06.969Z",
+    "lastUpdated": "2026-10-30T12:28:08.652Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -108,17 +108,17 @@
       "latestVersion": "v0.5.1"
     },
     "popularity": {
-      "totalRepos": 1710,
+      "totalRepos": 1709,
       "totalStars": 187826
     },
     "momentum": {
-      "newReposLast30Days": 20,
+      "newReposLast30Days": 21,
       "topStarredNewRepo": {
         "name": "BitCLI-io/bitcli-mcp-server",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-30T04:55:13.172Z",
+    "lastUpdated": "2026-10-30T12:28:15.254Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 32758,
-      "totalStars": 144031
+      "totalRepos": 32832,
+      "totalStars": 144109
     },
     "momentum": {
-      "newReposLast30Days": 3302,
+      "newReposLast30Days": 3376,
       "topStarredNewRepo": {
         "name": "Arekejoker/qwen21-nsfw-pose-skill",
-        "stars": 3830
+        "stars": 3842
       }
     },
-    "lastUpdated": "2026-10-30T04:55:19.741Z",
+    "lastUpdated": "2026-10-30T12:28:21.938Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 125190,
-      "totalStars": 209068
+      "totalRepos": 125309,
+      "totalStars": 209105
     },
     "momentum": {
-      "newReposLast30Days": 8467,
+      "newReposLast30Days": 8580,
       "topStarredNewRepo": {
         "name": "rasidi3112/pondok-ai",
         "stars": 38
       }
     },
-    "lastUpdated": "2026-10-30T04:55:25.943Z",
+    "lastUpdated": "2026-10-30T12:28:28.711Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4405,
-      "totalStars": 157204
+      "totalRepos": 4404,
+      "totalStars": 157244
     },
     "momentum": {
       "newReposLast30Days": 368,
       "topStarredNewRepo": {
         "name": "justxor/deepseek-local-guide-ru",
-        "stars": 163
+        "stars": 164
       }
     },
-    "lastUpdated": "2026-10-30T04:55:32.334Z",
+    "lastUpdated": "2026-10-30T12:28:35.272Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -297,7 +297,7 @@
     },
     "popularity": {
       "totalRepos": 3922,
-      "totalStars": 55538
+      "totalStars": 55537
     },
     "momentum": {
       "newReposLast30Days": 57,
@@ -306,7 +306,7 @@
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-30T04:55:39.101Z",
+    "lastUpdated": "2026-10-30T12:28:41.994Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7568,
-      "totalStars": 159952
+      "totalRepos": 7572,
+      "totalStars": 159989
     },
     "momentum": {
-      "newReposLast30Days": 441,
+      "newReposLast30Days": 446,
       "topStarredNewRepo": {
         "name": "apimartpiszqx9lu/dify-vs-fastgpt",
         "stars": 54
       }
     },
-    "lastUpdated": "2026-10-30T04:55:45.338Z",
+    "lastUpdated": "2026-10-30T12:28:48.903Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 19820,
-      "totalStars": 60274
+      "totalRepos": 19825,
+      "totalStars": 60294
     },
     "momentum": {
-      "newReposLast30Days": 823,
+      "newReposLast30Days": 831,
       "topStarredNewRepo": {
         "name": "AryanDinakaran/EpochGo",
         "stars": 22
       }
     },
-    "lastUpdated": "2026-10-30T04:55:51.620Z",
+    "lastUpdated": "2026-10-30T12:28:55.717Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -447,7 +447,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T04:55:58.719Z",
+    "lastUpdated": "2026-10-30T12:29:02.870Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -485,7 +485,7 @@
     },
     "popularity": {
       "totalRepos": 355,
-      "totalStars": 28919
+      "totalStars": 28921
     },
     "momentum": {
       "newReposLast30Days": 11,
@@ -494,7 +494,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T04:56:04.935Z",
+    "lastUpdated": "2026-10-30T12:29:09.447Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 178718,
-      "totalStars": 45159
+      "totalRepos": 178750,
+      "totalStars": 45168
     },
     "momentum": {
-      "newReposLast30Days": 4267,
+      "newReposLast30Days": 4305,
       "topStarredNewRepo": {
         "name": "InertiaMonarchSpiral/Janitor-Ai-Apex",
         "stars": 82
       }
     },
-    "lastUpdated": "2026-10-30T04:56:11.506Z",
+    "lastUpdated": "2026-10-30T12:29:16.068Z",
     "contributors": [
       {
         "login": "urmauur",
