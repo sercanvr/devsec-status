@@ -21,10 +21,10 @@
       "newReposLast30Days": 1,
       "topStarredNewRepo": {
         "name": "Epsilon0xCell/commando-vm",
-        "stars": 0
+        "stars": 1
       }
     },
-    "lastUpdated": "2026-10-30T12:32:07.588Z",
+    "lastUpdated": "2026-10-30T22:12:15.925Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 258,
+      "totalRepos": 260,
       "totalStars": 5762
     },
     "momentum": {
-      "newReposLast30Days": 18,
+      "newReposLast30Days": 20,
       "topStarredNewRepo": {
         "name": "cbry-96/pentest-metasploitable-vsftpd",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-30T12:32:14.907Z",
+    "lastUpdated": "2026-10-30T22:12:22.727Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -84,17 +84,17 @@
       "latestVersion": "3/main"
     },
     "popularity": {
-      "totalRepos": 696,
-      "totalStars": 4953
+      "totalRepos": 700,
+      "totalStars": 4957
     },
     "momentum": {
-      "newReposLast30Days": 30,
+      "newReposLast30Days": 32,
       "topStarredNewRepo": {
         "name": "Quincunx33/hostOnion",
-        "stars": 8
+        "stars": 9
       }
     },
-    "lastUpdated": "2026-10-30T12:32:22.543Z",
+    "lastUpdated": "2026-10-30T22:12:29.944Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T12:32:28.561Z",
+    "lastUpdated": "2026-10-30T22:12:35.529Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -154,8 +154,8 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 474,
-      "totalStars": 3546
+      "totalRepos": 473,
+      "totalStars": 3547
     },
     "momentum": {
       "newReposLast30Days": 13,
@@ -164,7 +164,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T12:32:35.096Z",
+    "lastUpdated": "2026-10-30T22:12:41.764Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -189,17 +189,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 112,
-      "totalStars": 3113
+      "totalRepos": 113,
+      "totalStars": 3117
     },
     "momentum": {
-      "newReposLast30Days": 6,
+      "newReposLast30Days": 7,
       "topStarredNewRepo": {
         "name": "Wallygatorkss/Exegol",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T12:32:42.476Z",
+    "lastUpdated": "2026-10-30T22:12:48.073Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-30T12:32:49.756Z",
+    "lastUpdated": "2026-10-30T22:12:54.250Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -266,7 +266,7 @@
         "stars": 10
       }
     },
-    "lastUpdated": "2026-10-30T12:32:56.521Z",
+    "lastUpdated": "2026-10-30T22:13:00.657Z",
     "contributors": [
       {
         "login": "Athena-OS",
