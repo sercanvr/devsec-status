@@ -14,17 +14,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 29737,
-      "totalStars": 253881
+      "totalRepos": 29745,
+      "totalStars": 253905
     },
     "momentum": {
-      "newReposLast30Days": 1116,
+      "newReposLast30Days": 1089,
       "topStarredNewRepo": {
         "name": "Zfinix/eleven",
-        "stars": 938
+        "stars": 940
       }
     },
-    "lastUpdated": "2026-10-30T22:11:01.338Z",
+    "lastUpdated": "2026-10-31T04:41:19.512Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 32480,
-      "totalStars": 26665
+      "totalRepos": 32482,
+      "totalStars": 26667
     },
     "momentum": {
-      "newReposLast30Days": 1416,
+      "newReposLast30Days": 1374,
       "topStarredNewRepo": {
         "name": "kernelstub/Pwnbox",
         "stars": 62
       }
     },
-    "lastUpdated": "2026-10-30T22:11:07.378Z",
+    "lastUpdated": "2026-10-31T04:41:25.648Z",
     "contributors": [
       {
         "login": "NixOS",
@@ -84,17 +84,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 470,
-      "totalStars": 11437
+      "totalRepos": 471,
+      "totalStars": 11440
     },
     "momentum": {
-      "newReposLast30Days": 34,
+      "newReposLast30Days": 33,
       "topStarredNewRepo": {
         "name": "nberlee/cephadm-talos",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-10-30T22:11:13.769Z",
+    "lastUpdated": "2026-10-31T04:41:32.441Z",
     "contributors": [
       {
         "login": "siderolabs",
@@ -120,16 +120,16 @@
     },
     "popularity": {
       "totalRepos": 228,
-      "totalStars": 9691
+      "totalStars": 9693
     },
     "momentum": {
-      "newReposLast30Days": 9,
+      "newReposLast30Days": 8,
       "topStarredNewRepo": {
-        "name": "jmt-lab/bottlerocket-argosy",
+        "name": "LKVexa/vivian-lctl-cautious-agent",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T22:11:19.684Z",
+    "lastUpdated": "2026-10-31T04:41:38.218Z",
     "contributors": [
       {
         "login": "bottlerocket-os",
@@ -154,17 +154,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1462,
-      "totalStars": 9240
+      "totalRepos": 1464,
+      "totalStars": 9244
     },
     "momentum": {
-      "newReposLast30Days": 197,
+      "newReposLast30Days": 194,
       "topStarredNewRepo": {
         "name": "VivaLaVent/ps5-bazzite-deck",
-        "stars": 270
+        "stars": 290
       }
     },
-    "lastUpdated": "2026-10-30T22:11:25.973Z",
+    "lastUpdated": "2026-10-31T04:41:44.492Z",
     "contributors": [
       {
         "login": "ublue-os",
@@ -199,7 +199,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-30T22:11:32.318Z",
+    "lastUpdated": "2026-10-31T04:41:50.510Z",
     "contributors": [
       {
         "login": "MichaIng",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-10-30T22:11:38.402Z",
+    "lastUpdated": "2026-10-31T04:41:56.376Z",
     "contributors": [
       {
         "login": "rancher",
@@ -260,13 +260,13 @@
       "totalStars": 3484
     },
     "momentum": {
-      "newReposLast30Days": 98,
+      "newReposLast30Days": 93,
       "topStarredNewRepo": {
         "name": "DroidNative/DroidNativeApp",
         "stars": 62
       }
     },
-    "lastUpdated": "2026-10-30T22:11:44.845Z",
+    "lastUpdated": "2026-10-31T04:42:02.861Z",
     "contributors": [
       {
         "login": "void-linux",
@@ -292,16 +292,16 @@
     },
     "popularity": {
       "totalRepos": 78,
-      "totalStars": 3283
+      "totalStars": 3284
     },
     "momentum": {
-      "newReposLast30Days": 8,
+      "newReposLast30Days": 7,
       "topStarredNewRepo": {
         "name": "DankMiimer/handheld-usb-netplay",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-10-30T22:11:50.934Z",
+    "lastUpdated": "2026-10-31T04:42:09.030Z",
     "contributors": [
       {
         "login": "batocera-linux",
@@ -330,13 +330,13 @@
       "totalStars": 2479
     },
     "momentum": {
-      "newReposLast30Days": 35,
+      "newReposLast30Days": 33,
       "topStarredNewRepo": {
         "name": "tarilka0gg/simple-linux-binhost",
         "stars": 7
       }
     },
-    "lastUpdated": "2026-10-30T22:11:57.555Z",
+    "lastUpdated": "2026-10-31T04:42:15.517Z",
     "contributors": [
       {
         "login": "gentoo",
@@ -362,7 +362,7 @@
     },
     "popularity": {
       "totalRepos": 39,
-      "totalStars": 1999
+      "totalStars": 2000
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -371,7 +371,7 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-10-30T22:12:03.458Z",
+    "lastUpdated": "2026-10-31T04:42:21.321Z",
     "contributors": [
       {
         "login": "ChimeraOS",
@@ -406,7 +406,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-10-30T22:12:09.711Z",
+    "lastUpdated": "2026-10-31T04:42:27.214Z",
     "contributors": [
       {
         "login": "flatcar",
