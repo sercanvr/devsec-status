@@ -14,17 +14,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 30131,
-      "totalStars": 254096
+      "totalRepos": 30155,
+      "totalStars": 254134
     },
     "momentum": {
-      "newReposLast30Days": 1392,
+      "newReposLast30Days": 1414,
       "topStarredNewRepo": {
         "name": "Zfinix/eleven",
-        "stars": 954
+        "stars": 956
       }
     },
-    "lastUpdated": "2026-11-02T05:03:27.620Z",
+    "lastUpdated": "2026-11-02T15:10:17.376Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 32534,
-      "totalStars": 26674
+      "totalRepos": 32538,
+      "totalStars": 26680
     },
     "momentum": {
-      "newReposLast30Days": 1354,
+      "newReposLast30Days": 1363,
       "topStarredNewRepo": {
         "name": "kernelstub/Pwnbox",
         "stars": 63
       }
     },
-    "lastUpdated": "2026-11-02T05:03:33.766Z",
+    "lastUpdated": "2026-11-02T15:10:24.974Z",
     "contributors": [
       {
         "login": "NixOS",
@@ -85,7 +85,7 @@
     },
     "popularity": {
       "totalRepos": 474,
-      "totalStars": 11446
+      "totalStars": 11447
     },
     "momentum": {
       "newReposLast30Days": 35,
@@ -94,7 +94,7 @@
         "stars": 5
       }
     },
-    "lastUpdated": "2026-11-02T05:03:40.175Z",
+    "lastUpdated": "2026-11-02T15:10:32.348Z",
     "contributors": [
       {
         "login": "siderolabs",
@@ -120,7 +120,7 @@
     },
     "popularity": {
       "totalRepos": 228,
-      "totalStars": 9695
+      "totalStars": 9696
     },
     "momentum": {
       "newReposLast30Days": 7,
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-02T05:03:46.116Z",
+    "lastUpdated": "2026-11-02T15:10:38.959Z",
     "contributors": [
       {
         "login": "bottlerocket-os",
@@ -154,17 +154,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1476,
-      "totalStars": 9257
+      "totalRepos": 1478,
+      "totalStars": 9259
     },
     "momentum": {
-      "newReposLast30Days": 188,
+      "newReposLast30Days": 190,
       "topStarredNewRepo": {
         "name": "VivaLaVent/ps5-bazzite-deck",
-        "stars": 371
+        "stars": 411
       }
     },
-    "lastUpdated": "2026-11-02T05:03:52.399Z",
+    "lastUpdated": "2026-11-02T15:10:45.902Z",
     "contributors": [
       {
         "login": "ublue-os",
@@ -190,7 +190,7 @@
     },
     "popularity": {
       "totalRepos": 339,
-      "totalStars": 6376
+      "totalStars": 6377
     },
     "momentum": {
       "newReposLast30Days": 14,
@@ -199,7 +199,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-02T05:03:58.310Z",
+    "lastUpdated": "2026-11-02T15:10:53.099Z",
     "contributors": [
       {
         "login": "MichaIng",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-02T05:04:04.136Z",
+    "lastUpdated": "2026-11-02T15:10:59.671Z",
     "contributors": [
       {
         "login": "rancher",
@@ -256,17 +256,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1483,
-      "totalStars": 3488
+      "totalRepos": 1484,
+      "totalStars": 3491
     },
     "momentum": {
-      "newReposLast30Days": 95,
+      "newReposLast30Days": 96,
       "topStarredNewRepo": {
         "name": "DroidNative/DroidNativeApp",
-        "stars": 62
+        "stars": 63
       }
     },
-    "lastUpdated": "2026-11-02T05:04:10.669Z",
+    "lastUpdated": "2026-11-02T15:11:07.371Z",
     "contributors": [
       {
         "login": "void-linux",
@@ -301,7 +301,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-02T05:04:16.744Z",
+    "lastUpdated": "2026-11-02T15:11:14.246Z",
     "contributors": [
       {
         "login": "batocera-linux",
@@ -336,7 +336,7 @@
         "stars": 7
       }
     },
-    "lastUpdated": "2026-11-02T05:04:23.048Z",
+    "lastUpdated": "2026-11-02T15:11:21.603Z",
     "contributors": [
       {
         "login": "gentoo",
@@ -371,7 +371,7 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-11-02T05:04:28.804Z",
+    "lastUpdated": "2026-11-02T15:11:28.302Z",
     "contributors": [
       {
         "login": "ChimeraOS",
@@ -396,17 +396,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 384,
-      "totalStars": 1293
+      "totalRepos": 385,
+      "totalStars": 1295
     },
     "momentum": {
-      "newReposLast30Days": 9,
+      "newReposLast30Days": 10,
       "topStarredNewRepo": {
         "name": "macsnoeren/flatcar-builder",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-02T05:04:34.759Z",
+    "lastUpdated": "2026-11-02T15:11:35.103Z",
     "contributors": [
       {
         "login": "flatcar",
