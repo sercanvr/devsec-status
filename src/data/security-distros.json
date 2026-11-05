@@ -15,7 +15,7 @@
     },
     "popularity": {
       "totalRepos": 30,
-      "totalStars": 7833
+      "totalStars": 7834
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -24,7 +24,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-04T23:31:32.053Z",
+    "lastUpdated": "2026-11-05T05:47:16.781Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -50,16 +50,16 @@
     },
     "popularity": {
       "totalRepos": 262,
-      "totalStars": 5773
+      "totalStars": 5774
     },
     "momentum": {
-      "newReposLast30Days": 19,
+      "newReposLast30Days": 16,
       "topStarredNewRepo": {
         "name": "cbry-96/pentest-metasploitable-vsftpd",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-04T23:31:38.887Z",
+    "lastUpdated": "2026-11-05T05:47:23.263Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -84,17 +84,17 @@
       "latestVersion": "3/main"
     },
     "popularity": {
-      "totalRepos": 702,
-      "totalStars": 4968
+      "totalRepos": 703,
+      "totalStars": 4970
     },
     "momentum": {
-      "newReposLast30Days": 29,
+      "newReposLast30Days": 30,
       "topStarredNewRepo": {
         "name": "playgroundIT/Security-Onion-Purple-Lab",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-04T23:31:45.976Z",
+    "lastUpdated": "2026-11-05T05:47:29.729Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -120,7 +120,7 @@
     },
     "popularity": {
       "totalRepos": 17,
-      "totalStars": 3935
+      "totalStars": 3936
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-04T23:31:51.734Z",
+    "lastUpdated": "2026-11-05T05:47:35.419Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -164,7 +164,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-04T23:31:57.740Z",
+    "lastUpdated": "2026-11-05T05:47:41.170Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -199,7 +199,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-04T23:32:04.060Z",
+    "lastUpdated": "2026-11-05T05:47:47.155Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-04T23:32:10.339Z",
+    "lastUpdated": "2026-11-05T05:47:53.369Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -266,7 +266,7 @@
         "stars": 12
       }
     },
-    "lastUpdated": "2026-11-04T23:32:17.009Z",
+    "lastUpdated": "2026-11-05T05:47:59.685Z",
     "contributors": [
       {
         "login": "Athena-OS",
