@@ -15,7 +15,7 @@
     },
     "popularity": {
       "totalRepos": 30,
-      "totalStars": 7833
+      "totalStars": 7834
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -24,7 +24,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-05T23:35:52.002Z",
+    "lastUpdated": "2026-11-06T05:44:43.246Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -50,16 +50,16 @@
     },
     "popularity": {
       "totalRepos": 262,
-      "totalStars": 5774
+      "totalStars": 5775
     },
     "momentum": {
-      "newReposLast30Days": 16,
+      "newReposLast30Days": 14,
       "topStarredNewRepo": {
         "name": "cbry-96/pentest-metasploitable-vsftpd",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-05T23:35:59.090Z",
+    "lastUpdated": "2026-11-06T05:44:49.742Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -85,16 +85,16 @@
     },
     "popularity": {
       "totalRepos": 704,
-      "totalStars": 4972
+      "totalStars": 4973
     },
     "momentum": {
-      "newReposLast30Days": 30,
+      "newReposLast30Days": 29,
       "topStarredNewRepo": {
         "name": "playgroundIT/Security-Onion-Purple-Lab",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-05T23:36:06.297Z",
+    "lastUpdated": "2026-11-06T05:44:56.415Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -123,13 +123,13 @@
       "totalStars": 3936
     },
     "momentum": {
-      "newReposLast30Days": 1,
+      "newReposLast30Days": 0,
       "topStarredNewRepo": {
         "name": "Ak4-47/Kodiak-The-Cloud-Successor-to-Helk",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-05T23:36:12.311Z",
+    "lastUpdated": "2026-11-06T05:45:02.312Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -155,16 +155,16 @@
     },
     "popularity": {
       "totalRepos": 474,
-      "totalStars": 3554
+      "totalStars": 3556
     },
     "momentum": {
-      "newReposLast30Days": 10,
+      "newReposLast30Days": 8,
       "topStarredNewRepo": {
         "name": "metrytohack46-tech/BLACKARCH",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-05T23:36:18.708Z",
+    "lastUpdated": "2026-11-06T05:45:08.309Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -193,13 +193,13 @@
       "totalStars": 3121
     },
     "momentum": {
-      "newReposLast30Days": 7,
+      "newReposLast30Days": 6,
       "topStarredNewRepo": {
         "name": "lucasschimmel/anatoly",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-05T23:36:25.249Z",
+    "lastUpdated": "2026-11-06T05:45:14.597Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -225,13 +225,13 @@
     },
     "popularity": {
       "totalRepos": 80,
-      "totalStars": 412
+      "totalStars": 413
     },
     "momentum": {
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-05T23:36:31.693Z",
+    "lastUpdated": "2026-11-06T05:45:20.988Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -263,10 +263,10 @@
       "newReposLast30Days": 5,
       "topStarredNewRepo": {
         "name": "HuskerMinion/techo5-athena",
-        "stars": 14
+        "stars": 15
       }
     },
-    "lastUpdated": "2026-11-05T23:36:38.620Z",
+    "lastUpdated": "2026-11-06T05:45:27.354Z",
     "contributors": [
       {
         "login": "Athena-OS",
