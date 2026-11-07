@@ -15,7 +15,7 @@
     },
     "popularity": {
       "totalRepos": 30,
-      "totalStars": 7833
+      "totalStars": 7832
     },
     "momentum": {
       "newReposLast30Days": 1,
@@ -24,7 +24,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-06T23:01:42.734Z",
+    "lastUpdated": "2026-11-07T05:12:20.648Z",
     "contributors": [
       {
         "login": "mandiant",
@@ -53,13 +53,13 @@
       "totalStars": 5776
     },
     "momentum": {
-      "newReposLast30Days": 15,
+      "newReposLast30Days": 12,
       "topStarredNewRepo": {
         "name": "cbry-96/pentest-metasploitable-vsftpd",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-06T23:01:49.477Z",
+    "lastUpdated": "2026-11-07T05:12:26.956Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -88,13 +88,13 @@
       "totalStars": 4974
     },
     "momentum": {
-      "newReposLast30Days": 29,
+      "newReposLast30Days": 28,
       "topStarredNewRepo": {
         "name": "playgroundIT/Security-Onion-Purple-Lab",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-06T23:01:56.328Z",
+    "lastUpdated": "2026-11-07T05:12:33.620Z",
     "contributors": [
       {
         "login": "Security-Onion-Solutions",
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-06T23:02:02.057Z",
+    "lastUpdated": "2026-11-07T05:12:38.994Z",
     "contributors": [
       {
         "login": "Cyb3rWard0g",
@@ -164,7 +164,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-06T23:02:08.444Z",
+    "lastUpdated": "2026-11-07T05:12:45.012Z",
     "contributors": [
       {
         "login": "BlackArch",
@@ -199,7 +199,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-06T23:02:14.855Z",
+    "lastUpdated": "2026-11-07T05:12:51.042Z",
     "contributors": [
       {
         "login": "ThePorgs",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-06T23:02:21.358Z",
+    "lastUpdated": "2026-11-07T05:12:57.191Z",
     "contributors": [
       {
         "login": "teamdfir",
@@ -266,7 +266,7 @@
         "stars": 15
       }
     },
-    "lastUpdated": "2026-11-06T23:02:28.076Z",
+    "lastUpdated": "2026-11-07T05:13:03.734Z",
     "contributors": [
       {
         "login": "Athena-OS",
