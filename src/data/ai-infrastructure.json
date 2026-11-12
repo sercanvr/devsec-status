@@ -14,17 +14,17 @@
       "latestVersion": "v2.6.0"
     },
     "popularity": {
-      "totalRepos": 259510,
-      "totalStars": 105442
+      "totalRepos": 259906,
+      "totalStars": 105458
     },
     "momentum": {
-      "newReposLast30Days": 9184,
+      "newReposLast30Days": 9528,
       "topStarredNewRepo": {
         "name": "kanaworksai-hue/audio-studio-mcp",
-        "stars": 653
+        "stars": 657
       }
     },
-    "lastUpdated": "2026-11-12T00:19:56.667Z",
+    "lastUpdated": "2026-11-12T23:27:45.089Z",
     "contributors": [
       {
         "login": "soumith",
@@ -61,17 +61,17 @@
       "latestVersion": "v2.18.0"
     },
     "popularity": {
-      "totalRepos": 218404,
-      "totalStars": 201565
+      "totalRepos": 218500,
+      "totalStars": 201585
     },
     "momentum": {
-      "newReposLast30Days": 2616,
+      "newReposLast30Days": 2692,
       "topStarredNewRepo": {
         "name": "patrasc237/EEG-DL",
         "stars": 50
       }
     },
-    "lastUpdated": "2026-11-12T00:20:03.940Z",
+    "lastUpdated": "2026-11-12T23:27:51.712Z",
     "contributors": [
       {
         "login": "jeffdean",
@@ -108,17 +108,17 @@
       "latestVersion": "v4.48.1"
     },
     "popularity": {
-      "totalRepos": 124760,
-      "totalStars": 168880
+      "totalRepos": 124915,
+      "totalStars": 168923
     },
     "momentum": {
-      "newReposLast30Days": 4863,
+      "newReposLast30Days": 5022,
       "topStarredNewRepo": {
         "name": "divagr18/qwenputer",
-        "stars": 801
+        "stars": 805
       }
     },
-    "lastUpdated": "2026-11-12T00:20:10.639Z",
+    "lastUpdated": "2026-11-12T23:27:58.028Z",
     "contributors": [
       {
         "login": "LysandreJik",
@@ -155,17 +155,17 @@
       "latestVersion": "b4525"
     },
     "popularity": {
-      "totalRepos": 11432,
-      "totalStars": 134157
+      "totalRepos": 11482,
+      "totalStars": 134526
     },
     "momentum": {
-      "newReposLast30Days": 1450,
+      "newReposLast30Days": 1503,
       "topStarredNewRepo": {
         "name": "wici-ai/inferssd",
-        "stars": 392
+        "stars": 634
       }
     },
-    "lastUpdated": "2026-11-12T00:20:17.442Z",
+    "lastUpdated": "2026-11-12T23:28:04.679Z",
     "contributors": [
       {
         "login": "ggerganov",
@@ -202,8 +202,8 @@
       "latestVersion": "v2.1"
     },
     "popularity": {
-      "totalRepos": 18679,
-      "totalStars": 73574
+      "totalRepos": 18672,
+      "totalStars": 73573
     },
     "momentum": {
       "newReposLast30Days": 335,
@@ -212,7 +212,7 @@
         "stars": 24
       }
     },
-    "lastUpdated": "2026-11-12T00:20:25.094Z",
+    "lastUpdated": "2026-11-12T23:28:11.091Z",
     "contributors": [
       {
         "login": "rromb",
@@ -249,17 +249,17 @@
       "latestVersion": "v1.6.1"
     },
     "popularity": {
-      "totalRepos": 124243,
-      "totalStars": 68144
+      "totalRepos": 124548,
+      "totalStars": 68158
     },
     "momentum": {
-      "newReposLast30Days": 7288,
+      "newReposLast30Days": 7524,
       "topStarredNewRepo": {
         "name": "hexsyro/loan-default-detective",
         "stars": 62
       }
     },
-    "lastUpdated": "2026-11-12T00:20:34.410Z",
+    "lastUpdated": "2026-11-12T23:28:17.411Z",
     "contributors": [
       {
         "login": "ogrisel",
@@ -296,17 +296,17 @@
       "latestVersion": "v3.8.0"
     },
     "popularity": {
-      "totalRepos": 95582,
+      "totalRepos": 95638,
       "totalStars": 64422
     },
     "momentum": {
-      "newReposLast30Days": 1400,
+      "newReposLast30Days": 1440,
       "topStarredNewRepo": {
         "name": "Freddie-Ellis/neurolume",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-11-12T00:20:41.733Z",
+    "lastUpdated": "2026-11-12T23:28:24.016Z",
     "contributors": [
       {
         "login": "fchollet",
@@ -343,17 +343,17 @@
       "latestVersion": "v0.4.38"
     },
     "popularity": {
-      "totalRepos": 30746,
-      "totalStars": 36615
+      "totalRepos": 30731,
+      "totalStars": 36618
     },
     "momentum": {
-      "newReposLast30Days": 595,
+      "newReposLast30Days": 616,
       "topStarredNewRepo": {
         "name": "tuotuoLyu/FPO",
         "stars": 131
       }
     },
-    "lastUpdated": "2026-11-12T00:20:48.792Z",
+    "lastUpdated": "2026-11-12T23:28:30.731Z",
     "contributors": [
       {
         "login": "mattjj",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.7.0"
     },
     "popularity": {
-      "totalRepos": 17508,
-      "totalStars": 96771
+      "totalRepos": 17568,
+      "totalStars": 96834
     },
     "momentum": {
-      "newReposLast30Days": 2006,
+      "newReposLast30Days": 2065,
       "topStarredNewRepo": {
         "name": "eagle-hq/EAGLE-4",
-        "stars": 1225
+        "stars": 1278
       }
     },
-    "lastUpdated": "2026-11-12T00:20:55.643Z",
+    "lastUpdated": "2026-11-12T23:28:36.884Z",
     "contributors": [
       {
         "login": "WoosukKwon",
@@ -437,17 +437,17 @@
       "latestVersion": "v20231117"
     },
     "popularity": {
-      "totalRepos": 73254,
-      "totalStars": 112520
+      "totalRepos": 73443,
+      "totalStars": 112604
     },
     "momentum": {
-      "newReposLast30Days": 5420,
+      "newReposLast30Days": 5620,
       "topStarredNewRepo": {
         "name": "FrigadeHQ/yogurt",
-        "stars": 385
+        "stars": 926
       }
     },
-    "lastUpdated": "2026-11-12T00:21:04.061Z",
+    "lastUpdated": "2026-11-12T23:28:43.255Z",
     "contributors": [
       {
         "login": "jongwook",
@@ -484,17 +484,17 @@
       "latestVersion": "v0.12.14"
     },
     "popularity": {
-      "totalRepos": 7163,
-      "totalStars": 52877
+      "totalRepos": 7178,
+      "totalStars": 52884
     },
     "momentum": {
-      "newReposLast30Days": 306,
+      "newReposLast30Days": 320,
       "topStarredNewRepo": {
         "name": "lucasdmarshall/Gyrfalcon",
-        "stars": 11
+        "stars": 12
       }
     },
-    "lastUpdated": "2026-11-12T00:21:10.916Z",
+    "lastUpdated": "2026-11-12T23:28:49.715Z",
     "contributors": [
       {
         "login": "jerryjliu",
@@ -531,17 +531,17 @@
       "latestVersion": "v1.17.0"
     },
     "popularity": {
-      "totalRepos": 23256,
-      "totalStars": 21674
+      "totalRepos": 23363,
+      "totalStars": 21675
     },
     "momentum": {
-      "newReposLast30Days": 2267,
+      "newReposLast30Days": 2371,
       "topStarredNewRepo": {
         "name": "dsmurrell/onkey",
-        "stars": 420
+        "stars": 421
       }
     },
-    "lastUpdated": "2026-11-12T00:21:17.706Z",
+    "lastUpdated": "2026-11-12T23:28:56.235Z",
     "contributors": [
       {
         "login": "danking",

@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 138001,
-      "totalStars": 114896
+      "totalRepos": 138422,
+      "totalStars": 114931
     },
     "momentum": {
-      "newReposLast30Days": 10583,
+      "newReposLast30Days": 10961,
       "topStarredNewRepo": {
-        "name": "NyxFoundation/nyxis",
-        "stars": 321
+        "name": "GUYI-AI/gugu",
+        "stars": 332
       }
     },
-    "lastUpdated": "2026-11-12T00:14:37.062Z",
+    "lastUpdated": "2026-11-12T23:22:28.579Z",
     "contributors": [
       {
         "login": "supabase",
@@ -49,17 +49,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 61090,
-      "totalStars": 78662
+      "totalRepos": 61104,
+      "totalStars": 78679
     },
     "momentum": {
-      "newReposLast30Days": 603,
+      "newReposLast30Days": 623,
       "topStarredNewRepo": {
         "name": "jaikydota/BullFlow",
-        "stars": 457
+        "stars": 493
       }
     },
-    "lastUpdated": "2026-11-12T00:14:43.613Z",
+    "lastUpdated": "2026-11-12T23:22:35.066Z",
     "contributors": [
       {
         "login": "elastic",
@@ -84,17 +84,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 246843,
-      "totalStars": 77459
+      "totalRepos": 247139,
+      "totalStars": 77484
     },
     "momentum": {
-      "newReposLast30Days": 6921,
+      "newReposLast30Days": 7194,
       "topStarredNewRepo": {
         "name": "kividbio/kividb",
-        "stars": 1082
+        "stars": 1104
       }
     },
-    "lastUpdated": "2026-11-12T00:14:49.959Z",
+    "lastUpdated": "2026-11-12T23:22:41.501Z",
     "contributors": [
       {
         "login": "redis",
@@ -119,17 +119,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 639609,
-      "totalStars": 28684
+      "totalRepos": 639983,
+      "totalStars": 28685
     },
     "momentum": {
-      "newReposLast30Days": 10569,
+      "newReposLast30Days": 10909,
       "topStarredNewRepo": {
         "name": "Atomichildgnome/bot-resocket-financas",
-        "stars": 59
+        "stars": 66
       }
     },
-    "lastUpdated": "2026-11-12T00:14:56.311Z",
+    "lastUpdated": "2026-11-12T23:22:47.660Z",
     "contributors": [
       {
         "login": "mongodb",
@@ -154,17 +154,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 449983,
-      "totalStars": 22796
+      "totalRepos": 451267,
+      "totalStars": 22810
     },
     "momentum": {
-      "newReposLast30Days": 30475,
+      "newReposLast30Days": 31612,
       "topStarredNewRepo": {
         "name": "yaojingang/GEOInflow",
-        "stars": 836
+        "stars": 842
       }
     },
-    "lastUpdated": "2026-11-12T00:15:02.756Z",
+    "lastUpdated": "2026-11-12T23:22:53.797Z",
     "contributors": [
       {
         "login": "postgres",
@@ -189,17 +189,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 34163,
-      "totalStars": 17424
+      "totalRepos": 34196,
+      "totalStars": 17427
     },
     "momentum": {
-      "newReposLast30Days": 981,
+      "newReposLast30Days": 1016,
       "topStarredNewRepo": {
         "name": "Dongbumlee/ontosmith",
-        "stars": 270
+        "stars": 276
       }
     },
-    "lastUpdated": "2026-11-12T00:15:09.629Z",
+    "lastUpdated": "2026-11-12T23:23:00.083Z",
     "contributors": [
       {
         "login": "neo4j",
@@ -224,17 +224,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 810448,
-      "totalStars": 12509
+      "totalRepos": 811240,
+      "totalStars": 12510
     },
     "momentum": {
-      "newReposLast30Days": 23181,
+      "newReposLast30Days": 24001,
       "topStarredNewRepo": {
         "name": "pnyn96/mindact-agent",
         "stars": 149
       }
     },
-    "lastUpdated": "2026-11-12T00:15:16.227Z",
+    "lastUpdated": "2026-11-12T23:23:06.557Z",
     "contributors": [
       {
         "login": "mysql",
@@ -259,17 +259,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 300778,
-      "totalStars": 10995
+      "totalRepos": 301805,
+      "totalStars": 11009
     },
     "momentum": {
-      "newReposLast30Days": 25145,
+      "newReposLast30Days": 26125,
       "topStarredNewRepo": {
         "name": "emanuele-em/kanzo",
-        "stars": 1156
+        "stars": 1174
       }
     },
-    "lastUpdated": "2026-11-12T00:15:22.592Z",
+    "lastUpdated": "2026-11-12T23:23:13.021Z",
     "contributors": [
       {
         "login": "sqlite",
@@ -295,7 +295,7 @@
     },
     "popularity": {
       "totalRepos": 2850,
-      "totalStars": 10149
+      "totalStars": 10151
     },
     "momentum": {
       "newReposLast30Days": 38,
@@ -304,7 +304,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-12T00:15:29.821Z",
+    "lastUpdated": "2026-11-12T23:23:20.183Z",
     "contributors": [
       {
         "login": "apache",
@@ -329,17 +329,17 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 28228,
-      "totalStars": 8574
+      "totalRepos": 28294,
+      "totalStars": 8582
     },
     "momentum": {
-      "newReposLast30Days": 1248,
+      "newReposLast30Days": 1313,
       "topStarredNewRepo": {
         "name": "WisdomobLucky/gta5-resp-enhanced-woo-pack",
-        "stars": 57
+        "stars": 64
       }
     },
-    "lastUpdated": "2026-11-12T00:15:36.121Z",
+    "lastUpdated": "2026-11-12T23:23:26.524Z",
     "contributors": [
       {
         "login": "MariaDB",
@@ -364,17 +364,17 @@
       "latestVersion": "v24.12"
     },
     "popularity": {
-      "totalRepos": 11207,
-      "totalStars": 50888
+      "totalRepos": 11227,
+      "totalStars": 50907
     },
     "momentum": {
-      "newReposLast30Days": 505,
+      "newReposLast30Days": 531,
       "topStarredNewRepo": {
         "name": "hyundaimotorgroup/hmg-borzoi",
         "stars": 28
       }
     },
-    "lastUpdated": "2026-11-12T00:15:42.594Z",
+    "lastUpdated": "2026-11-12T23:23:33.099Z",
     "contributors": [
       {
         "login": "alexey-milovidov",
@@ -411,17 +411,17 @@
       "latestVersion": "v3.9.0"
     },
     "popularity": {
-      "totalRepos": 19282,
-      "totalStars": 34210
+      "totalRepos": 19299,
+      "totalStars": 34212
     },
     "momentum": {
-      "newReposLast30Days": 642,
+      "newReposLast30Days": 657,
       "topStarredNewRepo": {
         "name": "rmoff/kafuck",
-        "stars": 46
+        "stars": 59
       }
     },
-    "lastUpdated": "2026-11-12T00:15:49.614Z",
+    "lastUpdated": "2026-11-12T23:23:39.712Z",
     "contributors": [
       {
         "login": "ijuma",
@@ -458,17 +458,17 @@
       "latestVersion": "v24.3"
     },
     "popularity": {
-      "totalRepos": 2785,
-      "totalStars": 32618
+      "totalRepos": 2786,
+      "totalStars": 32619
     },
     "momentum": {
-      "newReposLast30Days": 35,
+      "newReposLast30Days": 36,
       "topStarredNewRepo": {
         "name": "cockroachdb/cockroachdb-operator",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-12T00:15:56.429Z",
+    "lastUpdated": "2026-11-12T23:23:46.672Z",
     "contributors": [
       {
         "login": "petermattis",
@@ -505,17 +505,17 @@
       "latestVersion": "v1.12.5"
     },
     "popularity": {
-      "totalRepos": 14745,
-      "totalStars": 35515
+      "totalRepos": 14797,
+      "totalStars": 35528
     },
     "momentum": {
-      "newReposLast30Days": 1097,
+      "newReposLast30Days": 1140,
       "topStarredNewRepo": {
         "name": "anwarhermuche/suporte-ampere",
         "stars": 17
       }
     },
-    "lastUpdated": "2026-11-12T00:16:03.139Z",
+    "lastUpdated": "2026-11-12T23:23:53.090Z",
     "contributors": [
       {
         "login": "generall",
@@ -552,17 +552,17 @@
       "latestVersion": "v1.28.2"
     },
     "popularity": {
-      "totalRepos": 2215,
-      "totalStars": 16944
+      "totalRepos": 2218,
+      "totalStars": 16945
     },
     "momentum": {
-      "newReposLast30Days": 47,
+      "newReposLast30Days": 49,
       "topStarredNewRepo": {
         "name": "vanalex/vmigrate",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-12T00:16:09.830Z",
+    "lastUpdated": "2026-11-12T23:23:59.882Z",
     "contributors": [
       {
         "login": "bobvanluijt",
