@@ -13,17 +13,17 @@
       "latestVersion": "v11.3"
     },
     "popularity": {
-      "totalRepos": 4120,
-      "totalStars": 99897
+      "totalRepos": 4128,
+      "totalStars": 99951
     },
     "momentum": {
-      "newReposLast30Days": 494,
+      "newReposLast30Days": 502,
       "topStarredNewRepo": {
-        "name": "reacher-z/Awesome-REA",
-        "stars": 2709
+        "name": "qybaihe/bla",
+        "stars": 5560
       }
     },
-    "lastUpdated": "2026-11-13T14:11:30.950Z",
+    "lastUpdated": "2026-11-13T23:26:55.669Z",
     "contributors": [
       {
         "login": "NationalSecurityAgency",
@@ -48,7 +48,7 @@
     },
     "popularity": {
       "totalRepos": 1015,
-      "totalStars": 39568
+      "totalStars": 39576
     },
     "momentum": {
       "newReposLast30Days": 20,
@@ -57,7 +57,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-11-13T14:11:37.757Z",
+    "lastUpdated": "2026-11-13T23:27:02.064Z",
     "contributors": [
       {
         "login": "rapid7",
@@ -81,17 +81,17 @@
       "latestVersion": "v1.9"
     },
     "popularity": {
-      "totalRepos": 2548,
-      "totalStars": 38945
+      "totalRepos": 2550,
+      "totalStars": 38949
     },
     "momentum": {
-      "newReposLast30Days": 56,
+      "newReposLast30Days": 58,
       "topStarredNewRepo": {
         "name": "abduxamid-abdusobitov/sqlmap-uz",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-11-13T14:11:45.888Z",
+    "lastUpdated": "2026-11-13T23:27:09.362Z",
     "contributors": [
       {
         "login": "sqlmapproject",
@@ -115,17 +115,17 @@
       "latestVersion": "v0.59.0"
     },
     "popularity": {
-      "totalRepos": 6815,
-      "totalStars": 39287
+      "totalRepos": 6828,
+      "totalStars": 39314
     },
     "momentum": {
-      "newReposLast30Days": 657,
+      "newReposLast30Days": 669,
       "topStarredNewRepo": {
         "name": "shellharbor/php-8.1-cve-2026-docker",
         "stars": 13
       }
     },
-    "lastUpdated": "2026-11-13T14:11:52.791Z",
+    "lastUpdated": "2026-11-13T23:27:16.319Z",
     "contributors": [
       {
         "login": "aquasecurity",
@@ -149,17 +149,17 @@
       "latestVersion": "v3.3.8"
     },
     "popularity": {
-      "totalRepos": 6081,
-      "totalStars": 32857
+      "totalRepos": 6082,
+      "totalStars": 32881
     },
     "momentum": {
       "newReposLast30Days": 215,
       "topStarredNewRepo": {
         "name": "hevnsnt/CVEngine",
-        "stars": 713
+        "stars": 715
       }
     },
-    "lastUpdated": "2026-11-13T14:12:00.617Z",
+    "lastUpdated": "2026-11-13T23:27:22.796Z",
     "contributors": [
       {
         "login": "projectdiscovery",
@@ -183,17 +183,17 @@
       "latestVersion": "v6.2.6"
     },
     "popularity": {
-      "totalRepos": 2365,
-      "totalStars": 27340
+      "totalRepos": 2366,
+      "totalStars": 27344
     },
     "momentum": {
-      "newReposLast30Days": 68,
+      "newReposLast30Days": 69,
       "topStarredNewRepo": {
         "name": "netmux/ramp",
         "stars": 8
       }
     },
-    "lastUpdated": "2026-11-13T14:12:07.691Z",
+    "lastUpdated": "2026-11-13T23:27:29.603Z",
     "contributors": [
       {
         "login": "hashcat",
@@ -217,17 +217,17 @@
       "latestVersion": "v3.88.0"
     },
     "popularity": {
-      "totalRepos": 613,
-      "totalStars": 29271
+      "totalRepos": 614,
+      "totalStars": 29292
     },
     "momentum": {
-      "newReposLast30Days": 40,
+      "newReposLast30Days": 41,
       "topStarredNewRepo": {
         "name": "its-hixye/chainfault",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-11-13T14:12:15.262Z",
+    "lastUpdated": "2026-11-13T23:27:37.106Z",
     "contributors": [
       {
         "login": "trufflesecurity",
@@ -252,7 +252,7 @@
     },
     "popularity": {
       "totalRepos": 11,
-      "totalStars": 16182
+      "totalStars": 16184
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -261,7 +261,7 @@
         "stars": 620
       }
     },
-    "lastUpdated": "2026-11-13T14:12:20.849Z",
+    "lastUpdated": "2026-11-13T23:27:42.572Z",
     "contributors": [
       {
         "login": "zaproxy",
@@ -285,17 +285,17 @@
       "latestVersion": "v7.95"
     },
     "popularity": {
-      "totalRepos": 22117,
-      "totalStars": 13983
+      "totalRepos": 22149,
+      "totalStars": 13988
     },
     "momentum": {
-      "newReposLast30Days": 905,
+      "newReposLast30Days": 935,
       "topStarredNewRepo": {
         "name": "hevnsnt/CVEngine",
-        "stars": 713
+        "stars": 715
       }
     },
-    "lastUpdated": "2026-11-13T14:12:28.169Z",
+    "lastUpdated": "2026-11-13T23:27:49.151Z",
     "contributors": [
       {
         "login": "nmap",
@@ -320,7 +320,7 @@
     },
     "popularity": {
       "totalRepos": 931,
-      "totalStars": 13921
+      "totalStars": 13920
     },
     "momentum": {
       "newReposLast30Days": 23,
@@ -329,7 +329,7 @@
         "stars": 3
       }
     },
-    "lastUpdated": "2026-11-13T14:12:35.538Z",
+    "lastUpdated": "2026-11-13T23:27:55.585Z",
     "contributors": [
       {
         "login": "openwall",
@@ -353,17 +353,17 @@
       "latestVersion": "v4.4.4"
     },
     "popularity": {
-      "totalRepos": 17676,
-      "totalStars": 10211
+      "totalRepos": 17685,
+      "totalStars": 10217
     },
     "momentum": {
-      "newReposLast30Days": 1158,
+      "newReposLast30Days": 1168,
       "topStarredNewRepo": {
         "name": "ambrose-cpu/NETWORKWALKS-WIRESHARK-SOC-LABS",
         "stars": 73
       }
     },
-    "lastUpdated": "2026-11-13T14:12:42.755Z",
+    "lastUpdated": "2026-11-13T23:28:02.194Z",
     "contributors": [
       {
         "login": "wireshark",
@@ -397,7 +397,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-13T14:12:51.076Z",
+    "lastUpdated": "2026-11-13T23:28:09.672Z",
     "contributors": [
       {
         "login": "volatilityfoundation",
@@ -422,17 +422,17 @@
       "latestVersion": "v1.7"
     },
     "popularity": {
-      "totalRepos": 871,
-      "totalStars": 7911
+      "totalRepos": 870,
+      "totalStars": 7913
     },
     "momentum": {
-      "newReposLast30Days": 18,
+      "newReposLast30Days": 17,
       "topStarredNewRepo": {
         "name": "foorsee/rtl8188eus-openwrt-ap",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-11-13T14:12:57.697Z",
+    "lastUpdated": "2026-11-13T23:28:16.086Z",
     "contributors": [
       {
         "login": "misterx",
@@ -470,7 +470,7 @@
     },
     "popularity": {
       "totalRepos": 34,
-      "totalStars": 15510
+      "totalStars": 15512
     },
     "momentum": {
       "newReposLast30Days": 2,
@@ -479,7 +479,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-13T14:13:04.176Z",
+    "lastUpdated": "2026-11-13T23:28:22.740Z",
     "contributors": [
       {
         "login": "caffix",
@@ -516,17 +516,17 @@
       "latestVersion": "v2.1.0"
     },
     "popularity": {
-      "totalRepos": 682,
-      "totalStars": 17048
+      "totalRepos": 683,
+      "totalStars": 17049
     },
     "momentum": {
-      "newReposLast30Days": 31,
+      "newReposLast30Days": 32,
       "topStarredNewRepo": {
         "name": "spk-c/PenX",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-11-13T14:13:11.463Z",
+    "lastUpdated": "2026-11-13T23:28:29.995Z",
     "contributors": [
       {
         "login": "joohoi",
@@ -563,17 +563,17 @@
       "latestVersion": "v2.2.0"
     },
     "popularity": {
-      "totalRepos": 544,
-      "totalStars": 21974
+      "totalRepos": 545,
+      "totalStars": 21977
     },
     "momentum": {
-      "newReposLast30Days": 6,
+      "newReposLast30Days": 7,
       "topStarredNewRepo": {
         "name": "KarimShawkyEGY/project-purple-team",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-13T14:13:17.861Z",
+    "lastUpdated": "2026-11-13T23:28:36.542Z",
     "contributors": [
       {
         "login": "gentilkiwi",
@@ -610,17 +610,17 @@
       "latestVersion": "v7.0.8"
     },
     "popularity": {
-      "totalRepos": 5927,
-      "totalStars": 6879
+      "totalRepos": 5930,
+      "totalStars": 6883
     },
     "momentum": {
-      "newReposLast30Days": 392,
+      "newReposLast30Days": 393,
       "topStarredNewRepo": {
         "name": "ikow/php2shell-poc",
-        "stars": 1965
+        "stars": 1967
       }
     },
-    "lastUpdated": "2026-11-13T14:13:24.672Z",
+    "lastUpdated": "2026-11-13T23:28:42.892Z",
     "contributors": [
       {
         "login": "victorjulien",
@@ -657,17 +657,17 @@
       "latestVersion": "v3.7.0"
     },
     "popularity": {
-      "totalRepos": 744,
-      "totalStars": 5070
+      "totalRepos": 745,
+      "totalStars": 5071
     },
     "momentum": {
-      "newReposLast30Days": 12,
+      "newReposLast30Days": 13,
       "topStarredNewRepo": {
         "name": "AAH20/apex-soc-connectors",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-13T14:13:31.942Z",
+    "lastUpdated": "2026-11-13T23:28:49.204Z",
     "contributors": [
       {
         "login": "ddpbsd",
@@ -704,17 +704,17 @@
       "latestVersion": "v5.9.8"
     },
     "popularity": {
-      "totalRepos": 679,
-      "totalStars": 25419
+      "totalRepos": 680,
+      "totalStars": 25425
     },
     "momentum": {
-      "newReposLast30Days": 21,
+      "newReposLast30Days": 22,
       "topStarredNewRepo": {
         "name": "jammyfu/reverse-engineering-atlas",
         "stars": 14
       }
     },
-    "lastUpdated": "2026-11-13T14:13:38.703Z",
+    "lastUpdated": "2026-11-13T23:28:55.618Z",
     "contributors": [
       {
         "login": "trufae",
@@ -751,17 +751,17 @@
       "latestVersion": "v10.19.4"
     },
     "popularity": {
-      "totalRepos": 580,
+      "totalRepos": 581,
       "totalStars": 36396
     },
     "momentum": {
-      "newReposLast30Days": 43,
+      "newReposLast30Days": 44,
       "topStarredNewRepo": {
         "name": "anotherhadi/operations",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-13T14:13:47.017Z",
+    "lastUpdated": "2026-11-13T23:29:02.871Z",
     "contributors": [
       {
         "login": "matt-c-gchq",
@@ -798,7 +798,7 @@
       "latestVersion": "v1.5.42"
     },
     "popularity": {
-      "totalRepos": 2259,
+      "totalRepos": 2260,
       "totalStars": 12326
     },
     "momentum": {
@@ -808,7 +808,7 @@
         "stars": 9
       }
     },
-    "lastUpdated": "2026-11-13T14:13:54.273Z",
+    "lastUpdated": "2026-11-13T23:29:09.790Z",
     "contributors": [
       {
         "login": "moloch--",
