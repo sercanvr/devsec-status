@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 119929,
-      "totalStars": 186942
+      "totalRepos": 120094,
+      "totalStars": 186973
     },
     "momentum": {
-      "newReposLast30Days": 10991,
+      "newReposLast30Days": 11147,
       "topStarredNewRepo": {
         "name": "nace-ai/kapitsa",
-        "stars": 793
+        "stars": 795
       }
     },
-    "lastUpdated": "2026-11-14T13:14:52.251Z",
+    "lastUpdated": "2026-11-14T22:12:17.530Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 169049,
-      "totalStars": 149494
+      "totalRepos": 169134,
+      "totalStars": 149513
     },
     "momentum": {
-      "newReposLast30Days": 6638,
+      "newReposLast30Days": 6726,
       "topStarredNewRepo": {
         "name": "douchuan/langchain-demos",
         "stars": 101
       }
     },
-    "lastUpdated": "2026-11-14T13:14:58.327Z",
+    "lastUpdated": "2026-11-14T22:12:23.802Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -109,7 +109,7 @@
     },
     "popularity": {
       "totalRepos": 1709,
-      "totalStars": 188024
+      "totalStars": 188027
     },
     "momentum": {
       "newReposLast30Days": 20,
@@ -118,7 +118,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-14T13:15:04.490Z",
+    "lastUpdated": "2026-11-14T22:12:29.894Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 34403,
-      "totalStars": 146766
+      "totalRepos": 34440,
+      "totalStars": 146834
     },
     "momentum": {
-      "newReposLast30Days": 3540,
+      "newReposLast30Days": 3577,
       "topStarredNewRepo": {
         "name": "D3voz/openjutsu",
-        "stars": 2324
+        "stars": 2338
       }
     },
-    "lastUpdated": "2026-11-14T13:15:10.819Z",
+    "lastUpdated": "2026-11-14T22:12:36.094Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 129160,
-      "totalStars": 210464
+      "totalRepos": 129280,
+      "totalStars": 210497
     },
     "momentum": {
-      "newReposLast30Days": 8604,
+      "newReposLast30Days": 8734,
       "topStarredNewRepo": {
         "name": "MonkumRanger/MAX2-AI-Content-Automation-resocket",
-        "stars": 82
+        "stars": 94
       }
     },
-    "lastUpdated": "2026-11-14T13:15:17.016Z",
+    "lastUpdated": "2026-11-14T22:12:42.524Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4565,
-      "totalStars": 158631
+      "totalRepos": 4569,
+      "totalStars": 158645
     },
     "momentum": {
-      "newReposLast30Days": 375,
+      "newReposLast30Days": 379,
       "topStarredNewRepo": {
         "name": "justxor/deepseek-local-guide-ru",
         "stars": 192
       }
     },
-    "lastUpdated": "2026-11-14T13:15:23.057Z",
+    "lastUpdated": "2026-11-14T22:12:48.898Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -297,16 +297,16 @@
     },
     "popularity": {
       "totalRepos": 3923,
-      "totalStars": 55570
+      "totalStars": 55569
     },
     "momentum": {
-      "newReposLast30Days": 40,
+      "newReposLast30Days": 41,
       "topStarredNewRepo": {
         "name": "OTA-EITA/ai-selfhost-audit",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-14T13:15:29.351Z",
+    "lastUpdated": "2026-11-14T22:12:54.977Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7754,
-      "totalStars": 161148
+      "totalRepos": 7760,
+      "totalStars": 161163
     },
     "momentum": {
-      "newReposLast30Days": 447,
+      "newReposLast30Days": 453,
       "topStarredNewRepo": {
         "name": "KaelLee335/enterprise-support-agent",
         "stars": 55
       }
     },
-    "lastUpdated": "2026-11-14T13:15:35.641Z",
+    "lastUpdated": "2026-11-14T22:13:01.373Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 20178,
-      "totalStars": 60883
+      "totalRepos": 20182,
+      "totalStars": 60907
     },
     "momentum": {
-      "newReposLast30Days": 798,
+      "newReposLast30Days": 801,
       "topStarredNewRepo": {
         "name": "R238Company/meu-emprego-novo",
         "stars": 257
       }
     },
-    "lastUpdated": "2026-11-14T13:15:41.803Z",
+    "lastUpdated": "2026-11-14T22:13:07.638Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -438,7 +438,7 @@
     },
     "popularity": {
       "totalRepos": 1996,
-      "totalStars": 47740
+      "totalStars": 47739
     },
     "momentum": {
       "newReposLast30Days": 18,
@@ -447,7 +447,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-14T13:15:48.418Z",
+    "lastUpdated": "2026-11-14T22:13:14.045Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -485,7 +485,7 @@
     },
     "popularity": {
       "totalRepos": 364,
-      "totalStars": 29089
+      "totalStars": 29093
     },
     "momentum": {
       "newReposLast30Days": 15,
@@ -494,7 +494,7 @@
         "stars": 38
       }
     },
-    "lastUpdated": "2026-11-14T13:15:54.520Z",
+    "lastUpdated": "2026-11-14T22:13:20.389Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 180484,
-      "totalStars": 45721
+      "totalRepos": 180526,
+      "totalStars": 45723
     },
     "momentum": {
-      "newReposLast30Days": 4279,
+      "newReposLast30Days": 4337,
       "topStarredNewRepo": {
         "name": "kentlangley/Jane",
         "stars": 44
       }
     },
-    "lastUpdated": "2026-11-14T13:16:01.064Z",
+    "lastUpdated": "2026-11-14T22:13:26.751Z",
     "contributors": [
       {
         "login": "urmauur",
