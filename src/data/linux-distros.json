@@ -14,17 +14,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 30689,
-      "totalStars": 255738
+      "totalRepos": 30712,
+      "totalStars": 255798
     },
     "momentum": {
-      "newReposLast30Days": 1525,
+      "newReposLast30Days": 1548,
       "topStarredNewRepo": {
         "name": "imxieyi/Kernarium",
-        "stars": 457
+        "stars": 466
       }
     },
-    "lastUpdated": "2026-11-15T13:46:56.786Z",
+    "lastUpdated": "2026-11-15T22:45:00.841Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 32990,
-      "totalStars": 26836
+      "totalRepos": 33005,
+      "totalStars": 26841
     },
     "momentum": {
-      "newReposLast30Days": 1357,
+      "newReposLast30Days": 1379,
       "topStarredNewRepo": {
         "name": "dreamsofcode-io/nixos-vps",
-        "stars": 127
+        "stars": 128
       }
     },
-    "lastUpdated": "2026-11-15T13:47:03.163Z",
+    "lastUpdated": "2026-11-15T22:45:07.055Z",
     "contributors": [
       {
         "login": "NixOS",
@@ -85,7 +85,7 @@
     },
     "popularity": {
       "totalRepos": 496,
-      "totalStars": 11529
+      "totalStars": 11532
     },
     "momentum": {
       "newReposLast30Days": 38,
@@ -94,7 +94,7 @@
         "stars": 4
       }
     },
-    "lastUpdated": "2026-11-15T13:47:09.785Z",
+    "lastUpdated": "2026-11-15T22:45:13.777Z",
     "contributors": [
       {
         "login": "siderolabs",
@@ -120,7 +120,7 @@
     },
     "popularity": {
       "totalRepos": 231,
-      "totalStars": 9705
+      "totalStars": 9704
     },
     "momentum": {
       "newReposLast30Days": 4,
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-15T13:47:15.785Z",
+    "lastUpdated": "2026-11-15T22:45:19.752Z",
     "contributors": [
       {
         "login": "bottlerocket-os",
@@ -154,17 +154,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1570,
+      "totalRepos": 1580,
       "totalStars": 9352
     },
     "momentum": {
-      "newReposLast30Days": 210,
+      "newReposLast30Days": 220,
       "topStarredNewRepo": {
         "name": "VivaLaVent/ps5-bazzite-deck",
-        "stars": 569
+        "stars": 570
       }
     },
-    "lastUpdated": "2026-11-15T13:47:22.414Z",
+    "lastUpdated": "2026-11-15T22:45:25.944Z",
     "contributors": [
       {
         "login": "ublue-os",
@@ -190,7 +190,7 @@
     },
     "popularity": {
       "totalRepos": 350,
-      "totalStars": 6402
+      "totalStars": 6403
     },
     "momentum": {
       "newReposLast30Days": 23,
@@ -199,7 +199,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-15T13:47:29.085Z",
+    "lastUpdated": "2026-11-15T22:45:32.461Z",
     "contributors": [
       {
         "login": "MichaIng",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-15T13:47:34.974Z",
+    "lastUpdated": "2026-11-15T22:45:38.338Z",
     "contributors": [
       {
         "login": "rancher",
@@ -256,17 +256,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1521,
-      "totalStars": 3506
+      "totalRepos": 1522,
+      "totalStars": 3508
     },
     "momentum": {
-      "newReposLast30Days": 97,
+      "newReposLast30Days": 98,
       "topStarredNewRepo": {
         "name": "MrZaKaRiA/AbyssLinux",
         "stars": 8
       }
     },
-    "lastUpdated": "2026-11-15T13:47:41.594Z",
+    "lastUpdated": "2026-11-15T22:45:44.953Z",
     "contributors": [
       {
         "login": "void-linux",
@@ -291,17 +291,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 84,
-      "totalStars": 3306
+      "totalRepos": 86,
+      "totalStars": 3307
     },
     "momentum": {
-      "newReposLast30Days": 9,
+      "newReposLast30Days": 11,
       "topStarredNewRepo": {
-        "name": "robertpjenkins-bot/Etros",
+        "name": "KevoBato/AcroBato",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-15T13:47:47.936Z",
+    "lastUpdated": "2026-11-15T22:45:51.205Z",
     "contributors": [
       {
         "login": "batocera-linux",
@@ -330,13 +330,13 @@
       "totalStars": 2492
     },
     "momentum": {
-      "newReposLast30Days": 38,
+      "newReposLast30Days": 39,
       "topStarredNewRepo": {
         "name": "w0x7y/gentooinstall",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-11-15T13:47:54.539Z",
+    "lastUpdated": "2026-11-15T22:45:57.919Z",
     "contributors": [
       {
         "login": "gentoo",
@@ -371,7 +371,7 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-11-15T13:48:00.408Z",
+    "lastUpdated": "2026-11-15T22:46:03.745Z",
     "contributors": [
       {
         "login": "ChimeraOS",
@@ -397,7 +397,7 @@
     },
     "popularity": {
       "totalRepos": 393,
-      "totalStars": 1306
+      "totalStars": 1307
     },
     "momentum": {
       "newReposLast30Days": 14,
@@ -406,7 +406,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-15T13:48:06.639Z",
+    "lastUpdated": "2026-11-15T22:46:09.969Z",
     "contributors": [
       {
         "login": "flatcar",

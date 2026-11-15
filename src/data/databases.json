@@ -14,17 +14,17 @@
       "latestVersion": "v2.48.0"
     },
     "popularity": {
-      "totalRepos": 139463,
-      "totalStars": 115051
+      "totalRepos": 139646,
+      "totalStars": 115085
     },
     "momentum": {
-      "newReposLast30Days": 10794,
+      "newReposLast30Days": 10945,
       "topStarredNewRepo": {
         "name": "GUYI-AI/gugu",
         "stars": 340
       }
     },
-    "lastUpdated": "2026-11-15T13:40:35.669Z",
+    "lastUpdated": "2026-11-15T22:38:41.000Z",
     "contributors": [
       {
         "login": "supabase",
@@ -49,17 +49,17 @@
       "latestVersion": "v8.17.0"
     },
     "popularity": {
-      "totalRepos": 61136,
-      "totalStars": 78699
+      "totalRepos": 61137,
+      "totalStars": 78718
     },
     "momentum": {
-      "newReposLast30Days": 586,
+      "newReposLast30Days": 588,
       "topStarredNewRepo": {
         "name": "VictoriaMetrics/logs-benchmark",
         "stars": 14
       }
     },
-    "lastUpdated": "2026-11-15T13:40:42.554Z",
+    "lastUpdated": "2026-11-15T22:38:47.517Z",
     "contributors": [
       {
         "login": "elastic",
@@ -84,17 +84,17 @@
       "latestVersion": "v7.4.2"
     },
     "popularity": {
-      "totalRepos": 247897,
-      "totalStars": 77519
+      "totalRepos": 248016,
+      "totalStars": 77536
     },
     "momentum": {
-      "newReposLast30Days": 7135,
+      "newReposLast30Days": 7250,
       "topStarredNewRepo": {
         "name": "gh9ko8y/graphmemory",
         "stars": 201
       }
     },
-    "lastUpdated": "2026-11-15T13:40:48.774Z",
+    "lastUpdated": "2026-11-15T22:38:53.852Z",
     "contributors": [
       {
         "login": "redis",
@@ -119,17 +119,17 @@
       "latestVersion": "v8.0.0"
     },
     "popularity": {
-      "totalRepos": 640979,
-      "totalStars": 28681
+      "totalRepos": 641109,
+      "totalStars": 28682
     },
     "momentum": {
-      "newReposLast30Days": 10514,
+      "newReposLast30Days": 10631,
       "topStarredNewRepo": {
         "name": "Atomichildgnome/bot-resocket-financas",
-        "stars": 95
+        "stars": 94
       }
     },
-    "lastUpdated": "2026-11-15T13:40:54.884Z",
+    "lastUpdated": "2026-11-15T22:38:59.948Z",
     "contributors": [
       {
         "login": "mongodb",
@@ -154,17 +154,17 @@
       "latestVersion": "v17.2"
     },
     "popularity": {
-      "totalRepos": 454512,
-      "totalStars": 22834
+      "totalRepos": 455022,
+      "totalStars": 22840
     },
     "momentum": {
-      "newReposLast30Days": 31128,
+      "newReposLast30Days": 31564,
       "topStarredNewRepo": {
         "name": "yaojingang/GEOInflow",
-        "stars": 846
+        "stars": 847
       }
     },
-    "lastUpdated": "2026-11-15T13:41:01.250Z",
+    "lastUpdated": "2026-11-15T22:39:06.294Z",
     "contributors": [
       {
         "login": "postgres",
@@ -189,17 +189,17 @@
       "latestVersion": "v5.26.0"
     },
     "popularity": {
-      "totalRepos": 34293,
-      "totalStars": 17440
+      "totalRepos": 34305,
+      "totalStars": 17441
     },
     "momentum": {
-      "newReposLast30Days": 1021,
+      "newReposLast30Days": 1033,
       "topStarredNewRepo": {
         "name": "Dongbumlee/ontosmith",
-        "stars": 281
+        "stars": 284
       }
     },
-    "lastUpdated": "2026-11-15T13:41:07.623Z",
+    "lastUpdated": "2026-11-15T22:39:12.580Z",
     "contributors": [
       {
         "login": "neo4j",
@@ -224,17 +224,17 @@
       "latestVersion": "v9.2.0"
     },
     "popularity": {
-      "totalRepos": 813285,
-      "totalStars": 12516
+      "totalRepos": 813608,
+      "totalStars": 12517
     },
     "momentum": {
-      "newReposLast30Days": 23419,
+      "newReposLast30Days": 23750,
       "topStarredNewRepo": {
         "name": "pnyn96/mindact-agent",
         "stars": 149
       }
     },
-    "lastUpdated": "2026-11-15T13:41:13.869Z",
+    "lastUpdated": "2026-11-15T22:39:18.947Z",
     "contributors": [
       {
         "login": "mysql",
@@ -259,17 +259,17 @@
       "latestVersion": "v3.48.0"
     },
     "popularity": {
-      "totalRepos": 304143,
-      "totalStars": 11016
+      "totalRepos": 304549,
+      "totalStars": 11020
     },
     "momentum": {
-      "newReposLast30Days": 25716,
+      "newReposLast30Days": 26105,
       "topStarredNewRepo": {
         "name": "qybaihe/bla",
-        "stars": 5751
+        "stars": 5791
       }
     },
-    "lastUpdated": "2026-11-15T13:41:20.187Z",
+    "lastUpdated": "2026-11-15T22:39:24.955Z",
     "contributors": [
       {
         "login": "sqlite",
@@ -294,17 +294,17 @@
       "latestVersion": "v5.0.2"
     },
     "popularity": {
-      "totalRepos": 2853,
+      "totalRepos": 2854,
       "totalStars": 10154
     },
     "momentum": {
-      "newReposLast30Days": 39,
+      "newReposLast30Days": 40,
       "topStarredNewRepo": {
         "name": "pratim994/Profana",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-15T13:41:27.083Z",
+    "lastUpdated": "2026-11-15T22:39:31.711Z",
     "contributors": [
       {
         "login": "apache",
@@ -329,17 +329,17 @@
       "latestVersion": "v11.7.2"
     },
     "popularity": {
-      "totalRepos": 28440,
-      "totalStars": 8591
+      "totalRepos": 28459,
+      "totalStars": 8594
     },
     "momentum": {
-      "newReposLast30Days": 1306,
+      "newReposLast30Days": 1323,
       "topStarredNewRepo": {
         "name": "WisdomobLucky/gta5-resp-enhanced-woo-pack",
-        "stars": 94
+        "stars": 93
       }
     },
-    "lastUpdated": "2026-11-15T13:41:33.224Z",
+    "lastUpdated": "2026-11-15T22:39:37.987Z",
     "contributors": [
       {
         "login": "MariaDB",
@@ -364,17 +364,17 @@
       "latestVersion": "v24.12"
     },
     "popularity": {
-      "totalRepos": 11274,
-      "totalStars": 50936
+      "totalRepos": 11280,
+      "totalStars": 50943
     },
     "momentum": {
-      "newReposLast30Days": 534,
+      "newReposLast30Days": 541,
       "topStarredNewRepo": {
         "name": "VexorDusk41914/resp-Leaderboard",
         "stars": 50
       }
     },
-    "lastUpdated": "2026-11-15T13:41:39.620Z",
+    "lastUpdated": "2026-11-15T22:39:44.209Z",
     "contributors": [
       {
         "login": "alexey-milovidov",
@@ -411,17 +411,17 @@
       "latestVersion": "v3.9.0"
     },
     "popularity": {
-      "totalRepos": 19364,
-      "totalStars": 34222
+      "totalRepos": 19371,
+      "totalStars": 34219
     },
     "momentum": {
-      "newReposLast30Days": 658,
+      "newReposLast30Days": 668,
       "topStarredNewRepo": {
         "name": "rmoff/kafuck",
-        "stars": 75
+        "stars": 77
       }
     },
-    "lastUpdated": "2026-11-15T13:41:46.001Z",
+    "lastUpdated": "2026-11-15T22:39:50.502Z",
     "contributors": [
       {
         "login": "ijuma",
@@ -459,7 +459,7 @@
     },
     "popularity": {
       "totalRepos": 2791,
-      "totalStars": 32619
+      "totalStars": 32621
     },
     "momentum": {
       "newReposLast30Days": 36,
@@ -468,7 +468,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-15T13:41:52.672Z",
+    "lastUpdated": "2026-11-15T22:39:57.221Z",
     "contributors": [
       {
         "login": "petermattis",
@@ -505,17 +505,17 @@
       "latestVersion": "v1.12.5"
     },
     "popularity": {
-      "totalRepos": 14917,
-      "totalStars": 35565
+      "totalRepos": 14934,
+      "totalStars": 35570
     },
     "momentum": {
-      "newReposLast30Days": 1119,
+      "newReposLast30Days": 1126,
       "topStarredNewRepo": {
         "name": "Timaga/noda-local-ai-notes",
-        "stars": 99
+        "stars": 104
       }
     },
-    "lastUpdated": "2026-11-15T13:41:59.041Z",
+    "lastUpdated": "2026-11-15T22:40:03.575Z",
     "contributors": [
       {
         "login": "generall",
@@ -552,17 +552,17 @@
       "latestVersion": "v1.28.2"
     },
     "popularity": {
-      "totalRepos": 2223,
+      "totalRepos": 2224,
       "totalStars": 16948
     },
     "momentum": {
-      "newReposLast30Days": 54,
+      "newReposLast30Days": 56,
       "topStarredNewRepo": {
         "name": "DanyellSpizzirri42399/virtual-card-usdt-enterprise-rag-vector-db-vcc-finops",
         "stars": 15
       }
     },
-    "lastUpdated": "2026-11-15T13:42:05.643Z",
+    "lastUpdated": "2026-11-15T22:40:09.939Z",
     "contributors": [
       {
         "login": "bobvanluijt",
