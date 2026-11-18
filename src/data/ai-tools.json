@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 121407,
-      "totalStars": 187438
+      "totalRepos": 121652,
+      "totalStars": 187532
     },
     "momentum": {
-      "newReposLast30Days": 10815,
+      "newReposLast30Days": 11047,
       "topStarredNewRepo": {
         "name": "zeekk0/OpenAmika",
-        "stars": 672
+        "stars": 676
       }
     },
-    "lastUpdated": "2026-11-18T00:49:40.901Z",
+    "lastUpdated": "2026-11-18T15:26:11.746Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 169916,
-      "totalStars": 149803
+      "totalRepos": 170086,
+      "totalStars": 149850
     },
     "momentum": {
-      "newReposLast30Days": 6573,
+      "newReposLast30Days": 6746,
       "topStarredNewRepo": {
         "name": "KaelLee335/enterprise-support-agent-v2",
-        "stars": 103
+        "stars": 116
       }
     },
-    "lastUpdated": "2026-11-18T00:49:47.142Z",
+    "lastUpdated": "2026-11-18T15:26:18.478Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -108,17 +108,17 @@
       "latestVersion": "v0.5.1"
     },
     "popularity": {
-      "totalRepos": 1708,
-      "totalStars": 188079
+      "totalRepos": 1667,
+      "totalStars": 188084
     },
     "momentum": {
-      "newReposLast30Days": 11,
+      "newReposLast30Days": 12,
       "topStarredNewRepo": {
-        "name": "mdmaruf782/autogpt",
+        "name": "ylmgm/autogpt",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-18T00:49:53.285Z",
+    "lastUpdated": "2026-11-18T15:26:25.228Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 34751,
-      "totalStars": 147361
+      "totalRepos": 34800,
+      "totalStars": 147483
     },
     "momentum": {
-      "newReposLast30Days": 3400,
+      "newReposLast30Days": 3458,
       "topStarredNewRepo": {
         "name": "D3voz/openjutsu",
-        "stars": 2447
+        "stars": 2467
       }
     },
-    "lastUpdated": "2026-11-18T00:49:59.611Z",
+    "lastUpdated": "2026-11-18T15:26:32.132Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 130190,
-      "totalStars": 210926
+      "totalRepos": 130361,
+      "totalStars": 210882
     },
     "momentum": {
-      "newReposLast30Days": 8604,
+      "newReposLast30Days": 8783,
       "topStarredNewRepo": {
         "name": "Gabrissfsf/bahrain-flip-finder",
         "stars": 153
       }
     },
-    "lastUpdated": "2026-11-18T00:50:05.911Z",
+    "lastUpdated": "2026-11-18T15:26:39.043Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4617,
-      "totalStars": 158959
+      "totalRepos": 4620,
+      "totalStars": 159019
     },
     "momentum": {
-      "newReposLast30Days": 382,
+      "newReposLast30Days": 386,
       "topStarredNewRepo": {
         "name": "open-webui/tether",
-        "stars": 163
+        "stars": 168
       }
     },
-    "lastUpdated": "2026-11-18T00:50:12.379Z",
+    "lastUpdated": "2026-11-18T15:26:46.129Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -296,17 +296,17 @@
       "latestVersion": "v2.2.4"
     },
     "popularity": {
-      "totalRepos": 3926,
-      "totalStars": 55575
+      "totalRepos": 3927,
+      "totalStars": 55576
     },
     "momentum": {
-      "newReposLast30Days": 41,
+      "newReposLast30Days": 42,
       "topStarredNewRepo": {
         "name": "OTA-EITA/ai-selfhost-audit",
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-18T00:50:18.766Z",
+    "lastUpdated": "2026-11-18T15:26:53.253Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7807,
-      "totalStars": 161379
+      "totalRepos": 7809,
+      "totalStars": 161428
     },
     "momentum": {
-      "newReposLast30Days": 438,
+      "newReposLast30Days": 441,
       "topStarredNewRepo": {
         "name": "KaelLee335/enterprise-support-agent",
         "stars": 55
       }
     },
-    "lastUpdated": "2026-11-18T00:50:25.016Z",
+    "lastUpdated": "2026-11-18T15:27:00.127Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 20240,
-      "totalStars": 61043
+      "totalRepos": 20256,
+      "totalStars": 61070
     },
     "momentum": {
-      "newReposLast30Days": 769,
+      "newReposLast30Days": 791,
       "topStarredNewRepo": {
         "name": "R238Company/meu-emprego-novo",
-        "stars": 259
+        "stars": 261
       }
     },
-    "lastUpdated": "2026-11-18T00:50:31.192Z",
+    "lastUpdated": "2026-11-18T15:27:06.886Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -438,7 +438,7 @@
     },
     "popularity": {
       "totalRepos": 1997,
-      "totalStars": 47738
+      "totalStars": 47739
     },
     "momentum": {
       "newReposLast30Days": 10,
@@ -447,7 +447,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-18T00:50:37.709Z",
+    "lastUpdated": "2026-11-18T15:27:14.393Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -485,16 +485,16 @@
     },
     "popularity": {
       "totalRepos": 363,
-      "totalStars": 29110
+      "totalStars": 29117
     },
     "momentum": {
       "newReposLast30Days": 12,
       "topStarredNewRepo": {
         "name": "ReclaimedNode/gpuwatch",
-        "stars": 4
+        "stars": 5
       }
     },
-    "lastUpdated": "2026-11-18T00:50:44.113Z",
+    "lastUpdated": "2026-11-18T15:27:22.752Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 181003,
-      "totalStars": 45774
+      "totalRepos": 181001,
+      "totalStars": 45799
     },
     "momentum": {
-      "newReposLast30Days": 4300,
+      "newReposLast30Days": 4395,
       "topStarredNewRepo": {
         "name": "carrapido/rob-janoff-design",
         "stars": 20
       }
     },
-    "lastUpdated": "2026-11-18T00:50:50.713Z",
+    "lastUpdated": "2026-11-18T15:27:29.930Z",
     "contributors": [
       {
         "login": "urmauur",
