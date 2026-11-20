@@ -14,17 +14,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 30890,
-      "totalStars": 256088
+      "totalRepos": 30909,
+      "totalStars": 256148
     },
     "momentum": {
-      "newReposLast30Days": 1583,
+      "newReposLast30Days": 1561,
       "topStarredNewRepo": {
         "name": "imxieyi/Kernarium",
-        "stars": 904
+        "stars": 1341
       }
     },
-    "lastUpdated": "2026-11-19T20:17:40.267Z",
+    "lastUpdated": "2026-11-20T06:17:52.627Z",
     "contributors": [
       {
         "login": "torvalds",
@@ -49,17 +49,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 33151,
-      "totalStars": 26897
+      "totalRepos": 33153,
+      "totalStars": 26899
     },
     "momentum": {
-      "newReposLast30Days": 1366,
+      "newReposLast30Days": 1337,
       "topStarredNewRepo": {
         "name": "Livi7-7/thincoin",
         "stars": 153
       }
     },
-    "lastUpdated": "2026-11-19T20:17:46.802Z",
+    "lastUpdated": "2026-11-20T06:17:59.158Z",
     "contributors": [
       {
         "login": "NixOS",
@@ -84,8 +84,8 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 498,
-      "totalStars": 11569
+      "totalRepos": 499,
+      "totalStars": 11568
     },
     "momentum": {
       "newReposLast30Days": 37,
@@ -94,7 +94,7 @@
         "stars": 4
       }
     },
-    "lastUpdated": "2026-11-19T20:17:53.551Z",
+    "lastUpdated": "2026-11-20T06:18:05.872Z",
     "contributors": [
       {
         "login": "siderolabs",
@@ -120,7 +120,7 @@
     },
     "popularity": {
       "totalRepos": 232,
-      "totalStars": 9705
+      "totalStars": 9704
     },
     "momentum": {
       "newReposLast30Days": 5,
@@ -129,7 +129,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-19T20:17:59.971Z",
+    "lastUpdated": "2026-11-20T06:18:11.895Z",
     "contributors": [
       {
         "login": "bottlerocket-os",
@@ -154,17 +154,17 @@
       "latestVersion": "main"
     },
     "popularity": {
-      "totalRepos": 1593,
+      "totalRepos": 1594,
       "totalStars": 9378
     },
     "momentum": {
-      "newReposLast30Days": 219,
+      "newReposLast30Days": 215,
       "topStarredNewRepo": {
         "name": "JMS1717/stream-machine",
         "stars": 30
       }
     },
-    "lastUpdated": "2026-11-19T20:18:06.977Z",
+    "lastUpdated": "2026-11-20T06:18:18.429Z",
     "contributors": [
       {
         "login": "ublue-os",
@@ -193,13 +193,13 @@
       "totalStars": 6405
     },
     "momentum": {
-      "newReposLast30Days": 27,
+      "newReposLast30Days": 25,
       "topStarredNewRepo": {
-        "name": "agusibrahim/uz801-multios-builder",
-        "stars": 2
+        "name": "AlligatorBR/dietpi-orangepi-rv",
+        "stars": 1
       }
     },
-    "lastUpdated": "2026-11-19T20:18:14.240Z",
+    "lastUpdated": "2026-11-20T06:18:25.361Z",
     "contributors": [
       {
         "login": "MichaIng",
@@ -231,7 +231,7 @@
       "newReposLast30Days": 0,
       "topStarredNewRepo": null
     },
-    "lastUpdated": "2026-11-19T20:18:20.416Z",
+    "lastUpdated": "2026-11-20T06:18:31.656Z",
     "contributors": [
       {
         "login": "rancher",
@@ -256,17 +256,17 @@
       "latestVersion": "master"
     },
     "popularity": {
-      "totalRepos": 1531,
+      "totalRepos": 1532,
       "totalStars": 3511
     },
     "momentum": {
-      "newReposLast30Days": 89,
+      "newReposLast30Days": 87,
       "topStarredNewRepo": {
         "name": "Aayush-Pi/voidroid",
         "stars": 5
       }
     },
-    "lastUpdated": "2026-11-19T20:18:27.757Z",
+    "lastUpdated": "2026-11-20T06:18:38.628Z",
     "contributors": [
       {
         "login": "void-linux",
@@ -301,7 +301,7 @@
         "stars": 2
       }
     },
-    "lastUpdated": "2026-11-19T20:18:34.665Z",
+    "lastUpdated": "2026-11-20T06:18:45.074Z",
     "contributors": [
       {
         "login": "batocera-linux",
@@ -330,13 +330,13 @@
       "totalStars": 2495
     },
     "momentum": {
-      "newReposLast30Days": 49,
+      "newReposLast30Days": 48,
       "topStarredNewRepo": {
         "name": "w0x7y/gentooinstall",
         "stars": 3
       }
     },
-    "lastUpdated": "2026-11-19T20:18:41.652Z",
+    "lastUpdated": "2026-11-20T06:18:51.984Z",
     "contributors": [
       {
         "login": "gentoo",
@@ -362,7 +362,7 @@
     },
     "popularity": {
       "totalRepos": 39,
-      "totalStars": 2015
+      "totalStars": 2013
     },
     "momentum": {
       "newReposLast30Days": 0,
@@ -371,7 +371,7 @@
         "stars": 8
       }
     },
-    "lastUpdated": "2026-11-19T20:18:47.799Z",
+    "lastUpdated": "2026-11-20T06:18:58.126Z",
     "contributors": [
       {
         "login": "ChimeraOS",
@@ -397,7 +397,7 @@
     },
     "popularity": {
       "totalRepos": 394,
-      "totalStars": 1314
+      "totalStars": 1313
     },
     "momentum": {
       "newReposLast30Days": 15,
@@ -406,7 +406,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-19T20:18:54.626Z",
+    "lastUpdated": "2026-11-20T06:19:04.452Z",
     "contributors": [
       {
         "login": "flatcar",
