@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 125266,
-      "totalStars": 188264
+      "totalRepos": 125299,
+      "totalStars": 188273
     },
     "momentum": {
-      "newReposLast30Days": 10718,
+      "newReposLast30Days": 10748,
       "topStarredNewRepo": {
         "name": "iamajmeena/neonclipping",
-        "stars": 2739
+        "stars": 2790
       }
     },
-    "lastUpdated": "2026-11-27T04:40:44.059Z",
+    "lastUpdated": "2026-11-27T07:19:36.270Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 172029,
-      "totalStars": 150049
+      "totalRepos": 172061,
+      "totalStars": 150057
     },
     "momentum": {
-      "newReposLast30Days": 6475,
+      "newReposLast30Days": 6499,
       "topStarredNewRepo": {
         "name": "langchain-samples/Persistent-Agent",
-        "stars": 151
+        "stars": 158
       }
     },
-    "lastUpdated": "2026-11-27T04:40:50.405Z",
+    "lastUpdated": "2026-11-27T07:19:42.648Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -109,7 +109,7 @@
     },
     "popularity": {
       "totalRepos": 1670,
-      "totalStars": 188204
+      "totalStars": 188205
     },
     "momentum": {
       "newReposLast30Days": 17,
@@ -118,7 +118,7 @@
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-27T04:40:56.423Z",
+    "lastUpdated": "2026-11-27T07:19:48.949Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 35600,
-      "totalStars": 148791
+      "totalRepos": 35615,
+      "totalStars": 148818
     },
     "momentum": {
-      "newReposLast30Days": 3220,
+      "newReposLast30Days": 3238,
       "topStarredNewRepo": {
         "name": "wquguru/shisei",
-        "stars": 588
+        "stars": 589
       }
     },
-    "lastUpdated": "2026-11-27T04:41:02.711Z",
+    "lastUpdated": "2026-11-27T07:19:55.347Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 132947,
-      "totalStars": 212347
+      "totalRepos": 132984,
+      "totalStars": 212369
     },
     "momentum": {
-      "newReposLast30Days": 8726,
+      "newReposLast30Days": 8763,
       "topStarredNewRepo": {
         "name": "matheusmongarde/garimpo",
-        "stars": 218
+        "stars": 219
       }
     },
-    "lastUpdated": "2026-11-27T04:41:08.990Z",
+    "lastUpdated": "2026-11-27T07:20:01.727Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4697,
-      "totalStars": 159654
+      "totalRepos": 4699,
+      "totalStars": 159664
     },
     "momentum": {
-      "newReposLast30Days": 343,
+      "newReposLast30Days": 344,
       "topStarredNewRepo": {
         "name": "open-webui/tether",
         "stars": 202
       }
     },
-    "lastUpdated": "2026-11-27T04:41:15.255Z",
+    "lastUpdated": "2026-11-27T07:20:08.238Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -306,7 +306,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-27T04:41:21.536Z",
+    "lastUpdated": "2026-11-27T07:20:14.803Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7916,
-      "totalStars": 161973
+      "totalRepos": 7918,
+      "totalStars": 161981
     },
     "momentum": {
-      "newReposLast30Days": 426,
+      "newReposLast30Days": 428,
       "topStarredNewRepo": {
         "name": "KaelLee335/enterprise-support-agent",
         "stars": 55
       }
     },
-    "lastUpdated": "2026-11-27T04:41:27.895Z",
+    "lastUpdated": "2026-11-27T07:20:21.376Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 20503,
-      "totalStars": 61312
+      "totalRepos": 20502,
+      "totalStars": 61315
     },
     "momentum": {
-      "newReposLast30Days": 728,
+      "newReposLast30Days": 729,
       "topStarredNewRepo": {
         "name": "R238Company/meu-emprego-novo",
         "stars": 266
       }
     },
-    "lastUpdated": "2026-11-27T04:41:34.148Z",
+    "lastUpdated": "2026-11-27T07:20:27.739Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -438,7 +438,7 @@
     },
     "popularity": {
       "totalRepos": 2001,
-      "totalStars": 47757
+      "totalStars": 47758
     },
     "momentum": {
       "newReposLast30Days": 11,
@@ -447,7 +447,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-27T04:41:40.285Z",
+    "lastUpdated": "2026-11-27T07:20:34.194Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -491,10 +491,10 @@
       "newReposLast30Days": 13,
       "topStarredNewRepo": {
         "name": "branchdarksand/invokeai",
-        "stars": 277
+        "stars": 297
       }
     },
-    "lastUpdated": "2026-11-27T04:41:46.351Z",
+    "lastUpdated": "2026-11-27T07:20:40.371Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 181983,
-      "totalStars": 46216
+      "totalRepos": 181994,
+      "totalStars": 46223
     },
     "momentum": {
-      "newReposLast30Days": 4270,
+      "newReposLast30Days": 4290,
       "topStarredNewRepo": {
         "name": "voyager67/JaneStreet-Agentic-Skills",
         "stars": 25
       }
     },
-    "lastUpdated": "2026-11-27T04:41:52.639Z",
+    "lastUpdated": "2026-11-27T07:20:46.884Z",
     "contributors": [
       {
         "login": "urmauur",
