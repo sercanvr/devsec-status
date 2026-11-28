@@ -14,17 +14,17 @@
       "latestVersion": "v0.5.7"
     },
     "popularity": {
-      "totalRepos": 125580,
-      "totalStars": 188324
+      "totalRepos": 125717,
+      "totalStars": 188342
     },
     "momentum": {
-      "newReposLast30Days": 11027,
+      "newReposLast30Days": 10721,
       "topStarredNewRepo": {
         "name": "iamajmeena/neonclipping",
-        "stars": 2918
+        "stars": 2949
       }
     },
-    "lastUpdated": "2026-11-27T20:56:17.818Z",
+    "lastUpdated": "2026-11-28T06:52:17.815Z",
     "contributors": [
       {
         "login": "jmorganca",
@@ -61,17 +61,17 @@
       "latestVersion": "v0.3.14"
     },
     "popularity": {
-      "totalRepos": 172235,
+      "totalRepos": 172295,
       "totalStars": 150092
     },
     "momentum": {
-      "newReposLast30Days": 6665,
+      "newReposLast30Days": 6450,
       "topStarredNewRepo": {
         "name": "langchain-samples/Persistent-Agent",
-        "stars": 170
+        "stars": 173
       }
     },
-    "lastUpdated": "2026-11-27T20:56:24.243Z",
+    "lastUpdated": "2026-11-28T06:52:24.020Z",
     "contributors": [
       {
         "login": "hwchase17",
@@ -109,16 +109,16 @@
     },
     "popularity": {
       "totalRepos": 1670,
-      "totalStars": 188213
+      "totalStars": 188218
     },
     "momentum": {
-      "newReposLast30Days": 17,
+      "newReposLast30Days": 16,
       "topStarredNewRepo": {
         "name": "ylmgm/autogpt",
         "stars": 0
       }
     },
-    "lastUpdated": "2026-11-27T20:56:30.667Z",
+    "lastUpdated": "2026-11-28T06:52:30.085Z",
     "contributors": [
       {
         "login": "Torantulino",
@@ -155,17 +155,17 @@
       "latestVersion": "v0.3.10"
     },
     "popularity": {
-      "totalRepos": 35674,
-      "totalStars": 148914
+      "totalRepos": 35724,
+      "totalStars": 148959
     },
     "momentum": {
-      "newReposLast30Days": 3303,
+      "newReposLast30Days": 3204,
       "topStarredNewRepo": {
-        "name": "wquguru/shisei",
-        "stars": 591
+        "name": "JGRFW/comfyui-aicg3d-PoseSwap",
+        "stars": 445
       }
     },
-    "lastUpdated": "2026-11-27T20:56:37.048Z",
+    "lastUpdated": "2026-11-28T06:52:36.336Z",
     "contributors": [
       {
         "login": "comfyanonymous",
@@ -202,17 +202,17 @@
       "latestVersion": "v1.75.2"
     },
     "popularity": {
-      "totalRepos": 133213,
-      "totalStars": 212395
+      "totalRepos": 133307,
+      "totalStars": 212352
     },
     "momentum": {
-      "newReposLast30Days": 9009,
+      "newReposLast30Days": 8814,
       "topStarredNewRepo": {
         "name": "matheusmongarde/garimpo",
-        "stars": 234
+        "stars": 239
       }
     },
-    "lastUpdated": "2026-11-27T20:56:43.562Z",
+    "lastUpdated": "2026-11-28T06:52:42.500Z",
     "contributors": [
       {
         "login": "janober",
@@ -249,17 +249,17 @@
       "latestVersion": "v0.5.6"
     },
     "popularity": {
-      "totalRepos": 4707,
-      "totalStars": 159693
+      "totalRepos": 4714,
+      "totalStars": 159702
     },
     "momentum": {
-      "newReposLast30Days": 352,
+      "newReposLast30Days": 349,
       "topStarredNewRepo": {
-        "name": "open-webui/tether",
-        "stars": 206
+        "name": "tCardoso8070/open-webui-pro-patcher-installer",
+        "stars": 219
       }
     },
-    "lastUpdated": "2026-11-27T20:56:50.337Z",
+    "lastUpdated": "2026-11-28T06:52:48.533Z",
     "contributors": [
       {
         "login": "tjbck",
@@ -300,13 +300,13 @@
       "totalStars": 55604
     },
     "momentum": {
-      "newReposLast30Days": 31,
+      "newReposLast30Days": 30,
       "topStarredNewRepo": {
-        "name": "OTA-EITA/ai-selfhost-audit",
-        "stars": 1
+        "name": "JeremyFontana97637/flowise-ai-pro-patcher-installer",
+        "stars": 156
       }
     },
-    "lastUpdated": "2026-11-27T20:56:57.425Z",
+    "lastUpdated": "2026-11-28T06:52:54.832Z",
     "contributors": [
       {
         "login": "HenryHengZJ",
@@ -343,17 +343,17 @@
       "latestVersion": "v1.0.0"
     },
     "popularity": {
-      "totalRepos": 7924,
-      "totalStars": 162025
+      "totalRepos": 7929,
+      "totalStars": 162037
     },
     "momentum": {
-      "newReposLast30Days": 437,
+      "newReposLast30Days": 427,
       "topStarredNewRepo": {
-        "name": "KaelLee335/enterprise-support-agent",
-        "stars": 55
+        "name": "Henris73/dify-ai-pro-patcher-installer",
+        "stars": 214
       }
     },
-    "lastUpdated": "2026-11-27T20:57:03.906Z",
+    "lastUpdated": "2026-11-28T06:53:01.061Z",
     "contributors": [
       {
         "login": "tjjfvi",
@@ -390,17 +390,17 @@
       "latestVersion": "v0.100.0"
     },
     "popularity": {
-      "totalRepos": 20529,
-      "totalStars": 61329
+      "totalRepos": 20536,
+      "totalStars": 61334
     },
     "momentum": {
-      "newReposLast30Days": 754,
+      "newReposLast30Days": 726,
       "topStarredNewRepo": {
         "name": "R238Company/meu-emprego-novo",
         "stars": 266
       }
     },
-    "lastUpdated": "2026-11-27T20:57:10.258Z",
+    "lastUpdated": "2026-11-28T06:53:07.413Z",
     "contributors": [
       {
         "login": "joaomdmoura",
@@ -437,8 +437,8 @@
       "latestVersion": "v1.8"
     },
     "popularity": {
-      "totalRepos": 2001,
-      "totalStars": 47758
+      "totalRepos": 2002,
+      "totalStars": 47756
     },
     "momentum": {
       "newReposLast30Days": 11,
@@ -447,7 +447,7 @@
         "stars": 1
       }
     },
-    "lastUpdated": "2026-11-27T20:57:17.054Z",
+    "lastUpdated": "2026-11-28T06:53:13.519Z",
     "contributors": [
       {
         "login": "oobabooga",
@@ -484,17 +484,17 @@
       "latestVersion": "v5.5.0"
     },
     "popularity": {
-      "totalRepos": 364,
-      "totalStars": 29174
+      "totalRepos": 365,
+      "totalStars": 29176
     },
     "momentum": {
       "newReposLast30Days": 12,
       "topStarredNewRepo": {
-        "name": "branchdarksand/invokeai",
-        "stars": 287
+        "name": "cbui5595/invokeai-desktop-suite",
+        "stars": 218
       }
     },
-    "lastUpdated": "2026-11-27T20:57:23.268Z",
+    "lastUpdated": "2026-11-28T06:53:19.441Z",
     "contributors": [
       {
         "login": "lstein",
@@ -531,17 +531,17 @@
       "latestVersion": "v0.5.10"
     },
     "popularity": {
-      "totalRepos": 182101,
-      "totalStars": 46244
+      "totalRepos": 182140,
+      "totalStars": 46252
     },
     "momentum": {
-      "newReposLast30Days": 4413,
+      "newReposLast30Days": 4340,
       "topStarredNewRepo": {
-        "name": "arthurwulff11/jetbrains-2026-janetfilter-patcher-activator",
-        "stars": 51
+        "name": "timothyfernandez5522/jan-ai-pro-patcher-installer",
+        "stars": 218
       }
     },
-    "lastUpdated": "2026-11-27T20:57:29.826Z",
+    "lastUpdated": "2026-11-28T06:53:25.830Z",
     "contributors": [
       {
         "login": "urmauur",
